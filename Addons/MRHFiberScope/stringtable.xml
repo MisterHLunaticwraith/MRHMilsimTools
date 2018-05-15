@@ -1,0 +1,76 @@
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Project name="MRHFiberScope">
+	<Package name="MRHFiberScope">
+		<Container name="CONFIGFS">
+			<Key ID="STR_MRH_FS_DISPLAYNAME">
+				<Original>Fiberscope</Original>
+				<English>Fiberscope</English>
+				<French>Fibroscope</French>
+			</Key>
+			<Key ID="STR_MRH_FS_DESCRIPTIONSHORT">
+				<Original>Fiberscope, used to watch under doors undetected.</Original>
+				<English>Fiberscope, used to watch under doors undetected.</English>
+				<French>Fibroscope, utilisé pour regarder en dessous des portes sans se faire repérer.</French>
+			</Key>
+			<Key ID="STR_MRH_FS_ACE_DISPLAYNAME">
+				<Original>Use fiberscope</Original>
+				<English>Use fiberscope</English>
+				<French>Utiliser le fibroscope</French>
+			</Key>
+		</Container>
+		<Container name="FNCBAKEYS">
+			<Key ID="STR_MRH_FS_TURNLEFT">
+				<Original>Turn camera left</Original>
+				<English>Turn camera left</English>
+				<French>Tourner la caméra vers la gauche</French>
+			</Key>
+			<Key ID="STR_MRH_FS_TURNLEFT_TOOLTIP">
+				<Original>Define key to turn camera left</Original>
+				<English>Define key to turn camera left</English>
+				<French>Choisir la touche pour tourner la caméra vers la gauche</French>
+			</Key>
+			<Key ID="STR_MRH_FS_TURNRIGHT">
+				<Original>Turn camera right</Original>
+				<English>Turn camera right</English>
+				<French>Tourner la caméra vers la droite</French>
+			</Key>
+			<Key ID="STR_MRH_FS_TURNRIGHT_TOOLTIP">
+				<Original>Define key to turn camera right</Original>
+				<English>Define key to turn camera right</English>
+				<French>Choisir la touche pour tourner la caméra vers la droite</French>
+			</Key>
+			<Key ID="STR_MRH_FS_TOGGLENVG">
+				<Original>Toggle nightvision</Original>
+				<English>Toggle nightvision</English>
+				<French>Activer/ désactiver la vision nocturne</French>
+			</Key>
+			<Key ID="STR_MRH_FS_TOGGLENVG_TOOLTIP">
+				<Original>Define key to toggle nightvision</Original>
+				<English>Define key to toggle nightvision</English>
+				<French>Choisir la touche pour tourner activer et désactiver la vision nocturne</French>
+			</Key>
+			<Key ID="STR_MRH_FS_EXITCAM">
+				<Original>Exit fiberscope view</Original>
+				<English>Exit fiberscopeview</English>
+				<French>Quitter la vue fibroscope </French>
+			</Key>
+			<Key ID="STR_MRH_FS_EXITCAM_TOOLTIP">
+				<Original>Define key to exit fiberscope view</Original>
+				<English>Define key to exit fiberscope view</English>
+				<French>Choisir la touche pour quitter la vue fibroscope</French>
+			</Key>
+
+		</Container>
+		<Container name="ERRORFSCREATE">
+			<Key ID="STR_MRH_FS_NOCANDOMESSAGE">
+				<Original>You can't use the fiberscope here, you need to face a door or a window.</Original>
+				<English>You can't use the fiberscope here, you need to face a door or a window.</English>
+				<French>Vous ne pouvez pas utiliser le fiberscope ici, vous devez être en face d'une porte ou d'une fenêtre.</French>
+			</Key>
+
+		</Container>
+
+
+	</Package>
+</Project>
