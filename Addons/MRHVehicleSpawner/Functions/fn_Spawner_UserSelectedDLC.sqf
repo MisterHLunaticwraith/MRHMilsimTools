@@ -6,7 +6,7 @@ Return value: none
 Public:no
 Parameters:none
 Example(s):
-call MRH_fnc_UserSelectedDLC;
+call MRH_fnc_Spawner_UserSelectedDLC;
 */
 
 params ["_selected"];
@@ -16,6 +16,6 @@ _array = [];
 _array pushBack _MRHvalue;
 
 player setVariable ["userSelectedDLC", _array];
-call MRH_fnc_RefreshMainList;
-call MRH_fnc_FillFactionCombo;
+call MRH_fnc_Spawner_RefreshMainList;
+call MRH_fnc_Spawner_FillFactionCombo;
 

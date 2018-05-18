@@ -5,7 +5,7 @@ Description: refreshes the main list of the interface
 Return value: None
 Public: No
 Parameters: None
-Example(s): call MRH_fnc_RefreshMainList;
+Example(s): call MRH_fnc_Spawner_RefreshMainList;
 */
 
 disableserialization;
@@ -22,7 +22,7 @@ _sourceObject = player getVariable "SourceObjectSpawner";///ici
 _Type = _sourceObject getVariable "TypeToSpawn"; 
 waitUntil {!isNil "_Type"};
 
-_array = call MRH_fnc_FilterAll;
+_array = call MRH_fnc_Spawner_FilterAll;
 waitUntil {!isNil "_array"};
 //temporaire à remplacer parfiltrées
 

@@ -6,31 +6,31 @@ class MRH // Defines the "owner"
 	{
 	tag = "MRH";
 	file = "\MRHVehicleSpawner\Functions";
-	    class OpenInterface
+	    class Spawner_OpenInterface
 		{};
-		class Refresh		//class myfunction
+		class Spawner_Refresh		//class myfunction
 		{};
-		class Spawn
+		class Spawner_Spawn
 		{};
 		class Spawner
 		{};
-		class SelectType
+		class Spawner_SelectType
 		{};
-		class SpawnerAllowedDLCs
+		class Spawner_AllowedDLCs
 		{};
-		class SpawnerAllowedFactions
+		class Spawner_AllowedFactions
 		{};
-		class UserSelectedDLC
+		class Spawner_UserSelectedDLC
 		{};
-		class UserSelectedFaction
+		class Spawner_UserSelectedFaction
 		{};
-		class RefreshMainList
+		class Spawner_RefreshMainList
 		{};
-		class SortFactionsAlgo
+		class Spawner_SortFactionsAlgo
 		{};
-		class FillFactionCombo
+		class Spawner_FillFactionCombo
 		{};
-		class FilterAll
+		class Spawner_FilterAll
 		{};
 
 	};

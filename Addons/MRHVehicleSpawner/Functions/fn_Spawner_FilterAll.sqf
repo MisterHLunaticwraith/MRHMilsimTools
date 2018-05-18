@@ -5,7 +5,7 @@ Description: produces a list of all vehicles after filters have been applied
 Return value: <ARRAY> of vehicles classnames
 Public: No
 Parameters: None
-Example(s): call MRH_fnc_FilterAll;
+Example(s): call MRH_fnc_Spawner_FilterAll;
 */
 
 /// valeurs récupérées:

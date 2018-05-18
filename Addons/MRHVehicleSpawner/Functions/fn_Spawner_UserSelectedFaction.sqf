@@ -16,4 +16,4 @@ _array = [];
 _array pushBack _MRHvalue;
 
 player setVariable ["userSelectedFaction", _array];
-call MRH_fnc_RefreshMainList;
+call MRH_fnc_Spawner_RefreshMainList;

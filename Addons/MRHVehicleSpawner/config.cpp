@@ -21,6 +21,6 @@ class Extended_PreInit_EventHandlers
 {
    class MRHSpawnerInit
    {
-      clientInit = "call compile preProcessFileLineNumbers '\MRHVehicleSpawner\Functions\fn_SpawnerInit.sqf'";
+      clientInit = "call compile preProcessFileLineNumbers '\MRHVehicleSpawner\Functions\fn_Spawner_SpawnerInit.sqf'";
    };
 };

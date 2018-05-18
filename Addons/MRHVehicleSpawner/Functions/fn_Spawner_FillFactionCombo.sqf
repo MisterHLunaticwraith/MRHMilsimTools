@@ -6,7 +6,7 @@ Return value: none
 Public: no
 Parameters: none 
 Example(s):
-call MRH_fnc_FillFactionCombo;
+call MRH_fnc_Spawner_FillFactionCombo;
 */
 
 disableserialization;

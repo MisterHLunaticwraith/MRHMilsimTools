@@ -1,12 +1,12 @@
 /*
-Function name: MRH_fnc_SpawnerInit
+Function name: MRH_fnc_Spawner_SpawnerInit
 Author: Mr H.
 Description: Reads config files to generate a list of allowed DLCs and Factions, stores them in missionNameSpace variables for further use, adds them to cba settings.
 Return value: none
 Public: No
 Parameters:None
 Example:
-call MRH_fnc_SpawnerInit;
+call MRH_fnc_Spawner_SpawnerInit;
 (called upon clien int through cba preInit event handlers)
 */
 
@@ -49,7 +49,7 @@ _array = [];
 missionNameSpace setVariable ["SPAWNER_DLCsList", _array];
 
 {
-	[_x , "CHECKBOX",gettext (configfile >> "CfgMods" >> _x >> "name"), "MRHSpawner Allowed DLCs", true,1, { call MRH_fnc_SpawnerAllowedDLCs;}] call cba_settings_fnc_init;
+	[_x , "CHECKBOX",gettext (configfile >> "CfgMods" >> _x >> "name"), "MRHSpawner Allowed DLCs", true,1, { call MRH_fnc_Spawner_AllowedDLCs;}] call cba_settings_fnc_init;
 	Diag_log format ["MRH spawner AllDLCs -SpawnerInit.sqf: %1", str _x];
 } forEach _array;
 /////////////////////////Listfactions and put them as options
@@ -70,11 +70,11 @@ _FactionsArray = [];
 	 } 
 	 else 
 	 {
-		[_x , "CHECKBOX",gettext (configfile >> "CfgFactionClasses" >> _x >> "displayname"), "MRHSpawner Allowed Factions", true,1, { call MRH_fnc_SpawnerAllowedFactions;}] call cba_settings_fnc_init;
+		[_x , "CHECKBOX",gettext (configfile >> "CfgFactionClasses" >> _x >> "displayname"), "MRHSpawner Allowed Factions", true,1, { call MRH_fnc_Spawner_AllowedFactions;}] call cba_settings_fnc_init;
 		Diag_log format ["MRH spawner AllFactions -SpawnerInit.sqf: %1", str _x];
 	};
 } forEach _FactionsArray;
 missionNameSpace setVariable ["SPAWNER_FactionsList", _FactionsArray];
 
-call MRH_fnc_SortFactionsAlgo;
+call MRH_fnc_Spawner_SortFactionsAlgo;
 

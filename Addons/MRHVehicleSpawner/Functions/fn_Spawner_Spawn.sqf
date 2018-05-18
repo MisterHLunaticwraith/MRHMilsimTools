@@ -6,7 +6,7 @@ Return value: none
 Public: No
 Parameters: None
 Example(s):
-call MRH_fnc_Spawn;
+call MRH_fnc_Spawner_Spawn;
 */
 
 [] Spawn {

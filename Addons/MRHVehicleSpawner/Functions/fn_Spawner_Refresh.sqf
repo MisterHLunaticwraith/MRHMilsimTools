@@ -6,7 +6,7 @@ Return value: None
 Public: No
 Parameters:None
 Example(s):
-call MRH_fnc_Refresh;
+call MRH_fnc_Spawner_Refresh;
 */
 
 disableserialization;

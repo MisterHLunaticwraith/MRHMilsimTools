@@ -27,7 +27,7 @@ class MRHSpawnButton: RscButtonMRHSpawner
 	y = 0.528 * safezoneH + safezoneY;
 	w = 0.0525 * safezoneW;
 	h = 0.042 * safezoneH;
-	action = "call MRH_fnc_Spawn";
+	action = "call MRH_fnc_Spawner_Spawn";
 };
 class MRHquitter: RscButtonMRHSpawner
 {
@@ -64,7 +64,7 @@ class MRHCTRLGRP: RscControlsGroupMRHSpawner
 	y = 0;
 	w = 0.295312 * safezoneW;
 	h = 0.378 * safezoneH;
-	onMouseButtonClick = "call MRH_fnc_Refresh";
+	onMouseButtonClick = "call MRH_fnc_Spawner_Refresh";
 };
 	};
 };
@@ -96,7 +96,7 @@ class MRHCatergorycchoice: RscComboMRHSpawner
 	y = 0.15 * safezoneH + safezoneY;
 	w = 0.275625 * safezoneW;
 	h = 0.028 * safezoneH;
-	onLBSelChanged = "_MRHvalue = _this select 1; [_MRHvalue] call MRH_fnc_SelectType;";
+	onLBSelChanged = "_MRHvalue = _this select 1; [_MRHvalue] call MRH_fnc_Spawner_SelectType;";
 };
 class MRHDLCSelect: RscComboMRHSpawner
 {
@@ -106,7 +106,7 @@ class MRHDLCSelect: RscComboMRHSpawner
 	w = 0.124687 * safezoneW;
 	h = 0.028 * safezoneH;
 	tooltip = $STR_MRH_SPAWNER_SELECTMODTOOLTIP;
-	onLBSelChanged = "_MRHvalue = _this select 1; [_MRHvalue] call MRH_fnc_UserSelectedDLC;";
+	onLBSelChanged = "_MRHvalue = _this select 1; [_MRHvalue] call MRH_fnc_Spawner_UserSelectedDLC;";
 };
 class MRHFactionSelect: RscComboMRHSpawner
 {

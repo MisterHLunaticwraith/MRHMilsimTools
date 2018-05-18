@@ -6,7 +6,7 @@ Return value: None
 Public:No
 Parameters:None
 Example(s):
-call MRH_fnc_SortFactionsAlgo;
+call MRH_fnc_Spawner_SortFactionsAlgo;
 */
 
 _allVehicleConfigNames = missionNamespace getVariable "SPAWNER_ALLConfigVehicles";

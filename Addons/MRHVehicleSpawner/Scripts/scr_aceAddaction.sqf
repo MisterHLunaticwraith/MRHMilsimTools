@@ -2,7 +2,7 @@ _object = _this select 0;
 
 _statement = {
 
- call MRH_fnc_OpenInterface;
+ call MRH_fnc_Spawner_OpenInterface;
 _object = _this select 0;
 player setVariable ["SourceObjectSpawner", _object, true];
 };

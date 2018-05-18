@@ -1,3 +1,14 @@
+/*
+Function name: cbakeys
+Author: Mr H.
+Description: Defines cba keys and actions
+Return value: None
+Public: No
+Parameters:None
+Example(s):
+this function is called at preinit by cba pre init event handlers
+*/
+
 //#include “\a3\editor_f\Data\Scripts\dikCodes.h”
 _statementTurnLeft =
 	{_cam = player getVariable "MRH_FiberScopeCam"; 

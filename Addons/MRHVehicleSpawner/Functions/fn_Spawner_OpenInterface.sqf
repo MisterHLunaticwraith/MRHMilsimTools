@@ -1,11 +1,11 @@
 /*
-Function name: MRH_fnc_OpenInterface
+Function name: MRH_fnc_Spawner_OpenInterface
 Author: Mr H.
 Description: Opens and fills the spawner interface
 Return value: none
 Public: No
 Parameters: None
-Example(s): MRH_fnc_OpenInterface;
+Example(s): MRH_fnc_Spawner_OpenInterface;
 */
 
 ///creates the dialog
@@ -23,7 +23,7 @@ _icon = "\MRHVehicleSpawner\Paa\mrhmodsLOGO.paa";
 
 [] Spawn {
 disableserialization;
-call MRH_fnc_RefreshMainList;
+call MRH_fnc_Spawner_RefreshMainList;
 _sourceObject = player getVariable "SourceObjectSpawner";///ici
 _Type = _sourceObject getVariable "TypeToSpawn"; 
 waitUntil {!isNil "_Type"};
