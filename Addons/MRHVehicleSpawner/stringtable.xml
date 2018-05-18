@@ -1,0 +1,113 @@
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Project name="MRHVehicleSpawner">
+	<Package name="MRHVehicleSpawner">
+		<Container name="SpawnerMain">
+			<Key ID="STR_MRH_SPAWNER_ALL_FEMALE">
+				<Original>All</Original>
+				<English>All</English>
+				<French>Toutes</French>
+			</Key>
+			<Key ID="STR_MRH_SPAWNER_ALL_MALE">
+				<Original>All</Original>
+				<English>All</English>
+				<French>Tous</French>
+			</Key>
+			<Key ID="STR_MRH_SPAWNER_CHOPPERS">
+				<Original>Helicopters</Original>
+				<English>Helicopters</English>
+				<French>Hélicoptères</French>
+			</Key>
+			<Key ID="STR_MRH_SPAWNER_PLANES">
+				<Original>Planes</Original>
+				<English>Planes</English>
+				<French>Avions</French>
+			</Key>
+			<Key ID="STR_MRH_SPAWNER_DRONES">
+				<Original>UAVs</Original>
+				<English>UAVS</English>
+				<French>Drones</French>
+			</Key>
+			<Key ID="STR_MRH_SPAWNER_CARS">
+				<Original>Cars</Original>
+				<English>Cars</English>
+				<French>Voitures</French>
+			</Key>
+			<Key ID="STR_MRH_SPAWNER_TRUCKS">
+				<Original>Trucks</Original>
+				<English>Trucks</English>
+				<French>Voitures</French>
+			</Key>
+			<Key ID="STR_MRH_SPAWNER_APCs">
+				<Original>APCs</Original>
+				<English>APCs</English>
+				<French>Véhicule de transport de troupes</French>
+			</Key>
+			<Key ID="STR_MRH_SPAWNER_MRAPS">
+				<Original>MRAPs</Original>
+				<English>MRAPs</English>
+				<French>Blindages anti-mines(MRAPs)</French>
+			</Key>
+			<Key ID="STR_MRH_SPAWNER_TANKS">
+				<Original>Tanks</Original>
+				<English>Tanks</English>
+				<French>Tanks</French>
+			</Key>
+			<Key ID="STR_MRH_SPAWNER_MARITIME">
+				<Original>Maritime</Original>
+				<English>Maritime</English>
+				<French>Maritime</French>
+			</Key>
+			<Key ID="STR_MRH_SPAWNER_GENERATING1">
+				<Original>Generating vehicle.</Original>
+				<English>Generating vehicle.</English>
+				<French>Génération du véhicule en cours.</French>
+			</Key>
+			<Key ID="STR_MRH_SPAWNER_GENERATING2">
+				<Original>Generating vehicle..</Original>
+				<English>Generating vehicle..</English>
+				<French>Génération du véhicule en cours..</French>
+			</Key>
+			<Key ID="STR_MRH_SPAWNER_GENERATING3">
+				<Original>Generating vehicle...</Original>
+				<English>Generating vehicle...</English>
+				<French>Génération du véhicule en cours...</French>
+			</Key>
+			<Key ID="STR_MRH_SPAWNER_GENERATING4">
+				<Original>Generating vehicle....</Original>
+				<English>Generating vehicle....</English>
+				<French>Génération du véhicule en cours....</French>
+			</Key>
+			<Key ID="STR_MRH_SPAWNER_VEHCREATED">
+				<Original>Vehicle created</Original>
+				<English>Vehicle created</English>
+				<French>Véhicule créé</French>
+			</Key>
+			<Key ID="STR_MRH_SPAWNER_SPAWNBUTTON">
+				<Original>Spawn</Original>
+				<English>Spawn</English>
+				<French>Spawner</French>
+			</Key>
+			<Key ID="STR_MRH_SPAWNER_CLOSEBUTTON">
+				<Original>Close</Original>
+				<English>Close</English>
+				<French>Fermer</French>
+			</Key>
+			<Key ID="STR_MRH_SPAWNER_SELECTMODTOOLTIP">
+				<Original>Select dlc/mod</Original>
+				<English>Select dlc/mod</English>
+				<French>Selectionner le DLC/Mod</French>
+			</Key>
+			<Key ID="STR_MRH_SPAWNER_SELECTFACTIONTOOLTIP">
+				<Original>Select faction</Original>
+				<English>Select faction</English>
+				<French>Selectionner la faction</French>
+			</Key>
+			<Key ID="STR_MRH_SPAWNER_ACEOPEN">
+				<Original>Open vehicle spawner interface</Original>
+				<English>Open vehicle spawner interface</English>
+				<French> Ouvrir le spawner de véhicules</French>
+			</Key>
+		</Container>
+	</Package>
+</Project>

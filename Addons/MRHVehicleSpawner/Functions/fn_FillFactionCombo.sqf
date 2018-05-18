@@ -1,3 +1,14 @@
+/*
+Function name: MRH_fnc_FillFactionCombo
+Author: Mr H.
+Description: Refreshes the interface with the list of allowed factions
+Return value: none
+Public: no
+Parameters: none 
+Example(s):
+call MRH_fnc_FillFactionCombo;
+*/
+
 disableserialization;
 _allVehicleConfigNames = missionNamespace getVariable "SPAWNER_ALLConfigVehicles";
 _allAllowedDLCs = missionNamespace getVariable "SPAWNER_Allowed_DLCsList";
@@ -43,7 +54,7 @@ _ctrlcomboFL = ((findDisplay 2121) displayCtrl 2102);
 {
 
 _prettyFactionName = (gettext (configfile >> "CfgFactionClasses" >> _x >> "displayname"));
-if (_x == "All") then { _prettyFactionName = "All";};
+if (_x == "All") then { _prettyFactionName = localize "STR_MRH_SPAWNER_ALL_FEMALE";};
 //if (_prettyFactionNameName =="") then {_prettyDLCName = "Vanilla"};
 _indexFaction = _ctrlcomboFL lbAdd _prettyFactionName; 
 lbSetData [2102, _indexFaction, _x];

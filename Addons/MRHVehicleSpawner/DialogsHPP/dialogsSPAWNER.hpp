@@ -22,7 +22,7 @@ class MRHSpawnerLaptop: RscPictureMRHSpawner
 class MRHSpawnButton: RscButtonMRHSpawner
 {
 	idc = 1600;
-	text = "Spawner"; //--- ToDo: Localize;
+	text = $STR_MRH_SPAWNER_SPAWNBUTTON;
 	x = 0.677188 * safezoneW + safezoneX;
 	y = 0.528 * safezoneH + safezoneY;
 	w = 0.0525 * safezoneW;
@@ -32,7 +32,7 @@ class MRHSpawnButton: RscButtonMRHSpawner
 class MRHquitter: RscButtonMRHSpawner
 {
 	idc = 1601;
-	text = "Fermer"; //--- ToDo: Localize;
+	text = $STR_MRH_SPAWNER_CLOSEBUTTON;
 	x = 0.677188 * safezoneW + safezoneX;
 	y = 0.57 * safezoneH + safezoneY;
 	w = 0.0525 * safezoneW;
@@ -105,7 +105,7 @@ class MRHDLCSelect: RscComboMRHSpawner
 	y = 0.528 * safezoneH + safezoneY;
 	w = 0.124687 * safezoneW;
 	h = 0.028 * safezoneH;
-	tooltip = "Selectionner le DLC/Mod"; //--- ToDo: Localize;
+	tooltip = $STR_MRH_SPAWNER_SELECTMODTOOLTIP;
 	onLBSelChanged = "_MRHvalue = _this select 1; [_MRHvalue] call MRH_fnc_UserSelectedDLC;";
 };
 class MRHFactionSelect: RscComboMRHSpawner
@@ -115,7 +115,7 @@ class MRHFactionSelect: RscComboMRHSpawner
 	y = 0.57 * safezoneH + safezoneY;
 	w = 0.124687 * safezoneW;
 	h = 0.028 * safezoneH;
-	tooltip = "Selectionner la faction"; //--- ToDo: Localize;
+	tooltip = $STR_MRH_SPAWNER_SELECTFACTIONTOOLTIP; //--- ToDo: Localize;
 	onLBSelChanged = "_MRHvalue = _this select 1; [_MRHvalue] call MRH_fnc_UserSelectedFaction;";
 };
 ////////////////////////////////////////////////////////

@@ -1,3 +1,13 @@
+/*
+Function name: MRH_fnc_SpawnerAllowedDLCs
+Author: Mr H.
+Description: Filters the list of allowed mods and dlcs accoring to cba settings
+Return value: none
+Public:No
+Parameters:None
+Example(s):
+call MRH_fnc_SpawnerAllowedDLCs;
+*/
 
 _DLCsList = missionNamespace getVariable "SPAWNER_DLCsList";
 

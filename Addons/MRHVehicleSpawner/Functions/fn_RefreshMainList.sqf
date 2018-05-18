@@ -1,3 +1,13 @@
+/*
+Function name: MRH_fnc_RefreshMainList
+Author: Mr H.
+Description: refreshes the main list of the interface
+Return value: None
+Public: No
+Parameters: None
+Example(s): call MRH_fnc_RefreshMainList;
+*/
+
 disableserialization;
 ////////////// puts all vehicles incombolist
 //recupere la liste des dlc autorisés:

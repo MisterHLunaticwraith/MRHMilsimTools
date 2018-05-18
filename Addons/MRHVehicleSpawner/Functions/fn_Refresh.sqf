@@ -1,3 +1,14 @@
+/*
+Function name: MRH_fnc_Refresh
+Author: Mr H.
+Description: Refreshes the list with data on selected vehicle
+Return value: None
+Public: No
+Parameters:None
+Example(s):
+call MRH_fnc_Refresh;
+*/
+
 disableserialization;
 
 _ctrlLIST = ((findDisplay 2121) displayCtrl 1500);
@@ -14,4 +25,4 @@ _name = "<t font = 'PuristaLight'><t size = '1'><t color = '#ba2f01'>" + _name +
 _name = parsetext _name;
 
 ((findDisplay 2121) displayCtrl 1100) ctrlSetStructuredText _name;
-uinamespace setVariable ["tospawnclassname", _classname];
+uinamespace setVariable ["MRH_Spawner_tospawnclassname", _classname];

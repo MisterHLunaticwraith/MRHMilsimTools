@@ -1,3 +1,14 @@
+/*
+Function name: MRH_fnc_SortFactionsAlgo
+Author: Mr H.
+Description: Sorts the factions listed at init to filter only allowed factions
+Return value: None
+Public:No
+Parameters:None
+Example(s):
+call MRH_fnc_SortFactionsAlgo;
+*/
+
 _allVehicleConfigNames = missionNamespace getVariable "SPAWNER_ALLConfigVehicles";
 _allAllowedDLCs = missionNamespace getVariable "SPAWNER_Allowed_DLCsList";
 _allAllowedFactions = missionNamespace getVariable "SPAWNER_Allowed_FactionsList";

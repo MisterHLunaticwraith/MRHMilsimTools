@@ -6,10 +6,10 @@ _statement = {
 _object = _this select 0;
 player setVariable ["SourceObjectSpawner", _object, true];
 };
-
+_loc = localize "STR_MRH_SPAWNER_ACEOPEN"; 
 _action =
 ["SpawnAirShip", 
-" Ouvrir le spawner de véhicules",
+_loc,
  "\MRHVehicleSpawner\Paa\iconespawner.paa", 
  
 _statement 

@@ -1,3 +1,14 @@
+/*
+Function name: MRH_fnc_SpawnerAllowedFactions
+Author: Mr H.
+Description: filters the list of allowed factions according with cba settings
+Return value: none
+Public:no
+Parameters:none
+Example(s):
+call MRH_fnc_SpawnerAllowedFactions;
+*/
+
 _FactionsList = missionNamespace getVariable "SPAWNER_FactionsList";
 
 _allowedArray = [];
