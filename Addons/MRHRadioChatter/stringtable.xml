@@ -1,0 +1,18 @@
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Project name="MRHRadioChatter">
+	<Package name="MRHRadioChatter">
+		<Container name="MRHRadioChatterAceActions">
+			<Key ID="STR_MRH_RC_TURNRADIOON">
+				<Original>Turn on</Original>
+				<English>Turn on</English>
+				<French>Eteindre la radio</French>
+			</Key>
+			<Key ID="STR_MRH_RC_TURNRADIOOFF">
+				<Original>Turn off</Original>
+				<English>Turn off</English>
+				<French>Eteindre la radio</French>
+			</Key>
+		</Container>
+	</Package>
+</Project>

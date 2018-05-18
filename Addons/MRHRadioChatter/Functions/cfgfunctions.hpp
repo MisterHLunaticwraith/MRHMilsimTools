@@ -11,9 +11,6 @@ class MRH
 		{};
 		class isRadioChatterSource
 		{};
-
-
-
 	};
 	
 };

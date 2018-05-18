@@ -2,6 +2,7 @@
 
 [this, "US"] call MRH_fnc_RadioChatter;
 */
+if (!isServer) ExitWith {};
 params ["_sourceObject","_faction"];
 _sourceObject setVariable ["MRH_RadioChatter_RadioOn",true,true];
 //_sourceObject setVariable ["MRH_RadioChatter_Faction",_faction,true];
@@ -26,7 +27,11 @@ while {_sourceObject getVariable "MRH_RadioChatter_RadioOn"} do
 	diag_log _debug2;
 	
 	if !(_sourceObject getVariable "MRH_RadioChatter_RadioOn") ExitWith {};
-	_sourceObject say3D _soundToPlay;
+		[[_sourceObject,_soundToPlay],
+		{
+		params ["_sourceObject","_soundToPlay"];
+		_sourceObject say3D _soundToPlay;
+		}] RemoteExec ["Spawn",[0,-2] select isDedicated,false];
 	_soundLength = _soundLength +1;
 	sleep _soundLength;
 	_sleep = random [2, 15, 30];
