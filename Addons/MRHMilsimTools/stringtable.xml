@@ -1,0 +1,51 @@
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Project name="MRHMilsimTools">
+	<Package name="MIlsimTools">
+		<Container name="NotificationsHPP">
+			<Key ID="STR_MRH_MS_SPAWNDEAD">
+				<Original>You were dead upon disonnecting</Original>
+				<English>You were dead upon disonnecting</English>
+				<French>Vous étiez mort quand vous avez quitté la partie</French>
+			</Key>
+		</Container>
+		<Container name="InitFunctions">
+			<Key ID="STR_MRH_MS_SPAWNDEADMESSAGE">
+				<Original>You were dead upon disonnecting, you will be killed and returned to respawn.</Original>
+				<English>You were dead upon disonnecting, you will be killed and returned to respawn.</English>
+				<French>Vous étiez mort quand vous avez quitté la partie, vous allez être tué et renvoyé au point de respawn.</French>
+			</Key>
+		</Container>
+		<Container name="CBASETTINGS">
+			<Key ID="STR_MRH_MS_CBA_SET_ALLOWEDDEAD_PRETTYNAME">
+				<Original>Auto kill reconnecting dead players</Original>
+				<English>Auto kill reconnecting dead players</English>
+				<French>Tuer automatiquement les joueurs morts à la reconnexion</French>
+			</Key>
+			<Key ID="STR_MRH_MS_CBA_SET_ALLOWEDDEAD_TOOLTIP">
+				<Original>If a player was considered dead when disconneting, they will receive a message and be killed upon reconnecting. This ensures that players ingame will not have their 'Has Died' variable set to true. You can always put a JIP menu access point in your respawn so that they can have an opportunity do rejoin the game. Uncheck to disable this feature but be aware that it will interfere with functions that use the 'Has Died' variable.</Original>
+				<English>If a player was considered dead when disconneting, they will receive a message and be killed upon reconnecting. This ensures that players ingame will not have their 'Has Died' variable set to true. You can always put a JIP menu access point in your respawn so that they can have an opportunity do rejoin the game. Uncheck to disable this feature but be aware that it will interfere with functions that use the 'Has Died' variable.</English>
+				<French>Si un joueur était considéré comme 'mort' au moment de sa deconnexion il recevra un message et sera tué en se reconnectant. Le but est d'enpêcher que des joueurs en jeu n'aient pas leur variable 'Has Died' qui renvoie 'true'. Vous pouvez toujours mettre un point d'accés JIP dans votre respawn pour leur permettre tout de même de rejoindre la partie. Décocher pour désactiver cette fonctionnalité. Attention cela peut poser des problèmes avec les fonctions qui utilisent la variable 'Has Died'.</French>
+			</Key>
+		</Container>
+		<Container name="CORE_BriefingADmin">
+			<Key ID="STR_MRH_MS_BRIEFINGADDINFO">
+				<Original>Only a logged admin will see this menu</Original>
+				<English>Only a logged admin will see this menu</English>
+				<French>Ce menu n'est visible que par l'administrateur.</French>
+			</Key>
+			<Key ID="STR_MRH_MS_BRIEFINGADDTITLE">
+				<Original>OPEN ADMIN MENU</Original>
+				<English>OPEN ADMIN MENU</English>
+				<French>OUVRIR LE MENU ADMINISTRATEUR</French>
+			</Key>
+			<Key ID="STR_MRH_MS_BRIEFINGADDTEXT">
+				<Original>Click here to open admin menu. You can also call this menu from the keybind defined in your controls - addons tab.</Original>
+				<English>Click here to open admin menu. You can also call this menu from the keybind defined in your controls - addons tab.</English>
+				<French>Cliquez ici pour ouvrir le menu admin de gestion des pertes.Vous pouvez aussi à tout moment utiliser le raccouci définit dans les options pour ouvrir le menu.</French>
+			</Key>
+		</Container>
+
+
+	</Package>
+</Project>

@@ -1,8 +1,8 @@
-			class RespawnedAllowed
-	{
-		title = "Retour en jeu autorisé.";
+class MRH_SpawnedDead
+{
+		title = $STR_MRH_MS_SPAWNDEAD;
 		description = "%1";
-		iconPicture="\MRHMilSimTools\media\img\tgv.paa";
+		iconPicture="\MRHMilSimTools\Paa\mrh.paa";
 		duration = 5;
 		priority = 1;
-	};
+};

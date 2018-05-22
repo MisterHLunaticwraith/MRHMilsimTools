@@ -3,41 +3,17 @@ class CfgPatches {
 		units[] = {}; //
 		weapons[] = {}; //
 		requiredVersion = 0.1; //
-		requiredAddons[] = {"cba_settings"}; //
+		requiredAddons[] = {}; //
 	};
 };
-class Extended_PreInit_EventHandlers
-{
-   class MRHMilsimTools_CBA_Settings
-   {
-      init = "call compile preProcessFileLineNumbers '\MRHMilSimTools\Functions\SettingsPreInit\CBASettings.sqf'";
-   };   
-};
+
 class Extended_PostInit_EventHandlers
 {
-   class MRHMilsimTools_Core_SetPlayerIntel
+   class MRHMilsimTools
    {
-      clientInit = "call compile preProcessFileLineNumbers '\MRHMilSimTools\Functions\InitFunctions\fn_MilsimTools_Core_SetPlayerIntel.sqf'";
+      clientInit = "call compile preProcessFileLineNumbers '\MRHMilSimTools\Functions\fn_init.sqf'";
    };
-   
-   class MRHMilsimTools_Core_InitPlayerLocal
-   {
-      clientInit = "call compile preProcessFileLineNumbers '\MRHMilSimTools\Functions\InitFunctions\fn_MilsimTools_Core_InitPlayerLocal.sqf'";
-   };
-   
-   class MRHMilsimTools_Core_PlayersRegistry
-   {
-      serverInit = "call compile preProcessFileLineNumbers '\MRHMilSimTools\Functions\InitFunctions\fn_MilsimTools_Core_PlayersRegistry.sqf'";
-   };
-   
 };
-
-/////=========cfgFunctions========
-class CfgFunctions
-{
-	#include "\MRHMilSimTools\Functions\cfgFunctions.hpp"
-};
-////=============fincfgFunctions
 // =============CFG======================================================
 
 /////=========cfgNotifications=====
@@ -47,6 +23,13 @@ class cfgNotifications
 };
 ////=============fincfgNotifications
 /*
+/////=========cfgParams============
+class Params
+{
+#include "\MRHMilSimTools\cfghpp\cfgparams.hpp"
+};
+////=============fincfgParams======
+*/
 /////=========cfgDebriefings=======
 class CfgDebriefing
 {
@@ -54,7 +37,12 @@ class CfgDebriefing
 };
 ////=============fincfgDebriefings=
 
-
+/////=========cfgFunctions========
+class CfgFunctions
+{
+	#include "\MRHMilSimTools\cfghpp\cfgfunctions.hpp"
+};
+////=============fincfgFunctions
 
 /////=========cfgSounds==========
 class CfgSounds
@@ -86,5 +74,5 @@ class CfgSounds
 /////////////////======Fin Ressources MRHACCMenu
 ///==========FINcomposants des menusCORE====
 
-*/
+
 
