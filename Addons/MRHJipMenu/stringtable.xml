@@ -1,0 +1,101 @@
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Project name="MRHJipMenu">
+	<Package name="MRHJipMenu">
+		<Container name="Interface">
+			<Key ID="STR_MRH_JIP_INTER_YOUJIPPEDMESSAGE">
+				<Original>It seems that you joined a game in progress, the group you are assigned to is:</Original>
+				<English>It seems that you joined a game in progress, the group you are assigned to is:</English>
+				<French>Il semblerait que vous ayez rejoint la partie en cours. Votre groupe d'originine est:</French>
+			</Key>
+			<Key ID="STR_MRH_JIP_INTER_SELECTGROUP">
+				<Original>Select the group you wish to join:</Original>
+				<English>Select the group you wish to join:</English>
+				<French>Selectionnez le groupe que vous désirez rejoindre:</French>
+			</Key>
+			<Key ID="STR_MRH_JIP_INTER_SELECTPLAYER">
+				<Original>Select the player from this group you wish to rejoin:</Original>
+				<English>Select the player from this group you wish to rejoin:</English>
+				<French>Selectionnez le joueur de ce groupe auprés duquel vous désirez spawner:</French>
+			</Key>
+			<Key ID="STR_MRH_JIP_INTER_DEADPLAYERWARNING">
+				<Original>&lt;t color = '#F91515' &gt; Warning: if you select a dead player you will be teleported to respawn bunker!&lt;/t&gt;</Original>
+				<English>&lt;t color = '#F91515' &gt; Warning: if you select a dead player you will be teleported to respawn bunker!&lt;/t&gt;</English>
+				<French>&lt;t color = '#F91515' &gt; Attention: Si vous selectionnez un joueur déjà  mort vous serez spawné dans le respawn bunker!&lt;/t&gt;</French>
+			</Key>
+			<Key ID="STR_MRH_JIP_INTER_CANCEL">
+				<Original>Cancel</Original>
+				<English>Cancel</English>
+				<French>Annuler</French>
+			</Key>
+			<Key ID="STR_MRH_JIP_INTER_JOINBUTTON">
+				<Original>Join selected player</Original>
+				<English>Join selected player</English>
+				<French>Rejoindre le joueur selectionné</French>
+			</Key>
+			<Key ID="STR_MRH_JIP_ISNTON">
+				<Original>isn't onboard a vehicle.</Original>
+				<English>isn't onboard a vehicle.</English>
+				<French>n'est pas dans un véhicule.</French>
+			</Key>
+			<Key ID="STR_MRH_JIP_ISON">
+				<Original>is onboard a vehicle,</Original>
+				<English>is onboard a vehicle,</English>
+				<French>est dans un véhicule,</French>
+			</Key>
+			<Key ID="STR_MRH_JIP_ROOMLEFT">
+				<Original>there's room left in the vehicle.</Original>
+				<English>there's room left in the vehicle.</English>
+				<French>il reste de la place dans le véhicule.</French>
+			</Key>
+			<Key ID="STR_MRH_JIP_VEHFULL">
+				<Original>vehicle is full.</Original>
+				<English>vehicle is full.</English>
+				<French>le vehicule est plein.</French>
+			</Key>
+			<Key ID="STR_MRH_JIP_ISDEAD">
+				<Original>is dead</Original>
+				<English>is dead</English>
+				<French>est mort.</French>
+			</Key>
+			<Key ID="STR_MRH_JIP_PLAYERCAPITALIZED">
+				<Original>Player</Original>
+				<English>Player</English>
+				<French>Le joueur</French>
+			</Key>
+
+		</Container>
+		<Container name="FNCJOINSELECTED">
+			<Key ID="STR_MRH_JIP_HINTNOPLAYERSELECTED">
+				<Original>No player selected</Original>
+				<English>No player selected</English>
+				<French>Pas de joueur selectionné</French>
+			</Key>
+			<Key ID="STR_MRH_JIP_SELECTEDVEHICLEFULL">
+				<Original>Selected player's vehicle is full, please select another player</Original>
+				<English>Selected player's vehicle is full, please select another player</English>
+				<French>Le joueur sélectionné est dans un véhicule plein, merci de selectionner un autre joueur.</French>
+			</Key>
+			<Key ID="STR_MRH_JIP_MOVINGTOPOS">
+				<Original>Teleporting to selected player, please stand by</Original>
+				<English>Teleporting to selected player, please stand by</English>
+				<French>Transport vers le joueur selectionné en cours</French>
+			</Key>
+			<Key ID="STR_MRH_JIP_ACEINTERACTTEXT">
+				<Original>Open JIP menu</Original>
+				<English>Open JIP menu</English>
+				<French>Ouvrir le menu JIP</French>
+			</Key>
+						<Key ID="STR_MRH_JIP_">
+				<Original></Original>
+				<English></English>
+				<French></French>
+			</Key>
+						<Key ID="STR_MRH_JIP_">
+				<Original></Original>
+				<English></English>
+				<French></French>
+			</Key>
+		</Container>
+	</Package>
+</Project>

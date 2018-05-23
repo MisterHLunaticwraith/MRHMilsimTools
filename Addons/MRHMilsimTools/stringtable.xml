@@ -27,6 +27,59 @@
 				<English>If a player was considered dead when disconneting, they will receive a message and be killed upon reconnecting. This ensures that players ingame will not have their 'Has Died' variable set to true. You can always put a JIP menu access point in your respawn so that they can have an opportunity do rejoin the game. Uncheck to disable this feature but be aware that it will interfere with functions that use the 'Has Died' variable.</English>
 				<French>Si un joueur était considéré comme 'mort' au moment de sa deconnexion il recevra un message et sera tué en se reconnectant. Le but est d'enpêcher que des joueurs en jeu n'aient pas leur variable 'Has Died' qui renvoie 'true'. Vous pouvez toujours mettre un point d'accés JIP dans votre respawn pour leur permettre tout de même de rejoindre la partie. Décocher pour désactiver cette fonctionnalité. Attention cela peut poser des problèmes avec les fonctions qui utilisent la variable 'Has Died'.</French>
 			</Key>
+			<Key ID="STR_MRH_MS_CBA_MAXKILLSLIDERPRETTY">
+				<Original>Casualties cap percentage</Original>
+				<English>Casualties cap percentage</English>
+				<French>Cap du nombre de pertes des joueurs</French>
+			</Key>
+			<Key ID="STR_MRH_MS_CBA_MAXKILLSLIDERTOOLTIP">
+				<Original>Defines max casualties cap percentage. If the percentage is over set percentage, admin menu will open automatically. Default value is 60 percent.</Original>
+				<English>Defines max casualties cap percentage. If the percentage is over set percentage, admin menu will open automatically. Default value is 60 percent.</English>
+				<French>Définit le pourcentage de pertes seuil, le menu admin s'ouvre automatiquement si le pourcentage est dépassé. Défaut 60 pourcents</French>
+			</Key>
+			<Key ID="STR_MRH_MS_CBA_SHOWADMINHINTPRETTY">
+				<Original>Show casualties hint</Original>
+				<English>Show casualties hint</English>
+				<French>Afficher le pourcentage de pertes</French>
+			</Key>
+			<Key ID="STR_MRH_MS_CBA_SHOWADMINHINTTOOLTIP">
+				<Original>Admin will receive a hint showing casualties percentage whenever a player dies</Original>
+				<English>Admin will receive a hint showing casualties percentage whenever a player dies</English>
+				<French>L'admin recevra un hint à chaque mort de joueur, le hint donne les pourcentage des pertes</French>
+			</Key>
+			<Key ID="STR_MRH_MS_CBA_JIP_ALLOWPRETTY">
+				<Original>Use JIP menu</Original>
+				<English>Use JIP menu</English>
+				<French>Activer le menu JIP</French>
+			</Key>
+			<Key ID="STR_MRH_MS_CBA_JIP_ALLOWTOOLTIP">
+				<Original>The Join In Progress menu will be shown to all players connecting midgame and offer them to pick a group and a soldier in this group to join. Disable if you do not wish JIP players to have this menu at stratup.</Original>
+				<English>The Join In Progress menu will be shown to all players connecting midgame and offer them to pick a group and a soldier in this group to join. Disable if you do not wish JIP players to have this menu at stratup.</English>
+				<French>Le menu JIP (Join In Progress) s'affiche pour les joueurs qui se connectent en cours de partie et leur permet de sélectionner un groupe et un soldat dans ce groupe à rejoindre. Décochez si vous ne souhaitez pas que les joueurs accédent au menu JIP quand ils arrivent.</French>
+			</Key>
+			<Key ID="STR_MRH_MS_CBA_JIP_INCLUDEAIPRETTY">
+				<Original>Include AIs in JIP</Original>
+				<English>Include AIs in JIP</English>
+				<French>Inclure les IAs.</French>
+			</Key>
+			<Key ID="STR_MRH_MS_CBA_JIP_INCLUDEAITOOLTIP">
+				<Original>If enabled the list of players will also show AIs within the selected group. AI only groups will be shown too. Only works with playable units AIs.</Original>
+				<English>If enabled the list of players will also show AIs within the selected group. AI only groups will be shown too.Only works with playable units AIs.</English>
+				<French>Si cette option est cochée les IA qui font partie des groupes avec des joueurs seront aussi listées. Les groupes avec seulement des IAs seront aussi listés. Seule les unités jouables seront montrées quoi qu'il en soit.</French>
+			</Key>
+			<Key ID="STR_MRH_MS_CBA_JIP_SIDEONLYPRETTY">
+				<Original>Only show groups on the same side as the player's</Original>
+				<English>Only show groups on the same side as the player's</English>
+				<French>Ne montrer que les groupes du même camp que le joueur</French>
+			</Key>
+			<Key ID="STR_MRH_MS_CBA_JIP_SIDEONLYTOOLTIP">
+				<Original>If enabled players will only see groups that are from their side.</Original>
+				<English>If enabled players will only see groups that are from their side.</English>
+				<French>Si cette option est activée les joueurs ne verront que les groupes de leur camp.</French>
+			</Key>
+
+
+
 		</Container>
 		<Container name="CORE_BriefingADmin">
 			<Key ID="STR_MRH_MS_BRIEFINGADDINFO">
@@ -43,6 +96,13 @@
 				<Original>Click here to open admin menu. You can also call this menu from the keybind defined in your controls - addons tab.</Original>
 				<English>Click here to open admin menu. You can also call this menu from the keybind defined in your controls - addons tab.</English>
 				<French>Cliquez ici pour ouvrir le menu admin de gestion des pertes.Vous pouvez aussi à tout moment utiliser le raccouci définit dans les options pour ouvrir le menu.</French>
+			</Key>
+		</Container>
+		<Container name="CORE_AdminCasCap">
+			<Key ID="STR_MRH_MS_ADMINCAPHINT">
+				<Original>%1 percent of online players are dead. %2 percent overall (online and disconnected)</Original>
+				<English>%1 percent of online players are dead. %2 percent overall (online and disconnected)</English>
+				<French>%1 pourcents des joueurs actuellement présents sur le serveur sont morts. %2 de tous les joueurs qui ont participé à la mission sont morts</French>
 			</Key>
 		</Container>
 

@@ -25,7 +25,9 @@ _EHkilledIdx = player addEventHandler ["killed",
 	
 	//Tells the server a player has died
 	MRH_MilsimTools_Core_PlayerDied = true;
-	publicVariableServer "MRH_MilsimTools_Core_PlayerDied"
+	publicVariableServer "MRH_MilsimTools_Core_PlayerDied";
+	// shows hint to admin
+	[[],MRH_fnc_MilsimTools_Core_AdminDeadCount] RemoteExec ["Call",[0,-2] select isDedicated];
 	
 	}
 ];
@@ -63,6 +65,14 @@ if (didJip) then {
 	{
 	Diag_log format ["MRHMilsimTools Core -Player %1 didJip status %2 - Jip Menu called",str player, str didJip];
 	// if not calls the Jip Menu
-		//call MRH_fnc_PLACEHOLDERFUNC;//toDo change to proper function name (JIPMENU)
+	[] spawn 
+		{	
+		waitUntil {(player == player) && (!isNull (findDisplay 46))};
+		_adminJipPref = ["MRH_MilsimTools_Jip_MenuAllow"] call cba_settings_fnc_get;
+		if (_adminJipPref) then 
+			{
+				call MRH_fnc_MilsimTools_Jip_Open_Menu;
+			};
+		};
 	};
 };

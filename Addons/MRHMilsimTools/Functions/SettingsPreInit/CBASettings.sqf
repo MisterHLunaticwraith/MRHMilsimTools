@@ -16,3 +16,15 @@ _script	Script to execute when setting is changed.  (optional) <CODE>
 
 //Settings to kill deadplayersupon reconnecting
 ["MRH_MilsimTools_AllowDeadReco", "CHECKBOX",   [localize "STR_MRH_MS_CBA_SET_ALLOWEDDEAD_PRETTYNAME",localize "STR_MRH_MS_CBA_SET_ALLOWEDDEAD_TOOLTIP"], "MRH_MilsimTools - Core settings",true,1] call cba_settings_fnc_init;
+//Slider for dead count
+["MRH_MilsimTools_AdminCasualtiesCap", "SLIDER",   [localize "STR_MRH_MS_CBA_MAXKILLSLIDERPRETTY",localize "STR_MRH_MS_CBA_MAXKILLSLIDERTOOLTIP"], "MRH_MilsimTools - Core settings", [0, 100, 60, 0]] call cba_settings_fnc_init;
+//setting for dead hint
+["MRH_MilsimTools_ShowAdminDeadHint", "CHECKBOX",   [localize "STR_MRH_MS_CBA_SHOWADMINHINTPRETTY",localize "STR_MRH_MS_CBA_SHOWADMINHINTTOOLTIP"], "MRH_MilsimTools - Core settings",true] call cba_settings_fnc_init;
+
+//===Below are settings for the jip menu
+//allow jip menu on startup
+["MRH_MilsimTools_Jip_MenuAllow", "CHECKBOX",   [localize "STR_MRH_MS_CBA_JIP_ALLOWPRETTY",localize "STR_MRH_MS_CBA_JIP_ALLOWTOOLTIP"], "MRH_MilsimTools - JIP settings",true,1] call cba_settings_fnc_init;
+//include ais in JIPmenu's player list
+["MRH_MilsimTools_Jip_MenuIncludeAI", "CHECKBOX",   [localize "STR_MRH_MS_CBA_JIP_INCLUDEAIPRETTY",localize "STR_MRH_MS_CBA_JIP_INCLUDEAITOOLTIP"], "MRH_MilsimTools - JIP settings",true,1] call cba_settings_fnc_init;
+//groups from same side only
+["MRH_MilsimTools_Jip_Menu_sideOnly", "CHECKBOX",   [localize "STR_MRH_MS_CBA_JIP_SIDEONLYPRETTY",localize "STR_MRH_MS_CBA_JIP_SIDEONLYTOOLTIP"], "MRH_MilsimTools - JIP settings",true,1] call cba_settings_fnc_init;

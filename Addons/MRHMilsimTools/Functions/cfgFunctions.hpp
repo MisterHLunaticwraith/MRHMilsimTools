@@ -23,6 +23,14 @@ class MRH // Defines the "owner"
 		{};
 		class MilsimTools_Core_RemoteForServer
 		{};
+		class MilsimTools_Core_ReturnCountsForRegistry
+		{};
+		class MilsimTools_Core_ReturnPlayerSimpleList
+		{};
+		class MilsimTools_Core_AdminDeadCount
+		{};
+		class MilsimTools_Core_ReturnEmptyCargoSlots
+		{};
 		
 	};
 	
