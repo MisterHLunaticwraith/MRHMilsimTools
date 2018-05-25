@@ -31,6 +31,18 @@ class MRH // Defines the "owner"
 		{};
 		class MilsimTools_Core_ReturnEmptyCargoSlots
 		{};
+		class MilsimTools_Core_LocRankIntel
+		{};
+		class MilsimTools_Core_ListGroupsWithPlayers
+		{};
+		class MilsimTools_Core_SortGroupsBySide 
+		{};
+		class MilsimTools_Core_GenerateRosterText
+		{};
+		class MilsimTools_Core_ApplyRosterTextSettings
+		{};
+		class MilsimTools_Core_AddBriefingRoster
+		{};
 		
 	};
 	

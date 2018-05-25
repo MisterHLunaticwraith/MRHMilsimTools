@@ -28,3 +28,23 @@ _script	Script to execute when setting is changed.  (optional) <CODE>
 ["MRH_MilsimTools_Jip_MenuIncludeAI", "CHECKBOX",   [localize "STR_MRH_MS_CBA_JIP_INCLUDEAIPRETTY",localize "STR_MRH_MS_CBA_JIP_INCLUDEAITOOLTIP"], "MRH_MilsimTools - JIP settings",true,1] call cba_settings_fnc_init;
 //groups from same side only
 ["MRH_MilsimTools_Jip_Menu_sideOnly", "CHECKBOX",   [localize "STR_MRH_MS_CBA_JIP_SIDEONLYPRETTY",localize "STR_MRH_MS_CBA_JIP_SIDEONLYTOOLTIP"], "MRH_MilsimTools - JIP settings",true,1] call cba_settings_fnc_init;
+
+//below are settings for the team roster
+//allow all sides
+["MRH_MilsimTools_Roster_AllowAllSides", "CHECKBOX",   [localize "STR_MRH_ROSTER_ALLOWALLSIDESPRETTY",localize "STR_MRH_ROSTER_ALLOWALLSIDESTOOLTIP"], "MRH_MilsimTools - Roster settings",false,1] call cba_settings_fnc_init;
+//show groups with only AIs
+["MRH_MilsimTools_Roster_ShowAIgroups", "CHECKBOX",   [localize "STR_MRH_ROSTER_INCLUDE_AI_GROUPSPRETTY",localize "STR_MRH_ROSTER_INCLUDE_AI_GROUPSTOOLTIP"], "MRH_MilsimTools - Roster settings",false,1] call cba_settings_fnc_init;
+//show ais within groups
+//show groups with only AIs
+["MRH_MilsimTools_Roster_ShowAiWithinGrps", "CHECKBOX",   [localize "STR_MRH_ROSTER_INCLUDE_AI_UNITSPRETTY",localize "STR_MRH_ROSTER_INCLUDE_AI_UNITSTOOLTIP"], "MRH_MilsimTools - Roster settings",true,1] call cba_settings_fnc_init;
+//below are choices for the colors
+// color for blufor
+["MRH_MilsimTools_Roster_ColorBF", "COLOR",   [localize "STR_MRH_COLOR_BFPRETTY",localize "STR_MRH_COLOR_TOOLTIP"], "MRH_MilsimTools - Roster settings",[0.259,0.525,0.957,1],1] call cba_settings_fnc_init;
+//color for opfor
+["MRH_MilsimTools_Roster_ColorOp", "COLOR",   [localize "STR_MRH_COLOR_OFPRETTY",localize "STR_MRH_COLOR_TOOLTIP"], "MRH_MilsimTools - Roster settings",[0.929,0.063,0.063,1],1] call cba_settings_fnc_init;
+//color for independent
+["MRH_MilsimTools_Roster_ColorInd", "COLOR",   [localize "STR_MRH_COLOR_INDEPRETTY",localize "STR_MRH_COLOR_TOOLTIP"], "MRH_MilsimTools - Roster settings",[0.212,0.847,0.286,1],1] call cba_settings_fnc_init;
+//colorfor civs
+["MRH_MilsimTools_Roster_ColorCiv", "COLOR",   [localize "STR_MRH_COLOR_CIVPRETTY",localize "STR_MRH_COLOR_TOOLTIP"], "MRH_MilsimTools - Roster settings",[0.686,0.141,0.588,1],1] call cba_settings_fnc_init;
+//colorunknown
+["MRH_MilsimTools_Roster_ColorUnknown", "COLOR",   [localize "STR_MRH_COLOR_UKPRETTY",localize "STR_MRH_COLORUKTOOLTIP"], "MRH_MilsimTools - Roster settings",[0.929,0.82,0.118,1],1] call cba_settings_fnc_init;

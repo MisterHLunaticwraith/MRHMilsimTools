@@ -1,6 +1,7 @@
 #define ROOTPATH "MRHMilsimTools
 #define CFGPATH(ARG) ROOTPATH\cfgHPP\##ARG"
 #define PAAPATH(ARG) ROOTPATH\paa\##ARG"
+#define RANKPATH(ARG) ROOTPATH\Ranks\##ARG"
 
 #define FUNC(ARG) call MRH_fnc_MilsimTools_Core_##ARG
 #define EFUNC(ARG1,ARG2) call MRH_fnc_MilsimTools_##ARG1##_##ARG2

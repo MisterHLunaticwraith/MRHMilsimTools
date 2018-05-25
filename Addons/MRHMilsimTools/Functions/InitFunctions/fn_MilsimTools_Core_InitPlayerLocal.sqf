@@ -13,7 +13,7 @@ MRH_fnc_MilsimTools_Core_InitPlayerLocal;
 FUNC(BriefingAdminMenuLink);
 //======init for the Has died variable
 player setVariable ["MRH_MilsimTools_Core_HasDied", false, true];
-
+FUNC(AddBriefingRoster);
 
 
 //===adds eventHandler when player is killed

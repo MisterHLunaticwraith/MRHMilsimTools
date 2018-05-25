@@ -14,7 +14,7 @@ call MRH_fnc_MilsimTools_Jip_Open_Menu;
 _handle=createdialog "MRHJipMenu";
 disableSerialization;
 
-//list the groups to only groups with players
+//list the groups to only groups with players //TODO REPLACEWITHCOREFUNC
 _GroupsWithPlayers = [];
 	{
 		_units = units _x;
@@ -34,6 +34,7 @@ if (_adminsettingIncAI) then {_GroupsWithPlayers = allGroups};
 _groupsSidePlayer = [];
 _AdminGrpSideSetting = ["MRH_MilsimTools_Jip_Menu_sideOnly"] call cba_settings_fnc_get;
 
+//TODO REPLACE WITH COREFUNC
 if (_AdminGrpSideSetting) then 
 	{
 	  {

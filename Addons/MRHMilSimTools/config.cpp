@@ -46,6 +46,9 @@ class cfgNotifications
 #include"\MRHMilSimTools\cfghpp\cfgnotifications.hpp"
 };
 ////=============fincfgNotifications
+//===cfgMRHRanks
+#include"\MRHMilSimTools\cfghpp\cfgMRHrankpictures.hpp"
+//==========
 /*
 /////=========cfgDebriefings=======
 class CfgDebriefing
