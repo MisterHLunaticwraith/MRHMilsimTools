@@ -14,7 +14,7 @@ FUNC(BriefingAdminMenuLink);
 //======init for the Has died variable
 player setVariable ["MRH_MilsimTools_Core_HasDied", false, true];
 FUNC(AddBriefingRoster);
-
+//to do: if (!isFormationLeader player) then {player unlinkItem "ItemMap";}; ==>add option to remove map for non formation leaders after briefing
 
 //===adds eventHandler when player is killed
 _EHkilledIdx = player addEventHandler ["killed", 

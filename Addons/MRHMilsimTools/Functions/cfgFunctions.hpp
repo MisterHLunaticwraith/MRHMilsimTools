@@ -43,6 +43,10 @@ class MRH // Defines the "owner"
 		{};
 		class MilsimTools_Core_AddBriefingRoster
 		{};
+		class MilsimTools_Core_SetCtrlSize
+		{};
+		class MilsimTools_Core_RemoteExecForGivenPlayer
+		{};
 		
 	};
 	

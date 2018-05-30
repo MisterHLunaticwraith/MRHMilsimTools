@@ -1,0 +1,84 @@
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Project name="MRHAdminMenu">
+	<Package name="MRHAdminMenu">
+		<Container name="MRHAdminMenuNotifs">
+			<Key ID="STR_MRH_ADM_NOT_HEALED">
+				<Original>You have been fully healed by an administrator. Enjoy!</Original>
+				<English>You have been fully healed by an administrator. Enjoy!</English>
+				<French>Vous avez été complètement soigné par un administrateur. Profitez en!</French>
+			</Key>
+			<Key ID="STR_MRH_ADM_NOT_WILLJIP">
+				<Original>An administrator as allowed you to jump back in game, the JIP menu will open.</Original>
+				<English>An administrator as allowed you to jump back in game, the JIP menu will open.</English>
+				<French>Un administrateur vous a autorisé à retourner en jeu, le menu JIP va s'ouvrir.</French>
+			</Key>
+			<Key ID="STR_MRH_ADM_NOT_PUNISHMENT">
+				<Original>You have been punished by an admin, feel the almighty wrath of the powerful!</Original>
+				<English>You have been punished by an admin, feel the almighty wrath of the powerful!</English>
+				<French>Vous avez été puni par un admin, vous allez ressentir la toute puissance de la colère divine!</French>
+			</Key>
+			<Key ID="STR_MRH_ADM_NOT_PUNISHMENTREMOVED">
+				<Original>The admin has forgiven you, the curse has been lifted!</Original>
+				<English>The admin has forgiven you, the curse has been lifted!</English>
+				<French>L'admin vous a pardonné, la malédiction est levée!</French>
+			</Key>
+			<Key ID="STR_MRH_ADM_NOT_">
+				<Original></Original>
+				<English></English>
+				<French></French>
+			</Key>
+
+		</Container>
+		<Container name="CFG_DEBRIEF">
+			<Key ID="STR_MRH_ADM_DEB_ADMINTEMINATED">
+				<Original>Mission was terminated by an administrator</Original>
+				<English>Mission was terminated by an administrator</English>
+				<French>Un administrateur a mis fin à la mission</French>
+			</Key>
+			<Key ID="STR_MRH_ADM_DEB_">
+				<Original></Original>
+				<English></English>
+				<French></French>
+			</Key>
+			<Key ID="STR_MRH_ADM_DEB_">
+				<Original></Original>
+				<English></English>
+				<French></French>
+			</Key>
+
+		</Container>
+		<Container name="CFG_PUNISHMENTS">
+			<Key ID="STR_MRH_ADM_PUNISH_PU">
+				<Original>Do push ups</Original>
+				<English>Do push ups</English>
+				<French>Faire des pompes</French>
+			</Key>
+			<Key ID="STR_MRH_ADM_PUNISH_SQ">
+				<Original>Do squats</Original>
+				<English>Do squats</English>
+				<French>Faire des squats</French>
+			</Key>
+			<Key ID="STR_MRH_ADM_PUNISH_ADDCHCK">
+				<Original>Add chicken on head</Original>
+				<English>Add chicken on head</English>
+				<French>Ajouter un poulet sur la tête</French>
+			</Key>
+			<Key ID="STR_MRH_ADM_PUNISH_RMVCHCK">
+				<Original>Remove chicken</Original>
+				<English>Remove chicken</English>
+				<French>Enlever le poulet</French>
+			</Key>
+			<Key ID="STR_MRH_ADM_PUNISH_NK">
+				<Original>Remove clothes</Original>
+				<English>Remove clothes</English>
+				<French>A poil!</French>
+			</Key>
+			<Key ID="STR_MRH_ADM_PUNISH_UNNK">
+				<Original>Give clothes back</Original>
+				<English>Give clothe back</English>
+				<French>Va te rhabiller!</French>
+			</Key>
+		</Container>
+	</Package>
+</Project>

@@ -21,6 +21,6 @@ if (_showHint) then
 		hint format [localize "STR_MRH_MS_ADMINCAPHINT",_percentage,_percentage2];
 	};
 
-if (_percentage >= _AdminCasualtiesCap) then {call MRH_fnc_Test;};
+if (_percentage >= _AdminCasualtiesCap) then {call MRH_fnc_MilsimTools_Admin_OpenMenu;};
 
 };

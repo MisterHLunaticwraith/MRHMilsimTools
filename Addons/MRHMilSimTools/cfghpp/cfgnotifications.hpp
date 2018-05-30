@@ -6,3 +6,39 @@ class MRH_SpawnedDead
 		duration = 5;
 		priority = 1;
 };
+
+class MRH_AllowedRespawn
+{
+		title = $STR_MRH_MS_JIPWILLOPEN;
+		description = "%1";
+		iconPicture="\MRHMilSimTools\Paa\mrh.paa";
+		duration = 5;
+		priority = 1;
+};
+
+class MRH_BeenHealed
+{
+		title = $STR_MRH_MS_YOUBEENHEALED;
+		description = "%1";
+		iconPicture="\MRHMilSimTools\Paa\mrh.paa";
+		duration = 5;
+		priority = 1;
+};
+
+class MRH_MissionTerminated
+{
+		title = $STR_MRH_MS_MISSIONTERMINATED;
+		description = "%1";
+		iconPicture="\MRHMilSimTools\Paa\mrh.paa";
+		duration = 5;
+		priority = 1;
+};
+
+class MRH_Punishment
+{
+		title = $STR_MRH_MS_PUNISHMENT;
+		description = "%1";
+		iconPicture="\MRHMilSimTools\Paa\punishericon.paa";
+		duration = 5;
+		priority = 1;
+};

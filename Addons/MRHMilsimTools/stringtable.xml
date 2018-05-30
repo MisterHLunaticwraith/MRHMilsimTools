@@ -8,6 +8,26 @@
 				<English>You were dead upon disonnecting</English>
 				<French>Vous étiez mort quand vous avez quitté la partie</French>
 			</Key>
+			<Key ID="STR_MRH_MS_JIPWILLOPEN">
+				<Original>Jip menu will open</Original>
+				<English>Jip menu will open</English>
+				<French>Le menu JIP va s'ouvrir</French>
+			</Key>
+			<Key ID="STR_MRH_MS_YOUBEENHEALED">
+				<Original>You have been fully healed</Original>
+				<English>You have been fully healed</English>
+				<French>Vous avez été soigné</French>
+			</Key>
+			<Key ID="STR_MRH_MS_MISSIONTERMINATED">
+				<Original>Mission has been terminated</Original>
+				<English>Mission has been terminated</English>
+				<French>La mission a été annulée</French>
+			</Key>
+			<Key ID="STR_MRH_MS_PUNISHMENT">
+				<Original>A punishment is due!</Original>
+				<English>A punishment is due!</English>
+				<French>ça mérite bien une petite fessée!</French>
+			</Key>
 		</Container>
 		<Container name="InitFunctions">
 			<Key ID="STR_MRH_MS_SPAWNDEADMESSAGE">

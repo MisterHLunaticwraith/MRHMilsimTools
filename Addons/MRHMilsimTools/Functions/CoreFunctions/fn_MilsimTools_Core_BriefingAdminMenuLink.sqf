@@ -20,7 +20,7 @@ WaitUntil {(player == player) && (!isNull (findDisplay 46))};
 		+ localize"STR_MRH_MS_BRIEFINGADDTITLE"
 		+"</font><br/>"
 		+"|-"
-		+" <execute expression=' call MRH_fnc_Test;'>"
+		+" <execute expression='call MRH_fnc_MilsimTools_Admin_OpenMenu;'>"
 		+ localize "STR_MRH_MS_BRIEFINGADDTEXT"
 		+"</execute><br/>";
 		player createDiarySubject ["MRHACC","MRH Milsim Tools ADMIN"];
