@@ -11,7 +11,11 @@ class Extended_PreInit_EventHandlers
    class MRHMilsimTools_CBA_Settings
    {
       init = "call compile preProcessFileLineNumbers '\MRHMilSimTools\Functions\SettingsPreInit\CBASettings.sqf'";
-   };   
+   }; 
+   class MRHMilsimTools_CBA_Settings_keybinds
+   {
+      init = "call compile preProcessFileLineNumbers '\MRHMilSimTools\Functions\SettingsPreInit\CBAKeys.sqf'";
+   };     
 };
 class Extended_PostInit_EventHandlers
 {

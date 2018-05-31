@@ -1,1 +1,0 @@
-hint "function called";

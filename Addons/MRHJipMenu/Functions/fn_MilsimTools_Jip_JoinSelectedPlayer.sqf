@@ -53,6 +53,8 @@ _selectedPlayerConverted = objNull;
 		titleText ["", "BLACK OUT", 5];
 		sleep 5;
 		//move player, if target is a vehicle move them as vehicle cargo
+				// if player is in a vehicle get him out
+		if ((vehicle player) != player) then {moveOut player};
 		_pos = _selectedplayer modelToWorld [0,+5, 0];
 		
 		if (_selectedPlayerIsInVeh) then 

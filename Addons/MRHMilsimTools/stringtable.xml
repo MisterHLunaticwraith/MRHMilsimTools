@@ -97,6 +97,27 @@
 				<English>If enabled players will only see groups that are from their side.</English>
 				<French>Si cette option est activée les joueurs ne verront que les groupes de leur camp.</French>
 			</Key>
+			<Key ID="STR_MRH_MS_CBA_CORE_REMOVEMAPPRETTY">
+				<Original>Remove map for subordinates</Original>
+				<English>Remove map for subordinates</English>
+				<French>Enlever la carte aux subordonnés</French>
+			</Key>
+			<Key ID="STR_MRH_MS_CBA_CORE_REMOVEMAPTOOLTIP">
+				<Original>If enabled, players that are not formation leaders and have a map will still have their map on the briefing screen but their map will be removed upon loading ingame.</Original>
+				<English>If enabled, players that are not formation leaders and have a map will still have their map on the briefing screen but their map will be removed upon loading ingame.</English>
+				<French>Si vous activez ce réglage, les joueurs qui disposent d'une carte et ne sont pas chefs de groupe garderont leur carte sur l'écran de briefing mais elle leur sera enlevée une fois en jeu.</French>
+			</Key>
+			<Key ID="STR_MRH_MS_CBA_CORE_ALLOWINTROCUTPLAYERPRETTY">
+				<Original>Intro cutscene</Original>
+				<English>Intro cutscene</English>
+				<French>Cutscene d'intro</French>
+			</Key>
+			<Key ID="STR_MRH_MS_CBA_CORE_ALLOWINTROCUTPLAYERTOOLTIP">
+				<Original>If enabled players will have a short cutscene upon loading ingame, a camera is created above the player's head and dives to get inside his head, if player is in a vehicle the camera will follow the vehicle. Cutscene is strictly local.</Original>
+				<English>If enabled players will have a short cutscene upon loading ingame, a camera is created above the player's head and dives to get inside his head, if player is in a vehicle the camera will follow the vehicle. Cutscene is strictly local.</English>
+				<French>Si cette option est activée une très courte cutscene se déclenche quand un joueur rejoint le jeu, la caméra part d'au dessus du joueur et semble arriver dans sa tête, si le joueur est dans un véhicule la caméra suit le véhicule. La vidéo est purement locale.</French>
+			</Key>
+
 
 
 
@@ -242,6 +263,18 @@
 				<Original>On some occasions the engine will throw another side than the ones listed above, if so it will get this color.</Original>
 				<English>On some occasions the engine will throw another side than the ones listed above, if so it will get this color.</English>
 				<French>Il arrive que le camp ne soit pas déterminé par le moteur du jeu, dans ce cas là cette couleur sera appliquée.</French>
+			</Key>
+		</Container>
+		<Container name="MRH_MilsimTools_keybinds">
+			<Key ID="STR_MRH_KEY_OPENADMINMENUPRETTY">
+				<Original>Open admin menu</Original>
+				<English>Open admin menu</English>
+				<French>Ouvrir le menu administrateur</French>
+			</Key>
+			<Key ID="STR_MRH_KEY_OPENADMINMENUTOOLTIP">
+				<Original>Only a logged in admin can access this menu</Original>
+				<English>Only a logged in admin can access this menu</English>
+				<French>Seul un admni connecté peut ouvrir ce menu</French>
 			</Key>
 		</Container>
 

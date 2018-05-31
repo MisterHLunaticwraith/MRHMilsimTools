@@ -47,6 +47,8 @@ class MRH // Defines the "owner"
 		{};
 		class MilsimTools_Core_RemoteExecForGivenPlayer
 		{};
+		class MilsimTools_Core_CutsceneToPlayer
+		{};
 		
 	};
 	
