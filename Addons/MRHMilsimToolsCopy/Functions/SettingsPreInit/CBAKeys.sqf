@@ -1,0 +1,2 @@
+#include "\a3\editor_f\Data\Scripts\dikCodes.h"
+["MRH_Admin_Menu_openKey", "MRH_MilsimTools - Admin menu",[localize "STR_MRH_KEY_OPENADMINMENUPRETTY", localize "STR_MRH_KEY_OPENADMINMENUTOOLTIP"],{call MRH_fnc_MilsimTools_Admin_OpenMenu;},{},[DIK_NUMPADMINUS, [true, true, false]]] call CBA_fnc_addKeybind;
