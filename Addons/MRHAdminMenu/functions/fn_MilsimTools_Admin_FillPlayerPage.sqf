@@ -25,7 +25,7 @@ ctrlShow [_x,false];
 
 if (_playerUid == "") ExitWith {
 
-((findDisplay 260518) displayctrl 1601) ctrlSetText "No player selected";
+((findDisplay 260518) displayctrl 1601) ctrlSetText (localize "STR_MRH_FILL_PL_PAGE_NO_PL_SEL");
 };
 {
 ctrlShow [_x,true];
@@ -35,7 +35,7 @@ ctrlShow [_x,true];
 FUNC(RefreshPlayersList);
 
 _playerNameTextZone = FDIS(1106);
-_playerNameText = "You have selected" + " " + "<t color='#ffa42d'>" + name _player + "</t>";
+_playerNameText = (localize "STR_MRH_FILL_PL_PAGE_YOUHAVESELECTED") + " " + "<t color='#ffa42d'>" + name _player + "</t>";
 _playerNameTextZone ctrlSetStructuredText parseText _playerNameText;
 
 _playerIntelTextZone = FDIS(1107);
@@ -49,11 +49,11 @@ _rankLoc = _rankIntel select 0;
 _rankPaa = _rankIntel select 1;
 
 _playerIntelText =
-"Role:" + " " + "<t color='#ffa42d'>" +_playerRole+ "</t>" + "<br/>" +
-"Group:" + " " + "<t color='#ffa42d'>" +_playerGRP+ "</t>" + "<br/>" +
-"Rank:" + " " +  "<t color='#ffa42d'>" +_rankLoc+ "</t>" + " " +"<img image='"+ _RankPaa +"' />" + "<br/>" +
-"Radio frequency: " + " "+"<t color='#ffa42d'>"+ _playerRF+ "</t>" + "<br/>" +
-"Player UID" + " " + "<t color='#ffa42d'>" +_playerUid+ "</t>";
+(localize "STR_MRH_FILL_PL_PAGE_ROLE") + " " + "<t color='#ffa42d'>" +_playerRole+ "</t>" + "<br/>" +
+(localize "STR_MRH_FILL_PL_PAGE_GRP") + " " + "<t color='#ffa42d'>" +_playerGRP+ "</t>" + "<br/>" +
+(localize "STR_MRH_FILL_PL_PAGE_RANK") + " " +  "<t color='#ffa42d'>" +_rankLoc+ "</t>" + " " +"<img image='"+ _RankPaa +"' />" + "<br/>" +
+(localize "STR_MRH_FILL_PL_PAGE_RADIOF") + " "+"<t color='#ffa42d'>"+ _playerRF+ "</t>" + "<br/>" +
+"UID:" + " " + "<t color='#ffa42d'>" +_playerUid+ "</t>";
 _playerIntelTextZone ctrlSetStructuredText parseText _playerIntelText;
 
 

@@ -117,7 +117,16 @@
 				<English>If enabled players will have a short cutscene upon loading ingame, a camera is created above the player's head and dives to get inside his head, if player is in a vehicle the camera will follow the vehicle. Cutscene is strictly local.</English>
 				<French>Si cette option est activée une très courte cutscene se déclenche quand un joueur rejoint le jeu, la caméra part d'au dessus du joueur et semble arriver dans sa tête, si le joueur est dans un véhicule la caméra suit le véhicule. La vidéo est purement locale.</French>
 			</Key>
-
+			<Key ID="STR_MRH_MS_CBA_CORE_REMOVEDISCONNECTEDBODYPRETTY">
+				<Original>Remove body of disconnected players</Original>
+				<English>Remove body of disconnected players</English>
+				<French>Enlever le corps des joueurs qui se deconnectent</French>
+			</Key>
+			<Key ID="STR_MRH_MS_CBA_CORE_REMOVEDISCONNECTEDBODYTOOLTIP">
+				<Original>When enabled bodies of disconnecting players will be removed</Original>
+				<English>When enabled bodies of disconnecting players will be removed</English>
+				<French>Si ce réglage est activé les corps des joueurs qui se deconnectent seront supprimés</French>
+			</Key>
 
 
 

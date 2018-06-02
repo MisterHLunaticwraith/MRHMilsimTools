@@ -52,6 +52,9 @@ _selectedPlayerConverted = objNull;
 		["<t font='PuristaBold' size='1.25'>" + (localize "STR_MRH_JIP_MOVINGTOPOS") + "</t>", 0, 0.4, 6, -1, 0, 3011] spawn bis_fnc_dynamicText;
 		titleText ["", "BLACK OUT", 5];
 		sleep 5;
+		//disable player sim during transport
+		player allowDamage false;
+		player enableSimulation false;
 		//move player, if target is a vehicle move them as vehicle cargo
 				// if player is in a vehicle get him out
 		if ((vehicle player) != player) then {moveOut player};
@@ -70,6 +73,7 @@ _selectedPlayerConverted = objNull;
 		//end blackscreen
 		titleText ["", "BLACK IN", 5];
 
+		//reinstate player sim
 		
 		///create cameras for cutscene
 		_pos1= player modelToWorld [0,-50, 50];
@@ -95,7 +99,10 @@ _selectedPlayerConverted = objNull;
 		camDestroy _introcam;
 		camDestroy _playercam;
 		player cameraEffect ["terminate","back"];
-		
+		player allowDamage true;
+		player enableSimulation true;
+		//fully heal player just in case (low flying helis to ground spawn causes damage IDK why)
+		[player, player] call ACE_medical_fnc_treatmentAdvanced_fullHeal; 
 		//reset player "hasdied" variable, in case JIP menu is called to allow dead players back in
 		player setVariable ["MRH_MilsimTools_Core_HasDied", false, true];
 

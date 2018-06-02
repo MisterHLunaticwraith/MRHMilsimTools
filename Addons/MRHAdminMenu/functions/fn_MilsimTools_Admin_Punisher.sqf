@@ -18,6 +18,7 @@ _punishment = lbdata [2102,(lbCurSel 2102)];
 
 
 _cfgFile = configfile;
+if ((gettext (_cfgFile>>"cfgMRHPunishments">>_punishment>>"code")) == "") then {_cfgFile = missionConfigFile};
 _punishmentStatement = gettext (_cfgFile>>"cfgMRHPunishments">>_punishment>>"code");
 
 

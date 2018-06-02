@@ -36,7 +36,7 @@ class cfgMRHPunishments
 		picture= PAAPATH(chicken.paa);
 		displayName = $STR_MRH_ADM_PUNISH_ADDCHCK;
 		notificationMessage = $STR_MRH_ADM_NOT_PUNISHMENT;
-		code = "_player = _this select 0;_expl1 = 'Cock_random_F' createVehicle position _player; _expl1 attachTo [_player, [-0.1, 0.1, 0.15], 'Head']; _expl1 setVectorDirAndUp [ [0.5, 0.5, 0], [-0.5, 0.5, 0] ]; _player setVariable ['MRH_SpawnedChicken',_expl1,true];";
+		code = "_player = _this select 0;if !((_player getVariable ['MRH_SpawnedChicken',[]]) isEqualTo []) ExitWith {};_expl1 = 'Cock_random_F' createVehicle position _player; _expl1 attachTo [_player, [-0.1, 0.1, 0.15], 'Head']; _expl1 setVectorDirAndUp [ [0.5, 0.5, 0], [-0.5, 0.5, 0] ]; _player setVariable ['MRH_SpawnedChicken',_expl1,true];";
 		
 	};
 	
@@ -45,7 +45,7 @@ class cfgMRHPunishments
 		picture= PAAPATH(chicken.paa);
 		displayName = $STR_MRH_ADM_PUNISH_RMVCHCK;
 		notificationMessage = $STR_MRH_ADM_NOT_PUNISHMENTREMOVED;
-		code = "_player = _this select 0;_chicken = _player getVariable 'MRH_SpawnedChicken'; deleteVehicle _chicken;";
+		code = "_player = _this select 0;_chicken = _player getVariable 'MRH_SpawnedChicken'; deleteVehicle _chicken;_player setVariable ['MRH_SpawnedChicken',[],true];";
 		
 	};
 		class MRH_Naked
@@ -53,7 +53,7 @@ class cfgMRHPunishments
 		picture= PAAPATH(naked.paa);
 		displayName = $STR_MRH_ADM_PUNISH_NK;
 		notificationMessage = $STR_MRH_ADM_NOT_PUNISHMENT;
-		code = "_player = _this select 0;_savedLO = getUnitLoadout _player, _player setVariable ['MRH_PunishmentNakedLO',_savedLO,true]; _player setUnitLoadout [[],[],[],[],[],[],'','',[],['','','','','','']];";
+		code = "_player = _this select 0;if !((_player getVariable ['MRH_PunishmentNakedLO',[]]) isEqualTo []) ExitWith {};_savedLO = getUnitLoadout _player; _player setVariable ['MRH_PunishmentNakedLO',_savedLO,true]; _player setUnitLoadout [[],[],[],[],[],[],'','',[],['','','','','','']];";
 		
 	};
 	
@@ -62,7 +62,7 @@ class cfgMRHPunishments
 		picture= PAAPATH(naked.paa);
 		displayName = $STR_MRH_ADM_PUNISH_UNNK;
 		notificationMessage = $STR_MRH_ADM_NOT_PUNISHMENTREMOVED;
-		code = "_player = _this select 0;_toRestore = _player getVariable 'MRH_PunishmentNakedLO'; _player setUnitLoadout _toRestore;";
+		code = "_player = _this select 0;_toRestore = _player getVariable 'MRH_PunishmentNakedLO'; _player setUnitLoadout _toRestore;_player setVariable ['MRH_PunishmentNakedLO',[],true];";
 		
 	};
 };

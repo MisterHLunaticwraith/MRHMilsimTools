@@ -1,1 +1,0 @@
-systemChat "Core Func Called";

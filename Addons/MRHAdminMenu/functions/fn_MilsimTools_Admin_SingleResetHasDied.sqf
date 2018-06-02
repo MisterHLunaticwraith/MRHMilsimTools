@@ -16,4 +16,4 @@ _player = [_playerUid] call MRH_fnc_MilsimTools_Core_FindPlayerByUID;
 
 
 FUNC(RefreshPlayersList);
-systemchat format ["%1 's 'hasDied' variable has been reset", str _player];
+systemchat format [localize "STR_MRH_SINGLERESETHASDIEDSYSTEMCHAT", str _player];

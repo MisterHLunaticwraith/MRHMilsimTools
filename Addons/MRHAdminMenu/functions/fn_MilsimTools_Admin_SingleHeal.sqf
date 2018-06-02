@@ -12,7 +12,7 @@ call MRH_fnc_MilsimTools_Admin_SingleHeal;
 _playerUid = lbdata [1500,(lbCurSel 1500)];
 _player = [_playerUid] call MRH_fnc_MilsimTools_Core_FindPlayerByUID; 
 [_player, _player] call ACE_medical_fnc_treatmentAdvanced_fullHeal; 
-systemchat format ["player %1 has been healed",str _player];
+systemchat format [localize "STR_MRH_ADMIN_SINGLEHEALSYSTEMCHAT",str _player];
 
 [_playerUid,
 {

@@ -52,20 +52,7 @@ class MRH // Defines the "owner"
 		
 	};
 	
-	class TestFunctions // tomoveelsewhere in case of mod conversion
-	{
-	tag = "MRH";
-	file = "\MRHMilsimTools\Functions\TestFunctions";
-		class MilsimTools_Core_FuncTest
-		{};
-		class MilsimTools_Test_FuncTest
-		{};
-		class Test
-		{};
-		class TestCaller
-		{};
 
-	};
 	/*
 	class Template // tomoveelsewhere in case of mod conversion
 	{

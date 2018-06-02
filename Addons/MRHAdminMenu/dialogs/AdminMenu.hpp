@@ -24,7 +24,7 @@ class MRHPlayersList: RscListboxMRHAdminMenu
 {
 	idc = 1500;
 	moving = true;
-	onLBSelChanged = "_playerUid = lbdata [1500,(lbCurSel 1500)];_player = [_playerUid] call MRH_fnc_MilsimTools_Core_FindPlayerByUID; ((findDisplay 260518) displayctrl 1601) ctrlSetText (name _player);";
+	onLBSelChanged = "_playerUid = lbdata [1500,(lbCurSel 1500)];_player = [_playerUid] call MRH_fnc_MilsimTools_Core_FindPlayerByUID; ((findDisplay 260518) displayctrl 1601) ctrlSetText (name _player); if (ctrlShown ((findDisplay 260518) displayCtrl 1106)) then {call MRH_fnc_MilsimTools_Admin_FillPlayerPage;};";
 	x = 0.08 * safezoneW + safezoneX;
 	y = 0.15 * safezoneH + safezoneY;
 	w = 0.1575 * safezoneW;
@@ -46,7 +46,7 @@ class MRHTabPlayer: RscButtonMRHAdminMenu
 	idc = 1601;
 	moving = true;
 	action = "call MRH_fnc_MilsimTools_Admin_FillPlayerPage;";
-	text = "Player"; //--- ToDo: Localize;
+	text = $STR_MRH_ADM_INTER_Player; //--- ToDo: Localize;
 	x = 0.375312 * safezoneW + safezoneX;
 	y = 0.108 * safezoneH + safezoneY;
 	w = 0.137812 * safezoneW;
@@ -56,7 +56,7 @@ class MRHMissionTitleText: RscStructuredTextMRHAdminMenu
 {
 	idc = 1100;
 	moving = true;
-	text = "lorem ipsum"; //--- ToDo: Localize;
+	text = ""; //--- ToDo: Localize;
 	x = 0.250625 * safezoneW + safezoneX;
 	y = 0.178 * safezoneH + safezoneY;
 	w = 0.223125 * safezoneW;
@@ -76,7 +76,7 @@ class RscControlsGroup_2300: RscControlsGroupMRHAdminMenu
 		{
 			idc = 1101;
 			moving = true;
-			text = "lorem ipsum"; //--- ToDo: Localize;
+			text = ""; //--- ToDo: Localize;
 			x = 0;
 			y = 0;
 			w = 0.223125 * safezoneW;
@@ -90,7 +90,7 @@ class MRHHealAllButton: RscButtonMRHAdminMenu
 	idc = 1602;
 	moving = true;
 	action = "call MRH_fnc_MilsimTools_Admin_HealAll;";
-	text = "Heal all players"; //--- ToDo: Localize;
+	text = $STR_MRH_ADM_INTER_HealAll; //--- ToDo: Localize;
 	x = 0.250625 * safezoneW + safezoneX;
 	y = 0.626 * safezoneH + safezoneY;
 	w = 0.223125 * safezoneW;
@@ -101,7 +101,7 @@ class MRHAllowRespawnAll: RscButtonMRHAdminMenu
 	idc = 1603;
 	moving = true;
 	action = "call MRH_fnc_MilsimTools_Admin_GlobalJipOpen;";
-	text = "Allow respawn for all players"; //--- ToDo: Localize;
+	text = $STR_MRH_ADM_INTER_AllowRspAll; //--- ToDo: Localize;
 	x = 0.250625 * safezoneW + safezoneX;
 	y = 0.668 * safezoneH + safezoneY;
 	w = 0.223125 * safezoneW;
@@ -112,7 +112,7 @@ class MRHResetHasdiedAllButton: RscButtonMRHAdminMenu
 	idc = 1604;
 	moving = true;
 	action = "call MRH_fnc_MilsimTools_Admin_SetHasDiedAll;";
-	text = "Reset 'has died' variable for all players"; //--- ToDo: Localize;
+	text = $STR_MRH_ADM_INTER_RstHasDiedAll; //--- ToDo: Localize;
 	x = 0.250625 * safezoneW + safezoneX;
 	y = 0.71 * safezoneH + safezoneY;
 	w = 0.223125 * safezoneW;
@@ -122,7 +122,7 @@ class MRHEndMissionButton: RscButtonMRHAdminMenu
 {
 	idc = 1605;
 	moving = true;
-	text = "End mission with selected ending"; //--- ToDo: Localize;
+	text = $STR_MRH_ADM_INTER_EndMission; //--- ToDo: Localize;
 	action = "call MRH_fnc_MilsimTools_Admin_EndMission;";
 	x = 0.250625 * safezoneW + safezoneX;
 	y = 0.794 * safezoneH + safezoneY;
@@ -143,7 +143,7 @@ class MRHRosterTitle: RscStructuredTextMRHAdminMenu
 {
 	idc = 1102;
 	moving = true;
-	text = "Team roster"; //--- ToDo: Localize;
+	text = $STR_MRH_ADM_INTER_TeamRoster; //--- ToDo: Localize;
 	x = 0.480312 * safezoneW + safezoneX;
 	y = 0.178 * safezoneH + safezoneY;
 	w = 0.269062 * safezoneW;
@@ -153,7 +153,7 @@ class MRHShowAIGrpsText: RscStructuredTextMRHAdminMenu
 {
 	idc = 1103;
 	moving = true;
-	text = "Show groups comprising only AIs"; //--- ToDo: Localize;
+	text = $STR_MRH_ADM_INTER_ShowGrpsId; //--- ToDo: Localize;
 	x = 0.506562 * safezoneW + safezoneX;
 	y = 0.234 * safezoneH + safezoneY;
 	w = 0.242812 * safezoneW;
@@ -173,7 +173,7 @@ class MRHShowAIsinplayerGroups: RscStructuredTextMRHAdminMenu
 {
 	idc = 1104;
 	moving = true;
-	text = "Show AIs in groups with players"; //--- ToDo: Localize;
+	text = $STR_MRH_ADM_INTER_ShowAIGrpPL; //--- ToDo: Localize;
 	x = 0.506562 * safezoneW + safezoneX;
 	y = 0.276 * safezoneH + safezoneY;
 	w = 0.242812 * safezoneW;
@@ -213,7 +213,7 @@ class RscControlsGroup_2301: RscControlsGroupMRHAdminMenu
 		{
 			idc = 1105;
 			moving = true;
-			text = "lorem ipsum"; //--- ToDo: Localize;
+			text = ""; //--- ToDo: Localize;
 			x = 0;
 			y = 0;
 			w = 0.269062 * safezoneW;
@@ -226,7 +226,7 @@ class MRHCloseButton: RscButtonMRHAdminMenu
 {
 	idc = 1606;
 	moving = true;
-	text = "Close"; //--- ToDo: Localize;
+	text = $STR_MRH_ADM_INTER_Close; //--- ToDo: Localize;
 	action = "closedialog 0;";
 	x = 0.664063 * safezoneW + safezoneX;
 	y = 0.794 * safezoneH + safezoneY;
@@ -239,7 +239,7 @@ class MRHPlayerNameText: RscStructuredTextMRHAdminMenu
 	idc = 1106;
 	show = false;
 	moving = true;
-	text = "Player's name"; //--- ToDo: Localize;
+	text = $STR_MRH_ADM_INTER_PLNAME; //--- ToDo: Localize;
 	x = 0.250625 * safezoneW + safezoneX;
 	y = 0.178 * safezoneH + safezoneY;
 	w = 0.223125 * safezoneW;
@@ -251,7 +251,7 @@ class RscControlsGroup_2302: RscControlsGroupMRHAdminMenu
 	idc = 2302;
 	show = false;
 	moving = true;
-	text = "lpsum lorem"; //--- ToDo: Localize;
+	text = ""; //--- ToDo: Localize;
 	x = 0.250625 * safezoneW + safezoneX;
 	y = 0.234 * safezoneH + safezoneY;
 	w = 0.223125 * safezoneW;
@@ -263,7 +263,7 @@ class RscControlsGroup_2302: RscControlsGroupMRHAdminMenu
 			idc = 1107;
 			show = false;
 			moving = true;
-			text = "lpsum lorem"; //--- ToDo: Localize;
+			text = ""; //--- ToDo: Localize;
 			x = 0;
 			y = 0;
 			w = 0.223125 * safezoneW;
@@ -278,7 +278,7 @@ class MRHHealSelected: RscButtonMRHAdminMenu
 	idc = 1607;
 	show = false;
 	moving = true;
-	text = "Heal selected player"; //--- ToDo: Localize;
+	text = $STR_MRH_ADM_INTER_HealSelectedPL; //--- ToDo: Localize;
 	action = "call MRH_fnc_MilsimTools_Admin_SingleHeal;";
 	x = 0.250625 * safezoneW + safezoneX;
 	y = 0.626 * safezoneH + safezoneY;
@@ -291,7 +291,7 @@ class MRHOpenJipForButton: RscButtonMRHAdminMenu
 	idc = 1608;
 	show = false;
 	moving = true;
-	text = "Remote open jip menu for selected player"; //--- ToDo: Localize;
+	text = $STR_MRH_ADM_INTER_RmtJipSelected; //--- ToDo: Localize;
 	action = "call MRH_fnc_MilsimTools_Admin_SingleJipOpen;";
 	x = 0.250625 * safezoneW + safezoneX;
 	y = 0.668 * safezoneH + safezoneY;
@@ -314,7 +314,7 @@ class MRHApplyPunishmentButton: RscButtonMRHAdminMenu
 	idc = 1609;
 	show = false;
 	moving = true;
-	text = "Apply selected punishment"; //--- ToDo: Localize;
+	text = $STR_MRH_ADM_INTER_ApplyPunish; //--- ToDo: Localize;
 	action = "call MRH_fnc_MilsimTools_Admin_Punisher;";
 	x = 0.250625 * safezoneW + safezoneX;
 	y = 0.752 * safezoneH + safezoneY;
@@ -326,7 +326,7 @@ class MRHResetHasDiedSingle: RscButtonMRHAdminMenu
 	idc = 1610;
 	show = false;
 	moving = true;
-	text = "Reset 'Has died variable' for selected player"; //--- ToDo: Localize;
+	text = $STR_MRH_ADM_INTER_RstHasDiedSelected; //--- ToDo: Localize;
 	action = "call MRH_fnc_MilsimTools_Admin_SingleResetHasDied;";
 	x = 0.250625 * safezoneW + safezoneX;
 	y = 0.794 * safezoneH + safezoneY;
@@ -350,7 +350,7 @@ class MRHAceArsenalButton: RscButtonMRHAdminMenu
 	idc = 1611;
 	show = false;
 	moving = true;
-	text = "Change player's gear"; //--- ToDo: Localize;
+	text = $STR_MRH_ADM_INTER_ChgPLgear; //--- ToDo: Localize;
 	action = "closedialog 0;_playerUid = lbdata [1500,(lbCurSel 1500)];_player = [_playerUid] call MRH_fnc_MilsimTools_Core_FindPlayerByUID;[_player, _player,true] call ACE_arsenal_fnc_openbox;";
 	x = 0.480312 * safezoneW + safezoneX;
 	y = 0.472 * safezoneH + safezoneY;

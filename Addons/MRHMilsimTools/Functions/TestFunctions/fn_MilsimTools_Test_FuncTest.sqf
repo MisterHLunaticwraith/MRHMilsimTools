@@ -1,1 +1,0 @@
-{systemchat "Ext Func Called";} RemoteExec ["Call",0];

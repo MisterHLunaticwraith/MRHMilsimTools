@@ -31,7 +31,7 @@ _rankPAA = _rankIntel select 1;
 
 _playernammetext = format ["%1, %2", _role,_name];
 
-_toolTip = format ["rank: %1 group: %2 frequency: %3",_locRank,_group,_rf];
+_toolTip = format [localize "STR_MRH_FILL_PL_LIST_TOOLTIP",_locRank,_group,_rf];
 
 
  
@@ -47,7 +47,7 @@ lbSetTooltip [1500,_index,_toolTip];
 _name = _x select 1;
 _uid = _x select 0;
 _actualPlayer = [_uid] CFUNC(FindPlayerByUID);
-_playerIntel = _actualPlayer GVAR(MilsimTools_Core_PlayerIntel);
+_playerIntel = _actualPlayer EGVAR(MilsimTools_Core_PlayerIntel);
 _group = _playerIntel select 0;
 _role = _playerIntel select 1;
 _rf = _playerIntel select 2;
@@ -57,7 +57,7 @@ _rankPAA = _rankIntel select 1;
 
 _playernammetext = format ["%1, %2", _role,_name];
 
-_toolTip = format ["rank: %1 group: %2 frequency: %3",_locRank,_group,_rf];
+_toolTip = format [localize "STR_MRH_FILL_PL_LIST_TOOLTIP",_locRank,_group,_rf];
 
 
  

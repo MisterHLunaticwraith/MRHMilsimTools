@@ -80,5 +80,222 @@
 				<French>Va te rhabiller!</French>
 			</Key>
 		</Container>
+		<Container name="MRH_ADM_INTEFACE">
+			<Key ID="STR_MRH_ADM_INTER_Player">
+				<Original>Player</Original>
+				<English>Player</English>
+				<French>Joueur</French>
+			</Key>
+			<Key ID="STR_MRH_ADM_INTER_HealAll">
+				<Original>Heal all players</Original>
+				<English>Heal all players</English>
+				<French>Soigner tous les joueurs</French>
+			</Key>
+			<Key ID="STR_MRH_ADM_INTER_AllowRspAll">
+				<Original>Allow respawn for all players</Original>
+				<English>Allow respawn for all players</English>
+				<French>Autoriser le respawn pour tous</French>
+			</Key>
+			<Key ID="STR_MRH_ADM_INTER_RstHasDiedAll">
+				<Original>Reset 'has died' variable for all players</Original>
+				<English>Reset 'has died' variable for all players</English>
+				<French>Réinitialiser la variable 'has died' pour tous.</French>
+			</Key>
+			<Key ID="STR_MRH_ADM_INTER_EndMission">
+				<Original>End mission with selected ending</Original>
+				<English>End mission with selected ending</English>
+				<French>Terminer la mission avec la fin selectionnée</French>
+			</Key>
+			<Key ID="STR_MRH_ADM_INTER_TeamRoster">
+				<Original>Team roster</Original>
+				<English>Team roster</English>
+				<French>Team Roster</French>
+			</Key>
+			<Key ID="STR_MRH_ADM_INTER_ShowGrpsId">
+				<Original>Include AI only groups</Original>
+				<English>Include AI only groups</English>
+				<French>Inclure les groupes IA sans joueurs</French>
+			</Key>
+			<Key ID="STR_MRH_ADM_INTER_ShowAIGrpPL">
+				<Original>Show AIs in groups with players</Original>
+				<English>Show AIs in groups with players</English>
+				<French>Montrer les IAs dans les groupes avec joueurs</French>
+			</Key>
+			<Key ID="STR_MRH_ADM_INTER_Close">
+				<Original>Close</Original>
+				<English>Close</English>
+				<French>Fermer</French>
+			</Key>
+			<Key ID="STR_MRH_ADM_INTER_PLNAME">
+				<Original>Player's name</Original>
+				<English>Player's name</English>
+				<French>Nom du joueur</French>
+			</Key>
+			<Key ID="STR_MRH_ADM_INTER_HealSelectedPL">
+				<Original>Heal selected player</Original>
+				<English>Heal selected player</English>
+				<French>Soigner le joueur</French>
+			</Key>
+			<Key ID="STR_MRH_ADM_INTER_RmtJipSelected">
+				<Original>Remote open jip menu for selected player</Original>
+				<English>Remote open jip menu for selected player</English>
+				<French>Ouvrir le menu JIP à distance pour ce joueur</French>
+			</Key>
+			<Key ID="STR_MRH_ADM_INTER_ApplyPunish">
+				<Original>Apply selected punishment</Original>
+				<English>Apply selected punishment</English>
+				<French>Appliquer la punition selectionnée</French>
+			</Key>
+			<Key ID="STR_MRH_ADM_INTER_RstHasDiedSelected">
+				<Original>Reset 'Has died variable' for selected player</Original>
+				<English>Reset 'Has died variable' for selected player</English>
+				<French>Réinitialiser la variable 'Has died' pour ce joueur</French>
+			</Key>
+			<Key ID="STR_MRH_ADM_INTER_ChgPLgear">
+				<Original>Change player's gear</Original>
+				<English>Change player's gear</English>
+				<French>Changer l'équipement du joueur</French>
+			</Key>
+			
+			<Container name="MRH_ADM_FUNC_DIR">
+			<Key ID="STR_MRH_FILL_MS_PAGE_blufor">
+				<Original>BluFor</Original>
+				<English>BluFor</English>
+				<French>BluFor</French>
+			</Key>
+			<Key ID="STR_MRH_FILL_MS_PAGE_opfor">
+				<Original>OpFor</Original>
+				<English>OpFor</English>
+				<French>OpFor</French>
+			</Key>
+			<Key ID="STR_MRH_FILL_MS_PAGE_ind">
+				<Original>Independents</Original>
+				<English>Independents</English>
+				<French>Indépendants</French>
+			</Key>
+			<Key ID="STR_MRH_FILL_MS_PAGE_civs">
+				<Original>Civilians</Original>
+				<English>Civilians</English>
+				<French>Civils</French>
+			</Key>
+			<Key ID="STR_MRH_FILL_RemainingUnitsPerSide">
+				<Original>Remaining units for*: </Original>
+				<English>Remaining units for: </English>
+				<French>Unités restantes pour le camps:</French>
+			</Key>
+			<Key ID="STR_MRH_FILL_NOTINCLUDINGPLAYERS">
+				<Original>* doesn't include players</Original>
+				<English>* doesn't include players</English>
+				<French>*Ne comprend pas les joueurs</French>
+			</Key>
+			<Key ID="STR_MRH_FILL_MS_PAGE_THEREWERE">
+				<Original>There were</Original>
+				<English>There were</English>
+				<French>Il y avait</French>
+			</Key>
+						<Key ID="STR_MRH_FILL_MS_PAGE_PLAYERSATSTARTUP">
+				<Original>players at mission start</Original>
+				<English>players at mission start</English>
+				<French>joueurs au départ</French>
+			</Key>
+						<Key ID="STR_MRH_FILL_MS_PAGE_Percentplayerdead">
+				<Original>percent dead players</Original>
+				<English>percent dead players</English>
+				<French>pourcent(s) de joueurs morts.</French>
+			</Key>
+			<Key ID="STR_MRH_FILL_MS_PAGE_YOUAREPLAYING">
+				<Original>You are playing mission:</Original>
+				<English>You are playing mission:</English>
+				<French>Vous jouez la mission:</French>
+			</Key>
+						<Key ID="STR_MRH_FILL_MS_PAGE_thereareCur">
+				<Original>There are curently:</Original>
+				<English>There are curently:</English>
+				<French>Il-y-a actuellement:</French>
+			</Key>
+						<Key ID="STR_MRH_FILL_MS_PAGE_playersonthisserver">
+				<Original>players online</Original>
+				<English>players online</English>
+				<French>joueur sur le serveur</French>
+			</Key>
+						<Key ID="STR_MRH_FILL_MS_PAGE_playersgonesincemssstart">
+				<Original>players have left the server since mission start.</Original>
+				<English>players have left the server since mission start.</English>
+				<French>joueurs ont quitté le serveur depuis le début de la mission.</French>
+			</Key>
+						<Key ID="STR_MRH_FILL_MS_PAGE_DuringMission">
+				<Original>During the mission</Original>
+				<English>During the mission</English>
+				<French>pendant la mission</French>
+			</Key>
+						<Key ID="STR_MRH_FILL_MS_PAGE_PercentDiedOverall">
+				<Original>percent players have died, including players that have left the server</Original>
+				<English>percent players have died, including players that have left the server</English>
+				<French>pourcent(s) de joueurs sont morts, en incluant ceux qui ont quitté le serveur</French>
+			</Key>
+			<Key ID="STR_MRH_FILL_MS_PAGE_MissionTitleName">
+				<Original>Mission name:</Original>
+				<English>Mission name:</English>
+				<French>Nom de la mission:</French>
+			</Key>
+			<Key ID="STR_MRH_FILL_MS_PAGE_TimeSpentMissStart">
+				<Original>time since mission start:</Original>
+				<English>time since mission start:</English>
+				<French>temps écoulé depuis le début de la mission:</French>
+			</Key>
+			<Key ID="STR_MRH_FILL_PL_PAGE_NO_PL_SEL">
+				<Original>No player selected</Original>
+				<English>No player selected</English>
+				<French>Pas de joueur selectionné</French>
+			</Key>
+			<Key ID="STR_MRH_FILL_PL_PAGE_YOUHAVESELECTED">
+				<Original>You have selected</Original>
+				<English>You have selected</English>
+				<French>Vous avez selectionné</French>
+			</Key>
+			<Key ID="STR_MRH_FILL_PL_PAGE_ROLE">
+				<Original>Role:</Original>
+				<English>Role:</English>
+				<French>Rôle:</French>
+			</Key>
+			<Key ID="STR_MRH_FILL_PL_PAGE_GRP">
+				<Original>Group:</Original>
+				<English>Group:</English>
+				<French>Groupe:</French>
+			</Key>
+			<Key ID="STR_MRH_FILL_PL_PAGE_RANK">
+				<Original>Rank:</Original>
+				<English>Rank:</English>
+				<French>Grade:</French>
+			</Key>
+			<Key ID="STR_MRH_FILL_PL_PAGE_RADIOF">
+				<Original>Radio frequency:</Original>
+				<English>Radio frequency:</English>
+				<French>Fréquence radio:</French>
+			</Key>
+			<Key ID="STR_MRH_FILL_PL_LIST_TOOLTIP">
+				<Original>rank: %1 group: %2 frequency: %3</Original>
+				<English>rank: %1 group: %2 frequency: %3</English>
+				<French>grade: %1 groupe: %2 fréquence radio: %3</French>
+			</Key>
+			<Key ID="STR_MRH_ADMIN_SETHASDIEDALLSYSTEMCHAT">
+				<Original>all players' has died variable were reset</Original>
+				<English>all players' has died variable were reset</English>
+				<French>La variable 'has died de tous les joueurs' a été réinitialisée</French>
+			</Key>
+			<Key ID="STR_MRH_ADMIN_SINGLEHEALSYSTEMCHAT">
+				<Original>player %1 has been healed</Original>
+				<English>player %1 has been healed</English>
+				<French>le joueur %1 a été soigné</French>
+			</Key>
+			<Key ID="STR_MRH_SINGLERESETHASDIEDSYSTEMCHAT">
+				<Original>%1 's 'hasDied' variable has been reset</Original>
+				<English>%1 's 'hasDied' variable has been reset</English>
+				<French>la variable 'hasDied' de %1 a été réinitialisée</French>
+			</Key>
+		</Container>
+			
+			
+		</Container>
 	</Package>
 </Project>

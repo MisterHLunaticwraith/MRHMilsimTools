@@ -139,4 +139,11 @@ called on server only by cba post init eventhandlers
 		
 	"MRH_MilsimTools_Core_PlayerDied" addPublicVariableEventHandler _handler;
 	"MRH_MilsimTools_Core_PlayerRevived" addPublicVariableEventHandler _handler;
+	
+	//delete bodies of disconnected players
+	addMissionEventHandler ["HandleDisconnect", 
+	{
+	params ["_unit", "_id", "_uid", "_name"];
+	deleteVehicle _unit;
+	}];
 };

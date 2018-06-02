@@ -14,4 +14,4 @@ call MRH_fnc_MilsimTools_Admin_SetHasDiedAll;
 }forEach allPlayers;
 
 FUNC(RefreshPlayersList);
-systemchat "all players' has died variable were reset";
+systemchat (localize "STR_MRH_ADMIN_SETHASDIEDALLSYSTEMCHAT");

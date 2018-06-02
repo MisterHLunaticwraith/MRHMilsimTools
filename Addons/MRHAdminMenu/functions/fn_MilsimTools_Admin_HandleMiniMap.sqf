@@ -21,8 +21,15 @@ params ["_player"];
 	_markerName = str _player;
 	createMarkerLocal [_markerName , [(position _player) select 0,(position _player) select 1]];
 	_markerName setMarkerTypeLocal "MRH_Admin_PositionMarker";
-	while {_player == _player && ctrlShown _mapCtrl} do 
+	_playerUid = lbdata [1500,(lbCurSel 1500)];
+	_playerSelected = [_playerUid] call MRH_fnc_MilsimTools_Core_FindPlayerByUID;
+	while 
 	{
+	_player == _playerSelected && ctrlShown _mapCtrl
+	} do 
+	{
+	_playerUid = lbdata [1500,(lbCurSel 1500)];
+	_playerSelected = [_playerUid] call MRH_fnc_MilsimTools_Core_FindPlayerByUID;
 	_markerName setMarkerPosLocal [(position _player) select 0,(position _player) select 1];
 	_mapCtrl ctrlmapAnimAdd [0, 0.1, markerPos _markerName];
 	ctrlmapAnimCommit _mapCtrl;

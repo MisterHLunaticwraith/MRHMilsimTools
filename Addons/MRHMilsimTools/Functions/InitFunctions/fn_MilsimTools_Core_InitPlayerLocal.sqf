@@ -7,6 +7,7 @@ Public: No
 Parameters: None 
 Example(s):
 called from cba post init eventhandlers, clientside only
+
 MRH_fnc_MilsimTools_Core_InitPlayerLocal;
 */
 #include "MRH_C_Path.hpp"
@@ -95,3 +96,11 @@ if (didJip) then {
 		};
 	};
 };
+//respawn eventhandlers kept here for future use
+/*
+_EHrsp = player addEventHandler ["Respawn", {
+	params ["_unit", "_corpse"];
+	
+
+}];
+*/

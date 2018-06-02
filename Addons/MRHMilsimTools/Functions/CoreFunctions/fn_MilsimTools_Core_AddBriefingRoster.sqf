@@ -12,7 +12,7 @@ call MRH_fnc_MilsimTools_Core_AddBriefingRoster;
 
 _parameters = call MRH_fnc_MilsimTools_Core_ApplyRosterTextSettings;
 _rosterText =  _parameters call MRH_fnc_MilsimTools_Core_GenerateRosterText;
-copyToClipboard _rosterText;
+
 _convert = [_rosterText,"t font","font face"] call CBA_fnc_replace;
 _convert = [_convert, "t color", "font color"] call CBA_fnc_replace;
 _convert = [_convert, "<img image=", "<img width='15' height='15' image="] call CBA_fnc_replace;
