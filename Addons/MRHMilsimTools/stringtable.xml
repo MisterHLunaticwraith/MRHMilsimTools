@@ -28,6 +28,11 @@
 				<English>A punishment is due!</English>
 				<French>ça mérite bien une petite fessée!</French>
 			</Key>
+			<Key ID="STR_MRH_MS_DATA_RECEIVED">
+				<Original>Data received</Original>
+				<English>Data received</English>
+				<French>Données reçues</French>
+			</Key>
 		</Container>
 		<Container name="InitFunctions">
 			<Key ID="STR_MRH_MS_SPAWNDEADMESSAGE">
@@ -127,7 +132,16 @@
 				<English>When enabled bodies of disconnecting players will be removed</English>
 				<French>Si ce réglage est activé les corps des joueurs qui se deconnectent seront supprimés</French>
 			</Key>
-
+			<Key ID="STR_MRH_CBA_TABLET_ALLOWMAPPRETTY">
+				<Original>Allow map on tablet</Original>
+				<English>Allow map on tablet</English>
+				<French>Autoriser la carte sur la tablette</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_TABLET_ALLOWMAPTOOLTIP">
+				<Original>If disabled the map tab will be hidden on the tablet</Original>
+				<English>If disabled the map tab will be hidden on the tablet</English>
+				<French>Désactiver pour cacher l'onglet carte sur la tablette</French>
+			</Key>
 
 
 		</Container>

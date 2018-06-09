@@ -42,3 +42,12 @@ class MRH_Punishment
 		duration = 5;
 		priority = 1;
 };
+
+class MRH_Data_Received
+{
+		title = $STR_MRH_MS_DATA_RECEIVED;
+		description = "%1";
+		iconPicture="\MRHMilSimTools\Paa\data.paa";
+		duration = 5;
+		priority = 1;
+};

@@ -53,3 +53,6 @@ _script	Script to execute when setting is changed.  (optional) <CODE>
 ["MRH_MilsimTools_Roster_ColorCiv", "COLOR",   [localize "STR_MRH_COLOR_CIVPRETTY",localize "STR_MRH_COLOR_TOOLTIP"], "MRH_MilsimTools - Roster settings",[0.686,0.141,0.588,1],1] call cba_settings_fnc_init;
 //colorunknown
 ["MRH_MilsimTools_Roster_ColorUnknown", "COLOR",   [localize "STR_MRH_COLOR_UKPRETTY",localize "STR_MRH_COLORUKTOOLTIP"], "MRH_MilsimTools - Roster settings",[0.929,0.82,0.118,1],1] call cba_settings_fnc_init;
+//=======Below are settings for the tablet
+//Settings to kill deadplayersupon reconnecting
+["MRH_MilsimTools_AllowMapTablet", "CHECKBOX",   [localize "STR_MRH_CBA_TABLET_ALLOWMAPPRETTY",localize "STR_MRH_CBA_TABLET_ALLOWMAPTOOLTIP"], "MRH_MilsimTools - Tablet settings",true,1] call cba_settings_fnc_init;

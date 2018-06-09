@@ -37,6 +37,8 @@ class MRH // Defines the "owner"
 		{};
 		class MilsimTools_Core_SortGroupsBySide 
 		{};
+		class MilsimTools_Core_SortUnitsBySide 
+		{};
 		class MilsimTools_Core_GenerateRosterText
 		{};
 		class MilsimTools_Core_ApplyRosterTextSettings
