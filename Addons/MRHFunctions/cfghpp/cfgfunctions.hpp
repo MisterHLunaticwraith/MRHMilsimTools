@@ -1,16 +1,4 @@
-class TGV
-{
-		class TGVVideoFunctions // category
-	{
-	tag = "TGV";
-	file = "\MRHFunctions\Functions\TGVVideo";
-		class SplashVideoSkippable		//class myfunction
-		{};
-		class SplashVideoUnSkippable //class myfunction
-		{};
 
-	};		
-};
 class MRH // Defines the "owner"
 {
 	class InitFunctions // category
