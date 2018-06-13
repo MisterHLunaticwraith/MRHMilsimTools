@@ -26,14 +26,14 @@ call MRH_fnc_MilsimTools_SoldierTab_StartTimer;
 	_totalTimePretty = [_totalTime,"HH:MM:SS"] call BIS_fnc_secondsToString;
 	_totalTimePretty = "<t size = '2' color = '#ff9900'>" + _totalTimePretty + "</t>";
 
-	_timerText = "<img size = '2' image ='" + PAAPATH(countdown.paa) +"'/>" + "Timer app.";
+	_timerText = "<img size = '2' image ='" + PAAPATH(countdown.paa) +"'/>" + (localize "STR_MRH_ST_FC_TimerApp");
 
 	if(ctrlshown FDIS(7702)) then {FDIS(7702) ctrlSetStructuredText parseText (_timerText + "<br/>" + _totalTimePretty);};
 	};
 	_totalTimePretty = [0,"HH:MM:SS"] call BIS_fnc_secondsToString;
 	_totalTimePretty = "<t size = '2' color = '#ff9900'>" + _totalTimePretty + "</t>";
 
-	_timerText = "<img size = '2' image ='" + PAAPATH(countdown.paa) +"'/>" + "Timer app.";
+	_timerText = "<img size = '2' image ='" + PAAPATH(countdown.paa) +"'/>" + (localize "STR_MRH_ST_FC_TimerApp");
 	if(ctrlshown FDIS(7702)) then {FDIS(7702) ctrlSetStructuredText parseText (_timerText + "<br/>" + _totalTimePretty);};
 	_isStillRunning = PLGVAR(timerIsRunning);
 	if (_isStillRunning) then {

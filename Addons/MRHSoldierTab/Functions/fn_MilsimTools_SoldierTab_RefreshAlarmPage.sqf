@@ -16,7 +16,7 @@ ctrlShow [_x,true];
 }ForEach _pageSpecificCtrls;
 
 //refreshes the stopwatch
-_chronoText = "<img size = '2' image ='" + PAAPATH(stopwatch.paa) +"'/>" + "Stopwatch app.";
+_chronoText = "<img size = '2' image ='" + PAAPATH(stopwatch.paa) +"'/>" + (localize "STR_MRH_ST_FC_StopWatchApp");
 _resumeTime = player getVariable ["MRH_SoldierTab_StopWatchStoppedAt",0];
 _runTimePretty = [_resumeTime,"HH:MM:SS.MS"] call BIS_fnc_secondsToString;
 _runTimePretty = "<t size = '2' color = '#ff9900'>" + _runTimePretty + "</t>";
@@ -24,11 +24,11 @@ if(ctrlshown FDIS(7707)) then {FDIS(7707) ctrlSetStructuredText parseText _runTi
 FDIS(7701) ctrlSetStructuredText parseText _chronoText;
 
 //refreshes the timerzone
-_timerText = "<img size = '2' image ='" + PAAPATH(countdown.paa) +"'/>" + "Timer app.";
+_timerText = "<img size = '2' image ='" + PAAPATH(countdown.paa) +"'/>" + (localize "STR_MRH_ST_FC_TimerApp");
 FDIS(7702) ctrlSetStructuredText parseText _timerText;
 
 //refreshes the alarmzone
-_alarmText = "<img size = '2' image ='" + PAAPATH(alarm.paa) +"'/>" + "Alarm app.";
+_alarmText = "<img size = '2' image ='" + PAAPATH(alarm.paa) +"'/>" + (localize "STR_MRH_ST_FC_AlarmApp");
 
 
 _isAlarmRunning = player getVariable ["MRH_SoldierTab_runningAlarmScript", scriptNull];

@@ -11,5 +11,5 @@ call MRH_fnc_MilsimTools_SoldierTab_TerminateAlarm;
 #include "MRH_C_Path.hpp"
 _script= player getVariable ["MRH_SoldierTab_runningAlarmScript",scriptNull];
 if !(isNull _script) then {terminate _script;};
-_alarmText = "<img size = '2' image ='" + PAAPATH(alarm.paa) +"'/>" + "Alarm app.";
+_alarmText = "<img size = '2' image ='" + PAAPATH(alarm.paa) +"'/>" + (localize "STR_MRH_ST_FC_AlarmApp");
 FDIS(7703) ctrlSetStructuredText parseText _alarmText;

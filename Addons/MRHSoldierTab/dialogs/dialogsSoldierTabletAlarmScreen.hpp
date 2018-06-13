@@ -6,7 +6,7 @@ class ChronoTextZone: RscStructuredTextMRHSoldierTab
 	CBB;
 	FS;
 	MVT;
-	text = "Set chronometer here";
+	text = "";
 	x = 0.29375 * safezoneW + safezoneX;
 	y = 0.247 * safezoneH + safezoneY;
 	w = 0.20625 * safezoneW;
@@ -18,7 +18,7 @@ class TimerTextZone: RscStructuredTextMRHSoldierTab
 	CBB;
 	FS;
 	MVT;
-	text = "Set timer here";
+	text = "";
 	x = 0.29375 * safezoneW + safezoneX;
 	y = 0.412 * safezoneH + safezoneY;
 	w = 0.355781 * safezoneW;
@@ -30,7 +30,7 @@ class AlarmTextZone: RscStructuredTextMRHSoldierTab
 	CBB;
 	FS;
 	MVT;
-	text = "Set alarm here";
+	text = "";
 	x = 0.29375 * safezoneW + safezoneX;
 	y = 0.577 * safezoneH + safezoneY;
 	w = 0.355781 * safezoneW;

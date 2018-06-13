@@ -12,10 +12,10 @@ call MRH_fnc_MilsimTools_SoldierTab_SendData;
 [] spawn {
 #include "MRH_C_Path.hpp"
 _receiver = lbData [8202,(lbCurSel 8202)];
-if (_receiver == "") ExitWith {hint "no player selected"};
+if (_receiver == "") ExitWith {hint (localize "STR_MRH_ST_FC_NoPlayerSelected")};
 _pics = player getVariable ["MRH_SoldierTab_ownedPics",[]];
 _data = player getVariable ["MRH_SoldierTab_ownedData",[]];
-if ((_pics isEqualTo []) &&(_data isEqualTo [])) ExitWith {hint "No data or pictures to share"};
+if ((_pics isEqualTo []) &&(_data isEqualTo [])) ExitWith {hint (localize "STR_MRH_ST_FC_NothingToShare")};
 _ctrls = [8203,8204];
 ctrlShow [8205,false];
 {
@@ -23,7 +23,7 @@ ctrlShow [8205,false];
 } forEach _ctrls;
 _progressBar = FDIS(8203);
 _transferText = FDIS(8204);
-_transferText ctrlSetStructuredText parsetext "Transfering data";
+_transferText ctrlSetStructuredText parsetext (localize "STR_MRH_ST_FC_TransferingData");
 for "_i" from 1 to 100 do 
 {
 _progressBar progressSetPosition (_i/100);

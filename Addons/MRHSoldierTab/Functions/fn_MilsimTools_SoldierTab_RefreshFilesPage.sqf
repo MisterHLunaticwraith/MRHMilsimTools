@@ -19,7 +19,7 @@ _ctrlText = FDIS(1209);
 _allDataEntries = player getVariable ["MRH_SoldierTab_ownedData",[]];
 
 tvClear 1208;
-if (_allDataEntries isEqualTo []) ExitWith {_ctrlText ctrlSetStructuredText parseText "No data to display"};
+if (_allDataEntries isEqualTo []) ExitWith {_ctrlText ctrlSetStructuredText parseText (localize "STR_MRH_ST_FC_NoData")};
 {
 _treeBranchTitle = gettext (missionConfigFile>>"MRH_SoldierTabData">>_x>>"title");
 
@@ -39,4 +39,4 @@ _mainEntry = _x;
 	}forEach _subSections;
 
 } forEach _allDataEntries;
-_ctrlText ctrlSetStructuredText parsetext "Please select file";
+_ctrlText ctrlSetStructuredText parsetext (localize "STR_MRH_ST_FC_PleaseSelectFile");

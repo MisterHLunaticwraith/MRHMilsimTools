@@ -17,7 +17,7 @@ ctrlShow [_x,true];
 _parameters = CFUNC(ApplyRosterTextSettings);
 _rosterText =  _parameters CFUNC(GenerateRosterText);
 _ctrlRst = FDIS(1210);
-_introText = "<t size = '2'><t color='#ffa42d'>" + "TEAM ROSTER" + "</t></t>";
+_introText = "<t size = '2'><t color='#ffa42d'>" + (localize "STR_MRH_ST_FC_TeamRoster") + "</t></t>";
 _rosterText = _introText + "<br/><br/>" + _rosterText;
 _ctrlRst ctrlSetStructuredText parseText _rosterText;
 CTRLRSZ(1210);

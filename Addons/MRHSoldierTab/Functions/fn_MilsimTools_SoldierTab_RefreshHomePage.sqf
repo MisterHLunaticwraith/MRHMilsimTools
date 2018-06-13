@@ -46,11 +46,11 @@ _playerRole = _playerIntel select 1;
 _playerRF = _playerIntel select 2;
 _rankLoc = _rankIntel select 0;
 _rankPaa = _rankIntel select 1;
-_roleText =  "Your role:" + " " +"<t color='#ffa42d'>" + _playerRole + "</t>";
-_rankText = "Your rank:" + " " + "<t color='#ffa42d'>" +_rankLoc + "</t>" + "<img image='"+ _RankPaa +"' />";
-_grpText = "Your group:" + " " + "<t color='#ffa42d'>" +_playerGRP + "</t>";
-_radioFrText = "Your radio frequency is:" + " " + "<t color='#ffa42d'>" +_playerRF+ "</t>";
-_playerText ="Welcome to your personal field assistant,"+" "+ name player+ "<br/><br/>" + _roleText +"<br/>" + _rankText +"<br/>" + _grpText +"<br/>" + _radioFrText;
+_roleText = (localize "STR_MRH_ST_FC_YourRole") + " " +"<t color='#ffa42d'>" + _playerRole + "</t>";
+_rankText = (localize "STR_MRH_ST_FC_YourRank") + " " + "<t color='#ffa42d'>" +_rankLoc + "</t>" + "<img image='"+ _RankPaa +"' />";
+_grpText = (localize "STR_MRH_ST_FC_YourGrp") + " " + "<t color='#ffa42d'>" +_playerGRP + "</t>";
+_radioFrText = (localize "STR_MRH_ST_FC_YourRF") + " " + "<t color='#ffa42d'>" +_playerRF+ "</t>";
+_playerText =(localize "STR_MRH_ST_FC_WelcomeMess")+" "+ name player+ "<br/><br/>" + _roleText +"<br/>" + _rankText +"<br/>" + _grpText +"<br/>" + _radioFrText;
 FDIS(1203) ctrlSetStructuredText parseText _playerText;
 CTRLRSZ(1203);
 //set grp text

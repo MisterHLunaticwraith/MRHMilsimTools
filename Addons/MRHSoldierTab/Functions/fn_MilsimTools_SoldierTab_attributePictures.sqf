@@ -22,7 +22,7 @@ if (isPlayer _receiver) then
  _playerUid = getPlayerUID _receiver;
 		[_playerUid,
 	{
-		["MRH_Data_Received",["You have received new pictures, please check your tablet."]] call BIS_fnc_showNotification;
+		["MRH_Data_Received",[localize "STR_MRH_ST_FC_PictureNotif"]] call BIS_fnc_showNotification;
 
 	},[]] call MRH_fnc_MilsimTools_Core_RemoteFor;
 };

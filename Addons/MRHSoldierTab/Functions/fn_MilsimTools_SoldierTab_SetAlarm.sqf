@@ -32,7 +32,7 @@ _return = "";
 _strH = DIGITS(_hours);
 _strM = DIGITS(_minutes);
 _strS = DIGITS(_seconds);
-_alarmText = "<img size = '2' image ='" + PAAPATH(alarm.paa) +"'/>" + "Alarm app." + "<br/>" + "Next alarm set at:" +"          "+
+_alarmText = "<img size = '2' image ='" + PAAPATH(alarm.paa) +"'/>" + (localize "STR_MRH_ST_FC_AlarmApp") + "<br/>" + (localize "STR_MRH_ST_FC_NextAlarmAt") +"          "+
 "<t size = '2' color = '#ff9900'>" + _strH +":"+ _strM +":"+ _strS + "</t>";
 FDIS(7703) ctrlSetStructuredText parseText _alarmText;
 PLSVAR(nextAlarmText,_alarmText,false);
@@ -53,7 +53,7 @@ PLSVAR(nextAlarmText,_alarmText,false);
 	FDIS(7703) ctrlSetStructuredText parseText "";
 	sleep 0.5;
 	};
-	_alarmText = "<img size = '2' image ='" + PAAPATH(alarm.paa) +"'/>" + "Alarm app.";
+	_alarmText = "<img size = '2' image ='" + PAAPATH(alarm.paa) +"'/>" + (localize "STR_MRH_ST_FC_AlarmApp");
 	FDIS(7703) ctrlSetStructuredText parseText _alarmText;
 	};
 	PLSVAR(runningAlarmScript,_scriptHandle,false);

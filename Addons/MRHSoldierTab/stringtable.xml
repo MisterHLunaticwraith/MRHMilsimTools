@@ -1,0 +1,131 @@
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Project name="MRHSoldierTablet">
+	<Package name="MRHSoldierTablet">
+		<Container name="ConfigCPP">
+			<Key ID="STR_MRH_ST_">
+				<Original></Original>
+				<English></English>
+				<French></French>
+			</Key>
+		</Container>
+		<Container name="CFGVEH">
+			<Key ID="STR_MRH_ST_ACE_EQUIPOPENPDA">
+				<Original>Use P.D.A.</Original>
+				<English>Use P.D.A.</English>
+				<French>Utiliser la tablette.</French>
+			</Key>
+		</Container>
+		<Container name="TabletDialogs">
+			<Key ID="STR_MRH_ST_SendDataButton">
+				<Original>Send data</Original>
+				<English>Send data</English>
+				<French>Envoyer les données</French>
+			</Key>
+		</Container>
+		<Container name="FUNCTIONS">
+			<Key ID="STR_MRH_ST_FC_DataNotif">
+				<Original>You have received new data, please check your tablet.</Original>
+				<English>You have received new data, please check your tablet.</English>
+				<French>Vous avez reçu de nouvelles données, disponibles dans votre tablette.</French>
+			</Key>
+			<Key ID="STR_MRH_ST_FC_PictureNotif">
+				<Original>You have received new pictures, please check your tablet.</Original>
+				<English>You have received new pictures, please check your tablet.</English>
+				<French>Vous avez reçu de nouvelles images, disponibles dans votre tablette.</French>
+			</Key>
+			<Key ID="STR_MRH_ST_FC_StopWatchApp">
+				<Original>Stopwatch app.</Original>
+				<English>Stopwatch app.</English>
+				<French>Application chronomètre</French>
+			</Key>
+			<Key ID="STR_MRH_ST_FC_TimerApp">
+				<Original>Timer app.</Original>
+				<English>Timer app.</English>
+				<French>Application compte à rebour</French>
+			</Key>
+			<Key ID="STR_MRH_ST_FC_AlarmApp">
+				<Original>Alarm app.</Original>
+				<English>Alarm app.</English>
+				<French>Application alarme</French>
+			</Key>
+			<Key ID="STR_MRH_ST_FC_NoData">
+				<Original>No data to display</Original>
+				<English>No data to display</English>
+				<French>Aucune donnée à afficher</French>
+			</Key>
+			<Key ID="STR_MRH_ST_FC_PleaseSelectFile">
+				<Original>Please select file</Original>
+				<English>Please select file</English>
+				<French>Veuillez selectionner un fichier</French>
+			</Key>
+			<Key ID="STR_MRH_ST_FC_TeamRoster">
+				<Original>TEAM ROSTER</Original>
+				<English>TEAM ROSTER</English>
+				<French>FEUILLE D'EQUIPE</French>
+			</Key>
+			<Key ID="STR_MRH_ST_FC_YourRole">
+				<Original>Your role:</Original>
+				<English>Your role:</English>
+				<French>Votre rôle:</French>
+			</Key>
+			<Key ID="STR_MRH_ST_FC_YourRank">
+				<Original>Your rank:</Original>
+				<English>Your rank:</English>
+				<French>Votre grade:</French>
+			</Key>
+			<Key ID="STR_MRH_ST_FC_YourGrp">
+				<Original>Your group:</Original>
+				<English>Your group:</English>
+				<French>Votre groupe:</French>
+			</Key>
+			<Key ID="STR_MRH_ST_FC_YourRF">
+				<Original>Your radio frequency is:</Original>
+				<English>Your radio frequency is:</English>
+				<French>Votre fréquence radio est:</French>
+			</Key>
+			<Key ID="STR_MRH_ST_FC_WelcomeMess">
+				<Original>Welcome to your personal field assistant,</Original>
+				<English>Welcome to your personal field assistant,</English>
+				<French>Bienvenue dans votre assistant personnel,</French>
+			</Key>
+			<Key ID="STR_MRH_ST_FC_NoDataStored">
+				<Original>No data stored</Original>
+				<English>No data stored</English>
+				<French>Aucune donnée enregistrée</French>
+			</Key>
+			<Key ID="STR_MRH_ST_FC_NoPlayerSelected">
+				<Original>no player selected</Original>
+				<English>no player selected</English>
+				<French>pas de joueur sélectionné</French>
+			</Key>
+			<Key ID="STR_MRH_ST_FC_NothingToShare">
+				<Original>No data or pictures to share</Original>
+				<English>No data or pictures to share</English>
+				<French>Pas de données ou d'images à partager</French>
+			</Key>
+			<Key ID="STR_MRH_ST_FC_TransferingData">
+				<Original>Transfering data</Original>
+				<English>Transfering data</English>
+				<French>Transfer en cours</French>
+			</Key>
+			<Key ID="STR_MRH_ST_FC_NextAlarmAt">
+				<Original>Next alarm set at:</Original>
+				<English>Next alarm set at:</English>
+				<French>Prochaine alarme à:</French>
+			</Key>			
+		</Container>
+		<Container name="CFGGWEAPONSTABLET">
+			<Key ID="STR_MRH_CFGWP_TabletDisplayName">
+				<Original>P.D.A.</Original>
+				<English>P.D.A.</English>
+				<French>Tablette numérique</French>
+			</Key>
+			<Key ID="STR_MRH_CFGWP_TabletDescription">
+				<Original>Digital tablet used to access various data</Original>
+				<English>Digital tablet used to access various data.</English>
+				<French>Tablette numérique utilisée pour accéder à différentes données.</French>
+			</Key>
+		</Container>
+	</Package>
+</Project>

@@ -26,7 +26,7 @@ lbClear 1206;
 
 if (_picsToDisplay isEqualTo []) ExitWith
 {
-_index = _picsListBox lbAdd "No data stored";
+_index = _picsListBox lbAdd (localize "STR_MRH_ST_FC_NoDataStored");
 _picsListBox lbSetData [_index,PAAPATH(nodata.paa)];
 _picsListBox lbSetSelected [_index, true]; 
 FDIS(1207) ctrlSetText PAAPATH(nodata.paa);

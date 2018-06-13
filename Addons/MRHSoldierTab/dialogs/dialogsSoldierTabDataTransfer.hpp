@@ -60,7 +60,7 @@ class TransferButton: RscButtonMRHSoldierTab
 	idc = 8205;
 	MVT;
 	FS;
-	text = "Send data";
+	text = $STR_MRH_ST_SendDataButton;
 	action = "call MRH_fnc_MilsimTools_SoldierTab_SendData;";
 	tooltip = "This will send all your data to the given player (Pictures and data)";
 	x = 0.546406 * safezoneW + safezoneX;

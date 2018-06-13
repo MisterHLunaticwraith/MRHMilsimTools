@@ -1,9 +1,9 @@
 class CfgPatches {
 	class SoldierTab{
 		units[] = {}; //
-		weapons[] = {}; //
+		weapons[] = {"MRH_SoldierTab"}; //
 		requiredVersion = 0.1; //
-		requiredAddons[] = {"cba_settings","MRHMilsimTools"}; //
+		requiredAddons[] = {"cba_settings","MRHMilsimTools","A3_Modules_F"}; //
 	};
 };
 
@@ -20,6 +20,11 @@ class cfgSounds
 {
 	#include "\MRHSoldierTab\cfghpp\cfgsounds.hpp"
 };
+
+class cfgVehicles
+{
+	#include "\MRHSoldierTab\cfghpp\cfgvehicles.hpp"
+};
 class Extended_PostInit_EventHandlers
 {
    
@@ -34,3 +39,7 @@ class Extended_PostInit_EventHandlers
    };
 };
 
+class CfgWeapons
+{
+	#include "\MRHSoldierTab\models\Tablet\tablet.hpp"
+};
