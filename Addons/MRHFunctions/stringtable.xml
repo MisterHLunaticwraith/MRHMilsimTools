@@ -111,5 +111,12 @@
 				<French>Appareil électronique utilisé pour effectuer des piratages</French>
 		</Key>
 		</Container>
+		<Container name="MRH_Elevator_stuff">
+			<Key ID="STR_MRH_EL_CallElev">
+				<Original>Take elevator</Original>
+				<English>Take elevator</English>
+				<French>Prendre l'ascenseur</French>
+			</Key>
+		</Container>
 	</Package>
 </Project>
