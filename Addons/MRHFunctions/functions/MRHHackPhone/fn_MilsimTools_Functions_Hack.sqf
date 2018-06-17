@@ -72,6 +72,8 @@ if (_noGo) ExitWith {};
 	if (_progress >= 1) then {_hacking = false; hint (localize "STR_MRH_HP_HackComplete"); _display closedisplay 2;
 	[_sourceobject,0,["ACE_MainActions","hack"]] remoteExecCall ["ace_interact_menu_fnc_removeActionFromObject", 0, true];
 	missionnamespace setVariable [_HackName, true,true];
+	_codeToRun = _sourceobject GVAR(hackCodeToRun);
+	[] spawn _codeToRun;
 	//publicVariable _HackName;
 	//publicVariableServer _HackName;
 	playSOund "MRH_Functions_biptimer";

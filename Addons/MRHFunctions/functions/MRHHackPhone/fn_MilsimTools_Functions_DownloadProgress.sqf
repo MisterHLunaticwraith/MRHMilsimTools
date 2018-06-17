@@ -90,6 +90,8 @@ if (_noGo) ExitWith {};
 	if (_progress >= 1) then {_downloading = false; hint (localize "STR_MRH_HP_DlFinished"); _display closedisplay 2;
 	[_sourceobject,0,["ACE_MainActions","download"]] remoteExecCall ["ace_interact_menu_fnc_removeActionFromObject", 0, true];
 	missionnamespace setVariable [_FileName, true,true];
+	_codeToRun = _sourceobject GVAR(codeToRun);
+	[] spawn _codeToRun;
 	//publicVariable _FileName;
 	//publicVariableServer _FileName;
 	};
