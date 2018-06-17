@@ -22,7 +22,7 @@ _object setVariable ["MRH_SearchObjectReturnedVar",_varName, true];
 
 
 _action =["Fouiller", 
-" Fouiller l'objet.",
+(localize "STR_MRH_FC_AceActionPretty"),
  "\MRHFunctions\img\search.paa", 
  { 
  _object = _this select 0;
@@ -34,9 +34,9 @@ _action =["Fouiller",
 				_object = (_this select 0) select 0;
 				
 				_FinalVar = _object getVariable "MRH_SearchObjectReturnedVar";
-				if (_FinalVar == "DummySearch") then {hint "Recherche terminée, vous n'avez rien trouvé.";} else {
+				if (_FinalVar == "DummySearch") then {hint (localize "STR_MRH_FC_HintNothingFound");} else {
 				_string = _object getVariable "MRH_SearchObject_stringFoundThing";
-				hint format ["Vous avez trouvé: %1", _string];
+				hint format [(localize "STR_MRH_FC_HintSmthingFound"), _string];
 				missionNameSpace setVariable [_FinalVar,true,true];
 				publicVariable _FinalVar;
 				publicVariableServer _FinalVar;
@@ -46,8 +46,8 @@ _action =["Fouiller",
 				[_object,0,["ACE_MainActions","Fouiller"]] remoteExecCall ["ace_interact_menu_fnc_removeActionFromObject", 0, true];
 				
 				},
-				{hint "Recherche annulée."},
-				"Vous êtes en train de fouiller l'objet."
+				{hint (localize "STR_MRH_FC_SearchCanceled")},
+				(localize "STR_MRH_FC_SearchInProgress")
 
 
 				] call ace_common_fnc_progressBar;

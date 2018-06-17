@@ -3,25 +3,28 @@ class CfgPatches {
 		units[] = {}; //
 		weapons[] = {}; //
 		requiredVersion = 0.1; //
-		requiredAddons[] = {}; //
+		requiredAddons[] = {"cba_settings","MRHMilsimTools"}; //
 	};
 };
 
 //////=========cfgFunctions========
 class CfgFunctions
 {
-	#include "\MRHFunctions\cfghpp\cfgfunctions.hpp"
+	#include "\MRHFunctions\functions\cfgfunctions.hpp"
 };
 ////=============fincfgFunctions
 
 /////=========cfgSounds==========
 class CfgSounds
 {
-	#include "\MRHFunctions\cfghpp\cfgsounds.hpp"
+	#include "\MRHFunctions\sounds\cfgsounds.hpp"
 };
 ////=============fincfgSounds=====
 
-
+class cfgWeapons
+{
+	#include "\MRHFunctions\models\hackphone\hackphone.hpp"
+};
 ////=====================FinDesCFG=================================================
 
 
@@ -33,14 +36,6 @@ class CfgSounds
 #include "\MRHFunctions\dialogsHPP\dialogsHACKPHONE.hpp"
 /////////////////======Fin Ressources MRHRoster
 
-///==========FINcomposants des menusCORE====
-///==========composants des menusCORE====
-/*template
-/////////////////======Ressources MRHRoster
-#include "\\MRHFunctions\dialogsHPP\definesROSTER.hpp"
-#include "\\MRHFunctions\dialogsHPP\dialogsROSTER.hpp"
-/////////////////======Fin Ressources MRHRoster
-*/
 ///==========FINcomposants des menusCORE====
 
 

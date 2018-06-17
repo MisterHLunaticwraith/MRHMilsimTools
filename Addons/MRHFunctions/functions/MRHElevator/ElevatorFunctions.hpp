@@ -1,0 +1,2 @@
+class Elevator		//class myfunction
+{};

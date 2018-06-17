@@ -142,6 +142,17 @@
 				<English>If disabled the map tab will be hidden on the tablet</English>
 				<French>Désactiver pour cacher l'onglet carte sur la tablette</French>
 			</Key>
+			<Key ID="STR_MRH_RequireHackingToolPretty">
+				<Original>Require hacking tool</Original>
+				<English>Require hacking tool</English>
+				<French>Outil de piratage obligatoire</French>
+			</Key>
+			<Key ID="STR_MRH_RequireHackingToolTip">
+				<Original>If enabled hacking will require the player to have a hacking tool in their inventory to perform hacks and download hackable content.</Original>
+				<English>If enabled hacking will require the player to have a hacking tool in their inventory to perform hacks and download hackable content.</English>
+				<French>Si ce réglage est activé seul les joueurs possedant un outil de piratage dans leur inventaire pourront utiliser la fonction de piratage et de téléchargement de données piratées</French>
+			</Key>
+
 
 
 		</Container>

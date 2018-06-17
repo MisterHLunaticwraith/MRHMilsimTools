@@ -15,7 +15,7 @@ class MRHHackPhone
 // GUI EDITOR OUTPUT START (by Mr H., v1.063, #Marova)
 ////////////////////////////////////////////////////////
 
-class MRHHackPhoneFrame: RscPicture
+class MRHHackPhoneFrame: RscPictureMRHHackPhone
 {
 	idc = 1200;
 	text = "\MRHFunctions\img\hackphone\hackphone.paa";
@@ -24,7 +24,7 @@ class MRHHackPhoneFrame: RscPicture
 	w = 0.170625 * safezoneW;
 	h = 0.504 * safezoneH;
 };
-class MRHphonescreen: RscPicture
+class MRHphonescreen: RscPictureMRHHackPhone
 {
 	idc = 1201;
 	text = "\MRHFunctions\img\hackphone\download.paa";
@@ -33,7 +33,7 @@ class MRHphonescreen: RscPicture
 	w = 0.150937 * safezoneW;
 	h = 0.49 * safezoneH;
 };
-class MRHProgressBar: RscProgress
+class MRHProgressBar: RscProgressMRHHackPhone
 {
 	idc = 1202;
 	//onLoad = "((_this select 0) displayCtrl 1202) progressSetPosition 0.5";
@@ -43,7 +43,7 @@ class MRHProgressBar: RscProgress
 	w = 0.091875 * safezoneW;
 	h = 0.028 * safezoneH;
 };
-class MRHFileSize: RscStructuredText
+class MRHFileSize: RscStructuredTextMRHHackPhone
 {
 	idc = 1203;
 	text = "FileSize";
@@ -52,7 +52,7 @@ class MRHFileSize: RscStructuredText
 	w = 0.0590625 * safezoneW;
 	h = 0.014 * safezoneH;
 };
-class MRHDownloadSpeed: RscStructuredText
+class MRHDownloadSpeed: RscStructuredTextMRHHackPhone
 {
 	idc = 1204;
 	text = "DownloadSpeed";
@@ -61,7 +61,7 @@ class MRHDownloadSpeed: RscStructuredText
 	w = 0.0590625 * safezoneW;
 	h = 0.014 * safezoneH;
 };
-class MRHDownloaded: RscStructuredText
+class MRHDownloaded: RscStructuredTextMRHHackPhone
 {
 	idc = 1205;
 	text = "Downloaded";
@@ -70,7 +70,7 @@ class MRHDownloaded: RscStructuredText
 	w = 0.0590625 * safezoneW;
 	h = 0.014 * safezoneH;
 };
-class MRHSignal: RscPicture
+class MRHSignal: RscPictureMRHHackPhone
 {
 	idc = 1206;
 	text = "\MRHFunctions\img\hackphone\fullsignal.paa";

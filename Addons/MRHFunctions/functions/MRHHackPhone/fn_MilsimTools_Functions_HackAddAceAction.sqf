@@ -1,14 +1,26 @@
-_object = _this select 0;
+/*
+Function name:MRH_fnc_
+Author: Mr H.
+Description:
+Return value:
+Public:
+Parameters:
+Example(s):
+call ;
+*/
+#include "MRH_C_Path.hpp"
+params ["_object"];
+
 
 _statement = {
 _object = _this select 0;
-[_object] execVM "\MRHFunctions\scripts\scr_Hack.sqf";
+[_object] FUNC(Hack);
 
 };
 
 _action =
 ["hack", 
-" Pirater",
+(localize "STR_MRH_HP_AceHack"),
  "\MRHFunctions\img\icons\hack.paa", 
  
 _statement 

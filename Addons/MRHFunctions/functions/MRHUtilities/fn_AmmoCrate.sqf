@@ -99,7 +99,7 @@ _statement =
 	] RemoteExec ["Spawn",0,true];
 	//_params call MRH_fnc_AmmoCrate;
 	};
-_action = ["RefreshBoxContents", "Actualiser le contenu de la boîte.","", _statement , {true},{},[],[0,0,0], 5] call ace_interact_menu_fnc_createAction;
+_action = ["RefreshBoxContents",(localize "STR_MRH_FC_RefreshCrateContent"),"", _statement , {true},{},[],[0,0,0], 5] call ace_interact_menu_fnc_createAction;
 [_box, 0, ["ACE_MainActions"], _action] call ace_interact_menu_fnc_addActionToObject; 
 
 

@@ -1,0 +1,115 @@
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Project name="MRHFunctions">
+	<Package name="MRHFunctions">
+		<Container name="func_ammocrate">
+			<Key ID="STR_MRH_FC_RefreshCrateContent">
+				<Original>Refresh crate content</Original>
+				<English>Refresh crate content</English>
+				<French>Actualiser le contenu de la boîte.</French>
+			</Key>
+		</Container>
+		<Container name="func_searchobject">
+			<Key ID="STR_MRH_FC_AceActionPretty">
+				<Original>Search object</Original>
+				<English>Search object</English>
+				<French>Fouiller l'objet</French>
+			</Key>
+			<Key ID="STR_MRH_FC_HintNothingFound">
+				<Original>Search over, you haven't found anything.</Original>
+				<English>Search over, you haven't found anything.</English>
+				<French>Recherche terminée, vous n'avez rien trouvé.</French>
+			</Key>
+			<Key ID="STR_MRH_FC_HintSmthingFound">
+				<Original>You have found %1</Original>
+				<English>You have found %1</English>
+				<French>Vous avez trouvé: %1</French>
+			</Key>
+			<Key ID="STR_MRH_FC_SearchCanceled">
+				<Original>Search canceled</Original>
+				<English>Search canceled</English>
+				<French>Recherche annulée.</French>
+			</Key>
+			<Key ID="STR_MRH_FC_SearchInProgress">
+				<Original>You are searching</Original>
+				<English>You are searching</English>
+				<French>Vous êtes en train de fouiller l'objet.</French>
+			</Key>
+			
+		</Container>
+				<Container name="HackPhone">
+			<Key ID="STR_MRH_HP_DLFile">
+				<Original>Download file</Original>
+				<English>Download file</English>
+				<French> Télécharger le fichier.</French>
+			</Key>
+			<Key ID="STR_MRH_HP_SizeColumn">
+				<Original>Size:</Original>
+				<English>Size:</English>
+				<French>Taille:</French>
+			</Key>
+			<Key ID="STR_MRH_HP_SpeedColumn">
+				<Original>Speed:</Original>
+				<English>Speed:</English>
+				<French>Vitesse:</French>
+			</Key>
+			<Key ID="STR_MRH_HP_ReceivedColumn">
+				<Original>Received:</Original>
+				<English>Received:</English>
+				<French>Reçu:</French>
+			</Key>
+			<Key ID="STR_MRH_HP_SgnalLost">
+				<Original>Signal lost</Original>
+				<English>Signal lost</English>
+				<French>Signal perdu</French>
+			</Key>
+			<Key ID="STR_MRH_HP_DlFinished">
+				<Original>Download complete</Original>
+				<English>Download complete</English>
+				<French>Téléchargement terminé</French>
+			</Key>
+			<Key ID="STR_MRH_HP_HackInprogress">
+				<Original>Hacking</Original>
+				<English>Hacking</English>
+				<French>Piratage en cours.</French>
+			</Key>
+			<Key ID="STR_MRH_HP_HackComplete">
+				<Original>Hack complete</Original>
+				<English>Hack complete</English>
+				<French>Piratage terminé</French>
+			</Key>
+			<Key ID="STR_MRH_HP_AceHack">
+				<Original>Hack</Original>
+				<English>Hack</English>
+				<French>Pirater</French>
+			</Key>
+			<Key ID="STR_MRH_HP_HintToolIsRequired">
+				<Original>This action requires a hacking tool</Original>
+				<English>This action requires a hacking tool</English>
+				<French>Cette action necessite un outil de piratage</French>
+			</Key>
+			<Key ID="STR_MRH_HP_">
+				<Original></Original>
+				<English></English>
+				<French></French>
+			</Key>
+			<Key ID="STR_MRH_HP_">
+				<Original></Original>
+				<English></English>
+				<French></French>
+			</Key>
+		</Container>
+		<Container name="CfgWeaps">
+			<Key ID="STR_MRH_HP_HackphoneDisplayName">
+				<Original>Hacking tool</Original>
+				<English>Hacking tool</English>
+				<French>Outil de piratage</French>
+		</Key>
+		<Key ID="STR_MRH_HP_HackphoneDescShort">
+				<Original>A small electronic device used to hack electronic devices</Original>
+				<English>A small electronic device used to hack electronic devices</English>
+				<French>Appareil électronique utilisé pour effectuer des piratages</French>
+		</Key>
+		</Container>
+	</Package>
+</Project>
