@@ -7,7 +7,13 @@ it returns an array of players that are still "virtualy" alive
 eg
 _survivingplayers = call MRH_fnc_AllAlivePlayers; // returns an array in theform [survivingplayer1",survivingplayer2, etc]
 */
-
+#include "MRH_C_Path.hpp"
+_regAlive = PLAYERREGISTRY_ALIVE;
 _allSurvivors = [];
-{_check = _x getVariable "HasDied"; if !(_check) then { _allSurvivors pushBackUnique _x}} forEach allplayers;
+{
+	_playerID = _x select 0;
+	_player = [_playerID] CFUNC(findPlayerByUID);
+	_allSurvivors pushBackUnique _player;
+} forEach _regAlive;
 _allSurvivors
+

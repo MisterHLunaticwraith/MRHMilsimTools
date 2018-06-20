@@ -1,0 +1,244 @@
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Project name="MRHMarkers">
+	<Package name="MRHMarkers">
+		<Container name="MarkerDisplayNames">
+			<Key ID="STR_MRH_MK_EditorCat">
+				<Original>MRH MilsimTools Markers</Original>
+				<English>MRH MilsimTools Markers</English>
+				<French>Marqueurs MRH Milsim Tools</French>
+			</Key>
+			<Key ID="STR_MRH_MK_AircraftC">
+				<Original>Aircraft carrier</Original>
+				<English>Aircraft carrier</English>
+				<French>Porte-avions</French>
+			</Key>
+			<Key ID="STR_MRH_MK_Airport">
+				<Original>Airport</Original>
+				<English>Airport</English>
+				<French>Aéroport</French>
+			</Key>
+			<Key ID="STR_MRH_MK_IED">
+				<Original>IED</Original>
+				<English>IED</English>
+				<French>Dispositif explosif</French>
+			</Key>
+			<Key ID="STR_MRH_MK_Ordnance">
+				<Original>Ordnance</Original>
+				<English>Ordnance</English>
+				<French>Bombardement</French>
+			</Key>
+			<Key ID="STR_MRH_MK_ChangeClothes">
+				<Original>Change clothes</Original>
+				<English>Change clothes</English>
+				<French>Se changer</French>
+			</Key>
+			<Key ID="STR_MRH_MK_Download">
+				<Original>Download</Original>
+				<English>Download</English>
+				<French>Télécharger</French>
+			</Key>
+			<Key ID="STR_MRH_MK_Drink">
+				<Original>Drink</Original>
+				<English>Drink</English>
+				<French>Boire</French>
+			</Key>
+			<Key ID="STR_MRH_MK_FighterJet">
+				<Original>Fighter jet</Original>
+				<English>Fighter jet</English>
+				<French>Avion de combat</French>
+			</Key>
+			<Key ID="STR_MRH_MK_Free">
+				<Original>Free</Original>
+				<English>Free</English>
+				<French>Libérer</French>
+			</Key>
+			<Key ID="STR_MRH_MK_Group">
+				<Original>Group</Original>
+				<English>Group</English>
+				<French>Groupe</French>
+			</Key>
+			<Key ID="STR_MRH_MK_Hack">
+				<Original>Hack</Original>
+				<English>Hack</English>
+				<French>Pirater</French>
+			</Key>
+			<Key ID="STR_MRH_MK_Heli">
+				<Original>Heli</Original>
+				<English>Heli</English>
+				<French>Helicoptère</French>
+			</Key>
+			<Key ID="STR_MRH_MK_Antenna">
+				<Original>Antenna</Original>
+				<English>Antenna</English>
+				<French>Antenne</French>
+			</Key>
+			<Key ID="STR_MRH_MK_Connect">
+				<Original>Connect</Original>
+				<English>Connect</English>
+				<French>Connecter</French>
+			</Key>
+			<Key ID="STR_MRH_MK_Spawner">
+				<Original>Vehicle spawn</Original>
+				<English>Vehicle spawn</English>
+				<French>Spawn de véhicule</French>
+			</Key>
+			<Key ID="STR_MRH_MK_InVeh">
+				<Original>Get in</Original>
+				<English>Get in</English>
+				<French>Embarquer</French>
+			</Key>
+			<Key ID="STR_MRH_MK_Teleport">
+				<Original></Original>
+				<English></English>
+				<French></French>
+			</Key>
+			<Key ID="STR_MRH_MK_Laptop">
+				<Original>Laptop</Original>
+				<English>Laptop</English>
+				<French>Ordinateur</French>
+			</Key>
+			<Key ID="STR_MRH_MK_Lift">
+				<Original>Elevator</Original>
+				<English>Elevator</English>
+				<French>Ascenseur</French>
+			</Key>
+			<Key ID="STR_MRH_MK_Medical">
+				<Original>Medevac zone</Original>
+				<English>Medevac zone</English>
+				<French>Zone médicale</French>
+			</Key>
+			<Key ID="STR_MRH_MK_Mine">
+				<Original>Mine</Original>
+				<English>Mine</English>
+				<French>Mine</French>
+			</Key>
+			<Key ID="STR_MRH_MK_Mortar">
+				<Original>Mortar</Original>
+				<English>Mortar</English>
+				<French>Mortier</French>
+			</Key>
+			<Key ID="STR_MRH_MK_Paradrop">
+				<Original>Airdrop</Original>
+				<English>Airdrop</English>
+				<French>Parachutage</French>
+			</Key>
+			<Key ID="STR_MRH_MK_RadioCall">
+				<Original>Radio</Original>
+				<English>Radio</English>
+				<French>Radio</French>
+			</Key>
+			<Key ID="STR_MRH_MK_Officer">
+				<Original>Officer</Original>
+				<English>Officer</English>
+				<French>Officier</French>
+			</Key>
+			<Key ID="STR_MRH_MK_Refuel">
+				<Original>Fuel supply</Original>
+				<English>Fuel supply</English>
+				<French>Station essence</French>
+			</Key>
+			<Key ID="STR_MRH_MK_Repack">
+				<Original>Repack</Original>
+				<English>Repack</English>
+				<French>Repack</French>
+			</Key>
+			<Key ID="STR_MRH_MK_Repair">
+				<Original>Repair</Original>
+				<English>Repair</English>
+				<French>Réparer</French>
+			</Key>
+			<Key ID="STR_MRH_MK_Resupply">
+				<Original>Resupply</Original>
+				<English>Resupply</English>
+				<French>Réapprovisionement</French>
+			</Key>
+			<Key ID="STR_MRH_MK_Satellite">
+				<Original>Satellite</Original>
+				<English>Satellite</English>
+				<French>Satellite</French>
+			</Key>
+			<Key ID="STR_MRH_MK_Search">
+				<Original>Search</Original>
+				<English>Search</English>
+				<French>Fouiller</French>
+			</Key>
+			<Key ID="STR_MRH_MK_Sniper">
+				<Original>Sniper</Original>
+				<English>Sniper</English>
+				<French>Sniper</French>
+			</Key>
+			<Key ID="STR_MRH_MK_Speak">
+				<Original>Speak</Original>
+				<English>Speak</English>
+				<French>Parler</French>
+			</Key>
+			<Key ID="STR_MRH_MK_SpecOps">
+				<Original>Spec ops</Original>
+				<English>Spec ops</English>
+				<French>Spec ops</French>
+			</Key>
+			<Key ID="STR_MRH_MK_Start">
+				<Original>Start</Original>
+				<English>Start</English>
+				<French>Départ</French>
+			</Key>
+			<Key ID="STR_MRH_MK_Target">
+				<Original>Target</Original>
+				<English>Target</English>
+				<French>Cible</French>
+			</Key>
+			<Key ID="STR_MRH_MK_Training">
+				<Original>Training</Original>
+				<English>Training</English>
+				<French>Formation</French>
+			</Key>
+			<Key ID="STR_MRH_MK_Uav">
+				<Original>UAV</Original>
+				<English>UAV</English>
+				<French>Drone</French>
+			</Key>
+			<Key ID="STR_MRH_MK_Unlock">
+				<Original>Unlock</Original>
+				<English>Unlock</English>
+				<French>Dévérrouiller</French>
+			</Key>
+			<Key ID="STR_MRH_MK_Briefing">
+				<Original>Briefing</Original>
+				<English>Briefing</English>
+				<French>Briefing</French>
+			</Key>
+			<Key ID="STR_MRH_MK_">
+				<Original></Original>
+				<English></English>
+				<French></French>
+			</Key>
+			<Key ID="STR_MRH_MK_">
+				<Original></Original>
+				<English></English>
+				<French></French>
+			</Key>
+			<Key ID="STR_MRH_MK_">
+				<Original></Original>
+				<English></English>
+				<French></French>
+			</Key>
+			<Key ID="STR_MRH_MK_">
+				<Original></Original>
+				<English></English>
+				<French></French>
+			</Key>
+			<Key ID="STR_MRH_MK_">
+				<Original></Original>
+				<English></English>
+				<French></French>
+			</Key>
+			<Key ID="STR_MRH_MK_">
+				<Original></Original>
+				<English></English>
+				<French></French>
+			</Key>
+			
+		</Container>
+	</Package>
+</Project>

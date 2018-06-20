@@ -9,9 +9,9 @@ class CfgPatches {
 
 	class CfgMarkerClasses
 	{
-		class TGVMarkers
+		class MRHMarkers
 		{
-		displayName = "Marqueurs TGV";
+		displayName = $STR_MRH_MK_EditorCat;
 		};
 	};
 
