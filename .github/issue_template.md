@@ -21,7 +21,7 @@
 NO SUPPORT FOR SP, please make sure that you are using the mod in MP even when testing in the editor.
 NO SUPPORT FOR OUTDATED Version, 
 please make sure that you are using latest version especially if you use a repacked version or armasync version.
-Though repacking and redistributing this mod is allowed without asking for my explicit conscent,
+Though repacking and redistributing this mod is allowed without asking for my explicit consent,
  I will offer support only for the original version distributed on the steam workshop.
 
 **RPT log file:**
