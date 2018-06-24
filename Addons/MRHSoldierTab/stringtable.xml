@@ -127,5 +127,17 @@
 				<French>Tablette numérique utilisée pour accéder à différentes données.</French>
 			</Key>
 		</Container>
+		<Container name="COLLECTDATAFUNC">
+			<Key ID="STR_MRH_ST_FC_CollectDataACE">
+				<Original>Collect data</Original>
+				<English>Collect data</English>
+				<French>Récupérer les données</French>
+			</Key>
+			<Key ID="STR_MRH_ST_FC_HintNeedTab">
+				<Original>You need to have a PDA to collect this data</Original>
+				<English>You need to have a PDA to collect this data</English>
+				<French>Vous avez besoin d'un PDA pour récupérer les données</French>
+			</Key>
+		</Container>
 	</Package>
 </Project>

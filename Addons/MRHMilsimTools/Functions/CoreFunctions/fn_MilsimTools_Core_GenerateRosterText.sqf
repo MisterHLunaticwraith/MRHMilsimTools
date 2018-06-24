@@ -8,7 +8,7 @@ Parameters:
 0- <ARRAY> of <GROUPS> ==> groups to include in the roster
 1- <BOOLEAN> show AIs within those groups
 Example(s):
-_strucuredRosterText= [allgroups,true] call MilsimTools_Core_GenerateRosterText;
+_strucuredRosterText= [allgroups,true] call MRH_fnc_MilsimTools_Core_GenerateRosterText;
 */
 
 params ["_allGroups","_includeAI"];

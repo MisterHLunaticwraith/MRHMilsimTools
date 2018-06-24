@@ -96,11 +96,14 @@ if (didJip) then {
 		};
 	};
 };
-//respawn eventhandlers kept here for future use
-/*
-_EHrsp = player addEventHandler ["Respawn", {
-	params ["_unit", "_corpse"];
+_reinitUponRespawn = ["MRH_MilsimTools_ResetHasDiedOnRespawn"] call cba_settings_fnc_get;
+if (_reinitUponRespawn) then {
 	
 
-}];
-*/
+	_EHrsp = player addEventHandler ["Respawn", {
+		params ["_unit", "_corpse"];
+		[player] call MRH_fnc_MilsimTools_Core_SetRevived;
+
+	}];
+
+};

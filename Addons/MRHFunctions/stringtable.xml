@@ -118,5 +118,27 @@
 				<French>Prendre l'ascenseur</French>
 			</Key>
 		</Container>
+		<Container name="EndCreditsFunc">
+			<Key ID="STR_MRH_FC_EC_ITWASTEXT">
+				<Original>It was:</Original>
+				<English>It was:</English>
+				<French>C'était:</French>
+			</Key>
+			<Key ID="STR_MRH_FC_EC_AMISSIONBY">
+				<Original>A mission by:</Original>
+				<English>A mission by:</English>
+				<French>Une mission proposée par:</French>
+			</Key>
+			<Key ID="STR_MRH_FC_EC_SPECIALTHKS">
+				<Original>Special thanks:</Original>
+				<English>Special thanks:</English>
+				<French>Remerciements:</French>
+			</Key>
+			<Key ID="STR_MRH_FC_EC_STARRING">
+				<Original>Starring:</Original>
+				<English>Starring:</English>
+				<French>Avec dans leurs rôles respectifs:</French>
+			</Key>
+		</Container>
 	</Package>
 </Project>

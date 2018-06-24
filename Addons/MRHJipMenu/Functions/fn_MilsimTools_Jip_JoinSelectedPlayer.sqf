@@ -101,6 +101,7 @@ _selectedPlayerConverted = objNull;
 		player cameraEffect ["terminate","back"];
 		player allowDamage true;
 		player enableSimulation true;
+		player setVelocity [0,0,0];
 		//fully heal player just in case (low flying helis to ground spawn causes damage IDK why)
 		[player, player] call ACE_medical_fnc_treatmentAdvanced_fullHeal; 
 		//reset player "hasdied" variable, in case JIP menu is called to allow dead players back in

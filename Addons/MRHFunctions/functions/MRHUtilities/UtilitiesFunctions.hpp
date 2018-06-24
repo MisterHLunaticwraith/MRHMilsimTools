@@ -28,3 +28,7 @@ class simpleAceMessage
 {};
 class travelTimeEta
 {};
+class MoveInCargo
+{};
+class EndCredits
+{};

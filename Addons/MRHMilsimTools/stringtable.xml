@@ -152,7 +152,16 @@
 				<English>If enabled hacking will require the player to have a hacking tool in their inventory to perform hacks and download hackable content.</English>
 				<French>Si ce réglage est activé seul les joueurs possedant un outil de piratage dans leur inventaire pourront utiliser la fonction de piratage et de téléchargement de données piratées</French>
 			</Key>
-
+			<Key ID="STR_MRH_CBA_RESETRESPAWNHASDIEDPPRETTY">
+				<Original>Reset HASDIED on respawn</Original>
+				<English>Reset HASDIED on respawn</English>
+				<French>Réinitialiser le statut HASDIED au respawn</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_RESETRESPAWNHASDIEDTOOLTIP">
+				<Original>If enabled players will automatically be flagged as alive upon respawn. WARNING only use this setting if you are using a different respawn scheme than the usual respawn bunker milsim units use.</Original>
+				<English>If enabled players will automatically be flagged as alive upon respawn. WARNING only use this setting if you are using a different respawn scheme than the usual respawn bunker milsim units use.</English>
+				<French>Si ce réglage est activé les joueurs seront automatiquement marqués comme vivant après avoir respawné. ATTENTION, n'activez cette option que si vous utilisez un mode de respawn différent du respawn bunker habituellement utilisé par les teams milsims.</French>
+			</Key>
 
 
 		</Container>

@@ -3,9 +3,16 @@ class CfgPatches {
 		units[] = {}; //
 		weapons[] = {}; //
 		requiredVersion = 0.1; //
-		requiredAddons[] = {"cba_settings"}; //
+		requiredAddons[] = {"cba_settings"};
+
 	};
+		version = 1.0.0;
+		versionStr = "1.0.0";
+		versionAr[] = {1,0,0};
 };
+
+#include "\MRHMilSimTools\cfgSettings.hpp"
+
 class Extended_PreInit_EventHandlers
 {
    class MRHMilsimTools_CBA_Settings

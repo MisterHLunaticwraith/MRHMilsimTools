@@ -48,6 +48,8 @@ class MRH // Defines the "owner"
 		{};
 		class MilsimTools_SoldierTab_SendData
 		{};
+		class MilsimTools_SoldierTab_isDataCollectPoint
+		{};
 
 	};
 	

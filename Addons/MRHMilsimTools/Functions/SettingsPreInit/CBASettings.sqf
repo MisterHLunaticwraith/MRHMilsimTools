@@ -16,6 +16,8 @@ _script	Script to execute when setting is changed.  (optional) <CODE>
 
 //Settings to kill deadplayersupon reconnecting
 ["MRH_MilsimTools_AllowDeadReco", "CHECKBOX",   [localize "STR_MRH_MS_CBA_SET_ALLOWEDDEAD_PRETTYNAME",localize "STR_MRH_MS_CBA_SET_ALLOWEDDEAD_TOOLTIP"], "MRH_MilsimTools - Core settings",true,1] call cba_settings_fnc_init;
+//Settings to reset hasdied variable upon respawn
+["MRH_MilsimTools_ResetHasDiedOnRespawn", "CHECKBOX",   [localize "STR_MRH_CBA_RESETRESPAWNHASDIEDPPRETTY",localize "STR_MRH_CBA_RESETRESPAWNHASDIEDTOOLTIP"], "MRH_MilsimTools - Core settings",false,1] call cba_settings_fnc_init;
 //Slider for dead count
 ["MRH_MilsimTools_AdminCasualtiesCap", "SLIDER",   [localize "STR_MRH_MS_CBA_MAXKILLSLIDERPRETTY",localize "STR_MRH_MS_CBA_MAXKILLSLIDERTOOLTIP"], "MRH_MilsimTools - Core settings", [0, 100, 60, 0],1] call cba_settings_fnc_init;
 //setting for dead hint
