@@ -1,8 +1,15 @@
 /*
-this function replenishes a box with items set at init
-to use put in the init field:
+Function name:MRH_fnc_RefillBox
+Author: Mr H.
+Description: Refills given container object with the content it had at mission start every time it is opened, making it having infinite content.
+Return value: None
+Public:Yes
+Parameters:
+0- <OBJECT> - Container object
+Example(s):
 [this] call MRH_fnc_RefillBox;
 */
+
 params ["_box"];
 
 _ItemContent = getItemCargo _box;

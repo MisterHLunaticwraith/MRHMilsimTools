@@ -73,7 +73,7 @@ if (_noGo) ExitWith {};
 	[_sourceobject,0,["ACE_MainActions","hack"]] remoteExecCall ["ace_interact_menu_fnc_removeActionFromObject", 0, true];
 	missionnamespace setVariable [_HackName, true,true];
 	_codeToRun = _sourceobject GVAR(hackCodeToRun);
-	[] spawn _codeToRun;
+	[_sourceobject] spawn _codeToRun;
 	//publicVariable _HackName;
 	//publicVariableServer _HackName;
 	playSOund "MRH_Functions_biptimer";

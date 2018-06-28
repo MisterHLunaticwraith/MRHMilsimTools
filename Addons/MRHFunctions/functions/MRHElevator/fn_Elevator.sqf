@@ -1,12 +1,14 @@
 /*
-Function name:MRH_fnc_
+Function name:MRH_fnc_Elevator
 Author: Mr H.
-Description:
-Return value:
-Public:
+Description: Adds ace 3 action to an object to serve as an elevator button, after a video cutscene the player is teleported to the location of the second object.
+Return value: None
+Public: Yes
 Parameters:
+0- <OBJECT> - Object that will serve as an access point / elevator switch.
+1 - <OBJECT> - Object that will serve as an arrival point, use an invisible helipad or some floor garbage for example. Can be placed in a building and on upper floors.
 Example(s):
-call ;
+[elevatorButton1,destinationObject] call MRH_fnc_Elevator;
 */
 #include "MRH_C_Path.hpp"
 params ["_object","_PointA"];

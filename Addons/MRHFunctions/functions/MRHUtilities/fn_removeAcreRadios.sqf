@@ -1,9 +1,13 @@
 /*
-MRH_RemoveAcreRadios
-author MR H.
-this script lists and removes all acre 2 radios from the unit's inventory and stores them in a variable for later.
-eg
-{[_x] call MRH_fnc_removeAcreRadios;} forEach ThisList;
+Function name:MRH_fnc_removeAcreRadios
+Author: Mr H.
+Description: Removes all acre 2 radios from the unit's inventory and stores them in a variable for later.
+Return value: None
+Public: Yes
+Parameters:
+0 - <OBJECT> - Unit to remove the radios to
+Example(s):
+[player] call MRH_fnc_removeAcreRadios;
 */
 params ["_unit"];
 _allItems = items _unit;

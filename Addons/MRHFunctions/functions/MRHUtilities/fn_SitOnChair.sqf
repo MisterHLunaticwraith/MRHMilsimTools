@@ -1,12 +1,17 @@
 /*
-this functiun sits a unit in MP
-params are unit, chair, condition, if condition is not set unit is left sitting undefinetly
-eg
-[cobaye, chair1, {(cobaye GetVariable "IsStanding") == 1}] call MRH_fnc_sitOnChair;
-[object,object,{code}] call MRH_fnc_sitOnChair;
-works properly with: "Land_CampingChair_V2_F","Land_ChairWood_F"
-toDO adapt with "Land_CampingChair_V1_F" and others// will require to rewrite a function like BisFnc_AMbient
+Function name:MRH_fnc_sitOnChair
+Author: Mr H.
+Description: Sits given unit on a chair, can be run from only one client and will work globally. The difference with Arma's default ambient animation function is that you can add a condition that will make the unit stand up.
+Return value: None
+Public: yes
+Parameters:
+0-<OBJECT> - Unit to sit
+1- <OBJECT> - Chair to sit the unit on (works properly with: "Land_CampingChair_V2_F","Land_ChairWood_F")
+2 - <CODE> -Optional, condition to let the unit stand, must be stated between {};
+Example(s):
+[cobaye, chair1, {(cobaye GetVariable "IsAllowedToStand") == 1}] call MRH_fnc_sitOnChair;
 */
+
 params ["_unit","_chair","_condition"];
 
 [[_unit,"SIT1", "ASIS", _chair], BIS_fnc_ambientAnim] remoteExec ["call"];
@@ -20,6 +25,3 @@ if (!isNil "_condition") then {
  waitUntil {(_unit call _cond)};
 [[_unit], BIS_fnc_ambientAnim__terminate] remoteExec ["call"];};
 };
-/*
-cobaye setDir (getdir chair2 +180)
-*/

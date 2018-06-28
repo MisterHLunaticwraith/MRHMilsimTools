@@ -1,10 +1,12 @@
 /*
-
-//MRH_fnc_removeNVGs
-
+Function name:MRH_fnc_removeNVGs
 Author: Mr H.
-this function lists all NVGs From config files, checks if they are in the given unit's inventory OR/AND NVG dedicated slot and removes them, stores them in a variable. 
-eg
+Description: this function lists all NVGs From config files, checks if they are in the given unit's inventory OR/AND NVG dedicated slot and removes them, stores them in a variable. 
+Return value:None
+Public: Yes
+Parameters:
+0 - <OBJECT> - Unit to remove NVGs from.
+Example(s):
 [player] call MRH_fnc_removeNVGs;
 */
 params ["_unit"];

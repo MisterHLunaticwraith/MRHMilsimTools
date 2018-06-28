@@ -9,7 +9,7 @@ Example(s):
 this function is called at preinit by cba pre init event handlers
 */
 
-//#include “\a3\editor_f\Data\Scripts\dikCodes.h”
+#include "\a3\editor_f\Data\Scripts\dikCodes.h"
 _statementTurnLeft =
 	{_cam = player getVariable "MRH_FiberScopeCam"; 
 	if (isNil "_cam") ExitWith {};
@@ -57,7 +57,7 @@ _exitKey = localize "STR_MRH_FS_EXITCAM";
 _exitKeyTooltip = localize "STR_MRH_FS_EXITCAM_TOOLTIP";
 
 
-["MRHFiberScope", "MRHFSKeyLeft",[_leftKey, _leftKeyToolTip],_statementTurnLeft,{},[DIK_Q, [false, false, false]]] call CBA_fnc_addKeybind;
-["MRHFiberScope", "MRHFSKeyRight",[_rightKey, _rightKeyTooltip],_statementTurnRight,{},[DIK_D, [false, false, false]]] call CBA_fnc_addKeybind;
+["MRHFiberScope", "MRHFSKeyLeft",[_leftKey, _leftKeyToolTip],_statementTurnLeft,{},[DIK_A, [false, false, false]]] call CBA_fnc_addKeybind;
+["MRHFiberScope", "MRHFSKeyRight",[_rightKey, _rightKeyTooltip],_statementTurnRight,{},[DIK_E, [false, false, false]]] call CBA_fnc_addKeybind;
 ["MRHFiberScope", "MRHFSToggleNV",[_toggleKey, _toggleKeyTooltip],_statementToggleNvgs,{},[DIK_N, [false, false, false]]] call CBA_fnc_addKeybind;
-["MRHFiberScope", "MRHFSClose",[_exitKey, _exitKeyTooltip],_statementExitFS,{},[DIK_Z, [false, false, false]]] call CBA_fnc_addKeybind;
+["MRHFiberScope", "MRHFSClose",[_exitKey, _exitKeyTooltip],_statementExitFS,{},[DIK_S, [false, false, false]]] call CBA_fnc_addKeybind;

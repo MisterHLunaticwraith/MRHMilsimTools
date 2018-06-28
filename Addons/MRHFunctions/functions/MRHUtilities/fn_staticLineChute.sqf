@@ -1,13 +1,15 @@
 /*
-REQUIRES ACE 3 & BACKPACK ON CHEST
-forces units to eject their plane and open parachute 3 seconds later to emulate a static line.
-gives the unit a chute and puts its backpack on chest before the jump
-Params are:
-0: units to equip <ARRAY>
-1: is steerable <BOOLEAN> if set to true parachute will be steerable (Optional, default FALSE)
-2: Delay between jumpers <NUMBER> optional delay in seconds between each jumper, (optional default 0.5s)
-
-eg
+Function name:MRH_fnc_staticLineChute
+Author: Mr H.
+Description: forces units to eject their plane and open parachute 3 seconds later to emulate a static line.
+gives the unit a chute and puts its backpack on chest before the jump. NOTE: this function requires the mod BACKPACK ON CHEST
+Return value: None
+Public: Yes
+Parameters:
+0-<ARRAY> - Units to parachute.
+1 - <BOOLEAN> - Optional - isSteerable if true the unit will receive a steerable parachute otherwise it will be non steerable, default, false.
+2 - <NUMBER> -Optional - space in seconds between each jumper, default 0.5
+Example(s):
 [playableUnits] call MRH_fnc_staticLineChute;
 or
 [units group player, true] call MRH_fnc_staticLineChute;
@@ -18,6 +20,7 @@ or
 or 
 [playableUnits, false, 2 ] call MRH_fnc_staticLineChute;
 */
+
 	params ["_jumpersArray","_isSteerable","_jumpInterval"];
 	if (isNil "_isSteerable") then {_isSteerable = false;};
 	if (isNil "_jumpInterval") then {_jumpInterval = 0.5};

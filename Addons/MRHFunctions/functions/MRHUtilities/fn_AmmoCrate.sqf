@@ -1,16 +1,18 @@
 /*
-this function gets all weapons currently present in all playable units' inventories and fills the box with fiiting ammunition for these weapons, it includes handguns and launchers.
-parameters are:
-[
-BOX, // the object to use as a box (must be a container) - object
-AMMOUNT, // optional the default quantity for each magazine, default is 10 - number
-ISUNLIMITED, // If true, the box will refill automatically whenever a player opens it -BOOLEAN
-CANBEREFESHED // If true players will get an ace addaction to refresh the contents with current weapons' magazines -BOOLEAN
-] call MRH_fnc_AmmoCrate;
-eg:
-
+Function name:MRH_fnc_MRH_fnc_AmmoCrate;
+Author: Mr H.
+Description: this function gets all weapons currently present in all playable units' inventories and fills the box with fiting ammunition for these weapons, it includes handguns and launchers. The box receives an ace 3 interaction that allows players to refresh its contents.
+Return value: None
+Public: Yes
+Parameters:
+0- <OBJECT> Box must be a container object
+1- <NUMBER> ammount of items, per item.
+2- <BOOLEAN> Content is unlimited, if true the box will be refilled everytime its inventory is opened.
+3- <BOOLEAN> Can be refreshed, if true the box's content can be refreshed useful if players change their weapons mid game. The box will receive an ACE 3 interaction action to refresh its contents. It makes the box's content unlimited. 
+Example(s):
 [this,10,true,true] call MRH_fnc_AmmoCrate;
 */
+
 
 params ["_box","_Ammount","_isUnlimited","_canBeRefreshed"];
 _PlayableUnits = [player];

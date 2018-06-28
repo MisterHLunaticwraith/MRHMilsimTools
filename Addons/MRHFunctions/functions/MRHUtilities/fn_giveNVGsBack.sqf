@@ -1,14 +1,14 @@
 /*
-
-MRH_fnc_giveNVGsBack
-
+Function name:MRH_fnc_giveNVGsBack
 Author: Mr H.
-this function recovers previously removed NVGs and gives them back, assigns them to the nvg slot if they where previously there
-eg
+Description: this function recovers previously removed NVGs and gives them back, assigns them to the nvg slot if they where previously there
+Return value: None
+Public: Yes
+Parameters:
+0 - <OBJECT> - Unit to give NVG's back to.
+Example(s):
 [player] MRH_fnc_giveNVGsBack;
 */
-
-
 params ["_unit"];
 //get all objects from cfgWeapons
 

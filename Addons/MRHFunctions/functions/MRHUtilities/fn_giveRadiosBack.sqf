@@ -1,11 +1,14 @@
 /*
-MRH_giveRadiosBack
-author MR H.
-this script restore's the unit's radios.
-{[_x] call MRH_fnc_giveRadiosBack.sqf";} forEach ThisList;
+Function name:MRH_fnc_giveRadiosBack
+Author: Mr H.
+Description: Restore's the unit's radios.
+Return value: None
+Public: Yes
+Parameters:
+0- <OBJECT> - Unit to give radios back to
+Example(s):
+[player] call MRH_fnc_giveRadiosBack;
 */
-params ["_trigger"];
-if (player inArea _trigger) ExitWith {};
 
-
-{player addItem _x} forEach (player getvariable "MRH_ACRE_PreviouslyEquipedRadio");
+params ["_unit"];
+{_unit addItem _x} forEach (_unit getvariable "MRH_ACRE_PreviouslyEquipedRadio");

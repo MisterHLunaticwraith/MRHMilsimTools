@@ -1,10 +1,16 @@
 /*
-this function displays a fullscreen picture for the given duration
-params are [pic,duration]
-Returns true when done
-eg
-["myprettypic.paa", 10] call MRH_fnc_SplashScreen
+Function name:MRH_fnc_SplashScreen
+Author: Mr H.
+Description: Displays a picture fullscreen for the given time.
+Return value: None
+Public: Yes
+Parameters:
+0- <STRING> - Path to the picture, the picture can be in .paa or .jpeg format.
+1- <NUMBER> - duration in seconds the picture will stay on screen.
+Example(s):
+["myprettypic.paa", 10] call MRH_fnc_SplashScreen;
 */
+
 
 params ["_picpath","_duration"];
 

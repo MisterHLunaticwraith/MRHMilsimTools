@@ -1,27 +1,33 @@
 /*
-This function adds an ace "search" action. Upon completion it creates a variable with the value "true" with given name
-Params are: 
-0 object, 
-1 variable name STRING, 
-2 text for what has been found
+Function name:MRH_fnc_SearchObject;
+Author: Mr H.
+Description: This function adds an ace "search" action to given object. Upon completion it creates a variable with the value "true" with given name and can execute some code, the action will be removed from object. Run with only one parameter will create an unsuccessful search.
+Return value: None
+Public: Yes
+Parameters:
+0- <OBJECT> - Object to add the action two. If only this parameter is set the search will be unsuccessful.
+1 - <STRING> - Optional - Variable name, a public variable with this name will be created, can be used to activate a trigger.
+2 -<STRING> - Optional or Mandatory if parameter 1 is defined, name of the thing that was found, will be displayed in a hint to inform the player they have found something.
+3 - <CODE> - Optional, code to execute when search is complete, source object is passed as a parameter.
+Example(s):
+[this, "objectFound","A screwdriver"] call MRH_fnc_SearchObject; // will create a GLOBAL variable objectFound upon search completion. And hint "You have found: A screwdriver"
+or
+[this, "intelFound","A top secret file",{deleteVehicle (_this select 0);}] call MRH_fnc_SearchObject; // will remove the object after use
 
-eg
-[this, "objectFound","Un tournevis"] call MRH_fnc_SearchObject; // will create a GLOBAL variable objectFound upon search completion. And hint "vous avez trouvé: Un tournevis"
 to make a "dummy search" just put the object parameter to call the function
 eg
-[this] call MRH_fnc_SearchObject; // will hint "Recherche terminée, vous n'avez rien trouvé." upon completion.
-
-PLEASE NOTE: 
-the action will be GLOBALLY removed from object upon completion.
-this function is not global, if you don't call it from init box or init.sqf you will have to do a remote exec call.
+[this] call MRH_fnc_SearchObject; // will hint "Search over, you haven't found anything" upon completion.
 */
-params ["_object","_varName","_foundThingName"];
+
+params ["_object","_varName","_foundThingName","_code"];
 if (isNil "_foundThingName") then {_varName = "DummySearch"} else {_object setVariable ["MRH_SearchObject_stringFoundThing", _foundThingName,true];};
+if (isNil "_code") then {_code = {};};
 _object setVariable ["MRH_SearchObjectReturnedVar",_varName, true];
+_object setVariable ["MRH_SearchObjectCodeToRun",_code,true];
 
 
 
-_action =["Fouiller", 
+_action =["MRH_SearchObj_Fouiller", 
 (localize "STR_MRH_FC_AceActionPretty"),
  "\MRHFunctions\img\search.paa", 
  { 
@@ -42,8 +48,9 @@ _action =["Fouiller",
 				publicVariableServer _FinalVar;
 				};
 				 
-				
-				[_object,0,["ACE_MainActions","Fouiller"]] remoteExecCall ["ace_interact_menu_fnc_removeActionFromObject", 0, true];
+				_code = _object getVariable "MRH_SearchObjectCodeToRun";
+				[_object,0,["ACE_MainActions","MRH_SearchObj_Fouiller"]] remoteExecCall ["ace_interact_menu_fnc_removeActionFromObject", 0, true];
+				[_object] spawn _code;
 				
 				},
 				{hint (localize "STR_MRH_FC_SearchCanceled")},

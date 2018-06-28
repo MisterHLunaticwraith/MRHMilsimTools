@@ -1,20 +1,20 @@
 /*
-this function makes a unit surrender when a player comes near enough
-parameters:
-0 unit <OBJECT> unit that will surrender
-1 diameter <NUMBER> diameter around the unit where the player need to get to make it surrender
-2 surrender message <STRING> message the unit will say in globalchat when when they surrender
-3 code to execute  <CODE> code to execute, _unit is passed as a parameter, code mus be stated between {}
-eg
-[this,5,"Je me rends"] call MRH_fnc_VipSurrender;
+Function name:MRH_fnc_VipSurrender
+Author: Mr H.
+Description: This function makes a unit surrender when a player comes near enough. Trigger is attached to the unit so this will work even on moving units, trigger is 2 meters high, so if the unit is on the upper floor of a building players will need to reach the same height. Triggers are created globaly, therefore the code will be called globally. Unit (parameter 0) is passed to the code.
+Return value: None
+Public: Yes
+Parameters:
+0 - <OBJECT> - Unit that will surrender
+1 - <NUMBER> - Distance from the unit under which they will surrender
+3 - <STRING> - Message to display when unit is captured, will be displayed in global chat, said by the unit.
+4 - <CODE> -Optional code to execute, _unit is passed as a parameter, code must be stated between {}
+Example(s):
+[this,5,"I surrender!"] call MRH_fnc_VipSurrender;
 or
-[this,5,"Je me rends", {_this setDamage 1; hint str _this;}] call MRH_fnc_VipSurrender;
-or
-[this,5,"Je me rends", {[_this] execVM "yourscript.sqf";}] call MRH_fnc_VipSurrender;
-
-PLEASE NOTE: trigger is attached to the unit so this will work even on moving units, trigger is 2 meters high, so if the unit is on the upper floor of a building players will need to reach the same height
-PLEASE NOTE: triggers are created globaly, therefore the code will be called globally. Code is called so it can't contain suspension (eg sleep), to use supension execute another script from code
+[this,10,"I will never surrender!", {(_this select 0) setDamage 1; hint str _this;}] call MRH_fnc_VipSurrender;
 */
+
 
 params ["_unit","_diameter","_message","_code"];
 _diameter = _diameter /2;
@@ -36,6 +36,6 @@ _code = _data select 2;
 _unit setCaptive true;
 _unit playMove 'ApanPknlMstpSnonWnonDnon_G03';
 _unit globalChat _message;
-_unit call _code;
+[_unit] spawn _code;
 "
 , ""];

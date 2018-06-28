@@ -91,7 +91,7 @@ if (_noGo) ExitWith {};
 	[_sourceobject,0,["ACE_MainActions","download"]] remoteExecCall ["ace_interact_menu_fnc_removeActionFromObject", 0, true];
 	missionnamespace setVariable [_FileName, true,true];
 	_codeToRun = _sourceobject GVAR(codeToRun);
-	[] spawn _codeToRun;
+	[_sourceobject] spawn _codeToRun;
 	//publicVariable _FileName;
 	//publicVariableServer _FileName;
 	};
