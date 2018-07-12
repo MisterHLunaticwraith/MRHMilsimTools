@@ -7,7 +7,6 @@ Public: No
 Parameters: None 
 Example(s):
 called from cba post init eventhandlers, clientside only
-
 MRH_fnc_MilsimTools_Core_InitPlayerLocal;
 */
 #include "MRH_C_Path.hpp"
@@ -44,8 +43,7 @@ _EHkilledIdx = player addEventHandler ["killed",
 	player setVariable ["MRH_MilsimTools_Core_HasDied", true, true];
 	
 	//Tells the server a player has died
-	MRH_MilsimTools_Core_PlayerDied = true;
-	publicVariableServer "MRH_MilsimTools_Core_PlayerDied";
+	[[],MRH_fnc_MilsimTools_Core_GenAliveAndDead] RemoteExec ["Call",0];
 	// shows hint to admin
 	[[],MRH_fnc_MilsimTools_Core_AdminDeadCount] RemoteExec ["Call",[0,-2] select isDedicated];
 	
@@ -106,4 +104,9 @@ if (_reinitUponRespawn) then {
 
 	}];
 
+};
+//ReRegister just in case
+[] spawn {
+	waitUntil {(player == player) && (!isNull (findDisplay 46))};
+	[[],MRH_fnc_MilsimTools_Core_GenAliveAndDead] RemoteExec ["Call",0];
 };

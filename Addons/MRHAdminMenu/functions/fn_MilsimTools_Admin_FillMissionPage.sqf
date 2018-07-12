@@ -60,7 +60,7 @@ lbSetData [2100, _index, _value];
 //displaymissioninfo
 _percentage = COUNT_CURDEAD/COUNT_ONLINE*100;
 _percentage = round _percentage;
-_starttext = (localize "STR_MRH_FILL_MS_PAGE_THEREWERE") +" "+"<t color='#26fc0a'>" + str COUNT_ALIVE +"</t>" +" " + (localize"STR_MRH_FILL_MS_PAGE_PLAYERSATSTARTUP");
+_starttext = (localize "STR_MRH_FILL_MS_PAGE_THEREWERE") +" "+"<t color='#26fc0a'>" + str COUNT_INIT +"</t>" +" " + (localize"STR_MRH_FILL_MS_PAGE_PLAYERSATSTARTUP");
 _percenttext = "<t color='#ff0022'>" + str _percentage +"</t>" + " " +(localize "STR_MRH_FILL_MS_PAGE_Percentplayerdead");
 _currentMissionText = (localize "STR_MRH_FILL_MS_PAGE_YOUAREPLAYING") + " " +"<t color='#ffa42d'>" + missionname +"</t><br/>" + (localize "STR_MRH_FILL_MS_PAGE_thereareCur") + " " + "<t color='#ffa42d'>"+ str (count allplayers)+"</t>" + " " +(localize "STR_MRH_FILL_MS_PAGE_playersonthisserver");
 _Disconnected = "<t color='#ff0022'>" +str COUNT_OFFLINE +"</t>" + " " + (localize "STR_MRH_FILL_MS_PAGE_playersgonesincemssstart");

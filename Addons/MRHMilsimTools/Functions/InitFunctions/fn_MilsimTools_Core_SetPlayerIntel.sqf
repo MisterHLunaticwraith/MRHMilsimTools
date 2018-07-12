@@ -56,4 +56,4 @@ call MRH_fnc_MilsimTools_Core_SetPlayerIntel;
 		_x setVariable ["MRH_MilsimTools_Core_PlayerIntel",[_group,_role,_radioFrequency],true];
 		};
 	};
-}  forEach playableUnits
+}  forEach playableUnits;

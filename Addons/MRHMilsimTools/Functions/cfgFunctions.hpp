@@ -51,6 +51,15 @@ class MRH // Defines the "owner"
 		{};
 		class MilsimTools_Core_CutsceneToPlayer
 		{};
+		/*
+		class MilsimTools_Core_RegisterNewPlayer
+		{};
+		*/
+		class MilsimTools_Core_GenAllOnline
+		{};
+		class MilsimTools_Core_GenAliveAndDead
+		{};
+		
 		
 	};
 	

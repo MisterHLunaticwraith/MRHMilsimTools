@@ -32,7 +32,7 @@ ctrlShow [_x,true];
 } forEach _ctrlToShow;
 
 
-FUNC(RefreshPlayersList);
+//FUNC(RefreshPlayersList);
 
 _playerNameTextZone = FDIS(1106);
 _playerNameText = (localize "STR_MRH_FILL_PL_PAGE_YOUHAVESELECTED") + " " + "<t color='#ffa42d'>" + name _player + "</t>";
