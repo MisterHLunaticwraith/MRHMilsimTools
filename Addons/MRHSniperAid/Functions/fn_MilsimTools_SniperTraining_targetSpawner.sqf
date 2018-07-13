@@ -1,3 +1,14 @@
+/*
+Function name:MRH_fnc_MilsimTools_SniperTraining_targetSpawner
+Author: Mr H.
+Description: Opens and fills the spawner interface
+Return value: None
+Public: No
+Parameters:None
+Example(s):
+call MRH_fnc_MilsimTools_SniperTraining_targetSpawner;
+*/
+#include "MRH_C_Path.hpp"
 _source = _this;
 disableSerialization;
 createDialog "MRHTargetSpawner";
@@ -26,7 +37,8 @@ player setPos (call compile _pos);
 };
 */
 
-_allTargets = getarray (missionconfigfile>>"cfgMRHTargets">> "allTargets");
+//_allTargets = getarray (missionconfigfile>>"cfgMRHTargets">> "allTargets");
+_allTargets = [(missionconfigFile >> "cfgMRHTargets")]call BIS_fnc_getCfgSubClasses;
 {
 private ["_index"];
 _index = lbadd [2100,gettext (missionConfigFile >> "cfgMRHTargets">> _x >> "prettyname")];
@@ -56,4 +68,4 @@ lbSetData [2102,_index, _x select 0];
 } forEach _allSpeedModes;
 //onEachFrame {systemChat  lbData [2102,lbCurSel 2102];};
 
-buttonSetAction [1601,"call MRH_fnc_SpawnTarget;"];
+buttonSetAction [1601,"call MRH_fnc_MilsimTools_SniperTraining_SpawnTarget;"];

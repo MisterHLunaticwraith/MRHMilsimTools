@@ -14,7 +14,7 @@ class MRHTargetSpawner
 // GUI EDITOR OUTPUT START (by Mr H., v1.063, #Wavuti)
 ////////////////////////////////////////////////////////
 
-class MRHGuiBack: IGUIBack
+class MRHGuiBack: IGUIBackMRHTargetSpawner
 {
 	idc = 2200;
 
@@ -23,7 +23,7 @@ class MRHGuiBack: IGUIBack
 	w = 0.518437 * safezoneW;
 	h = 0.686 * safezoneH;
 };
-class MRHMarkersList: RscListBox
+class MRHMarkersList: RscListBoxMRHTargetSpawner
 {
 	idc = 1500;
 
@@ -32,7 +32,7 @@ class MRHMarkersList: RscListBox
 	w = 0.137812 * safezoneW;
 	h = 0.616 * safezoneH;
 };
-class MRHTextSelectMarker: RscStructuredText
+class MRHTextSelectMarker: RscStructuredTextMRHTargetSpawner
 {
 	idc = 1100;
 
@@ -42,7 +42,7 @@ class MRHTextSelectMarker: RscStructuredText
 	w = 0.49875 * safezoneW;
 	h = 0.028 * safezoneH;
 };
-class MRHTargetType: RscStructuredText
+class MRHTargetType: RscStructuredTextMRHTargetSpawner
 {
 	idc = 1101;
 
@@ -52,7 +52,7 @@ class MRHTargetType: RscStructuredText
 	w = 0.34125 * safezoneW;
 	h = 0.028 * safezoneH;
 };
-class MRHTypeSelector: RscCombo
+class MRHTypeSelector: RscComboMRHTargetSpawner
 {
 	idc = 2100;
 
@@ -61,7 +61,7 @@ class MRHTypeSelector: RscCombo
 	w = 0.21 * safezoneW;
 	h = 0.028 * safezoneH;
 };
-class MRHtextSelectBehaviour: RscStructuredText
+class MRHtextSelectBehaviour: RscStructuredTextMRHTargetSpawner
 {
 	idc = 1102;
 
@@ -71,7 +71,7 @@ class MRHtextSelectBehaviour: RscStructuredText
 	w = 0.34125 * safezoneW;
 	h = 0.028 * safezoneH;
 };
-class MRHSelectBehavior: RscCombo
+class MRHSelectBehavior: RscComboMRHTargetSpawner
 {
 	idc = 2101;
 
@@ -80,7 +80,7 @@ class MRHSelectBehavior: RscCombo
 	w = 0.21 * safezoneW;
 	h = 0.028 * safezoneH;
 };
-class MRHtextSelectSpeedMode: RscStructuredText
+class MRHtextSelectSpeedMode: RscStructuredTextMRHTargetSpawner
 {
 	idc = 1103;
 
@@ -90,7 +90,7 @@ class MRHtextSelectSpeedMode: RscStructuredText
 	w = 0.34125 * safezoneW;
 	h = 0.028 * safezoneH;
 };
-class MRHSelectSpeedMode: RscCombo
+class MRHSelectSpeedMode: RscComboMRHTargetSpawner
 {
 	idc = 2102;
 
@@ -99,7 +99,7 @@ class MRHSelectSpeedMode: RscCombo
 	w = 0.21 * safezoneW;
 	h = 0.028 * safezoneH;
 };
-class MRHtext: RscStructuredText
+class MRHtext: RscStructuredTextMRHTargetSpawner
 {
 	idc = 1104;
 
@@ -109,7 +109,7 @@ class MRHtext: RscStructuredText
 	w = 0.34125 * safezoneW;
 	h = 0.028 * safezoneH;
 };
-class MRHExitButton: RscButton
+class MRHExitButton: RscButtonMRHTargetSpawner
 {
 	idc = 1600;
 	action = "closedialog 0";
@@ -120,7 +120,7 @@ class MRHExitButton: RscButton
 	w = 0.0525 * safezoneW;
 	h = 0.07 * safezoneH;
 };
-class MRHSpawnButton: RscButton
+class MRHSpawnButton: RscButtonMRHTargetSpawner
 {
 	idc = 1601;
 
@@ -130,7 +130,7 @@ class MRHSpawnButton: RscButton
 	w = 0.091875 * safezoneW;
 	h = 0.07 * safezoneH;
 };
-class MRHEditBox: RscEdit
+class MRHEditBox: RscEditMRHTargetSpawner
 {
 	idc = 1400;
 
@@ -140,7 +140,7 @@ class MRHEditBox: RscEdit
 	w = 0.0853125 * safezoneW;
 	h = 0.028 * safezoneH;
 };
-class MRHMeters: RscStructuredText
+class MRHMeters: RscStructuredTextMRHTargetSpawner
 {
 	idc = 1105;
 

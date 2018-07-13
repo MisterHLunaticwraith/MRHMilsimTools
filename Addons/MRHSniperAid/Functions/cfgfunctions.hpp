@@ -5,28 +5,26 @@ class MRH // Defines the "owner"
 		class MRHSniperAid // category
 	{
 	tag = "MRH";
-	file = "MRHSniperAid\Functions";
-		class isTarget
+	file = "\MRHSniperAid\Functions";
+		class MilsimTools_SniperTraining_isTarget
 		{};
-		class ReturnShotParams
+		class MilsimTools_SniperTraining_isSniperAidTargetSpawner
 		{};
-		class hitZoneIndicator
+		class MilsimTools_SniperTraining_createTrainingArea
 		{};
-		class BulletCam
+		class MilsimTools_SniperTraining_ReturnShotParams
 		{};
-		class AmmoCrate
+		class MilsimTools_SniperTraining_hitZoneIndicator
 		{};
-		class createTrainingArea
+		class MilsimTools_SniperTraining_BulletCam
 		{};
-		class onTrainingZoneEntered
+		class MilsimTools_SniperTraining_onTrainingZoneEntered
 		{};
-		class onTrainingZoneExited
+		class MilsimTools_SniperTraining_onTrainingZoneExited
 		{};
-		class isSniperAidTargetSpawner
+		class MilsimTools_SniperTraining_targetSpawner
 		{};
-		class targetSpawner
-		{};
-		class SpawnTarget
+		class MilsimTools_SniperTraining_SpawnTarget
 		{};
 
 

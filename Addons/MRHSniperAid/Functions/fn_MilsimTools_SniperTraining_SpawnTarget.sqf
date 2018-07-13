@@ -1,4 +1,14 @@
-
+/*
+Function name:MRH_fnc_MilsimTools_SniperTraining_SpawnTarget
+Author: Mr H.
+Description: Spawns target from the spawning interface
+Return value: None
+Public: No
+Parameters: None
+Example(s):
+call MRH_fnc_MilsimTools_SniperTraining_SpawnTarget;
+*/
+#include "MRH_C_Path.hpp"
 _spawnPos = lbData [1500,lbCurSel 1500];
 
 if (_spawnPos == "") ExitWIth {systemchat "Pas de position selectionnée"};
@@ -24,9 +34,9 @@ _grp = group _unit;
 _grp setBehaviour "SAFE";
 _unit setSpeedMode _targetSpeed;
 _success = [_grp, getPos _unit, _patrolDis] call BIS_fnc_taskPatrol;
-[_veh] call MRH_fnc_isTarget;
+[_veh] call MRH_fnc_MilsimTools_SniperTraining_isTarget;
 {
-[_x] call MRH_fnc_isTarget;
+[_x] call MRH_fnc_MilsimTools_SniperTraining_isTarget;
 }forEach crew _veh;
 } 
 else {
@@ -37,4 +47,4 @@ _grp setBehaviour "SAFE";
 _unit setSpeedMode _targetSpeed;
 _success = [_grp, getPos _unit, _patrolDis] call BIS_fnc_taskPatrol;
 
-[_unit] call MRH_fnc_isTarget; };
+[_unit] call MRH_fnc_MilsimTools_SniperTraining_isTarget; };

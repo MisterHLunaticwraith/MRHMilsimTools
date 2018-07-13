@@ -1,3 +1,17 @@
+/*
+Function name:MRH_fnc_MilsimTools_SniperTraining_
+Author: Mr H.
+Description: Creates the bullet cam.
+Return value: None
+Public: No
+Parameters:
+0- <OBJECT> Bullet
+1- <OBJECT> Shooter
+Example(s):
+call MRH_fnc_MilsimTools_SniperTraining_;
+*/
+#include "MRH_C_Path.hpp"
+
 params ["_bullet","_shooter"];
 
 _toggled = _shooter getVariable "MRH_BulletCamUserPref";
@@ -7,7 +21,7 @@ if (!_toggled) exitWith {};
 [_bullet,_shooter] spawn {
 params ["_bullet","_shooter"];
 
-
+#include "MRH_C_Path.hpp"
 
 
  _camera = "camera" camCreate (getPos _bullet); 
@@ -38,8 +52,3 @@ _shooter setVariable ["MRH_BulletCamOn", _bulletInTheAir];
  _camera cameraeffect ["terminate", "back"];
 		camDestroy _camera;
 		};
-/*
-while {true} do {
-systemChat str (alive _bullet);
-};
-*/

@@ -1,3 +1,14 @@
+/*
+Function name:MRH_fnc_MilsimTools_SniperTraining_onTrainingZoneExited
+Author: Mr H.
+Description: Removes event handlers and hints the player when they leave the training area
+Return value:None
+Public:No
+Parameters: None
+Example(s):
+call MRH_fnc_MilsimTools_SniperTraining_onTrainingZoneExited;
+*/
+#include "MRH_C_Path.hpp"
 if (player inArea _this) ExitWith {};
 _EHindexes = player getVariable "MRH_BulletCamEHsIndexes";
 if ((isNil "_EHindexes") or (_EHindexes isEqualTo [])) ExitWith {};

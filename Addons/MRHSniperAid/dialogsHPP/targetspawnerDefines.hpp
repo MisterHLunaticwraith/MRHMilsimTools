@@ -96,7 +96,7 @@
 ///////////////////////////////////////////////////////////////////////////
 /// Base Classes
 ///////////////////////////////////////////////////////////////////////////
-class RscText
+class RscTextMRHTargetSpawner
 {
 	colorBackground[] = 
 	{
@@ -157,7 +157,7 @@ class RscText
 	SizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
 	linespacing = 1;
 };
-class RscStructuredText
+class RscStructuredTextMRHTargetSpawner
 {
 	colorText[] = 
 	{
@@ -188,7 +188,7 @@ class RscStructuredText
 	size = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
 	shadow = 1;
 };
-class RscPicture
+class RscPictureMRHTargetSpawner
 {
 	colorBackground[] = 
 	{
@@ -242,7 +242,7 @@ class RscPicture
 	w = 0.2;
 	h = 0.15;
 };
-class RscEdit
+class RscEditMRHTargetSpawner
 {
 	colorBackground[] = 
 	{
@@ -310,7 +310,7 @@ class RscEdit
 	sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
 	canModify = 1;
 };
-class RscCombo
+class RscComboMRHTargetSpawner
 {
 	colorSelect[] = 
 	{
@@ -490,7 +490,7 @@ class RscCombo
 	arrowFull = "\A3\ui_f\data\GUI\RscCommon\rsccombo\arrow_combo_active_ca.paa";
 	wholeHeight = 0.45;
 };
-class RscListBox
+class RscListBoxMRHTargetSpawner
 {
 	colorText[] = 
 	{
@@ -677,7 +677,7 @@ class RscListBox
 	period = 1.2;
 	maxHistoryDelay = 1;
 };
-class RscButton
+class RscButtonMRHTargetSpawner
 {
 	colorText[] = 
 	{
@@ -780,7 +780,7 @@ class RscButton
 	offsetPressedY = 0;
 	borderSize = 0;
 };
-class RscShortcutButton
+class RscShortcutButtonMRHTargetSpawner
 {
 	class HitZone
 	{
@@ -951,7 +951,7 @@ class RscShortcutButton
 	url = "";
 	action = "";
 };
-class RscShortcutButtonMain
+class RscShortcutButtonMainMRHTargetSpawner
 {
 	color[] = 
 	{
@@ -1019,7 +1019,7 @@ class RscShortcutButtonMain
 	text = "";
 	action = "";
 };
-class RscFrame
+class RscFrameMRHTargetSpawner
 {
 	colorBackground[] = 
 	{
@@ -1048,7 +1048,7 @@ class RscFrame
 	w = 0.3;
 	h = 0.3;
 };
-class RscSlider
+class RscSliderMRHTargetSpawner
 {
 	color[] = 
 	{
@@ -1075,7 +1075,7 @@ class RscSlider
 	w = 0.3;
 	h = 0.025;
 };
-class IGUIBack
+class IGUIBackMRHTargetSpawner
 {
 	colorText[] = 
 	{
@@ -1103,7 +1103,7 @@ class IGUIBack
 	w = 0.1;
 	h = 0.1;
 };
-class RscCheckBox
+class RscCheckBoxMRHTargetSpawner
 {
 	color[] = 
 	{
@@ -1240,7 +1240,7 @@ class RscCheckBox
 	textureDisabledChecked = "A3\Ui_f\data\GUI\RscCommon\RscCheckBox\CheckBox_checked_ca.paa";
 	textureDisabledUnchecked = "A3\Ui_f\data\GUI\RscCommon\RscCheckBox\CheckBox_unchecked_ca.paa";
 };
-class RscTextCheckBox
+class RscTextCheckBoxMRHTargetSpawner
 {
 	colorText[] = 
 	{
@@ -1339,7 +1339,7 @@ class RscTextCheckBox
 	rows = 1;
 	columns = 1;
 };
-class RscButtonMenu
+class RscButtonMenuMRHTargetSpawner
 {
 	colorBackground[] = 
 	{
@@ -1515,7 +1515,7 @@ class RscButtonMenu
 	size = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
 	sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
 };
-class RscButtonMenuOK
+class RscButtonMenuOKMRHTargetSpawner
 {
 	shortcuts[] = 
 	{
@@ -1534,7 +1534,7 @@ class RscButtonMenuOK
 	default = 1;
 	text = "OK";
 };
-class RscButtonMenuCancel
+class RscButtonMenuCancelMRHTargetSpawner
 {
 	shortcuts[] = 
 	{
@@ -1543,7 +1543,7 @@ class RscButtonMenuCancel
 	idc = 2;
 	text = "Cancel";
 };
-class RscControlsGroup
+class RscControlsGroupMRHTargetSpawner
 {
 	class VScrollbar
 	{

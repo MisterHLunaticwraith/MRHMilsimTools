@@ -1,3 +1,14 @@
+/*
+Function name:MRH_fnc_MilsimTools_SniperTraining_onTrainingZoneEntered
+Author: Mr H.
+Description: set of actions to do when a player enters a training zone.
+Return value:
+Public:No
+Parameters:None
+Example(s):
+call MRH_fnc_MilsimTools_SniperTraining_onTrainingZoneEntered;
+*/
+#include "MRH_C_Path.hpp"
 if !(player in _this) ExitWith {};
 [] spawn {
 
@@ -7,7 +18,7 @@ _shooter = _this select 0;
 _bullet = _this select 6;
 _TimeFired = time;
 
-[_bullet, _shooter] call MRH_fnc_BulletCam;
+[_bullet, _shooter] call MRH_fnc_MilsimTools_SniperTraining_BulletCam;
 player setVariable ["MRH_BulletFiredTime" , _TimeFired, true];
 
 

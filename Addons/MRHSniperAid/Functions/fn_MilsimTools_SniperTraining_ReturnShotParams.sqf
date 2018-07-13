@@ -1,3 +1,15 @@
+/*
+Function name:MRH_fnc_MilsimTools_SniperTraining_ReturnShotParams
+Author: Mr H.
+Description: HintC for the player with all parameters for the shot
+Return value:None
+Public:Non
+Parameters:
+0 -<ARRAY> of data returned by "Hit" or "HitPart" event handlers
+Example(s):
+call MRH_fnc_MilsimTools_SniperTraining_ReturnShotParams;
+*/
+#include "MRH_C_Path.hpp"
 //[] execVM fn_ReturnShotParams.sqf
 params ["_PassedFromEH"];
 [_passedFromEH] spawn {
@@ -25,7 +37,7 @@ _impactSpeed = vectorMagnitude _bulletVelocity;
 _impactSpeed = [_impactSpeed,2] call BIS_fnc_cutDecimals;
 _hitSelections = _PassedFromEH select 5;
 //systemchat format ["vitesse : %1", str _impactSpeed];
-[_positionHit, _hitSelections, _target] call MRH_fnc_hitZoneIndicator;
+[_positionHit, _hitSelections, _target] call MRH_fnc_MilsimTools_SniperTraining_hitZoneIndicator;
 ///Calculate travel time
 _timeShot = _shooter getVariable "MRH_BulletFiredTime";
 _bulletTravelTime = time - _timeShot;

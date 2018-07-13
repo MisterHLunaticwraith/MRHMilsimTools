@@ -1,3 +1,14 @@
+/*
+Function name:MRH_fnc_MilsimTools_SniperTraining_hitZoneIndicator
+Author: Mr H.
+Description: Shows an icon where target was hit
+Return value: None
+Public: No
+Parameters:
+Example(s):
+call MRH_fnc_MilsimTools_SniperTraining_hitZoneIndicator;
+*/
+#include "MRH_C_Path.hpp"
 params ["_positionHit","_hitSelections","_target"];
 _posdebug =  _positionHit;
 _positionHit = ASLToAGL _positionHit;
@@ -11,5 +22,5 @@ if (_target isKindOf "Man") then {_positionHit =_target modelToWorld (_target se
 
 
 
- drawIcon3D [MISSION_ROOT +"target.paa", [1,0,0,1], _positionHit, 0.5, 0.5, 0, "Point d'impact", 2, 0.05, "PuristaLight", "center", true]; 
+ drawIcon3D ["\MRHSniperAid\Paa\target.paa", [1,0,0,1], _positionHit, 0.5, 0.5, 0, "Point d'impact", 2, 0.05, "PuristaLight", "center", true]; 
 }; 
