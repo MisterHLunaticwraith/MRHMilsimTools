@@ -1,0 +1,298 @@
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Project name="MRHSniperAid">
+	<Package name="MRHSniperAid">
+		<Container name="Functions">
+			<Key ID="STR_MRH_SniperTraining_ImpactPoint">
+				<Original>Impact point</Original>
+				<English>Impact point</English>
+				<French>Point d'impact</French>
+			</Key>
+			<Key ID="STR_MRH_SniperTraining_OpenTargetAce">
+				<Original>Open target spawner</Original>
+				<English>Open target spawner</English>
+				<French>Ouvrir le menu de spawn de cible.</French>
+			</Key>
+			<Key ID="STR_MRH_SniperTraining_BCOFF">
+				<Original>Bullet Cam: Off</Original>
+				<English>Bullet Cam: Off</English>
+				<French>Bullet Cam: Off</French>
+			</Key>
+			<Key ID="STR_MRH_SniperTraining_BCON">
+				<Original>Bullet Cam: On</Original>
+				<English>Bullet Cam: On</English>
+				<French>Bullet Cam: On</French>
+			</Key>
+			<Key ID="STR_MRH_SniperTraining_HintEntering">
+				<Original>You are entering a training zone, in this zone Bullet Cam is enabled, press SPACEBAR to toggle it on and off and press ENTER during a bullet cam sequence to interupt it.</Original>
+				<English>You are entering a training zone, in this zone Bullet Cam is enabled, press SPACEBAR to toggle it on and off and press ENTER during a bullet cam sequence to interupt it.</English>
+				<French>Vous entrez dans une zone d'entraînement. Dans cette zone le Bullet Cam est actif, appuyez sur ESPACE pour l'activer et le désactiver et sur ENTREE pendant le Bullet Cam pour quitter.</French>
+			</Key><Key ID="STR_MRH_SniperTraining_HintExiting">
+				<Original>You are exiting the training zone, Bullet Cam disabled</Original>
+				<English>You are exiting the training zone, Bullet Cam disabled</English>
+				<French>Vous sortez de la zone d'entraînement, Bullet Cam désactivé</French>
+			</Key><Key ID="STR_MRH_SniperTraining_NoPosSelect">
+				<Original>No position set</Original>
+				<English>No position set</English>
+				<French>Pas de position selectionnée</French>
+			</Key>
+			<Key ID="STR_MRH_SniperTraining_NoTypeSelect">
+				<Original>No type set</Original>
+				<English>No type set</English>
+				<French>Pas de type selectionné</French>
+			</Key>
+			<Key ID="STR_MRH_SniperTraining_NoBehaviorSet">
+				<Original>No behavior set</Original>
+				<English>No behavior set</English>
+				<French>Pas de comportement selectionné</French>
+			</Key>
+			<Key ID="STR_MRH_SniperTraining_NoSpeedSelected">
+				<Original>No speed mode selected</Original>
+				<English>No speed mode selected</English>
+				<French>Pas de vitesse selectionnée</French>
+			</Key>
+			<Key ID="STR_MRH_SniperTraining_Distance">
+				<Original>Distance:</Original>
+				<English>Distance:</English>
+				<French>Distance:</French>
+			</Key>
+			<Key ID="STR_MRH_SniperTraining_Meters">
+				<Original>meters</Original>
+				<English>meters</English>
+				<French>mètres</French>
+			</Key>
+			<Key ID="STR_MRH_SniperTraining_NeverFire">
+				<Original>Never fire</Original>
+				<English>Never fire</English>
+				<French>Ne jamais faire feu</French>
+			</Key>
+			<Key ID="STR_MRH_SniperTraining_FireWhenFiredUpon">
+				<Original>Do not fire unless fired upon</Original>
+				<English>Do not fire unless fired upon</English>
+				<French>Tir de riposte seulement</French>
+			</Key>
+			<Key ID="STR_MRH_SniperTraining_OnlyInDanger">
+				<Original>Fire if in danger</Original>
+				<English>Fire if in danger</English>
+				<French>Ne faire feu que si danger</French>
+			</Key>
+			<Key ID="STR_MRH_SniperTraining_FireAtWill">
+				<Original>Fire at will</Original>
+				<English>Fire at will</English>
+				<French>Feu à volonté</French>
+			</Key>
+			<Key ID="STR_MRH_SniperTraining_FireAtWillEngageAtWill">
+				<Original>Fire at will, engage at will</Original>
+				<English>Fire at will, engage at will</English>
+				<French>Feu à volonté, aller au contact</French>
+			</Key>
+			<Key ID="STR_MRH_SniperTraining_Limited">
+				<Original>Limited</Original>
+				<English>Limited</English>
+				<French>Limité</French>
+			</Key>
+			<Key ID="STR_MRH_SniperTraining_Normal">
+				<Original>Normal</Original>
+				<English>Normal</English>
+				<French>Normale</French>
+			</Key>
+			<Key ID="STR_MRH_SniperTraining_Fast">
+				<Original>Full speed</Original>
+				<English>Full speed</English>
+				<French>Rapide</French>
+			</Key>
+			<Key ID="STR_MRH_SniperTraining_SelectMarker">
+				<Original>Select distance where to spawn target.</Original>
+				<English>Select distance where to spawn target.</English>
+				<French>Sélectionnez la distance où ou spawner une cible.</French>
+			</Key>
+			<Key ID="STR_MRH_SniperTraining_SelectTargetType">
+				<Original>Select target type</Original>
+				<English>Select target type</English>
+				<French>Sélectionnez le type de cible à spawner.</French>
+			</Key>
+			<Key ID="STR_MRH_SniperTraining_SelectTargetBeha">
+				<Original>Select target behavior</Original>
+				<English>Select target behavior</English>
+				<French>Sélectionnez le comportement de la cible</French>
+			</Key>
+			<Key ID="STR_MRH_SniperTraining_SelectTargetSpeed">
+				<Original>Select target speed mode</Original>
+				<English>Select target speed mode</English>
+				<French>Sélectionnez le mode de vitesse de la cible</French>
+			</Key>
+			<Key ID="STR_MRH_SniperTraining_SelectMoveRadius">
+				<Original>Input movement radius</Original>
+				<English>Input movement radius</English>
+				<French>Entrez le rayon de déplacement</French>
+			</Key>
+			<Key ID="STR_MRH_SniperTraining_Close">
+				<Original>Close</Original>
+				<English>Close</English>
+				<French>Quitter</French>
+			</Key>
+			<Key ID="STR_MRH_SniperTraining_SpawnTargetAction">
+				<Original>Spawn target</Original>
+				<English>Spawn target</English>
+				<French>Spawner la cible</French>
+			</Key>
+			<Key ID="STR_MRH_SniperTraining_South">
+				<Original>South</Original>
+				<English>South</English>
+				<French>Sud</French>
+			</Key>
+			<Key ID="STR_MRH_SniperTraining_West">
+				<Original>West</Original>
+				<English>West</English>
+				<French>Ouest</French>
+			</Key>
+			<Key ID="STR_MRH_SniperTraining_North">
+				<Original>North</Original>
+				<English>North</English>
+				<French>Nord</French>
+			</Key>
+			<Key ID="STR_MRH_SniperTraining_East">
+				<Original>East</Original>
+				<English>East</English>
+				<French>Est</French>
+			</Key>
+			<Key ID="STR_MRH_SniperTraining_TargetWasAt">
+				<Original>Target was at:</Original>
+				<English>Target was at:</English>
+				<French>La cible se trouvait à:</French>
+			</Key>
+			<Key ID="STR_MRH_SniperTraining_BulletTravelTime">
+				<Original>Bullet travel time:</Original>
+				<English>Bullet travel time:</English>
+				<French>Temps de trajet de la balle: </French>
+			</Key>
+			<Key ID="STR_MRH_SniperTraining_Seconds">
+				<Original>Seconds</Original>
+				<English>Seconds</English>
+				<French>Secondes</French>
+			</Key>
+			<Key ID="STR_MRH_SniperTraining_BulletSpeed">
+				<Original>Bullet speed:</Original>
+				<English>Bullet speed:</English>
+				<French>Vitesse de déplacement de la balle:</French>
+			</Key>
+			<Key ID="STR_MRH_SniperTraining_SpeedAtImpact">
+				<Original>Bullet speed upon impact:</Original>
+				<English>Bullet speed upon impact:</English>
+				<French>Vitesse de la balle à l'impact: </French>
+			</Key>
+			<Key ID="STR_MRH_SniperTraining_ShooterTargetAngle">
+				<Original>Angle difference between shooter and target</Original>
+				<English>Angle difference between shooter and target</English>
+				<French>Angle d'élévation tireur/cible</French>
+			</Key>
+			<Key ID="STR_MRH_SniperTraining_WindIntel">
+				<Original>Wind data:</Original>
+				<English>Wind data:</English>
+				<French>Informations vent:</French>
+			</Key>
+			<Key ID="STR_MRH_SniperTraining_WindDirSect">
+				<Original>Wind blowing from:</Original>
+				<English>Wind blowing from:</English>
+				<French>Vent de secteur:</French>
+			</Key>
+			<Key ID="STR_MRH_SniperTraining_WindBearing">
+				<Original>Wind exact bearing:</Original>
+				<English>Wind exact bearing:</English>
+				<French>Azimut exact du vent:</French>
+			</Key>
+			<Key ID="STR_MRH_SniperTraining_WindFromKestrel">
+				<Original>Wind speed relative to your position and altitude (as read by the Kestrel)</Original>
+				<English>Wind speed relative to your position and altitude (as read by the Kestrel)</English>
+				<French>Vitesse du vent relative à votre position et azimut (telles que donnée par le Kestrel):</French>
+			</Key>
+			<Key ID="STR_MRH_SniperTraining_WindSpeed">
+				<Original>Wind speed:</Original>
+				<English>Wind speed:</English>
+				<French>Vitesse du vent:</French>
+			</Key><Key ID="STR_MRH_SniperTraining_AtmosphereIntel">
+				<Original>Atmospheric data:</Original>
+				<English>Atmospheric data:</English>
+				<French>Informations atmosphériques :</French>
+			</Key>
+			<Key ID="STR_MRH_SniperTraining_Barometricpressure">
+				<Original>Barometric pressure:</Original>
+				<English>Barometric pressure:</English>
+				<French>Pression barométrique:</French>
+			</Key>
+			<Key ID="STR_MRH_SniperTraining_Humidity">
+				<Original>Humidity</Original>
+				<English>Humidity</English>
+				<French>Humidité"</French>
+			</Key>
+			<Key ID="STR_MRH_SniperTraining_Temperature">
+				<Original>Temperature:</Original>
+				<English>Temperature:</English>
+				<French>Température:</French>
+			</Key>
+			<Key ID="STR_MRH_SniperTraining_ScopeAdj">
+				<Original>Scope settings:</Original>
+				<English>Scope settings:</English>
+				<French>Réglages de l'optique:</French>
+			</Key>
+			<Key ID="STR_MRH_SniperTraining_HeightAdjust">
+				<Original>Height adjustment:</Original>
+				<English>Height adjustment:</English>
+				<French>Correction hauteur:</French>
+			</Key>
+			<Key ID="STR_MRH_SniperTraining_LateralAdjust">
+				<Original>Lateral adjustment:</Original>
+				<English>Lateral adjustment:</English>
+				<French>Correction latérale</French>
+			</Key>
+			<Key ID="STR_MRH_SniperTraining_DamageCaused">
+				<Original>Damage inflicted:</Original>
+				<English>Damage inflicted:</English>
+				<French>Dommages causés:</French>
+			</Key>
+			<Key ID="STR_MRH_SniperTraining_Points">
+				<Original>points</Original>
+				<English>points</English>
+				<French>points</French>
+			</Key>
+			<Key ID="STR_MRH_SniperTraining_PartsHit">
+				<Original>Hit parts:</Original>
+				<English>Hit parts:</English>
+				<French>Parties touchées:</French>
+			</Key>
+			<Key ID="STR_MRH_SniperTraining_TargetWasMoving">
+				<Original>Target was moving at:</Original>
+				<English>Target was moving at:</English>
+				<French>Cible en mouvement, vitesse de déplacement:</French>
+			</Key>
+			<Key ID="STR_MRH_SniperTraining_ShotData">
+				<Original>Shot data:</Original>
+				<English>Shot data:</English>
+				<French>Données de tir:</French>
+			</Key>
+			<Key ID="STR_MRH_SniperTraining_ShooterName">
+				<Original>Target hit by:</Original>
+				<English>Target hit by:</English>
+				<French>Cible touchée par:</French>
+			</Key>
+			<Key ID="STR_MRH_SniperTraining_SpeedAndDist">
+				<Original>Speed: %1 m/s, distance: %2 m </Original>
+				<English>Speed: %1 m/s, distance: %2 m </English>
+				<French>Vitesse: %1 m/s, distance: %2 m </French>
+			</Key>
+			<Key ID="STR_MRH_SniperTraining_">
+				<Original></Original>
+				<English></English>
+				<French></French>
+			</Key>
+			<Key ID="STR_MRH_SniperTraining_">
+				<Original></Original>
+				<English></English>
+				<French></French>
+			</Key>
+		</Container>
+			
+
+
+	</Package>
+</Project>
