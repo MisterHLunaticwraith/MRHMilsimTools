@@ -36,7 +36,7 @@ class MRHTextSelectMarker: RscStructuredTextMRHTargetSpawner
 {
 	idc = 1100;
 
-	text = "Sélectionnez le marqueur ou spawner une cible."; //--- ToDo: Localize;
+	text = $STR_MRH_SniperTraining_SelectMarker; //--- ToDo: Localize;
 	x = 0.244062 * safezoneW + safezoneX;
 	y = 0.164 * safezoneH + safezoneY;
 	w = 0.49875 * safezoneW;
@@ -46,7 +46,7 @@ class MRHTargetType: RscStructuredTextMRHTargetSpawner
 {
 	idc = 1101;
 
-	text = "Sélectionnez le type de cible à spawner."; //--- ToDo: Localize;
+	text = $STR_MRH_SniperTraining_SelectTargetType; //--- ToDo: Localize;
 	x = 0.401563 * safezoneW + safezoneX;
 	y = 0.206 * safezoneH + safezoneY;
 	w = 0.34125 * safezoneW;
@@ -65,7 +65,7 @@ class MRHtextSelectBehaviour: RscStructuredTextMRHTargetSpawner
 {
 	idc = 1102;
 
-	text = "Sélectionnez le comportement de la cible"; //--- ToDo: Localize;
+	text = $STR_MRH_SniperTraining_SelectTargetBeha; //--- ToDo: Localize;
 	x = 0.401563 * safezoneW + safezoneX;
 	y = 0.29 * safezoneH + safezoneY;
 	w = 0.34125 * safezoneW;
@@ -84,7 +84,7 @@ class MRHtextSelectSpeedMode: RscStructuredTextMRHTargetSpawner
 {
 	idc = 1103;
 
-	text = "Sélectionnez le mode de vitesse de la cible"; //--- ToDo: Localize;
+	text = $STR_MRH_SniperTraining_SelectTargetSpeed; //--- ToDo: Localize;
 	x = 0.401563 * safezoneW + safezoneX;
 	y = 0.388 * safezoneH + safezoneY;
 	w = 0.34125 * safezoneW;
@@ -103,7 +103,7 @@ class MRHtext: RscStructuredTextMRHTargetSpawner
 {
 	idc = 1104;
 
-	text = "Entrez le rayon de déplacement"; //--- ToDo: Localize;
+	text = $STR_MRH_SniperTraining_SelectMoveRadius; //--- ToDo: Localize;
 	x = 0.401563 * safezoneW + safezoneX;
 	y = 0.472 * safezoneH + safezoneY;
 	w = 0.34125 * safezoneW;
@@ -114,7 +114,7 @@ class MRHExitButton: RscButtonMRHTargetSpawner
 	idc = 1600;
 	action = "closedialog 0";
 
-	text = "Quitter"; //--- ToDo: Localize;
+	text = $STR_MRH_SniperTraining_Close; //--- ToDo: Localize;
 	x = 0.572187 * safezoneW + safezoneX;
 	y = 0.752 * safezoneH + safezoneY;
 	w = 0.0525 * safezoneW;
@@ -124,7 +124,7 @@ class MRHSpawnButton: RscButtonMRHTargetSpawner
 {
 	idc = 1601;
 
-	text = "Spawner la cible"; //--- ToDo: Localize;
+	text = $STR_MRH_SniperTraining_SpawnTargetAction; //--- ToDo: Localize;
 	x = 0.63125 * safezoneW + safezoneX;
 	y = 0.752 * safezoneH + safezoneY;
 	w = 0.091875 * safezoneW;
@@ -144,7 +144,7 @@ class MRHMeters: RscStructuredTextMRHTargetSpawner
 {
 	idc = 1105;
 
-	text = "mètres"; //--- ToDo: Localize;
+	text = $STR_MRH_SniperTraining_Meters; //--- ToDo: Localize;
 	x = 0.493437 * safezoneW + safezoneX;
 	y = 0.514 * safezoneH + safezoneY;
 	w = 0.105 * safezoneW;

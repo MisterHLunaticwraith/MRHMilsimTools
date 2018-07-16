@@ -30,7 +30,7 @@ _ehKeyDown = (findDisplay 46) displayAddEventHandler ["KeyDown",
 	_toggleStatus = player getVariable 'MRH_BulletCamUserPref';
 	if (isNil '_toggleStatus') then {_toggleStatus = false;};
 	if ((_this select 1) == 57) then {
-				if (_toggleStatus) then {_toggleStatus = false; hint 'Bullet Cam: Off';} else { _toggleStatus = true; hint 'Bullet Cam: On';};
+				if (_toggleStatus) then {_toggleStatus = false; hint (localize'STR_MRH_SniperTraining_BCOFF');} else { _toggleStatus = true; hint (localize 'STR_MRH_SniperTraining_BCON');};
 									};
 	player setVariable ['MRH_BulletCamUserPref', _toggleStatus];
 
@@ -46,6 +46,6 @@ camDestroy _cam;
 
 player setVariable ["MRH_BulletCamEHsIndexes",[_ehFired,_ehKeyDown]];
 
-hintC "Vous entrez dans une zone d'entraînement. Dans cette zone le Bullet Cam est actif, appuyez sur ESPACE pour l'activer et le désactiver et sur ENTREE pendant le Bullet Cam pour quitter.";
+hintC (localize "STR_MRH_SniperTraining_HintEntering");
 
 };

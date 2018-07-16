@@ -22,5 +22,5 @@ if (_target isKindOf "Man") then {_positionHit =_target modelToWorld (_target se
 
 
 
- drawIcon3D ["\MRHSniperAid\Paa\target.paa", [1,0,0,1], _positionHit, 0.5, 0.5, 0, "Point d'impact", 2, 0.05, "PuristaLight", "center", true]; 
+ drawIcon3D ["\MRHSniperAid\Paa\target.paa", [1,0,0,1], _positionHit, 0.5, 0.5, 0,(localize "STR_MRH_SniperTraining_ImpactPoint"), 2, 0.05, "PuristaLight", "center", true]; 
 }; 

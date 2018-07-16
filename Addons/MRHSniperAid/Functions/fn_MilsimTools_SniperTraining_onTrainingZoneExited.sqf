@@ -17,5 +17,5 @@ _KeydownEH = _EHindexes select 1;
 player removeEventHandler ["FiredMan", _FiredEH];
 (findDisplay 46) displayRemoveEventHandler ["Keydown", _KeydownEH]; 
 player setVariable ["MRH_BulletCamEHsIndexes", []];
-hintC "Vous sortez de la zone d'entraînement, Bullet Cam désactivé";
+hintC (localize "STR_MRH_SniperTraining_HintExiting");
 onEachFrame {};

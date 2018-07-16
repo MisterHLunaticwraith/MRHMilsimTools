@@ -40,7 +40,7 @@ params ["_bullet", "_shooter"];
 while {_shooter getVariable "MRH_BulletCamOn"} do {
 _speed = speed _bullet;
 _distance = _bullet distance _shooter;
-_text =  format ["Vitesse: %1 m/s, distance: %2 m ", str _speed, str _distance];
+_text =  format [(localize "STR_MRH_SniperTraining_SpeedAndDist"), str _speed, str _distance];
 //hint _text;
 //titleText [_text, "PLAIN", -1, false, false]; 
    [_text, 0, 0, 0.0001,0.00001] call BIS_fnc_dynamicText;

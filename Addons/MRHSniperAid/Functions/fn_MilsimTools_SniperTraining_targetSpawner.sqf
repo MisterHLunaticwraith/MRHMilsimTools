@@ -23,7 +23,7 @@ private ["_index"];
 _allMarkers pushBack _x;
 _distance = _source distance (getMarkerPos _x);
 
-_index = lbAdd [1500,"Distance:" +" "+ (str round _distance)+" "+ "mètres"];
+_index = lbAdd [1500,(localize "STR_MRH_SniperTraining_Distance") +" "+ (str round _distance)+" "+ (localize "STR_MRH_SniperTraining_Meters")];
 lbSetColor [1500, _index, [0, 1, 0, 0.5]];
 lbSetData [1500, _index, str (getMarkerPos _x)];
 };
@@ -52,14 +52,14 @@ lbSetData [2100, _index, _x];
     "YELLOW" = Fire at will
     "RED" = Fire at will, engage at will
 	*/
-_allBehaviours = [["BLUE", "Ne jamais faire feu"],["GREEN","Tir de riposte seulement"],["WHITE","Ne faire feu que si danger"],["YELLOW","Feu à volonté"],["RED","Feu à volonté, aller au contact"]];
+_allBehaviours = [["BLUE", (localize "STR_MRH_SniperTraining_NeverFire")],["GREEN",(localize "STR_MRH_SniperTraining_FireWhenFiredUpon")],["WHITE",(localize "STR_MRH_SniperTraining_OnlyInDanger")],["YELLOW",(localize "STR_MRH_SniperTraining_FireAtWill")],["RED",(localize "STR_MRH_SniperTraining_FireAtWillEngageAtWill")]];
 {
 private ["_index"];
 _index = lbadd [2101, _x select 1];
 lbSetData [2101,_index, _x select 0];
 } forEach _allBehaviours;
 
-_allSpeedModes = [["LIMITED","Limité"],["NORMAL","Normale"],["FULL","Rapide"]];
+_allSpeedModes = [["LIMITED",(localize "STR_MRH_SniperTraining_Limited")],["NORMAL",(localize "STR_MRH_SniperTraining_Normal")],["FULL",(localize "STR_MRH_SniperTraining_Fast")]];
 
 {
 private ["_index"];

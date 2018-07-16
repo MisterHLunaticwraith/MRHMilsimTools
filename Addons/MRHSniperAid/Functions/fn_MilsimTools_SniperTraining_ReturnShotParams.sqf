@@ -62,10 +62,10 @@ _windIntel = "";
 _AzimutName = "";
 _windDir  = [windDir,0] call BIS_fnc_cutDecimals; 
 if (_windDir + 180 >= 360) then {_windDir = _windDir - 180} else { _windDir = _windDir + 180};
-if ((windDir > 315 && windDir <= 360) or (windDir >=0 && windDir <= 45)) then {_AzimutName = "Sud"};
-if (windDir > 45 && windDir <= 135) then {_AzimutName = "Ouest"};
-if (windDir > 135 && windDir <= 255) then {_AzimutName = "Nord"};
-if (windDir > 255 && windDir <= 315) then {_AzimutName = "Est"};
+if ((windDir > 315 && windDir <= 360) or (windDir >=0 && windDir <= 45)) then {_AzimutName = (localize "STR_MRH_SniperTraining_South")};
+if (windDir > 45 && windDir <= 135) then {_AzimutName = (localize "STR_MRH_SniperTraining_West")};
+if (windDir > 135 && windDir <= 255) then {_AzimutName = (localize "STR_MRH_SniperTraining_North")};
+if (windDir > 255 && windDir <= 315) then {_AzimutName = (localize "STR_MRH_SniperTraining_East")};
 //_windDirection = format ["Vent de secteur %2. Azimut exact du vent: %1°", str windDir, _AzimutName];//a paser en structured text
 //Get WindIntel : speed
 _absoluteSpeed = vectorMagnitude wind;
@@ -122,33 +122,33 @@ _temperature = "<t color = '#d3a913'>" + str _temperature + "</t>";
 _humidity = "<t color = '#d3a913'>" + str _humidity + "</t>";
 
 _allIntel = 
-"Cible touchée par: " + _shooterName + "<br/>" +
+(localize "STR_MRH_SniperTraining_ShooterName") + _shooterName + "<br/>" +
 "<br/>" +
-"La cible se trouvait à:" + " " + _distance + " " + "mètres" + "<br/>" +
-"Temps de trajet de la balle: "+ " " + _bulletTravelTime+ " " + "secondes" + "<br/>" +
-"Vitesse de déplacement de la balle:"+ " " + _bulletAVGSpeed+ " " + "m/s" + "<br/>" +
-"Vitesse de la balle à l'impact: " + " " + _impactSpeed + " " + "km/h" + "<br/>" +
-"Angle d'élévation tireur/cible"+ " " + _angle + "°" +"<br/>" + "<br/>" +
-"Informations vent:" + "<br/>" +
-"Vent de secteur:"+ " " + _AzimutName + "<br/>" +
-"Azimut exact du vent:"+ " " + _windDir +"°" + "<br/>" +
-"Vitesse du vent relative à votre position et azimut (telles que donnée par le Kestrel):"+ " " + _relSpeed+ " "+ "m/s" + "<br/>" +
-"Vitesse du vent:"+ " " + _absoluteSpeed + " " + "m/s" + "<br/>" + "<br/>" +
-"Informations atmosphériques :" + "<br/>" +
-"Pression barométrique:"+ " " +_atmosphericP + " "+"hPa" + "<br/>" + 
-"Humidité" + " " + _humidity + " " + "%" + "<br/>" + 
-"Température:"+ " " +_temperature +" " + "°C"+ "<br/>" + "<br/>" +
-"Réglages de l'optique:" + "<br/>" +
-"Correction hauteur:" + " " + _height + " " + " mils" + "<br/>" +
-"Correction latérale" + " " + _lateral + " " + "mils";
+(localize "STR_MRH_SniperTraining_TargetWasAt") + " " + _distance + " " + (localize "STR_MRH_SniperTraining_Meters") + "<br/>" +
+(localize "STR_MRH_SniperTraining_BulletTravelTime")+ " " + _bulletTravelTime+ " " + (localize "STR_MRH_SniperTraining_Seconds") + "<br/>" +
+(localize "STR_MRH_SniperTraining_BulletSpeed")+ " " + _bulletAVGSpeed+ " " + "m/s" + "<br/>" +
+(localize "STR_MRH_SniperTraining_SpeedAtImpact") + " " + _impactSpeed + " " + "km/h" + "<br/>" +
+(localize "STR_MRH_SniperTraining_ShooterTargetAngle")+ " " + _angle + "°" +"<br/>" + "<br/>" +
+(localize "STR_MRH_SniperTraining_WindIntel") + "<br/>" +
+(localize "STR_MRH_SniperTraining_WindDirSect")+ " " + _AzimutName + "<br/>" +
+(localize "STR_MRH_SniperTraining_WindBearing")+ " " + _windDir +"°" + "<br/>" +
+(localize "STR_MRH_SniperTraining_WindFromKestrel")+ " " + _relSpeed+ " "+ "m/s" + "<br/>" +
+(localize "STR_MRH_SniperTraining_WindSpeed")+ " " + _absoluteSpeed + " " + "m/s" + "<br/>" + "<br/>" +
+(localize "STR_MRH_SniperTraining_AtmosphereIntel") + "<br/>" +
+(localize "STR_MRH_SniperTraining_Barometricpressure")+ " " +_atmosphericP + " "+"hPa" + "<br/>" + 
+(localize "STR_MRH_SniperTraining_Humidity") + " " + _humidity + " " + "%" + "<br/>" + 
+(localize "STR_MRH_SniperTraining_Temperature")+ " " +_temperature +" " + "°C"+ "<br/>" + "<br/>" +
+(localize "STR_MRH_SniperTraining_ScopeAdj") + "<br/>" +
+(localize "STR_MRH_SniperTraining_HeightAdjust") + " " + _height + " " + " mils" + "<br/>" +
+(localize "STR_MRH_SniperTraining_LateralAdjust") + " " + _lateral + " " + "mils";
 if (_target isKindOf "Man") then {
-_allIntel = _allIntel + "<br/> Dommages causés: <t color = '#d3a913'>" + " " + str _ReceivedDamage + "</t> points<br/>" +
-"Parties touchées:<t color = '#d3a913'>" + " " + str _hitSelections + "</t>";
+_allIntel = _allIntel + "<br/>" +(localize "STR_MRH_SniperTraining_DamageCaused") + "<t color = '#d3a913'>" + " " + str _ReceivedDamage + "</t>"+ (localize "STR_MRH_SniperTraining_Points")+"<br/>" +
+(localize "STR_MRH_SniperTraining_PartsHit") + "<t color = '#d3a913'>" + " " + str _hitSelections + "</t>";
 };
-if (_speed > 0) then {_allIntel = _allIntel + "<br/>Cible en mouvement, vitesse de déplacement: <t color = '#d3a913'>"+ " " + str _speed + " " + "</t>Km/h";};
+if (_speed > 0) then {_allIntel = _allIntel + "<br/>"+ (localize "STR_MRH_SniperTraining_TargetWasMoving") + "<t color = '#d3a913'>"+ " " + str _speed + " " + "</t>Km/h";};
 _allIntel = parseText _allIntel;
 //_allIntel = composeText [ _allIntel]; 
-"Données de tir:" hintC _allIntel;
+(localize "STR_MRH_SniperTraining_ShotData") hintC _allIntel;
 //systemchat _height;
 
 };

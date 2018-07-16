@@ -11,13 +11,13 @@ call MRH_fnc_MilsimTools_SniperTraining_SpawnTarget;
 #include "MRH_C_Path.hpp"
 _spawnPos = lbData [1500,lbCurSel 1500];
 
-if (_spawnPos == "") ExitWIth {systemchat "Pas de position selectionnée"};
+if (_spawnPos == "") ExitWIth {systemchat (localize "STR_MRH_SniperTraining_NoPosSelect")};
 _targetType = lbData [2100,lbCurSel 2100];
-if (_targetType == "") ExitWIth {systemchat "Pas de type selectionné"};
+if (_targetType == "") ExitWIth {systemchat (localize "STR_MRH_SniperTraining_NoTypeSelect")};
 _targetBehaviour = lbData [2101,lbCurSel 2101];
-if (_targetBehaviour == "") ExitWIth {systemchat "Pas de comportement selectionné"};
+if (_targetBehaviour == "") ExitWIth {systemchat (localize "STR_MRH_SniperTraining_NoBehaviorSet")};
 _targetSpeed = lbData [2102,lbCurSel 2102];
-if (_targetSpeed == "") ExitWith {systemchat "Pas de vitesse selectionnée"};
+if (_targetSpeed == "") ExitWith {systemchat "STR_MRH_SniperTraining_NoSpeedSelected"};
 _patrolDis = ctrlText 1400;
 
 _patrolDis = parseNumber _patrolDis;
