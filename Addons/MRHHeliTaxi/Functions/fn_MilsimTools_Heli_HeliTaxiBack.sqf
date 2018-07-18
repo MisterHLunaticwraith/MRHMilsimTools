@@ -1,9 +1,9 @@
 openMap [true,true];
-hint "Selectionnez une LZ";
+hint localize "STR_MRH_HeliTaxi_HintSelectLZ";
 onMapSingleClick {
 	onMapSingleClick "";
 	deleteMarkerLocal "MRH_LZ_Marker";
-	hint "Destination selectionnée.";
+	hint localize "STR_MRH_HeliTaxi_HintLZSet";
 
 		[_pos] spawn {
 		params ["_pos"];
@@ -13,7 +13,7 @@ onMapSingleClick {
 		
 		_marker = createMarkerLocal ["MRH_LZ_Marker_Back", _LZ];
 		_marker setMarkerTypeLocal "MRH_Heli";
-		_marker setMarkerTextLocal "LZ sélectionnée";
+		_marker setMarkerTextLocal (localize "STR_MRH_HeliTaxi_MarkerSelectedLz");
 		_marker setMarkerColorLocal "ColorGreen";
 		_marker setMarkerAlphaLocal 1;
 		sleep 5; openMap [false,false];
@@ -23,10 +23,10 @@ onMapSingleClick {
 		params ["_player","_myvec","_LZ"];
 		if !(player in _myvec) ExitWith {};
 		playSound "MRH_HeliTaxi_OkPilot";
-		_player sideChat format ["De %3 pour %2: Ok pilote, destination coordonnées %1",([_LZ] call MRH_fnc_MilsimTools_Core_realisticGrid),groupID group _myvec,(_player getVariable "MRH_MilsimTools_Core_PlayerIntel") select 0];
+		_player sideChat format [localize "STR_MRH_HeliTaxi_GivePiloTCoord",([_LZ] call MRH_fnc_MilsimTools_Core_realisticGrid),groupID group _myvec,(_player getVariable "MRH_MilsimTools_Core_PlayerIntel") select 0];
 		sleep 2;
 		playSound "MRH_HeliTaxi_ReadyTakeOff";
-		_myvec sideChat format ["De %2 pour %3: Bien reçu. Coordonnées %1, en route",([_LZ] call MRH_fnc_MilsimTools_Core_realisticGrid),groupID group _myvec,(_player getVariable "MRH_MilsimTools_Core_PlayerIntel") select 0];
+		_myvec sideChat format [localize "STR_MRH_HeliTaxi_CoordinatesReceived",([_LZ] call MRH_fnc_MilsimTools_Core_realisticGrid),groupID group _myvec,(_player getVariable "MRH_MilsimTools_Core_PlayerIntel") select 0];
 		}
 		] RemoteExec ["Spawn", [-2,0] select isServer];
 		//reset vars & action
@@ -56,11 +56,11 @@ onMapSingleClick {
 		params ["_player","_myvec","_LZ"];
 		if !(player in _myvec) ExitWith {};
 		playSound "MRH_HeliTaxi_ThereGodSpeed";
-		_myvec sideChat format ["De %1 pour %2: Nous sommes arrivés %2, Godspeed!",groupID group _myvec,(_player getVariable "MRH_MilsimTools_Core_PlayerIntel") select 0];
+		_myvec sideChat format [localize "STR_MRH_HeliTaxi_WeReThereGodSpeed",groupID group _myvec,(_player getVariable "MRH_MilsimTools_Core_PlayerIntel") select 0];
 		sleep 3;
 		playSound "MRH_HeliTaxi_Thanks";
 		
-		_player sideChat format ["De %2 pour %1: Merci %1, bon retour.",groupID group _myvec,(_player getVariable "MRH_MilsimTools_Core_PlayerIntel") select 0];
+		_player sideChat format [localize "STR_MRH_HeliTaxi_ThanksFlySafe",groupID group _myvec,(_player getVariable "MRH_MilsimTools_Core_PlayerIntel") select 0];
 		}
 		] RemoteExec ["Spawn", [-2,0] select isServer];
 		sleep 2;

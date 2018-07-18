@@ -29,7 +29,7 @@ class RscCombo_2100: RscCombo
 class RscStructuredText_1100: RscStructuredText
 {
 	idc = 1100;
-	text = "Selectionnez le type d'hélicoptère"; //--- ToDo: Localize;
+	text = $STR_MRH_HeliTaxi_SelectHeliType; //--- ToDo: Localize;
 	x = 0.427812 * safezoneW + safezoneX;
 	y = 0.39 * safezoneH + safezoneY;
 	w = 0.139219 * safezoneW;

@@ -15,7 +15,7 @@ if (_isCustomSettingSet) then
 	};
 //{isFormationLeader player && (call MRH_fnc_isHeliTaxiAvailable)}
 
-_action = ["MRH_HeliTaxi_Call","Demander un transport aérien","",{call MRH_fnc_MilsimTools_Heli_helicopterChoice;},_condition] call ace_interact_menu_fnc_createAction;//,{},[],[],1,[],{}
+_action = ["MRH_HeliTaxi_Call",(localize "STR_MRH_HeliTaxi_RequestAirTransport"),"",{call MRH_fnc_MilsimTools_Heli_helicopterChoice;},_condition] call ace_interact_menu_fnc_createAction;//,{},[],[],1,[],{}
 /*
  * Argument:
  * 0: Action name <STRING>

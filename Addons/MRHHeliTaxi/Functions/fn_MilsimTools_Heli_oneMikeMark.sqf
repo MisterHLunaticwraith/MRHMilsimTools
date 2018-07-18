@@ -10,7 +10,7 @@ params ["_vec","_destination"];
 		params ["_player","_vec","_dist"];
 		if !(player in _vec) ExitWith {};
 		playSound "MRH_HeliTaxi_ETA";
-		_vec sideChat format ["De %2 pour %3: Nous sommes à %1 km de l'objectif, E.T.A. une minute, tenez vous prêts.",str _dist,groupID group _vec,(_player getVariable "MRH_MilsimTools_Core_PlayerIntel") select 0];
+		_vec sideChat format [localize "STR_MRH_HeliTaxi_ETAoneMike",str _dist,groupID group _vec,(_player getVariable "MRH_MilsimTools_Core_PlayerIntel") select 0];
 		}] RemoteExec ["Spawn", [-2,0] select isServer];
 		
 		};

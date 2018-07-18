@@ -4,7 +4,7 @@ _myvec = player getVariable "MRH_TaxiHeli";
 [_myvec] spawn {
 	params ["_myvec"];
 	sleep 3;
-	hintC "Taxi annulé";
+	hintC localize "STR_MRH_HeliTaxi_TaxiCanceled";
 	_myvec commandMove (player modelToWorld [0,+2000,0]);
 	sleep 30;
 	{deleteVehicle _x;}forEach crew _myvec;
@@ -18,10 +18,10 @@ _myvec = player getVariable "MRH_TaxiHeli";
 		params ["_player","_myvec"];
 		if ((group player) != (group _player)) ExitWith {};
 		playSound "MRH_HeliTaxi_CancelT";
-	_player sideChat format ["De %2 pour %1: Demandons annulation du transport.",groupID group _myvec,(_player getVariable "MRH_MilsimTools_Core_PlayerIntel") select 0];
+	_player sideChat format [localize "STR_MRH_HeliTaxi_RequestCancel",groupID group _myvec,(_player getVariable "MRH_MilsimTools_Core_PlayerIntel") select 0];
 	sleep 4;
 		playSound "MRH_HeliTaxi_Cancelled";
-	_myvec sideChat format ["De %1 pour %2: Bien reçu, hélicoptère annulé",groupID group _myvec,(_player getVariable "MRH_MilsimTools_Core_PlayerIntel") select 0];
+	_myvec sideChat format [localize "STR_MRH_HeliTaxi_ReceivedCancelRequest",groupID group _myvec,(_player getVariable "MRH_MilsimTools_Core_PlayerIntel") select 0];
 	}] RemoteExec ["Spawn", [-2,0] select isServer];
 
 call MRH_fnc_MilsimTools_Heli_clearDataSpace;
