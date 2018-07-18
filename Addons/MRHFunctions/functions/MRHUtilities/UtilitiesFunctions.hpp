@@ -32,3 +32,5 @@ class MoveInCargo
 {};
 class EndCredits
 {};
+class forceFaceWear
+{};
