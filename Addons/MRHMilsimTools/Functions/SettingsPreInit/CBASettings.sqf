@@ -61,3 +61,16 @@ _script	Script to execute when setting is changed.  (optional) <CODE>
 //=======Below are settings for the hackingtool
 //Settings to allow map on the tablet
 ["MRH_MilsimTools_RequireHackingTool", "CHECKBOX",   [localize "STR_MRH_RequireHackingToolPretty",localize "STR_MRH_RequireHackingToolTip"], "MRH_MilsimTools - Hacking settings",true,1] call cba_settings_fnc_init;
+//=====Below are settings for the heli taxi
+["MRH_MilsimTools_Heli_UseHeliTaxiInMission", "CHECKBOX",   [localize "STR_MRH_CBA_Heli_UseHeli",localize "STR_MRH_CBA_Heli_UseHeliToolTip"], "MRH_MilsimTools - Heli Taxi",true,1] call cba_settings_fnc_init;
+
+["MRH_MilsimTools_Heli_ConditionIsFormLeader", "CHECKBOX",   [localize "STR_MRH_CBA_Heli_MustBeFL",localize "STR_MRH_CBA_Heli_MustBeFLToolTip"], ["MRH_MilsimTools - Heli Taxi","Conditions to be able to call the Heli"],true,1] call cba_settings_fnc_init;
+["MRH_MilsimTools_Heli_isCustomConditionSet", "CHECKBOX",   [localize "STR_MRH_CBA_Heli_UseCondition",localize "STR_MRH_CBA_Heli_UseConditionToolTip"],["MRH_MilsimTools - Heli Taxi",localize "STR_MRH_CBA_Heli_SubCatConditions"],false,1] call cba_settings_fnc_init;
+
+["MRH_MilsimTools_Heli_CustomCondition", "EDITBOX",   [localize "STR_MRH_CBA_Heli_CustomCondition",localize "STR_MRH_CBA_Heli_CustomConditionTooltip"],["MRH_MilsimTools - Heli Taxi",localize"STR_MRH_CBA_Heli_SubCatConditions"],"(isFormationLeader player) && ([player, 'ACRE_PRC117F'] call acre_api_fnc_hasKindOfRadio)",1] call cba_settings_fnc_init;
+
+//////////
+["MRH_MilsimTools_BluForHelis", "EDITBOX",   [localize "STR_MRH_CBA_Heli_ForBF",localize "STR_MRH_CBA_Heli_ClassnamesToolTip"], ["MRH_MilsimTools - Heli Taxi",localize "STR_MRH_CBA_Heli_ForBF"],"B_Heli_Transport_01_F,B_Heli_Light_01_F,B_Heli_Transport_03_unarmed_F,B_T_VTOL_01_infantry_F",1] call cba_settings_fnc_init;
+["MRH_MilsimTools_BluForOpFor", "EDITBOX",   [localize "STR_MRH_CBA_Heli_ForOF",localize "STR_MRH_CBA_Heli_ClassnamesToolTip"], ["MRH_MilsimTools - Heli Taxi",localize "STR_MRH_CBA_Heli_ForOF"],"O_Heli_Transport_04_bench_F,O_Heli_Light_02_unarmed_F,O_Heli_Transport_04_covered_F",1] call cba_settings_fnc_init;
+["MRH_MilsimTools_BluForInde", "EDITBOX",   [localize "STR_MRH_CBA_Heli_ForID",localize "STR_MRH_CBA_Heli_ClassnamesToolTip"], ["MRH_MilsimTools - Heli Taxi",localize "STR_MRH_CBA_Heli_ForID"],"I_Heli_Transport_02_F,I_Heli_light_03_unarmed_F",1] call cba_settings_fnc_init;
+["MRH_MilsimTools_BluForCivs", "EDITBOX",   [localize "STR_MRH_CBA_Heli_ForCiv",localize "STR_MRH_CBA_Heli_ClassnamesToolTip"], ["MRH_MilsimTools - Heli Taxi",localize "STR_MRH_CBA_Heli_ForCiv"],"C_Heli_Light_01_civil_F",1] call cba_settings_fnc_init;

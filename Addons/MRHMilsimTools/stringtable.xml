@@ -162,8 +162,77 @@
 				<English>If enabled players will automatically be flagged as alive upon respawn. WARNING only use this setting if you are using a different respawn scheme than the usual respawn bunker milsim units use.</English>
 				<French>Si ce réglage est activé les joueurs seront automatiquement marqués comme vivant après avoir respawné. ATTENTION, n'activez cette option que si vous utilisez un mode de respawn différent du respawn bunker habituellement utilisé par les teams milsims.</French>
 			</Key>
-
-
+			<Key ID="STR_MRH_CBA_Heli_UseHeli">
+				<Original>Use helicopter taxi in this mission</Original>
+				<English>Use helicopter taxi in this mission</English>
+				<French>Utiliser le système d'hélicoptère taxi dans cette mission</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_Heli_UseHeliToolTip">
+				<Original>Enable to make heli taxis available, requires mission restart</Original>
+				<English>Enable to make heli taxis available, requires mission restart</English>
+				<French>Activer pour utiliser le système de taxi hélicoptère, requiert un redémarrage de la mission</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_Heli_MustBeFL">
+				<Original>Must be formation leader</Original>
+				<English>Must be formation leader</English>
+				<French>Doit être chef de groupe</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_Heli_MustBeFLToolTip">
+				<Original>If enabled only group leaders will be able to call the helicopter</Original>
+				<English>If enabled only group leaders will be able to call the helicopter</English>
+				<French>Si ce réglage est activé seuls les chefs de groupe auront la possibilité d'appeler l'hélicoptère, requiert un redémarrage de la mission</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_Heli_SubCatConditions">
+				<Original>Conditions to be able to call the Heli</Original>
+				<English>Conditions to be able to call the Heli</English>
+				<French>Conditions pour pouvoir appeler l'hélicoptère</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_Heli_UseCondition">
+				<Original>Custom condition, fill field below</Original>
+				<English>Custom condition, fill field below</English>
+				<French>Condition personnalisée,remplir le champ en dessous</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_Heli_UseConditionToolTip">
+				<Original>If enabled the code written below will be used as a condition check to allow calling for the heli, requires a mission restart</Original>
+				<English>If enabled the code written below will be used as a condition check to allow calling for the heli, requires a mission restart</English>
+				<French>Si ce réglage est activé le code écrit dans le champ ci dessous sera utilisé comme condition, requiert un redémarrage de la mission</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_Heli_CustomCondition">
+				<Original>Custom condition</Original>
+				<English>Custom condition</English>
+				<French>Condition personnalisée</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_Heli_CustomConditionTooltip">
+				<Original>Type condition code here, use single quotes </Original>
+				<English>Type condition code here, use single quotes</English>
+				<French>Taper la condition ici, ne pas utiliser de guillemets doubles</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_Heli_ForBF">
+				<Original>Helicopters for blufor</Original>
+				<English>Helicopters for blufor</English>
+				<French>Hélicoptères pour les blufor</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_Heli_ForOF">
+				<Original>Helicopters for opfor</Original>
+				<English>Helicopters for opfor</English>
+				<French>Hélicoptères pour les opfor</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_Heli_ForID">
+				<Original>Helicopters for independants</Original>
+				<English>Helicopters for independants</English>
+				<French>Hélicoptères pour les indépendants</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_Heli_ForCiv">
+				<Original>Helicopters for civilians</Original>
+				<English>Helicopters for civilians</English>
+				<French>Hélicoptères pour les civils</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_Heli_ClassnamesToolTip">
+				<Original>classnames of your helis, without quotes, separated by comas</Original>
+				<English>classnames of your helis, without quotes, separated by comas</English>
+				<French>Nom de classe de vos hélicoptères, sans guillemets, séparés par des virgules</French>
+			</Key>
+			
 		</Container>
 		<Container name="CORE_BriefingADmin">
 			<Key ID="STR_MRH_MS_BRIEFINGADDINFO">
@@ -318,6 +387,33 @@
 				<Original>Only a logged in admin can access this menu</Original>
 				<English>Only a logged in admin can access this menu</English>
 				<French>Seul un admni connecté peut ouvrir ce menu</French>
+			</Key>
+			<Key ID="STR_MRH_KEY_ToggleInvisibleZeus">
+				<Original>Toggle Invisible Zeus</Original>
+				<English>Toggle Invisible Zeus</English>
+				<French>Activer/Désactiver le Zeus Invisible</French>
+			</Key>
+			<Key ID="STR_MRH_KEY_ToggleInvisibleZeusToolTip">
+				<Original>Pressing this key will toggle between visible and invisible state for the avatar of the zeus</Original>
+				<English>Pressing this key will toggle between visible and invisible state for the avatar of the zeus</English>
+				<French>Cette touche permet d'activer et de désactiver le zeus invisible</French>
+			</Key>
+		</Container>
+		<Container name="MRH_ZEUS_Toggle">
+			<Key ID="STR_MRH_ZEUS_Toggle_ToggledOn">
+				<Original>MRH_Zeus Invisible:on</Original>
+				<English>MRH_Zeus Invisible:on</English>
+				<French>MRH_Zeus Invisible activé</French>
+			</Key>
+			<Key ID="STR_MRH_ZEUS_Toggle_ToggledOff">
+				<Original>MRH_Zeus Invisible:off</Original>
+				<English>MRH_Zeus Invisible:off</English>
+				<French>MRH_Zeus Invisible desactivé</French>
+			</Key>
+			<Key ID="STR_MRH_ZEUS_Toggle_WarningVeh">
+				<Original>WARNING :MRH_Zeus Invisible doesn't work in a vehicle</Original>
+				<English>WARNING :MRH_Zeus Invisible doesn't work in a vehicle</English>
+				<French>ATTENTION: MRH_Zeus Invisible ne fonctionne pas si vous êtes dans un véhicule</French>
 			</Key>
 		</Container>
 
