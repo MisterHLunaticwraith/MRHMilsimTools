@@ -92,6 +92,11 @@
 				<English>%1 we have a problem your transport was shot down at grid %2 ! </English>
 				<French>Nous avons un problème %1, votre transport a été abattu aux coordonnées %2!</French>
 			</Key>
+			<Key ID="STR_MRH_HeliTaxi_HeliCancelAce">
+				<Original>Cancel flight</Original>
+				<English>Cancel flight</English>
+				<French>Annuler le vol</French>
+			</Key>
 
 			
 			

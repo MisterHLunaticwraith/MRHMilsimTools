@@ -28,7 +28,7 @@ if (_replaceVanillaMap) then {
 		if ("ItemMap" in assigneditems _CAman) then
 		{
 			_CAman unlinkItem "ItemMap";
-			_CAman addItem "MRH_Map";
+			if !("MRH_Map" in items _CAman) then {_CAman addItem "MRH_Map";};
 		};
 	};
 	

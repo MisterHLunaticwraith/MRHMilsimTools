@@ -13,7 +13,7 @@
 
 				class MRH_Ace_UnFoldMap
 				{
-					displayName = "Unfold map on the ground";
+					displayName = $STR_MRH_EnhancedMap_UnfoldACE;
 					condition = "('MRH_Map' in items player) && !(call MRH_fnc_MilsimTools_EnhancedMap_isFoldedMapOpen)";
 					exceptions[] = {"isNotSitting"};
 					statement = "call MRH_fnc_MilsimTools_EnhancedMap_unfoldMap;";
@@ -22,7 +22,7 @@
 				};
 				class MRH_Ace_ShowMiniMap
 				{
-					displayName = "Show foldable map";
+					displayName = $STR_MRH_EnhancedMap_ShowFoldACE;
 					condition = "('MRH_Map' in items player) && !(call MRH_fnc_MilsimTools_EnhancedMap_isFoldedMapOpen)";
 					exceptions[] = {"isNotSitting","notOnMap"};
 					statement = "call MRH_fnc_MilsimTools_EnhancedMap_showFoldableMap";
@@ -31,7 +31,7 @@
 				};
 				class MRH_Ace_CloseMiniMap
 				{
-					displayName = "Close foldable map";
+					displayName = $STR_MRH_EnhancedMap_CloseFoldACE;
 					condition = "(call MRH_fnc_MilsimTools_EnhancedMap_isFoldedMapOpen)";
 					exceptions[] = {"isNotSitting","notOnMap"};
 					statement = "call MRH_fnc_MilsimTools_EnhancedMap_closeFoldableMap";
@@ -41,7 +41,7 @@
 			
 				class MRH_Ace_CenterMiniMap
 				{
-					displayName = "Choose foldable map fold zone";
+					displayName = $STR_MRH_EnhancedMap_ChooseFoldZACE;
 					condition = "('MRH_Map' in items player) && (visibleMap)";
 					exceptions[] = {"isNotSitting","notOnMap"};
 					statement = "call MRH_fnc_MilsimTools_EnhancedMap_setFoldableMapCenter";
@@ -58,7 +58,7 @@ class MRH_MapObject: Land_Map_blank_F {
 	author = "Mr H";
 	scope = 2;
 	scopeCurator = 2;
-	displayName = "MRH_MapObject";
+	displayName = $STR_MRH_EnhancedMap_MRHMapObject;
 
 
 

@@ -96,7 +96,7 @@
 ///////////////////////////////////////////////////////////////////////////
 /// Base Classes
 ///////////////////////////////////////////////////////////////////////////
-class RscTextMRHHeliTaxi
+class RscTextMRHFireSupport
 {
 	colorBackground[] = 
 	{
@@ -157,7 +157,7 @@ class RscTextMRHHeliTaxi
 	SizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
 	linespacing = 1;
 };
-class RscStructuredTextMRHHeliTaxi
+class RscStructuredTextMRHFireSupport
 {
 	colorText[] = 
 	{
@@ -188,7 +188,7 @@ class RscStructuredTextMRHHeliTaxi
 	size = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
 	shadow = 1;
 };
-class RscPictureMRHHeliTaxi
+class RscPictureMRHFireSupport
 {
 	colorBackground[] = 
 	{
@@ -242,7 +242,7 @@ class RscPictureMRHHeliTaxi
 	w = 0.2;
 	h = 0.15;
 };
-class RscEditMRHHeliTaxi
+class RscEditMRHFireSupport
 {
 	colorBackground[] = 
 	{
@@ -310,7 +310,7 @@ class RscEditMRHHeliTaxi
 	sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
 	canModify = 1;
 };
-class RscComboMRHHeliTaxi
+class RscComboMRHFireSupport
 {
 	colorSelect[] = 
 	{
@@ -490,7 +490,7 @@ class RscComboMRHHeliTaxi
 	arrowFull = "\A3\ui_f\data\GUI\RscCommon\rsccombo\arrow_combo_active_ca.paa";
 	wholeHeight = 0.45;
 };
-class RscListBoxMRHHeliTaxi
+class RscListBoxMRHFireSupport
 {
 	colorText[] = 
 	{
@@ -677,7 +677,7 @@ class RscListBoxMRHHeliTaxi
 	period = 1.2;
 	maxHistoryDelay = 1;
 };
-class RscButtonMRHHeliTaxi
+class RscButtonMRHFireSupport
 {
 	colorText[] = 
 	{
@@ -780,7 +780,7 @@ class RscButtonMRHHeliTaxi
 	offsetPressedY = 0;
 	borderSize = 0;
 };
-class RscShortcutButtonMRHHeliTaxi
+class RscShortcutButtonMRHFireSupport
 {
 	class HitZone
 	{
@@ -951,7 +951,7 @@ class RscShortcutButtonMRHHeliTaxi
 	url = "";
 	action = "";
 };
-class RscShortcutButtonMainMRHHeliTaxi
+class RscShortcutButtonMainMRHFireSupport
 {
 	color[] = 
 	{
@@ -1019,7 +1019,7 @@ class RscShortcutButtonMainMRHHeliTaxi
 	text = "";
 	action = "";
 };
-class RscFrameMRHHeliTaxi
+class RscFrameMRHFireSupport
 {
 	colorBackground[] = 
 	{
@@ -1048,7 +1048,7 @@ class RscFrameMRHHeliTaxi
 	w = 0.3;
 	h = 0.3;
 };
-class RscSliderMRHHeliTaxi
+class RscSliderMRHFireSupport
 {
 	color[] = 
 	{
@@ -1075,7 +1075,7 @@ class RscSliderMRHHeliTaxi
 	w = 0.3;
 	h = 0.025;
 };
-class IGUIBackMRHHeliTaxi
+class IGUIBackMRHFireSupport
 {
 	colorText[] = 
 	{
@@ -1103,7 +1103,7 @@ class IGUIBackMRHHeliTaxi
 	w = 0.1;
 	h = 0.1;
 };
-class RscCheckBoxMRHHeliTaxi
+class RscCheckBoxMRHFireSupport
 {
 	color[] = 
 	{
@@ -1240,7 +1240,7 @@ class RscCheckBoxMRHHeliTaxi
 	textureDisabledChecked = "A3\Ui_f\data\GUI\RscCommon\RscCheckBox\CheckBox_checked_ca.paa";
 	textureDisabledUnchecked = "A3\Ui_f\data\GUI\RscCommon\RscCheckBox\CheckBox_unchecked_ca.paa";
 };
-class RscTextCheckBoxMRHHeliTaxi
+class RscTextCheckBoxMRHFireSupport
 {
 	colorText[] = 
 	{
@@ -1339,7 +1339,7 @@ class RscTextCheckBoxMRHHeliTaxi
 	rows = 1;
 	columns = 1;
 };
-class RscButtonMenuMRHHeliTaxi
+class RscButtonMenuMRHFireSupport
 {
 	colorBackground[] = 
 	{
@@ -1515,7 +1515,7 @@ class RscButtonMenuMRHHeliTaxi
 	size = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
 	sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
 };
-class RscButtonMenuOKMRHHeliTaxi
+class RscButtonMenuOKMRHFireSupport
 {
 	shortcuts[] = 
 	{
@@ -1534,7 +1534,7 @@ class RscButtonMenuOKMRHHeliTaxi
 	default = 1;
 	text = "OK";
 };
-class RscButtonMenuCancelMRHHeliTaxi
+class RscButtonMenuCancelMRHFireSupport
 {
 	shortcuts[] = 
 	{
@@ -1543,7 +1543,7 @@ class RscButtonMenuCancelMRHHeliTaxi
 	idc = 2;
 	text = "Cancel";
 };
-class RscControlsGroupMRHHeliTaxi
+class RscControlsGroupMRHFireSupport
 {
 	class VScrollbar
 	{

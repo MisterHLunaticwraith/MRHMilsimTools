@@ -11,7 +11,7 @@ call MRH_fnc_MilsimTools_EnhancedMap_;
 #include "MRH_C_Path.hpp"
 [] spawn {
 waitUntil{visibleMap};
-hint "Select fold";
+hint localize "STR_MRH_EnhancedMap_SelectFoldHint";
 player setVariable ["MRH_MilsimTools_EnhacedMap_isChoosingPos",true];
 deleteMarkerLocal "MRH_SelectedFoldMapZone_Marker";
 _marker = createMarkerLocal ["MRH_SelectedFoldMapZone_Marker", player getVariable ['MRH_EHMAP_Mapsection',[worldSize / 2, worldsize / 2, 0]]];
@@ -30,7 +30,7 @@ _marker = createMarkerLocal ["MRH_SelectedFoldMapZone_Marker", player getVariabl
 	"MRH_SelectedFoldMapZone_Marker" setMarkerPosLocal (((findDisplay 12) displayCtrl 51) ctrlMapScreenToWorld getMousePosition);
 	};
 	deleteMarkerLocal "MRH_SelectedFoldMapZone_Marker";
-	hint "Fold selected";
+	hint localize "STR_MRH_EnhancedMap_FoldSelectedHint";
 };
 onMapSingleClick {
 	onMapSingleClick "";

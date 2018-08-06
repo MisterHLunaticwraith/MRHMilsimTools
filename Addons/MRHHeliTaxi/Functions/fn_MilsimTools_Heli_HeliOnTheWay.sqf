@@ -30,7 +30,7 @@ params ["_LZ"];
 	_statement = {  
 		  call MRH_fnc_MilsimTools_Heli_onHeliCancelled;
 				};  
-	_action = ["MRH_Taxi_Cancel","Annuler le vol","",_statement,_condition] call ace_interact_menu_fnc_createAction;  
+	_action = ["MRH_Taxi_Cancel",localize "STR_MRH_HeliTaxi_HeliCancelAce","",_statement,_condition] call ace_interact_menu_fnc_createAction;  
 	[player, 1, ["ACE_SelfActions"], _action] call ace_interact_menu_fnc_addActionToObject;
 	
 	

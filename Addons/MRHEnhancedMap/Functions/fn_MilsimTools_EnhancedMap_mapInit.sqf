@@ -16,7 +16,7 @@ _object FUNC(setMapTexture);
 
 //add look at map action
 _statement = {FUNC(lookAtMap);};
-_loc = "Open map";
+_loc = localize "STR_MRH_EnhancedMap_MapOnGroundOpenAction";
 _action =
 ["MRH_EnhancedMapOpen", 
 _loc,
@@ -32,7 +32,7 @@ _statement ,
  
  //ad take map action
  _statement2 = {[_this select 0] FUNC(collectMap);};
-_loc2 = "Fold and collect map";
+_loc2 = localize "STR_MRH_EnhancedMap_MapOnGroundCollectAction";
 _action2 =
 ["MRH_EnhancedMapCollect", 
 _loc2,

@@ -6,7 +6,7 @@ Return value:
 Public:
 Parameters:
 Example(s):
-spawn MRH_fnc_MilsimTools_EnhancedMap_temporaryMap;
+[] spawn MRH_fnc_MilsimTools_EnhancedMap_temporaryMap;
 */
 #include "MRH_C_Path.hpp"
 

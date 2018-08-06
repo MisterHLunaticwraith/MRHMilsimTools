@@ -3,7 +3,7 @@ class CfgPatches {
 		units[] = {}; //
 		weapons[] = {"MRH_SoldierTab"}; //
 		requiredVersion = 0.1; //
-		requiredAddons[] = {"cba_settings","MRHMilsimTools","A3_Modules_F"}; //
+		requiredAddons[] = {"MRHMilsimTools"}; //
 	};
 };
 

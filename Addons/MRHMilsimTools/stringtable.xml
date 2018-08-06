@@ -232,6 +232,36 @@
 				<English>classnames of your helis, without quotes, separated by comas</English>
 				<French>Nom de classe de vos hélicoptères, sans guillemets, séparés par des virgules</French>
 			</Key>
+			<Key ID="STR_MRH_CBA_EnhancedMap_FoldZoomLevel">
+				<Original>Foldable map zoom level</Original>
+				<English>Foldable map zoom level</English>
+				<French>Niveau de zoom de la carte pliable</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_EnhancedMap_FoldZoomLevelToolTip">
+				<Original>This setting allows you to select the zoom level of the foldable map, it affects all users, can be changed midgame by the admin.</Original>
+				<English>This setting allows you to select the zoom level of the foldable map, it affects all users, can be changed midgame by the admin.</English>
+				<French>Ce réglage vous permet de changer le niveau de zoom de la carte pliable, il affecre tous les joueurs. Peut être changé en cours de partie.</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_EnhancedMap_UseAceLightFold">
+				<Original>Use ace lighting on folded map</Original>
+				<English>Use ace lighting on folded map</English>
+				<French>Utiliser l'éclairage ACE sur la carte pliable</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_EnhancedMap_UseAceLightFoldToolTip">
+				<Original>If enabled, the foldable map visibility will depend on ambient lightning. Disclaimer: the effect can be a bit glitchy. Can be changed midgame by the admin.</Original>
+				<English>If enabled, the foldable map visibility will depend on ambient lightning. Disclaimer: the effect can be a bit glitchy. Can be changed midgame by the admin.</English>
+				<French>La carte pliable sera affectée par la lumière environnante. Attention: l'effet peut être un peu étrange. Peut être changé en cours de partie. </French>
+			</Key>
+			<Key ID="STR_MRH_CBA_EnhancedMap_ReplaceVanillaMap">
+				<Original>Replace vanilla map</Original>
+				<English>Replace vanilla map</English>
+				<French>Remplacer la carte Vanilla</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_EnhancedMap_ReplaceVanillaMapToolTip">
+				<Original>If this setting is enabled, all units that are equipped with vanilla map will have it removed and repaced by enhanced map, this setting is applied from the editor and onward, so disable it BEFORE placing units/opening old mission. Changing it requires a mission restart.</Original>
+				<English>If this setting is enabled, all units that are equipped with vanilla map will have it removed and repaced by enhanced map, this setting is applied from the editor and onward, so disable it BEFORE placing units/opening old mission. Changing it requires a mission restart.</English>
+				<French>Si ce réglage est activé, toutes les unités équipées d'une carte vanilla la verront remplacée par la carte améliorée. Ce réglage est appliqué dès l'éditeur donc veillez à le désactiver AVANT de placer des unités si vous n'en voulez pas, ou avant d'ouvrir une mission dans l'éditeur si vous ne voulez pas qu'elle soit affectée. Le changer en jeu nécessite un redemarrage de la mission.</French>
+			</Key>
 			
 		</Container>
 		<Container name="CORE_BriefingADmin">

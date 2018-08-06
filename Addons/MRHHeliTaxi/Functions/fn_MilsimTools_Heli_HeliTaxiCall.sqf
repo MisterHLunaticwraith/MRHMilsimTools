@@ -1,4 +1,5 @@
 openMap [true,true];
+[] spawn MRH_fnc_MilsimTools_EnhancedMap_temporaryMap;
 hint localize "STR_MRH_HeliTaxi_HintSelectLZ";
 onMapSingleClick {
 	onMapSingleClick "";

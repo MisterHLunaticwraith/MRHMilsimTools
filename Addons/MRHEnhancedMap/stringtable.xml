@@ -1,0 +1,59 @@
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Project name="MRHEnhancedMap">
+	<Package name="MRHEnhancedMap">
+		<Container name="MRH_EM_AllSTrings">
+			<Key ID="STR_MRH_EnhancedMap_UnfoldACE">
+				<Original>Unfold map on the ground</Original>
+				<English>Unfold map on the ground</English>
+				<French>Déplier la carte au sol</French>
+			</Key>
+			<Key ID="STR_MRH_EnhancedMap_ShowFoldACE">
+				<Original>Show foldable map</Original>
+				<English>Show foldable map</English>
+				<French>Montrer la carte pliée</French>
+			</Key>
+			<Key ID="STR_MRH_EnhancedMap_CloseFoldACE">
+				<Original>Close foldable map</Original>
+				<English>Close foldable map</English>
+				<French>Fermer la carte pliée</French>
+			</Key>
+			<Key ID="STR_MRH_EnhancedMap_ChooseFoldZACE">
+				<Original>Choose foldable map fold zone</Original>
+				<English>Choose foldable map fold zone</English>
+				<French>Choisir le pli de carte à afficher</French>
+			</Key>
+			<Key ID="STR_MRH_EnhancedMap_MRHMapObject">
+				<Original>Sharable map</Original>
+				<English>Sharable map</English>
+				<French>Carte partageable</French>
+			</Key>
+			<Key ID="STR_MRH_EnhancedMap_MAP_INVNAME">
+				<Original>Map</Original>
+				<English>Map</English>
+				<French>Carte</French>
+			</Key>
+			<Key ID="STR_MRH_EnhancedMap_MapOnGroundOpenAction">
+				<Original>Look at map</Original>
+				<English>Look at map</English>
+				<French>Consulter la carte</French>
+			</Key>
+			<Key ID="STR_MRH_EnhancedMap_MapOnGroundCollectAction">
+				<Original>Fold and collect map</Original>
+				<English>Fold and collect map</English>
+				<French>Plier et ramasser la carte</French>
+			</Key>
+			<Key ID="STR_MRH_EnhancedMap_SelectFoldHint">
+				<Original>Select fold</Original>
+				<English>Select fold</English>
+				<French>sélectionnez le pli</French>
+			</Key>
+			<Key ID="STR_MRH_EnhancedMap_FoldSelectedHint">
+				<Original>Fold selected</Original>
+				<English>Fold selected</English>
+				<French>Pli sélectionné</French>
+			</Key>
+			
+		</Container>
+	</Package>
+</Project>

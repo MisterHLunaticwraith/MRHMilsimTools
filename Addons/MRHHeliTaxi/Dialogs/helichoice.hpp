@@ -10,7 +10,7 @@ class MRHHeliChoice
 // GUI EDITOR OUTPUT START (by Mr H., v1.063, #Vijego)
 ////////////////////////////////////////////////////////
 
-class IGUIBack_2200: IGUIBack
+class IGUIBack_2200: IGUIBackMRHHeliTaxi
 {
 	idc = 2200;
 	x = 0.427812 * safezoneW + safezoneX;
@@ -18,7 +18,7 @@ class IGUIBack_2200: IGUIBack
 	w = 0.149531 * safezoneW;
 	h = 0.143 * safezoneH;
 };
-class RscCombo_2100: RscCombo
+class RscCombo_2100: RscComboMRHHeliTaxi
 {
 	idc = 2100;
 	x = 0.432969 * safezoneW + safezoneX;
@@ -26,7 +26,7 @@ class RscCombo_2100: RscCombo
 	w = 0.134062 * safezoneW;
 	h = 0.022 * safezoneH;
 };
-class RscStructuredText_1100: RscStructuredText
+class RscStructuredText_1100: RscStructuredTextMRHHeliTaxi
 {
 	idc = 1100;
 	text = $STR_MRH_HeliTaxi_SelectHeliType; //--- ToDo: Localize;
@@ -35,7 +35,7 @@ class RscStructuredText_1100: RscStructuredText
 	w = 0.139219 * safezoneW;
 	h = 0.022 * safezoneH;
 };
-class RscButton_1600: RscButton
+class RscButton_1600: RscButtonMRHHeliTaxi
 {
 	
 	idc = 1600;

@@ -6,7 +6,7 @@ class CBA_MiscItem_ItemInfo;
 class MRH_Map: CBA_MiscItem
 {
 	author = "Mr H.";
-	displayName = "Map";
+	displayName = $STR_MRH_EnhancedMap_MAP_INVNAME;
 	model = "\A3\Structures_F\Items\Documents\Map_F.p3d";
 	scope = 2;      
 	scopeArsenal = 2;

@@ -3,7 +3,7 @@ class CfgPatches {
 		units[] = {}; //
 		weapons[] = {"MRH_FiberScope"}; //
 		requiredVersion = 0.1; //
-		requiredAddons[] = {"A3_Weapons_F_Ammoboxes","cba_settings","ace_interact_menu"}; //
+		requiredAddons[] = {"MRHMilsimTools"}; //
 	};
 };
 
