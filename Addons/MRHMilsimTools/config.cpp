@@ -3,7 +3,7 @@ class CfgPatches {
 		units[] = {}; //
 		weapons[] = {}; //
 		requiredVersion = 0.1; //
-		requiredAddons[] = {"cba_settings"};
+		requiredAddons[] = {"cba_main"};
 
 	};
 		version = 1.11.0;

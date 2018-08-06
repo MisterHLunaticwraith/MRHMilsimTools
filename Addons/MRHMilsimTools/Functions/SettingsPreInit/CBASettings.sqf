@@ -74,3 +74,7 @@ _script	Script to execute when setting is changed.  (optional) <CODE>
 ["MRH_MilsimTools_BluForOpFor", "EDITBOX",   [localize "STR_MRH_CBA_Heli_ForOF",localize "STR_MRH_CBA_Heli_ClassnamesToolTip"], ["MRH_MilsimTools - Heli Taxi",localize "STR_MRH_CBA_Heli_ForOF"],"O_Heli_Transport_04_bench_F,O_Heli_Light_02_unarmed_F,O_Heli_Transport_04_covered_F",1] call cba_settings_fnc_init;
 ["MRH_MilsimTools_BluForInde", "EDITBOX",   [localize "STR_MRH_CBA_Heli_ForID",localize "STR_MRH_CBA_Heli_ClassnamesToolTip"], ["MRH_MilsimTools - Heli Taxi",localize "STR_MRH_CBA_Heli_ForID"],"I_Heli_Transport_02_F,I_Heli_light_03_unarmed_F",1] call cba_settings_fnc_init;
 ["MRH_MilsimTools_BluForCivs", "EDITBOX",   [localize "STR_MRH_CBA_Heli_ForCiv",localize "STR_MRH_CBA_Heli_ClassnamesToolTip"], ["MRH_MilsimTools - Heli Taxi",localize "STR_MRH_CBA_Heli_ForCiv"],"C_Heli_Light_01_civil_F",1] call cba_settings_fnc_init;
+//---------below are settings for map
+["MRH_MilsimTools_Map_ZoomRatio", "SLIDER",   ["Foldable map zoom level",""], "MRH_MilsimTools - Enhanced Map", [0, 1, 0.3, 2],1] call cba_settings_fnc_init;
+["MRH_MilsimTools_Map_FoldUseAceLight", "CHECKBOX",   ["Use ace lighting on folded map",""], "MRH_MilsimTools - Enhanced Map",true,1] call cba_settings_fnc_init;
+["MRH_MilsimTools_Map_ReplaceVanillaMap", "CHECKBOX",   ["Replace vanilla map",""], "MRH_MilsimTools - Enhanced Map",true,1] call cba_settings_fnc_init;

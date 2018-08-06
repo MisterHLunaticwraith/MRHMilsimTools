@@ -96,7 +96,7 @@
 ///////////////////////////////////////////////////////////////////////////
 /// Base Classes
 ///////////////////////////////////////////////////////////////////////////
-class RscProgress
+class RscProgressMRHFiberScope
 {
 	type = 8;
 	style = 0;
@@ -106,7 +106,7 @@ class RscProgress
 	w = 1;
 	h = 0.03;
 };
-class RscText
+class RscTextMRHFiberScope
 {
 	deletable = 0;
 	fade = 0;
@@ -167,7 +167,7 @@ class RscText
 		0.65
 	};
 };
-class RscStructuredText
+class RscStructuredTextMRHFiberScope
 {
 	deletable = 0;
 	fade = 0;
@@ -198,7 +198,7 @@ class RscStructuredText
 	size = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
 	shadow = 1;
 };
-class RscPicture
+class RscPictureMRHFiberScope
 {
 	deletable = 0;
 	fade = 0;
@@ -252,7 +252,7 @@ class RscPicture
 		0.65
 	};
 };
-class RscEdit
+class RscEditMRHFiberScope
 {
 	deletable = 0;
 	fade = 0;
@@ -320,7 +320,7 @@ class RscEdit
 		0.65
 	};
 };
-class RscCombo
+class RscComboMRHFiberScope
 {
 	deletable = 0;
 	fade = 0;
@@ -500,7 +500,7 @@ class RscCombo
 		1
 	};
 };
-class RscListBox
+class RscListBoxMRHFiberScope
 {
 	deletable = 0;
 	fade = 0;
@@ -687,7 +687,7 @@ class RscListBox
 	period = 1.2;
 	maxHistoryDelay = 1;
 };
-class RscButton
+class RscButtonMRHFiberScope
 {
 	deletable = 0;
 	fade = 0;
@@ -790,7 +790,7 @@ class RscButton
 	offsetPressedY = 0;
 	borderSize = 0;
 };
-class RscShortcutButton
+class RscShortcutButtonMRHFiberScope
 {
 	deletable = 0;
 	fade = 0;
@@ -961,7 +961,7 @@ class RscShortcutButton
 		align = "left";
 	};
 };
-class RscShortcutButtonMain
+class RscShortcutButtonMainMRHFiberScope
 {
 	idc = -1;
 	style = 0;
@@ -1029,7 +1029,7 @@ class RscShortcutButtonMain
 		align = "false";
 	};
 };
-class RscFrame
+class RscFrameMRHFiberScope
 {
 	type = 0;
 	idc = -1;
@@ -1058,7 +1058,7 @@ class RscFrame
 	w = 0.3;
 	h = 0.3;
 };
-class RscSlider
+class RscSliderMRHFiberScope
 {
 	deletable = 0;
 	fade = 0;
@@ -1085,7 +1085,7 @@ class RscSlider
 	w = 0.3;
 	h = 0.025;
 };
-class IGUIBack
+class IGUIBackMRHFiberScope
 {
 	type = 0;
 	idc = 124;
@@ -1113,7 +1113,7 @@ class IGUIBack
 		"(profilenamespace getvariable ['IGUI_BCG_RGB_A',0.8])"
 	};
 };
-class RscCheckBox
+class RscCheckBoxMRHFiberScope
 {
 	idc = -1;
 	type = 77;
@@ -1250,7 +1250,7 @@ class RscCheckBox
 		1
 	};
 };
-class RscTextCheckBox
+class RscTextCheckBoxMRHFiberScope
 {
 	idc = -1;
 	type = 7;
@@ -1349,7 +1349,7 @@ class RscTextCheckBox
 		"CHECKED"
 	};
 };
-class RscButtonMenu
+class RscButtonMenuMRHFiberScope
 {
 	idc = -1;
 	type = 16;
@@ -1525,7 +1525,7 @@ class RscButtonMenu
 		1
 	};
 };
-class RscButtonMenuOK
+class RscButtonMenuOKMRHFiberScope
 {
 	idc = 1;
 	shortcuts[] = 
@@ -1544,7 +1544,7 @@ class RscButtonMenuOK
 		1
 	};
 };
-class RscButtonMenuCancel
+class RscButtonMenuCancelMRHFiberScope
 {
 	idc = 2;
 	shortcuts[] = 
@@ -1553,7 +1553,7 @@ class RscButtonMenuCancel
 	};
 	text = "Cancel";
 };
-class RscControlsGroup
+class RscControlsGroupMRHFiberScope
 {
 	deletable = 0;
 	fade = 0;
