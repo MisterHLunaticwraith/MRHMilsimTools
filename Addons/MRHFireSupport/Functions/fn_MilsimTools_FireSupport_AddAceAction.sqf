@@ -29,7 +29,7 @@ if (_isCustomSettingSet) then
 	};
 
 
-_action = ["MRH_FireSupport_Call","Call artillery strike","",{call MRH_fnc_MilsimTools_FireSupport_OpenArtyInterface;},_condition] call ace_interact_menu_fnc_createAction;
+_action = ["MRH_FireSupport_Call",localize "STR_MRH_FireSupport_CallArtilleryStrikeAceAction","",{call MRH_fnc_MilsimTools_FireSupport_OpenArtyInterface;},_condition] call ace_interact_menu_fnc_createAction;
 ["CAManBase",1,['ACE_SelfActions'],_action,true] call ace_interact_menu_fnc_addActionToClass;
 };
 
@@ -52,6 +52,6 @@ if (_isCustomSettingSet) then
 	};
 
 
-_action = ["MRH_FireSupport_CAS_Call","Call Close Air Support","",{call MRH_fnc_MilsimTools_FireSupport_OpenCASInterface;},_condition] call ace_interact_menu_fnc_createAction;
+_action = ["MRH_FireSupport_CAS_Call",localize"STR_MRH_FireSupport_CallCASACEAction","",{call MRH_fnc_MilsimTools_FireSupport_OpenCASInterface;},_condition] call ace_interact_menu_fnc_createAction;
 ["CAManBase",1,['ACE_SelfActions'],_action,true] call ace_interact_menu_fnc_addActionToClass;
 };

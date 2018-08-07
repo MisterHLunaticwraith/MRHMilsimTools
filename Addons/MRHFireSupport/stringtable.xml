@@ -1,0 +1,153 @@
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Project name="MRHFireSupport">
+	<Package name="MRHFireSupport">
+		<Container name="MRHFireSupport_allstrings">
+			<Key ID="STR_MRH_FireSupport_RequestArtySupport">
+				<Original>Request artillery fire support</Original>
+				<English>Request artillery fire support</English>
+				<French>Demander un tir d'artillerie</French>
+			</Key>
+			<Key ID="STR_MRH_FireSupport_EnterGridInfo">
+				<Original>Enter  grid coordinates in format 123(4)(5)-1234(4)(5)</Original>
+				<English>Enter  grid coordinates in format 123(4)(5)-1234(4)(5)</English>
+				<French>Entrer les coordonnées de grille au format 123(4)(5)-1234(4)(5)</French>
+			</Key>
+			<Key ID="STR_MRH_FireSupport_CoordToolTip">
+				<Original>Each coordinate can be 3,4 or five digits long, separate East and North by - </Original>
+				<English>Each coordinate can be 3,4 or five digits long, separate East and North by -  </English>
+				<French>Chaque coordonnée peut être longue de 3,4 ou 5 chiffres, séparer longitude et latitude par -</French>
+			</Key>
+			<Key ID="STR_MRH_FireSupport_AvailableShotsInfo">
+				<Original>Available number of shots:</Original>
+				<English>Available number of shots:</English>
+				<French>Nombre de tirs disponibles:</French>
+			</Key>
+			<Key ID="STR_MRH_FireSupport_SelectNumberOfShotsInfo">
+				<Original>Select number of rounds:</Original>
+				<English>Select number of rounds:</English>
+				<French>Sélectionnez le nombre de tirs:</French>
+			</Key>
+			<Key ID="STR_MRH_FireSupport_SelectAmmoTypeInfo">
+				<Original>Select type of ammunition:</Original>
+				<English>Select type of ammunition:</English>
+				<French>Sélectionnez le type de munition:</French>
+			</Key>
+			<Key ID="STR_MRH_FireSupport_CancelButtonText">
+				<Original>Cancel</Original>
+				<English>Cancel</English>
+				<French>Annuler</French>
+			</Key>
+			<Key ID="STR_MRH_FireSupport_FireButtonText">
+				<Original>Fire</Original>
+				<English>Fire</English>
+				<French>Faire feu</French>
+			</Key>
+			<Key ID="STR_MRH_FireSupport_CallArtilleryStrikeAceAction">
+				<Original>Call artillery strike</Original>
+				<English>Call artillery strike</English>
+				<French>Demander un tir d'artillerie</French>
+			</Key>
+			<Key ID="STR_MRH_FireSupport_CallCASACEAction">
+				<Original>Call Close Air Support</Original>
+				<English>Call Close Air Support</English>
+				<French>Demander un support aérien</French>
+			</Key>
+			<Key ID="STR_MRH_FireSupport_RequestArtyDialog1">
+				<Original>This is %3. Requesting artillery fire at coordinates %1, %2 shells</Original>
+				<English>This is %3. Requesting artillery fire at coordinates %1, %2 shells</English>
+				<French>De %3. Demandons tir d'artillerie aux coordonnées %1, %2 tirs.</French>
+			</Key>
+			<Key ID="STR_MRH_FireSupport_RequestArtyDialog2">
+				<Original>Good copy %3. %4 shots fired to grid %1, ETA: %2 seconds</Original>
+				<English>Good copy %3. %4 shots fired to grid %1, ETA: %2 seconds</English>
+				<French>C'est reçu %3. %4 tirs vers coordonnées %1, ETA: %2 secondes</French>
+			</Key>
+			<Key ID="STR_MRH_FireSupport_RequestArtyDialog3">
+				<Original>Splash! %3 please confirm.</Original>
+				<English>Splash! %3 please confirm.</English>
+				<French>Impact! %3 veuillez confirmer.</French>
+			</Key>
+			<Key ID="STR_MRH_FireSupport_CASUnavailableMessage">
+				<Original>A CAS mission is already running please try later</Original>
+				<English>A CAS mission is already running please try later</English>
+				<French>Une mission de support aérien est déjà en cours, veuillez rééssayer plus tard</French>
+			</Key>
+			<Key ID="STR_MRH_FireSupport_CASnoCASleft">
+				<Original>Not enough CAS support left</Original>
+				<English>Not enough CAS support left</English>
+				<French>Il ne vous reste plus de supports aériens disponibles</French>
+			</Key>
+			<Key ID="STR_MRH_FireSupport_CASnotThisTypeOfAttack">
+				<Original>The selected aircraft cannot perform the selected type of attack, please select another type.</Original>
+				<English>The selected aircraft cannot perform the selected type of attack, please select another type.</English>
+				<French>L'avion selectionné ne dispose pas de ce typer d'armement, veuillez choisir un autre type d'attaque."</French>
+			</Key>
+			<Key ID="STR_MRH_FireSupport_CASrequestDialog1">
+				<Original>This is %2. Requesting Close Air Support strike at coordinates %1</Original>
+				<English>This is %2. Requesting Close Air Support strike at coordinates %1</English>
+				<French>De %2. Demandons support aérien aux coordonnées %1</French>
+			</Key>
+			<Key ID="STR_MRH_FireSupport_CASrequestDialog2">
+				<Original>Good copy %3. CAS inbound to grid %1, ETA: %2 seconds</Original>
+				<English>Good copy %3. CAS inbound to grid %1, ETA: %2 seconds</English>
+				<French>C'est reçu %3. Support aérien en route pour coordonnées %1, ETA: %2 secondes</French>
+			</Key>
+			<Key ID="STR_MRH_FireSupport_CASrequestDialog3">
+				<Original>CAS in position %1, enjoy the fireworks !</Original>
+				<English>CAS in position %1, enjoy the fireworks !</English>
+				<French>Support aérien sur zone %1, profitez du feu d'artifice !</French>
+			</Key>
+			<Key ID="STR_MRH_FireSupport_CASnoCASForYourSide">
+				<Original>There are no CAS available for your side</Original>
+				<English>There are no CAS available for your side</English>
+				<French>Il n'y a pas de support aérien pour votre camps</French>
+			</Key>
+			<Key ID="STR_MRH_FireSupport_RequestCASInterface">
+				<Original>Request Close Air Support</Original>
+				<English>Request Close Air Support</English>
+				<French>Demander un support aérien</French>
+			</Key>
+			<Key ID="STR_MRH_FireSupport_CASSelectTypeInterFace">
+				<Original>Select Attack Type</Original>
+				<English>Select Attack Type</English>
+				<French>Sélectionnez le type d'attaque</French>
+			</Key>
+			<Key ID="STR_MRH_FireSupport_CASSelectPlaneTypeInterface">
+				<Original>Select Airplane Type</Original>
+				<English>Select Airplane Type</English>
+				<French>Sélectionnez le type d'avion</French>
+			</Key>
+			<Key ID="STR_MRH_FireSupport_CASAvailableNumberOfCasSupportInterface">
+				<Original>Available number of CAS supports</Original>
+				<English>Available number of CAS supports</English>
+				<French>Nombre de supports aériens disponibles</French>
+			</Key>
+			<Key ID="STR_MRH_FireSupport_CASChooseGuns">
+				<Original>Guns</Original>
+				<English>Guns</English>
+				<French>Canons</French>
+			</Key>
+			<Key ID="STR_MRH_FireSupport_CASChooseMissiles">
+				<Original>Missiles</Original>
+				<English>Missiles</English>
+				<French>Missiles</French>
+			</Key>
+			<Key ID="STR_MRH_FireSupport_CASChooseGunsAndMissiles">
+				<Original>Guns and missiles</Original>
+				<English>Guns and missiles</English>
+				<French>Canons et missiles</French>
+			</Key>
+			<Key ID="STR_MRH_FireSupport_CASChooseBomb">
+				<Original>Bomb</Original>
+				<English>Bomb</English>
+				<French>Bombe</French>
+			</Key>
+			<Key ID="STR_MRH_FireSupport_NoArtyLeft">
+				<Original>Not enough artillery shots left</Original>
+				<English>Not enough artillery shots left</English>
+				<French>Vous n'avez plus suffisament de tirs d'artillerie</French>
+			</Key>
+		</Container>
+	</Package>
+</Project>

@@ -23,7 +23,7 @@ class MRHTitle: RscStructuredTextMRHFireSupport
 {
 	idc = 1100;
 	moving = true;
-	text = "Request artillery fire support"; //--- ToDo: Localize;
+	text = $STR_MRH_FireSupport_RequestArtySupport; //--- ToDo: Localize;
 	x = 0.391719 * safezoneW + safezoneX;
 	y = 0.401 * safezoneH + safezoneY;
 	w = 0.201094 * safezoneW;
@@ -33,8 +33,7 @@ class MRHTipCoord: RscStructuredTextMRHFireSupport
 {
 	idc = 1101;
 	moving = true;
-	tooltip = "test";
-	text = "Enter  grid coordinates in format 123(4)(5)-1234(4)(5)"; //--- ToDo: Localize;
+	text = $STR_MRH_FireSupport_EnterGridInfo; //--- ToDo: Localize;
 	x = 0.391719 * safezoneW + safezoneX;
 	y = 0.434 * safezoneH + safezoneY;
 	w = 0.159844 * safezoneW;
@@ -44,7 +43,7 @@ class MRHFridInpuitZone: RscEditMRHFireSupport
 {
 	idc = 1400;
 	moving = true;
-	tooltip = "Each coordinate can be 3,4 or five digits long, separate latitude and longitude by - ";
+	tooltip = $STR_MRH_FireSupport_CoordToolTip;
 	text = "00000-00000"; //--- ToDo: Localize;
 	x = 0.556719 * safezoneW + safezoneX;
 	y = 0.434 * safezoneH + safezoneY;
@@ -55,7 +54,7 @@ class MRHTipNumber: RscStructuredTextMRHFireSupport
 {
 	idc = 1102;
 	moving = true;
-	text = "Available number of shots:"; //--- ToDo: Localize;
+	text = $STR_MRH_FireSupport_AvailableShotsInfo; //--- ToDo: Localize;
 	x = 0.391719 * safezoneW + safezoneX;
 	y = 0.467 * safezoneH + safezoneY;
 	w = 0.159844 * safezoneW;
@@ -75,7 +74,7 @@ class MRHSelectNumberTip: RscStructuredTextMRHFireSupport
 {
 	idc = 1104;
 	moving = true;
-	text = "Select number of rounds:"; //--- ToDo: Localize;
+	text = $STR_MRH_FireSupport_SelectNumberOfShotsInfo; //--- ToDo: Localize;
 	x = 0.391719 * safezoneW + safezoneX;
 	y = 0.489 * safezoneH + safezoneY;
 	w = 0.159844 * safezoneW;
@@ -94,7 +93,7 @@ class MRHSelectAmunitionTooltip: RscStructuredTextMRHFireSupport
 {
 	idc = 1105;
 	moving = true;
-	text = "Select type of ammunition:"; //--- ToDo: Localize;
+	text = $STR_MRH_FireSupport_SelectAmmoTypeInfo; //--- ToDo: Localize;
 	x = 0.391719 * safezoneW + safezoneX;
 	y = 0.533 * safezoneH + safezoneY;
 	w = 0.159844 * safezoneW;
@@ -114,7 +113,7 @@ class MRHButtonCancel: RscButtonMRHFireSupport
 	idc = 1600;
 	moving = true;
 	action = "closedialog 0";
-	text = "Cancel"; //--- ToDo: Localize;
+	text = $STR_MRH_FireSupport_CancelButtonText; //--- ToDo: Localize;
 	x = 0.391719 * safezoneW + safezoneX;
 	y = 0.588 * safezoneH + safezoneY;
 	w = 0.0515625 * safezoneW;
@@ -124,7 +123,7 @@ class MRHButtonfire: RscButtonMRHFireSupport
 {
 	idc = 1601;
 	moving = true;
-	text = "Fire"; //--- ToDo: Localize;
+	text = $STR_MRH_FireSupport_FireButtonText; //--- ToDo: Localize;
 	action = "[] spawn MRH_fnc_MilsimTools_FireSupport_FireArty";
 	x = 0.453594 * safezoneW + safezoneX;
 	y = 0.588 * safezoneH + safezoneY;

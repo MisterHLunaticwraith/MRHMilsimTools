@@ -23,6 +23,7 @@ if (_CAman == player) then
 	["ace_unconscious", {if (_this select 1) then {call MRH_fnc_MilsimTools_EnhancedMap_closeFoldableMap};}] call CBA_fnc_addEventHandler;
 	["ace_captiveStatusChanged", {if (_this select 1) then {call MRH_fnc_MilsimTools_EnhancedMap_closeFoldableMap};}] call CBA_fnc_addEventHandler;
 };
+if (is3DEN) ExitWith {};
 _replaceVanillaMap = ["MRH_MilsimTools_Map_ReplaceVanillaMap"] call cba_settings_fnc_get;
 if (_replaceVanillaMap) then {
 		if ("ItemMap" in assigneditems _CAman) then

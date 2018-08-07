@@ -12,7 +12,7 @@ Example(s):
 #include "MRH_C_Path.hpp"
 _availableShots = missionNamespace getVariable ["MRH_FireSupport_NumberOfAvailableArtilleryShots" + (str side player),10]; //temporary do 0 after settings
 _requestTedNumberOfShots = parseNumber (lbData [2100,lbcursel 2100]);
-if (_requestTedNumberOfShots > _availableShots) ExitWith {systemchat "Not enough artillery shots left"};
+if (_requestTedNumberOfShots > _availableShots) ExitWith {systemchat localize "STR_MRH_FireSupport_NoArtyLeft"};
 _leftShotsNew = _availableShots - _requestTedNumberOfShots;
 missionNamespace setVariable ["MRH_FireSupport_NumberOfAvailableArtilleryShots" + (str side player),_leftShotsNew,true];
 
@@ -70,11 +70,11 @@ if (_typeOfAmmo in _slowAmmo) then {_speed = 0.001; _alt = 150; _typeOfAmmo = "F
 		
 		if ((group player) != (group _player)) ExitWith {};
 		//playSound "";
-	_player sideChat format ["This is %3. Requesting artillery fire at coordinates %1, %2 shells",([_LZ] call MRH_fnc_MilsimTools_Core_realisticGrid),str _requestTedNumberOfShots,(_player getVariable "MRH_MilsimTools_Core_PlayerIntel") select 0];
+	_player sideChat format [localize "STR_MRH_FireSupport_RequestArtyDialog1",([_LZ] call MRH_fnc_MilsimTools_Core_realisticGrid),str _requestTedNumberOfShots,(_player getVariable "MRH_MilsimTools_Core_PlayerIntel") select 0];
 	sleep 4;
 		//playSound "MRH_HeliTaxi_HeliEnRoute";
 		leader group player directSay "mp_groundsupport_45_artillery_BHQ_2";
-	[side _player, "HQ"] sideChat format ["Good copy %3. %4 shots fired to grid %1, ETA: %2 seconds",([_LZ] call MRH_fnc_MilsimTools_Core_realisticGrid),_ETA,(_player getVariable "MRH_MilsimTools_Core_PlayerIntel") select 0,str _requestTedNumberOfShots];
+	[side _player, "HQ"] sideChat format [localize "STR_MRH_FireSupport_RequestArtyDialog2",([_LZ] call MRH_fnc_MilsimTools_Core_realisticGrid),_ETA,(_player getVariable "MRH_MilsimTools_Core_PlayerIntel") select 0,str _requestTedNumberOfShots];
 	}] RemoteExec ["Spawn", [-2,0] select isServer];
 
 sleep _ETA;
@@ -83,6 +83,6 @@ sleep _ETA;
 		if ((group player) != (group _player)) ExitWith {};
 		//playSound "MRH_HeliTaxi_HeliEnRoute";
 		leader group player directSay "mp_groundsupport_45_artillery_BHQ_1";
-	[side _player, "HQ"] sideChat format ["Splash! %3 please confirm.",([_LZ] call MRH_fnc_MilsimTools_Core_realisticGrid),_ETA,(_player getVariable "MRH_MilsimTools_Core_PlayerIntel") select 0,str _requestTedNumberOfShots];
+	[side _player, "HQ"] sideChat format [localize "STR_MRH_FireSupport_RequestArtyDialog3",([_LZ] call MRH_fnc_MilsimTools_Core_realisticGrid),_ETA,(_player getVariable "MRH_MilsimTools_Core_PlayerIntel") select 0,str _requestTedNumberOfShots];
 	}] RemoteExec ["Spawn", [-2,0] select isServer];
 _fireOrder = [_requestedPosFormated,_typeOfAmmo,_radius,_requestTedNumberOfShots,_delay,_conditionEnd,_safezone,_alt,_speed,_sounds] spawn BIS_fnc_fireSupportVirtual;

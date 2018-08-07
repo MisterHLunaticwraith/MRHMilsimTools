@@ -13,17 +13,17 @@ Example(s):
 
 disableSerialization;
 _allAvailablePlanes = missionNamespace getVariable ["MRH_FireSupport_TypesCASPLANES"+ (str side player),[]];
-if (_allAvailablePlanes isEqualTo []) exitWith {systemChat "There are no CAS available for your side"};
+if (_allAvailablePlanes isEqualTo []) exitWith {systemChat localize "STR_MRH_FireSupport_CASnoCASForYourSide"};
 _handle = createDialog "MRHArtilleryInterface";
 //redefine from arty interface
 _Title = FDIS(1100);
-_Title ctrlSetStructuredText parseText "Request Close Air Support";
+_Title ctrlSetStructuredText parseText (localize "STR_MRH_FireSupport_RequestCASInterface");
 _type = FDIS(1105);
-_type ctrlSetStructuredText parseText "Select Attack Type";
+_type ctrlSetStructuredText parseText (localize "STR_MRH_FireSupport_CASSelectTypeInterFace");
 _attack = FDIS(1104);
-_attack ctrlSetStructuredText parseText "Select Airplane Type";
+_attack ctrlSetStructuredText parseText (localize "STR_MRH_FireSupport_CASSelectPlaneTypeInterface");
 _availableTIP = FDIS(1102);
-_availableTIP ctrlSetStructuredText parseText "Available number of CAS supports";
+_availableTIP ctrlSetStructuredText parseText (localize "STR_MRH_FireSupport_CASAvailableNumberOfCasSupportInterface");
 
 
 _ctrlGridRef = FDIS(1400);
@@ -47,7 +47,7 @@ _ctrlNumberCombo lbSetCurSel 0;
 
 _index = _ctrlAmmotypeCombo lbAdd (_x select 1);
 _ctrlAmmotypeCombo lbsetData [_index,(str (_x select 0))]; 
-}forEach [[0,"Guns"],[1,"Missiles"],[2,"Guns and missiles"],[3,"Bomb"]];
+}forEach [[0,(localize "STR_MRH_FireSupport_CASChooseGuns")],[1,(localize "STR_MRH_FireSupport_CASChooseMissiles")],[2,(localize "STR_MRH_FireSupport_CASChooseGunsAndMissiles")],[3,(localize "STR_MRH_FireSupport_CASChooseBomb")]];
 _ctrlAmmotypeCombo lbSetCurSel 0;
 
 _button = FDIS(1601);

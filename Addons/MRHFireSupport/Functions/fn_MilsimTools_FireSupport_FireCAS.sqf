@@ -11,10 +11,10 @@ Example(s):
 */
 #include "MRH_C_Path.hpp"
 _availability = missionNamespace getVariable ["MRH_FireSupport_isAvailableCASfor_"+ (str side player),true];
-if !(_availability) ExitWith {systemChat "A CAS mission is already running please try later"};
+if !(_availability) ExitWith {systemChat localize "STR_MRH_FireSupport_CASUnavailableMessage"};
 _availableCAS = missionNamespace getVariable ["MRH_FireSupport_NumberOfAvailableCAS" + (str side player),10]; //temporary do 0 after settings
 
-if (_availableCAS < 1) ExitWith {systemchat "Not enough artillery CAS support left"};
+if (_availableCAS < 1) ExitWith {systemchat localize "STR_MRH_FireSupport_CASnoCASleft"};
 
 
 _vehicle = lbData [2100,lbcursel 2100];
@@ -40,7 +40,7 @@ _requestedPos = ctrlText 1400;
 			};
 		};
 	} foreach (_vehicle call bis_fnc_weaponsEntityType);//getarray (_planeCfg >> "weapons");
-	if (count _weapons == 0) exitwith {systemchat format ["The selected aircraft cannot perform the selected type of attack, please select another type.",_vehicle,_weaponTypes];};
+	if (count _weapons == 0) exitwith {systemchat format [localize "STR_MRH_FireSupport_CASnotThisTypeOfAttack",_vehicle,_weaponTypes];};
 //----------
 missionNamespace setVariable ["MRH_FireSupport_isAvailableCASfor_"+ (str side player),false,true];
 _leftCASNew = _availableCAS - 1;
@@ -62,11 +62,11 @@ playSound3D ["A3\Sounds_F\sfx\radio\ambient_radio2.wss",player];
 		if ((group player) != (group _player)) ExitWith {};
 		//playSound "";
 	
-	_player sideChat format ["This is %2. Requesting Close Air Support strike at coordinates %1",([_LZ] call MRH_fnc_MilsimTools_Core_realisticGrid),(_player getVariable "MRH_MilsimTools_Core_PlayerIntel") select 0];
+	_player sideChat format [localize "STR_MRH_FireSupport_CASrequestDialog1",([_LZ] call MRH_fnc_MilsimTools_Core_realisticGrid),(_player getVariable "MRH_MilsimTools_Core_PlayerIntel") select 0];
 	sleep 4;
 		//playSound "MRH_HeliTaxi_HeliEnRoute";
 		
-	[side _player, "HQ"] sideChat format ["Good copy %3. CAS inbound to grid %1, ETA: %2 seconds",([_LZ] call MRH_fnc_MilsimTools_Core_realisticGrid),_ETA,(_player getVariable "MRH_MilsimTools_Core_PlayerIntel") select 0];
+	[side _player, "HQ"] sideChat format [localize "STR_MRH_FireSupport_CASrequestDialog2",([_LZ] call MRH_fnc_MilsimTools_Core_realisticGrid),_ETA,(_player getVariable "MRH_MilsimTools_Core_PlayerIntel") select 0];
 	}] RemoteExec ["Spawn", [-2,0] select isServer];
 
 sleep _ETA;
@@ -76,7 +76,7 @@ playSound3D ["A3\Sounds_F\sfx\radio\ambient_radio6.wss", player];
 		if ((group player) != (group _player)) ExitWith {};
 		//playSound "MRH_HeliTaxi_HeliEnRoute";
 		//leader group player directSay "mp_groundsupport_45_artillery_BHQ_1";
-	[side _player, "HQ"] sideChat format ["CAS in position %1, enjoy the fireworks ",(_player getVariable "MRH_MilsimTools_Core_PlayerIntel") select 0];
+	[side _player, "HQ"] sideChat format [localize "STR_MRH_FireSupport_CASrequestDialog3",(_player getVariable "MRH_MilsimTools_Core_PlayerIntel") select 0];
 	}] RemoteExec ["Spawn", [-2,0] select isServer];
 	
 

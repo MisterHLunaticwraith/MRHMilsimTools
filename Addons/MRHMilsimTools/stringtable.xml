@@ -258,9 +258,119 @@
 				<French>Remplacer la carte Vanilla</French>
 			</Key>
 			<Key ID="STR_MRH_CBA_EnhancedMap_ReplaceVanillaMapToolTip">
-				<Original>If this setting is enabled, all units that are equipped with vanilla map will have it removed and repaced by enhanced map, this setting is applied from the editor and onward, so disable it BEFORE placing units/opening old mission. Changing it requires a mission restart.</Original>
-				<English>If this setting is enabled, all units that are equipped with vanilla map will have it removed and repaced by enhanced map, this setting is applied from the editor and onward, so disable it BEFORE placing units/opening old mission. Changing it requires a mission restart.</English>
-				<French>Si ce réglage est activé, toutes les unités équipées d'une carte vanilla la verront remplacée par la carte améliorée. Ce réglage est appliqué dès l'éditeur donc veillez à le désactiver AVANT de placer des unités si vous n'en voulez pas, ou avant d'ouvrir une mission dans l'éditeur si vous ne voulez pas qu'elle soit affectée. Le changer en jeu nécessite un redemarrage de la mission.</French>
+				<Original>If this setting is enabled, all units that are equipped with vanilla map will have it removed and repaced by enhanced map, this setting is applied at mission start. Requires a mission restart.</Original>
+				<English>If this setting is enabled, all units that are equipped with vanilla map will have it removed and repaced by enhanced map, this setting is applied at mission start. Requires a mission restart.</English>
+				<French>Si ce réglage est activé, toutes les unités équipées d'une carte vanilla la verront remplacée par la carte améliorée. Ce réglage est appliqué au démarrage de la mission. Le changer en jeu nécessite un redemarrage de la mission.</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_FireSupport_AllowFSsetting">
+				<Original>Allow Artillery Strikes Support</Original>
+				<English>Allow Artillery Strikes Support</English>
+				<French>Autoriser le support par frappes d'artillerie</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_FireSupport_AllowFSsettingToolTip">
+				<Original>If disabled artillery strikes won't be available in the mission. Requires mission restart.</Original>
+				<English>If disabled artillery strikes won't be available in the mission. Requires mission restart.</English>
+				<French>Si désactivé, le support d'artillerie ne sera pas disponible dans cette mission. Requiert un redémarrage de la mission.</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_General_MustBEFlToolTip">
+				<Original>The player must be formation leader to be able to perform this action</Original>
+				<English>The player must be formation leader to be able to perform this action</English>
+				<French>Le joueur doit être chef de groupe pour pouvoir accéder à cette action</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_General_UseCustomCondition">
+				<Original>Use custom condition</Original>
+				<English>Use custom condition</English>
+				<French>Utiliser une condition personnalisée</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_General_UseCustomConditionToolTip">
+				<Original>If this setting is enabled the custom condition defined below will be used</Original>
+				<English>If this setting is enabled the custom condition defined below will be used</English>
+				<French>Si ce réglage est activé, la condition personnalisée définit ci dessous sera utilisée</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_FireSupport_ConditionsAS_Cat">
+				<Original>Conditions to be able to call an artillery strike</Original>
+				<English>Conditions to be able to call an artillery strike</English>
+				<French>Conditions pour pouvoir appeler un support d'artillerie</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_General_CustomConditionCodetoUse">
+				<Original>Custom condition code to use</Original>
+				<English>Custom condition code to use</English>
+				<French>Code de condition à utiliser</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_General_CustomConditionCodetoUseToolTip">
+				<Original>Type your condition code here, do not use doublequotes " but single quotes ' instead</Original>
+				<English>Type your condition code here, do not use doublequotes " but single quotes ' instead</English>
+				<French>Entrez votre code de condition ici, ne pas utiliser de guillemets doubles ", utiliser ' à la place</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_General_ClassnamesTypeRulesToolTip">
+				<Original>classnames separated by comas without quotes</Original>
+				<English>classnames separated by comas without quotes</English>
+				<French>Noms de classe, séparés par des virgules, sans guillemets</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_FireSupport_AvailableArtyMags">
+				<Original>Available artillery magazines</Original>
+				<English>Available artillery magazines</English>
+				<French>Munition d'artillerie disponibles (par type de MAGS)</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_FireSupport_AVailableNumberOfArtilleryAmmo">
+				<Original>Available number of artillery ammunition</Original>
+				<English>Available number of artillery ammunition</English>
+				<French>Nombre de munition disponibles</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_FireSupport_AVailableNumberOfArtilleryAmmoToolTip">
+				<Original>Number, represents how many shots can be fired</Original>
+				<English>Number, represents how many shots can be fired</English>
+				<French>Nombre, représente combien de tirs d'artilleries peuvent être faits</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_FireSupport_AllowCasSetting">
+				<Original>Allow use of CAS support</Original>
+				<English>Allow use of CAS support</English>
+				<French>Autoriser l'utilisation du support aérien rapproché</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_FireSupport_AllowCasSettingToolTip">
+				<Original>If disabled CAS support won't be available in this mission, requires a mission restart.</Original>
+				<English>If disabled CAS support won't be available in this mission, requires a mission restart.</English>
+				<French>Si désactivé l'appel au support aérien ne sera pas disponible dans cette mission, requiert un redémarrage de la mission</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_FireSupport_ConditionsForCASCat">
+				<Original>Conditions to be able to call a CAS strike</Original>
+				<English>Conditions to be able to call a CAS strike</English>
+				<French>Conditions pour pouvoir appeler un support aérien rapproché</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_FireSupport_AvailableNumberOfCas">
+				<Original>Available number of CAS Runs</Original>
+				<English>Available number of CAS Runs</English>
+				<French>Nombre de supports aériens rapprochés disponibles</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_FireSupport_AvailableNumberOfCasToolTip">
+				<Original>Number, represents how many times a side can call CAS</Original>
+				<English>Number, represents how many times a side can call CAS</English>
+				<French>Nombre, représente combien de fois un camps peut appeler un support aérien</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_FireSupport_CASAvailablePlanes">
+				<Original>Available planes</Original>
+				<English>Available planes</English>
+				<French>Avions disponibles</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_FireSupport_AvailCASRunsCAT">
+				<Original>Available CAS runs</Original>
+				<English>Available CAS runs</English>
+				<French>Nombre de supports aériens rapprochés disponibles</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_FireSupport_AvailPlanesBFCat">
+				<Original>Available planes for BluFor</Original>
+				<English>Available planes for BluFor</English>
+				<French>Avions disponibles pour les BluFor</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_FireSupport_AvailPlanesOFCat">
+				<Original>Available planes for OpFor</Original>
+				<English>Available planes for OpFor</English>
+				<French>Avions disponibles pour les OpFor</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_FireSupport_AvailPlanesINDCat">
+				<Original>Available planes for Independants</Original>
+				<English>Available planes for Independants</English>
+				<French>Avions disponibles pour les Indépendants</French>
 			</Key>
 			
 		</Container>
