@@ -21,6 +21,12 @@ _vehicle = lbData [2100,lbcursel 2100];
 _typeOfAttack = lbData [2101,lbcursel 2101];
 _typeOfAttack = parseNumber _typeOfAttack;
 _requestedPos = ctrlText 1400;
+//
+_ctrl = FDIS(1400);
+
+_isValid = [_requestedPos] FUNC(checkGridValidity);
+if !(_isValid) ExitWith {systemChat format [localize "STR_MRH_FireSupport_SC_Bad_coord",_requestedPos];};
+//
 //-----------the following snippet was borrowed from the module and modified, original author not mentionned in the originale file but all credit for this snipet is theirs
 	_weaponTypes = switch _typeOfAttack do {
 		case 0: {["machinegun"]};

@@ -22,6 +22,10 @@ _typeOfAmmo = lbData [2101,lbcursel 2101];
 //systemChat _typeOfAmmo;
 
 _requestedPos = ctrlText 1400;
+_ctrl = FDIS(1400);
+
+_isValid = [_requestedPos] FUNC(checkGridValidity);
+if !(_isValid) ExitWith {systemChat format [localize "STR_MRH_FireSupport_SC_Bad_coord",_requestedPos];};
 player setVariable ["MRH_FireSupport_PreviouslyEnteredGridRef",_requestedPos];
 _requestedPosFormated = [_requestedPos] FUNC(ParseCoordinates);
 _radius = 10; //to improve

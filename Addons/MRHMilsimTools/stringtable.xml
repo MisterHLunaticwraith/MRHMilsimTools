@@ -372,6 +372,51 @@
 				<English>Available planes for Independants</English>
 				<French>Avions disponibles pour les Indépendants</French>
 			</Key>
+			<Key ID="STR_MRH_CBA_FireSupport_Supplies_Allow">
+				<Original>Allow supply drops</Original>
+				<English>Allow supply drops</English>
+				<French>Autoriser les ravitaillements aériens</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_FireSupport_Supplies_AllowTooltip">
+				<Original>This setting allows you to disable supply drops in this mission</Original>
+				<English>This setting allows you to disable supply drops in this mission</English>
+				<French>Ce réglage vous permet de désactiver les ravitaillements pour cette mission</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_FireSupport_Supplies_ConditionsSupplies">
+				<Original>Conditions for supply drops</Original>
+				<English>Conditions for supply drops</English>
+				<French>Conditions pour appeler un ravitaillement</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_FireSupport_Supplies_AvailSupplyDrpNb">
+				<Original>Available number of supply drops</Original>
+				<English>Available number of supply drops</English>
+				<French>Nombre de ravitaillements disponibles</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_FireSupport_Supplies_AvailSupplyDrpNbTooltip">
+				<Original>This number represents how many times a side can call for air supplies.</Original>
+				<English>This number represents how many times a side can call for air supplies.</English>
+				<French>Ce chiffre représente le nombre de fois où un camps peut appeler un ravitaillement.</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_FireSupport_Supplies_ObjectsToAllow">
+				<Original>Objects to allow as supply drops</Original>
+				<English>Objects to allow as supply drops</English>
+				<French>Objets autorisés pour le ravitaillement</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_FireSupport_Supplies_ObjectsToAllowTooltip">
+				<Original>The objects listed will be available in the list of supplies to drop. It is recommanded to drop crates and light vehicles. No matter what you choose the list will also display an ammo crate filled with magazines fitting the player's weapons (per side)</Original>
+				<English>The objects listed will be available in the list of supplies to drop. It is recommanded to drop crates and light vehicles. No matter what you choose the list will also display an ammo crate filled with magazines fitting the player's weapons (per side)</English>
+				<French>Les objets listés seront disponibles pour un parachutage de ravitaillement. Il est recommandé de choisir des caisses et des véhicules légers. La liste contiendra toujours une caisse de munitions remplies de munitions correspondant aux armes des joueurs (par camps)</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_FireSupport_Supplies_DistancePDZ">
+				<Original>Distance plane spawn/dropzone</Original>
+				<English>Distance plane spawn/dropzone</English>
+				<French>Distance avion/ zone de largage</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_FireSupport_Supplies_DistancePDZTooltip">
+				<Original>This setting defines how far (in meters) the plane will spawn from the dropzone and therefore how long it will take the plane to reach it. Note that supply planes can be destroyed and the supply drop lost.</Original>
+				<English>This setting defines how far (in meters) the plane will spawn from the dropzone and therefore how long it will take the plane to reach it. Note that supply planes can be destroyed and the supply drop lost.</English>
+				<French>Ce réglage influe sur la distance de la zone de largage à laquelle l'avion sera spawné, et donc sur son temps de trajet. Attention l'avion peut être détruit et sa cargaison perdue.</French>
+			</Key>
 			
 		</Container>
 		<Container name="CORE_BriefingADmin">

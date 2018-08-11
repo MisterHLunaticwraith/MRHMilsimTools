@@ -19,6 +19,24 @@ class MRH // Defines the "owner"
 		{};
 		class MilsimTools_FireSupport_FireCAS
 		{};
+		class MilsimTools_FireSupport_dropSupplies
+		{};
+		class MilsimTools_FireSupport_onSupplierDestroyed
+		{};
+		class MilsimTools_FireSupport_createAmmoBox
+		{};
+		class MilsimTools_FireSupport_parachuteObject
+		{};
+		class MilsimTools_FireSupport_startSupplyDrop
+		{};
+		class MilsimTools_FireSupport_openSuppliesInterface
+		{};
+		class MilsimTools_FireSupport_randomPosAroundAt
+		{};
+		class MilsimTools_FireSupport_checkGridValidity
+		{};
+		class MilsimTools_FireSupport_onCharCheck
+		{};
 	};
 	
 	

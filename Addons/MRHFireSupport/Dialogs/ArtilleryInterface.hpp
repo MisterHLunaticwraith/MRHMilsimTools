@@ -16,7 +16,7 @@ class MRHGuiBack: IGUIBackMRHFireSupport
 	moving = true;
 	x = 0.391719 * safezoneW + safezoneX;
 	y = 0.401 * safezoneH + safezoneY;
-	w = 0.211406 * safezoneW;
+	w = 0.23 * safezoneW; //org w = 0.211406 * safezoneW;
 	h = 0.231 * safezoneH;
 };
 class MRHTitle: RscStructuredTextMRHFireSupport
@@ -45,6 +45,8 @@ class MRHFridInpuitZone: RscEditMRHFireSupport
 	moving = true;
 	tooltip = $STR_MRH_FireSupport_CoordToolTip;
 	text = "00000-00000"; //--- ToDo: Localize;
+	onChar = "call MRH_fnc_MilsimTools_FireSupport_onCharCheck;";
+	onKeyDown = "if ((_this select 1)==14)ExitWith {call MRH_fnc_MilsimTools_FireSupport_onCharCheck;};";
 	x = 0.556719 * safezoneW + safezoneX;
 	y = 0.434 * safezoneH + safezoneY;
 	w = 0.0515625 * safezoneW;

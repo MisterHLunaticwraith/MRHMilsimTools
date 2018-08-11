@@ -110,3 +110,24 @@ _script	Script to execute when setting is changed.  (optional) <CODE>
 ["MRH_MilsimTools_FireSupport_CASPlanesOpFor", "EDITBOX",   [localize "STR_MRH_CBA_FireSupport_CASAvailablePlanes",localize "STR_MRH_CBA_General_ClassnamesTypeRulesToolTip"], ["MRH_MilsimTools - CAS Suppport",localize "STR_MRH_CBA_FireSupport_AvailPlanesOFCat"],"O_Plane_Fighter_02_F,O_UAV_02_dynamicLoadout_F,O_Plane_CAS_02_dynamicLoadout_F",1] call cba_settings_fnc_init;
 
 ["MRH_MilsimTools_FireSupport_CASPlanesInde", "EDITBOX",   [localize "STR_MRH_CBA_FireSupport_CASAvailablePlanes",localize "STR_MRH_CBA_General_ClassnamesTypeRulesToolTip"], ["MRH_MilsimTools - CAS Suppport",localize "STR_MRH_CBA_FireSupport_AvailPlanesINDCat"],"I_Plane_Fighter_04_F,I_Plane_Fighter_03_dynamicLoadout_F",1] call cba_settings_fnc_init;
+//--------------------------below are the settings for  Supply drops
+["MRH_MilsimTools_FireSupport_Supplies_useSupplyDrops", "CHECKBOX",   [localize "STR_MRH_CBA_FireSupport_Supplies_Allow",localize "STR_MRH_CBA_FireSupport_Supplies_AllowTooltip"],["MRH_MilsimTools - Supply drops"],true,1] call cba_settings_fnc_init;
+
+["MRH_MilsimTools_FireSupport_Supplies_ConditionIsFormLeader", "CHECKBOX",   [localize "STR_MRH_CBA_Heli_MustBeFL",localize "STR_MRH_CBA_General_MustBEFlToolTip"], ["MRH_MilsimTools - Supply drops", localize "STR_MRH_CBA_FireSupport_Supplies_ConditionsSupplies"],true,1] call cba_settings_fnc_init;
+
+["MRH_MilsimTools_FireSupport_Supplies_isCustomConditionSet", "CHECKBOX",   [localize "STR_MRH_CBA_General_UseCustomCondition",localize "STR_MRH_CBA_General_UseCustomConditionToolTip"],["MRH_MilsimTools - Supply drops",localize "STR_MRH_CBA_FireSupport_Supplies_ConditionsSupplies"],false,1] call cba_settings_fnc_init;
+
+["MRH_MilsimTools_FireSupport_Supplies_CustomCondition", "EDITBOX",   [localize "STR_MRH_CBA_General_CustomConditionCodetoUse",localize "STR_MRH_CBA_General_CustomConditionCodetoUseToolTip"],["MRH_MilsimTools - Supply drops",localize "STR_MRH_CBA_FireSupport_Supplies_ConditionsSupplies"],"(isFormationLeader player) && ([player, 'ACRE_PRC117F'] call acre_api_fnc_hasKindOfRadio)",1] call cba_settings_fnc_init;
+
+
+["MRH_MilsimTools_FireSupport_NumberOfSuppliesDrops", "EDITBOX",   [localize "STR_MRH_CBA_FireSupport_Supplies_AvailSupplyDrpNb",localize "STR_MRH_CBA_FireSupport_Supplies_AvailSupplyDrpNbTooltip"], ["MRH_MilsimTools - Supply drops", localize "STR_MRH_CBA_FireSupport_Supplies_AvailSupplyDrpNb"],"3",1] call cba_settings_fnc_init;
+
+["MRH_MilsimTools_FireSupport_SupplyPlanesBluFor", "EDITBOX",   [localize "STR_MRH_CBA_FireSupport_CASAvailablePlanes",localize "STR_MRH_CBA_General_ClassnamesTypeRulesToolTip"], ["MRH_MilsimTools - Supply drops",localize "STR_MRH_CBA_FireSupport_AvailPlanesBFCat"],"B_T_VTOL_01_vehicle_F,B_Heli_Transport_03_unarmed_F,B_Heli_Transport_01_F",1] call cba_settings_fnc_init;
+
+["MRH_MilsimTools_FireSupport_SupplyPlanesOpFor", "EDITBOX",   [localize "STR_MRH_CBA_FireSupport_CASAvailablePlanes",localize "STR_MRH_CBA_General_ClassnamesTypeRulesToolTip"], ["MRH_MilsimTools - Supply drops",localize "STR_MRH_CBA_FireSupport_AvailPlanesOFCat"],"O_T_VTOL_02_vehicle_dynamicLoadout_F,O_Heli_Light_02_unarmed_F,O_Heli_Transport_04_box_F",1] call cba_settings_fnc_init;
+
+["MRH_MilsimTools_FireSupport_SupplyPlanesInde", "EDITBOX",   [localize "STR_MRH_CBA_FireSupport_CASAvailablePlanes",localize "STR_MRH_CBA_General_ClassnamesTypeRulesToolTip"], ["MRH_MilsimTools - Supply drops",localize "STR_MRH_CBA_FireSupport_AvailPlanesINDCat"],"I_Heli_Transport_02_F,I_Heli_light_03_unarmed_F,I_C_Plane_Civil_01_F",1] call cba_settings_fnc_init;
+
+["MRH_MilsimTools_FireSupport_Supplies_ListOfAvailableSupplies", "EDITBOX",   [localize "STR_MRH_CBA_FireSupport_Supplies_ObjectsToAllow", localize "STR_MRH_CBA_FireSupport_Supplies_ObjectsToAllowTooltip"],["MRH_MilsimTools - Supply drops",localize "STR_MRH_CBA_FireSupport_Supplies_ObjectsToAllow"],"B_LSV_01_unarmed_F,ACE_Box_82mm_Mo_Combo,ACE_medicalSupplyCrate_advanced,ACE_Box_Misc,B_supplyCrate_F",1] call cba_settings_fnc_init;
+
+["MRH_MilsimTools_FireSupport_Supplies_DistanceForAircraft", "EDITBOX",   [localize "STR_MRH_CBA_FireSupport_Supplies_DistancePDZ", localize "STR_MRH_CBA_FireSupport_Supplies_DistancePDZTooltip"],["MRH_MilsimTools - Supply drops",localize "STR_MRH_CBA_FireSupport_Supplies_DistancePDZ"],"2000",1] call cba_settings_fnc_init;

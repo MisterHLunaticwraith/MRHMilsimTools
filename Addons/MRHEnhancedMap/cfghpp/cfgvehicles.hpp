@@ -3,10 +3,12 @@
 	class Man;
     class CAManBase: Man 
 	{
+		/*
 		class EventHandlers {
 		init = "_this call MRH_fnc_MilsimTools_EnhancedMap_replaceVanillaMap;";
 		
 		};
+		*/
         class ACE_SelfActions 
 		{
 			class ACE_Equipment {

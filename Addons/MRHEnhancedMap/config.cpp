@@ -42,3 +42,11 @@ class CfgWeapons
 {
 	#include "\MRHEnhancedMap\cfghpp\cfgweapons.hpp"
 };
+
+class Extended_Init_EventHandlers {
+    class CAManBase {
+        class MRH_Soldier_init_eh {
+            init = "_this call MRH_fnc_MilsimTools_EnhancedMap_replaceVanillaMap;";
+        };
+    };
+};

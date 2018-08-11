@@ -51,3 +51,35 @@ missionNamespace setVariable ["MRH_FireSupport_TypesCASPLANES"+ "EAST",_toMissio
 _availablePlaneTypesInde = ["MRH_MilsimTools_FireSupport_CASPlanesInde"] call cba_settings_fnc_get;
 _toMissionNameSpaceInde = [_availablePlaneTypesInde] FUNC(parseMagazinesList);
 missionNamespace setVariable ["MRH_FireSupport_TypesCASPLANES"+ "GUER",_toMissionNameSpaceInde,true];
+
+//---------settings to parse for Supply drops
+_numberAvailableSP = ["MRH_MilsimTools_FireSupport_NumberOfSuppliesDrops"] call cba_settings_fnc_get;
+_numberAvailableSP = parseNumber _numberAvailableSP;
+
+
+missionNamespace setVariable ["MRH_FireSupport_NumberOfAvailableSupplyDrops" + "EAST",_numberAvailableSP,true];
+missionNamespace setVariable ["MRH_FireSupport_NumberOfAvailableSupplyDrops" + "WEST",_numberAvailableSP,true];
+missionNamespace setVariable ["MRH_FireSupport_NumberOfAvailableSupplyDrops" + "GUER",_numberAvailableSP,true];
+
+_availablePlaneTypesBluForSupply = ["MRH_MilsimTools_FireSupport_SupplyPlanesBluFor"] call cba_settings_fnc_get;
+_toMissionNameSpaceBluForSupply = [_availablePlaneTypesBluForSupply] FUNC(parseMagazinesList);
+missionNamespace setVariable ["MRH_FireSupport_TypesSupportPlanes"+ "WEST",_toMissionNameSpaceBluForSupply,true];
+
+_availablePlaneTypesOpForSupply = ["MRH_MilsimTools_FireSupport_SupplyPlanesOpFor"] call cba_settings_fnc_get;
+_toMissionNameSpaceOpForSupply = [_availablePlaneTypesOpForSupply] FUNC(parseMagazinesList);
+missionNamespace setVariable ["MRH_FireSupport_TypesSupportPlanes"+ "EAST",_toMissionNameSpaceOpForSupply,true];
+
+_availablePlaneTypesIndeSupply = ["MRH_MilsimTools_FireSupport_SupplyPlanesInde"] call cba_settings_fnc_get;
+_toMissionNameSpaceIndeSupply = [_availablePlaneTypesIndeSupply] FUNC(parseMagazinesList);
+missionNamespace setVariable ["MRH_FireSupport_TypesSupportPlanes"+ "GUER",_toMissionNameSpaceIndeSupply,true];
+//
+/* below is temporary: toDo Create supplies settings for all sides, maybe?*/
+_availableSupplies = ["MRH_MilsimTools_FireSupport_Supplies_ListOfAvailableSupplies"] call cba_settings_fnc_get;
+_toMissionNameSpaceAvailableSupplies = [_availableSupplies] FUNC(parseMagazinesList);
+missionNamespace setVariable ["MRH_FireSupport_AvailableSupplyDropsTypes"+ "EAST",_toMissionNameSpaceAvailableSupplies,true];
+missionNamespace setVariable ["MRH_FireSupport_AvailableSupplyDropsTypes"+ "WEST",_toMissionNameSpaceAvailableSupplies,true];
+missionNamespace setVariable ["MRH_FireSupport_AvailableSupplyDropsTypes"+ "GUER",_toMissionNameSpaceAvailableSupplies,true];
+//
+_distanceOffSet = ["MRH_MilsimTools_FireSupport_Supplies_DistanceForAircraft"] call cba_settings_fnc_get;
+_distanceOffSetParsed = parseNumber _distanceOffSet;
+missionNamespace setVariable ["MRH_FireSupport_SupplyDropTravelDistance",_distanceOffSetParsed,true];
