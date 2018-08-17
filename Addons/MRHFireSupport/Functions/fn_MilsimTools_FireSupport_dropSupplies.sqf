@@ -11,7 +11,7 @@ Example(s):
 */
 #include "MRH_C_Path.hpp"
 
-params ["_plane","_dropZone","_supply","_side","_startDisToDrop","_caller"];
+params ["_plane","_dropZone","_supply","_side","_startDisToDrop",["_caller",objNull],["_isForMod",true]];
 	_height = 400;
 	if (_plane isKindOf "Helicopter") then {_height = 150};
 	//_randomPos = [nil,nil,{((_this distance2D _dropZone) >= _startDisToDrop) && ((_this distance2D _dropZone) <= (_startDisToDrop + 200))}] call BIS_fnc_randomPos;
@@ -19,6 +19,8 @@ params ["_plane","_dropZone","_supply","_side","_startDisToDrop","_caller"];
 	_vecarray = [[(_randomPos select 0),(_randomPos select 1),_height], 0, _plane,_side] call bis_fnc_spawnvehicle;
 	_myvec = _vecarray select 0;
 	_myvec setDir (_myvec getRelDir _dropZone);
+	
+	if (_isForMod) then {
 	_myvec setVariable ["MRH_MilsimTools_SupplyDrop_caller",_caller];
 	
 	//play message
@@ -50,7 +52,7 @@ params ["_plane","_dropZone","_supply","_side","_startDisToDrop","_caller"];
 	params ["_unit", "_killer", "_instigator", "_useEffects"];
 		[[_unit],MRH_fnc_MilsimTools_FireSupport_onSupplierDestroyed] RemoteExec ["Call",0];
 		}];
-	
+	}; // end _isformod
 	_myvec commandMove _dropZone;
 	_myvec flyInHeight _height;
 	_myvec lockDriver true;
@@ -59,8 +61,13 @@ params ["_plane","_dropZone","_supply","_side","_startDisToDrop","_caller"];
 	waitUntil {(_myvec distance2D _dropZone) <100};
 	_pos = _myvec modelToWorld [0,0,-10];
 	sleep 1;
+	if (_isForMod) then {
 	missionNamespace setVariable ["MRH_FireSupport_isAvailableSUPPLYfor_"+ str _side,true,true];
+	};
+	_myvec allowDamage false;
 	[_supply,_pos] spawn MRH_fnc_MilsimTools_FireSupport_parachuteObject;
+	
+	if (_isForMod) then {
 	[[_caller,[_dropZone select 0,_dropZone select 1]],{
 				params ["_player","_LZ"];
 				
@@ -73,7 +80,10 @@ params ["_plane","_dropZone","_supply","_side","_startDisToDrop","_caller"];
 			
 			[side _player, "HQ"] sideChat format [localize "STR_MRH_FireSupport_SC_SupplyDialog5",([_LZ] call MRH_fnc_MilsimTools_Core_realisticGrid),(_player getVariable "MRH_MilsimTools_Core_PlayerIntel") select 0];
 			}] RemoteExec ["Spawn", [-2,0] select isServer];
+	};//end _isForMod
 	_myvec commandMove (_myvec modelToWorld [0,3000,_height]);
+	waitUntil {(_myvec distance2D _dropZone) >200};
+	_myvec allowDamage true;
 	waitUntil {(_myvec distance2D _dropZone) >2000};
 	{deleteVehicle _x;}forEach crew _myvec;
 	deleteVehicle _myvec;

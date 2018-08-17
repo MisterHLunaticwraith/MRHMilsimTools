@@ -67,6 +67,9 @@ class MRH // Defines the "owner"
 		{};
 		class MilsimTools_Core_toggleCuratorInv
 		{};
+		class MilsimTools_Core_stringTo
+		{};
+		
 		
 	};
 	
