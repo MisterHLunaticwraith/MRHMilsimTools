@@ -32,3 +32,17 @@ class MoveInCargo
 {};
 class EndCredits
 {};
+class forceFaceWear
+{};
+class parachuteObject
+{};
+class dropSupplies
+{};
+class createAmmoBox
+{};
+class relativeBearing
+{};
+class completeAirInsertion_core
+{};
+class completeAirInsertion
+{};

@@ -59,6 +59,16 @@ class MRH // Defines the "owner"
 		{};
 		class MilsimTools_Core_GenAliveAndDead
 		{};
+		class MilsimTools_Core_resultForSide
+		{};
+		class MilsimTools_Core_realisticGrid
+		{};
+		class MilsimTools_Core_InvCurator
+		{};
+		class MilsimTools_Core_toggleCuratorInv
+		{};
+		class MilsimTools_Core_stringTo
+		{};
 		
 		
 	};

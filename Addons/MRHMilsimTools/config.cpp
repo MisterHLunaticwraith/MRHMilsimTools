@@ -3,12 +3,30 @@ class CfgPatches {
 		units[] = {}; //
 		weapons[] = {}; //
 		requiredVersion = 0.1; //
-		requiredAddons[] = {"cba_settings"};
-
+		requiredAddons[] = {"cba_main"};
+		version = 1.14.0;
+		versionStr = "1.14.0";
+		versionAr[] = {1,14,0};
+		versionDesc = "MRH Milsim Tools";
+		versionAct = "call compile preProcessFileLineNumbers '\MRHMilSimTools\about.sqf'";
+		author = "Mr H.";
+		url = "https://mrhmilsimtools-arma3-mod.wikia.com/wiki/MRHMilsimTools_ARMA3_Mod_Wiki";
 	};
-		version = 1.1.0;
-		versionStr = "1.1.0";
-		versionAr[] = {1,1,0};
+		
+		
+};
+
+class CfgMods {
+    class MRHMilsimTools {
+        dir = "@MRHMilsimTools";
+        name = "Mister H's Milsim Tools";
+        picture = "A3\Ui_f\data\Logos\arma3_expansion_alpha_ca";
+        hidePicture = "true";
+        hideName = "true";
+        actionName = "Website";
+        action = "https://mrhmilsimtools-arma3-mod.wikia.com/wiki/MRHMilsimTools_ARMA3_Mod_Wiki";
+        description = "Issue Tracker: https://github.com/MisterHLunaticwraith/MRHMilsimTools/issues";
+    };
 };
 
 #include "\MRHMilSimTools\cfgSettings.hpp"
@@ -22,7 +40,8 @@ class Extended_PreInit_EventHandlers
    class MRHMilsimTools_CBA_Settings_keybinds
    {
       init = "call compile preProcessFileLineNumbers '\MRHMilSimTools\Functions\SettingsPreInit\CBAKeys.sqf'";
-   };     
+   };    
+	   
 };
 class Extended_PostInit_EventHandlers
 {
@@ -60,45 +79,4 @@ class cfgNotifications
 //===cfgMRHRanks
 #include"\MRHMilSimTools\cfghpp\cfgMRHrankpictures.hpp"
 //==========
-/*
-/////=========cfgDebriefings=======
-class CfgDebriefing
-{
-#include "\MRHMilSimTools\cfghpp\cfgdebriefing.hpp"
-};
-////=============fincfgDebriefings=
-
-
-
-/////=========cfgSounds==========
-class CfgSounds
-{
-	#include "\MRHMilSimTools\cfghpp\cfgsounds.hpp"
-};
-////=============fincfgSounds=====
-
-
-////=====================FinDesCFG=================================================
-
-
-
-///==========composants des menusCORE====
-
-/////////////////======Ressources MRHRoster
-#include "\MRHMilSimTools\dialogsHPP\definesROSTER.hpp"
-#include "\MRHMilSimTools\dialogsHPP\dialogsROSTER.hpp"
-/////////////////======Fin Ressources MRHRoster
-
-/////////////////======Ressources MRHRoster
-#include "\MRHMilSimTools\dialogsHPP\definesJIP.hpp"
-#include "\MRHMilSimTools\dialogsHPP\dialogsJIP.hpp"
-/////////////////======Fin Ressources MRHRoster
-
-/////////////////======Ressources MRHACCMenu
-#include "\MRHMilSimTools\dialogsHPP\definesACC.hpp"
-#include "\MRHMilSimTools\dialogsHPP\dialogsACC.hpp"
-/////////////////======Fin Ressources MRHACCMenu
-///==========FINcomposants des menusCORE====
-
-*/
 

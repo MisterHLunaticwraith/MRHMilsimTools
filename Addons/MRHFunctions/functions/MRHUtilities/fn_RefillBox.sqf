@@ -17,7 +17,7 @@ _WeaponsContent = getWeaponCargo _box;
 _MagazinesContent = getMagazineCargo _box;
 _backbackContent = getBackPackCargo _box;
 _allContent = [_ItemContent, _WeaponsContent, _MagazinesContent, _backbackContent];
-_box setVariable ["MRH_ListBoxContents", _allcontent];
+if (isServer) then {_box setVariable ["MRH_ListBoxContents", _allcontent,true];};
 
 _box addEventHandler ["ContainerOpened", { 
 _box = _this select 0;

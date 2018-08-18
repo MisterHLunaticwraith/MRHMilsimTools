@@ -10,7 +10,7 @@ class RscTitles
 		class controls 
 		{
 
-			class MRHHackPhoneFrame: RscPicture
+			class MRHHackPhoneFrame: RscPictureMRHFiberScope
 			{
 				idc = 1200;
 				text = "\MRHFiberScope\Paa\FiberScopeMask.paa";

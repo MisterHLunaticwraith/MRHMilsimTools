@@ -351,7 +351,7 @@ class MRHAceArsenalButton: RscButtonMRHAdminMenu
 	show = false;
 	moving = true;
 	text = $STR_MRH_ADM_INTER_ChgPLgear; //--- ToDo: Localize;
-	action = "closedialog 0;_playerUid = lbdata [1500,(lbCurSel 1500)];_player = [_playerUid] call MRH_fnc_MilsimTools_Core_FindPlayerByUID;[player, _player,true] call ACE_arsenal_fnc_openbox;";
+	action = "[] spawn MRH_fnc_MilsimTools_Admin_openAceArsenal;";
 	x = 0.480312 * safezoneW + safezoneX;
 	y = 0.472 * safezoneH + safezoneY;
 	w = 0.275625 * safezoneW;

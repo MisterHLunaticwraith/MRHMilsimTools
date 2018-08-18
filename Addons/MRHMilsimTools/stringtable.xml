@@ -162,8 +162,262 @@
 				<English>If enabled players will automatically be flagged as alive upon respawn. WARNING only use this setting if you are using a different respawn scheme than the usual respawn bunker milsim units use.</English>
 				<French>Si ce réglage est activé les joueurs seront automatiquement marqués comme vivant après avoir respawné. ATTENTION, n'activez cette option que si vous utilisez un mode de respawn différent du respawn bunker habituellement utilisé par les teams milsims.</French>
 			</Key>
-
-
+			<Key ID="STR_MRH_CBA_Heli_UseHeli">
+				<Original>Use helicopter taxi in this mission</Original>
+				<English>Use helicopter taxi in this mission</English>
+				<French>Utiliser le système d'hélicoptère taxi dans cette mission</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_Heli_UseHeliToolTip">
+				<Original>Enable to make heli taxis available, requires mission restart</Original>
+				<English>Enable to make heli taxis available, requires mission restart</English>
+				<French>Activer pour utiliser le système de taxi hélicoptère, requiert un redémarrage de la mission</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_Heli_MustBeFL">
+				<Original>Must be formation leader</Original>
+				<English>Must be formation leader</English>
+				<French>Doit être chef de groupe</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_Heli_MustBeFLToolTip">
+				<Original>If enabled only group leaders will be able to call the helicopter</Original>
+				<English>If enabled only group leaders will be able to call the helicopter</English>
+				<French>Si ce réglage est activé seuls les chefs de groupe auront la possibilité d'appeler l'hélicoptère, requiert un redémarrage de la mission</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_Heli_SubCatConditions">
+				<Original>Conditions to be able to call the Heli</Original>
+				<English>Conditions to be able to call the Heli</English>
+				<French>Conditions pour pouvoir appeler l'hélicoptère</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_Heli_UseCondition">
+				<Original>Custom condition, fill field below</Original>
+				<English>Custom condition, fill field below</English>
+				<French>Condition personnalisée,remplir le champ en dessous</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_Heli_UseConditionToolTip">
+				<Original>If enabled the code written below will be used as a condition check to allow calling for the heli, requires a mission restart</Original>
+				<English>If enabled the code written below will be used as a condition check to allow calling for the heli, requires a mission restart</English>
+				<French>Si ce réglage est activé le code écrit dans le champ ci dessous sera utilisé comme condition, requiert un redémarrage de la mission</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_Heli_CustomCondition">
+				<Original>Custom condition</Original>
+				<English>Custom condition</English>
+				<French>Condition personnalisée</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_Heli_CustomConditionTooltip">
+				<Original>Type condition code here, use single quotes </Original>
+				<English>Type condition code here, use single quotes</English>
+				<French>Taper la condition ici, ne pas utiliser de guillemets doubles</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_Heli_ForBF">
+				<Original>Helicopters for blufor</Original>
+				<English>Helicopters for blufor</English>
+				<French>Hélicoptères pour les blufor</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_Heli_ForOF">
+				<Original>Helicopters for opfor</Original>
+				<English>Helicopters for opfor</English>
+				<French>Hélicoptères pour les opfor</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_Heli_ForID">
+				<Original>Helicopters for independants</Original>
+				<English>Helicopters for independants</English>
+				<French>Hélicoptères pour les indépendants</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_Heli_ForCiv">
+				<Original>Helicopters for civilians</Original>
+				<English>Helicopters for civilians</English>
+				<French>Hélicoptères pour les civils</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_Heli_ClassnamesToolTip">
+				<Original>classnames of your helis, without quotes, separated by comas</Original>
+				<English>classnames of your helis, without quotes, separated by comas</English>
+				<French>Nom de classe de vos hélicoptères, sans guillemets, séparés par des virgules</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_EnhancedMap_FoldZoomLevel">
+				<Original>Foldable map zoom level</Original>
+				<English>Foldable map zoom level</English>
+				<French>Niveau de zoom de la carte pliable</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_EnhancedMap_FoldZoomLevelToolTip">
+				<Original>This setting allows you to select the zoom level of the foldable map, it affects all users, can be changed midgame by the admin.</Original>
+				<English>This setting allows you to select the zoom level of the foldable map, it affects all users, can be changed midgame by the admin.</English>
+				<French>Ce réglage vous permet de changer le niveau de zoom de la carte pliable, il affecre tous les joueurs. Peut être changé en cours de partie.</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_EnhancedMap_UseAceLightFold">
+				<Original>Use ace lighting on folded map</Original>
+				<English>Use ace lighting on folded map</English>
+				<French>Utiliser l'éclairage ACE sur la carte pliable</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_EnhancedMap_UseAceLightFoldToolTip">
+				<Original>If enabled, the foldable map visibility will depend on ambient lightning. Disclaimer: the effect can be a bit glitchy. Can be changed midgame by the admin.</Original>
+				<English>If enabled, the foldable map visibility will depend on ambient lightning. Disclaimer: the effect can be a bit glitchy. Can be changed midgame by the admin.</English>
+				<French>La carte pliable sera affectée par la lumière environnante. Attention: l'effet peut être un peu étrange. Peut être changé en cours de partie. </French>
+			</Key>
+			<Key ID="STR_MRH_CBA_EnhancedMap_ReplaceVanillaMap">
+				<Original>Replace vanilla map</Original>
+				<English>Replace vanilla map</English>
+				<French>Remplacer la carte Vanilla</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_EnhancedMap_ReplaceVanillaMapToolTip">
+				<Original>If this setting is enabled, all units that are equipped with vanilla map will have it removed and repaced by enhanced map, this setting is applied at mission start. Requires a mission restart.</Original>
+				<English>If this setting is enabled, all units that are equipped with vanilla map will have it removed and repaced by enhanced map, this setting is applied at mission start. Requires a mission restart.</English>
+				<French>Si ce réglage est activé, toutes les unités équipées d'une carte vanilla la verront remplacée par la carte améliorée. Ce réglage est appliqué au démarrage de la mission. Le changer en jeu nécessite un redemarrage de la mission.</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_FireSupport_AllowFSsetting">
+				<Original>Allow Artillery Strikes Support</Original>
+				<English>Allow Artillery Strikes Support</English>
+				<French>Autoriser le support par frappes d'artillerie</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_FireSupport_AllowFSsettingToolTip">
+				<Original>If disabled artillery strikes won't be available in the mission. Requires mission restart.</Original>
+				<English>If disabled artillery strikes won't be available in the mission. Requires mission restart.</English>
+				<French>Si désactivé, le support d'artillerie ne sera pas disponible dans cette mission. Requiert un redémarrage de la mission.</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_General_MustBEFlToolTip">
+				<Original>The player must be formation leader to be able to perform this action</Original>
+				<English>The player must be formation leader to be able to perform this action</English>
+				<French>Le joueur doit être chef de groupe pour pouvoir accéder à cette action</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_General_UseCustomCondition">
+				<Original>Use custom condition</Original>
+				<English>Use custom condition</English>
+				<French>Utiliser une condition personnalisée</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_General_UseCustomConditionToolTip">
+				<Original>If this setting is enabled the custom condition defined below will be used</Original>
+				<English>If this setting is enabled the custom condition defined below will be used</English>
+				<French>Si ce réglage est activé, la condition personnalisée définit ci dessous sera utilisée</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_FireSupport_ConditionsAS_Cat">
+				<Original>Conditions to be able to call an artillery strike</Original>
+				<English>Conditions to be able to call an artillery strike</English>
+				<French>Conditions pour pouvoir appeler un support d'artillerie</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_General_CustomConditionCodetoUse">
+				<Original>Custom condition code to use</Original>
+				<English>Custom condition code to use</English>
+				<French>Code de condition à utiliser</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_General_CustomConditionCodetoUseToolTip">
+				<Original>Type your condition code here, do not use doublequotes " but single quotes ' instead</Original>
+				<English>Type your condition code here, do not use doublequotes " but single quotes ' instead</English>
+				<French>Entrez votre code de condition ici, ne pas utiliser de guillemets doubles ", utiliser ' à la place</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_General_ClassnamesTypeRulesToolTip">
+				<Original>classnames separated by comas without quotes</Original>
+				<English>classnames separated by comas without quotes</English>
+				<French>Noms de classe, séparés par des virgules, sans guillemets</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_FireSupport_AvailableArtyMags">
+				<Original>Available artillery magazines</Original>
+				<English>Available artillery magazines</English>
+				<French>Munition d'artillerie disponibles (par type de MAGS)</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_FireSupport_AVailableNumberOfArtilleryAmmo">
+				<Original>Available number of artillery ammunition</Original>
+				<English>Available number of artillery ammunition</English>
+				<French>Nombre de munition disponibles</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_FireSupport_AVailableNumberOfArtilleryAmmoToolTip">
+				<Original>Number, represents how many shots can be fired</Original>
+				<English>Number, represents how many shots can be fired</English>
+				<French>Nombre, représente combien de tirs d'artilleries peuvent être faits</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_FireSupport_AllowCasSetting">
+				<Original>Allow use of CAS support</Original>
+				<English>Allow use of CAS support</English>
+				<French>Autoriser l'utilisation du support aérien rapproché</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_FireSupport_AllowCasSettingToolTip">
+				<Original>If disabled CAS support won't be available in this mission, requires a mission restart.</Original>
+				<English>If disabled CAS support won't be available in this mission, requires a mission restart.</English>
+				<French>Si désactivé l'appel au support aérien ne sera pas disponible dans cette mission, requiert un redémarrage de la mission</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_FireSupport_ConditionsForCASCat">
+				<Original>Conditions to be able to call a CAS strike</Original>
+				<English>Conditions to be able to call a CAS strike</English>
+				<French>Conditions pour pouvoir appeler un support aérien rapproché</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_FireSupport_AvailableNumberOfCas">
+				<Original>Available number of CAS Runs</Original>
+				<English>Available number of CAS Runs</English>
+				<French>Nombre de supports aériens rapprochés disponibles</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_FireSupport_AvailableNumberOfCasToolTip">
+				<Original>Number, represents how many times a side can call CAS</Original>
+				<English>Number, represents how many times a side can call CAS</English>
+				<French>Nombre, représente combien de fois un camps peut appeler un support aérien</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_FireSupport_CASAvailablePlanes">
+				<Original>Available planes</Original>
+				<English>Available planes</English>
+				<French>Avions disponibles</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_FireSupport_AvailCASRunsCAT">
+				<Original>Available CAS runs</Original>
+				<English>Available CAS runs</English>
+				<French>Nombre de supports aériens rapprochés disponibles</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_FireSupport_AvailPlanesBFCat">
+				<Original>Available planes for BluFor</Original>
+				<English>Available planes for BluFor</English>
+				<French>Avions disponibles pour les BluFor</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_FireSupport_AvailPlanesOFCat">
+				<Original>Available planes for OpFor</Original>
+				<English>Available planes for OpFor</English>
+				<French>Avions disponibles pour les OpFor</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_FireSupport_AvailPlanesINDCat">
+				<Original>Available planes for Independants</Original>
+				<English>Available planes for Independants</English>
+				<French>Avions disponibles pour les Indépendants</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_FireSupport_Supplies_Allow">
+				<Original>Allow supply drops</Original>
+				<English>Allow supply drops</English>
+				<French>Autoriser les ravitaillements aériens</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_FireSupport_Supplies_AllowTooltip">
+				<Original>This setting allows you to disable supply drops in this mission</Original>
+				<English>This setting allows you to disable supply drops in this mission</English>
+				<French>Ce réglage vous permet de désactiver les ravitaillements pour cette mission</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_FireSupport_Supplies_ConditionsSupplies">
+				<Original>Conditions for supply drops</Original>
+				<English>Conditions for supply drops</English>
+				<French>Conditions pour appeler un ravitaillement</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_FireSupport_Supplies_AvailSupplyDrpNb">
+				<Original>Available number of supply drops</Original>
+				<English>Available number of supply drops</English>
+				<French>Nombre de ravitaillements disponibles</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_FireSupport_Supplies_AvailSupplyDrpNbTooltip">
+				<Original>This number represents how many times a side can call for air supplies.</Original>
+				<English>This number represents how many times a side can call for air supplies.</English>
+				<French>Ce chiffre représente le nombre de fois où un camps peut appeler un ravitaillement.</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_FireSupport_Supplies_ObjectsToAllow">
+				<Original>Objects to allow as supply drops</Original>
+				<English>Objects to allow as supply drops</English>
+				<French>Objets autorisés pour le ravitaillement</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_FireSupport_Supplies_ObjectsToAllowTooltip">
+				<Original>The objects listed will be available in the list of supplies to drop. It is recommanded to drop crates and light vehicles. No matter what you choose the list will also display an ammo crate filled with magazines fitting the player's weapons (per side)</Original>
+				<English>The objects listed will be available in the list of supplies to drop. It is recommanded to drop crates and light vehicles. No matter what you choose the list will also display an ammo crate filled with magazines fitting the player's weapons (per side)</English>
+				<French>Les objets listés seront disponibles pour un parachutage de ravitaillement. Il est recommandé de choisir des caisses et des véhicules légers. La liste contiendra toujours une caisse de munitions remplies de munitions correspondant aux armes des joueurs (par camps)</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_FireSupport_Supplies_DistancePDZ">
+				<Original>Distance plane spawn/dropzone</Original>
+				<English>Distance plane spawn/dropzone</English>
+				<French>Distance avion/ zone de largage</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_FireSupport_Supplies_DistancePDZTooltip">
+				<Original>This setting defines how far (in meters) the plane will spawn from the dropzone and therefore how long it will take the plane to reach it. Note that supply planes can be destroyed and the supply drop lost.</Original>
+				<English>This setting defines how far (in meters) the plane will spawn from the dropzone and therefore how long it will take the plane to reach it. Note that supply planes can be destroyed and the supply drop lost.</English>
+				<French>Ce réglage influe sur la distance de la zone de largage à laquelle l'avion sera spawné, et donc sur son temps de trajet. Attention l'avion peut être détruit et sa cargaison perdue.</French>
+			</Key>
+			
 		</Container>
 		<Container name="CORE_BriefingADmin">
 			<Key ID="STR_MRH_MS_BRIEFINGADDINFO">
@@ -318,6 +572,33 @@
 				<Original>Only a logged in admin can access this menu</Original>
 				<English>Only a logged in admin can access this menu</English>
 				<French>Seul un admni connecté peut ouvrir ce menu</French>
+			</Key>
+			<Key ID="STR_MRH_KEY_ToggleInvisibleZeus">
+				<Original>Toggle Invisible Zeus</Original>
+				<English>Toggle Invisible Zeus</English>
+				<French>Activer/Désactiver le Zeus Invisible</French>
+			</Key>
+			<Key ID="STR_MRH_KEY_ToggleInvisibleZeusToolTip">
+				<Original>Pressing this key will toggle between visible and invisible state for the avatar of the zeus</Original>
+				<English>Pressing this key will toggle between visible and invisible state for the avatar of the zeus</English>
+				<French>Cette touche permet d'activer et de désactiver le zeus invisible</French>
+			</Key>
+		</Container>
+		<Container name="MRH_ZEUS_Toggle">
+			<Key ID="STR_MRH_ZEUS_Toggle_ToggledOn">
+				<Original>MRH_Zeus Invisible:on</Original>
+				<English>MRH_Zeus Invisible:on</English>
+				<French>MRH_Zeus Invisible activé</French>
+			</Key>
+			<Key ID="STR_MRH_ZEUS_Toggle_ToggledOff">
+				<Original>MRH_Zeus Invisible:off</Original>
+				<English>MRH_Zeus Invisible:off</English>
+				<French>MRH_Zeus Invisible desactivé</French>
+			</Key>
+			<Key ID="STR_MRH_ZEUS_Toggle_WarningVeh">
+				<Original>WARNING :MRH_Zeus Invisible doesn't work in a vehicle</Original>
+				<English>WARNING :MRH_Zeus Invisible doesn't work in a vehicle</English>
+				<French>ATTENTION: MRH_Zeus Invisible ne fonctionne pas si vous êtes dans un véhicule</French>
 			</Key>
 		</Container>
 

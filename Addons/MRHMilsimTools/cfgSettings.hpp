@@ -20,6 +20,7 @@ class CfgSettings {
            // Optional: Removed addons Upgrade registry
            // Example: myMod_addon1 was removed and it's important the user doesn't still have it loaded
            //removed[] = {"myMod_addon1"};
+		
          };
       };
    };

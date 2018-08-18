@@ -1,0 +1,105 @@
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Project name="MRHHeliTaxi">
+	<Package name="MRHHeliTaxi">
+		<Container name="MRHHeliTaxis">
+			<Key ID="STR_MRH_HeliTaxi_SelectHeliType">
+				<Original>Select a type of helicopter</Original>
+				<English>Select a type of helicopter</English>
+				<French>Selectionnez le type d'hélicoptère</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_RequestingEvac">
+				<Original>%3 to %2 : Requesting immediate air transport at grid %1</Original>
+				<English>%3 to %2 : Requesting immediate air transport at grid %1</English>
+				<French>De %3 pour %2: Demandons évacuation aérienne aux coordonées %1</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_CopyEnRoute">
+				<Original>%2 to %3 : Roger, helicopter on the way to grid %1</Original>
+				<English>%2 to %3 : Roger, helicopter on the way to grid %1</English>
+				<French>De %2 pour %3: Bien reçu, hélicoptère en route vers coordonées %1</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_SetDestination">
+				<Original>Set destination</Original>
+				<English>Set destination</English>
+				<French>Donner une destination</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_RequestAirTransport">
+				<Original>Call for air transport</Original>
+				<English>Call for air transport</English>
+				<French>Demander un transport aérien</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_HintSelectLZ">
+				<Original>Select LZ</Original>
+				<English>Select LZ</English>
+				<French>Selectionnez une LZ</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_HintLZSet">
+				<Original>LZ selected</Original>
+				<English>LZ selected</English>
+				<French>Destination selectionnée.</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_MarkerSelectedLz">
+				<Original>Selected LZ</Original>
+				<English>Selected LZ</English>
+				<French>LZ sélectionnée</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_GivePiloTCoord">
+				<Original>%3 to %2 : Ok pilot, take us to grid %1</Original>
+				<English>%3 to %2 : Ok pilot, take us to grid %1</English>
+				<French>De %3 pour %2: Ok pilote, destination coordonnées %1</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_CoordinatesReceived">
+				<Original>%2 to %3 : Roger destination set to grid %1, let's go!</Original>
+				<English>%2 to %3 : Roger destination set to grid %1, let's go!</English>
+				<French>De %2 pour %3: Bien reçu. Coordonnées %1, en route</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_WeReThereGodSpeed">
+				<Original>%1 to %2 we're there, Godspeed!</Original>
+				<English>%1 to %2 we're there, Godspeed!</English>
+				<French>De %1 pour %2: Nous sommes arrivés %2, Godspeed!</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_ThanksFlySafe">
+				<Original>%2 to %1 : Thanks mate, fly safe!</Original>
+				<English>%2 to %1 : Thanks mate, fly safe!</English>
+				<French>De %2 pour %1: Merci %1, bon retour.</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_HintUnavailable">
+				<Original>Someone else has already called the taxi, air transport unavailable</Original>
+				<English>Someone else has already called the taxi, air transport unavailable</English>
+				<French>Quelqu'un d'autre a déjà appelé le Taxi, taxi indisponible</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_ETAoneMike">
+				<Original>%2 to %3 : we are %1 km from target, E.T.A. one mike, get ready.</Original>
+				<English>%2 to %3 : we are %1 km from target, E.T.A. one mike, get ready.</English>
+				<French>De %2 pour %3: Nous sommes à %1 km de l'objectif, E.T.A. une minute, tenez vous prêts.</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_TaxiCanceled">
+				<Original>Air taxi cancelled</Original>
+				<English>Air taxi cancelled</English>
+				<French>Taxi annulé</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_RequestCancel">
+				<Original>%2 to %1: Cancel air transport request.</Original>
+				<English>%2 to %1: Cancel air transport request.</English>
+				<French>De %2 pour %1: Demandons annulation du transport.</French>
+			</Key><Key ID="STR_MRH_HeliTaxi_ReceivedCancelRequest">
+				<Original>%1 to %2 : Roger, transport cancel we're RTB</Original>
+				<English>%1 to %2 : Roger, transport cancel we're RTB</English>
+				<French>De %1 pour %2: Bien reçu, hélicoptère annulé</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_HeliDown">
+				<Original>%1 we have a problem your transport was shot down at grid %2 ! </Original>
+				<English>%1 we have a problem your transport was shot down at grid %2 ! </English>
+				<French>Nous avons un problème %1, votre transport a été abattu aux coordonnées %2!</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_HeliCancelAce">
+				<Original>Cancel flight</Original>
+				<English>Cancel flight</English>
+				<French>Annuler le vol</French>
+			</Key>
+
+			
+			
+		</Container>
+	</Package>
+</Project>
