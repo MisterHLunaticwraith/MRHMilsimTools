@@ -1,12 +1,13 @@
 /*
 Function name:MRH_fnc_MilsimTools_InsertionHandler_readVehicleCfg
 Author: Mr H.
-Description:
+Description: reads configfile to get vehicle info
 Return value: <ARRAY> 0-displayname 1-cargoslots 2-maxspeed
-Public:
+Public:No
 Parameters:
+0-<STRING> vehicle config classname
 Example(s):
-[] call MRH_fnc_MilsimTools_InsertionHandler_readVehicleCfg;
+[typeOf (vehicle player)] call MRH_fnc_MilsimTools_InsertionHandler_readVehicleCfg;
 */
 #include "MRH_C_Path.hpp"
 params ["_classname"];

@@ -208,10 +208,10 @@
 				<English>Briefing</English>
 				<French>Briefing</French>
 			</Key>
-			<Key ID="STR_MRH_MK_">
-				<Original></Original>
-				<English></English>
-				<French></French>
+			<Key ID="STR_MRH_MK_WayPoint">
+				<Original>Waypoint</Original>
+				<English>Waypoint</English>
+				<French>Point de passage</French>
 			</Key>
 			<Key ID="STR_MRH_MK_">
 				<Original></Original>

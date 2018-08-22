@@ -1,10 +1,10 @@
 /*
-Function name:MRH_fnc_MilsimTools_
+Function name:MRH_fnc_MilsimTools_FireSupport_startSupplyDrop
 Author: Mr H.
-Description:
-Return value:
-Public:
-Parameters:
+Description: Applies parameters from interface and spawns drop function on the server
+Return value: None
+Public:No
+Parameters:None
 Example(s):
 [] call MRH_fnc_MilsimTools_FireSupport_startSupplyDrop;
 

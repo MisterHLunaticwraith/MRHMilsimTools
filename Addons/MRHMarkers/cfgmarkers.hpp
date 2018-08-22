@@ -422,3 +422,14 @@ size = 32;
 shadow = 1;
 scope = 1;
 };
+
+class MRH_WayPoint
+{
+name = $STR_MRH_MK_WayPoint;
+markerClass = "MRHMarkers";
+icon = "\MRHMarkers\paa\waypoint.paa";
+color[] = {1, 1, 1, 1};
+size = 32;
+shadow = 1;
+scope = 2;
+};

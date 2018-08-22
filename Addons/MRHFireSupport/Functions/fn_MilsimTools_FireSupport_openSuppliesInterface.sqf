@@ -1,10 +1,10 @@
 /*
-Function name:MRH_fnc_MilsimTools_
+Function name:MRH_fnc_MilsimTools_FireSupport_openSuppliesInterface
 Author: Mr H.
-Description:
-Return value:
-Public:
-Parameters:
+Description: Opens arty interface and modify it to fit supply requests
+Return value: None
+Public:No
+Parameters:None
 Example(s):
 [] call MRH_fnc_MilsimTools_FireSupport_openSuppliesInterface;
 

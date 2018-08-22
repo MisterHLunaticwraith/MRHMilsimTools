@@ -1,12 +1,13 @@
 /*
 Function name:MRH_fnc_MilsimTools_InsertionHandler_
 Author: Mr H.
-Description:
-Return value:
-Public:
-Parameters:
+Description: Adds prepping ace 3 action to object (visible only if conditions are met), added to ThingX,Land and Boat_F classes, called at init by CBA XEH
+Return value:None
+Public:No
+Parameters: 
+0-<OBJECT> to add the action to
 Example(s):
-call MRH_fnc_MilsimTools_InsertionHandler_isLoadableObject;
+[_this] call MRH_fnc_MilsimTools_InsertionHandler_isLoadableObject;
 */
 #include "MRH_C_Path.hpp"
 params ["_object"];

@@ -69,6 +69,10 @@ class MRH // Defines the "owner"
 		{};
 		class MilsimTools_Core_stringTo
 		{};
+		class MilsimTools_Core_isAliveAndConscious
+		{};
+		class MilsimTools_Core_getAliveAndConsciousGrpMembers
+		{};
 		
 		
 	};

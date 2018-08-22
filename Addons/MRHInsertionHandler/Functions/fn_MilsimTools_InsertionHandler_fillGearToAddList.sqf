@@ -1,10 +1,10 @@
 /*
-Function name:MRH_fnc_MilsimTools_InsertionHandler_
+Function name:MRH_fnc_MilsimTools_InsertionHandler_fillGearToAddList
 Author: Mr H.
-Description:
-Return value:
-Public:
-Parameters:
+Description: Fills list with available unloaded gear
+Return value:None
+Public:No
+Parameters:None
 Example(s):
 call MRH_fnc_MilsimTools_InsertionHandler_fillGearToAddList;
 */

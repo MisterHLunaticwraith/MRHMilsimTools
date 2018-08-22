@@ -227,6 +227,16 @@
 				<English>Helicopters for civilians</English>
 				<French>Hélicoptères pour les civils</French>
 			</Key>
+			<Key ID="STR_MRH_CBA_Heli_NumberPerSide">
+				<Original>Number of simultaneous available helicopters per side</Original>
+				<English>Number of simultaneous available helicopters per side</English>
+				<French>Nombre d'hélicoptères simultanéments disponibles par camps</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_Heli_NumberPerSideToolTip">
+				<Original>How many helicopters are available at the same time per side, minimum is 1</Original>
+				<English>How many helicopters are available at the same time per side, minimum is 1</English>
+				<French>Combien d'hélicoptères sont disponibles simultanéments par camps, valeur minimale:1</French>
+			</Key>
 			<Key ID="STR_MRH_CBA_Heli_ClassnamesToolTip">
 				<Original>classnames of your helis, without quotes, separated by comas</Original>
 				<English>classnames of your helis, without quotes, separated by comas</English>

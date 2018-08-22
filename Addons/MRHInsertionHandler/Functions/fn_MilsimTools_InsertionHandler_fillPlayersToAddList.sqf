@@ -1,10 +1,10 @@
 /*
 Function name:MRH_fnc_MilsimTools_InsertionHandler_
 Author: Mr H.
-Description:
-Return value:
-Public:
-Parameters:
+Description: Fills the list of available players in selected group, units will only show if they are alive and less thant a 100m from the player using the interface
+Return value:None
+Public:No
+Parameters:None
 Example(s):
 call MRH_fnc_MilsimTools_InsertionHandler_fillPlayersToAddList;
 */

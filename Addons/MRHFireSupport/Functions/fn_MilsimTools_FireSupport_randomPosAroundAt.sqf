@@ -1,12 +1,15 @@
 /*
-Function name:MRH_fnc_MilsimTools_
-Author: Mr H.
-Description:
+Function name:MRH_fnc_MilsimTools_FireSupport_randomPosAroundAt
+Author: Mr & Mrs H. (she did the maths)
+Description: Returns a position at random at the exact distance from origin point (unlike bis fnc find safe pos)
 Return value:
-Public:
+0-<ARRAY> format position where z is 0
+Public:No, maybe , we'll see
 Parameters:
+0-<ARRAY>  position format
+1-<NUMBER> distance in meters
 Example(s):
-[] call MRH_fnc_MilsimTools_FireSupport_randomPosAroundAt;
+[position player,1000] call MRH_fnc_MilsimTools_FireSupport_randomPosAroundAt; // will return a random point a km from the player
 
 */
 #include "MRH_C_Path.hpp"

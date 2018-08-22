@@ -1,10 +1,10 @@
 /*
-Function name:MRH_fnc_MilsimTools_
+Function name:MRH_fnc_MilsimTools_FireSupport_onCharCheck
 Author: Mr H.
-Description:
-Return value:
-Public:
-Parameters:
+Description: Colrizes the edit box in red or green as coordinates are typed in to show that theu are in the correct format
+Return value: None
+Public:No
+Parameters:None
 Example(s):
 [] call MRH_fnc_MilsimTools_FireSupport_onCharCheck;
 

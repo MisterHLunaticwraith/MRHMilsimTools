@@ -1,12 +1,13 @@
 /*
-Function name:MRH_fnc_MilsimTools_
+Function name:MRH_fnc_MilsimTools_FireSupport_parseSettings
 Author: Mr H.
-Description:
-Return value:
-Public:
-Parameters:
+Description: Reads cba settings and converts them to public variables stored in missionNamespace
+Return value: None
+Public:No
+Parameters:None
 Example(s):
-[] call MRH_fnc_MilsimTools_FireSupport_
+called by cba postInit XEH, only on server
+[] call MRH_fnc_MilsimTools_FireSupport_parseSettings
 
 */
 #include "MRH_C_Path.hpp"

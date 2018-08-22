@@ -1,12 +1,13 @@
 /*
-Function name:MRH_fnc_MilsimTools_InsertionHandler_
+Function name:MRH_fnc_MilsimTools_InsertionHandler_conditionsToBeLoadAble
 Author: Mr H.
-Description:
-Return value:
-Public:
-Parameters:
+Description: used as condition by ace actions, calculates all parameters to show action on target object
+Return value: <BOOL> true if conditions are met, false otherwise
+Public:No
+Parameters: 
+0-<OBJECT> target object for ace player
 Example(s):
-call MRH_fnc_MilsimTools_InsertionHandler_conditionsToBeLoadAble;
+[cursortarget] call MRH_fnc_MilsimTools_InsertionHandler_conditionsToBeLoadAble;
 */
 #include "MRH_C_Path.hpp"
 params ["_object"];
@@ -26,6 +27,9 @@ if (((getmass _object) < 10000) && ((getmass _object) >= 5)) then {_okMass = tru
 //-----check that all conditions are met and return verdict
 if (_isNearEnough && _okMass) then {_allConditionsCheck = true};
 //----FORCE OVERRIDES
+/*list of objects to exclude*/
+#include "\MRHInsertionHandler\Functions\toExclude.h"
+if ((typeOf _object) in _toExclude) then {_allConditionsCheck = false;};
 /* Can be forced by mission maker by setting MRHMT_canBeLoaded variable to true*/
 _forcedByMission = _object getVariable ["MRHMT_canBeLoaded",false];
 if (_forcedByMission && _isNearEnough) then {_allConditionsCheck = true};
@@ -37,5 +41,6 @@ if (_isForcedFromCfg && _isNearEnough) then {_allConditionsCheck = true};
 /* preping is disabled for this object*/
 _prepingDisabled = _object getVariable ["MRHMT_forceUnloadable",false];
 if (_prepingDisabled) then {_allConditionsCheck = false};
+
 //----------return
 _allConditionsCheck

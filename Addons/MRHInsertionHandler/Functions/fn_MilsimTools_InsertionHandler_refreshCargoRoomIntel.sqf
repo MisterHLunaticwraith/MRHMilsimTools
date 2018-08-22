@@ -1,10 +1,10 @@
 /*
-Function name:MRH_fnc_MilsimTools_InsertionHandler_
+Function name:MRH_fnc_MilsimTools_InsertionHandler_refreshCargoRoomIntel
 Author: Mr H.
-Description:
-Return value:
-Public:
-Parameters:
+Description: Refreshes the cargo room intel control depending on the selected vehicle's available cargo space and current on board gear and players.
+Return value:None
+Public:No
+Parameters:None
 Example(s):
 call MRH_fnc_MilsimTools_InsertionHandler_refreshCargoRoomIntel;
 */

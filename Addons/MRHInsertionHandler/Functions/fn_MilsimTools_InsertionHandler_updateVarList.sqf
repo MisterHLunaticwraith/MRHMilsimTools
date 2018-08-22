@@ -1,10 +1,10 @@
 /*
-Function name:MRH_fnc_MilsimTools_InsertionHandler_
+Function name:MRH_fnc_MilsimTools_InsertionHandler_updateVarList
 Author: Mr H.
-Description:
-Return value:
-Public:
-Parameters:
+Description: updates variable of players to show in the personnel onboard list, removes dead units from the variable,just in case
+Return value:None
+Public:No
+Parameters:None
 Example(s):
 call MRH_fnc_MilsimTools_InsertionHandler_updateVarList;
 */
