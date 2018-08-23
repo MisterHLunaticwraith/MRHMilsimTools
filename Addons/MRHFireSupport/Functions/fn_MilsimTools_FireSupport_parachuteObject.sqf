@@ -18,25 +18,35 @@ see public version for examples
 */
 #include "MRH_C_Path.hpp"
 params ["_classname","_dropPos",["_attachSmoke",true],["_attachIR",true]];
+
+	//---- if object is an actual object parachute it else create an object of the given classname	
 		_toDrop = "";
 	if ((typeName _classname) == "OBJECT") then {_toDrop = _classname} else 
 	{
 		_toDrop =  _classname createVehicle _dropPos;
 	};
-	
+	_toDrop setPosATL _dropPos;
+
+
+	//----disable collision with nearby aircraft
 	_planeThatDropped = nearestObject [_toDrop,"Air"];
 	if !(isNull _planeThatDropped) then {
 	_toDrop disableCollisionWith _planeThatDropped;
-	[[_toDrop,_planeThatDropped],{params ["_toDrop","_planeThatDropped"]; _toDrop disableCollisionWith _planeThatDropped;}] remoteExec ["Call",_planeThatDropped]; //in case plane is not local
+	[[_toDrop,_planeThatDropped],{
+		params ["_toDrop","_planeThatDropped"]; _toDrop disableCollisionWith _planeThatDropped;}] remoteExec ["Call",_planeThatDropped]; //in case plane is not local
 	};
 
-	_toDrop setPos _dropPos;
+	//---- create chute
+		
+	_chute = "O_Parachute_02_F" createVehicle _dropPos;
+	_chute setPosATL _dropPos;
+	
 
-	_chute =  "O_Parachute_02_F" createVehicle (_toDrop modelToWorld [0,0,1]);
-
-	_chute attachTo [_toDrop,[0,0,0.5]];
+	_toDrop attachTo [_chute,[0,0,0]];
 
 	_toDrop allowDamage false;
+
+	//---- attach smoke and IR
 	[_toDrop,_attachSmoke,_attachIR] spawn {
 		params ["_toDrop","_attachSmoke","_attachIR"];
 		waitUntil {((getPosATL _toDrop) select 2) < 100};
@@ -51,14 +61,14 @@ params ["_classname","_dropPos",["_attachSmoke",true],["_attachIR",true]];
 		
 	};
 	sleep 4;
-	while {((getPosATL _toDrop) select 2) > 5} do {
-		_vel = velocity _chute;
-		_toDrop setVelocity [_vel select 0,_vel select 1, -10];
-	};
 
-	detach _chute;
+
+	waitUntil{((getPosATL _toDrop) select 2)<0.6};
+	detach _toDrop;
+	_toDrop setVelocity [0,0,-5];
+	_chute setVelocity [5,0,0];
+	waitUntil {isTouchingGround _toDrop};
 	_toDrop setVelocity [0,0,0];
-	_chute setVelocity [0,0,0];
 	_toDrop allowDamage true;
 	sleep 30;
 	if !(isNull _chute) then {deleteVehicle _chute};

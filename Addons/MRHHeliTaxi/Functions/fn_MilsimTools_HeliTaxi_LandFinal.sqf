@@ -9,7 +9,7 @@ call MRH_fnc_MilsimTools_HeliTaxi_LandFinal;
 */
 #include "MRH_C_Path.hpp"
 params ["_heli","_destination"];
-
+if (!isServer) exitWith {};
 _heli SVAR(isInFinalApproachPhase,true,true);
 
 if ((_heli distance _destination) > 1500) then { waitUntil {(_heli distance _destination) < 1500}};

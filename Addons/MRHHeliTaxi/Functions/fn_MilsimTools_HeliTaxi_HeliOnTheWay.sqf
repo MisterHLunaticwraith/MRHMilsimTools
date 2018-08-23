@@ -17,7 +17,7 @@ _heliType = _caller getVariable "MRH_HeliTaxi_UserSelectedHeli";
 _caller setVariable ["MRH_HeliTaxi_UserSelectedHeli",nil,true];
 _vecarray = [_caller modelToWorld [0,-2000,60], getDir _caller, _heliType,side _caller] call bis_fnc_spawnvehicle;
 _myvec = _vecarray select 0;
-(group _myvec) setGroupId ["[REAPER 1-1]"];
+[[(group _myvec)],{(_this select 0) setGroupId ["[REAPER 1-1]"];}] remoteExec ["Call",0];
 
 //-- create variables
 //attach variables to the group
