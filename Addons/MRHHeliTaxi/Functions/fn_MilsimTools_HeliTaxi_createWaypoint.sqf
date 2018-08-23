@@ -14,7 +14,7 @@ _waypointNumber = (count _setWaypoints) +1;
 _marker = createMarkerLocal ["MRH_WP_Marker_"+(str _waypointNumber), _pos];
 
 _marker setMarkerTypeLocal "MRH_waypoint";
-_marker setMarkerTextLocal ("Waypoint:"+(str _waypointNumber));
+_marker setMarkerTextLocal ((localize "STR_MRH_HeliTaxi_waypointsemicol")+(str _waypointNumber));
 _marker setMarkerColorLocal "ColorYellow";
 _marker setMarkerAlphaLocal 1;
 _wpsNew = +_setWaypoints;

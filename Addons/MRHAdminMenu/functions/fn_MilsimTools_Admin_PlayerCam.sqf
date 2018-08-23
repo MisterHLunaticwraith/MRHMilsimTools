@@ -13,7 +13,10 @@ params ["_player"];
 #include "MRH_C_Path.hpp"
 disableserialization;
 
-
+if !(isNull curatorCamera) ExitWith {
+	FDIS(1200) ctrlSetText PAAPATH(zeusview.paa);
+	[(_player modelToWorld [0,2,3]),position _player,4] spawn BIS_fnc_setCuratorCamera;
+};
 _sstime = date call BIS_fnc_sunriseSunsetTime;
 _sunrise = _sstime select 0;
 _sunset = _sstime select 1;
@@ -27,6 +30,7 @@ else
 {_pip = 0};
 
 _camMRHRoster = "camera" camCreate (_player modelToWorld [0,0.7,1.7]);
+
 _camMRHRoster attachTo [_player, [0,3,3]];
 _camMRHRoster camSetTarget _player;
 _camMRHRoster cameraEffect ["internal", "BACK"];

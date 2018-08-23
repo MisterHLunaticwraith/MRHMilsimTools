@@ -42,6 +42,16 @@
 			</Key>
 		</Container>
 		<Container name="CBASETTINGS">
+			<Key ID="STR_MRH_ADMIN_CBA_AllowAdminForZeusPretty">
+				<Original>Allow players in Zeus view to access admin menu</Original>
+				<English>Allow players in Zeus view to access admin menu</English>
+				<French>Autoriser les joueurs en Zeus à accéder au menu admin</French>
+			</Key>
+			<Key ID="STR_MRH_ADMIN_CBA_AllowAdminForZeusToolTip">
+				<Original>If this setting is enabled, players that are not server admin will still be able to access the admin menu (only when in zeus view)</Original>
+				<English>If this setting is enabled, players that are not server admin will still be able to access the admin menu (only when in zeus view)</English>
+				<French>Si ce réglage est activé les joeurs n'étant pas admin du serveur pourront tout de même accéder au menu administrateur s'ils sont en Zeus (seulement quand ils sont en vue Zeus) </French>
+			</Key>
 			<Key ID="STR_MRH_MS_CBA_SET_ALLOWEDDEAD_PRETTYNAME">
 				<Original>Auto kill reconnecting dead players</Original>
 				<English>Auto kill reconnecting dead players</English>

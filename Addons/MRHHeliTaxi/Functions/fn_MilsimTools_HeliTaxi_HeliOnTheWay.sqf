@@ -14,7 +14,7 @@ params ["_LZ","_caller"];
 
 //--create the heli
 _heliType = _caller getVariable "MRH_HeliTaxi_UserSelectedHeli";
-_caller setVariable ["MRH_HeliTaxi_UserSelectedHeli",nil];
+_caller setVariable ["MRH_HeliTaxi_UserSelectedHeli",nil,true];
 _vecarray = [_caller modelToWorld [0,-2000,60], getDir _caller, _heliType,side _caller] call bis_fnc_spawnvehicle;
 _myvec = _vecarray select 0;
 (group _myvec) setGroupId ["[REAPER 1-1]"];

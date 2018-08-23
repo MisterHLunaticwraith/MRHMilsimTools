@@ -44,7 +44,7 @@ class Helicopter : Air
             {
                 class MRH_climb_in
                 {
-                        displayName = "Climb inside";
+                        displayName = $STR_MRH_HeliTaxi_ClimbInACe;
                         condition = "[_target] call MRH_fnc_MilsimTools_HeliTaxi_conditionClimbIn";
                         statement = "player moveinCargo _target";
                         icon = PAAPATH(ladder.paa); 

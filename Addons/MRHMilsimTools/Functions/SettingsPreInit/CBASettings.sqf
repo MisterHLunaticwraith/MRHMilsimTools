@@ -13,7 +13,8 @@ _script	Script to execute when setting is changed.  (optional) <CODE>
 [_x] call cba_settings_fnc_get;
 [_x , "CHECKBOX",gettext (configfile >> "CfgMods" >> _x >> "name"), "MRHSpawner Allowed DLCs", true,1, { call MRH_fnc_Spawner_AllowedDLCs;}] call cba_settings_fnc_init;
 */
-
+// allow zeus players to access the admin menuAction
+["MRH_MilsimTools_AllowAdminForZeus", "CHECKBOX",   [localize "STR_MRH_ADMIN_CBA_AllowAdminForZeusPretty",localize "STR_MRH_ADMIN_CBA_AllowAdminForZeusToolTip"], "MRH_MilsimTools - Core settings",false,1] call cba_settings_fnc_init;
 //Settings to kill deadplayersupon reconnecting
 ["MRH_MilsimTools_AllowDeadReco", "CHECKBOX",   [localize "STR_MRH_MS_CBA_SET_ALLOWEDDEAD_PRETTYNAME",localize "STR_MRH_MS_CBA_SET_ALLOWEDDEAD_TOOLTIP"], "MRH_MilsimTools - Core settings",true,1] call cba_settings_fnc_init;
 //Settings to reset hasdied variable upon respawn

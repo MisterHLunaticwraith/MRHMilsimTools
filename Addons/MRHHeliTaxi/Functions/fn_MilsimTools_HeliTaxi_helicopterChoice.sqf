@@ -36,7 +36,7 @@ _ctrlButton = ((findDisplay 160718) displayCtrl 1600);
 _ctrlButton buttonSetAction "
 	_heli = lbdata [2100,(lbCurSel 2100)];
 	
-	player setVariable ['MRH_HeliTaxi_UserSelectedHeli',_heli];
+	player setVariable ['MRH_HeliTaxi_UserSelectedHeli',_heli,true];
 	call MRH_fnc_MilsimTools_HeliTaxi_HeliTaxiCall; 
 	closedialog 0;
 	";

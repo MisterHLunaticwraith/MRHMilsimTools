@@ -25,7 +25,7 @@ class MRHWaypointsInfoText: RscStructuredTextMRHHeliTaxi
 {
 	idc = 1101;
 
-	text = "Waypoints"; //--- ToDo: Localize;
+	text = $STR_MRH_HeliTaxi_Waypoints; //--- ToDo: Localize;
 	x = 0.195781 * safezoneW + safezoneX;
 	y = 0.181 * safezoneH + safezoneY;
 	w = 0.159844 * safezoneW;
@@ -45,7 +45,7 @@ class MRHClearWaypointsButton: RscButtonMRHHeliTaxi
 	idc = 1601;
 	action = "call MRH_fnc_MilsimTools_HeliTaxi_clearWaypoints;";
 
-	text = "Clear waypoints"; //--- ToDo: Localize;
+	text = $STR_MRH_HeliTaxi_ClearWaypoints; //--- ToDo: Localize;
 	x = 0.195781 * safezoneW + safezoneX;
 	y = 0.709 * safezoneH + safezoneY;
 	w = 0.159844 * safezoneW;
@@ -55,7 +55,7 @@ class MRHGoButton: RscButtonMRHHeliTaxi
 {
 	idc = 1602;
 
-	text = "Go"; //--- ToDo: Localize;
+	text = $STR_MRH_HeliTaxi_GoButton; //--- ToDo: Localize;
     action = "call MRH_fnc_MilsimTools_HeliTaxi_buttonAction;";
 	x = 0.195781 * safezoneW + safezoneX;
 	y = 0.753 * safezoneH + safezoneY;
@@ -66,7 +66,7 @@ class MRHCancelButton: RscButtonMRHHeliTaxi
 {
 	idc = 1603;
 
-	text = "Cancel"; //--- ToDo: Localize;
+	text = $STR_MRH_HeliTaxi_CancelButton; //--- ToDo: Localize;
 	x = 0.195781 * safezoneW + safezoneX;
 	y = 0.797 * safezoneH + safezoneY;
 	w = 0.159844 * safezoneW;

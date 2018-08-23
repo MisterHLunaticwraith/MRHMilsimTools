@@ -16,7 +16,9 @@ closedialog 0;
 _player = [_playerUid] call MRH_fnc_MilsimTools_Core_FindPlayerByUID;
 
 //create a dummy copy of the selected player
-_dummy = group player createUnit ["C_man_p_beggar_F", player modelToWorld [0,0,1000], [], 0, "FORM"];
+//_dummy = group player createUnit ["C_man_p_beggar_F", player modelToWorld [0,0,1000], [], 0, "FORM"];
+_dummy = "C_man_p_beggar_F" createVehicleLocal (player modelToWorld [0,0,1000]);
+_dummy setPos (player modelToWorld [0,0,1000]);
 _dummy enableSimulation false;
 waitUntil {!isNull _dummy};
 _dummyChangeSCript = [_player,_dummy] spawn {

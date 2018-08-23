@@ -10,11 +10,11 @@ call MRH_fnc_MilsimTools_HeliTaxi_buttonAction;
 #include "MRH_C_Path.hpp"
 _veh = vehicle player;
 _isInFinalApp = _veh GVARDef(isInFinalApproachPhase,false);
-if (_isInFinalApp) exitWith {closedialog 0; hintC "The pilot has started the landing procedure, course cannot be changed at that point.";};
+if (_isInFinalApp) exitWith {closedialog 0; hintC (localize "STR_MRH_HeliTaxi_LandingChangeDeniedHint");};
 _wayPointsMarkers = player GVARDef(setWaypoints,[]);
 //check that destination is set
 _color = getMarkerColor "MRH_LZ_Marker";
-if (_color == "") ExitWith {hint "Error, no destination set"};
+if (_color == "") ExitWith {hint (localize "STR_MRH_HeliTaxi_NoDestError")};
 //-- clear previous waypoints for the vehicle
 _oldWaypoints = waypoints group _veh;
 _hadWaypoints =false;
@@ -41,6 +41,6 @@ _destination = getMarkerPos "MRH_LZ_Marker";
 
 [[_veh,_processedWP,_destination],MRH_fnc_MilsimTools_HeliTaxi_heliPath] remoteExec ["Spawn",2];
 closeDialog 0;
-_hintText = "En route to provided destination";
-if (_hadWaypoints) then {_hintText = "New course set, old course abandonned";};
+_hintText = (localize "STR_MRH_HeliTaxi_EnRouteHintC");
+if (_hadWaypoints) then {_hintText = (localize "STR_MRH_HeliTaxi_NewCourseSetMess");};
 hintC _hintText;

@@ -19,25 +19,25 @@
 					condition = "('MRH_Map' in items player) && !(call MRH_fnc_MilsimTools_EnhancedMap_isFoldedMapOpen)";
 					exceptions[] = {"isNotSitting"};
 					statement = "call MRH_fnc_MilsimTools_EnhancedMap_unfoldMap;";
-					icon = "";
+					icon = PAAPATH(unfold.paa);
 					
 				};
 				class MRH_Ace_ShowMiniMap
 				{
 					displayName = $STR_MRH_EnhancedMap_ShowFoldACE;
 					condition = "('MRH_Map' in items player) && !(call MRH_fnc_MilsimTools_EnhancedMap_isFoldedMapOpen)";
-					exceptions[] = {"isNotSitting","notOnMap"};
+					exceptions[] = {"isNotSitting","notOnMap","isNotInside"};
 					statement = "call MRH_fnc_MilsimTools_EnhancedMap_showFoldableMap";
-					icon = "";
+					icon = PAAPATH(map.paa);
 					
 				};
 				class MRH_Ace_CloseMiniMap
 				{
 					displayName = $STR_MRH_EnhancedMap_CloseFoldACE;
 					condition = "(call MRH_fnc_MilsimTools_EnhancedMap_isFoldedMapOpen)";
-					exceptions[] = {"isNotSitting","notOnMap"};
+					exceptions[] = {"isNotSitting","notOnMap","isNotInside"};
 					statement = "call MRH_fnc_MilsimTools_EnhancedMap_closeFoldableMap";
-					icon = "";
+					icon = PAAPATH(fold.paa);
 					
 				};
 			
@@ -45,9 +45,9 @@
 				{
 					displayName = $STR_MRH_EnhancedMap_ChooseFoldZACE;
 					condition = "('MRH_Map' in items player) && (visibleMap)";
-					exceptions[] = {"isNotSitting","notOnMap"};
+					exceptions[] = {"isNotSitting","notOnMap","isNotInside"};
 					statement = "call MRH_fnc_MilsimTools_EnhancedMap_setFoldableMapCenter";
-					icon = "";
+					icon = PAAPATH(select.paa);
 					
 				};
 			};

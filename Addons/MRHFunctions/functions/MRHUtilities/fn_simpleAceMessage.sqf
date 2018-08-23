@@ -56,7 +56,7 @@ _statement = {
 		if (_executionSpace == "GLOBAL")then {[[_unit],_code] RemoteExec ["Spawn",0,true];} else {[_unit] spawn _code};
 };
 _action =["Conversation", 
-" Parler",
+(localize "STR_MRH_FUNCS_ACTIONSPEAK"),
  "\MRHFunctions\img\speak.paa", 
  _statement, 
  {true},
