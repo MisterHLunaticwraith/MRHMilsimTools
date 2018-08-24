@@ -156,7 +156,12 @@
 				<Original>Double click on map to set final destination, you can set intermediate waypoints by holding CTRL and double clicking on map</Original>
 				<English>Double click on map to set final destination, you can set intermediate waypoints by holding CTRL and double clicking on map</English>
 				<French>Double cliquez sur la carte pour choisir la destination finale, vous pouvez définir des points de passage intermédiaire en maintenant CTRL enfoncé.</French>
-			</Key>	
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_forceLandAction">
+				<Original>Force landing</Original>
+				<English>Force landing</English>
+				<French>Forcer l'aterrissage</French>
+			</Key>
 
 
 			

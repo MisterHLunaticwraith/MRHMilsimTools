@@ -66,6 +66,10 @@ class MRH // Defines the "owner"
 		{};
 		class MilsimTools_HeliTaxi_conditionClimbIn
 		{};
+		class MilsimTools_HeliTaxi_conditionForceLand
+		{};
+		class MilsimTools_HeliTaxi_forceLandAction
+		{};
 	};
 	
 	

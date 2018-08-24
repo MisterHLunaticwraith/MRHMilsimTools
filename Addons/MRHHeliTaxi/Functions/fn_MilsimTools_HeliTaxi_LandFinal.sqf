@@ -11,7 +11,7 @@ call MRH_fnc_MilsimTools_HeliTaxi_LandFinal;
 params ["_heli","_destination"];
 if (!isServer) exitWith {};
 _heli SVAR(isInFinalApproachPhase,true,true);
-
+[_heli] spawn {sleep 30; (_this select 0) SVAR(heliShouldHaveLanded,true,true)};//sometimes the heli won't land if so give players ability to force land
 if ((_heli distance _destination) > 1500) then { waitUntil {(_heli distance _destination) < 1500}};
 _heli limitSpeed 90;
 
@@ -33,8 +33,10 @@ if (_isOnWater) then
 	waitUntil {((getPosASL _heli) select 2)<4};
 } else {
 
-
-_heli land "GET IN";//"GET IN";
+_statement = "GET IN";
+#include "exceptionlist.hpp"
+if((typeOf _heli) in _exceptionlist) then {_statement = "LAND"};//some helis do not touch ground when GET IN order is issued,replace by LAND
+_heli land _statement;//"GET IN";
 
 
 waitUntil {isTouchingGround _heli};

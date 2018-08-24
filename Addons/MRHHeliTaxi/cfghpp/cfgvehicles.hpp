@@ -29,6 +29,14 @@ class CAManBase: Man
             statement = "call MRH_fnc_MilsimTools_HeliTaxi_cancelHeliAction";
             icon = "";
         };
+        class MRH_HeliTaxi_forceLand
+        {
+            displayName = $STR_MRH_HeliTaxi_forceLandAction;
+            condition = "call MRH_fnc_MilsimTools_HeliTaxi_conditionForceLand";
+            exceptions[] = {"isNotInside"};
+            statement = "call MRH_fnc_MilsimTools_HeliTaxi_forceLandAction";
+            icon = "";
+        };
 	
 
 	};

@@ -650,14 +650,20 @@ class RscListBoxMRHInsertionInterface
 	};
 	class ListScrollBar
 	{
-		color[] = 
-		{
-			1,
-			1,
-			1,
-			1
-		};
-		autoScrollEnabled = 1;
+	
+		width = 0.021;
+		autoScrollSpeed = -1;
+		autoScrollDelay = 5;
+		autoScrollRewind = 0;
+                shadow=0;
+		color[] = {1,1,1,0.6};
+    		colorActive[] = {1,1,1,1};
+    		colorDisabled[] = {1,1,1,0.3};
+	     arrowEmpty = "\A3\ui_f\data\gui\cfg\scrollbar\arrowEmpty_ca.paa"; // Arrow 
+	     arrowFull = "\A3\ui_f\data\gui\cfg\scrollbar\arrowFull_ca.paa"; // Arrow when clicked on 
+	     border = "\A3\ui_f\data\gui\cfg\scrollbar\border_ca.paa"; // Slider background (stretched vertically) 
+	     thumb = "\A3\ui_f\data\gui\cfg\scrollbar\thumb_ca.paa"; // Dragging element (stretched vertically) 
+	
 	};
 	colorShadow[] = 
 	{
