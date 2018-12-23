@@ -437,6 +437,96 @@
 				<English>This setting defines how far (in meters) the plane will spawn from the dropzone and therefore how long it will take the plane to reach it. Note that supply planes can be destroyed and the supply drop lost.</English>
 				<French>Ce réglage influe sur la distance de la zone de largage à laquelle l'avion sera spawné, et donc sur son temps de trajet. Attention l'avion peut être détruit et sa cargaison perdue.</French>
 			</Key>
+			<Key ID="STR_MRH_CBA_HaloGear_enabEPOSet">
+				<Original>Enable hypoxia</Original>
+				<English>Enable hypoxia</English>
+				<French>Activer l'hypoxie</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_HaloGear_enabEPOSetToolTip">
+				<Original>When enabled players above the altitude of hypoxia will gradually lose counciousness if they do not have protective gear.</Original>
+				<English>When enabled players above the altitude of hypoxia will gradually lose counciousness if they do not have protective gear.</English>
+				<French>Les joueurs au dessus de l'altitude d'hypoxie perdront petit à petit connaissance s'ils non't pas d'équipement respiratoire. </French>
+			</Key>
+
+			<Key ID="STR_MRH_CBA_HaloGear_hypoAltSet">
+				<Original>Hypoxia effects altitude limit</Original>
+				<English>Hypoxia effects altitude limit</English>
+				<French>Altitude des effets de l'hypoxie</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_HaloGear_hypoAltSetToolTip">
+				<Original>Altitude (above sea level) at which hypoxia start (in meters).</Original>
+				<English>Altitude (above sea level) at which hypoxia start (in meters).</English>
+				<French>Altitude (par rapport au niveau de la mer) à laquelle l'hypoxie commence.(en mètres)</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_HaloGear_missionCfgProt">
+				<Original>Mission configured protective gear</Original>
+				<English>Mission configured protective gear</English>
+				<French>Equipement de protection configuré par la mission.</French>
+			</Key>
+
+			<Key ID="STR_MRH_CBA_HaloGear_missionCfgProtTooltip">
+				<Original>Classnames of extra equipment that can protect from hypoxia. Can be headgear,facewear or vehicle. No quotes, separated by comas.</Original>
+				<English>Classnames of extra equipment that can protect from hypoxia. Can be headgear,facewear or vehicle. No quotes, separated by comas.</English>
+				<French>Nom de classe des objets supplémentaires qui protègent de l'hypoxie. Peuvent être casques, lunettes, véhicules.Pas de guillemets, séparés par des virgules.</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_HaloGear_AADDefaultHeight">
+				<Original>AAD Default auto opening altitude</Original>
+				<English>AAD Default auto opening altitude</English>
+				<French>Altitude d'ouverture par défaut du déclencheur de sécurité.</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_HaloGear_AADDefaultHeightToolTip">
+				<Original>Default height setting for the Automatic activation device.(in meters)</Original>
+				<English>Default height setting for the Automatic activation device.(in meters)</English>
+				<French>Altitude d'ouverture par défaut du déclencheur de sécurité.(En mètres)</French>
+			</Key>
+
+			<Key ID="STR_MRH_CBA_HaloGear_AllowManAAD">
+				<Original>Allow manual AAD setting</Original>
+				<English>Allow manual AAD setting</English>
+				<French>Autorisé le réglage manuel du déclencheur.</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_HaloGear_AllowManAADToolTip">
+				<Original>If disabled players won't be able to set a default altitude, sefault altitude from above setting will be force-used on AAD equipped parachutes.</Original>
+				<English>If disabled players won't be able to set a default altitude, sefault altitude from above setting will be force-used on AAD equipped parachutes.</English>
+				<French>Si ce réglage est désactivé les joueurs ne pourront pas changer le réglage du déclencheur de sécurité et le réglage précédent sera appliqué automatiquement aux parachutes munis d'un déclencheur.</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_HaloGear_PlayRebSounds">
+				<Original>Play rebreather sounds on configured gear</Original>
+				<English>Play rebreather sounds on configured gear</English>
+				<French>Jouer les sons de respiration sur le matériel configuré.</French>
+			</Key>
+
+			<Key ID="STR_MRH_CBA_HaloGear_PlayRebSoundsTooltip">
+				<Original>Rebreather items configured by addons or by mission settings will play breathing sounds when equipped (headgear and facewear only)</Original>
+				<English>Rebreather items configured by addons or by mission settings will play breathing sounds when equipped (headgear and facewear only)</English>
+				<French>Les  masques et casques respiratoires configurés par addon ou dans la mission joueront des sons de respiuration quand ils sont équipés.</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_HaloGear_OddsOfBreaking">
+				<Original>Odds for the Halo Mask to break during free fall</Original>
+				<English>Odds for the Halo Mask to break during free fall</English>
+				<French>Chances pour que le masque HALO se casse durant le saut.</French>
+			</Key>
+
+			<Key ID="STR_MRH_CBA_HaloGear_OddsOfBreakingToolTip">
+				<Original>Only with facewear MRH_HaloMask with ESS. The mask has a slight chance to break during freefall. Expressed in percentage where 0 means it will never happen and 100 it will happen for each jump.</Original>
+				<English>Only with facewear MRH_HaloMask with ESS. The mask has a slight chance to break during freefall. Expressed in percentage where 0 means it will never happen and 100 it will happen for each jump.</English>
+				<French>Seulement applicable avec l'item MRH_HaloMask munit d'une protection pour les yeux. Le masque a une chance de se briser durant le saut. Exprimée en pourcentage: 0 ne se produira jamais, 100 se produira à chaque saut.</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_HaloGear_openChuteKey">
+				<Original>Open parachute</Original>
+				<English>Open parachute</English>
+				<French>Ouvrir le parachute</French>
+			</Key>
+
+			<Key ID="STR_MRH_CBA_HaloGear_openChuteKeyToolTip">
+				<Original>Allows you to use a keybind to open your parachute.</Original>
+				<English>Allows you to use a keybind to open your parachute.</English>
+				<French>Autorise l'utilisation d'un raccourci clavier pour l'ouverture du parachute.</French>
+			</Key>
+	
+
+
+			
 			
 		</Container>
 		<Container name="CORE_BriefingADmin">

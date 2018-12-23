@@ -1,0 +1,186 @@
+///////////////////////////////////////////////////////////////////////////////////
+Changelog:
+
+MRH Milsim Tools version : v.1.15.0
+
+*Added new functionality : Parachuting addon (Halo Gear)
+-Features:
+* 2 Masks and 2 Parachutes with auto opening possibilities (CYPRES II Auto Activation Device).
+*Special HUD for Halo Mask
+*Chances of mask breaking (Halo Mask With ESS only)
+*Emulation of Hypoxia effects
+*Configurable key to open parachute (default SPACE) instead of scrollwheel action menu.
+*Objects that are attached to the player with ace interaction (IR Strobes chemLights etc) will also appeared attached when the chute is deployed.
+*Fully configurable
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////
+MRH Milsim Tools version : v.1.14.6
+
+*Demo mission updated
+*Admin menu:
+-fixed:
+> changing player gear with ace arsenal should now work properly even if the admin isn’t formation leader
+-changed:
+> added setting to allow non admin players to open the admin menu if they are in zeus interface (disabled by default)
+-tweaked:
+> when opening the admin menu and viewing a specific player the view camera will not be displayed (it fucked with the zeus cam) but the zeus cam will be centered on selected player instead.
+
+*Enhanced map:
+-fixed:
+>incorrect texture path for proving grounds would cause sharable map to be invisible
+-changed:
+>added icons for actions
+-tweaked:
+>foldable map actions can now be used in vehicles
+
+*Fire support:
+-fixed: 
+>some players wouldn’t get the actions
+> all functions now have complete headers
+>paradrop script now functions as intended
+-changed:
+> passed ace self-interactions from script to config, should be much more stable
+-tweaked:
+> you can call supports when in a vehicle or on the map
+
+*Functions:
+-fixed:
+> missing “talk” localization for simple ace message function
+>paradrop script now functions as intended
+
+
+*Heli Taxi
+-changed & tweaked:
+> massive overhaul of the heli taxi system
+> helis and their owners are now created and handled on & by the server
+> you can set waypoints to reach the destination
+> all members of the group that called the heli are now able to cancel it and set its course while inside
+> you can change the course of the heli midflight and give it new waypoints at any time (except if the heli is in its landing phase.
+> you can choose LZs over water and MOST helis will safely hover over the water. (be careful some bigger helis will sink)
+> If you are in the water and the helicopter is coming to pick you up, since you are too far for classic arma action, helis will receive an ACE3 “climb in” interaction allowing you to move inside from the water.
+> compatibility with some helis that do not land completely (RHS super stallion)
+>Sometimes helis do not land, in that case passengers will receive an ace3 action to force the landing after 3 seconds
+
+*Insertion Handler:
+-fixed:
+>settings are now parsed only on the server, no risk of overwriting by new connected player
+> all functions now have complete headers
+>paradrop script now functions as intended
+>scrollbars in listboxes
+-changed: 
+>Only groups with players will appear in the group choice combo
+-tweaked: 
+>Added exclusion list for cargo prepping, list is to be expanded with further use/users feedback.
+
+
+*Markers:
+-added: 
+>Waypoint marker
+
+*Milsim Tools Core:
+-added:
+> function to return wether a player is alive and conscious (ace + milsim tools status)
+> func that returns alive and conscious group members
+
+
+
+
+FOR LATER RELEASE
+*Soldier Tab:
+-fixed:
+-changed:
+-tweaked:
+// to do: pass parsed config entries to variables (to allow module use later)
+*Vehicle spawner:
+-fixed:
+-changed:
+-tweaked:
+// to do: fix sorting not working anymore
+////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+Template :
+///////////////////////////////////////////////////////////////////////////////////
+Changelog:
+
+MRH Milsim Tools version : v.0.0.0
+
+*Added new functionality :
+*Admin menu:
+-fixed:
+-changed:
+-tweaked:
+
+*Enhanced map:
+-fixed:
+-changed:
+-tweaked:
+
+*Fiberscope:
+-fixed:
+-changed:
+-tweaked:
+
+*Fire support:
+-fixed:
+-changed:
+-tweaked:
+
+*Functions:
+-fixed:
+-changed:
+-tweaked:
+
+*Heli Taxi:
+-fixed:
+-changed:
+-tweaked:
+
+*Insertion Handler:
+-fixed:
+-changed:
+-tweaked:
+
+*Jip Menu:
+-fixed:
+-changed:
+-tweaked:
+
+*Markers:
+-fixed:
+-changed:
+-tweaked:
+
+*Milsim Tools Core:
+-fixed:
+-changed:
+-tweaked:
+
+*Radio Chatter:
+-fixed:
+-changed:
+-tweaked:
+
+*Sniper Aid:
+-fixed:
+-changed:
+-tweaked:
+
+*Soldier Tab:
+-fixed:
+-changed:
+-tweaked:
+
+*Vehicle spawner:
+-fixed:
+-changed:
+-tweaked:
+
+*Halo Gear
+
+-fixed:
+-changed:
+-tweaked:

@@ -1,0 +1,52 @@
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Project name="MRHHaloGear>
+	<Package name="MRHHaloGear">
+		<Container name="MRH_MRHHaloGear_AllSTrings">
+			<Key ID="STR_MRH_MRHHaloGear_AADChute">
+				<Original>Steerable parachute with CYPRES 2 AAD</Original>
+				<English>Steerable parachute with CYPRES 2 AAD</English>
+				<French>Parachute dirigeable avec déclencheur de sécurité CYPRES 2</French>
+			</Key>
+			<Key ID="STR_MRH_MRHHaloGear_AADChuteNS">
+				<Original>Non Steerable parachute with CYPRES 2 AAD</Original>
+				<English>Non Steerable parachute with CYPRES 2 AAD</English>
+				<French>Parachute non dirigeable avec déclencheur de sécurité CYPRES 2</French>
+			</Key>
+			<Key ID="STR_MRH_MRHHaloGear_AADSettingSelfAC">
+				<Original>Set AAD settings</Original>
+				<English>Set AAD settings</English>
+				<French>Régler le déclencheur de sécurité</French>
+			</Key>
+			<Key ID="STR_MRH_MRHHaloGear_WarningAAD">
+				<Original>Warning: self opening will trigger</Original>
+				<English>Warning: self opening will trigger</English>
+				<French>Alerte: Auto-ouverture imminente</French>
+			</Key>
+			<Key ID="STR_MRH_MRHHaloGear_AADTriggered">
+				<Original>Self opening triggered</Original>
+				<English>Self opening triggered</English>
+				<French>Auto-ouverture déclenchée</French>
+			</Key><Key ID="STR_MRH_MRHHaloGear_AADHint">
+				<Original>AAD Opening altitude defined at %1 m</Original>
+				<English>AAD Opening altitude defined at %1 m</English>
+				<French></French>
+			</Key><Key ID="STR_MRH_MRHHaloGear_HaloMaskNoESSItem">
+				<Original>Halo Mask (No ESS)</Original>
+				<English>Halo Mask (No ESS)</English>
+				<French>Masque respiratoire (sans équipement de protection des yeux)</French>
+			</Key>
+			<Key ID="STR_MRH_MRHHaloGear_HaloMaskItem">
+				<Original>Halo Mask</Original>
+				<English>Halo Mask</English>
+				<French>Masque respiratoire</French>
+			</Key><Key ID="STR_MRH_MRHHaloGear_HaloMaskBrokenItem">
+				<Original>Halo Mask (Broken)</Original>
+				<English>Halo Mask (Broken)</English>
+				<French>Masque respiratoire (endommagé)</French>
+			</Key>
+		
+			
+		</Container>
+	</Package>
+</Project>

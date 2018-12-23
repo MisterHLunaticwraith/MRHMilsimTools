@@ -5,3 +5,8 @@
 {
  if (!isNull curatorCamera) then {call MRH_fnc_MilsimTools_Core_toggleCuratorInv;};
 },{},[DIK_RETURN, [false, false, false]]] call CBA_fnc_addKeybind;
+
+["MRH_MilSimTools_HaloGear_openChuteKey", "MRH_MilsimTools - Parachute",[localize "STR_MRH_CBA_HaloGear_openChuteKey",localize "STR_MRH_CBA_HaloGear_openChuteKeyToolTip"],
+{
+ if (([player] call MRH_fnc_MilsimTools_HaloGear_isFreeFalling) && ([player] call MRH_fnc_MilsimTools_HaloGear_hasParachute)) then {player action ["OpenParachute", player];};
+},{},[DIK_SPACE, [false, false, false]]] call CBA_fnc_addKeybind;
