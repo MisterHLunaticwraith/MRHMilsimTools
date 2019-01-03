@@ -46,3 +46,7 @@ class completeAirInsertion_core
 {};
 class completeAirInsertion
 {};
+class MoveInCargo_EH_init
+{
+    postInit = 1;
+};

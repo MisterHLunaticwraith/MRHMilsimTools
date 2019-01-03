@@ -1,0 +1,58 @@
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Project name="MRHMiscItems">
+	<Package name="MRHMiscItems">
+		<Container name="MRH_MRHMiscItems_AllSTrings">
+			<Key ID="STR_MRH_MRHMiscItems_ItemEdCat">
+				<Original>MRH Items</Original>
+				<English>MRH Items</English>
+				<French>MRH Objets</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_propsEdSubCat">
+				<Original>Props</Original>
+				<English>Props</English>
+				<French>Accessoires</French>
+			</Key><Key ID="STR_MRH_MRHMiscItems_ElButtonDis">
+				<Original>Elevator control panel</Original>
+				<English>Elevator control panel</English>
+				<French>Panneau de contrôle d'ascenseur</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_USBDriveDisp">
+				<Original>USB flash drive</Original>
+				<English>USB flash drive</English>
+				<French>Clef USB</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_InvItEdSubCat">
+				<Original>Inventory Items</Original>
+				<English>Inventory Items</English>
+				<French>Objets d'inventaire</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_RFIDDescShort">
+				<Original>A RFID keycard</Original>
+				<English>A RFID keycard</English>
+				<French>Un pass RFID</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_RF_BLU">
+				<Original>RFID keycard (For BLUFOR)</Original>
+				<English>RFID keycard (For BLUFOR)</English>
+				<French>Pass RFID (pour BLUFOR)</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_RF_OP">
+				<Original>RFID keycard (For OPFOR)</Original>
+				<English>RFID keycard (For OPFOR)</English>
+				<French>Pass RFID (pour OPFOR)</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_RF_IND">
+				<Original>RFID keycard (for INDEP.)</Original>
+				<English>RFID keycard (for INDEP.)</English>
+				<French>Pass RFID (pour INDEP.)</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_">
+				<Original></Original>
+				<English></English>
+				<French></French>
+			</Key>
+			
+		</Container>
+	</Package>
+</Project>

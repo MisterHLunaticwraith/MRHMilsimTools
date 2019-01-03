@@ -1,7 +1,19 @@
 ///////////////////////////////////////////////////////////////////////////////////
 Changelog:
 
+MRH Milsim Tools version : v.1.15.5
+*Tweaked:
+-Move in cargo function hopefully improved and won't cause desync making all other functions using this one safely usable.
+*Added
+New items:
+-Elevator button, to be used with the elevator function
+-Usb key (prop for now, will have its use with the tablet later on)
+-Inventory item: RFID pass (by side), have no use for now (but you can scripr use for them in your mission, will be used in upcoming feature)
+///////////////////////////////////////////////////////////////////////////////////
+Changelog:
+
 MRH Milsim Tools version : v.1.15.0
+
 
 *Added new functionality : Parachuting addon (Halo Gear)
 -Features:

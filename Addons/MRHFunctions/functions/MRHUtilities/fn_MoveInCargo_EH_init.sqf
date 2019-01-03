@@ -1,0 +1,1 @@
+["mrh_milsimtools_moveInCargoEvent", BIS_fnc_moveToRespawnPosition] call CBA_fnc_addEventHandler;
