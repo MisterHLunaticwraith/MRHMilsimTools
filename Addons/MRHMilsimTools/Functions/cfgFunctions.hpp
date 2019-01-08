@@ -73,7 +73,22 @@ class MRH // Defines the "owner"
 		{};
 		class MilsimTools_Core_getAliveAndConsciousGrpMembers
 		{};
-		
+		class MilsimTools_Core_playVideoOnObject
+		{};
+		class MilsimTools_Core_nearestDoor
+		{};
+		class MilsimTools_Core_nearestDoorNumber
+		{};
+		class MilsimTools_Core_lockDoor
+		{};
+		class MilsimTools_Core_isLockedDoor
+		{};
+		class MilsimTools_Core_toggleDoorState
+		{};
+		/*
+		class MilsimTools_Core_
+		{};
+		*/
 		
 	};
 	

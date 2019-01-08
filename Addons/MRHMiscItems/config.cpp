@@ -33,12 +33,12 @@ class CfgEditorSubcategories
 //#include "\MRHMiscItems\Dialogs\.hpp"
 
 //---------- addon cfgs
-/*
+
 class cfgFunctions
 {
 #include "\MRHMiscItems\Functions\cfgFunctions.hpp"
 };
-*/
+
 /*
 class cfgSounds
 {
@@ -56,7 +56,12 @@ class cfgWeapons
 {
 	#include "\MRHMiscItems\cfgweapons.hpp"
 };
-
+/*
+class Cfg3DEN
+{
+	#include "\MRHMiscItems\cfg3DEN.hpp"
+};
+*/
 //------------Extended XEH
 /*
 class Extended_PostInit_EventHandlers

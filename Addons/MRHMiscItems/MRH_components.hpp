@@ -1,9 +1,9 @@
 //Defines addonName
-#define ADDON MRHAddonName
-#define ADDONVAR AddonName
+#define ADDON MRHMiscItems
+#define ADDONVAR MiscItems
 
 //Defines list of paths
-#define ROOTPATH "MRHAddonName
+#define ROOTPATH "\MRHMiscItems
 #define SCRIPTPATH(ARG) ROOTPATH\scripts\scr_##ARG"
 #define PAAPATH(ARG) ROOTPATH\paa\##ARG"
 #define CFGPATH(ARG) ROOTPATH\cfgHPP\##ARG"

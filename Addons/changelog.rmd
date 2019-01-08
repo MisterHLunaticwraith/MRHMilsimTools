@@ -1,6 +1,20 @@
 ///////////////////////////////////////////////////////////////////////////////////
 Changelog:
 
+MRH Milsim Tools version : v.1.15.6
+
+*Added
+New item:
+-Biometric scanner 
+==> The scanner includes functions to enhance its use, see the object's attributes in eden editor to access settings.
+
+Functions added to MilsimTools_Core:
+detect nearest door in nearest building, detect if door is locked, autoclose/lock door.
+
+
+///////////////////////////////////////////////////////////////////////////////////
+Changelog:
+
 MRH Milsim Tools version : v.1.15.5
 *Tweaked:
 -Move in cargo function hopefully improved and won't cause desync making all other functions using this one safely usable.
