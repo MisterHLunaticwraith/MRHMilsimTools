@@ -1,6 +1,14 @@
 ///////////////////////////////////////////////////////////////////////////////////
 Changelog:
 
+MRH Milsim Tools version : v.1.15.7
+
+*Tweaked & improved
+-nearest door finding function optional parameters
+-You cannow define which building the biometric scanner controls in its attributes
+///////////////////////////////////////////////////////////////////////////////////
+Changelog:
+
 MRH Milsim Tools version : v.1.15.6
 
 *Added

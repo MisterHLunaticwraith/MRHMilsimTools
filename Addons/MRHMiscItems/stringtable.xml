@@ -182,15 +182,15 @@
 				<English>If this setting is enabled a player will be able to hack the scanner(with the hacking tool),thus bypassing all above conditions. (only for the player that performed the hack)</English>
 				<French>Si ce réglage est activé un joueur sera en mesure de pirater le scanner (avec l'outil de piratage), ce qui lui permettra de bypasser les conditions ci-dessus. (valable seulement pour le joueur qui a fait le piratage).</French>
 			</Key>
-			<Key ID="STR_MRH_MRHMiscItems_">
-				<Original></Original>
-				<English></English>
-				<French></French>
+			<Key ID="STR_MRH_MRHMiscItems_scannerCtrledItemAttr">
+				<Original>Building variable name</Original>
+				<English>Building variable name</English>
+				<French>Nom de variable du bâtiment</French>
 			</Key>
-			<Key ID="STR_MRH_MRHMiscItems_">
-				<Original></Original>
-				<English></English>
-				<French></French>
+			<Key ID="STR_MRH_MRHMiscItems_scannerCtrledItemAttrToolTip">
+				<Original>Variable name of the building to control. If a variable name is set for the building the scanner will control the nearest door in given building, otherwise it will control the nerates door in the nearest building.</Original>
+				<English>Variable name of the building to control. If a variable name is set for the building the scanner will control the nearest door in given building, otherwise it will control the nerates door in the nearest building.</English>
+				<French>Nom de varaiable du bâtiment à contrôler. Si un nom de variable de bâtiment est donné le scanner contrôlera la porte de ce bâtiment la plus proche de sa position, sinon il contrôlera la porte la plus proche du bâtiment le plus proche.</French>
 			</Key>
 			<Key ID="STR_MRH_MRHMiscItems_">
 				<Original></Original>

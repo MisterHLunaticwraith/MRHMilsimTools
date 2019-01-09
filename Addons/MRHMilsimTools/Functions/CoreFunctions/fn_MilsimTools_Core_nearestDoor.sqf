@@ -10,16 +10,19 @@ Example(s):
 */
 #include "MRH_C_Path.hpp"
 
-params ["_object"];
+params ["_object",["_building",objNull]];
 
-	_building = nearestBuilding _object;
+	
+	if (isNull _building) then { _building = nearestBuilding _object};
 	_selections = selectionNames _building;
 
 	//find doors
 	_allDoors = [];
 	{
-		_testFor = _x find "door_";
-		if (_testFor != -1) then {_allDoors pushBack _x};
+		//_testFor = _x find "door_";
+		//if (_testFor != -1) then {_allDoors pushBack _x};
+		_testFor = _x splitString "_";
+		if (((_testFor select 0) == "door") && ((_testFor select 1) != "handle")) then {_allDoors pushBack _x};
 	} forEach _selections;
 	
 

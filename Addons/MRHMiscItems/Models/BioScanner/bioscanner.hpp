@@ -148,6 +148,21 @@ class MRH_BioScanner : MRH_BioScanner_Base
                     condition = "object"; // Condition for attribute to appear (see the table below)
                     typeName = "BOOL"; // Defines data type of saved value, can be STRING, NUMBER or BOOL. Used only when control is "Combo", "Edit" or their variants
                 };
+                
+                class objectToControl
+                {
+                    //--- Mandatory properties
+                    displayName = $STR_MRH_MRHMiscItems_scannerCtrledItemAttr; // Name assigned to UI control class Title
+                    tooltip = $STR_MRH_MRHMiscItems_scannerCtrledItemAttrToolTip; // Tooltip assigned to UI control class Title
+                    property = "MRH_BS_ctrledObj"; // Unique config property name saved in SQM
+                    control = "Edit"; // UI control base class displayed in Edit Attributes window, points to Cfg3DEN >> Attributes
+                    expression = "_this setVariable ['MRH_ScannerSettings_controlledBuilding',_value,true]";
+                    defaultValue = "objNull";
+                    unique = 0; // When 1, only one entity of the type can have the value in the mission (used for example for variable names or player control)
+                    validate = "none"; // Validate the value before saving. Can be "none", "expression", "condition", "number" or "variable"
+                    condition = "object"; // Condition for attribute to appear (see the table below)
+                    typeName = "STRING"; // Defines data type of saved value, can be STRING, NUMBER or BOOL. Used only when control is "Combo", "Edit" or their variants
+                };
 
                 class conditionOpenField
                 {

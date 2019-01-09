@@ -43,9 +43,11 @@ _this spawn
 	if (typeName _condition != "BOOL") exitWith {
 	systemChat "MRH_MilsimTool_scanner Error: condition code doesn't return a boolean value";
 												};
+	private "_building";
+	_bldStr = _scanner getVariable ["MRH_ScannerSettings_controlledBuilding","<NULL-object>"];
+	if (_bldStr != "<NULL-object>") then {_building = call compile _bldStr} else {_building = nearestBuilding _scanner;};
 
-	_building = nearestBuilding _scanner;
-	_doorNumber = [_scanner] CFUNC(nearestDoorNumber);
+	_doorNumber = [_scanner,_building] CFUNC(nearestDoorNumber);
 	switch (true) do {
 		case (_part == "main") : 
 		{
