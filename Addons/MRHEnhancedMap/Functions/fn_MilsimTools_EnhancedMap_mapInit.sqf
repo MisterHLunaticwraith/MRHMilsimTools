@@ -20,7 +20,7 @@ _loc = localize "STR_MRH_EnhancedMap_MapOnGroundOpenAction";
 _action =
 ["MRH_EnhancedMapOpen", 
 _loc,
- "",
+ PAAPATH(map.paa),
 _statement , 
  {true},
  {},
@@ -36,7 +36,7 @@ _loc2 = localize "STR_MRH_EnhancedMap_MapOnGroundCollectAction";
 _action2 =
 ["MRH_EnhancedMapCollect", 
 _loc2,
- "",
+ PAAPATH(fold.paa),
 _statement2 , 
  {true},
  {},

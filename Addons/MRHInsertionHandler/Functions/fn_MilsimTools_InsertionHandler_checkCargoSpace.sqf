@@ -1,10 +1,10 @@
 /*
-Function name:MRH_fnc_MilsimTools_InsertionHandler_
+Function name:MRH_fnc_MilsimTools_InsertionHandler_checkCargoSpace
 Author: Mr H.
-Description:
-Return value:
-Public:
-Parameters:
+Description: Checks if there is cargo space left in the currently selected vehicle depending on currently loaded passengers and cargo
+Return value: true if space left, false is vehicle capacity exceeded
+Public: No
+Parameters:None
 Example(s):
 call MRH_fnc_MilsimTools_InsertionHandler_checkCargoSpace;
 */

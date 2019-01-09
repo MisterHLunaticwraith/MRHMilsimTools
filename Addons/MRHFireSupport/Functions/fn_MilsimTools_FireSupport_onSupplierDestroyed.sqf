@@ -1,12 +1,13 @@
 /*
-Function name:MRH_fnc_MilsimTools_
+Function name:MRH_fnc_MilsimTools_FireSupport_onSupplierDestroyed
 Author: Mr H.
-Description:
-Return value:
-Public:
+Description: Fired by event handler when the plane that was delivering the supply is destroyed, resets variables and plays a message
+Return value:None
+Public:No
 Parameters:
+0-<OBJECT> plane that fired the killed EH
 Example(s):
-[] call MRH_fnc_MilsimTools_FireSupport_onSupplierDestroyed;
+[_this] call MRH_fnc_MilsimTools_FireSupport_onSupplierDestroyed;
 
 */
 #include "MRH_C_Path.hpp"

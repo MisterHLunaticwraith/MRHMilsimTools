@@ -1,10 +1,10 @@
 /*
-Function name:MRH_fnc_MilsimTools_InsertionHandler_
+Function name:MRH_fnc_MilsimTools_InsertionHandler_addToGearListAction
 Author: Mr H.
-Description:
-Return value:
-Public:
-Parameters:
+Description: adds object to list of objects loaded on board, refreshes lists. Called from button.
+Return value: None
+Public: No
+Parameters:None
 Example(s):
 call MRH_fnc_MilsimTools_InsertionHandler_addToGearListAction;
 */

@@ -97,6 +97,72 @@
 				<English>Cancel flight</English>
 				<French>Annuler le vol</French>
 			</Key>
+			<Key ID="STR_MRH_HeliTaxi_ClimbInACe">
+				<Original>Climb inside</Original>
+				<English>Climb inside</English>
+				<French>Monter à bord</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_Waypoints">
+				<Original>Waypoints</Original>
+				<English>Waypoints</English>
+				<French>Points de passage</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_ClearWaypoints">
+				<Original>Clear waypoints</Original>
+				<English>Clear waypoints</English>
+				<French>Effacer les points de passage</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_GoButton">
+				<Original>Go</Original>
+				<English>Go</English>
+				<French>En route!</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_CancelButton">
+				<Original>Cancel</Original>
+				<English>Cancel</English>
+				<French>Annuler</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_LandingChangeDeniedHint">
+				<Original>The pilot has started the landing procedure, course cannot be changed at that point.</Original>
+				<English>The pilot has started the landing procedure, course cannot be changed at that point.</English>
+				<French>Le pilote a commencé la procédure d'aterrissage, impossible de changer de destination.</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_NoDestError">
+				<Original>Error, no destination set</Original>
+				<English>Error, no destination set</English>
+				<French>Erreur, pas de destination définie</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_EnRouteHintC">
+				<Original>En route to provided destination</Original>
+				<English>En route to provided destination</English>
+				<French>En route vers la destination choisie</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_NewCourseSetMess">
+				<Original>New course set, old course abandonned</Original>
+				<English>New course set, old course abandonned</English>
+				<French>Nouveau plan de vol, abandon du plan de vol précédent</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_waypointsemicol">
+				<Original>Waypoint:</Original>
+				<English>Waypoint:</English>
+				<French>Point de passage:</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_SomeoneIsSettingAlready">
+				<Original>Someone in your group is already setting up a course.</Original>
+				<English>Someone in your group is already setting up a course.</English>
+				<French>Quelqu'un dans votre groupe est déjà en train de définir un plan de vol.</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_HintCreateIntermediate">
+				<Original>Double click on map to set final destination, you can set intermediate waypoints by holding CTRL and double clicking on map</Original>
+				<English>Double click on map to set final destination, you can set intermediate waypoints by holding CTRL and double clicking on map</English>
+				<French>Double cliquez sur la carte pour choisir la destination finale, vous pouvez définir des points de passage intermédiaire en maintenant CTRL enfoncé.</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_forceLandAction">
+				<Original>Force landing</Original>
+				<English>Force landing</English>
+				<French>Forcer l'aterrissage</French>
+			</Key>
+
 
 			
 			

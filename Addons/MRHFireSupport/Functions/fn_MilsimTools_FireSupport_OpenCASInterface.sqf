@@ -1,12 +1,12 @@
 /*
-Function name:MRH_fnc_MilsimTools_
+Function name:MRH_fnc_MilsimTools_FireSupport_OpenCASInterface
 Author: Mr H.
-Description:
-Return value:
-Public:
-Parameters:
+Description: Opens the artillery interface and modifies its contents to fit CAS requests
+Return value:None
+Public:No
+Parameters:None
 Example(s):
-[] call MRH_fnc_MilsimTools_FireSupport_
+[] call MRH_fnc_MilsimTools_FireSupport_OpenCASInterface
 
 */
 #include "MRH_C_Path.hpp"

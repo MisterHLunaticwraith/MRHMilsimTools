@@ -1,11 +1,21 @@
 /*
-Function name:MRH_fnc_MilsimTools_
+Function name:MRH_fnc_MilsimTools_FireSupport_dropSupplies
 Author: Mr H.
-Description:
-Return value:
-Public:
+Description: Creates a plane, sends it to provided coordinates and drops the cargo (itesms and players, parachutes are then added to everything
+Return value:None
+Public: No, but there is a public version
 Parameters:
+0 -<STRING> classname of plane to spawn
+1 -<ARRAY> position where to drop the supplies
+2 -<STRING> or <OBJECT> if string: classname of object to create, if object, object present in the missionConfigFile
+3 -<SIDE> - Side of the created plane can be West / Blufor (Arma 3), East / Opfor (Arma 3), Resistance / Independent (Arma 3), Civilian, sideLogic, Friendly, Enemy or Unknown.
+4- <NUMBER> optional, distance (in meters) from the dropzone where the plane will be created, default is 3000m 
+//only for private version:
+5-<OBJECT> caller player who called the script 
+6- <BOOL> is for mod, will include playing dialogs
 Example(s):
+unlike the public version this function must be spawned (executed ins scheduled environment) to allow suspension 
+see public for more examples
 [] spawn MRH_fnc_MilsimTools_FireSupport_dropSupplies
 
 */

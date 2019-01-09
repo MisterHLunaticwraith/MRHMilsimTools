@@ -1,12 +1,13 @@
 /*
-Function name:MRH_fnc_MilsimTools_InsertionHandler_
+Function name:MRH_fnc_MilsimTools_InsertionHandler_onMapDoubleClick
 Author: Mr H.
-Description:
-Return value:
-Public:
+Description: if map ctrl is double clicked, returns the clicked zone, converts it from screen tom map coords and creates a marker on clicked pos
+Return value: None
+Public:No
 Parameters:
+passed from onMouseDoubleClick eventHandler, only 0,2 and 3 are actually used in this function
 Example(s):
-call MRH_fnc_MilsimTools_InsertionHandler_onMapDoubleClick;
+_this call MRH_fnc_MilsimTools_InsertionHandler_onMapDoubleClick;
 */
 #include "MRH_C_Path.hpp"
 

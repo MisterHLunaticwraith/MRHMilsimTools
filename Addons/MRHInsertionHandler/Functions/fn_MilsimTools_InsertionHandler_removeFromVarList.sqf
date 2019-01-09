@@ -1,12 +1,15 @@
 /*
 Function name:MRH_fnc_MilsimTools_InsertionHandler_
 Author: Mr H.
-Description:
-Return value:
-Public:
+Description: removes given object from given variable attached to the player
+Return value: None
+Public:No
 Parameters:
+0-<OBJECT> object to remove from list
+1-<STRING> name of the list to combine to the variable string
 Example(s):
-call MRH_fnc_MilsimTools_InsertionHandler_removeFromVarList;
+
+[someObject,"someListName"] call MRH_fnc_MilsimTools_InsertionHandler_removeFromVarList;
 */
 #include "MRH_C_Path.hpp"
 params ["_toRemove","_list"];

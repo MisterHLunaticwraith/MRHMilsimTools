@@ -123,7 +123,7 @@ class MRHMapPictures
 	};
 	class ProvingGrounds_PMC
 	{
-		picturePath = PAAPATH(provinggounds.paa);
+		picturePath = PAAPATH(provinggrounds.paa);
 	};
 	class intro
 	{

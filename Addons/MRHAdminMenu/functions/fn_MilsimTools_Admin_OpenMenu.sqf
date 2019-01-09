@@ -9,7 +9,18 @@ Example(s):
 call MRH_fnc_MilsimTools_Admin_OpenMenu;
 */
 #include "MRH_C_Path.hpp"
-if !(serverCommandAvailable "#kick") exitWith {};
+
+_canAccess = FUNC(canAccessAdminMenu);
+if !(_canAccess) exitWith {};
+/*
+// doesn't work because ace disables player input
+_isAceConscious = [player] call ace_common_fnc_isAwake;
+if !(_isAceConscious) then {
+	[player, false] call ace_medical_fnc_setUnconscious;
+	[] spawn { waitUntil{dialog}; waitUntil {!dialog}; [player, true] call ace_medical_fnc_setUnconscious;};
+};
+
+*/
 openMap false;
 disableSerialization;
 _handle = createDialog "MRHAdminMenu";

@@ -1,10 +1,10 @@
 /*
-Function name:MRH_fnc_MilsimTools_InsertionHandler_
+Function name:MRH_fnc_MilsimTools_InsertionHandler_startInsertion
 Author: Mr H.
-Description:
-Return value:
-Public:
-Parameters:
+Description: checks that all parameters are okay and starts the insertion function, clears varibles set on the player afterwards
+Return value:None
+Public:No
+Parameters:None
 Example(s):
 call MRH_fnc_MilsimTools_InsertionHandler_startInsertion;
 */

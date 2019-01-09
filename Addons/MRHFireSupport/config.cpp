@@ -3,7 +3,7 @@ class CfgPatches {
 		units[] = {}; //
 		weapons[] = {}; //
 		requiredVersion = 0.1; //
-		requiredAddons[] = {"MRHMilsimTools"}; //
+		requiredAddons[] = {"MRHMilsimTools","ace_interact_menu"}; //
 	};
 };
 
@@ -11,13 +11,14 @@ class Extended_PostInit_EventHandlers
 {
    class MRHSFireSupportSettingsParser
    {
-      init = "call compile preProcessFileLineNumbers '\MRHFireSupport\Functions\fn_MilsimTools_FireSupport_parseSettings.sqf'";
+      serverInit = "call compile preProcessFileLineNumbers '\MRHFireSupport\Functions\fn_MilsimTools_FireSupport_parseSettings.sqf'";
    };
-   
-   class MRH_FireSupport_ArtyAddAceACtion
-   {
-	   clientInit = "call compile preProcessFileLineNumbers '\MRHFireSupport\Functions\fn_MilsimTools_FireSupport_AddAceAction.sqf'";
-   };
+
+};
+
+class cfgVehicles
+{
+    #include "\MRHFireSupport\cfghpp\cfgvehicles.hpp"
 };
 
 class cfgSounds

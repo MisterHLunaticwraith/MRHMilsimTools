@@ -1,12 +1,12 @@
 /*
-Function name:MRH_fnc_MilsimTools_
+Function name:MRH_fnc_MilsimTools_FireSupport_FireCAS
 Author: Mr H.
-Description:
-Return value:
-Public:
-Parameters:
+Description: Fires CAS with provided coordinates in the interface
+Return value:None
+Public:No
+Parameters:None
 Example(s):
-[] call MRH_fnc_MilsimTools_FireSupport_
+[] call MRH_fnc_MilsimTools_FireSupport_FireCAS
 
 */
 #include "MRH_C_Path.hpp"

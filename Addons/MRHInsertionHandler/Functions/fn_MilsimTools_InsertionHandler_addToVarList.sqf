@@ -1,12 +1,14 @@
 /*
-Function name:MRH_fnc_MilsimTools_InsertionHandler_
+Function name:MRH_fnc_MilsimTools_InsertionHandler_addToVarLis
 Author: Mr H.
-Description:
-Return value:
-Public:
+Description: adds given object to given list variable stored on the player.
+Return value: None
+Public:No
 Parameters:
+0-<OBJECT> object to add
+1-<STRING> string to append to the variable name
 Example(s):
-call MRH_fnc_MilsimTools_InsertionHandler_addToVarList;
+[someUnit,"someListName"] call MRH_fnc_MilsimTools_InsertionHandler_addToVarList;
 */
 #include "MRH_C_Path.hpp"
 params ["_toAdd","_list"];

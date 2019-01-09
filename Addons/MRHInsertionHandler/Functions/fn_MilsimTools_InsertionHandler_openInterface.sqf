@@ -1,10 +1,10 @@
 /*
-Function name:MRH_fnc_MilsimTools_InsertionHandler_
+Function name:MRH_fnc_MilsimTools_InsertionHandler_openInterface
 Author: Mr H.
-Description:
-Return value:
-Public:
-Parameters:
+Description:Opens the interface and refreshes the various lists
+Return value: None
+Public:No
+Parameters: None
 Example(s):
 call MRH_fnc_MilsimTools_InsertionHandler_openInterface;
 */

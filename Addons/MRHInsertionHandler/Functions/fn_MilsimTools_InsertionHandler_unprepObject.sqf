@@ -1,10 +1,10 @@
 /*
 Function name:MRH_fnc_MilsimTools_InsertionHandler_unprepObject
 Author: Mr H.
-Description:
-Return value:
-Public:
-Parameters:
+Description: Opened from prep menu, removes object from prepped/restets vars
+Return value:None
+Public: No
+Parameters:None
 Example(s):
 call MRH_fnc_MilsimTools_InsertionHandler_unprepObject;
 */

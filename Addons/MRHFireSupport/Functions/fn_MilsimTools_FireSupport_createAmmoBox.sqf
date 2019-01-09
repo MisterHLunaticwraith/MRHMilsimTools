@@ -1,18 +1,26 @@
 /*
-Function name:MRH_fnc_MilsimTools_
+Function name:MRH_fnc_MilsimTools_FireSupport_createAmmoBox
 Author: Mr H.
-Description:
+Description: Creates an ammobox, fills it with magazines fitting the weapons currently equipped by all players of the given side
 Return value:
-Public:
+<OBJECT> created box
+Public: No, but the public version calls this function
 Parameters:
+PLEASE NOTE: if calling on the server on a dedicated machine parameters 0,1 and 2 must be filled since the default values based on player object are not known by the server.
+0 - <NUMBER> -optional, default 10: quantity added per magazine type
+1- <SIDE> - optional default: side of the player on whose machine the function is called. Can be West / Blufor (Arma 3), East / Opfor (Arma 3), Resistance / Independent (Arma 3), Civilian, sideLogic, Friendly, Enemy or Unknown.
+2 - <ARRAY> -optionnal, default: position of the player on whose machine the function is called. - position AGL
+3 -<STRING> -optional, classname of a container object, default "B_supplyCrate_F". Object will be emptied of its default config contents first. Can be a vehicle
+
 Example(s):
 [] call MRH_fnc_MilsimTools_FireSupport_createAmmoBox;
+see public version for more examples
 
 */
 #include "MRH_C_Path.hpp"
 params [["_Ammount",10],["_side",West],["_position",position player],["_type","B_supplyCrate_F"]];
 _PlayableUnits = [player];
-if (isMultiplayer) then {_PlayableUnits = [playableUnits,_side]call MRH_fnc_MilsimTools_Core_SortUnitsBySide;};
+if (isMultiplayer) then {_PlayableUnits = [allplayers,_side]call MRH_fnc_MilsimTools_Core_SortUnitsBySide;};
 ///get all weapons in all weapons slots for all playable units
 _allPlayerWeapons = [];
 {

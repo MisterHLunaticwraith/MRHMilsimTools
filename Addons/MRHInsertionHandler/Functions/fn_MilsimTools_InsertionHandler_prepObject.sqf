@@ -1,10 +1,10 @@
 /*
 Function name:MRH_fnc_MilsimTools_InsertionHandler_prepObject
 Author: Mr H.
-Description:
-Return value:
-Public:
-Parameters:
+Description: Show progress bar and adds variables to the prepped object
+Return value: None
+Public: No
+Parameters:None
 Example(s):
 call MRH_fnc_MilsimTools_InsertionHandler_prepObject;
 */

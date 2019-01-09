@@ -41,6 +41,8 @@ class MRH // Defines the "owner"
 		{};
 		class MilsimTools_Admin_openAceArsenal
 		{};
+		class MilsimTools_Admin_canAccessAdminMenu
+		{};
 	/* template
 	    class MilsimTools_Admin_
 		{};

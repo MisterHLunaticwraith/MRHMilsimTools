@@ -1,10 +1,10 @@
 /*
-Function name:MRH_fnc_MilsimTools_InsertionHandler_
+Function name:MRH_fnc_MilsimTools_InsertionHandler_removeFromPlayerListAction
 Author: Mr H.
-Description:
-Return value:
-Public:
-Parameters:
+Description: Removes given unit from the list of onboard units, called from button
+Return value: None
+Public: No
+Parameters: None
 Example(s):
 call MRH_fnc_MilsimTools_InsertionHandler_removeFromPlayerListAction;
 */

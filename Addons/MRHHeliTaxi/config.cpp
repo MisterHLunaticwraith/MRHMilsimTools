@@ -10,21 +10,27 @@ class CfgPatches {
 
 
 #include "\MRHHeliTaxi\Dialogs\helichoice.hpp"
+#include "\MRHHeliTaxi\Dialogs\waypointchoice.hpp"
+
 class cfgFunctions
 {
 	#include "\MRHHeliTaxi\Functions\cfgFunctions.hpp"
 };
+
 class cfgSounds
 {
 	#include "\MRHHeliTaxi\cfgsounds.hpp"
 };
+class cfgVehicles
+{
+	#include "\MRHHeliTaxi\cfghpp\cfgvehicles.hpp"
+};
 
 class Extended_PostInit_EventHandlers
 {
-   class MRHHeliTaxi_clientInit
+   class MRHHeliTaxiSettingsParser
    {
-      clientinit = "call compile preProcessFileLineNumbers '\MRHHeliTaxi\Functions\fn_MilsimTools_Heli_heliTaxiAction.sqf'";
-   }; 
-   
-	
+      serverInit = "call compile preProcessFileLineNumbers '\MRHHeliTaxi\Functions\fn_MilsimTools_HeliTaxi_parseSettings.sqf'";
+   };
+
 };

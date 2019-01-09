@@ -1,10 +1,10 @@
 /*
 Function name:MRH_fnc_MilsimTools_InsertionHandler_checkForAllClear
 Author: Mr H.
-Description:
-Return value:
-Public:
-Parameters:
+Description: Cheks that all conditions are met to start the insertion
+Return value: <BOOL> -true if all are met false otherwise
+Public:No
+Parameters:None
 Example(s):
 call MRH_fnc_MilsimTools_InsertionHandler_checkForAllClear;
 */

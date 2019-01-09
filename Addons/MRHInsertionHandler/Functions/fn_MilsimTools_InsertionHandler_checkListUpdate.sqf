@@ -1,10 +1,10 @@
 /*
 Function name:MRH_fnc_MilsimTools_InsertionHandler_checkListUpdate
 Author: Mr H.
-Description:
-Return value:
-Public:
-Parameters:
+Description: Keeps the side check list up to date, generates text and text color
+Return value: None
+Public: No
+Parameters:None
 Example(s):
 call MRH_fnc_MilsimTools_InsertionHandler_checkListUpdate;
 */

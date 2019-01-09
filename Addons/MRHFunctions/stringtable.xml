@@ -88,10 +88,10 @@
 				<English>This action requires a hacking tool</English>
 				<French>Cette action necessite un outil de piratage</French>
 			</Key>
-			<Key ID="STR_MRH_HP_">
-				<Original></Original>
-				<English></English>
-				<French></French>
+			<Key ID="STR_MRH_FUNCS_ACTIONSPEAK">
+				<Original>Talk</Original>
+				<English>Talk</English>
+				<French>Parler</French>
 			</Key>
 			<Key ID="STR_MRH_HP_">
 				<Original></Original>

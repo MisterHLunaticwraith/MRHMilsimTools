@@ -1,10 +1,10 @@
 /*
-Function name:MRH_fnc_MilsimTools_InsertionHandler_
+Function name:MRH_fnc_MilsimTools_InsertionHandler_fillVehCombo
 Author: Mr H.
-Description:
-Return value:
-Public:
-Parameters:
+Description: Fills the vehicle choice combo with the vehicles that are available to the player's side
+Return value:None
+Public:No
+Parameters:None
 Example(s):
 call MRH_fnc_MilsimTools_InsertionHandler_fillVehCombo;
 */

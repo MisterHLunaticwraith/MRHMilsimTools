@@ -43,7 +43,7 @@ class Extended_PostInit_EventHandlers
    
    class MRHInsertionHandler_settingsParser
    {
-      clientInit = "call compile preProcessFileLineNumbers '\MRHInsertionHandler\Functions\fn_MilsimTools_InsertionHandler_parseSettings.sqf'";
+      serverInit = "call compile preProcessFileLineNumbers '\MRHInsertionHandler\Functions\fn_MilsimTools_InsertionHandler_parseSettings.sqf'";
    };
       
 	

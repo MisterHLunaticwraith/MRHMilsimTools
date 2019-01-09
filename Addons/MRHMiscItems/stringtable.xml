@@ -1,0 +1,203 @@
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Project name="MRHMiscItems">
+	<Package name="MRHMiscItems">
+		<Container name="MRH_MRHMiscItems_AllSTrings">
+			<Key ID="STR_MRH_MRHMiscItems_ItemEdCat">
+				<Original>MRH Items</Original>
+				<English>MRH Items</English>
+				<French>MRH Objets</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_propsEdSubCat">
+				<Original>Props</Original>
+				<English>Props</English>
+				<French>Accessoires</French>
+			</Key><Key ID="STR_MRH_MRHMiscItems_ElButtonDis">
+				<Original>Elevator control panel</Original>
+				<English>Elevator control panel</English>
+				<French>Panneau de contrôle d'ascenseur</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_USBDriveDisp">
+				<Original>USB flash drive</Original>
+				<English>USB flash drive</English>
+				<French>Clef USB</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_InvItEdSubCat">
+				<Original>Inventory Items</Original>
+				<English>Inventory Items</English>
+				<French>Objets d'inventaire</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_RFIDDescShort">
+				<Original>A RFID keycard</Original>
+				<English>A RFID keycard</English>
+				<French>Un pass RFID</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_RF_BLU">
+				<Original>RFID keycard (For BLUFOR)</Original>
+				<English>RFID keycard (For BLUFOR)</English>
+				<French>Pass RFID (pour BLUFOR)</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_RF_OP">
+				<Original>RFID keycard (For OPFOR)</Original>
+				<English>RFID keycard (For OPFOR)</English>
+				<French>Pass RFID (pour OPFOR)</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_RF_IND">
+				<Original>RFID keycard (for INDEP.)</Original>
+				<English>RFID keycard (for INDEP.)</English>
+				<French>Pass RFID (pour INDEP.)</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_bioscanDisp">
+				<Original>Biometric scanner</Original>
+				<English>Biometric scanner</English>
+				<French>Scanner biométrique</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_touchScreenAction">
+				<Original>Touch screen</Original>
+				<English>Touch screen</English>
+				<French>Toucher l'écran</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_scanEyesAction">
+				<Original>Scan eyes</Original>
+				<English>Scan eyes</English>
+				<French>Scanner les yeux</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_scanHandAction">
+				<Original>Scan hand</Original>
+				<English>Scan hand</English>
+				<French>Scanner la main</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_requiresEyesMess">
+				<Original>Requires scanning eyes.</Original>
+				<English>Requires scanning eyes.</English>
+				<French>Requiert de scanner les yeux.</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_requiresHandMess">
+				<Original>Requires scanning hand.</Original>
+				<English>Requires scanning hand.</English>
+				<French>Requiert de scanner la main</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_cfgMainSCreen">
+				<Original>Main screen</Original>
+				<English>Main screen</English>
+				<French>Ecran principal</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_cfgHandScan">
+				<Original>Hand Scanner</Original>
+				<English>Hand Scanner</English>
+				<French>Scanner digital</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_cfgEyeScan">
+				<Original>Eye scanner</Original>
+				<English>Eye scanner</English>
+				<French>Scanner oculaire</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_scannerUseAceACAttr">
+				<Original>Use ace actions</Original>
+				<English>Use ace actions</English>
+				<French>Utiliser les actions ACE</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_scannerUseAceACAttrToolTip">
+				<Original>If you enable this setting the scanner will display 3 ace actions.(effects of each action can be coded below).</Original>
+				<English>If you enable this setting the scanner will display 3 ace actions.(effects of each action can be coded below).</English>
+				<French>Si vous activez ce réglage le scanner offrira 3 actions ace. Les effets de ces actions peuvent être codés dans les champs ci-dessous.</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_scannerCodeMainAttr">
+				<Original>Code to run when the main touchscreen is used.</Original>
+				<English>Code to run when the main touchscreen is used.</English>
+				<French>Code a executer lorsque l'écran tactile est utilisé.</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_scannerCodeMainAttrToolTip">
+				<Original>The following code will run when the main screen action is used, after the videos are played on the screen. Variables _scanner and _player are passed to the code.</Original>
+				<English>The following code will run when the main screen action is used, after the videos are played on the screen. Variables _scanner and _player are passed to the code.</English>
+				<French>Le code suivant sera executé quand l'écran  tactile est utilisé, après que les vidéos soient jouées sur l'écran. Les variables _scanner et _player sont disponibles dans le code.</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_scannerCodeHandAttr">
+				<Original>Code to run when the hand scanner is used.</Original>
+				<English>Code to run when the hand scanner is used.</English>
+				<French>Code à executer quand le scanner digital est utiliser.</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_scannerCodeHandAttrToolTip">
+				<Original>The following code will run when the hand scanner action is used, after the videos are played on the screen. Variables _scanner and _player are passed to the code.</Original>
+				<English>The following code will run when the hand scanner action is used, after the videos are played on the screen. Variables _scanner and _player are passed to the code.</English>
+				<French>Le code suivant sera executé quand le scanner digital est utilisé, après que les vidéos soient jouées sur l'écran. Les variables _scanner et _player sont disponibles dans le code.</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_scannerCodeEye">
+				<Original>Code to run when the eye scanner is used.</Original>
+				<English>Code to run when the eye scanner is used.</English>
+				<French>Code a executer quand le scanner oculaire est utilisé.</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_scannerCodeEyeToolTip">
+				<Original>The following code will run when the eye scanner action is used, after the videos are played on the screen. Variables _scanner and _player are passed to the code.</Original>
+				<English>The following code will run when the eye scanner action is used, after the videos are played on the screen. Variables _scanner and _player are passed to the code.</English>
+				<French>Le code suivant sera executé quand le scanner oculaire est utilisé, après que les vidéos soient jouées sur l'écran. Les variables _scanner et _player sont disponibles dans le code.</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_scannerCtrlNearDoorAttr">
+				<Original>Control nearest door</Original>
+				<English>Control nearest door</English>
+				<French>Contrôler la porte la plus proche</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_scannerCtrlNearDoorAttrToolTip">
+				<Original>If this setting is enabled the scanner will control closing, opening and locking of the nearest door (from the main screen action only), from the nearest building,requires 'use ace action setting' to be enabled. Door will be locked at mission start. Might not work with non vanilla buildings.</Original>
+				<English>If this setting is enabled the scanner will control closing, opening and locking of the nearest door (from the main screen action only), from the nearest building,requires 'use ace action setting' to be enabled. Door will be locked at mission start. Might not work with non vanilla buildings. </English>
+				<French>Si ce réglage est activé le scanner controlera l'ouverture, la fermeture et le verouillage de la porte la plus proche, dans le bâtiment le plus proche (via l'action de l'écran tactile seulement), requiert le réglage 'utiliser les actions ace' activé. La porte sera vérouillée au début de la mission. Peut ne pas marcher avec des bâtiments issus de mods.</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_scannerCondLockAttr">
+				<Original>Condition to open lock the door</Original>
+				<English>Condition to open lock the door</English>
+				<French>Condition pour dévérouiller la porte</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_scannerCondLockAttrToolTip">
+				<Original>Code, scripting the required conditions to unlock the door, can be anything, must return BOOL</Original>
+				<English>Code, scripting the required conditions to unlock the door, can be anything, must return BOOL</English>
+				<French>Code, qui scripte les conditions requises pour ouvrir la porte, peut être n'importe quoi mais doit retourner une valeur BOOLEENNE </French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_scannerForceScanEyesAttr">
+				<Original>Force using eye scanner before unlocking</Original>
+				<English>Force using eye scanner before unlocking</English>
+				<French>Forcer l'utilisation du scanner oculaire avant de dévérouiller.</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_scannerForceScanEyesAttrToolTip">
+				<Original>If this setting is enabled players will have to first use the eye scanner (in a short period of time) before being able to unlock the door by the main screen.</Original>
+				<English>If this setting is enabled players will have to first use the eye scanner (in a short period of time) before being able to unlock the door by the main screen.</English>
+				<French>Si ce réglage est activé les joueurs devront utiliser le scanner oculaire avant de pouvoir dévérouiller la porte avec l'écran principal (durée limitée).</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_scannerForceHandScanAttr">
+				<Original>Force using hand scanner before unlocking</Original>
+				<English>Force using hand scanner before unlocking</English>
+				<French>Forcer l'utilisation du scanner digital avant de dévérouiller.</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_scannerForceHandScanAttrToolTip">
+				<Original>If this setting is enabled players will have to first use the hand scanner (in a short period of time) before being able to unlock the door by the main screen.</Original>
+				<English>If this setting is enabled players will have to first use the hand scanner (in a short period of time) before being able to unlock the door by the main screen.</English>
+				<French>Si ce réglage est activé les joueurs devront utiliser le scanner digital avant de pouvoir dévérouiller la porte avec l'écran principal (durée limitée).</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_scannerAllowHackingAttr">
+				<Original>Allow hacking this terminal</Original>
+				<English>Allow hacking this terminal</English>
+				<French>Autoriser le piratage de ce terminal</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_scannerAllowHackingAttrToolTip">
+				<Original>If this setting is enabled a player will be able to hack the scanner(with the hacking tool),thus bypassing all above conditions. (only for the player that performed the hack)</Original>
+				<English>If this setting is enabled a player will be able to hack the scanner(with the hacking tool),thus bypassing all above conditions. (only for the player that performed the hack)</English>
+				<French>Si ce réglage est activé un joueur sera en mesure de pirater le scanner (avec l'outil de piratage), ce qui lui permettra de bypasser les conditions ci-dessus. (valable seulement pour le joueur qui a fait le piratage).</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_scannerCtrledItemAttr">
+				<Original>Building variable name</Original>
+				<English>Building variable name</English>
+				<French>Nom de variable du bâtiment</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_scannerCtrledItemAttrToolTip">
+				<Original>Variable name of the building to control. If a variable name is set for the building the scanner will control the nearest door in given building, otherwise it will control the nerates door in the nearest building.</Original>
+				<English>Variable name of the building to control. If a variable name is set for the building the scanner will control the nearest door in given building, otherwise it will control the nerates door in the nearest building.</English>
+				<French>Nom de varaiable du bâtiment à contrôler. Si un nom de variable de bâtiment est donné le scanner contrôlera la porte de ce bâtiment la plus proche de sa position, sinon il contrôlera la porte la plus proche du bâtiment le plus proche.</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_">
+				<Original></Original>
+				<English></English>
+				<French></French>
+			</Key>
+			
+		</Container>
+	</Package>
+</Project>

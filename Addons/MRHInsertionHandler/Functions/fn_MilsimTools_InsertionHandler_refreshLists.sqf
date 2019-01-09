@@ -1,7 +1,7 @@
 /*
 Function name:MRH_fnc_MilsimTools_InsertionHandler_
 Author: Mr H.
-Description:
+Description:DEPRECATED, caused bugs the fuck knows why?
 Return value:
 Public:
 Parameters:

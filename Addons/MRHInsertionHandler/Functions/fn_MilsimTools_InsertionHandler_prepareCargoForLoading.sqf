@@ -1,10 +1,11 @@
 /*
-Function name:MRH_fnc_MilsimTools_InsertionHandler_
+Function name:MRH_fnc_MilsimTools_InsertionHandler_prepareCargoForLoading
 Author: Mr H.
-Description:
-Return value:
-Public:
-Parameters:
+Description: Opens cargo prepping interface and handles what's shown
+Return value: None
+Public:No
+Parameters: 
+0-<OBJECT> target object passed from ace action
 Example(s):
 call MRH_fnc_MilsimTools_InsertionHandler_prepareCargoForLoading;
 */

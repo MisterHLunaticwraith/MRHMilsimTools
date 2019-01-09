@@ -1,16 +1,17 @@
 /*
-Function name:MRH_fnc_MilsimTools_InsertionHandler_
+Function name:MRH_fnc_MilsimTools_InsertionHandler_fillGrpCombo
 Author: Mr H.
-Description:
-Return value:
-Public:
-Parameters:
+Description: fills the combo of available groups to select units from with groups of the side of the player and with players in them only
+Return value:None
+Public:No
+Parameters:None
 Example(s):
 call MRH_fnc_MilsimTools_InsertionHandler_fillGrpCombo;
 */
 #include "MRH_C_Path.hpp"
 _combo =FDIS(2102);
-_allPlaySide = [allGroups,side player] CFUNC(SortGroupsBySide);
+_groupsWithPlayers = CFUNC(ListGroupsWithPlayers);
+_allPlaySide = [_groupsWithPlayers,side player] CFUNC(SortGroupsBySide);
 
 
 {

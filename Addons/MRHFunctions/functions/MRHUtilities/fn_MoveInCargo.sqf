@@ -3,6 +3,7 @@ Function name:MRH_fnc_MoveInCargo
 Author: Mr H.
 Description: this function will move given array of units into given vehicle. This function is a workaround to the fact that moveincargo command works poorly in multiplayer (even if you get the locality right).
 FAIR WARNING: this function is a brutal hack, it has been known to cause server desyncs on some occasions, you should BY NO MEANS remote exec it or call it globally (from a trigger for example).YOU HAVE BEEN FAIRLY WARNED ;-)
+// the above might not be true anymore, I used the solution used by ACE 3 , all credits for the method goes to them
 Return value: None
 Public: Yes
 Parameters:
@@ -14,6 +15,11 @@ Example(s):
 #include "MRH_C_Path.hpp"
 	
 	Params ["_groupOfplayers", "_vehicle"];
+{
+["mrh_milsimtools_moveInCargoEvent", [_x, _vehicle], _x] call CBA_fnc_targetEvent;
+} forEach _groupOfplayers;
+	/*
+	//old solution
 	{	
 		//this scope will be remote executed for all given players
 		[[_vehicle,_x],{	
@@ -45,3 +51,4 @@ Example(s):
 			
 		}] RemoteExec ["Call",_x,true];
 	} forEach _groupOfplayers;
+	*/

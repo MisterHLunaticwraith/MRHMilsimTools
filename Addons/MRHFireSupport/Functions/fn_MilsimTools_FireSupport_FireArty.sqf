@@ -1,10 +1,10 @@
 /*
-Function name:MRH_fnc_MilsimTools_
+Function name:MRH_fnc_MilsimTools_FireSupport_FireArty
 Author: Mr H.
-Description:
-Return value:
-Public:
-Parameters:
+Description: Fires artillery with parameters provided in the interface
+Return value: None
+Public:No
+Parameters:None
 Example(s):
 [] spawn MRH_fnc_MilsimTools_FireSupport_FireArty
 
@@ -55,7 +55,7 @@ _speed = 15;
 speed: Number - (Optional, default 150) Descending velocity, in m/s. Default is 150, if you use flare as ammo, set it to lower value (1-5) to let it fall down slowly
 
 */
-//the following doesn'twork sounds are not defined
+
 _sounds = ["MRH_FireSupport_Incoming_1","MRH_FireSupport_Incoming_2","MRH_FireSupport_Incoming_3","MRH_FireSupport_Incoming_4","MRH_FireSupport_Incoming_5","MRH_FireSupport_Incoming_6","MRH_FireSupport_Incoming_7","MRH_FireSupport_Incoming_8"];
 
 /*

@@ -13,7 +13,8 @@ _script	Script to execute when setting is changed.  (optional) <CODE>
 [_x] call cba_settings_fnc_get;
 [_x , "CHECKBOX",gettext (configfile >> "CfgMods" >> _x >> "name"), "MRHSpawner Allowed DLCs", true,1, { call MRH_fnc_Spawner_AllowedDLCs;}] call cba_settings_fnc_init;
 */
-
+// allow zeus players to access the admin menuAction
+["MRH_MilsimTools_AllowAdminForZeus", "CHECKBOX",   [localize "STR_MRH_ADMIN_CBA_AllowAdminForZeusPretty",localize "STR_MRH_ADMIN_CBA_AllowAdminForZeusToolTip"], "MRH_MilsimTools - Core settings",false,1] call cba_settings_fnc_init;
 //Settings to kill deadplayersupon reconnecting
 ["MRH_MilsimTools_AllowDeadReco", "CHECKBOX",   [localize "STR_MRH_MS_CBA_SET_ALLOWEDDEAD_PRETTYNAME",localize "STR_MRH_MS_CBA_SET_ALLOWEDDEAD_TOOLTIP"], "MRH_MilsimTools - Core settings",true,1] call cba_settings_fnc_init;
 //Settings to reset hasdied variable upon respawn
@@ -63,6 +64,8 @@ _script	Script to execute when setting is changed.  (optional) <CODE>
 ["MRH_MilsimTools_RequireHackingTool", "CHECKBOX",   [localize "STR_MRH_RequireHackingToolPretty",localize "STR_MRH_RequireHackingToolTip"], "MRH_MilsimTools - Hacking settings",true,1] call cba_settings_fnc_init;
 //=====Below are settings for the heli taxi
 ["MRH_MilsimTools_Heli_UseHeliTaxiInMission", "CHECKBOX",   [localize "STR_MRH_CBA_Heli_UseHeli",localize "STR_MRH_CBA_Heli_UseHeliToolTip"], "MRH_MilsimTools - Heli Taxi",true,1] call cba_settings_fnc_init;
+["MRH_MilsimTools_Heli_NumberSimulTPerSide", "EDITBOX",   [localize "STR_MRH_CBA_Heli_NumberPerSide",localize "STR_MRH_CBA_Heli_NumberPerSideToolTip"],"MRH_MilsimTools - Heli Taxi","3",1] call cba_settings_fnc_init;
+
 
 ["MRH_MilsimTools_Heli_ConditionIsFormLeader", "CHECKBOX",   [localize "STR_MRH_CBA_Heli_MustBeFL",localize "STR_MRH_CBA_Heli_MustBeFLToolTip"], ["MRH_MilsimTools - Heli Taxi","Conditions to be able to call the Heli"],true,1] call cba_settings_fnc_init;
 ["MRH_MilsimTools_Heli_isCustomConditionSet", "CHECKBOX",   [localize "STR_MRH_CBA_Heli_UseCondition",localize "STR_MRH_CBA_Heli_UseConditionToolTip"],["MRH_MilsimTools - Heli Taxi",localize "STR_MRH_CBA_Heli_SubCatConditions"],false,1] call cba_settings_fnc_init;
@@ -137,3 +140,18 @@ _script	Script to execute when setting is changed.  (optional) <CODE>
 ["MRH_MilsimTools_InsertionHandler_SupplyPlanesOpFor", "EDITBOX",   [localize "STR_MRH_CBA_FireSupport_CASAvailablePlanes",localize "STR_MRH_CBA_General_ClassnamesTypeRulesToolTip"], ["MRH_MilsimTools - Insertion Handler",localize "STR_MRH_CBA_FireSupport_AvailPlanesOFCat"],"O_T_VTOL_02_infantry_dynamicLoadout_F,O_Heli_Light_02_unarmed_F,O_Heli_Transport_04_box_F",1] call cba_settings_fnc_init;
 
 ["MRH_MilsimTools_InsertionHandler_SupplyPlanesInde", "EDITBOX",   [localize "STR_MRH_CBA_FireSupport_CASAvailablePlanes",localize "STR_MRH_CBA_General_ClassnamesTypeRulesToolTip"], ["MRH_MilsimTools - Insertion Handler",localize "STR_MRH_CBA_FireSupport_AvailPlanesINDCat"],"I_Heli_Transport_02_F,I_Heli_light_03_unarmed_F,I_C_Plane_Civil_01_F",1] call cba_settings_fnc_init;
+
+//-----------------below are the settings for Halo Gear Addon
+["MRH_MilsimTools_HaloGear_hypoxiaUse", "CHECKBOX",   [localize "STR_MRH_CBA_HaloGear_enabEPOSet",localize "STR_MRH_CBA_HaloGear_enabEPOSetToolTip"],["MRH_MilsimTools - Halo Jumps"],true,1] call cba_settings_fnc_init;
+
+["MRH_MilsimTools_HaloGear_hypoxiaAltitude", "SLIDER",   [localize "STR_MRH_CBA_HaloGear_hypoAltSet",   localize "STR_MRH_CBA_HaloGear_hypoAltSetToolTip"], "MRH_MilsimTools - Halo Jumps", [0, 10000, 4600, 0],1] call cba_settings_fnc_init;
+
+["MRH_MilsimTools_HaloGear_missionConfiguredProtectiveGear", "EDITBOX",   [localize "STR_MRH_CBA_HaloGear_missionCfgProt",localize "STR_MRH_CBA_HaloGear_missionCfgProtTooltip"], "MRH_MilsimTools - Halo Jumps","RHS_jetpilot_usaf,rhs_zsh7a,rhs_zsh7a_alt,RHS_TU95MS_vvs_old",1] call cba_settings_fnc_init;
+
+["MRH_MilsimTools_HaloGear_AADDefaultOpeningAltitude", "EDITBOX",   [localize "STR_MRH_CBA_HaloGear_AADDefaultHeight",localize "STR_MRH_CBA_HaloGear_AADDefaultHeightToolTip"], ["MRH_MilsimTools - Halo Jumps", ""],"900",1] call cba_settings_fnc_init;
+
+["MRH_MilsimTools_HaloGear_allowManualAADSetting", "CHECKBOX",   [localize "STR_MRH_CBA_HaloGear_AllowManAAD",localize "STR_MRH_CBA_HaloGear_AllowManAADToolTip"],["MRH_MilsimTools - Halo Jumps"],true,1] call cba_settings_fnc_init;
+
+["MRH_MilsimTools_HaloGear_playRebreatherSounds", "CHECKBOX",   [localize "STR_MRH_CBA_HaloGear_PlayRebSounds",localize "STR_MRH_CBA_HaloGear_PlayRebSoundsTooltip"],["MRH_MilsimTools - Halo Jumps"],true,1] call cba_settings_fnc_init;
+
+["MRH_MilsimTools_HaloGear_haloMaskBreakingChancePerc", "SLIDER",   [localize "STR_MRH_CBA_HaloGear_OddsOfBreaking",localize "STR_MRH_CBA_HaloGear_OddsOfBreakingToolTip"], "MRH_MilsimTools - Halo Jumps", [0, 100, 10, 0],1] call cba_settings_fnc_init;
