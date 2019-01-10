@@ -1,0 +1,14 @@
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Project name="MRHAddonName">
+	<Package name="MRHAddonName">
+		<Container name="MRH_MRHAddonName_AllSTrings">
+			<Key ID="STR_MRH_MRHAddonName_">
+				<Original></Original>
+				<English></English>
+				<French></French>
+			</Key>
+			
+		</Container>
+	</Package>
+</Project>

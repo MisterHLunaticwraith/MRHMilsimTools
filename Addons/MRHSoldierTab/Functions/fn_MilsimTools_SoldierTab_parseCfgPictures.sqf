@@ -12,7 +12,7 @@ call MRH_fnc_MilsimTools_SoldierTab_parseCfgPictures;
 #include "MRH_C_Path.hpp"
 _missionPics = missionNamespace getVariable ["MRH_SoldierTab_missionPics",[]];
 _configSetPics = [(missionConfigFile >> "MRH_SoldierTabIntelPictures")]call BIS_fnc_getCfgSubClasses;
-if(_configSetPics isEqualTo []) ExitWith {Diag_Log "MRH MilsimTools Soldiers Tab: no pictures defined in mission description.ext";};
+if(_configSetPics isEqualTo []) ExitWith {Diag_Log "MRH MilsimTools Soldiers Tab: no pictures defined in mission description.ext";call compile preProcessFileLineNumbers '\MRHSoldierTab\Functions\fn_MilsimTools_SoldierTab_parseCfgPicturesFromAddon.sqf';};
 _arrayToPush = [];
 {
 	_caption = gettext (missionConfigFile >> "MRH_SoldierTabIntelPictures" >> _x >> "captionText");
@@ -20,3 +20,4 @@ _arrayToPush = [];
 	_arrayToPush pushBackUnique [_x,_caption,_picturePath];
 }forEach _configSetPics;
 MNSVAR(missionPics,_arrayToPush,true);
+call compile preProcessFileLineNumbers '\MRHSoldierTab\Functions\fn_MilsimTools_SoldierTab_parseCfgPicturesFromAddon.sqf';
