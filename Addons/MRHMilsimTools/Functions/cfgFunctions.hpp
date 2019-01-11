@@ -85,6 +85,10 @@ class MRH // Defines the "owner"
 		{};
 		class MilsimTools_Core_toggleDoorState
 		{};
+		class MilsimTools_Core_notifyPlayer
+		{};
+		class MilsimTools_Core_notifySide
+		{}
 		/*
 		class MilsimTools_Core_
 		{};

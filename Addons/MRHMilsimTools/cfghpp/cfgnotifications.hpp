@@ -51,3 +51,21 @@ class MRH_Data_Received
 		duration = 5;
 		priority = 1;
 };
+
+class MRH_Zeus_Notif
+{
+		title = $STR_MRH_MS_ZEUSNOT;
+		description = "%1";
+		iconPicture="\MRHMilSimTools\Paa\zeusicon.paa";
+		duration = 5;
+		priority = 1;
+};
+
+class MRH_Admin_Notif
+{
+		title = $STR_MRH_MS_ADMINNOT;
+		description = "%1";
+		iconPicture="\MRHMilSimTools\Paa\adminicon.paa";
+		duration = 5;
+		priority = 1;
+};
