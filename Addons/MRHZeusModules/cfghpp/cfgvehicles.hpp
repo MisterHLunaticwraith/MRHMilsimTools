@@ -8,6 +8,7 @@
 			class AnyPlayer;
 			class AnyBrain;
 			class EmptyDetector;
+			class AnyPerson;
 		};
 	};
 
@@ -51,4 +52,15 @@
 			function = QFUNC(heliPerSideModule);
 			icon = PAAPATH(ModuleHeli);
 			portrait = PAAPATH(ModuleHeli);
+	};
+
+		class MRH_SimpleConv : MRH_Module_Base
+	{
+			scopeCurator = 2;
+			_generalMacro = "MRH_SimpleConv";
+			displayName = "Simple conversation interaction";
+			curatorCanAttach = 1;
+			function = QFUNC(simpleConvModule);
+			icon = PAAPATH(ModuleSimpleConv);
+			portrait = PAAPATH(ModuleSimpleConv);
 	};

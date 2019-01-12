@@ -3,7 +3,8 @@ class CfgPatches {
 	class MRHZeusModules{
 		units[] = {
 			"MRH_Module_Base",
-			"MRH_HeliTaxiControls"
+			"MRH_HeliTaxiControls",
+			"MRH_SimpleConv"
 		}; //
 		weapons[] = {}; //
 		requiredVersion = 0.1; //

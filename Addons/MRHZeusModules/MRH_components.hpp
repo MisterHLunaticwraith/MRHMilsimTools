@@ -1,6 +1,6 @@
 //Defines addonName
 #define ADDON MRHZeusModules
-#define ADDONVAR AddonName
+#define ADDONVAR ZeusModules
 
 //Defines list of paths
 #define QUOTE "
