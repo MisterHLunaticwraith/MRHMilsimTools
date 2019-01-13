@@ -89,6 +89,8 @@ class MRH // Defines the "owner"
 		{};
 		class MilsimTools_Core_notifySide
 		{}
+		class MilsimTools_Core_isNight
+		{};
 		/*
 		class MilsimTools_Core_
 		{};
