@@ -4,7 +4,8 @@ class CfgPatches {
 		units[] = {
 			"MRH_Module_Base",
 			"MRH_HeliTaxiControls",
-			"MRH_SimpleConv"
+			"MRH_SimpleConv",
+			"MRH_AttributeVar"
 		}; //
 		weapons[] = {}; //
 		requiredVersion = 0.1; //

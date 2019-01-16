@@ -64,3 +64,14 @@
 			icon = PAAPATH(ModuleSimpleConv);
 			portrait = PAAPATH(ModuleSimpleConv);
 	};
+
+		class MRH_AttributeVar : MRH_Module_Base
+	{
+			scopeCurator = 2;
+			_generalMacro = "MRH_AttributeVAr";
+			displayName = "Attribute variable name";
+			curatorCanAttach = 1;
+			function = QFUNC(attributeVariableNameModule);
+			icon = PAAPATH(ModuleCodeRelated);
+			portrait = PAAPATH(ModuleCodeRelated);
+	};

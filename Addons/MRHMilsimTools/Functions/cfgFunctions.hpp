@@ -91,6 +91,18 @@ class MRH // Defines the "owner"
 		{}
 		class MilsimTools_Core_isNight
 		{};
+		class MilsimTools_Core_returnAltitude
+		{};
+		class MilsimTools_Core_addParachuteToObject
+		{}
+		class MilsimTools_Core_isExistingVariableName
+		{};
+		class MilsimTools_Core_attributeVariableName
+		{};
+		class MilsimTools_Core_addMultipleParachutesToObject
+		{};
+		class MilsimTools_Core_ensureSafeLanding
+		{};
 		/*
 		class MilsimTools_Core_
 		{};
