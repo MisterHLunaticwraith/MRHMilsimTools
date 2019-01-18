@@ -1,6 +1,36 @@
 ///////////////////////////////////////////////////////////////////////////////////
 Changelog:
 
+MRH Milsim Tools version : v.1.16.3
+
+*Added new functionality :
+*Zeus mmodules
+-Module to change a variable name in game (for coders/mission makers /advanced users)
+-Module to add a conversation to an unit (see functions)
+-Module to set availability of items for halo parachuting (see halo gear)
+-Module to generate a HALO jump (see halo gear)
+-Module to set how many helicopter taxis are available for each side
+
+
+*Functions:
+-fixed: MRH_fnc_MoveInCargo func should now work properly in MP and not cause server desync (large scale testing remains to be done)
+-tweaked: Massive overhaul of the "simple ace conversation" function, new interface with unit's name and video feed to replace the previous hintC box, unit lip movement when talking (only on local machine),you can now pass parameters to the executed script see function header for guidelines. The conversation can now be added/removed dynamicaly via a zeus module. Deleting the module will remove the conversation.
+
+*Milsim Tools Core:
+-tweaked: newly added internal functions
+
+*Soldier Tab:
+-Changed: >in preparation for the upcoming zeus module data can now be created by script midgame.
+ >tablet will now also look for data in configfile in addition to mission configfile and you can create data and pictures cfgs in an addon. New nearly empty addon added to the mod that will contain more preconfigured data in the future. 
+*Halo Gear
+
+-Added AAD inventory object & model. This AAD can be used to prepare an ammobox or a vehicule (Land vehicles and boats) for a paradrop (ACE 3 object interaction), and then set to open parachute at desired altitude when object is dropped.
+-Added two zeus modules: 
+>HALO list object add module: place it on any object and it will be made available in the list for the HALO module
+> Simple HALO drop module: Very powerful module, place on LZ on the map and it will allow you to program and execute a complete HALO drop for a player/ group of players and paradrop objects and vehicles along with them. You can disable every option enabled by default and let the players ready themselves and their gear for the drop but you can also automaticaly set the player's and objects' AADs to open at desired altitude, add rebreather mask (if possible currently equiped goggles will be stored in inventory), AAD capable parachute. Player's backpack will be attached to their chest and automatically restored upon touching ground and parachute left on the ground UNLESS the mod BackPack on chest is activated in which case it will be used to put backpack on chest and players will have to get rid of the parachute themselves and manually put their bags back on their backs.
+///////////////////////////////////////////////////////////////////////////////////
+Changelog:
+
 MRH Milsim Tools version : v.1.15.7
 
 *Tweaked & improved
