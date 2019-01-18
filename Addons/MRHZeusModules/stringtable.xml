@@ -1,13 +1,249 @@
 
 <?xml version="1.0" encoding="utf-8" ?>
-<Project name="MRHAddonName">
-	<Package name="MRHAddonName">
-		<Container name="MRH_MRHAddonName_AllSTrings">
-			<Key ID="STR_MRH_MRHAddonName_">
-				<Original></Original>
-				<English></English>
-				<French></French>
+<Project name="MRHMRHZeusModules">
+	<Package name="MRHMRHZeusModules">
+		<Container name="MRH_MRHMRHZeusModules_AllSTrings">
+			<Key ID="STR_MRH_MRHMRHZeusModules_HeliTaxiSettingsMName">
+				<Original>Heli taxi settings</Original>
+				<English>Heli taxi settings</English>
+				<French>Réglages du modules Taxi Hélicoptère</French>
 			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_SimpleConvIntMName">
+				<Original>Simple conversation interaction</Original>
+				<English>Simple conversation interaction</English>
+				<French>Interaction de conversation simple</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_AttributeVarNameMName">
+				<Original>Attribute variable name</Original>
+				<English>Attribute variable name</English>
+				<French>Attribuer un nom de variable</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_SelectObjectForHaloMName">
+				<Original>Select object for halo</Original>
+				<English>Select object for halo</English>
+				<French>Ajouter objet à la liste du HALO</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_SimpleHaloJumpMName">
+				<Original>Simple Halo Jump</Original>
+				<English>Simple Halo Jump</English>
+				<French>Saut HALO simple</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_AttVarToOBJ">
+				<Original>Attribute variable name to object</Original>
+				<English>Attribute variable name to object</English>
+				<French>Attribuer un nom de variable à un objet</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_CurrentObjVName">
+				<Original>Current object variable name:</Original>
+				<English>Current object variable name:</English>
+				<French>Nom de variable actuel de l'objet</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_CurrentObjClass">
+				<Original>Classname of current object:</Original>
+				<English>Classname of current object:</English>
+				<French>Classe config de l'objet:</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_InputDesiredVar">
+				<Original>Enter desired variable name:</Original>
+				<English>Enter desired variable name:</English>
+				<French>Saisir le nom de variable désiré:</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_GENCANCEL">
+				<Original>Cancel</Original>
+				<English>Cancel</English>
+				<French>Annuler</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_GENOK">
+				<Original>OK</Original>
+				<English>OK</English>
+				<French>OK</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_RedWarning">
+				<Original>&lt;t color = '#f44242'&gt;Warning changing a variable name for an object might affect &lt;br/&gt;other scripts and functions, for advanced users only.&lt;/t&gt;</Original>
+				<English>&lt;t color = '#f44242'&gt;Warning changing a variable name for an object might affect &lt;br/&gt;other scripts and functions, for advanced users only.&lt;/t&gt;</English>
+				<French>&lt;t color = '#f44242'&gt;Attention: changer le nom de varaiable d'un objet peut affecter &lt;br/&gt;d'autres scripts, utilisateurs avancés seulement. &lt;/t&gt;</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_ChangeHelisPerSide">
+				<Original>Change number of available helis per side:</Original>
+				<English>Change number of available helis per side:</English>
+				<French>Changer le nombre d'hélicoptères disponibles par camp:</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_GENBLUFOR">
+				<Original>BLUFOR</Original>
+				<English>BLUFOR</English>
+				<French>BLUFOR</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_GENOPFOR">
+				<Original>OPFOR</Original>
+				<English>OPFOR</English>
+				<French>OPFOR</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_GENINDE">
+				<Original>INDEPENDANTS</Original>
+				<English>INDEPENDANTS</English>
+				<French>INDEPENDANTS</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_GENCIVS">
+				<Original>CIVILIANS</Original>
+				<English>CIVILIANS</English>
+				<French>CIVILS</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_GENAPPLY">
+				<Original>Apply</Original>
+				<English>Apply</English>
+				<French>Appliquer</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_NOTPLAYSIDE">
+				<Original>Notify players from this side</Original>
+				<English>Notify players from this side</English>
+				<French>Envoyer une notification aux joueurs de ce camp</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_SIMPLEACECONVADD">
+				<Original>Add simple ace conversation to unit</Original>
+				<English>Add simple ace conversation to unit</English>
+				<French>Ajouter un conversation ACE simple à l'unité</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_NAMEFIELD">
+				<Original>Name:</Original>
+				<English>Name:</English>
+				<French>Nom:</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_MSGTODIS">
+				<Original>Message to display:</Original>
+				<English>Message to display:</English>
+				<French>Message à afficher:</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_RMVCONUSE">
+				<Original>Remove conversation after use:</Original>
+				<English>Remove conversation after use:</English>
+				<French>Enlever la conversation après utilisation:</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_HaloJumpName">
+				<Original>Halo Jump</Original>
+				<English>Halo Jump</English>
+				<French>Saut HALO</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_SelectPCol">
+				<Original>Select player:</Original>
+				<English>Select player:</English>
+				<French>Sélectionner un joueur:</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_TELGRPCOL">
+				<Original>Teleport whole group:</Original>
+				<English>Teleport whole group:</English>
+				<French>Téléporter le groupe entier</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_JUMPOPTSCOL">
+				<Original>Jump options:</Original>
+				<English>Jump options:</English>
+				<French>Options du saut:</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_AUTADDREQUGER">
+				<Original>Automatically add required gear (rebreather mask and aad equiped parachute):</Original>
+				<English>Automatically add required gear (rebreather mask and aad equiped parachute):</English>
+				<French>Ajouter automatiquement le matériel nécessaires (masque respiratoire et parachute avec déclencheur auto):</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_STARTALTMETERS">
+				<Original>Starting altitude (in meters):</Original>
+				<English>Starting altitude (in meters):</English>
+				<French>Altitude de départ (en mètres)</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_AADOPALT">
+				<Original>AAD Opening altitude:</Original>
+				<English>AAD Opening altitude:</English>
+				<French>Altitude d'ouverture du déclencheur de sécurité:</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_FORCEAADALTSET">
+				<Original>Force AAD Opening altitude setting:</Original>
+				<English>Force AAD Opening altitude setting:</English>
+				<French>Forcer le réglage d'ouverture du déclencheur de sécurité:</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_OBJECTSTOPARAWITHPLAYER">
+				<Original>Objects to parachute with players:</Original>
+				<English>Objects to parachute with players:</English>
+				<French>Objets à parachuter avec les joueurs:</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_ONBOARD">
+				<Original>Onboard:</Original>
+				<English>Onboard:</English>
+				<French>A bord:</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_AVAILABLECOL">
+				<Original>Available:</Original>
+				<English>Available:</English>
+				<French>Disponibles:</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_AADAUTOADDOBJ">
+				<Original>Auto equip objects with AAD:</Original>
+				<English>Auto equip objects with AAD:</English>
+				<French>Equiper automatiquement les objets d'un déclencheur:</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_ALTOPENAADOBJ">
+				<Original>Opening altitude for objects AAD:</Original>
+				<English>Opening altitude for objects AAD:</English>
+				<French>Altitude d'ouverture du déclencheur (objets):</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_GENACCEPT">
+				<Original>Accept</Original>
+				<English>Accept</English>
+				<French>Accepter</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_ERRNOOBJESEL">
+				<Original>Error: no object selected</Original>
+				<English>Error: no object selected</English>
+				<French>Erreur: pas d'objet sélectionné</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_ERRCANTBEMAN">
+				<Original>Error: unit cannot be a man</Original>
+				<English>Error: unit cannot be a man</English>
+				<French>Erreur: l'unité ne peut pas être un humain</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_HALOADDEDMESS">
+				<Original>%1 added to HALO jump objects list</Original>
+				<English>%1 added to HALO jump objects list</English>
+				<French>%1 ajouté à la liste des objets pour le HALO</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_HALORMVLIST">
+				<Original>%1 removed from HALO jump objects list</Original>
+				<English>%1 removed from HALO jump objects list</English>
+				<French>%1 enlevé de la liste des objets pour le HALO</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_ERRORNOUNSELECTED">
+				<Original>Error: no unit selected</Original>
+				<English>Error: no unit selected</English>
+				<French>Erreur: pas d'unité sélectionnée</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_ERRORUSEDNAME">
+				<Original>Error : Requested variable name is already used</Original>
+				<English>Error : Requested variable name is already used</English>
+				<French>Erreur: le nom de varaiable demandé est déjà utilisé</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_GENERROR">
+				<Original>Error</Original>
+				<English>Error</English>
+				<French>Erreur</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_ZEUSGRANTEDHELISMESS">
+				<Original>Helicopter Taxi: Zeus has granted you side %1 simultaneaous heli taxis</Original>
+				<English>Helicopter Taxi: Zeus has granted you side %1 simultaneaous heli taxis</English>
+				<French>Taxi Hélico: Zeus accorde à votre camp %1 hélicoptères simultanés.</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_ERRORMUSTBEMAN">
+				<Original>Error: unit must be a man</Original>
+				<English>Error: unit must be a man</English>
+				<French>Erreur: l'unité doit être un humain</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_ERRORMUSTBEALIVE">
+				<Original>Error: unit must be alive</Original>
+				<English>Error: unit must be alive</English>
+				<French>Erreur: l'unité doit être vivante</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_ERRORNOPLAYSEL">
+				<Original>Error: No player selected</Original>
+				<English>Error: No player selected</English>
+				<French>Erreur: aucun joueur sélectionné</French>
+			</Key>
+	
 			
 		</Container>
 	</Package>

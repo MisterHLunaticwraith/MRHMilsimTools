@@ -5,14 +5,23 @@ class CfgPatches {
 			"MRH_Module_Base",
 			"MRH_HeliTaxiControls",
 			"MRH_SimpleConv",
-			"MRH_AttributeVar"
+			"MRH_AttributeVar",
+			"MRH_AddObjectToHalo",
+			"MRH_SimpleHaloJump"
 		}; //
 		weapons[] = {}; //
 		requiredVersion = 0.1; //
 		requiredAddons[] = {"MRHMilsimTools","A3_Modules_F"}; //
 	};
 };
+//addondialogs
 
+#include "\MRHZeusModules\Dialogs\HeliNumberPerSide.hpp"
+//the above contains the link to defines.hpp and must always be left 1st
+#include "\MRHZeusModules\Dialogs\SimpleAceConv.hpp"
+#include "\MRHZeusModules\Dialogs\ChangeVar.hpp"
+#include "\MRHZeusModules\Dialogs\simpleHalo.hpp"
+//
 class CfgFactionClasses
 {
 	class NO_CATEGORY;

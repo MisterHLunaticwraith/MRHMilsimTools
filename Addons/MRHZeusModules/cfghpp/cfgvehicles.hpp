@@ -48,7 +48,7 @@
 	{
 			scopeCurator = 2;
 			_generalMacro = "MRH_HeliTaxiControls";
-			displayName = "Heli taxi settings";
+			displayName = $STR_MRH_MRHMRHZeusModules_HeliTaxiSettingsMName;
 			function = QFUNC(heliPerSideModule);
 			icon = PAAPATH(ModuleHeli);
 			portrait = PAAPATH(ModuleHeli);
@@ -58,7 +58,7 @@
 	{
 			scopeCurator = 2;
 			_generalMacro = "MRH_SimpleConv";
-			displayName = "Simple conversation interaction";
+			displayName = $STR_MRH_MRHMRHZeusModules_SimpleConvIntMName;
 			curatorCanAttach = 1;
 			function = QFUNC(simpleConvModule);
 			icon = PAAPATH(ModuleSimpleConv);
@@ -69,9 +69,30 @@
 	{
 			scopeCurator = 2;
 			_generalMacro = "MRH_AttributeVAr";
-			displayName = "Attribute variable name";
+			displayName = $STR_MRH_MRHMRHZeusModules_AttributeVarNameMName;
 			curatorCanAttach = 1;
 			function = QFUNC(attributeVariableNameModule);
 			icon = PAAPATH(ModuleCodeRelated);
 			portrait = PAAPATH(ModuleCodeRelated);
+	};
+
+	class MRH_AddObjectToHalo : MRH_Module_Base
+	{
+			scopeCurator = 2;
+			_generalMacro = "MRH_AddObjectToHalo";
+			displayName = $STR_MRH_MRHMRHZeusModules_SelectObjectForHaloMName;
+			curatorCanAttach = 1;
+			function = QFUNC(addObjectToHaloModule);
+			icon = PAAPATH(ModuleHaloDrop);
+			portrait = PAAPATH(ModuleHaloDrop);
+	};
+
+		class MRH_SimpleHaloJump : MRH_Module_Base
+	{
+			scopeCurator = 2;
+			_generalMacro = "MRH_SimpleHaloJump";
+			displayName = $STR_MRH_MRHMRHZeusModules_SimpleHaloJumpMName;
+			function = QFUNC(simpleHaloJumpModule);
+			icon = PAAPATH(ModuleHaloDrop);
+			portrait = PAAPATH(ModuleHaloDrop);
 	};

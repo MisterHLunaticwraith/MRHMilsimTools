@@ -103,6 +103,14 @@ class MRH // Defines the "owner"
 		{};
 		class MilsimTools_Core_ensureSafeLanding
 		{};
+		class MilsimTools_Core_scatterPosition
+		{};
+		class MilsimTools_Core_findObjectFromString
+		{};
+		class MilsimTools_Core_paraRemoveBackPack
+		{}
+		class MilsimTools_Core_paraRestoreBackpack
+		{}
 		/*
 		class MilsimTools_Core_
 		{};
