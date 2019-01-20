@@ -19,4 +19,5 @@ _arrayToPush = [];
 	_picturePath = gettext (configFile >> "MRH_SoldierTabIntelPictures" >> _x >> "picture");
 	_arrayToPush pushBackUnique [_x,_caption,_picturePath];
 }forEach _configSetPics;
-MNSVAR(missionPics,_arrayToPush,true);
+_missionPics append _arrayToPush;
+MNSVAR(missionPics,_missionPics,true);

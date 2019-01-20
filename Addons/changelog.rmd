@@ -1,6 +1,12 @@
 ///////////////////////////////////////////////////////////////////////////////////
 Changelog:
 
+MRH Milsim Tools version : v.1.16.4
+HOTFIX: tablet pictures were not showing
+
+///////////////////////////////////////////////////////////////////////////////////
+Changelog:
+
 MRH Milsim Tools version : v.1.16.3
 
 *Added new functionality :
@@ -158,7 +164,7 @@ FOR LATER RELEASE
 -fixed:
 -changed:
 -tweaked:
-// to do: pass parsed config entries to variables (to allow module use later)
+
 *Vehicle spawner:
 -fixed:
 -changed:

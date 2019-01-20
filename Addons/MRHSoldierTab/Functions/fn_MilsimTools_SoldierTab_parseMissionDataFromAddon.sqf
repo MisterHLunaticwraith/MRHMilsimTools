@@ -13,8 +13,8 @@ call MRH_fnc_MilsimTools_SoldierTab_;
 _missionData = missionNamespace getVariable ["MRH_SoldierTab_missionData",[]];
 _configSetData = [(configFile >> "MRH_SoldierTabData")]call BIS_fnc_getCfgSubClasses;
 if(_configSetData isEqualTo []) ExitWith {Diag_Log "MRH MilsimTools Soldiers Tab: no data defined in any addon";};
-
-MNSVAR(missionData,_configSetData,true);
+_missionData append _configSetData;
+MNSVAR(missionData,_missionData,true);
 
 //list containing the data [entry,titleEntry,titleData,[[dataTitle,dataSub]]]
 _missionDataSubs = missionNamespace getVariable ["MRH_SoldierTab_missionDataSubs",[]];
