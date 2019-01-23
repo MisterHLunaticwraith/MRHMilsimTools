@@ -1579,26 +1579,34 @@ class RscControlsGroupMRHZeusModules
 	fade = 0;
 	class VScrollbar
 	{
-		color[] = 
-		{
-			1,
-			1,
-			1,
-			1
-		};
+	
+		height = 0; // height of ScrollBar
+		scrollSpeed = 0.01; // scroll speed of ScrollBar
+
+		arrowEmpty = "\A3\ui_f\data\gui\cfg\scrollbar\arrowEmpty_ca.paa"; // Arrow
+		arrowFull = "\A3\ui_f\data\gui\cfg\scrollbar\arrowFull_ca.paa"; // Arrow when clicked on
+		border = "\A3\ui_f\data\gui\cfg\scrollbar\border_ca.paa"; // Slider background (stretched vertically)
+		thumb = "\A3\ui_f\data\gui\cfg\scrollbar\thumb_ca.paa"; // Dragging element (stretched vertically)
+
+		color[] = {1,1,1,1}; // Scrollbar color
 		width = 0.021;
 		autoScrollEnabled = 1;
+
 	};
 	class HScrollbar
 	{
-		color[] = 
-		{
-			1,
-			1,
-			1,
-			1
-		};
-		height = 0.028;
+		
+		width = 0; // width of ScrollBar
+		height = 0; // height of ScrollBar
+		scrollSpeed = 0.01; // scroll speed of ScrollBar
+
+		arrowEmpty = "\A3\ui_f\data\gui\cfg\scrollbar\arrowEmpty_ca.paa"; // Arrow
+		arrowFull = "\A3\ui_f\data\gui\cfg\scrollbar\arrowFull_ca.paa"; // Arrow when clicked on
+		border = "\A3\ui_f\data\gui\cfg\scrollbar\border_ca.paa"; // Slider background (stretched vertically)
+		thumb = "\A3\ui_f\data\gui\cfg\scrollbar\thumb_ca.paa"; // Dragging element (stretched vertically)
+
+		color[] = {1,1,1,1}; // Scrollbar color
+
 	};
 	class Controls
 	{
@@ -1612,3 +1620,92 @@ class RscControlsGroupMRHZeusModules
 	shadow = 0;
 	style = 16;
 };
+
+class RscTreeMRHZeusModules
+		{
+			access = 0; // Control access (0 - ReadAndWrite, 1 - ReadAndCreate, 2 - ReadOnly, 3 - ReadOnlyVerified)
+			moving = true;
+			type = CT_TREE; // Type is 12
+			style = ST_LEFT; // Style
+			default = 0; // Control selected by default (only one within a display can be used)
+			blinkingPeriod = 0; // Time in which control will fade out and back in. Use 0 to disable the effect.
+
+			x = 0.1;
+			y = 0.1;
+			w = 0.1;
+			h = 0.1;
+
+			colorBorder[] = {0,0,0,1}; // Frame color
+
+			colorBackground[] = {0.2,0.2,0.2,1}; // Fill color
+			colorSelect[] = {1,0.5,0,1}; // Selected item fill color (when multiselectEnabled is 0)
+			colorMarked[] = {1,0.5,0,0.5}; // Marked item fill color (when multiselectEnabled is 1)
+			colorMarkedSelected[] = {1,0.5,0,1}; // Selected item fill color (when multiselectEnabled is 1)
+
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1); // Text size
+			font = "PuristaLight"; // Font from CfgFontFamilies
+			shadow = 1; // Shadow (0 - none, 1 - N/A, 2 - black outline)
+			colorText[] = {1,1,1,1}; // Text color
+			colorSelectText[] = {1,1,1,1}; // Selected text color (when multiselectEnabled is 0)
+			colorMarkedText[] = {1,1,1,1}; // Selected text color (when multiselectEnabled is 1)
+			colorPicture[] = {1,1,1,0};
+			colorPictureSelected[] = {1,1,1,0};
+			colorPictureDisabled[] = {1,1,1,0};
+			colorPictureRight[] = {1,1,1,0}; 	
+			colorPictureRightSelected[] = {1,1,1,0}; 
+			colorPictureRightDisabled[] = {1,1,1,0};
+			colorDisabled[] = {0,0,0,0}; // Does nothing, but must be present, otherwise an error is shown
+			colorArrow[] = {0,0,0,0}; // Does nothing, but must be present, otherwise an error is shown
+
+			//tooltip = ""; // Tooltip text
+			tooltipColorShade[] = {0,0,0,1}; // Tooltip background color
+			tooltipColorText[] = {1,1,1,1}; // Tooltip text color
+			tooltipColorBox[] = {1,1,1,1}; // Tooltip frame color
+
+			multiselectEnabled = 0; // Allow selecting multiple items while holding Ctrl or Shift
+			expandOnDoubleclick = 0; // Expand/collapse item upon double-click
+			hiddenTexture = "A3\ui_f\data\gui\rsccommon\rsctree\hiddenTexture_ca.paa"; // Expand icon
+			expandedTexture = "A3\ui_f\data\gui\rsccommon\rsctree\expandedTexture_ca.paa"; // Collapse icon
+			maxHistoryDelay = 1; // Time since last keyboard type search to reset it
+
+			// Scrollbar configuration
+			class ScrollBar
+			{
+				width = 0; // width of ScrollBar
+				height = 0; // height of ScrollBar
+				scrollSpeed = 0.01; // scroll speed of ScrollBar
+
+				arrowEmpty = "\A3\ui_f\data\gui\cfg\scrollbar\arrowEmpty_ca.paa"; // Arrow
+				arrowFull = "\A3\ui_f\data\gui\cfg\scrollbar\arrowFull_ca.paa"; // Arrow when clicked on
+				border = "\A3\ui_f\data\gui\cfg\scrollbar\border_ca.paa"; // Slider background (stretched vertically)
+				thumb = "\A3\ui_f\data\gui\cfg\scrollbar\thumb_ca.paa"; // Dragging element (stretched vertically)
+
+				color[] = {1,1,1,1}; // Scrollbar color
+			};
+
+
+			//onCanDestroy = "systemChat str ['onCanDestroy',_this]; true";
+			//onDestroy = "systemChat str ['onDestroy',_this]; false";
+			//onMouseEnter = "systemChat str ['onMouseEnter',_this]; false";
+			//onMouseExit = "systemChat str ['onMouseExit',_this]; false";
+			//onSetFocus = "systemChat str ['onSetFocus',_this]; false";
+			//onKillFocus = "systemChat str ['onKillFocus',_this]; false";
+			//onKeyDown = "systemChat str ['onKeyDown',_this]; false";
+			//onKeyUp = "systemChat str ['onKeyUp',_this]; false";
+			//onMouseButtonDown = "systemChat str ['onMouseButtonDown',_this]; false";
+			//onMouseButtonUp = "systemChat str ['onMouseButtonUp',_this]; false";
+			//onMouseButtonClick = "systemChat str ['onMouseButtonClick',_this]; false";
+			//onMouseButtonDblClick = "systemChat str ['onMouseButtonDblClick',_this]; false";
+			//onMouseZChanged = "systemChat str ['onMouseZChanged',_this]; false";
+			//onMouseMoving = "";
+			//onMouseHolding = "";
+
+			//onTreeSelChanged = "systemChat str ['onTreeSelChanged',_this]; false";
+			//onTreeLButtonDown = "systemChat str ['onTreeLButtonDown',_this]; false";
+			//onTreeDblClick = "systemChat str ['onTreeDblClick',_this]; false";
+			//onTreeExpanded = "systemChat str ['onTreeExpanded',_this]; false";
+			//onTreeCollapsed = "systemChat str ['onTreeCollapsed',_this]; false";
+			//onTreeMouseMove = "systemChat str ['onTreeMouseMove',_this]; false"; // Causing CTD
+			//onTreeMouseHold = "systemChat str ['onTreeMouseHold',_this]; false"; // Causing CTD
+			//onTreeMouseExit = "systemChat str ['onTreeMouseExit',_this]; false";
+		};

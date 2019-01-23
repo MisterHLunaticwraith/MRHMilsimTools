@@ -1,6 +1,23 @@
 ///////////////////////////////////////////////////////////////////////////////////
 Changelog:
 
+MRH Milsim Tools version : v.1.16.5
+
+*Zeus modules
+Added modules for the tablet
+-Module to create data on the fly
+-Module to attribute data to a player /an object as a collect point/ an unit as a conversation upon which the player will receive the data
+-Module to add hack action to an object and let player hack and download data
+
+*Functions
+-Animate data terminal
+-Hack download and give data function
+
+*Core
+-Some UI related functions
+///////////////////////////////////////////////////////////////////////////////////
+Changelog:
+
 MRH Milsim Tools version : v.1.16.4
 HOTFIX: tablet pictures were not showing
 

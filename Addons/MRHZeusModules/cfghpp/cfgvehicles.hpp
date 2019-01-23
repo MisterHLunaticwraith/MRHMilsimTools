@@ -96,3 +96,35 @@
 			icon = PAAPATH(ModuleHaloDrop);
 			portrait = PAAPATH(ModuleHaloDrop);
 	};
+
+	class MRH_attributeData : MRH_Module_Base
+	{
+			scopeCurator = 2;
+			_generalMacro = "MRH_attributeData";
+			displayName = $STR_MRH_MRHMRHZeusModules_AttributeDataName;
+			curatorCanAttach = 1;
+			function = QFUNC(attributeDataModule);
+			icon = PAAPATH(ModuleDataSource);
+			portrait = PAAPATH(ModuleDataSource);
+	};
+
+		class MRH_createData : MRH_Module_Base
+	{
+			scopeCurator = 2;
+			_generalMacro = "MRH_createData";
+			displayName = $STR_MRH_MRHMRHZeusModules_CreateDataName;
+			function = QFUNC(dataCreatorModule);
+			icon = PAAPATH(ModuleData);
+			portrait = PAAPATH(ModuleData);
+	};
+
+	class MRH_attributeDataForHack : MRH_Module_Base
+	{
+			scopeCurator = 2;
+			_generalMacro = "MRH_attributeDataForHack";
+			displayName = $STR_MRH_MRHMRHZeusModules_CreateHackName;
+			curatorCanAttach = 1;
+			function = QFUNC(attributeDataForHackModule);
+			icon = PAAPATH(ModuleHack);
+			portrait = PAAPATH(ModuleHack);
+	};

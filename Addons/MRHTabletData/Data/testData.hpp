@@ -14,3 +14,8 @@ class MRH_SdTabTestDataEntry
 		textSub = "Wiki page here: <a color='#0000FF' href='https://mrhmilsimtools-arma3-mod.wikia.com/wiki/Soldier_PDA_use_and_framework_guide'>Soldier PDA use and framework guide</a><br/>";
 		};
 	};
+class MRH_WP_M4
+	{
+	title = $STR_MRH_MRHTabletData_M4Title;
+	text = $STR_MRH_MRHTabletData_M4;
+	};

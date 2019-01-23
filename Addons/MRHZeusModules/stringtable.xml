@@ -243,6 +243,253 @@
 				<English>Error: No player selected</English>
 				<French>Erreur: aucun joueur sélectionné</French>
 			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_ATTDATATOPLAYOBJTITLE">
+				<Original>Attribute data to object/player</Original>
+				<English>Attribute data to object/player</English>
+				<French></French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_ATTTIPHACK">
+				<Original>Object will receive a hack action, and when hacked, a download file action. Upon downloading the player will receive the attributed data.If you use this module without associating it ton an existing object you will be able to create one.</Original>
+				<English>Object will receive a hack action, and when hacked, a download file action. Upon downloading the player will receive the attributed data.If you use this module without associating it ton an existing object you will be able to create one.</English>
+				<French>Les objets recevront une option de piratage et, une fois piratés, une action pour télécharger le fichier. Après le téléchargement le joueur recevra les données. Si vous vous servez du module sans l'utiliser sur un objet existant vous recevrez l'option d'en créer un.</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_DATATOADDCOL">
+				<Original>Data to add:</Original>
+				<English>Data to add:</English>
+				<French>Données à ajouter:</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_PICTURESTOADDCOL">
+				<Original>Pictures to add:</Original>
+				<English>Pictures to add:</English>
+				<French>Images à ajouter:</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_ADDDATATOPILE">
+				<Original>Add selected data to the pile</Original>
+				<English>Add selected data to the pile</English>
+				<French>Ajouter les données sélectionnées à la liste</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_REMOVEDATAFROMPILE">
+				<Original>Remove selected data from the pile</Original>
+				<English>Remove selected data from the pile</English>
+				<French>Enlever les données sélectionnées de la liste</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_ADDSELPICPILE">
+				<Original>Add selected picture to the pile</Original>
+				<English>Add selected picture to the pile</English>
+				<French>Ajouter l'image sélectionnée à la liste</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_REMOVESELPICPILE">
+				<Original>Remove selected picture from the pile</Original>
+				<English>Remove selected picture from the pile</English>
+				<French>Retirer l'image sélectionnée de la liste</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_ADDHACKTOOBJ">
+				<Original>Add hack to object</Original>
+				<English>Add hack to object</English>
+				<French>Ajouter piratage à l'objet</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_OBJTOCRECOL">
+				<Original>Object to create:</Original>
+				<English>Object to create:</English>
+				<French>Objet à créer:</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_HACKDURCOL">
+				<Original>Hack duration (in seconds):</Original>
+				<English>Hack duration (in seconds):</English>
+				<French>Durée du piratage (en secondes):</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_FILESIZEMO">
+				<Original>File size (in  Mo):</Original>
+				<English>File size (in  Mo):</English>
+				<French>Taille du fichier (en Mo)</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_ATTDATATIP">
+				<Original>Tips: If you have selected a player, the player will receive the selected data if they have a tablet. If you have selected an object it will receive a 'collect data' ace3 action. If you select a non playable unit it will receive a conversation option upon which it will give data to the player</Original>
+				<English>Tips: If you have selected a player, the player will receive the selected data if they have a tablet. If you have selected an object it will receive a 'collect data' ace3 action. If you select a non playable unit it will receive a conversation option upon which it will give data to the player</English>
+				<French>Astuce: si vous avez sélectionné un joueur, le joueur recevra les données sélectionnées s'il a une tablette, si vous avez sélectionné un objet l'objet aura une action ACE3 'récupérer les odnnées'. Si vous sélectionnez une unité non jouable elle recevra une option de conversation à la suite de laquelle le joueur recevra les données.</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_GENADD">
+				<Original>Add</Original>
+				<English>Add</English>
+				<French>Ajouter</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_GENDATANAME">
+				<Original>Generated data name:</Original>
+				<English>Generated data name:</English>
+				<French>Variable de donnée générée:</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_TITLECOL">
+				<Original>Title:</Original>
+				<English>Title:</English>
+				<French>Titre:</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_TEXTCOL">
+				<Original>Text:</Original>
+				<English>Text:</English>
+				<French>Texte:</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_HELPERSCOLTEXT">
+				<Original>Helpers</Original>
+				<English>Helpers</English>
+				<French>Aides</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_ADDLINEBREAK">
+				<Original>Add line break</Original>
+				<English>Add line break</English>
+				<French>Insérer un saut de ligne</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_INSERTPICFRPRV">
+				<Original>Insert picture selected in the previewer</Original>
+				<English>Insert picture selected in the previewer</English>
+				<French>Insérer l'image sélectionnée dans le visualiseur</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_INSREDCOLMU">
+				<Original>Insert red color markup</Original>
+				<English>Insert red color markup</English>
+				<French>Insérer balises de texte rouge</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_INSGREENCOLMU">
+				<Original>Insert green color markup</Original>
+				<English>Insert green color markup</English>
+				<French>Insérer balises de texte vert</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_INSEUNLMU">
+				<Original>Insert underlined text markup</Original>
+				<English>Insert underlined text markup</English>
+				<French>Insérer balises pour souligner texte</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_INSHTMLMU">
+				<Original>Insert html link markup</Original>
+				<English>Insert html link markup</English>
+				<French>Insérer balises lien html</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_CREATEDATAENTRY">
+				<Original>Create Data Entry</Original>
+				<English>Create Data Entry</English>
+				<French>Créer une entrée de données</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_GENCLOSE">
+				<Original>Close</Original>
+				<English>Close</English>
+				<French>fermer</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_REFRDATA">
+				<Original>Refresh data</Original>
+				<English>Refresh data</English>
+				<French>Rafraîchir les données</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_DATAPRV">
+				<Original>Data Preview</Original>
+				<English>Data Preview</English>
+				<French>Prévisualisation de données</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_PICPREV">
+				<Original>Pictures preview</Original>
+				<English>Pictures preview</English>
+				<French>Prévisualisation d'images</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_ERRORNODATAORPIC">
+				<Original>Error: No data or pictures selected</Original>
+				<English>Error: No data or pictures selected</English>
+				<French>Erreur: aucune image et aucune donnée sélectionnées</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_DATAATTOMESS">
+				<Original>Data attributed to %1</Original>
+				<English>Data attributed to %1</English>
+				<French>Données attribuées à %1</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_CREATEANDADDHCK">
+				<Original>Create object and add hack</Original>
+				<English>Create object and add hack</English>
+				<French>Créer un objet et ajouter un piratage</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_ERRORNOTITLE">
+				<Original>Error: No Title was provided, data cannot be saved</Original>
+				<English>Error: No Title was provided, data cannot be saved</English>
+				<French>Erreur: pas de titre, les données ne peuvent pas être sauvegardées</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_ERRORNOTEXT">
+				<Original>Error: No Text was provided, data cannot be saved</Original>
+				<English>Error: No Text was provided, data cannot be saved</English>
+				<French>Erreur: pas de texte, les données ne peuvent pas être sauvegardées</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_DATASAVEDMESS">
+				<Original>Data saved</Original>
+				<English>Data saved</English>
+				<French>Données sauvegardées</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_ERRORNODATASEL">
+				<Original>Error: No data selected</Original>
+				<English>Error: No data selected</English>
+				<French>Erreur: pas de données sélectionnées</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_ERRORMAINTREE">
+				<Original>Error: Only main tree data entry can be added</Original>
+				<English>Error: Only main tree data entry can be added</English>
+				<French>Erreur: Seule une entrée principale peut être ajoutée</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_ERRORDATAINLIST">
+				<Original>Error: data already in list</Original>
+				<English>Error: data already in list</English>
+				<French>Erreur: données déjà dans la liste</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_AttributeDataName">
+				<Original>Attribute data</Original>
+				<English>Attribute data</English>
+				<French>Attribuer des données</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_CreateDataName">
+				<Original>Create data</Original>
+				<English>Create data</English>
+				<French>Créer des données</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_CreateHackName">
+				<Original>Create hack</Original>
+				<English>Create hack</English>
+				<French>Créér un piratage</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_">
+				<Original></Original>
+				<English></English>
+				<French></French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_">
+				<Original></Original>
+				<English></English>
+				<French></French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_">
+				<Original></Original>
+				<English></English>
+				<French></French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_">
+				<Original></Original>
+				<English></English>
+				<French></French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_">
+				<Original></Original>
+				<English></English>
+				<French></French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_">
+				<Original></Original>
+				<English></English>
+				<French></French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_">
+				<Original></Original>
+				<English></English>
+				<French></French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_">
+				<Original></Original>
+				<English></English>
+				<French></French>
+			</Key>
+	
+	
 	
 			
 		</Container>

@@ -7,7 +7,10 @@ class CfgPatches {
 			"MRH_SimpleConv",
 			"MRH_AttributeVar",
 			"MRH_AddObjectToHalo",
-			"MRH_SimpleHaloJump"
+			"MRH_SimpleHaloJump",
+			"MRH_attributeData",
+			"MRH_attributeDataForHack",
+			"MRH_createData"
 		}; //
 		weapons[] = {}; //
 		requiredVersion = 0.1; //
@@ -21,6 +24,9 @@ class CfgPatches {
 #include "\MRHZeusModules\Dialogs\SimpleAceConv.hpp"
 #include "\MRHZeusModules\Dialogs\ChangeVar.hpp"
 #include "\MRHZeusModules\Dialogs\simpleHalo.hpp"
+#include "\MRHZeusModules\Dialogs\attributeDataMenu.hpp"
+#include "\MRHZeusModules\Dialogs\attributeDataForHackMenu.hpp"
+#include "\MRHZeusModules\Dialogs\dataCreator.hpp"
 //
 class CfgFactionClasses
 {
