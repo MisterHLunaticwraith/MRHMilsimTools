@@ -54,3 +54,5 @@ class hackDownloadAndCollectData
 {};
 class dataTerminalAnimate
 {};
+class ambientConversation
+{};

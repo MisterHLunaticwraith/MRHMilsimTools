@@ -1,5 +1,5 @@
-class RscTitles
-{
+//class RscTitles
+//{
 class MRHHackPhone
 {
 	idd=210382;
@@ -96,4 +96,4 @@ class MRHTEMPLATETEXT: RscStructuredText
 	};
 };
 ////
-};
+//};

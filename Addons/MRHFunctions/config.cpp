@@ -33,9 +33,16 @@ class cfgWeapons
 
 /////////////////======Ressources MRHHACKPHONE
 #include "\MRHFunctions\dialogsHPP\definesHACKPHONE.hpp"
-#include "\MRHFunctions\dialogsHPP\dialogsHACKPHONE.hpp"
+
 /////////////////======Fin Ressources MRHRoster
 #include "\MRHFunctions\dialogsHPP\dialogsMRHconv.hpp"
+
+
+class RscTitles
+{
+	#include "\MRHFunctions\dialogsHPP\dialogsHACKPHONE.hpp"
+	#include "\MRHFunctions\dialogsHPP\dialogsMRHconv2.hpp"
+};
 ///==========FINcomposants des menusCORE====
 
 

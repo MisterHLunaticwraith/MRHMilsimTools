@@ -16,12 +16,12 @@ or
 */
 
 
-params ["_unit","_diameter","_message","_code"];
+params ["_unit","_diameter","_message",["_code",{}]];
 _diameter = _diameter /2;
 
 _trg = createTrigger ["EmptyDetector", getPosASL _unit];
-if (isNil "_code") then {_code ={};};
-missionNamespace setVariable ["MRH_Strigger_" + (str _trg),[_unit,_message, _code], true];
+
+_trg setVariable ["MRH_Strigger_" + (str _trg),[_unit,_message, _code,_diameter], true];
 
 
 _trg setTriggerArea [_diameter, _diameter, 0, false,2];
@@ -29,13 +29,15 @@ _trg setTriggerActivation ["ANYPLAYER", "PRESENT", false];
 _trg attachTo [_unit,[0,0,0]];
 _trg setTriggerStatements ["this", 
 "
-_data = missionNameSpace getVariable ('MRH_Strigger_' + str thisTrigger);
+_data = thisTrigger getVariable ('MRH_Strigger_' + str thisTrigger);
 _unit = _data select 0;
+if (!alive _unit) exitWith {diag_log format ['MRH_surrender_function: unable to trigger because unit %1 was dead',_unit]};
 _message = _data select 1;
 _code = _data select 2;
+_diameter = _data select 3;
 _unit setCaptive true;
 _unit playMove 'ApanPknlMstpSnonWnonDnon_G03';
-_unit globalChat _message;
-[_unit] spawn _code;
+
+[_unit,_message,5,_diameter,_code,[],'MRH_VOICE_Surrender']call MRH_fnc_ambientConversation;
 "
 , ""];

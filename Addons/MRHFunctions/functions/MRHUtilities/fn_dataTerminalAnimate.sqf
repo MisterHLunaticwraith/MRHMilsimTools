@@ -22,5 +22,5 @@ params ["_DT",["_videoToPlay","\MRHMiscItems\Videos\compuHack.ogv"]];
 	sleep 2;
 	[_DT, 3] call BIS_fnc_DataTerminalAnimate;
 	playSound3D ["MRHFunctions\sounds\computerkeystrokes.ogg",_DT];
-	[_DT,_videoToPlay]call MRH_fnc_MilsimTools_Core_playVideoOnObject;
+	[_DT,_videoToPlay] spawn MRH_fnc_MilsimTools_Core_playVideoOnObject;
 };
