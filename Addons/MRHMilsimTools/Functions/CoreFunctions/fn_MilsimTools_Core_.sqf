@@ -5,6 +5,7 @@ Description:
 Return value: 
 Public: No
 Parameters:
+
 Example(s):
 []call MRH_fnc_MilsimTools_Core_;
 */

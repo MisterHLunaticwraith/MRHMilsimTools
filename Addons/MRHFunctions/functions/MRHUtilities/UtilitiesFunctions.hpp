@@ -50,3 +50,7 @@ class MoveInCargo_EH_init
 {
     postInit = 1;
 };
+class hackDownloadAndCollectData
+{};
+class dataTerminalAnimate
+{};

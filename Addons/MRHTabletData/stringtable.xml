@@ -1,0 +1,38 @@
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Project name="MRHTabletData">
+	<Package name="MRHTabletData">
+		<Container name="MRH_MRHTabletData_AllSTrings">
+			<Key ID="STR_MRH_MRHTabletData_M4">
+				<Original> &lt;img size = '15' image ='\MRHTabletData\paa\WP_M4.jpg'/&gt;The M4 carbine is a shorter and lighter variant of the M16A2 assault rifle. The M4 is a 5.56×45mm NATO, air-cooled, direct impingement gas-operated, magazine-fed carbine. It has a 14.5 in (370 mm) barrel and a telescoping stock.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;The M4 carbine is extensively used by the United States Armed Forces and is largely replacing the M16 rifle in United States Army and United States Marine Corps combat units as the primary infantry weapon[8][9] and service rifle.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;The M4 is also capable of mounting the M203 and M320 grenade launchers. The distinctive step in its barrel is for mounting the M203 with the standard hardware. The M4 has semi-automatic and three-round burst firing modes (like the M16A2 and M16A4), while the M4A1 has semi-automatic and fully automatic firing modes (like the M16A1 and M16A3)</Original>
+				<English>&lt;img size = '15' image ='\MRHTabletData\paa\WP_M4.jpg'/&gt;The M4 carbine is a shorter and lighter variant of the M16A2 assault rifle. The M4 is a 5.56×45mm NATO, air-cooled, direct impingement gas-operated, magazine-fed carbine. It has a 14.5 in (370 mm) barrel and a telescoping stock.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;The M4 carbine is extensively used by the United States Armed Forces and is largely replacing the M16 rifle in United States Army and United States Marine Corps combat units as the primary infantry weapon[8][9] and service rifle.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;The M4 is also capable of mounting the M203 and M320 grenade launchers. The distinctive step in its barrel is for mounting the M203 with the standard hardware. The M4 has semi-automatic and three-round burst firing modes (like the M16A2 and M16A4), while the M4A1 has semi-automatic and fully automatic firing modes (like the M16A1 and M16A3)</English>
+				<French>&lt;img size = '15' image ='\MRHTabletData\paa\WP_M4.jpg'/&gt;Le Colt M4 est une version raccourcie du M16 au canon de 14,5 pouces (368 mm) de long et à crosse télescopique. Celle-ci comprend néanmoins une grande partie du mécanisme du fusil, la crosse peut donc être raccourcie d'un tiers de sa longueur mais du fait du ressort de rappel logé dans le tube de crosse, celle ci ne peut être entièrement escamotée comme sur d'autres fusils d'assaut. Ses autres caractéristiques sont identiques à celles du M16A2 (calibre 5,56 mm OTAN, sélecteur de tir avec sûreté, coup par coup et rafale contrôlée de 3 coups). Au départ destinée aux forces spéciales pour qui une arme légère garantit de meilleures mobilité et maniabilité. Cette arme équipa ensuite les unités n'ayant pas besoin de la portée d'un M16. C'est en particulier le cas des équipages de véhicules, des artilleurs et au niveau du groupe de combat, des sous-officiers, officiers, radios etc.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;Le M4 a pour origine les premières expériences de raccourcissement des AR-15, XM16 puis M16A1 presque dès leur introduction lors de la guerre du Viêt Nam qui aboutiront à la carabine i XM177, arme qui rencontra un certain succès mais qui en raison de certains défaut comme des rafales trop rapides et irrégulières au fur et à mesure de l'encrassement, une déflagration difficilement supportable rendant nécessaire un cache-flamme/réducteur de son, s'encrassant très vite et devenant inopérante firent qu'elle ne sera jamais officiellement adoptée.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;La version actuelle a été créée par Colt pour les SOG (en) (Special Operations Groups) et ce à titre commercial officieux.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;Le M4 originel est un M16A2 avec crosse télescopique 4 positions, garde-main et mécanisme d'emprunt de gaz raccourcis et canon de 14,5 pouces (représentant le meilleur compromis entre compacité, puissance, niveau sonore tout en gardant la possibilité de montage du lance-grenade M-203) et tir automatique par rafale. Les blocs de culasse, la carcasse, les organes de visée, les chargeurs sont des éléments du M16.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;À l'exception des premiers modèles, le M4 dispose de rails Picatinny offrant à l'utilisateur la possibilité d'ajouter des accessoires comme une lampe tactique, une lunette de visée ou même une poignée à l'avant. Le cache-flamme peut être démonté pour être remplacé par un silencieux.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;En juin 2010, Colt a perdu les droits exclusifs sur les brevets du M4; toutes les firmes peuvent en fabriquer maintenant. Remington Arms décroche ainsi en 2012 un premier contrat pour la fourniture de 24 000 M4A1 pour 83 924 089 dollars américains2 soit un cout unitaire de 3 495,83 dollars (2 640 euros au taux de change à cette date). </French>
+			</Key>
+			<Key ID="STR_MRH_MRHTabletData_M4Title">
+				<Original>M4 Carbine</Original>
+				<English>M4 Carbine</English>
+				<French>Fusil M4</French>
+			</Key>
+			
+			<Key ID="STR_MRH_MRHTabletData_">
+				<Original></Original>
+				<English></English>
+				<French></French>
+			</Key>
+			
+			<Key ID="STR_MRH_MRHTabletData_">
+				<Original></Original>
+				<English></English>
+				<French></French>
+			</Key>
+			
+			<Key ID="STR_MRH_MRHTabletData_">
+				<Original></Original>
+				<English></English>
+				<French></French>
+			</Key>
+			
+			
+		</Container>
+	</Package>
+</Project>

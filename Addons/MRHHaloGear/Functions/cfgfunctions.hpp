@@ -58,6 +58,14 @@ class MRH // Defines the "owner"
 		{};
 		class MilsimTools_HaloGear_attachAceAttachable
 		{};
+		class MilsimTools_HaloGear_objectAADEH
+		{};
+		class MilsimTools_HaloGear_AADMenuOnload
+		{};
+		class MilsimTools_HaloGear_AADMenuAction
+		{};
+		class MilsimTools_HaloGear_removeObjectAAD
+		{};
 	};
 	
 };

@@ -50,6 +50,10 @@ class MRH // Defines the "owner"
 		{};
 		class MilsimTools_SoldierTab_isDataCollectPoint
 		{};
+		class MilsimTools_SoldierTab_findAndReadDataEntry
+		{};
+		class MilsimTools_SoldierTab_createDataOnTheFly
+		{};
 
 	};
 	

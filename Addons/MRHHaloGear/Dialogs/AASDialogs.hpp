@@ -4,8 +4,8 @@ class MRH_AAS_Cypres2Menu
 {
 	idd=211218;
 	movingenable=false;
-    onload = "((_this) select 0 displayCtrl 1400) ctrlSetText (player getVariable ['MRH_HaloGear_AADOpening_alt',(['MRH_MilsimTools_HaloGear_AADDefaultOpeningAltitude'] call cba_settings_fnc_get)])";
-    onUnload = "player setVariable ['MRH_HaloGear_AADOpening_alt',ctrlText 1400]; hint format [localize 'STR_MRH_MRHHaloGear_AADHint',(ctrlText 1400)]";
+    onload = "";
+    onUnload = "[_this] call MRH_fnc_MilsimTools_HaloGear_AADMenuAction";
 	
 	class controls 
 	{

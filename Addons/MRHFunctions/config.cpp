@@ -35,8 +35,25 @@ class cfgWeapons
 #include "\MRHFunctions\dialogsHPP\definesHACKPHONE.hpp"
 #include "\MRHFunctions\dialogsHPP\dialogsHACKPHONE.hpp"
 /////////////////======Fin Ressources MRHRoster
-
+#include "\MRHFunctions\dialogsHPP\dialogsMRHconv.hpp"
 ///==========FINcomposants des menusCORE====
 
 
-
+class cfgVehicles
+{
+	class Man;
+	class CAManBase: Man 
+	{
+		 class ACE_Actions 
+		 {
+				class MRH_Conversation_MainConvAction
+				{
+					displayName = $STR_MRH_FC_CFGTALKACTIONPOINT;
+					icon = "";
+					distance = 2;
+					selection = "head";  
+						
+				};  
+   		 };
+	};
+};

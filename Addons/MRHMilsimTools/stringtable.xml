@@ -33,6 +33,17 @@
 				<English>Data received</English>
 				<French>Données reçues</French>
 			</Key>
+			<Key ID="STR_MRH_MS_ZEUSNOT">
+				<Original>Notification from Zeus</Original>
+				<English>Notification from Zeus</English>
+				<French>Notification de Zeus</French>
+			</Key>
+			<Key ID="STR_MRH_MS_ADMINNOT">
+				<Original>Notification from admin</Original>
+				<English>Notification from admin</English>
+				<French>Notification de l'administrateur</French>
+			</Key>
+			
 		</Container>
 		<Container name="InitFunctions">
 			<Key ID="STR_MRH_MS_SPAWNDEADMESSAGE">

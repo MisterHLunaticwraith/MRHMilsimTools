@@ -35,7 +35,21 @@
 				<English>You are searching</English>
 				<French>Vous êtes en train de fouiller l'objet.</French>
 			</Key>
-			
+			<Key ID="STR_MRH_FC_CFGTALKACTIONPOINT">
+				<Original>Talk</Original>
+				<English>Talk</English>
+				<French>Parler</French>
+			</Key>
+			<Key ID="STR_MRH_FC_DIALOGSAYS">
+				<Original>says:</Original>
+				<English>says:</English>
+				<French>dit:</French>
+			</Key>
+			<Key ID="STR_MRH_FC_DIALOGCLOSE">
+				<Original>Close</Original>
+				<English>Close</English>
+				<French>Fermer</French>
+			</Key>
 		</Container>
 				<Container name="HackPhone">
 			<Key ID="STR_MRH_HP_DLFile">

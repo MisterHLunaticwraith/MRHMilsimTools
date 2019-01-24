@@ -1,0 +1,1 @@
+ &lt;img size = '15' image ='\MRHTabletData\paa\pathToYourPicture.jpg'/&gt;

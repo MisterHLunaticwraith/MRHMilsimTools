@@ -45,6 +45,31 @@
 				<English>Halo Mask (Broken)</English>
 				<French>Masque respiratoire (endommagé)</French>
 			</Key>
+			</Key><Key ID="STR_MRH_MRHHaloGear_AADINvItem">
+				<Original>Cypress 2 AAD</Original>
+				<English>Cypress 2 AAD</English>
+				<French>Déclencheur de sécurité Cypress 2 </French>
+			</Key>
+			</Key><Key ID="STR_MRH_MRHHaloGear_ATTACHAAD">
+				<Original>Equip with AAD</Original>
+				<English>Equip with AAD</English>
+				<French>Equiper d'un déclencheur de sécurité</French>
+			</Key>
+			</Key><Key ID="STR_MRH_MRHHaloGear_REMOVEHAAD">
+				<Original>Remove AAD</Original>
+				<English>Remove AAD</English>
+				<French>Enlever le déclencheur de sécurité</French>
+			</Key>
+			</Key><Key ID="STR_MRH_MRHHaloGear_HintAADAdded">
+				<Original>AAD installed</Original>
+				<English>AAD installed</English>
+				<French>Déclencheur de sécurité installé</French>
+			</Key>
+			</Key><Key ID="STR_MRH_MRHHaloGear_HintAADRemoved">
+				<Original>AAD removed</Original>
+				<English>AAD removed</English>
+				<French>Déclencheur de sécurité enlevé</French>
+			</Key>
 		
 			
 		</Container>

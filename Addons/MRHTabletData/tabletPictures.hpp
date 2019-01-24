@@ -1,0 +1,1 @@
+#include "\MRHTabletData\Pictures\testPicture.hpp"
