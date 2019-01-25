@@ -128,3 +128,14 @@
 			icon = PAAPATH(ModuleHack);
 			portrait = PAAPATH(ModuleHack);
 	};
+
+		class MRH_setForSurrender : MRH_Module_Base
+	{
+			scopeCurator = 2;
+			_generalMacro = "MRH_setForSurrender";
+			displayName = $STR_MRH_MRHMRHZeusModules_SetSurrName;
+			curatorCanAttach = 1;
+			function = QFUNC(setForSurrenderModule);
+			icon = PAAPATH(ModuleSurrender);
+			portrait = PAAPATH(ModuleSurrender);
+	};

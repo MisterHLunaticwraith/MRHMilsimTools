@@ -111,6 +111,8 @@ class MRH // Defines the "owner"
 		{}
 		class MilsimTools_Core_paraRestoreBackpack
 		{}
+		class MilsimTools_Core_testPercentageOdds
+		{};
 		/*
 		class MilsimTools_Core_
 		{};

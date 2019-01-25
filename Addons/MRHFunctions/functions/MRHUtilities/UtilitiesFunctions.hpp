@@ -56,3 +56,5 @@ class dataTerminalAnimate
 {};
 class ambientConversation
 {};
+class MilsimTools_Functions_internalVIPTrigger
+{};
