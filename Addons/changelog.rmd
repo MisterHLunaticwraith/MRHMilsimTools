@@ -1,6 +1,13 @@
 ///////////////////////////////////////////////////////////////////////////////////
 Changelog:
 
+MRH Milsim Tools version : v.1.16.7
+*fixed units surrendering from the zeus module should now behave properly in MP
+*Yet another attempt to solve the movein cargo function in MP, honestly I'm at my wits' end on that one and since it requires testing on a large scale with several guinea pigs / players on the server for each test its quite hard to solve...
+
+///////////////////////////////////////////////////////////////////////////////////
+Changelog:
+
 MRH Milsim Tools version : v.1.16.6
 
 *Zeus modules
