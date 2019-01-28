@@ -256,6 +256,23 @@ class MRHAcceptButton: RscButtonMRHZeusModules
     action = "call MRH_fnc_MilsimTools_ZeusModules_simpleHaloJumpModuleAction";
 };
 ////////////////////////////////////////////////////////
+// GUI EDITOR OUTPUT START (by Mr H., v1.063, #Cikihi)
+////////////////////////////////////////////////////////
+
+class MRHModuleAlt: RscTextMRHZeusModules
+{
+	idc = 1028;
+	text = "LZ altitude (above see level):"; //--- ToDo: Localize;
+	x = 0.536094 * safezoneW + safezoneX;
+	y = 0.247 * safezoneH + safezoneY;
+	w = 0.154687 * safezoneW;
+	h = 0.022 * safezoneH;
+};
+////////////////////////////////////////////////////////
+// GUI EDITOR OUTPUT END
+////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////
 // GUI EDITOR OUTPUT END
 ////////////////////////////////////////////////////////
 };

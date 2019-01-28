@@ -483,6 +483,11 @@
 				<English>I surrender!</English>
 				<French>Je me rends!</French>
 			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_LZABOVESEALVLFORMAT">
+				<Original>LZ altitude (above see level): %1</Original>
+				<English>LZ altitude (above see level): %1</English>
+				<French>Altitude de la LZ (niveau de la mer): %1</French>
+			</Key>
 			<Key ID="STR_MRH_MRHMRHZeusModules_">
 				<Original></Original>
 				<English></English>

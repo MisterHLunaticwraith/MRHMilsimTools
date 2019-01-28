@@ -35,7 +35,7 @@ diag_log format ["MRH_MilsimTools_HaloJumpStart, units to parachute %1",_UnitsTo
 } forEach _UnitsToParachute;
 
 {
-	
+	group _x setGroupOwner 2;
 	if (_forceGearAAD) then 
 	{
 	

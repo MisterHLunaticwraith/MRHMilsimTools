@@ -1,6 +1,15 @@
 ///////////////////////////////////////////////////////////////////////////////////
 Changelog:
 
+MRH Milsim Tools version : v.1.16.8
+*Zeus Modules:
+-Fixed set unit surrender module not working as intended (testing to be done)
+-Halo Jump module:
+tweaked >groups of objects parachuted along the players will be  transfered to the server
+added > The zeus menu now displays the altitude above sea level where the module is placed.
+///////////////////////////////////////////////////////////////////////////////////
+Changelog:
+
 MRH Milsim Tools version : v.1.16.7
 *fixed units surrendering from the zeus module should now behave properly in MP
 *Yet another attempt to solve the movein cargo function in MP, honestly I'm at my wits' end on that one and since it requires testing on a large scale with several guinea pigs / players on the server for each test its quite hard to solve...
