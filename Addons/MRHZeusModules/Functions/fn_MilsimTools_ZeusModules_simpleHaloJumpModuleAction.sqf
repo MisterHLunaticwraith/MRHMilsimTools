@@ -33,7 +33,7 @@ _player = objNull;
 if (isNull _player) exitWith {[objNull, localize "STR_MRH_MRHMRHZeusModules_ERRORNOPLAYSEL"] call BIS_fnc_showCuratorFeedbackMessage;};
 
 _UnitsToParachute = [_player];
-if (cbChecked _INCLUDEGRP) then {_UnitsToParachute = units group _player};
+if (cbChecked _INCLUDEGRP) then {_UnitsToParachute = units _player};
 
 
 _gearToParachute = [];

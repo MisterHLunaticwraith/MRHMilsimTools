@@ -10,7 +10,8 @@ class CfgPatches {
 			"MRH_SimpleHaloJump",
 			"MRH_attributeData",
 			"MRH_attributeDataForHack",
-			"MRH_createData"
+			"MRH_createData",
+			"MRH_setForSurrender"
 		}; //
 		weapons[] = {}; //
 		requiredVersion = 0.1; //
@@ -27,6 +28,8 @@ class CfgPatches {
 #include "\MRHZeusModules\Dialogs\attributeDataMenu.hpp"
 #include "\MRHZeusModules\Dialogs\attributeDataForHackMenu.hpp"
 #include "\MRHZeusModules\Dialogs\dataCreator.hpp"
+#include "\MRHZeusModules\Dialogs\setSurrenderMenu.hpp"
+
 //
 class CfgFactionClasses
 {

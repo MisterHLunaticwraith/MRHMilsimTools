@@ -43,3 +43,12 @@ titles[] = {};
 	titles[] = {};
 
 	};
+	
+	class MRH_VOICE_Surrender
+	{
+
+	name     = "MRH_VOICE_Surrender";
+	sound[]  = {"\MRHFunctions\sounds\MRH_VOICE_Surrender.ogg", 5, 1, 100};
+	titles[] = {};
+
+	};

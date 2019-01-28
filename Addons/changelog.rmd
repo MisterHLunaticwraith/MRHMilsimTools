@@ -1,6 +1,29 @@
 ///////////////////////////////////////////////////////////////////////////////////
 Changelog:
 
+MRH Milsim Tools version : v.1.16.7
+*fixed units surrendering from the zeus module should now behave properly in MP
+*Yet another attempt to solve the movein cargo function in MP, honestly I'm at my wits' end on that one and since it requires testing on a large scale with several guinea pigs / players on the server for each test its quite hard to solve...
+
+///////////////////////////////////////////////////////////////////////////////////
+Changelog:
+
+MRH Milsim Tools version : v.1.16.6
+
+*Zeus modules
+Added: module to make unit surrender
+Fixed: Halo Jump did not teletransport all players in the group (some testing remains to be done)
+
+*Functions
+Added : ambient conversation function
+Fixed: Animate data terminal video was not played on the screen in MP
+Tweaked: VIP surrender function overhauled, makes use of new ambient conversation function, allows playing a customized sound when unit surrenders,allows setting a chance percentage that the unit will surrender. See function header for more information
+
+*Core
+-Function to test if percentage chances are met
+///////////////////////////////////////////////////////////////////////////////////
+Changelog:
+
 MRH Milsim Tools version : v.1.16.5
 
 *Zeus modules

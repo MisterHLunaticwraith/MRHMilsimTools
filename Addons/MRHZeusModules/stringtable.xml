@@ -448,40 +448,40 @@
 				<English>Create hack</English>
 				<French>Créér un piratage</French>
 			</Key>
-			<Key ID="STR_MRH_MRHMRHZeusModules_">
-				<Original></Original>
-				<English></English>
-				<French></French>
+			<Key ID="STR_MRH_MRHMRHZeusModules_SetSurrName">
+				<Original>Set unit to surrender</Original>
+				<English>Set unit to surrender</English>
+				<French>Reddition</French>
 			</Key>
-			<Key ID="STR_MRH_MRHMRHZeusModules_">
-				<Original></Original>
-				<English></English>
-				<French></French>
+			<Key ID="STR_MRH_MRHMRHZeusModules_SetSurTitleCOL">
+				<Original>Set unit to surrender:</Original>
+				<English>Set unit to surrender:</English>
+				<French>Régler l'unité pour qu'elle se rende:</French>
 			</Key>
-			<Key ID="STR_MRH_MRHMRHZeusModules_">
-				<Original></Original>
-				<English></English>
-				<French></French>
+			<Key ID="STR_MRH_MRHMRHZeusModules_DistAtWhichUnitWill">
+				<Original>Distance from a player at which unit will surrender (in meters):</Original>
+				<English>Distance from a player at which unit will surrender (in meters):</English>
+				<French>Distance entre l'unité et un joueur pour qu'elle se rende (en mètres):</French>
 			</Key>
-			<Key ID="STR_MRH_MRHMRHZeusModules_">
-				<Original></Original>
-				<English></English>
-				<French></French>
+			<Key ID="STR_MRH_MRHMRHZeusModules_OddsForSurr">
+				<Original>Odds that the unit will surrender (in  percentage):</Original>
+				<English>Odds that the unit will surrender (in  percentage):</English>
+				<French>Chances pour que l'unité se rende (en pourcentage):</French>
 			</Key>
-			<Key ID="STR_MRH_MRHMRHZeusModules_">
-				<Original></Original>
-				<English></English>
-				<French></French>
+			<Key ID="STR_MRH_MRHMRHZeusModules_SurrenderModTip">
+				<Original>Help: deleting this module will cancel the action and unit will not surrender</Original>
+				<English>Help: deleting this module will cancel the action and unit will not surrender</English>
+				<French>Aide: supprimer ce module annulera l'action et l'unité ne se rendra pas</French>
 			</Key>
-			<Key ID="STR_MRH_MRHMRHZeusModules_">
-				<Original></Original>
-				<English></English>
-				<French></French>
+			<Key ID="STR_MRH_MRHMRHZeusModules_MessageSurrTitle">
+				<Original>Message the unit will say when it surrenders:</Original>
+				<English>Message the unit will say when it surrenders:</English>
+				<French>Message que l'unité dira quand elle se rend:</French>
 			</Key>
-			<Key ID="STR_MRH_MRHMRHZeusModules_">
-				<Original></Original>
-				<English></English>
-				<French></French>
+			<Key ID="STR_MRH_MRHMRHZeusModules_SurrenderMessageToEdit">
+				<Original>I surrender!</Original>
+				<English>I surrender!</English>
+				<French>Je me rends!</French>
 			</Key>
 			<Key ID="STR_MRH_MRHMRHZeusModules_">
 				<Original></Original>

@@ -12,7 +12,7 @@ call MRH_fnc_MilsimTools_ZeusModules_startHaloJump;
 if !(isServer) exitWith {}; //func mus be called on the server
 params ["_dropPos","_UnitsToParachute",["_gearToParachute",[]],["_autoEquipUnits",true],["_forceUnitsAAD",true],["_unitsAADSetting","200"],["_forceGearAAD",true],["_gearAADAltitude","200"]];
 
-
+diag_log format ["MRH_MilsimTools_HaloJumpStart, units to parachute %1",_UnitsToParachute];
 
 {
 	
