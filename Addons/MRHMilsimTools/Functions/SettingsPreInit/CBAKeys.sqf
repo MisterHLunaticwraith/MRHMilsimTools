@@ -10,3 +10,12 @@
 {
  if (([player] call MRH_fnc_MilsimTools_HaloGear_isFreeFalling) && ([player] call MRH_fnc_MilsimTools_HaloGear_hasParachute)) then {player action ["OpenParachute", player];};
 },{},[DIK_SPACE, [false, false, false]]] call CBA_fnc_addKeybind;
+
+["MRH_DebugTools_showLog", "MRH_MilsimTools - Debug Tools",[localize "STR_MRH_DEBUG_TOOLS_KEY", localize "STR_MRH_KEY_OPENADMINMENUTOOLTIP"],
+{
+	_isDebugMode = ["MRH_MilsimTools_DebugTools_isDebugMode"] call cba_settings_fnc_get;
+	if (_isDebugMode) then
+	{ 
+		call MRH_fnc_MilsimTools_DebugTools_openLogViewer;
+	};
+},{},[DIK_X, [true, true, false]]] call CBA_fnc_addKeybind;

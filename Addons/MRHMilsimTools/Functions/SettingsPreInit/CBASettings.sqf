@@ -155,3 +155,6 @@ _script	Script to execute when setting is changed.  (optional) <CODE>
 ["MRH_MilsimTools_HaloGear_playRebreatherSounds", "CHECKBOX",   [localize "STR_MRH_CBA_HaloGear_PlayRebSounds",localize "STR_MRH_CBA_HaloGear_PlayRebSoundsTooltip"],["MRH_MilsimTools - Halo Jumps"],true,1] call cba_settings_fnc_init;
 
 ["MRH_MilsimTools_HaloGear_haloMaskBreakingChancePerc", "SLIDER",   [localize "STR_MRH_CBA_HaloGear_OddsOfBreaking",localize "STR_MRH_CBA_HaloGear_OddsOfBreakingToolTip"], "MRH_MilsimTools - Halo Jumps", [0, 100, 10, 0],1] call cba_settings_fnc_init;
+
+//-----------below are the settings for the debug mode 
+["MRH_MilsimTools_DebugTools_isDebugMode", "CHECKBOX",   [localize "STR_MRH_CBA_DebugMode_SettingName",localize "STR_MRH_CBA_DebugMode_SettingNameToolTip"],["MRH_MilsimTools - Debug Mode"],false,1,{call MRH_fnc_MilsimTools_DebugTools_debugHintboxInit;}] call cba_settings_fnc_init;
