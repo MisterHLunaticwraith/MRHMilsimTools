@@ -23,7 +23,7 @@ class MRHBack: IGUIBackMRHDebugTools
 class MRHDebugText: RscTextMRHDebugTools
 {
 	idc = 1234;
-	text = "Warning: debug mode is enabled messages will show here"; //--- ToDo: Localize;
+	text = $STR_MRH_MRHDebugTools_DBGWARN; //--- ToDo: Localize;
     style = ST_MULTI;
 	x = 0.695937 * safezoneW + safezoneX;
 	y = 0.896 * safezoneH + safezoneY;
@@ -33,7 +33,7 @@ class MRHDebugText: RscTextMRHDebugTools
 class MRHFrame: RscFrameMRHDebugTools
 {
 	idc = 1800;
-	text = "Milsim Tools Debug mode, latest report:"; //--- ToDo: Localize;
+	text = $STR_MRH_MRHDebugTools_LATESTREPORTCOL; //--- ToDo: Localize;
 	x = 0.695937 * safezoneW + safezoneX;
 	y = 0.885 * safezoneH + safezoneY;
 	w = 0.299062 * safezoneW;

@@ -44,3 +44,6 @@
 #define FDIS(ARG) ((finddisplay 200718) displayCtrl ##ARG##)
 //redefines ctrlsize function for this mod
 #define CTRLRSZ(ARG) [200718,##ARG##] CFUNC(SetCtrlSize)
+
+#define IS_DEBUG ["MRH_MilsimTools_DebugTools_isDebugMode"] call cba_settings_fnc_get
+#define TRACE(ARG) [(##ARG##)] call MRH_fnc_MilsimTools_DebugTools_trace

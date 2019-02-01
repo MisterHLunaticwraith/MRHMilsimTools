@@ -40,7 +40,7 @@ class MRHEditDist: RscEditMRHDebugTools
 class MRHOkButton: RscButtonMRHDebugTools
 {
 	idc = 1600;
-	text = "Ok"; //--- ToDo: Localize;
+	text = $STR_MRH_MRHDebugTools_OKBUTT; //--- ToDo: Localize;
     action = "call MRH_fnc_MilsimTools_DebugTools_modelToWorldDrawMenuAction";
 	x = 0.469062 * safezoneW + safezoneX;
 	y = 0.511 * safezoneH + safezoneY;
@@ -50,7 +50,7 @@ class MRHOkButton: RscButtonMRHDebugTools
 class MRHCancelButton: RscButtonMRHDebugTools
 {
 	idc = 1601;
-	text = "Close"; //--- ToDo: Localize;
+	text = $STR_MRH_MRHDebugTools_CLOSEBUTT; //--- ToDo: Localize;
     action = "closedialog 0";
 	x = 0.422656 * safezoneW + safezoneX;
 	y = 0.511 * safezoneH + safezoneY;

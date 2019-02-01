@@ -19,7 +19,7 @@ Example(s):
 	if !(isServer) exitWith {};
 	_grpSize = count _groupOfplayers;
 	_vehicleFreeIndexes = [_vehicle]call MRH_fnc_MilsimTools_Core_freeCargoIndexes;
-	if (_vehicleFreeIndexes isEqualTo []) exitWith {diag_log format ["MRH_MoveinCargo no cargo space in %1",_vehicle]};
+	if (_vehicleFreeIndexes isEqualTo []) exitWith {_trace= format ["MRH_MoveinCargo no cargo space in %1",_vehicle];TRACE(_trace)};
 	_cargoSize = count _vehicleFreeIndexes;
 	_groupToSend = [];
 	_groupToStay = [];
@@ -30,7 +30,8 @@ Example(s):
 	} else {_groupToSend = _groupOfplayers};
 _countToSend = count _groupToSend;
 
-diag_log format ["MRH_MoveinCargo group size: %1,cargosize %2,count to send %5, group to send %3, group to stay %4",_grpSize,_cargoSize,_groupToSend,_groupToStay,_countToSend];
+_trace2= format ["MRH_MoveinCargo group size: %1,cargosize %2,count to send %5, group to send %3, group to stay %4",_grpSize,_cargoSize,_groupToSend,_groupToStay,_countToSend];
+TRACE(_trace2);
 
 	for "_i" from 0 to (_countToSend -1) do
 	{

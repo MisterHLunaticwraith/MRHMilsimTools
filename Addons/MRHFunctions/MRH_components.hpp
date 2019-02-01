@@ -45,3 +45,6 @@
 
 //redefines ctrlsize function for this mod
 #define CTRLRSZ(ARG) [03062018,##ARG##] CFUNC(SetCtrlSize)
+
+#define IS_DEBUG ["MRH_MilsimTools_DebugTools_isDebugMode"] call cba_settings_fnc_get
+#define TRACE(ARG) [(##ARG##)] call MRH_fnc_MilsimTools_DebugTools_trace

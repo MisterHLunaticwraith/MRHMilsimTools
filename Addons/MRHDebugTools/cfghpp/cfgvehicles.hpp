@@ -8,7 +8,7 @@ class CAManBase: Man
 		class MRH_DebugTools_Base_Action
 		{
 			
-				displayName = "Debug Tools";
+				displayName = $STR_MRH_MRHDebugTools_DBGTOOLSTITLE;
 				condition = "";
 				exceptions[] = {"isNotInside", "notOnMap", "isNotSitting"};
 				statement = "";
@@ -17,7 +17,7 @@ class CAManBase: Man
 
 				class MRH_DT_DrawTriggers
 				{
-					displayName = "Draw triggers";
+					displayName = $STR_MRH_MRHDebugTools_DRAWTRIGGERS;
 					condition = QCFUNC(conditionsDebugAction);
 					exceptions[] = {"isNotInside", "notOnMap", "isNotSitting"};
 					statement = QCFUNC(drawAllTriggers);
@@ -26,7 +26,7 @@ class CAManBase: Man
 
 				class MRH_DT_UnDrawTriggers
 				{
-					displayName = "Stop drawing triggers";
+					displayName = $STR_MRH_MRHDebugTools_STOPDRAWTRIGGERS;
 					condition = QCFUNC(conditionsDebugAction);
 					exceptions[] = {"isNotInside", "notOnMap", "isNotSitting"};
 					statement = QCFUNC(undrawAllTriggers);
@@ -35,7 +35,7 @@ class CAManBase: Man
 
 				class MRH_DT_DrawSelections
 				{
-					displayName = "Draw selections for cursor target";
+					displayName = $STR_MRH_MRHDebugTools_DRAWSELCURT;
 					condition = QCFUNC(conditionsDebugAction);
 					exceptions[] = {"isNotInside", "notOnMap", "isNotSitting"};
 					statement = QCFUNC(selectionPositionsDrawAction);
@@ -44,7 +44,7 @@ class CAManBase: Man
 
 				class MRH_DT_UnDrawSeelections
 				{
-					displayName = "Undraw all selections positions";
+					displayName = $STR_MRH_MRHDebugTools_UNDRAWALLSELSPOS;
 					condition = QCFUNC(conditionsDebugAction);
 					exceptions[] = {"isNotInside", "notOnMap", "isNotSitting"};
 					statement = QCFUNC(undrawSelectionPositions);
@@ -53,7 +53,7 @@ class CAManBase: Man
 
 				class MRH_DT_DrawModelToWorld
 				{
-					displayName = "Draw modelToWorld guides for cursor target";
+					displayName = $STR_MRH_MRHDebugTools_DRAWMTWG;
 					condition = QCFUNC(conditionsDebugAction);
 					exceptions[] = {"isNotInside", "notOnMap", "isNotSitting"};
 					statement = QCFUNC(modelToWorldDrawAction);
@@ -62,7 +62,7 @@ class CAManBase: Man
 
 				class MRH_DT_UndrawAllMDT
 				{
-					displayName = "Undraw all model to world positions";
+					displayName = $STR_MRH_MRHDebugTools_UNDRAWMTW;
 					condition = QCFUNC(conditionsDebugAction);
 					exceptions[] = {"isNotInside", "notOnMap", "isNotSitting"};
 					statement = QCFUNC(undrawAllModelToWorldPositions);

@@ -23,7 +23,7 @@ class MRHBack: IGUIBackMRHDebugTools
 class MRHLogTitle: RscTextMRHDebugTools
 {
 	idc = 1000;
-	text = "Milsim Tools Debug Log"; //--- ToDo: Localize;
+	text = $STR_MRH_MRHDebugTools_DEBUGLOGTITTLE; //--- ToDo: Localize;
 	x = 0.29375 * safezoneW + safezoneX;
 	y = 0.016 * safezoneH + safezoneY;
 	w = 0.366094 * safezoneW;
@@ -53,7 +53,7 @@ class MRHCloseButton: RscButtonMRHDebugTools
 {
 	idc = 1600;
     action = "closedialog 0";
-	text = "Close"; //--- ToDo: Localize;
+	text = $STR_MRH_MRHDebugTools_CLOSEBUTT; //--- ToDo: Localize;
 	x = 0.304062 * safezoneW + safezoneX;
 	y = 0.951 * safezoneH + safezoneY;
 	w = 0.0876563 * safezoneW;
@@ -62,7 +62,7 @@ class MRHCloseButton: RscButtonMRHDebugTools
 class MRHCopyButton: RscButtonMRHDebugTools
 {
 	idc = 1601;
-	text = "Copy log to clipboard"; //--- ToDo: Localize;
+	text = $STR_MRH_MRHDebugTools_COPYTOCLIPBOARDLOG; //--- ToDo: Localize;
     action = "call MRH_fnc_MilsimTools_DebugTools_logToClipboard;";
 	x = 0.572187 * safezoneW + safezoneX;
 	y = 0.951 * safezoneH + safezoneY;
