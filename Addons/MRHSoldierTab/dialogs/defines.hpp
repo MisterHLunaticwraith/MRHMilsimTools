@@ -220,6 +220,7 @@ class RscTreeMRHSoldierTab
 			colorBorder[] = {0,0,0,1}; // Frame color
 
 			colorBackground[] = {0.2,0.2,0.2,1}; // Fill color
+			widthRailWay = 4;
 			colorSelect[] = {1,0.5,0,1}; // Selected item fill color (when multiselectEnabled is 0)
 			colorMarked[] = {1,0.5,0,0.5}; // Marked item fill color (when multiselectEnabled is 1)
 			colorMarkedSelected[] = {1,0.5,0,1}; // Selected item fill color (when multiselectEnabled is 1)
