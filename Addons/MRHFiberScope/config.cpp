@@ -6,7 +6,8 @@ class CfgPatches {
 		requiredAddons[] = {"MRHMilsimTools"}; //
 	};
 };
-
+#define IS_DEBUG ["MRH_MilsimTools_DebugTools_isDebugMode"] call cba_settings_fnc_get
+#define TRACE(ARG) [(##ARG##)] call MRH_fnc_MilsimTools_DebugTools_trace
 class CfgWeapons
 {
     class CBA_MiscItem;

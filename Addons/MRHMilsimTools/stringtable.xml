@@ -534,6 +534,16 @@
 				<English>Allows you to use a keybind to open your parachute.</English>
 				<French>Autorise l'utilisation d'un raccourci clavier pour l'ouverture du parachute.</French>
 			</Key>
+			<Key ID="STR_MRH_CBA_DebugMode_SettingName">
+				<Original>Debug mode</Original>
+				<English>Debug mode</English>
+				<French>Mode debuggage</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_DebugMode_SettingNameToolTip">
+				<Original>Enables the debug mode, don't forget to uncheck when exporting your mission lest it will be available for everyone</Original>
+				<English>Enables the debug mode, don't forget to uncheck when exporting your mission lest it will be available for everyone</English>
+				<French>Active le débuggage, ne pas oublié de décocher à l'export de la mission où il sera activ pour tout le monde</French>
+			</Key>
 	
 
 
@@ -720,6 +730,16 @@
 				<Original>WARNING :MRH_Zeus Invisible doesn't work in a vehicle</Original>
 				<English>WARNING :MRH_Zeus Invisible doesn't work in a vehicle</English>
 				<French>ATTENTION: MRH_Zeus Invisible ne fonctionne pas si vous êtes dans un véhicule</French>
+			</Key>
+			<Key ID="STR_MRH_DEBUG_TOOLS_KEY">
+				<Original>Open log viewer</Original>
+				<English>Open log viewer</English>
+				<French>Ouvrir le log</French>
+			</Key>
+			<Key ID="STR_MRH_DEBUG_TOOLS_KEYTOOLTIP">
+				<Original>If debug mode is enabled, this will open the log viewer</Original>
+				<English>If debug mode is enabled, this will open the log viewer</English>
+				<French>Si le mod debug est activé, le log sera affiché</French>
 			</Key>
 		</Container>
 

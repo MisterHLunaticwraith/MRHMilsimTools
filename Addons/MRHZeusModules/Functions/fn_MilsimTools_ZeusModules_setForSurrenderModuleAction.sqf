@@ -24,10 +24,11 @@ _message = ctrlText _CTRLMESSAGE;
 
 _trigger = [_unit,_dist,_message, {},_odds] call MRH_fnc_VipSurrender;
 
+/*
 _activation = triggerActivation _trigger;
 _statements = triggerStatements _trigger;
 [[_trigger,_activation,_statements],{params ["_trigger","_activation","_statements"]; _trigger setTriggerActivation _activation; _trigger setTriggerStatements _statements;}] remoteExec ["Call",0,true];
-
+*/
 _trigger setVariable ["MRH_MilsimTools_ZeusModules_SURRENDER_AssociatedLogic",_logic,true];
 _logic setVariable ["MRH_MilsimTools_ZeusModules_SURRENDER_AssociatedTrigger",_trigger,true];
 _unit setVariable ["MRH_MilsimTools_ZeusModules_SURRENDER_AssociatedTriggerAndLogic",[_trigger,_logic],true];

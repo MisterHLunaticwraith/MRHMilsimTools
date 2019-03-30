@@ -10,7 +10,7 @@ call MRH_fnc_MilsimTools_ZeusModules_;
 */
 #include "MRH_C_Path.hpp"
 #include "MRH_MODULE_FUNC_MACROS_INC.sqf"
-
+_altASL = round ([_logic]CFUNC(returnAltitude));
 createDialog "MRHSimpleHalo";
 
 _display =findDisplay 170119;
@@ -26,6 +26,9 @@ _ONBOARDITEMS =CTRLF(1501);
 _AVAILABLEITEMS =CTRLF(1502);
 _OBJECTSAADFORCE =CTRLF(2803);
 _OBJECTSAADALT =CTRLF(1402);
+_MODULEALTTEXT=CTRLF(1028);
+
+_MODULEALTTEXT ctrlSetText format [localize "STR_MRH_MRHMRHZeusModules_LZABOVESEALVLFORMAT",_altASL];
 
 //set default values and fill lists
 

@@ -32,7 +32,7 @@ _trg setTriggerActivation ["ANYPLAYER", "PRESENT", false];
 _trg attachTo [_unit,[0,0,0]];
 _trg setTriggerStatements ["this", 
 "
-[thisTrigger] call MRH_fnc_MilsimTools_Functions_internalVIPTrigger;
+[[thisTrigger],MRH_fnc_MilsimTools_Functions_internalVIPTrigger] remoteExec ['Call',2];
 "
 , ""];
 _trg

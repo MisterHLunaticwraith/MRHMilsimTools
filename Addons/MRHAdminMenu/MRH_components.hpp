@@ -1,5 +1,5 @@
 //Defines list of paths
-#define ROOTPATH "MRHAdminMenu
+#define ROOTPATH "\MRHAdminMenu
 #define SCRIPTPATH(ARG) ROOTPATH\scripts\scr_##ARG"
 #define PAAPATH(ARG) ROOTPATH\paa\##ARG"
 #define CFGPATH(ARG) ROOTPATH\cfgHPP\##ARG"
@@ -35,3 +35,6 @@
 #define COUNT_ALLDEAD count (PLAYERREGISTRY_ALLDEAD)
 #define COUNT_OFFLINE count (PLAYERREGISTRY_OFFLINE)
 #define COUNT_ALIVE count (PLAYERREGISTRY_ALIVE)
+
+#define IS_DEBUG ["MRH_MilsimTools_DebugTools_isDebugMode"] call cba_settings_fnc_get
+#define TRACE(ARG) [(##ARG##)] call MRH_fnc_MilsimTools_DebugTools_trace

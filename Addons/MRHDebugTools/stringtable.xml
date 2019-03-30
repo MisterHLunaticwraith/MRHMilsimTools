@@ -1,0 +1,84 @@
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Project name="MRHDebugTools">
+	<Package name="MRHDebugTools">
+		<Container name="MRH_MRHDebugTools_AllSTrings">
+			<Key ID="STR_MRH_MRHDebugTools_DBGTOOLSTITLE">
+				<Original>Debug Tools</Original>
+				<English>Debug Tools</English>
+				<French>Outils de debug</French>
+			</Key>
+			<Key ID="STR_MRH_MRHDebugTools_DRAWTRIGGERS">
+				<Original>Draw triggers</Original>
+				<English>Draw triggers</English>
+				<French>Dessiner les déclencheurs</French>
+			</Key>
+			<Key ID="STR_MRH_MRHDebugTools_STOPDRAWTRIGGERS">
+				<Original>Stop drawing triggers</Original>
+				<English>Stop drawing triggers</English>
+				<French>Arrêter de dessiner les déclencheurs</French>
+			</Key>
+			<Key ID="STR_MRH_MRHDebugTools_DRAWSELCURT">
+				<Original>Draw selections for cursor target</Original>
+				<English>Draw selections for cursor target</English>
+				<French>Dessiner les sélections de l'objet ciblé</French>
+			</Key>
+			<Key ID="STR_MRH_MRHDebugTools_UNDRAWALLSELSPOS">
+				<Original>Undraw all selections positions</Original>
+				<English>Undraw all selections positions</English>
+				<French>Arrêter de dessiner les sélections</French>
+			</Key>
+			<Key ID="STR_MRH_MRHDebugTools_DRAWMTWG">
+				<Original>Draw modelToWorld guides for cursor target</Original>
+				<English>Draw modelToWorld guides for cursor target</English>
+				<French>Dessiner les guides de position modelToWorld pour l'objet ciblé</French>
+			</Key>
+			<Key ID="STR_MRH_MRHDebugTools_UNDRAWMTW">
+				<Original>Undraw all model to world positions</Original>
+				<English>Undraw all model to world positions</English>
+				<French>Arrêter de dessiner les positions modelToWorld</French>
+			</Key>
+			<Key ID="STR_MRH_MRHDebugTools_DBGWARN">
+				<Original>Warning: debug mode is enabled messages will show here</Original>
+				<English>Warning: debug mode is enabled messages will show here</English>
+				<French>Attention: le mode de débuggage est activé, les messages seront affichés ici</French>
+			</Key>
+			<Key ID="STR_MRH_MRHDebugTools_LATESTREPORTCOL">
+				<Original>Milsim Tools Debug mode, latest report:</Original>
+				<English>Milsim Tools Debug mode, latest report:</English>
+				<French>Milsim Tools mode débuggage, dernier rapport:</French>
+			</Key>
+			<Key ID="STR_MRH_MRHDebugTools_OKBUTT">
+				<Original>Ok</Original>
+				<English>Ok</English>
+				<French>Ok</French>
+			</Key>
+			<Key ID="STR_MRH_MRHDebugTools_CLOSEBUTT">
+				<Original>Close</Original>
+				<English>Close</English>
+				<French>Fermer</French>
+			</Key>
+			<Key ID="STR_MRH_MRHDebugTools_DEBUGLOGTITTLE">
+				<Original>Milsim Tools Debug Log</Original>
+				<English>Milsim Tools Debug Log</English>
+				<French>Milsim Tools, journal de débuggage</French>
+			</Key>
+			<Key ID="STR_MRH_MRHDebugTools_COPYTOCLIPBOARDLOG">
+				<Original>Copy log to clipboard</Original>
+				<English>Copy log to clipboard</English>
+				<French>Copier le journal dans le presse-papier</French>
+			</Key>
+			<Key ID="STR_MRH_MRHDebugTools_">
+				<Original></Original>
+				<English></English>
+				<French></French>
+			</Key>
+			<Key ID="STR_MRH_MRHDebugTools_">
+				<Original></Original>
+				<English></English>
+				<French></French>
+			</Key>
+			
+		</Container>
+	</Package>
+</Project>
