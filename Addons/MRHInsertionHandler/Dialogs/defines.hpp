@@ -1600,6 +1600,7 @@ class RscMapControlMRHInsertionInterface {
 	w = "SafeZoneWAbs";
 	h = "SafeZoneH - 1.5 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 	shadow = 0;
+	widthRailWay = 4;
 	ptsPerSquareSea = 5;
 	ptsPerSquareTxt = 20;
 	ptsPerSquareCLn = 10;

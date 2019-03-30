@@ -12,7 +12,7 @@ call ;
 params ["_trigger"];
 if !(isServer) exitWith {};
 
-_data = _trigger getVariable ('MRH_Strigger_' + str _trigger);
+_data = _trigger getVariable 'MRH_Strigger_SurrenderData';
 _unit = _data select 0;
 if (!alive _unit) exitWith {diag_log format ['MRH_surrender_function: unable to trigger because unit %1 was dead',_unit];_logic = _trigger getVariable ["MRH_MilsimTools_ZeusModules_SURRENDER_AssociatedLogic",objNull];
 	deleteVehicle _logic; deleteVehicle _trigger;};

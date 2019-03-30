@@ -10,7 +10,7 @@ call MRH_fnc_MilsimTools_DebugTools_trace;
 */
 #include "MRH_C_Path.hpp"
 params [["_message", "no message", [""]]];
-
+if (is3DEN) exitWith {};
 // where the func was called from will set the log's name
 _origin =  _fnc_scriptNameParent;
 if (_origin == "MRH_fnc_MilsimTools_DebugTools_trace") then {_origin = "MRH_MilsimTools_UnknownFunction :"} else {_origin = _origin + ": ";};
