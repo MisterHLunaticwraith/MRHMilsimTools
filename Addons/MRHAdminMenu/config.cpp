@@ -47,3 +47,12 @@ class cfgMarkers
 		scope = 0;
 	};
 };
+class CfgUnitInsignia
+{
+	class MRH_reset
+	{
+		author = "";
+		displayName = "";
+		texture = "";
+	};
+};
