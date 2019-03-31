@@ -40,4 +40,4 @@ switch (true) do
 			
 			
 	};
-[_object]spawn MRH_fnc_MilsimTools_Core_ensureSafeLanding;
+[_object] FUNC(ensureSafeLanding);

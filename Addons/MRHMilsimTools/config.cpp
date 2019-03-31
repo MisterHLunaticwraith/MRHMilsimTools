@@ -52,12 +52,12 @@ class Extended_PostInit_EventHandlers
    
    class MRHMilsimTools_Core_InitPlayerLocal
    {
-      clientInit = "call compile preProcessFileLineNumbers '\MRHMilSimTools\Functions\InitFunctions\fn_MilsimTools_Core_InitPlayerLocal.sqf'";
+      clientInit = "call compile preProcessFileLineNumbers '\MRHMilSimTools\Functions\InitFunctions\XEHclient.sqf'";
    };
    
    class MRHMilsimTools_Core_PlayersRegistry
    {
-      serverInit = "call compile preProcessFileLineNumbers '\MRHMilSimTools\Functions\InitFunctions\fn_MilsimTools_Core_PlayersRegistry.sqf'";
+      serverInit = "call compile preProcessFileLineNumbers '\MRHMilSimTools\Functions\InitFunctions\XEHserver.sqf'";
    };
    
 };

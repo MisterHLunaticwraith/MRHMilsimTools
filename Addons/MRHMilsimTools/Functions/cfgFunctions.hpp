@@ -7,6 +7,10 @@ class MRH // Defines the "owner"
 	file = "\MRHMilsimTools\Functions\InitFunctions";
 	    class MilsimTools_Core_SetPlayerIntel
 		{};
+		class MilsimTools_Core_PlayersRegistry
+		{};
+		class MilsimTools_Core_InitPlayerLocal
+		{};
 		
 	};
 	class CoreFunctions// category

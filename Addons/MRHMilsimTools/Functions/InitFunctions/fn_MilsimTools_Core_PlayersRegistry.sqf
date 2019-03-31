@@ -17,90 +17,78 @@ Example(s):
 called on server only by cba post init eventhandlers
 */
 //spawn: wait for first player to init before starting
-[] spawn {
-	#include "MRH_C_Path.hpp"
-	[] spawn 
-	{
-		//waits until player are created at mission start
-		waitUntil {!(allPlayers isEqualTo [])};
-		sleep 30;
-		_listConnectedAtMissionStart = FUNC(GenAllOnline);
 
+#include "MRH_C_Path.hpp"
 
-		missionNamespace setVariable ["MRH_MilsimTools_Core_allPlayersAtInit",_listConnectedAtMissionStart,true];
-		missionNamespace setVariable ["MRH_MilsimTools_Core_allAlivePlayers",_listConnectedAtMissionStart,true];
-	};
 	
 	// adds mission EH when a player disconnects
-	addMissionEventHandler ["PlayerDisconnected", {
-		params ["_id", "_uid", "_name", "_jip", "_ownerID"];
-				//updates the list of disconnected players
-		_listDisconnected = missionNamespace getVariable ["MRH_MilsimTools_Core_allDisconnectedPlayers",[]];
-		_playerData = [_uid,_name,_ownerID];
-		_listDisconnected pushBackUnique _playerData;
-		missionNamespace setVariable ["MRH_MilsimTools_Core_allDisconnectedPlayers",_listDisconnected,true];
-		
-		//if the player had died when disconnecting they will be removed from the list of deadPlayers
-		_deadPlayers = missionNamespace getVariable ["MRH_MilsimTools_Core_allCurrentlyDeadPlayers",[]];
-		_newAllDeadPlayers = +_deadPlayers;
-			if !(_deadPlayers isEqualTo []) then 
+addMissionEventHandler ["PlayerDisconnected", 
+{
+	params ["_id", "_uid", "_name", "_jip", "_ownerID"];
+			//updates the list of disconnected players
+	_listDisconnected = missionNamespace getVariable ["MRH_MilsimTools_Core_allDisconnectedPlayers",[]];
+	_playerData = [_uid,_name,_ownerID];
+	_listDisconnected pushBackUnique _playerData;
+	missionNamespace setVariable ["MRH_MilsimTools_Core_allDisconnectedPlayers",_listDisconnected,true];
+	
+	//if the player had died when disconnecting they will be removed from the list of deadPlayers
+	_deadPlayers = missionNamespace getVariable ["MRH_MilsimTools_Core_allCurrentlyDeadPlayers",[]];
+	_newAllDeadPlayers = +_deadPlayers;
+		if !(_deadPlayers isEqualTo []) then 
+	{
 		{
-			{
-			if (_uid == _x select 0) then {_newAllDeadPlayers deleteAt (_newAllDeadPlayers find _x);};
-			} forEach _deadPlayers;
-			missionNamespace setVariable ["MRH_MilsimTools_Core_allCurrentlyDeadPlayers",_newAllDeadPlayers,true];
-		};
-		
-		[] spawn {
-		//add delay for disconnecting before calling function
-			sleep 3;
-			call MRH_fnc_MilsimTools_Core_GenAliveAndDead;
-			Diag_Log "MRH_MilsimToolsCore PlayerDisconnected EH fired";
-			};
-	}];
+		if (_uid == _x select 0) then {_newAllDeadPlayers deleteAt (_newAllDeadPlayers find _x);};
+		} forEach _deadPlayers;
+		missionNamespace setVariable ["MRH_MilsimTools_Core_allCurrentlyDeadPlayers",_newAllDeadPlayers,true];
+	};
+	//add delay for disconnecting before calling function
+	[{call MRH_fnc_MilsimTools_Core_GenAliveAndDead; Diag_Log "MRH_MilsimToolsCore PlayerDisconnected EH fired";},[], 3] call CBA_fnc_waitAndExecute;
+
+}];
 
 	// adds mission EH when a player Connects
 
-	addMissionEventHandler ["PlayerConnected", {
-		#include "MRH_C_Path.hpp"
-		params ["_id", "_uid", "_name", "_jip", "_ownerID"];
-		
-
-		// if the player had disconnected before he is removed from the list of disconnected players
-		_listDisconnected = missionNamespace getVariable ["MRH_MilsimTools_Core_allDisconnectedPlayers",[]];
-		_newListDisconnected = _listDisconnected;
-		if !(_listDisconnected isEqualTo []) then 
-		{
-			{
-			if (_uid == _x select 0) then {_newListDisconnected deleteAt (_newListDisconnected find _x);};
-			} forEach _listDisconnected;
-			missionNamespace setVariable ["MRH_MilsimTools_Core_allDisconnectedPlayers",_newListDisconnected,true];
-		};
-		//updates list with new deadplayer ownerID
-		_allDeadPlayersInclude = missionNamespace getVariable ["MRH_MilsimTools_Core_allIncludingDisconnectedDeadPlayers",[]];
-
-		_deadPlayersNew = +_allDeadPlayersInclude;		
-		{
-
-			if (_uid == _x select 0) then 
-			{
-			_deadPlayersNew deleteAt (_deadPlayersNew find  _x);
-			_playerData = [_uid,_name,_ownerID];
-			_deadPlayersNew pushbackUnique _playerData;
-			};
-		;
-		} forEach _allDeadPlayersInclude; 
-
-missionNamespace setVariable ["MRH_MilsimTools_Core_allIncludingDisconnectedDeadPlayers",_deadPlayersNew,true];
-		call MRH_fnc_MilsimTools_Core_SetPlayerIntel; //Updates player intel
-		Diag_Log "MRH_MilsimToolsCore Player Connected EH Fired";
-		
-		
-	}];
+addMissionEventHandler ["PlayerConnected", 
+{
+	#include "MRH_C_Path.hpp"
+	params ["_id", "_uid", "_name", "_jip", "_ownerID"];
 	
-	//delete bodies of disconnected players
-	addMissionEventHandler ["HandleDisconnect", 
+
+	// if the player had disconnected before he is removed from the list of disconnected players
+	_listDisconnected = missionNamespace getVariable ["MRH_MilsimTools_Core_allDisconnectedPlayers",[]];
+	_newListDisconnected = _listDisconnected;
+	if !(_listDisconnected isEqualTo []) then 
 	{
+		{
+		if (_uid == _x select 0) then {_newListDisconnected deleteAt (_newListDisconnected find _x);};
+		} forEach _listDisconnected;
+		missionNamespace setVariable ["MRH_MilsimTools_Core_allDisconnectedPlayers",_newListDisconnected,true];
+	};
+	//updates list with new deadplayer ownerID
+	_allDeadPlayersInclude = missionNamespace getVariable ["MRH_MilsimTools_Core_allIncludingDisconnectedDeadPlayers",[]];
+
+	_deadPlayersNew = +_allDeadPlayersInclude;		
+	{
+
+		if (_uid == _x select 0) then 
+		{
+		_deadPlayersNew deleteAt (_deadPlayersNew find  _x);
+		_playerData = [_uid,_name,_ownerID];
+		_deadPlayersNew pushbackUnique _playerData;
+		};
+	;
+	} forEach _allDeadPlayersInclude; 
+
+	missionNamespace setVariable ["MRH_MilsimTools_Core_allIncludingDisconnectedDeadPlayers",_deadPlayersNew,true];
+	call MRH_fnc_MilsimTools_Core_SetPlayerIntel; //Updates player intel
+	Diag_Log "MRH_MilsimToolsCore Player Connected EH Fired";
+	
+	
+}];
+	
+//delete bodies of disconnected players
+addMissionEventHandler ["HandleDisconnect", 
+{
 	params ["_unit", "_id", "_uid", "_name"];
 	_deleteSetting = ["MRH_MilsimTools_Delete_disconnected_body"] call cba_settings_fnc_get;
 	if (_deleteSetting) then 
@@ -108,5 +96,20 @@ missionNamespace setVariable ["MRH_MilsimTools_Core_allIncludingDisconnectedDead
 		deleteVehicle _unit;
 		};
 	Diag_Log "MRH_MilsimToolsCore HandleDisconnect EH fired";
-	}];
-};
+}];
+
+//waits 30 seconds and updates players at init & alive players list
+[{!(allPlayers isEqualTo [])},
+	{
+		[
+			{
+				_listConnectedAtMissionStart = FUNC(GenAllOnline);
+				missionNamespace setVariable ["MRH_MilsimTools_Core_allPlayersAtInit",_listConnectedAtMissionStart,true];
+				missionNamespace setVariable ["MRH_MilsimTools_Core_allAlivePlayers",_listConnectedAtMissionStart,true];
+			},
+			[], 
+			30
+		] call CBA_fnc_waitAndExecute;
+	}
+] call CBA_fnc_waitUntilAndExecute;
+TRACE("MRH MilsimTools serverInit PlayersRegistry Initialized");
