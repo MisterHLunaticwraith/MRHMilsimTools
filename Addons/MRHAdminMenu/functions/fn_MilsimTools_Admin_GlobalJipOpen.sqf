@@ -15,8 +15,9 @@ call MRH_fnc_MilsimTools_Admin_GlobalJipOpen;
 	if (_condition) then 
 	{
 		["MRH_AllowedRespawn",[localize "STR_MRH_ADM_NOT_WILLJIP"]] call BIS_fnc_showNotification;
-		sleep 3;
-		call MRH_fnc_MilsimTools_Jip_Open_Menu;
+		
+		[{call MRH_fnc_MilsimTools_Jip_Open_Menu;}, [], 3] call CBA_fnc_waitAndExecute;
+		
 	};
 }
-] RemoteExec ["Spawn",[0,-2] select isDedicated,true];
+] RemoteExec ["Call",[0,-2] select isDedicated,false];
