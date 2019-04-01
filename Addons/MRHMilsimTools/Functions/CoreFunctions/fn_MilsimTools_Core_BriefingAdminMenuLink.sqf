@@ -9,22 +9,19 @@ Example(s):
 call MRH_fnc_MilsimTools_Core_BriefingAdminMenuLink ;
 */
 
-[] spawn {
-WaitUntil {(player == player) && (!isNull (findDisplay 46))};
-	if (serverCommandAvailable "#kick") then 
-	{
+if (serverCommandAvailable "#kick") then 
+{
 
-		_briefing = "<br/>" 
-		+ localize "STR_MRH_MS_BRIEFINGADDINFO" 
-		+"<br/><font size='18'>"
-		+ localize"STR_MRH_MS_BRIEFINGADDTITLE"
-		+"</font><br/>"
-		+"|-"
-		+" <execute expression='call MRH_fnc_MilsimTools_Admin_OpenMenu;'>"
-		+ localize "STR_MRH_MS_BRIEFINGADDTEXT"
-		+"</execute><br/>";
-		player createDiarySubject ["MRHACC","MRH Milsim Tools ADMIN"];
-		player createDiaryRecord ["MRHACC", [localize"STR_MRH_MS_BRIEFINGADDTITLE",_briefing]];
+	_briefing = "<br/>" 
+	+ localize "STR_MRH_MS_BRIEFINGADDINFO" 
+	+"<br/><font size='18'>"
+	+ localize"STR_MRH_MS_BRIEFINGADDTITLE"
+	+"</font><br/>"
+	+"|-"
+	+" <execute expression='call MRH_fnc_MilsimTools_Admin_OpenMenu;'>"
+	+ localize "STR_MRH_MS_BRIEFINGADDTEXT"
+	+"</execute><br/>";
+	player createDiarySubject ["MRHACC","MRH Milsim Tools ADMIN"];
+	player createDiaryRecord ["MRHACC", [localize"STR_MRH_MS_BRIEFINGADDTITLE",_briefing]];
 
-	};
 };

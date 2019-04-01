@@ -21,4 +21,4 @@ _playerParams = [];
 } forEach _allMRHplayers;
 if (_playerParams isEqualTo []) ExitWith {Diag_Log format ["MRH_MilsimTools, player with UID %1 wasn't found in registry", str _uid]; false};
 _ownerID = _playerParams select 2;
-[_passedParams,_code] RemoteExec ["Spawn",_ownerID];
+[_passedParams,_code] RemoteExec ["Call",_ownerID];

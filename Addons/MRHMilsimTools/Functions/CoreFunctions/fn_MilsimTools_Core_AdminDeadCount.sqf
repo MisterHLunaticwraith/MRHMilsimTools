@@ -9,20 +9,21 @@ Example(s): No
 call MRH_fnc_MilsimTools_Core_AdminDeadCount;
 */
 #include "MRH_C_Path.hpp"
-[] spawn {
-	sleep 2; //leave some time vor the variables to be set
+[{
+
 	_percentage = COUNT_CURDEAD/COUNT_ONLINE*100;
 	_percentage2 =  COUNT_ALLDEAD/(COUNT_ONLINE + COUNT_OFFLINE)*100;
 	if (serverCommandAvailable "#kick") then 
 	{
 	_showHint = ["MRH_MilsimTools_ShowAdminDeadHint"] call cba_settings_fnc_get;
 	_AdminCasualtiesCap = ["MRH_MilsimTools_AdminCasualtiesCap"] call cba_settings_fnc_get;
-	if (_showHint) then
-		{
-			hint format [localize "STR_MRH_MS_ADMINCAPHINT",_percentage,_percentage2];
-		};
+		if (_showHint) then
+			{
+				hint format [localize "STR_MRH_MS_ADMINCAPHINT",_percentage,_percentage2];
+			};
 
-	if (_percentage >= _AdminCasualtiesCap) then {call MRH_fnc_MilsimTools_Admin_OpenMenu;};
+		if (_percentage >= _AdminCasualtiesCap) then {call MRH_fnc_MilsimTools_Admin_OpenMenu;};
 
 	};
-};
+}, [], 2] call CBA_fnc_waitAndExecute;
+//leave some time vor the variables to be set
