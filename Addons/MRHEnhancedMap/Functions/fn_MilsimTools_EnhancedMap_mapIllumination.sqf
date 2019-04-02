@@ -46,21 +46,21 @@ call MRH_fnc_MilsimTools_EnhancedMap_mapIllumination;
  */
  _useAceLighting = ["MRH_MilsimTools_Map_FoldUseAceLight"] call cba_settings_fnc_get;
  if !(_useAceLighting) ExitWith {};
- [] spawn {
- while {player getVariable ["MRH_EnhancedMap_FoldedMapDisplayOpen",false]} do 
-	{
-		_determineMapLight = [player] call ACE_map_fnc_determineMapLight;
+
+ _condition = {MRH_player getVariable ["MRH_EnhancedMap_FoldedMapDisplayOpen",false]}; 
+_codeToRun =	{
+		_determineMapLight = [MRH_player] call ACE_map_fnc_determineMapLight;
 		_needsApply = _determineMapLight select 0;
 		if !(_needsApply) ExitWith {};
 		_lightLevel = _determineMapLight select 1;
 		_display = uiNamespace getVariable "MRHFoldMap";
 		_ctrl = (_display displayCtrl 1100);
 		_mapZoomlevel = ["MRH_MilsimTools_Map_ZoomRatio"] call cba_settings_fnc_get;
-		_currentMapCenter = player getVariable ['MRH_EHMAP_Mapsection',[worldSize / 2, worldsize / 2, 0]];
+		_currentMapCenter = MRH_player getVariable ['MRH_EHMAP_Mapsection',[worldSize / 2, worldsize / 2, 0]];
 		//_currentMapCenter = _ctrl ctrlMapScreenToWorld [0.5, 0.5];
 		//_mapZoomlevel = ctrlMapScale _ctrl;
-		_lightLevel = [(_lightLevel select 0),(_lightLevel select 1),(_lightLevel select 2),(_lightLevel select 3)/1.5];
+		_lightLevel = [(_lightLevel select 0),(_lightLevel select 1),(_lightLevel select 2),(_lightLevel select 3)];
 		[_ctrl,_mapZoomlevel,_currentMapCenter,_lightLevel] call ace_map_fnc_simulateMapLight;
 	};
 
-};
+[_codeToRun,[],{},_condition] CFUNC(conditionalPFEH);

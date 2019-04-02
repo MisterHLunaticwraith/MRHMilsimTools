@@ -12,6 +12,6 @@ call MRH_fnc_MilsimTools_EnhancedMap_;
 _display = uiNamespace getVariable "MRHFoldMap";
 _ctrl = (_display displayCtrl 1100);
 _zoomRatio = ["MRH_MilsimTools_Map_ZoomRatio"] call cba_settings_fnc_get;
-_ctrl ctrlmapAnimAdd [0, _zoomRatio, player getVariable ['MRH_EHMAP_Mapsection',[worldSize / 2, worldsize / 2, 0]]]; 
+_ctrl ctrlmapAnimAdd [0, _zoomRatio, MRH_player getVariable ['MRH_EHMAP_Mapsection',[worldSize / 2, worldsize / 2, 0]]]; 
 ctrlmapAnimCommit _ctrl;
 FUNC(playRandomSound);

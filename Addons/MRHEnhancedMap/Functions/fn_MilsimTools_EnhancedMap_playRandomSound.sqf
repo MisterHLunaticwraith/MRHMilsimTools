@@ -18,5 +18,5 @@ _allsoundPaths =
 	"MRHEnhancedMap\MapFoldSounds\MRH_EHM_Mapfold_5.ogg"
 ];
 _soundToPlay = selectRandom _allsoundPaths;
-playSound3D [_soundToPlay, player];
+playSound3D [_soundToPlay, MRH_player];
 true
