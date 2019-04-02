@@ -84,13 +84,20 @@ _missionInfoCtrl = FDIS(1101);
 _missionInfoCtrl ctrlSetStructuredText parsetext _missiontext;
 
 //disableSerialization;
-[] spawn {
-	_CtrlMissionTime = FDIS(1100);
-	while {ctrlShown _CtrlMissionTime} do 
-		{
-		_formatedTime = [time/3600,"HH:MM:SS"] call BIS_fnc_timeToString;
+
+_CtrlMissionTime = FDIS(1100);
+
+[{
+	params ["_ctrlMissionTime"];
+	_formatedTime = [time/3600,"HH:MM:SS"] call BIS_fnc_timeToString;
 		_stringfinal = "<t size ='0.8'>"+ (localize "STR_MRH_FILL_MS_PAGE_MissionTitleName") + " "+"<t color='#ffa42d'>" + missionname + "</t></t>"+ "<br/>" + " "+ "<t size ='0.7'>" + (localize "STR_MRH_FILL_MS_PAGE_TimeSpentMissStart")+ " " + "<t color='#26fc0a'>" + _formatedTime + "</t>";
 		_CtrlMissionTime ctrlSetStructuredText parsetext _stringfinal;
-		sleep 1;
-		};
-};
+},
+[_ctrlMissionTime],
+{},
+{
+	params ["_ctrlMissionTime"];
+	ctrlShown _CtrlMissionTime
+},
+1
+] CFUNC(conditionalPFEH);
