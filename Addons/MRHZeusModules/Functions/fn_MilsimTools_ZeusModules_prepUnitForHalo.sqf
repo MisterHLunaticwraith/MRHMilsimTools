@@ -18,6 +18,13 @@ _unit addGoggles "MRH_HaloMask";
 
 _hasBPOC = false;
 if ("zade_boc" in activatedAddons) then {_hasBPOC = true};
-if (_hasBPOC) then {[_unit] call zade_boc_fnc_actionOnChest;} else {[_unit]CFUNC(paraRemoveBackPack);[_unit] spawn MRH_fnc_MilsimTools_Core_paraRestoreBackpack;};
-sleep 1;
-_unit addBackPack "MRH_AADEquippedParachute";
+if (_hasBPOC) then {[_unit] call zade_boc_fnc_actionOnChest;} else {[_unit]CFUNC(paraRemoveBackPack);[_unit] CFUNC(paraRestoreBackpack);};
+
+
+[
+    {
+       (_this select 0) addBackPack "MRH_AADEquippedParachute";
+    }, 
+    [_unit], 
+    1
+] call CBA_fnc_waitAndExecute;
