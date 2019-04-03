@@ -8,8 +8,10 @@ Parameters:
 Example(s):
 call MRH_fnc_MilsimTools_AddonName_;
 */
+//script left to rune in schedule env for now
 #include "MRH_C_Path.hpp"
-params [["_coef",1]];
+_this spawn {
+params [["_coef",1,[1]]];
 if (_coef <0.1) exitWith {player setDamage 1};
 _hypoHeight = ["MRH_MilsimTools_HaloGear_hypoxiaAltitude"] call cba_settings_fnc_get;	
 #define EXITIF if (FUNC(hasProtectiveGear) || (((getPosASL player) select 2)< _hypoHeight)) exitWith {player setVariable ["MRH_hypoxia_StoppedSuffocating",true];}
@@ -92,4 +94,5 @@ player setVariable ["MRH_hypoxia_StoppedSuffocating",true];
 sleep (70*_coef);
 EXITIF;
 _coef = _coef - 0.1;
-[_coef] spawn MRH_fnc_MilsimTools_HaloGear_hypoxiaEffects;
+[_coef] FUNC(hypoxiaEffects);
+};

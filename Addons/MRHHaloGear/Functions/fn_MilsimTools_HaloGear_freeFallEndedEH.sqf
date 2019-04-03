@@ -11,8 +11,11 @@ call MRH_fnc_MilsimTools_AddonName_;
 #include "MRH_C_Path.hpp"
 if !(hasInterface) exitWith {};
 
-_EH = [] spawn {
-waitUntil {!([player] call MRH_fnc_MilsimTools_HaloGear_isFreeFalling)};
-["MRH_freefallEnded_eh", [player]] call CBA_fnc_localEvent;
-FUNC(startedFreeFallEH);
-};
+[
+    {!([player] FUNC(isFreeFalling))}, 
+    {
+		["MRH_freefallEnded_eh", [player]] call CBA_fnc_localEvent;
+		FUNC(startedFreeFallEH);
+	}, 
+    []
+] call CBA_fnc_waitUntilAndExecute;

@@ -12,7 +12,7 @@ call MRH_fnc_MilsimTools_HaloGear_;
 (_this select 0 ) params ["_display","_key"];
 //systemChat str _display;
 _object = _display getVariable ["MRH_AAD_InterfaceHandlingObject",objNull];
-_object setVariable ['MRH_HaloGear_AADOpening_alt',ctrlText 1400]; hint format [localize 'STR_MRH_MRHHaloGear_AADHint',(ctrlText 1400)];
+_object setVariable ['MRH_HaloGear_AADOpening_alt',ctrlText 1400,true]; hint format [localize 'STR_MRH_MRHHaloGear_AADHint',(ctrlText 1400)];
 if !(isPlayer _object) then 
 {
 	//if is not a player, script must be handled by the server

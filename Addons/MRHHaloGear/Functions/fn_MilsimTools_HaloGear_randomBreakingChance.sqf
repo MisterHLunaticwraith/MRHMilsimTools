@@ -13,5 +13,12 @@ if (goggles player != "MRH_HaloMask") exitWith {};
 _odds = ["MRH_MilsimTools_HaloGear_haloMaskBreakingChancePerc"] call cba_settings_fnc_get;
 _seed = [1,101] call BIS_fnc_randomInt;
 if (_seed > _odds) exitWith {};
-sleep random [4,10,25];
-[] spawn MRH_fnc_MilsimTools_HaloGear_maskBreakingAnim;
+
+[
+    {
+        FUNC(maskBreakingAnim);
+    }, 
+    [], 
+    (random [4,10,25])
+] call CBA_fnc_waitAndExecute;
+

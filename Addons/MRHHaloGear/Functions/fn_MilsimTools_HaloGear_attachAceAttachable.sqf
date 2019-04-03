@@ -17,5 +17,9 @@ if (_toAttach == "") then {_toAttach = _attached};
 
 _IRG = _toAttach createVehicle (position vehicle player); 
 _IRG attachto [vehicle player, [-0.2,0,0.6]];
-[_IRG] spawn {waitUntil {isNull (objectParent player)};params ["_attachment"]; deleteVehicle _attachment};
 
+[
+    {isNull (objectParent player)}, 
+    {params ["_attachment"]; deleteVehicle _attachment}, 
+    [_IRG]
+] call CBA_fnc_waitUntilAndExecute;
