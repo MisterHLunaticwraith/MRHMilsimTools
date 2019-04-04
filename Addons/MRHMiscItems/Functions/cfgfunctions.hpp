@@ -18,6 +18,12 @@ class MRH // Defines the "owner"
 		{};
 		class MilsimTools_MiscItems_scannerCanBeHackedInit
 		{};
+		class MilsimTools_MiscItems_UnfoldedMatInit
+		{};
+		class MilsimTools_MiscItems_ReturnMatColor
+		{};
+		class MilsimTools_MiscItems_unfoldMat
+		{};
 	};
 	
 };

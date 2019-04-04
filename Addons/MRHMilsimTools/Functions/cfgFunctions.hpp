@@ -125,6 +125,8 @@ class MRH // Defines the "owner"
 		{};
 		class MilsimTools_Core_conditionalPFEH
 		{};
+		class MilsimTools_Core_addItem
+		{};
 		/*
 		class MilsimTools_Core_
 		{};
