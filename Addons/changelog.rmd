@@ -1,3 +1,22 @@
+Changelog:
+
+MRH Milsim Tools version : v.1.16.9
+
+-Code optimization: started to move conde to unscheduled environment only for addons: Core, Zeus Modules, Halo Gear, Admin Menu
+-Added unfoldable/draggable shooting mat that flattens grass.
+-Elevator function can now be used by zeus remote controlled units.
+-Fixed Folded map Ace Illumination
+-Enhanced map can now be used by zeus controlled units.
+-Fixed: Admin Menu heal all players no longer JIP. (Won't spam arriving players)
+-Tweaked: Changing a remote player's gear will result in remote player receiving a notification.
+-Tweaked: Unit insignia set with BIS_fnc_setUnitInsignia will be preserved.
+-Added: cba local event when gear is changed: MRH_admin_menu_playerloadoutchanged_eh local to the admin's machine. Parameters passed to the event: [admin player, remote player,old loadout, newloadout]
+-Fixed widthRailWay error on all map controls
+-Fixed missing textures on HALO mask, AAD, Elevator button (thx Diveyez for the reports)
+-Fixed VIP surrender
+-Fixed Scanner Ace Actions not working since last ACE update
+-Fixed CAS support (thx Larrow)
+-Vehicle spawner should display  RHS Mk V patrol boat in maritime spawns
 ///////////////////////////////////////////////////////////////////////////////////
 Changelog:
 
