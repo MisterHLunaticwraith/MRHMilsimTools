@@ -10,6 +10,7 @@ called from cba post init eventhandlers, clientside only
 MRH_fnc_MilsimTools_Core_InitPlayerLocal;
 */
 #include "MRH_C_Path.hpp"
+TRACE("Player initialized InitPlayerLocal starting");
 FUNC(BriefingAdminMenuLink);
 //======init for the Has died variable
 player setVariable ["MRH_MilsimTools_Core_HasDied", false, true];
@@ -18,21 +19,13 @@ FUNC(AddBriefingRoster);
 _mapKeepSetting = ["MRH_MilsimTools_Rmv_map_nolead"] call cba_settings_fnc_get;
 if (_mapKeepSetting) then 
 {
-	[] spawn 
-	{
-	waitUntil {(player == player) && (!isNull (findDisplay 46))};
 	if (!isFormationLeader player) then {player unlinkItem "ItemMap";};
-	};
 };
 // play cutcene
 _cutSceneSetting = ["MRH_MilsimTools_PlayIntro_ToPlayer"] call cba_settings_fnc_get;
 if (_cutSceneSetting) then 
 {
-	[] spawn 
-	{
-	waitUntil {(player == player) && (!isNull (findDisplay 46))};
 	call MRH_fnc_MilsimTools_Core_CutsceneToPlayer;
-	};
 };
 
 //===adds eventHandler when player is killed
@@ -66,32 +59,29 @@ if (didJip) then {
 	// if so takes appropriate measures
 	if (_playerHasDiedAndReconnected) then
 	{
-	[] spawn 
-		{	waitUntil {(player == player) && (!isNull (findDisplay 46))};
+
 			_AdminPref = ["MRH_MilsimTools_AllowDeadReco"] call cba_settings_fnc_get;
 			if (_AdminPref) then 
 			{
 			
 			["MRH_SpawnedDead",[localize "STR_MRH_MS_SPAWNDEADMESSAGE"]] call BIS_fnc_showNotification;
-			sleep 10;
-			player setDamage 1;
+			[{player setDamage 1;},[], 10] call CBA_fnc_waitAndExecute;
+			
 			};
-		};
+	
 		
 	}
 	else
 	{
 	Diag_log format ["MRHMilsimTools Core -Player %1 didJip status %2 - Jip Menu called",str player, str didJip];
 	// if not calls the Jip Menu
-	[] spawn 
-		{	
-		waitUntil {(player == player) && (!isNull (findDisplay 46))};
+
 		_adminJipPref = ["MRH_MilsimTools_Jip_MenuAllow"] call cba_settings_fnc_get;
 		if (_adminJipPref) then 
 			{
 				call MRH_fnc_MilsimTools_Jip_Open_Menu;
 			};
-		};
+		
 	};
 };
 _reinitUponRespawn = ["MRH_MilsimTools_ResetHasDiedOnRespawn"] call cba_settings_fnc_get;
@@ -106,7 +96,7 @@ if (_reinitUponRespawn) then {
 
 };
 //ReRegister just in case
-[] spawn {
-	waitUntil {(player == player) && (!isNull (findDisplay 46))};
-	[[],MRH_fnc_MilsimTools_Core_GenAliveAndDead] RemoteExec ["Call",0];
-};
+
+[[],MRH_fnc_MilsimTools_Core_GenAliveAndDead] RemoteExec ["Call",0];
+
+TRACE("Player initialized InitPlayerLocal Done");

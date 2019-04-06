@@ -192,6 +192,31 @@
 				<English>Variable name of the building to control. If a variable name is set for the building the scanner will control the nearest door in given building, otherwise it will control the nerates door in the nearest building.</English>
 				<French>Nom de varaiable du bâtiment à contrôler. Si un nom de variable de bâtiment est donné le scanner contrôlera la porte de ce bâtiment la plus proche de sa position, sinon il contrôlera la porte la plus proche du bâtiment le plus proche.</French>
 			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_pickUpMat">
+				<Original>Collect mat</Original>
+				<English>Collect mat</English>
+				<French>Ramasser le tapis</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_SMkhakiDisplay">
+				<Original>Shooting Mat (Khaki)</Original>
+				<English>Shooting Mat (Khaki)</English>
+				<French>Tapis de tir (Khaki)</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_SMoliveDisplay">
+				<Original>Shooting Mat (Olive)</Original>
+				<English>Shooting Mat (Olive)</English>
+				<French>Tapis de tir (Vert Olive)</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_SMDesShort">
+				<Original>A shooting mat, flattens the grass around when deployed</Original>
+				<English>A shooting mat, flattens the grass around when deployed</English>
+				<French>Un tapis de tir, applatit l'herbes autour quand il est déployé</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_UnfoldSM">
+				<Original>Unfold Shooting Mat</Original>
+				<English>Unfold Shooting Mat</English>
+				<French>Déployer le tapi de tir</French>
+			</Key>
 			<Key ID="STR_MRH_MRHMiscItems_">
 				<Original></Original>
 				<English></English>

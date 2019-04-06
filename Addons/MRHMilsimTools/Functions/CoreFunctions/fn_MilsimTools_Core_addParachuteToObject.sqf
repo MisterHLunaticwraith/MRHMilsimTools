@@ -16,6 +16,6 @@ _chute = "O_Parachute_02_F" createVehicle (position _object);
 _chute setPosATL (getPosATL _object);
 if (_attach) then {
 _object attachTo [_chute,[0,0,0]];
-[_object]spawn MRH_fnc_MilsimTools_Core_ensureSafeLanding;
+[_object] FUNC(ensureSafeLanding);
 };
 _chute

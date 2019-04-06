@@ -68,7 +68,7 @@ class MRH_BioScanner : MRH_BioScanner_Base
                     tooltip = $STR_MRH_MRHMiscItems_scannerUseAceACAttrToolTip; // Tooltip assigned to UI control class Title
                     property = "MRH_BS_useActions"; // Unique config property name saved in SQM
                     control = "CHECkBOX"; // UI control base class displayed in Edit Attributes window, points to Cfg3DEN >> Attributes
-                    expression = "_this setVariable ['MRH_BS_UseCustomActions',_value]";
+                    expression = "_this setVariable ['MRH_BS_UseCustomActions',_value,true]";
                     defaultValue = "false";
                     unique = 0; // When 1, only one entity of the type can have the value in the mission (used for example for variable names or player control)
                     validate = "none"; // Validate the value before saving. Can be "none", "expression", "condition", "number" or "variable"

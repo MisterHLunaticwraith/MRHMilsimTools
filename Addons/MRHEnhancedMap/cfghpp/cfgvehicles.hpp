@@ -16,7 +16,7 @@
 				class MRH_Ace_UnFoldMap
 				{
 					displayName = $STR_MRH_EnhancedMap_UnfoldACE;
-					condition = "('MRH_Map' in items player) && !(call MRH_fnc_MilsimTools_EnhancedMap_isFoldedMapOpen)";
+					condition = "('MRH_Map' in items MRH_player) && !(call MRH_fnc_MilsimTools_EnhancedMap_isFoldedMapOpen)";
 					exceptions[] = {"isNotSitting"};
 					statement = "call MRH_fnc_MilsimTools_EnhancedMap_unfoldMap;";
 					icon = PAAPATH(unfold.paa);
@@ -25,7 +25,7 @@
 				class MRH_Ace_ShowMiniMap
 				{
 					displayName = $STR_MRH_EnhancedMap_ShowFoldACE;
-					condition = "('MRH_Map' in items player) && !(call MRH_fnc_MilsimTools_EnhancedMap_isFoldedMapOpen)";
+					condition = "('MRH_Map' in items MRH_player) && !(call MRH_fnc_MilsimTools_EnhancedMap_isFoldedMapOpen)";
 					exceptions[] = {"isNotSitting","notOnMap","isNotInside"};
 					statement = "call MRH_fnc_MilsimTools_EnhancedMap_showFoldableMap";
 					icon = PAAPATH(map.paa);
@@ -44,7 +44,7 @@
 				class MRH_Ace_CenterMiniMap
 				{
 					displayName = $STR_MRH_EnhancedMap_ChooseFoldZACE;
-					condition = "('MRH_Map' in items player) && (visibleMap)";
+					condition = "('MRH_Map' in items MRH_player) && (visibleMap)";
 					exceptions[] = {"isNotSitting","notOnMap","isNotInside"};
 					statement = "call MRH_fnc_MilsimTools_EnhancedMap_setFoldableMapCenter";
 					icon = PAAPATH(select.paa);

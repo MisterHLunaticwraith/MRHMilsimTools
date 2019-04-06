@@ -6,8 +6,10 @@ class MRH // Defines the "owner"
 	{
 	tag = "MRH";
 	file = "\MRHEnhancedMap\Functions";
+	/*
 		class MilsimTools_EnhancedMap_
 		{};
+	*/
 		class MilsimTools_EnhancedMap_temporaryMap
 		{};
 		class MilsimTools_EnhancedMap_setMapTexture
@@ -37,6 +39,8 @@ class MRH // Defines the "owner"
 		class MilsimTools_EnhancedMap_mapIllumination
 		{};
 		class MilsimTools_EnhancedMap_playRandomSound
+		{};
+		class MilsimTools_EnhancedMap_addKeyHandler
 		{};
 	};
 	

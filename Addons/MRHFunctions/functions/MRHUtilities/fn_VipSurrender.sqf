@@ -24,7 +24,7 @@ _diameter = _diameter /2;
 
 _trg = createTrigger ["EmptyDetector", getPosASL _unit];
 
-_trg setVariable ["MRH_Strigger_" + (str _trg),[_unit,_message, _code,_diameter,_chances], true];
+_trg setVariable ["MRH_Strigger_SurrenderData",[_unit,_message, _code,_diameter,_chances], true];
 
 
 _trg setTriggerArea [_diameter, _diameter, 0, false,2];

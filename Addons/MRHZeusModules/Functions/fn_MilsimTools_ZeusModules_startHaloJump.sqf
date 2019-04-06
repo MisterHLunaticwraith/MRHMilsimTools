@@ -18,19 +18,32 @@ diag_log format ["MRH_MilsimTools_HaloJumpStart, units to parachute %1",_UnitsTo
 	
 		[[_x,_dropPos,_autoEquipUnits,_forceUnitsAAD,_unitsAADSetting],
 		{
-		params ["_unit","_dropPos","_autoEquipUnits","_forceUnitsAAD","_unitsAADSetting"];
-		if (isPlayer _unit) then {[_unit,"Halo drop starting","MRH_Zeus_Notif"]call MRH_fnc_MilsimTools_Core_notifyPlayer;};
-		if !(isNull curatorCamera) then {findDisplay 312 closeDisplay 2;};
-		if (_autoEquipUnits)then {[_unit]spawn MRH_fnc_MilsimTools_ZeusModules_prepUnitForHalo;};
-		sleep 1;
-		if (_forceUnitsAAD) then {_unit setVariable ["MRH_HaloGear_AADOpening_alt",_unitsAADSetting]};
-		sleep 1;
-		_unit setPosASL ([_dropPos,[15,25,30]]CFUNC(scatterPosition));
+			params ["_unit","_dropPos","_autoEquipUnits","_forceUnitsAAD","_unitsAADSetting"];
+			if (isPlayer _unit) then {[_unit,"Halo drop starting","MRH_Zeus_Notif"]call MRH_fnc_MilsimTools_Core_notifyPlayer;};
+			if !(isNull curatorCamera) then {findDisplay 312 closeDisplay 2;};
+			if (_autoEquipUnits)then {[_unit]FUNC(prepUnitForHalo);};
+			
+			[
+				{
+					params ["_forceUnitsAAD","_unit","_unitsAADSetting"];
+					if (_forceUnitsAAD) then {_unit setVariable ["MRH_HaloGear_AADOpening_alt",_unitsAADSetting]};
+				}, 
+				[_forceUnitsAAD,_unit,_unitsAADSetting], 
+				1
+			] call CBA_fnc_waitAndExecute;
 
-
+			[
+				{
+					params ["_unit","_dropPos"];
+					_unit setPosASL ([_dropPos,[15,25,30]]CFUNC(scatterPosition));
+				}, 
+				[_unit,_dropPos], 
+				2
+			] call CBA_fnc_waitAndExecute;
+			
 		
 		}
-		] remoteExec ["Spawn",_x];
+		] remoteExec ["Call",_x];
 	
 } forEach _UnitsToParachute;
 

@@ -11,19 +11,12 @@ call MRH_fnc_MilsimTools_EnhancedMap_;
 #include "MRH_C_Path.hpp"
 //toDo make this optionable
 _CAman = _this select 0;
-[_CAman] spawn
-{
-params ["_CAman"];
-waitUntil {time>1};
-if (_CAman == player) then 
-{
-	player addEventHandler ["Killed",{call MRH_fnc_MilsimTools_EnhancedMap_closeFoldableMap}];
-	player addEventHandler ["InventoryOpened",{call MRH_fnc_MilsimTools_EnhancedMap_closeFoldableMap}];
-	player addEventHandler ["InventoryClosed",{if !("MRH_Map" in items player) then {call MRH_fnc_MilsimTools_EnhancedMap_closeFoldableMap};}];
-	["ace_unconscious", {if (_this select 1) then {call MRH_fnc_MilsimTools_EnhancedMap_closeFoldableMap};}] call CBA_fnc_addEventHandler;
-	["ace_captiveStatusChanged", {if (_this select 1) then {call MRH_fnc_MilsimTools_EnhancedMap_closeFoldableMap};}] call CBA_fnc_addEventHandler;
-};
+
 if (is3DEN) ExitWith {};
+
+_code = {
+params ["_CAman"];
+
 _replaceVanillaMap = ["MRH_MilsimTools_Map_ReplaceVanillaMap"] call cba_settings_fnc_get;
 if (_replaceVanillaMap) then {
 		if ("ItemMap" in assigneditems _CAman) then
@@ -36,3 +29,5 @@ if (_replaceVanillaMap) then {
 
 	
 };
+
+[{time>1},_code,[_CAman]] call CBA_fnc_waitUntilAndExecute;

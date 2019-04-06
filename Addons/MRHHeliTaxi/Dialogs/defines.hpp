@@ -1595,6 +1595,7 @@ class RscMapControlMRHHeliTaxi {
 	type = 101;
 	style = 48;
 	moveOnEdges = 1;
+	widthRailWay = 4;
 	x = "SafeZoneXAbs";
 	y = "SafeZoneY + 1.5 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 	w = "SafeZoneWAbs";

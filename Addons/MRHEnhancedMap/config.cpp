@@ -1,7 +1,7 @@
 class CfgPatches {
 	class MRHEnhancedMap{
-		units[] = {}; //
-		weapons[] = {}; //
+		units[] = {"MRH_MapObject"}; //
+		weapons[] = {"MRH_Map"}; //
 		requiredVersion = 0.1; //
 		requiredAddons[] = {"MRHMilsimTools"}; //
 	};
@@ -32,7 +32,7 @@ class Extended_PostInit_EventHandlers
    
    class MRHMilsimTools_EnhancedMap_KeyPress
    {
-      clientInit = "call compile preProcessFileLineNumbers '\MRHEnhancedMap\Functions\fn_MilsimTools_EnhancedMap_addKeyHandler.sqf'";
+      clientInit = "call compile preProcessFileLineNumbers '\MRHEnhancedMap\Functions\XEHclient.sqf'";
    };
       
 	

@@ -1614,6 +1614,7 @@ class RscMapControlMRHAdminMenu {
 	ptsPerSquareRoad = 6;
 	ptsPerSquareObj = 9;
 	showCountourInterval = 0;
+	widthRailWay = 4;
 	scaleMin = 0.001;
 	scaleMax = 1.0;
 	scaleDefault = 0.16;

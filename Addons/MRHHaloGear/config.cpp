@@ -2,8 +2,8 @@
 class CfgPatches {
 	class MRHHaloGear
 	{
-		units[] = {}; //
-		weapons[] = {}; //
+		units[] = {"MRH_AADEquippedParachute","MRH_AADEquippedNSParachute"}; //
+		weapons[] = {"MRH_AAD_Item","MRH_HaloMaskNoESS","MRH_HaloMask","MRH_HaloMaskBroken"}; //
 		requiredVersion = 0.1; //
 		requiredAddons[] = {"MRHMilsimTools"}; //
 	};

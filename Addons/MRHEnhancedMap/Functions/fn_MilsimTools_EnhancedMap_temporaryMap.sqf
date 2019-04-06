@@ -10,9 +10,10 @@ Example(s):
 */
 #include "MRH_C_Path.hpp"
 
-if !("ItemMap" in assigneditems player) then
+if !("ItemMap" in assigneditems MRH_player) then
 {
-	player linkItem "ItemMap";
-	waitUntil{!visibleMap};
-	player unlinkItem "ItemMap";
+	MRH_player linkItem "ItemMap";
+
+	[{!visibleMap}, {MRH_player unlinkItem "ItemMap";}] call CBA_fnc_waitUntilAndExecute;
+	
 };

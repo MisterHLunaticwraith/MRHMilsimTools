@@ -23,10 +23,10 @@
 				<English>The admin has forgiven you, the curse has been lifted!</English>
 				<French>L'admin vous a pardonné, la malédiction est levée!</French>
 			</Key>
-			<Key ID="STR_MRH_ADM_NOT_">
-				<Original></Original>
-				<English></English>
-				<French></French>
+			<Key ID="STR_MRH_ADM_NOT_LOADOUTCHANGEDBYAD">
+				<Original>An administrator has edited your loadout</Original>
+				<English>An administrator has edited your loadout</English>
+				<French>Un administrateur a édité votre équipement</French>
 			</Key>
 
 		</Container>

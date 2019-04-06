@@ -8,6 +8,7 @@ Parameters:
 Example(s):
 [someObj] spawn MRH_fnc_MilsimTools_HaloGear_objectAADEH;
 */
+// /!\ this function needs to return a handle, requires scheduled environment
 #include "MRH_C_Path.hpp"
 
 params ["_object"];

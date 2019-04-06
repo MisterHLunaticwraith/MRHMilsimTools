@@ -10,4 +10,4 @@ call MRH_fnc_MilsimTools_EnhancedMap_LookAtMap;
 */
 #include "MRH_C_Path.hpp"
 openMap [true,false];
-[] SFUNC(temporaryMap);
+FUNC(temporaryMap);

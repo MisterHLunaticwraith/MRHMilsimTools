@@ -7,6 +7,12 @@ class MRH // Defines the "owner"
 	file = "\MRHMilsimTools\Functions\InitFunctions";
 	    class MilsimTools_Core_SetPlayerIntel
 		{};
+		class MilsimTools_Core_PlayersRegistry
+		{};
+		class MilsimTools_Core_InitPlayerLocal
+		{};
+		class MilsimTools_Core_initMRHPlayer
+		{};
 		
 	};
 	class CoreFunctions// category
@@ -114,6 +120,12 @@ class MRH // Defines the "owner"
 		class MilsimTools_Core_testPercentageOdds
 		{};
 		class MilsimTools_Core_freeCargoIndexes
+		{};
+		class MilsimTools_Core_stopCuratorFollow
+		{};
+		class MilsimTools_Core_conditionalPFEH
+		{};
+		class MilsimTools_Core_addItem
 		{};
 		/*
 		class MilsimTools_Core_

@@ -20,7 +20,7 @@ _resultingArray = [];
 switch (true) do {
 case (_Type == "Air"): {{if (_x isKindOf "Helicopter_Base_F" or _x isKindOf "Plane_Base_F" ) then {_resultingArray pushBack _x; };} forEach _allvehiclesArray;};
 case (_Type == "Land") : {{if (_x isKindOf "Car_F" or _x isKindOf "Tank_F") then {_resultingArray pushBack _x; };} forEach _allvehiclesArray;};
-case (_Type == "Sea") : {{if (_x isKindOf "Boat_F") then {_resultingArray pushBack _x; };} forEach _allvehiclesArray;};
+case (_Type == "Sea") : {{if (_x isKindOf "Boat_F" or _x isKindOf "Ship_F") then {_resultingArray pushBack _x; };} forEach _allvehiclesArray;};
 case (_Type == "All") : {_resultingArray = _allvehiclesArray};
 };
 
