@@ -7,7 +7,7 @@ class CfgSettings {
            main_addon = "MRHMilsimTools"; // Uncomment and specify this to manually define the Main Addon (CfgPatches entry) of the mod
 
            // Optional: Add a custom handler function triggered upon version mismatch
-           //handler = "myMod_fnc_mismatch"; // Adds a custom script function that will be triggered on version mismatch. Make sure this function is compiled at a called preInit, not spawn/execVM
+           handler = "MRH_fnc_MilsimTools_Core_handleIncorrectVersion"; // Adds a custom script function that will be triggered on version mismatch. Make sure this function is compiled at a called preInit, not spawn/execVM
 
            // Optional: Dependencies
            // Example: Dependency on CBA
