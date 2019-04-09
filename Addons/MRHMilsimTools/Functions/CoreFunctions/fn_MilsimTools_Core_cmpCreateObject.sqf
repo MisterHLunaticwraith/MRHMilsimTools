@@ -30,6 +30,9 @@ _object = _className createVehicle _relPos;
 _object setPosATL (_pivot modelToWorld _relPos);
 _object setDir ((getDir _pivot) + _reldir);
 _object setVectorUp surfaceNormal (getPosATL _object);
+//&& ((getPos _object select 2) == (getPosATLVisual _object select 2))
+if (((getPosATLVisual _object) select 2) <0) then {_object setPosATL [(getPosATL _object) select 0,(getPosATL _object) select 1,0]};
+if (((getPosATLVisual _object) select 2) >0) then {_object setPosATL [(getPosATL _object) select 0,(getPosATL _object) select 1,0]};
 _object setVariable ["ace_medical_ismedicalfacility",_isAceMedicalFacility,true];
 _object setVariable ["ace_isrepairfacility",_isAceRepairFacility,true];
 
