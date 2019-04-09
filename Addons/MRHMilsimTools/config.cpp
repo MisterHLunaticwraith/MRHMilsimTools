@@ -80,3 +80,4 @@ class cfgNotifications
 #include"\MRHMilSimTools\cfghpp\cfgMRHrankpictures.hpp"
 //==========
 
+#include"\MRHMilSimTools\cfghpp\cfgMRHcompositions.hpp"
