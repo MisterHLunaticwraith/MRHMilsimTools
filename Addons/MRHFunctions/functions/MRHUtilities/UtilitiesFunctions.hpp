@@ -58,3 +58,11 @@ class ambientConversation
 {};
 class MilsimTools_Functions_internalVIPTrigger
 {};
+class MilsimTools_Functions_medicalTentIsOpen
+{};
+class MilsimTools_Functions_medicalTentAction
+{};
+/*
+class MilsimTools_Functions_
+{};
+*/

@@ -49,6 +49,7 @@ class RscTitles
 class cfgVehicles
 {
 	class Man;
+	class Camping_base_F;
 	class CAManBase: Man 
 	{
 		 class ACE_Actions 
@@ -63,4 +64,35 @@ class cfgVehicles
 				};  
    		 };
 	};
+
+	class Land_MedicalTent_01_base_F : Camping_base_F
+	{
+		class EventHandlers {
+		init = "_this call MRH_fnc_MilsimTools_Functions_medicalTentAction;";
+		
+	};
+		
+
+		class ACE_Actions 
+		 {
+				class MRH_TentAction_Door1
+				{
+					displayName = $STR_MRH_FUNCS_ActionOpenTent;
+					icon = "\MRHFunctions\img\zip.paa";
+					distance = 5.5;
+					selection = "door1";  
+						
+				};
+
+				class MRH_TentAction_Door2
+				{
+					displayName = $STR_MRH_FUNCS_ActionOpenTent;
+					icon = "\MRHFunctions\img\zip.paa";
+					distance = 5.5;
+					selection = "door2";  
+						
+				}; 
+   		 };
+	};
+
 };

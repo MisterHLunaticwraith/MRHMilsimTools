@@ -107,11 +107,19 @@
 				<English>Talk</English>
 				<French>Parler</French>
 			</Key>
-			<Key ID="STR_MRH_HP_">
+			<Key ID="STR_MRH_FUNCS_ActionOpenTent">
+				<Original>Toggle tent opening</Original>
+				<English>Toggle tent opening</English>
+				<French>Ouvrir/fermer tente</French>
+			</Key>
+
+			<Key ID="STR_MRH_FUNCS_">
 				<Original></Original>
 				<English></English>
 				<French></French>
 			</Key>
+			
+			
 		</Container>
 		<Container name="CfgWeaps">
 			<Key ID="STR_MRH_HP_HackphoneDisplayName">
