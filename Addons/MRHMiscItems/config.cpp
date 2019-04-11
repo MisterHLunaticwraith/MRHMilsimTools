@@ -1,7 +1,7 @@
 
 class CfgPatches {
 	class MRHMiscItems{
-		units[] = {"MRH_BioScanner_Base","MRH_BioScanner","MRH_ElevatorButton_Base","MRH_ElevatorButton","MRH_USB_ThumbDrive","MRH_ShootingMat_Khaki","MRH_ShootingMat_Olive"}; //
+		units[] = {"MRH_BioScanner_Base","MRH_BioScanner","MRH_ElevatorButton_Base","MRH_ElevatorButton","MRH_USB_ThumbDrive","MRH_ShootingMat_Khaki","MRH_ShootingMat_Olive","MRH_emptyBox","MRH_emptySupplyBox","MRH_AcexFoodSuppliesCrate"}; //
 		weapons[] = {}; //
 		requiredVersion = 0.1; //
 		requiredAddons[] = {"MRHMilsimTools"}; //
@@ -24,7 +24,7 @@ class CfgEditorSubcategories
 	};
 	class EdSubcat_MRH_Utilities // Category class, you point to it in editorSubcategory property
 	{
-		displayName = "Utilities"; // Name visible in the list
+		displayName = $STR_MRH_MRHMiscItems_EdSubCatUtilities; // Name visible in the list
 	};
 	class EdSubcat_MRH_InvIt // Category class, you point to it in editorSubcategory property
 	{

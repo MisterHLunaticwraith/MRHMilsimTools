@@ -1,3 +1,6 @@
+#define mag_xx(a,b) class _xx_##a {magazine = a; count = b;}
+#define weap_xx(a,b) class _xx_##a {weapon = a; count = b;}
+#define item_xx(a,b) class _xx_##a {name = a; count = b;}
 //	#include "MRH_C_Path.hpp"
 //declare parents here
 class Items_base_F;
@@ -6,6 +9,9 @@ class ShootingMat_01_folded_Olive_F;
 class ShootingMat_01_folded_Khaki_F;
 class ShootingMat_01_Olive_F;
 class ShootingMat_01_Khaki_F;
+class Box_NATO_Ammo_F;
+class B_supplyCrate_F;
+class CargoNet_01_box_F;
 //include items here
 #include "\MRHMiscItems\Models\ElevatorButton\ElevatorButton.hpp"
 #include "\MRHMiscItems\Models\UsbThumbDrive\usbDrive.hpp"
@@ -42,3 +48,53 @@ class Man;
 
 		};
 	};
+
+	class MRH_emptyBox : Box_NATO_Ammo_F
+{
+    displayName = $STR_MRH_MRHMiscItems_EmptyAmmoCrate;
+    editorCategory = "EdCat_MRH_Misc";
+    editorSubcategory = "EdSubcat_MRH_Utilities";
+    class TransportWeapons{};
+	class TransportMagazines{};
+	class TransportItems{};
+};
+
+class MRH_emptySupplyBox : B_supplyCrate_F
+{
+    displayName = $STR_MRH_MRHMiscItems_EmptySupplyBox;
+    editorCategory = "EdCat_MRH_Misc";
+    editorSubcategory = "EdSubcat_MRH_Utilities";
+    class TransportWeapons{};
+	class TransportMagazines{};
+	class TransportItems{};
+    class TransportBackpacks{};
+};
+
+class MRH_AcexFoodSuppliesCrate : CargoNet_01_box_F
+{
+    displayName = $STR_MRH_MRHMiscItems_AcexFoodCrate;
+    editorCategory = "EdCat_MRH_Misc";
+    editorSubcategory = "EdSubcat_MRH_Utilities";
+    class TransportWeapons{};
+	class TransportMagazines{};
+	class TransportItems
+    {
+        item_xx(ACE_Banana,15);
+        item_xx(ACE_WaterBottle,10);
+        item_xx(ACE_Canteen,10);
+        item_xx(ACE_Can_Spirit,5);
+        item_xx(ACE_Can_Franta,5);
+        item_xx(ACE_Can_RedGull,5);
+        item_xx(ACE_MRE_LambCurry,5);
+        item_xx(ACE_MRE_BeefStew,5);
+        item_xx(ACE_MRE_CreamTomatoSoup,5);
+        item_xx(ACE_MRE_CreamChickenSoup,5);
+        item_xx(ACE_MRE_ChickenTikkaMasala,5);
+        item_xx(ACE_MRE_SteakVegetables,5);
+        item_xx(ACE_MRE_MeatballsPasta,5);
+        item_xx(ACE_MRE_ChickenHerbDumplings,5);
+        item_xx(ACE_Humanitarian_Ration,5);
+               
+    };
+    class TransportBackpacks{};
+};
