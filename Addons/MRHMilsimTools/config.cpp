@@ -81,3 +81,4 @@ class cfgNotifications
 //==========
 
 #include"\MRHMilSimTools\cfghpp\cfgMRHcompositions.hpp"
+#include"\MRHMilSimTools\cfghpp\cfg3DEN.hpp"

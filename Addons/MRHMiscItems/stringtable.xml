@@ -237,6 +237,36 @@
 				<English>Utilities</English>
 				<French>Utilitaires</French>
 			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_AmmoCrateAttributesCat">
+				<Original>MRH Ammocrate</Original>
+				<English>MRH Ammocrate</English>
+				<French>MRH Caisse de munition</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_IsRefillAmmoSet">
+				<Original>Is ammo crate</Original>
+				<English>Is is ammo crate</English>
+				<French>Est une caisse de munition automatique</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_NumberOfMagsSet">
+				<Original>Number of magazines per mag type</Original>
+				<English>Number of magazines per mag type</English>
+				<French>Nombre de chargeurs par type</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_InfiniteRefillSet">
+				<Original>Infinite refill</Original>
+				<English>Infinite refill</English>
+				<French>Contenu infini</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_CttRefreshSet">
+				<Original>Contents can be refreshed</Original>
+				<English>Contents can be refreshed</English>
+				<French>Le contenu peut-être rafraîchi</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_AmmocrateDescAndTooltip">
+				<Original>These settings allow you to make an ammocrate automatically filled with ammos fitting for the weapons equipped by players. If infinite refill is enabled the crate will be refilled everytime a player uses it. If content can be refreshed the box receives an ACE3 action and players can refresh its content when they equip a new weapon, it overrides the refill setting and enables it.</Original>
+				<English>These settings allow you to make an ammocrate automatically filled with ammos fitting for the weapons equipped by players. If infinite refill is enabled the crate will be refilled everytime a player uses it. If content can be refreshed the box receives an ACE3 action and players can refresh its content when they equip a new weapon, it overrides the refill setting and enables it.</English>
+				<French>Ces réglages vous permettent de remplir le conteneur de munitions adaptées aux armes des joueurs de manière automatique. Si le réglage contenu infini est activé la caisse sera reremplie à chaque fois qu'un joueur y accède. Si le contenu peut être rafraîchi, l'objet reçoit une interaction ACE3 qui permet au joueurs de rafrâichir son contenu quand ils changent d'arme, ce réglage rend automatiquement le contenu infini.</French>
+			</Key>
 			<Key ID="STR_MRH_MRHMiscItems_">
 				<Original></Original>
 				<English></English>

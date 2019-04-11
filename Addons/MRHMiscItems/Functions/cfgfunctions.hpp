@@ -24,6 +24,8 @@ class MRH // Defines the "owner"
 		{};
 		class MilsimTools_MiscItems_unfoldMat
 		{};
+		class MilsimTools_MiscItems_ammoCrateFromAttributes
+		{};
 	};
 	
 };

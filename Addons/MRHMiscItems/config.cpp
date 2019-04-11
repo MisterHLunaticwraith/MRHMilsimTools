@@ -60,12 +60,12 @@ class cfgWeapons
 {
 	#include "\MRHMiscItems\cfgweapons.hpp"
 };
-/*
+
 class Cfg3DEN
 {
 	#include "\MRHMiscItems\cfg3DEN.hpp"
 };
-*/
+
 //------------Extended XEH
 /*
 class Extended_PostInit_EventHandlers

@@ -6,15 +6,17 @@ Return value: None
 Public: Yes
 Parameters:
 0- <OBJECT> Box must be a container object
-1- <NUMBER> ammount of items, per item.
-2- <BOOLEAN> Content is unlimited, if true the box will be refilled everytime its inventory is opened.
-3- <BOOLEAN> Can be refreshed, if true the box's content can be refreshed useful if players change their weapons mid game. The box will receive an ACE 3 interaction action to refresh its contents. It makes the box's content unlimited. 
+1- <NUMBER> ammount of items, per item.-Optional default 10
+2- <BOOLEAN> Content is unlimited, if true the box will be refilled everytime its inventory is opened. -Optional default false
+3- <BOOLEAN> Can be refreshed, if true the box's content can be refreshed useful if players change their weapons mid game. The box will receive an ACE 3 interaction action to refresh its contents. It makes the box's content unlimited. -optional, default false
 Example(s):
 [this,10,true,true] call MRH_fnc_AmmoCrate;
 */
 
 
-params ["_box","_Ammount","_isUnlimited","_canBeRefreshed"];
+params ["_box",["_Ammount",10],["_isUnlimited",false],["_canBeRefreshed",false]];
+
+if (_canBeReFreshed) then {_isUnlimited =true};
 _PlayableUnits = [player];
 if (isMultiplayer) then {_PlayableUnits = playableUnits};
 ///get all weapons in all weapons slots for all playable units
@@ -49,7 +51,7 @@ _magazineTypeS = getarray (configfile >> "CfgWeapons" >> _x >>"magazines");
 } forEach _allPlayerWeapons;
 
 //Fills box with given content
-if (isNil "_Ammount") then {_Ammount = 10;};
+
 //systemChat format ["Weps %1 Mags %2 Box %3", str _allPlayerWeapons, str _allMagazinesType, str _box];
 {
 _do= _box addMagazineCargoGlobal [_x, _Ammount];
@@ -57,7 +59,7 @@ _do= _box addMagazineCargoGlobal [_x, _Ammount];
 } forEach _allMagazinesType;
 
 ////if unlimited is set to true, the box will be refilled automatically
-if (isNil "_isUnlimited") then {_isUnlimited = false};
+
 if (_isUnlimited)then {
 _box setVariable ["MRH_AmmoMagazines", _allMagazinesType];
 
@@ -79,7 +81,7 @@ _box setVariable ["MRH_AmmoCrateEHIndex", _handlerIndex, true];
 };
 
 ////Adds ace action to allow refresh of the box's contents midgame (useful if new weapons are given to players)
-if (isNil "_canBeRefreshed") then {_canBeRefreshed = false;};
+
 _params = [_box,_Ammount,_isUnlimited,_canBeRefreshed];
 _box setVariable ["MRH_AmmoCrateParameters", _params, true];
 

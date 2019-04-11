@@ -742,6 +742,19 @@
 				<French>Si le mod debug est activé, le log sera affiché</French>
 			</Key>
 		</Container>
+		<Container name="MRH_MISC">
+			<Key ID="STR_MRH_MISC_3DENattributesCat">
+				<Original>MRH MilsimTools Options</Original>
+				<English>MRH MilsimTools Options</English>
+				<French>Options MRH MilsimTools</French>
+			</Key>
+			<Key ID="STR_MRH_MISC_">
+				<Original></Original>
+				<English></English>
+				<French></French>
+			</Key>
+
+		</Container>
 
 	</Package>
 </Project>
