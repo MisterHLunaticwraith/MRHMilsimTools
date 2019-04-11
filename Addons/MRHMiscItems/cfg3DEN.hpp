@@ -90,6 +90,30 @@ class object
 
                 };
            };
+
+            class mrh_refillBoxAttributes
+            {
+                displayName = $STR_MRH_MRHMiscItems_RefillBoxAttributesCat;
+                    collapsed = 1;
+                    class Attributes
+                    {
+                        
+                        class MRH_isInfiniteBox
+                        {
+                        
+                            displayName = $STR_MRH_MRHMiscItems_isInfiniteBoxSet; 
+                            tooltip = $STR_MRH_MRHMiscItems_isInfiniteBoxToolTip; 
+                            property = "mrh_isRefillBox"; 
+                            control = "Checkbox";    
+                            expression = "[_this] call MRH_fnc_MilsimTools_MiscItems_isRefillBoxFromAttributes";
+                            defaultValue = false;
+                            unique = 0; 
+                            validate = "none";
+                            condition = "objectHasInventoryCargo";
+                            typeName = "BOOL";
+                        }; 
+                    };
+            };  
         
     };
 };

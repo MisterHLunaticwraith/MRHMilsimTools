@@ -26,6 +26,8 @@ class MRH // Defines the "owner"
 		{};
 		class MilsimTools_MiscItems_ammoCrateFromAttributes
 		{};
+		class MilsimTools_MiscItems_isRefillBoxFromAttributes
+		{};
 	};
 	
 };

@@ -22,7 +22,7 @@ params ["_crate"];
 	[_crate,_itemCount,_refill,_canBeRefreshed] call MRH_fnc_AmmoCrate;
 };
 [
-    {time>1}, 
+    {time>0}, 
     _statement, 
     _this
 ] call CBA_fnc_waitUntilAndExecute;
