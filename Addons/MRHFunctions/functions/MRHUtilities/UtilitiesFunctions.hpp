@@ -66,6 +66,8 @@ class MilsimTools_Functions_simpleConvFromAttributes
 {};
 class MilsimTools_Functions_searchObjectFromAttributes
 {};
+class MilsimTools_Functions_addHackFromAttributes
+{};
 /*
 class MilsimTools_Functions_
 {};
