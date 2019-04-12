@@ -25,6 +25,11 @@ class cfgWeapons
 {
 	#include "\MRHFunctions\models\hackphone\hackphone.hpp"
 };
+
+class Cfg3DEN
+{
+	#include "\MRHFunctions\cfghpp\cfg3DEN.hpp"
+};
 ////=====================FinDesCFG=================================================
 
 

@@ -113,11 +113,77 @@
 				<French>Ouvrir/fermer tente</French>
 			</Key>
 
+			<Key ID="STR_MRH_FUNCS_SimpleACe_AttributesTitle">
+				<Original>MRH Simple conversation system</Original>
+				<English>MRH Simple conversation system</English>
+				<French></French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_AddAConvToTheUnit">
+				<Original>Add a conversation to this unit</Original>
+				<English>Add a conversation to this unit</English>
+				<French></French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_MessageTextATT">
+				<Original>Message text:</Original>
+				<English>Message text:</English>
+				<French></French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_MessageCodeToExecATT">
+				<Original>Code to execute: (Optional)</Original>
+				<English>Code to execute: (Optional)</English>
+				<French></French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_ParametersPassedATT">
+				<Original>Parameters passed to the code: (Optional)</Original>
+				<English>Parameters passed to the code: (Optional)</English>
+				<French></French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_GlobalExecATT">
+				<Original>Global exec</Original>
+				<English>Global exec</English>
+				<French></French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_RemoveActionAfterATT">
+				<Original>Remove interaction after conversation</Original>
+				<English>Remove interaction after conversation</English>
+				<French></French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_SimpleMessageATTDESC">
+				<Original>This will add an ACE3 'talk' interaction to the unit. If a player talks to the unit. You can optionally run some code when interaction is used. Enabling 'Global Exec' remote execute the code on all machines. The code receives the parameters in select 1, while select 0 is the unit eg: _unit = _this select 0;_passedParameters = (_this select 1);</Original>
+				<English>This will add an ACE3 'talk' interaction to the unit. If a player talks to the unit. You can optionally run some code when interaction is used. Enabling 'Global Exec' remote execute the code on all machines. The code receives the parameters in select 1, while select 0 is the unit eg: _unit = _this select 0;_passedParameters = (_this select 1);</English>
+				<French></French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_MessageTextTooltip">
+				<Original>Message the unit will say</Original>
+				<English>Message the unit will say</English>
+				<French>Message que l'unité dira</French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_MessageCodeToolTip">
+				<Original>Code to run when the message is said. Code receives parameters as _unit = _this select 0; _passedParameters = _this select 1;(see below)</Original>
+				<English>Code to run when the message is said. Code receives parameters as _unit = _this select 0; _passedParameters = _this select 1;(see below)</English>
+				<French>Code à executer quand le message est donné. Le code reçoit les paramètres suivants _unite = _this select 0;_parametresPasses = _this select 1;(voir ci-dessous)</French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_MessageParamsToolTip">
+				<Original>Params sent to the code. To get them in the code you can do: (_this select 1) params ["_param1","_param2","_paramN"];</Original>
+				<English>Params sent to the code. To get them in the code you can do: (_this select 1) params ["_param1","_param2","_paramN"];</English>
+				<French>Paramètres passés au code. Pour les récupérer dans le code vous pouvez faire: (_this select 1) params ["_param1","_param2","_paramN"];</French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_MessageGlobalToolTip">
+				<Original>If enabled the code will be executed on all machines.</Original>
+				<English>If enabled the code will be executed on all machines.</English>
+				<French>Si activé, le code sera executé sur toutes les machines.</French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_MessageRemoveAfterUseToolTip">
+				<Original>If enabled the talk action will be removed on all machines after any player has accessed the conversation.</Original>
+				<English>If enabled the talk action will be removed on all machines after any player has accessed the conversation.</English>
+				<French>Si ce réglage est activé l'action parler sera enlevée sur toutes les machines après que n'importe quel joueur ait accédé à la conversation.</French>
+			</Key>
 			<Key ID="STR_MRH_FUNCS_">
 				<Original></Original>
 				<English></English>
 				<French></French>
 			</Key>
+			
 			
 			
 		</Container>

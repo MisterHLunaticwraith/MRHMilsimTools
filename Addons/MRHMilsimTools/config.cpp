@@ -10,6 +10,7 @@ class CfgPatches {
 		versionDesc = "MRH Milsim Tools";
 		versionAct = "call compile preProcessFileLineNumbers '\MRHMilSimTools\about.sqf'";
 		author = "Mr H.";
+      authors[]= {"Mr H."};
 		url = "https://mrhmilsimtools-arma3-mod.wikia.com/wiki/MRHMilsimTools_ARMA3_Mod_Wiki";
 	};
 		
