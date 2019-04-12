@@ -64,7 +64,8 @@ class MilsimTools_Functions_medicalTentAction
 {};
 class MilsimTools_Functions_simpleConvFromAttributes
 {};
-
+class MilsimTools_Functions_searchObjectFromAttributes
+{};
 /*
 class MilsimTools_Functions_
 {};
