@@ -228,11 +228,72 @@
 				<English>This will add an ACE3 'search object' interaction. If you just enable the 'object can be searched' setting, the search will result in a 'you haven't found anything' message otherwise you can make the search successful and give a name for the 'you have found...' message. Upon ending a successful search the (optional) code will be executed. The source object is passed to the code and can be retrieved with _this select 0</English>
 				<French>Ceci ajoute une interaction ACE3 'fouiller l'objet'. Si vous activez seulement ke réglage 'L'objet peut être fouillé', la recherche renverra un message 'vous n'avez rien trouvé'. Vous pouvez faire que la recherche soit un succès et donner un nom à l'objet trouvé pour le message 'Vous avez trouvé...'. A la fin d'une recherche le code (optionel) sera executé. L'objet source est passé comme paramètre au code (_this select 0)</French>
 			</Key>
+			<Key ID="STR_MRH_FUNCS_HackAndDlTitleATT">
+				<Original>MRH add hack and download files</Original>
+				<English>MRH add hack and download files</English>
+				<French>MRH Ajouter piratage et téléchargement de fichiers</French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_addHackAndDlATT">
+				<Original>Add hack and collectible data to object</Original>
+				<English>Add hack and collectible data to object</English>
+				<French>Ajouter un piratage et des données à l'objet</French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_addHackAndDlATTToolTip">
+				<Original>This will add the option to hack and download data from this object</Original>
+				<English>This will add the option to hack and download data from this object</English>
+				<French>Ceci ajoutera l'option de pirater l'objet pour recevoir des données</French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_addHackNDLHackDurationATT">
+				<Original>Hack duration</Original>
+				<English>Hack duration</English>
+				<French>Durée du piratage</French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_addHackNDLHackDurationATTToolTip">
+				<Original>How long it will take to hack the object (in seconds)</Original>
+				<English>How long it will take to hack the object (in seconds)</English>
+				<French>Le temps que prendra le piratage (en secondes)</French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_addHackNDLFileSizeATT">
+				<Original>File size in Mo</Original>
+				<English>File size in Mo</English>
+				<French>Taille du fichier en Mo</French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_addHackNDLFileSizeATTToolTip">
+				<Original>The size of the file in Mo, download time depends on the size</Original>
+				<English>The size of the file in Mo, download time depends on the size</English>
+				<French>La taille du fichier en mega octets, le temps de téléchargement dépend de la taille du fichier.</French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_addHackNDLDataListATT">
+				<Original>Tablet data to receive</Original>
+				<English>Tablet data to receive</English>
+				<French>Données de la tablette à recevoir</French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_addHackNDLDataListATTToolTip">
+				<Original>Array of strings of data, defined in cfg MRH_SoldierTabData</Original>
+				<English>Array of strings of data, defined in cfg MRH_SoldierTabData</English>
+				<French>Array de Strings de données, définies dans le cfg MRH_SoldierTabData</French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_addHackNDLPicsListATT">
+				<Original>Tablet pictures to receive</Original>
+				<English>Tablet pictures to receive</English>
+				<French>Images à recevoir sur la tablette</French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_addHackNDLPicsListATTToolTip">
+				<Original>Array of strings of pictures, defined in cfg MRH_SoldierTabIntelPictures</Original>
+				<English>Array of strings of pictures, defined in cfg MRH_SoldierTabIntelPictures</English>
+				<French>Array de Strings d'images, définies dans le cfg MRH_SoldierTabIntelPictures</French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_addHackNDLDescHelp">
+				<Original>These settings allow you to add an interaction to hack and then download data from this object, depending on mission settings it may require a hacking tool. Once hack is done, the object will receive a download interaction. Upon downloading data a player will receive them on their soldier tab. Data and pictures must be classes defined in cfg MRH_SoldierTabData and cfg MRH_SoldierTabIntelPictures, stated as stings and between [] (see preset examples)</Original>
+				<English>These settings allow you to add an interaction to hack and then download data from this object, depending on mission settings it may require a hacking tool. Once hack is done, the object will receive a download interaction. Upon downloading data a player will receive them on their soldier tab. Data and pictures must be classes defined in cfg MRH_SoldierTabData and cfg MRH_SoldierTabIntelPictures, stated as stings and between [] (see preset examples)</English>
+				<French>Ces réglages permettent d'ajouter une interaction pour pirater et ensuite télécharger des données depuis cet objet, selon les réglages de la mission cela peut nécessiter un outil de piratage. Une fois le piratage terminé le joueur les recevra sur sa tablette.Les images et les données doivent être des classe définies dans les configs MRH_SoldierTabData et MRH_SoldierTabIntelPictures, écrites entre guillemets,séparées par des virgules et placées entre [] (voir exemples préréglés)</French>
+			</Key>
 			<Key ID="STR_MRH_FUNCS_">
 				<Original></Original>
 				<English></English>
 				<French></French>
 			</Key>
+			
 			
 			
 			

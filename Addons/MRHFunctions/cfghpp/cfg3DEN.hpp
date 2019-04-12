@@ -207,7 +207,7 @@ class object
          
         class mrh_hackDownloadAndCollectData_attributes
         {
-            displayName = "MRH add hack and download files";
+            displayName = $STR_MRH_FUNCS_HackAndDlTitleATT;
             collapsed = 1;
                 class Attributes
                 {
@@ -215,8 +215,8 @@ class object
                     class MRH_objectAddHack
                     {
                     
-                        displayName = "Add hack and collectible data to object"; 
-                        tooltip = ""; 
+                        displayName = $STR_MRH_FUNCS_addHackAndDlATT; 
+                        tooltip = $STR_MRH_FUNCS_addHackAndDlATTToolTip; 
                         property = "mrh_hackAndCollectData"; 
                         control = "CheckboxState";    
                         expression = "if (_value) then {[_this] call MRH_fnc_MilsimTools_Functions_addHackFromAttributes};";
@@ -230,8 +230,8 @@ class object
                     class MRH_objectHackDuration
                     {
                     
-                        displayName = "Hack duration"; 
-                        tooltip = ""; 
+                        displayName = $STR_MRH_FUNCS_addHackNDLHackDurationATT; 
+                        tooltip = $STR_MRH_FUNCS_addHackNDLHackDurationATTToolTip; 
                         property = "mrh_hackAndCollectDataHackDuration"; 
                         control = "EditShort";    
                         expression = "_this setVariable ['%s',_value]";
@@ -245,8 +245,8 @@ class object
                     class MRH_objectHackFileSize
                     {
                     
-                        displayName = "File size in Mo"; 
-                        tooltip = ""; 
+                        displayName = $STR_MRH_FUNCS_addHackNDLFileSizeATT; 
+                        tooltip = $STR_MRH_FUNCS_addHackNDLFileSizeATTToolTip; 
                         property = "mrh_hackAndCollectDataHackFileSize"; 
                         control = "EditShort";    
                         expression = "_this setVariable ['%s',_value]";
@@ -260,8 +260,8 @@ class object
                     class MRH_objectHackDataReceived
                     {
                     
-                        displayName = "Tablet data to receive"; 
-                        tooltip = ""; 
+                        displayName = $STR_MRH_FUNCS_addHackNDLDataListATT; 
+                        tooltip = $STR_MRH_FUNCS_addHackNDLDataListATTToolTip; 
                         property = "mrh_hackAndCollectDataHackData"; 
                         control = "Edit";    
                         expression = "_this setVariable ['%s',_value]";
@@ -271,11 +271,12 @@ class object
                         HACK_COND;
                         typeName = "STRING";
                     };
+
                     class MRH_objectHackPicturesReceived
                     {
                     
-                        displayName = "Tablet pictures to receive"; 
-                        tooltip = ""; 
+                        displayName = $STR_MRH_FUNCS_addHackNDLPicsListATT; 
+                        tooltip = $STR_MRH_FUNCS_addHackNDLPicsListATTToolTip;
                         property = "mrh_hackAndCollectPicsHack"; 
                         control = "Edit";    
                         expression = "_this setVariable ['%s',_value]";
@@ -283,6 +284,22 @@ class object
                         unique = 0; 
                         validate = "none";
                         HACK_COND;
+                        typeName = "STRING";
+                    };
+
+                    class MRH_hackNDown_help
+                    {
+                    
+                        displayName = "help"; 
+                        tooltip = ""; 
+                        description = $STR_MRH_FUNCS_addHackNDLDescHelp; 
+                        property = "mrh_hackAndDown_helpDesc"; 
+                        control = "StructuredText2";    
+                        expression = "";
+                        defaultValue = "";
+                        unique = 0; 
+                        validate = "none";
+                        SEARCH_COND;
                         typeName = "STRING";
                     };
                 };
