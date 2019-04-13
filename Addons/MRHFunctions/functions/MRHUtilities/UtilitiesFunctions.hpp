@@ -68,6 +68,12 @@ class MilsimTools_Functions_searchObjectFromAttributes
 {};
 class MilsimTools_Functions_addHackFromAttributes
 {};
+class generateComposition
+{};
+class deleteComposition
+{};
+class spawnComposition
+{};
 /*
 class MilsimTools_Functions_
 {};
