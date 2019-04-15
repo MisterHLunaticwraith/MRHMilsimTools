@@ -282,6 +282,56 @@
 				<English>If enabled the box's original content will be refilled every time a player opens the box</English>
 				<French>Si ce réglage est activé le contenu originel de la boîte sera restauré à chaque fois qu'un joueur l'ouvre</French>
 			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_FieldMedicTentVehicleDisp">
+				<Original>Field Medical Tent</Original>
+				<English>Field Medical Tent</English>
+				<French>Tente médicale de terrain</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_AceInteractionsMain">
+				<Original>Interactions</Original>
+				<English>Interactions</English>
+				<French>Interactions</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_HintTentCollected">
+				<Original>Tent collected</Original>
+				<English>Tent collected</English>
+				<French>Tente ramassée</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_HintRepackingTentCancelled">
+				<Original>Repacking tent cancelled</Original>
+				<English>Repacking tent cancelled</English>
+				<French>Rangement de la tente annulé</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_MessRepackingAncCOllectTent">
+				<Original>Repacking and collecting medical tent</Original>
+				<English>Repacking and collecting medical tent</English>
+				<French>Rangement et récupération de la tente</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_AceActionRepackAndCollectTent">
+				<Original>Repack and collect tent</Original>
+				<English>Repack and collect tent</English>
+				<French>Démonter et récupérer la tente</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_AcePitchMedicalTent">
+				<Original>Pitch medical tent</Original>
+				<English>Pitch medical tent</English>
+				<French>Monter la tente médicale</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_HintPitchingTentCancelled">
+				<Original>Pitching tent cancelled</Original>
+				<English>Pitching tent cancelled</English>
+				<French>Assemblage de la tente annulé</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_ProgressPitchingMedTent">
+				<Original>Pitching medical tent</Original>
+				<English>Pitching medical tent</English>
+				<French>Assemblage de la tente</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_DescWPMedicalTent">
+				<Original>This medical tent can be deployed and serve as a field ACE3 medical facility.</Original>
+				<English>This medical tent can be deployed and serve as a field ACE3 medical facility.</English>
+				<French>Cette tente médicale peut être déployée et servir de zone médicale ACE3.</French>
+			</Key>
 			<Key ID="STR_MRH_MRHMiscItems_">
 				<Original></Original>
 				<English></English>

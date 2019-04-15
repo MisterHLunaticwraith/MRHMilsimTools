@@ -22,9 +22,10 @@ _tent setVariable ["MRH_medicaltentSpecialAssociatedCmp",_comp,true];
 	_move ="AinvPknlMstpSnonWnonDnon_medicUp1";
 	[MRH_player,_move] call ace_common_fnc_doAnimation;
 	playSound3D ["MRHMiscItems\Sounds\MRH_PitchingTent.ogg", MRH_player];
-	//toDo make option to set time it takes?
+	
+	_time = ["MRH_MilsimTools_MiscItems_FieldMedicalTentRepackTime"] call cba_settings_fnc_get;
 		_progress =
-		[10, 
+		[_time, 
 		[_tent],
 		{
 			[MRH_player, ""] call ace_common_fnc_doAnimation;
@@ -32,26 +33,26 @@ _tent setVariable ["MRH_medicaltentSpecialAssociatedCmp",_comp,true];
 			_comp = _tent getVariable ["MRH_medicaltentSpecialAssociatedCmp",[objNull]];
 			[MRH_Player,_comp] call MRH_fnc_deleteComposition;
 			[_tent,MRH_player,"MRH_FoldedMedicalTent"] CFUNC(addItem);
-			hint "Tent collected";
+			hint (localize "STR_MRH_MRHMiscItems_HintTentCollected");
 
 
 		},
 		{
-			hint "Repacking tent cancelled";
+			hint (localize "STR_MRH_MRHMiscItems_HintRepackingTentCancelled");
 			[MRH_player, ""] call ace_common_fnc_doAnimation;
 		},
-		"Repacking and collecting medical tent"
+		(localize "STR_MRH_MRHMiscItems_MessRepackingAncCOllectTent")
 
 
 		] call ace_common_fnc_progressBar;
 
 };
 
-_loc =  "Repack and collect tent";
+_loc =  (localize "STR_MRH_MRHMiscItems_AceActionRepackAndCollectTent");
 _actionCollect =
 ["MRH_medicalTentFoldAndCollect", 
 _loc,
- "",
+ "\MRHMiscItems\Models\MedicalTent\medicalTentInv_ca.paa",
 _statementCollect , 
  {true},
  {},

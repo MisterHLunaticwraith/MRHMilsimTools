@@ -2,7 +2,7 @@
 class MRH_MedicalTent : ACE_medicalSupplyCrate_advanced
 
 {
-	displayname = "Field Medical Tent";
+	displayname = $STR_MRH_MRHMiscItems_FieldMedicTentVehicleDisp;
 	editorPreview = "\MRHMiscItems\Models\MedicalTent\MRH_MedicalTent.jpg";
 	scope = 2;
 	scopeCurator = 2;
@@ -17,7 +17,7 @@ class MRH_MedicalTent : ACE_medicalSupplyCrate_advanced
 	 class ACE_Actions {
         class ACE_MainActions
         {
-            displayName ="Interactions";
+            displayName = $STR_MRH_MRHMiscItems_AceInteractionsMain;
             icon = "";
             distance = 2;
             selection = "mem01";  

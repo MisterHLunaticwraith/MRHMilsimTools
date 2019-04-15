@@ -16,9 +16,10 @@ _move ="AinvPknlMstpSnonWnonDnon_medicUp1";
 [MRH_player,_move] call ace_common_fnc_doAnimation;
 //MRH_player say3D "MRH_sound_searching"; //toDo Change sound
 playSound3D ["MRHMiscItems\Sounds\MRH_PitchingTent.ogg", MRH_player];
-//toDo make option to set time it takes?
+
+_time = ["MRH_MilsimTools_MiscItems_FieldMedicalTentDeployTime"] call cba_settings_fnc_get;
 _progress =
-[20, 
+[_time, 
 [],
 {
 	[MRH_player, ""] call ace_common_fnc_doAnimation;
@@ -30,10 +31,10 @@ _progress =
 
 },
 {
-	hint "Pitching tent cancelled";
+	hint (localize "STR_MRH_MRHMiscItems_HintPitchingTentCancelled");
 	[MRH_player, ""] call ace_common_fnc_doAnimation;
 },
-"Pitching medical tent"
+(localize "STR_MRH_MRHMiscItems_ProgressPitchingMedTent")
 
 
 ] call ace_common_fnc_progressBar;

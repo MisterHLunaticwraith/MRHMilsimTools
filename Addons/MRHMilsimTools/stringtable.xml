@@ -544,6 +544,31 @@
 				<English>Enables the debug mode, don't forget to uncheck when exporting your mission lest it will be available for everyone</English>
 				<French>Active le débuggage, ne pas oublié de décocher à l'export de la mission où il sera activ pour tout le monde</French>
 			</Key>
+			<Key ID="STR_MRH_CBA_MedTentDeploySetting">
+				<Original>Time it takes to deploy the tent</Original>
+				<English>Time it takes to deploy the tent</English>
+				<French>Temps nécessaire pour assembler la tente</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_MedTentDeploySettingToolTip">
+				<Original>How long it takes to assemble the tent (in seconds)</Original>
+				<English>How long it takes to assemble the tent (in seconds)</English>
+				<French>Le temps nécessaire pour assembler la tente (en secondes)</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_MedTentRepackSetting">
+				<Original>Time it takes to repack the tent</Original>
+				<English>Time it takes to repack the tent</English>
+				<French>Temps nécessaire pour récupérer la tente</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_MedTentRepackSettingToolTip">
+				<Original>How long it takes to repack the tent (in seconds)</Original>
+				<English>How long it takes to repack the tent (in seconds)</English>
+				<French>Le temps nécessaire pour ranger et récupérer la tente (en secondes)</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_">
+				<Original></Original>
+				<English></English>
+				<French></French>
+			</Key>
 	
 
 

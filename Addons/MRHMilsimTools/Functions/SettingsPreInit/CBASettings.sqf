@@ -158,3 +158,8 @@ _script	Script to execute when setting is changed.  (optional) <CODE>
 
 //-----------below are the settings for the debug mode 
 ["MRH_MilsimTools_DebugTools_isDebugMode", "CHECKBOX",   [localize "STR_MRH_CBA_DebugMode_SettingName",localize "STR_MRH_CBA_DebugMode_SettingNameToolTip"],["MRH_MilsimTools - Debug Mode"],false,1,{call MRH_fnc_MilsimTools_DebugTools_debugHintboxInit;}] call cba_settings_fnc_init;
+
+//--------- below are the settings for the field medical tent
+
+["MRH_MilsimTools_MiscItems_FieldMedicalTentDeployTime", "SLIDER",   [localize "STR_MRH_CBA_MedTentDeploySetting",localize "STR_MRH_CBA_MedTentDeploySettingToolTip"], "MRH_MilsimTools - Medical Tent", [20, 120, 20, 0],1] call cba_settings_fnc_init;
+["MRH_MilsimTools_MiscItems_FieldMedicalTentRepackTime", "SLIDER",   [localize "STR_MRH_CBA_MedTentRepackSetting",localize "STR_MRH_CBA_MedTentRepackSettingToolTip"], "MRH_MilsimTools - Medical Tent", [10, 120, 10, 0],1] call cba_settings_fnc_init;

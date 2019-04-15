@@ -50,7 +50,7 @@ class Man;
 
                 class MRH_Ace_pitchMedicalTent
 				{
-					displayName = "Pitch medical tent";
+					displayName = $STR_MRH_MRHMiscItems_AcePitchMedicalTent;
 					condition = "('MRH_FoldedMedicalTent' in items MRH_player)";
 					exceptions[] = {"isNotSitting"};
 					statement = "call MRH_fnc_MilsimTools_MiscItems_unfoldMedicalTent;";
