@@ -9,4 +9,9 @@ class cfgMRHcompositions
 	{
 		mrhComp[]= {{"Land_HelipadEmpty_F",{4.09326,-0.101563,-0.892423},-301.661,true,false,false,false,{},0},{"MRH_emptyBox",{5.93555,-1.07739,-0.892424},-247.567,false,false,false,true,{5,true,true},0},{"Land_BloodBag_F",{3.75488,0.0571289,-0.901251},-286.77,false,false,false,false,{},0},{"MedicalGarbage_01_1x1_v1_F",{3.82959,0.775879,-0.892423},-278.867,false,false,false,false,{},0},{"Land_Stretcher_01_olive_F",{3.10889,1.03101,-0.892424},27.4179,false,false,false,false,{},0},{"ACE_medicalSupplyCrate_advanced",{6.29102,0.499023,-0.892424},-282.498,false,false,false,false,{},0},{"Land_TentA_F",{4.13232,-2.8374,-0.892423},-197.027,false,false,false,false,{},0},{"Land_TentA_F",{1.05176,-2.31665,-0.892423},-136.399,false,false,false,false,{},0},{"Campfire_burning_F",{4.09082,3.43237,-0.892423},-301.661,false,false,false,false,{},0},{"MRH_ShootingMat_Olive",{7.26855,3.05347,-0.892422},-301.661,false,false,false,false,{},0},{"Land_ClutterCutter_medium_F",{7.26855,3.05347,-0.875145},-301.661,false,false,false,false,{},0}};
 	};
+
+	class MRH_MedicalTentUnfold
+	{
+		mrhComp[]= {{"Land_HelipadEmpty_F",{0.427979,2.23596,-0.752447},-0.00086904,true,false,false,false,{},0},{"Land_Ground_sheet_khaki_F",{0.481689,3.19379,-0.752441},284.862,false,false,false,false,{},0},{"MedicalGarbage_01_1x1_v1_F",{-0.316406,2.81329,-0.75244},301.484,false,false,false,false,{},0},{"Land_ClutterCutter_medium_F",{0.128906,1.24298,-0.752452},356.31,false,false,false,false,{},0},{"BloodSplatter_01_Small_New_F",{0.492432,2.62183,-0.752445},-0.00086904,false,false,false,false,{},0},{"Land_IntravenBag_01_full_F",{1.0564,2.64368,-0.751134},359.951,false,false,false,false,{},0}};
+	};
 };

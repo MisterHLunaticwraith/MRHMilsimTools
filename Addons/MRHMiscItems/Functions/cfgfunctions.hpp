@@ -28,6 +28,10 @@ class MRH // Defines the "owner"
 		{};
 		class MilsimTools_MiscItems_isRefillBoxFromAttributes
 		{};
+		class MilsimTools_MiscItems_medicalTentSpawn
+		{};
+		class MilsimTools_MiscItems_unFoldMedicalTent
+		{};
 	};
 	
 };

@@ -12,11 +12,14 @@ class ShootingMat_01_Khaki_F;
 class Box_NATO_Ammo_F;
 class B_supplyCrate_F;
 class CargoNet_01_box_F;
+class Camping_base_F;
+class ACE_medicalSupplyCrate_advanced;
 //include items here
 #include "\MRHMiscItems\Models\ElevatorButton\ElevatorButton.hpp"
 #include "\MRHMiscItems\Models\UsbThumbDrive\usbDrive.hpp"
 #include "\MRHMiscItems\Models\BioScanner\bioscanner.hpp"
 #include "\MRHMiscItems\Models\ShootingMats\shootingmats.hpp"
+#include "\MRHMiscItems\Models\MedicalTent\medicalTent.hpp"
 
 class Man;
     class CAManBase: Man 
@@ -42,6 +45,16 @@ class Man;
 					exceptions[] = {"isNotSitting"};
 					statement = "['Olive'] call MRH_fnc_MilsimTools_MiscItems_unfoldMat;";
 					icon = "\MRHMiscItems\Models\ShootingMats\Data\ShootingMat_Olive_ca.paa";
+					
+				};
+
+                class MRH_Ace_pitchMedicalTent
+				{
+					displayName = "Pitch medical tent";
+					condition = "('MRH_FoldedMedicalTent' in items MRH_player)";
+					exceptions[] = {"isNotSitting"};
+					statement = "call MRH_fnc_MilsimTools_MiscItems_unfoldMedicalTent;";
+					icon = "\MRHMiscItems\Models\MedicalTent\medicalTentInv_ca.paa";
 					
 				};
 			};
