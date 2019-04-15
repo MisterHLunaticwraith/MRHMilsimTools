@@ -1,5 +1,30 @@
 Changelog:
 
+MRH Milsim Tools version : v.1.17.0
+
+- tweaked: For better practice. Heli Taxi, Cas Supports,Fire Supports and supply drops are now disabled by default. 
+> Mission makers and server owners can enable them if they need /want them.
+- added: ACE 3 medics, both players and AI will wear a medic patch insignia (if available on the uniform). Can be disabled from options.
+- added: deployable fob functions & objects.
+> In editor under MRHItems >> Utilities are a cargo container and a supply box both can be used two spawn a F.O.B. and a camp. The time it takes to deploy and repack them is configurable via CBA settings. By default they spawn compositions that are built in the mod but you can easily create and configure your own in an addon or in mission description.ext. See the function header for MRH_fnc_generateComposition on github or in the functions viewer for more information.
+- added: field medical tent item & object.
+> tent item can be deployed and repacked and contains ACE 3 medical items. When deployed it serves as an ACE3 medical facility. How long it takes to deploy and repack tent can be modified in CBA settings.
+- added some configurable eden attributes:
+> - The hack and collect data function can be now configured from eligible objects attributes in 3DEN editor. Requires little to no scripting knowledge.
+> - The object search function can be now configured from eligible objects attributes in 3DEN editor. Requires little to no scripting knowledge.
+> - The simple conversation function can be now configured from units attributes in 3DEN editor. Requires little to no scripting knowledge.
+> - The ammo box function can be now configured from eligible objects attributes in 3DEN editor. Requires little to no scripting knowledge.
+> - The auto refill box function can be now configured from eligible objects attributes in 3DEN editor. Requires little to no scripting knowledge.
+- added: an empty crate and an empty supply box. Because sometimes having them empty from the start is realy useful ;-)
+- added: AceX food crate, if ACEX is enabled the box will contain ACEX field rations.
+- added: Tents based on Land_MedicalTent_01_base_F receive an ACE3 open/close action (when closed action appears at the bottom of the entrance , when opened at the center of the tent, visible from the threshold)
+- tweaked: Enhanced Map , map collect now uses core additem function. (if inventory is full object will spawn on the ground).
+- tweaked: CBA versioning: wrong version will return player to the lobby with message from this version onward.
+
+
+/////////////////////////////////////////////////////////////////////////
+Changelog:
+
 MRH Milsim Tools version : v.1.16.9
 
 -Code optimization: started to move conde to unscheduled environment only for addons: Core, Zeus Modules, Halo Gear, Admin Menu
