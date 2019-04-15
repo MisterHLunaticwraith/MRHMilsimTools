@@ -14,6 +14,7 @@ class B_supplyCrate_F;
 class CargoNet_01_box_F;
 class Camping_base_F;
 class ACE_medicalSupplyCrate_advanced;
+class B_Slingload_01_Cargo_F;
 //include items here
 #include "\MRHMiscItems\Models\ElevatorButton\ElevatorButton.hpp"
 #include "\MRHMiscItems\Models\UsbThumbDrive\usbDrive.hpp"
@@ -81,6 +82,8 @@ class MRH_emptySupplyBox : B_supplyCrate_F
 	class TransportMagazines{};
 	class TransportItems{};
     class TransportBackpacks{};
+	ace_cargo_size = 2;
+    ace_cargo_canLoad = 1;
 };
 
 class MRH_AcexFoodSuppliesCrate : CargoNet_01_box_F
@@ -110,4 +113,28 @@ class MRH_AcexFoodSuppliesCrate : CargoNet_01_box_F
                
     };
     class TransportBackpacks{};
+};
+
+class MRH_FOB_container : B_Slingload_01_Cargo_F
+{
+	displayName = "Big FOB container";
+    editorCategory = "EdCat_MRH_Misc";
+    editorSubcategory = "EdSubcat_MRH_Utilities";
+    class TransportWeapons{};
+	class TransportMagazines{};
+	class TransportItems{};
+    class TransportBackpacks{};
+	class EventHandlers {
+		init = "[_this,'MainFob'] call MRH_fnc_MilsimTools_MiscItems_FOB_init;";
+		
+	};
+};
+
+class MRH_camp_container : MRH_emptySupplyBox
+{
+	displayName = "Small camp container";
+	class EventHandlers {
+		init = "[_this,'Camp'] call MRH_fnc_MilsimTools_MiscItems_FOB_init;";
+		
+	};
 };

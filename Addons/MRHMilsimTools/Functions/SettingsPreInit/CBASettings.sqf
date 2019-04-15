@@ -163,3 +163,14 @@ _script	Script to execute when setting is changed.  (optional) <CODE>
 
 ["MRH_MilsimTools_MiscItems_FieldMedicalTentDeployTime", "SLIDER",   [localize "STR_MRH_CBA_MedTentDeploySetting",localize "STR_MRH_CBA_MedTentDeploySettingToolTip"], "MRH_MilsimTools - Medical Tent", [20, 120, 20, 0],1] call cba_settings_fnc_init;
 ["MRH_MilsimTools_MiscItems_FieldMedicalTentRepackTime", "SLIDER",   [localize "STR_MRH_CBA_MedTentRepackSetting",localize "STR_MRH_CBA_MedTentRepackSettingToolTip"], "MRH_MilsimTools - Medical Tent", [10, 120, 10, 0],1] call cba_settings_fnc_init;
+
+//-----Below are the settings for FOB objects
+["MRH_MilsimTools_FOB_BIG_composition", "EDITBOX",   ["Composition for the FOB container",""], ["MRH_MilsimTools - Deployable Fobs", "FOB"],"MRH_FieldHQSmall_default",1] call cba_settings_fnc_init;
+["MRH_MilsimTools_MiscItems_FOB_BIGDeployTime", "SLIDER",   ["Deploy time for the FOB",""], ["MRH_MilsimTools - Deployable Fobs", "FOB"], [20, 240, 20, 0],1] call cba_settings_fnc_init;
+["MRH_MilsimTools_MiscItems_FOB_BIGRepackTime", "SLIDER",   ["Deploy time for the FOB",""], ["MRH_MilsimTools - Deployable Fobs", "FOB"], [20, 240, 20, 0],1] call cba_settings_fnc_init;
+["MRH_MilsimTools_MiscItems_FOB_BIGRepackRadius", "SLIDER",   ["Delete distance around FOB",""], ["MRH_MilsimTools - Deployable Fobs", "FOB"], [0, 100, 50, 0],1] call cba_settings_fnc_init;
+
+["MRH_MilsimTools_CAMP_composition", "EDITBOX",   ["Composition for the small camp container",""], ["MRH_MilsimTools - Deployable Fobs", "Camp"],"MRH_SmallCamp_default",1] call cba_settings_fnc_init;
+["MRH_MilsimTools_MiscItems_CAMP_DeployTime", "SLIDER",   ["Deploy time for the camp",""], ["MRH_MilsimTools - Deployable Fobs", "Camp"], [10, 240, 10, 0],1] call cba_settings_fnc_init;
+["MRH_MilsimTools_MiscItems_CAMP_GRepackTime", "SLIDER",   ["Deploy time for the camp",""], ["MRH_MilsimTools - Deployable Fobs", "Camp"], [10, 240, 10, 0],1] call cba_settings_fnc_init;
+["MRH_MilsimTools_MiscItems_CAMP_GRepackRadius", "SLIDER",   ["Delete distance around the camp",""], ["MRH_MilsimTools - Deployable Fobs", "Camp"], [0, 100, 10, 0],1] call cba_settings_fnc_init;

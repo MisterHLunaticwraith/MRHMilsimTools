@@ -57,10 +57,11 @@ _object setDir ((getDir _pivot) + _reldir);
 _object setVariable ["ace_medical_ismedicalfacility",_isAceMedicalFacility,true];
 _object setVariable ["ace_isrepairfacility",_isAceRepairFacility,true];
 
-//if ("MRHSatellite" in activatedAddons) then {
+//checking for a func is more reliable than checking in  activated addons
+if !(isNil "MRH_fnc_IsSatelliteConsole") then {
 	if (_isMRHSatelliteConsole) then {[[_object],MRH_fnc_IsSatelliteConsole] remoteExec ["Call",[0,-2] select isDedicated,true]};
 	if (_isMRHSatelliteScreen) then {[[_object],MRH_fnc_IsSatMonitor] remoteExec ["Call",[0,-2] select isDedicated,true]};
-//};
+};
 
 if (_isAmmoBox) then {
 	_AmmoCrateParams params ["_number","_unli","_refresh"];

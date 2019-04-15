@@ -153,6 +153,8 @@ class MRH // Defines the "owner"
 		{};
 		class MilsimTools_Core_getBoolArray
 		{};
+		class MilsimTools_Core_isDeployableFob
+		{};
 		/*
 		class MilsimTools_Core_
 		{};

@@ -32,6 +32,8 @@ class MRH // Defines the "owner"
 		{};
 		class MilsimTools_MiscItems_unFoldMedicalTent
 		{};
+		class MilsimTools_MiscItems_FOB_Init
+		{};
 	};
 	
 };
