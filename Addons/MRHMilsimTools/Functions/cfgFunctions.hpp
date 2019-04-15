@@ -155,6 +155,8 @@ class MRH // Defines the "owner"
 		{};
 		class MilsimTools_Core_isDeployableFob
 		{};
+		class MilsimTools_Core_assignMedicPatch
+		{};
 		/*
 		class MilsimTools_Core_
 		{};

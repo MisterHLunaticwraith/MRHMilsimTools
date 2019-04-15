@@ -564,6 +564,76 @@
 				<English>How long it takes to repack the tent (in seconds)</English>
 				<French>Le temps nécessaire pour ranger et récupérer la tente (en secondes)</French>
 			</Key>
+			<Key ID="STR_MRH_CBA_CompforFobSet">
+				<Original>Composition for the FOB container</Original>
+				<English>Composition for the FOB container</English>
+				<French>Composition pour la base avancée</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_CompNameTootip">
+				<Original>Composition spawned. As defined in cfgMRHcompositions (in addon or mission cfg).</Original>
+				<English>Composition spawned. As defined in cfgMRHcompositions (in addon or mission cfg).</English>
+				<French>Composition qui sera spawnée autour du container pour la base avancée. (définie dans la mission ou dans un addon)</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_CompDeployTime">
+				<Original>Deploy time for the FOB</Original>
+				<English>Deploy time for the FOB</English>
+				<French>Temps nécessaire pour déployer la base avancée</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_CompDeployTimeTooltip">
+				<Original>Time it takes to deploy the composition (in seconds)</Original>
+				<English>Time it takes to deploy the composition (in seconds)</English>
+				<French>Temps nécéssaire à pour déployer la base avancée (en secondes)</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_CompRepackTime">
+				<Original>Repack time for the FOB</Original>
+				<English>Repack time for the FOB</English>
+				<French>Temps nécéssaire pour démonter la base avancée</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_CompRepackTimeToolTip">
+				<Original>Time it takes to repack the composition (in seconds)</Original>
+				<English>Time it takes to repack the composition (in seconds)</English>
+				<French>Temps nécéssaire pour démonter la base avancée (en secondes)</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_CompDeleteDistRadius">
+				<Original>Delete distance around FOB</Original>
+				<English>Delete distance around FOB</English>
+				<French>Distance de suppression autour de la FOB</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_CompDeleteDistRadiusToolTip">
+				<Original>Max radius around object to delete spawned compositions object. Useful not to delete vehicle that were part of the composition but where driven away</Original>
+				<English>Max radius around object to delete spawned compositions object. Useful not to delete vehicle that were part of the composition but where driven away</English>
+				<French>Distance maximale autour de l'objet pivot au delà de laquelle un objet spawné ne sera pas supprimé. Utile pour ne pas supprimer un véhicule qui faisait partie de la composition mais en a été éloigné.</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_CampDeployComp">
+				<Original>Composition for the small camp containe</Original>
+				<English>Composition for the small camp containe</English>
+				<French>Composition du petit camps déployable</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_CampDeployTime">
+				<Original>Deploy time for the camp</Original>
+				<English>Deploy time for the camp</English>
+				<French>Temps nécessaire pour déployer le camp</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_CampRepackTime">
+				<Original>Repack time for the camp</Original>
+				<English>Repack time for the camp</English>
+				<French>Temps démonter pour déployer le camp</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_CampRadiusAroundDelete">
+				<Original>Delete distance around the camp</Original>
+				<English>Delete distance around the camp</English>
+				<French>Distance de suppression autour du camp</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_ApplyMedicPatchSetting">
+				<Original>Apply Medic Insignia to ACE 3 medics.</Original>
+				<English>Apply Medic Insignia to ACE 3 medics.</English>
+				<French>Ajouter l'écusson AuxSan aux médics ACE 3</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_ApplyMedicPatchSettingToolTip">
+				<Original>If enabled all ACE3 medics (players and AI), will wear a medic insignia.</Original>
+				<English>If enabled all ACE3 medics (players and AI), will wear a medic insignia.</English>
+				<French>Si ce réglage est activé tous les Auxiliaires Santitaires (médics IA et joueurs) porteront un écusson de médic</French>
+			</Key>
 			<Key ID="STR_MRH_CBA_">
 				<Original></Original>
 				<English></English>
@@ -773,11 +843,57 @@
 				<English>MRH MilsimTools Options</English>
 				<French>Options MRH MilsimTools</French>
 			</Key>
+			<Key ID="STR_MRH_MISC_FobDeployedHintC">
+				<Original>F.O.B. deployed</Original>
+				<English>F.O.B. deployed</English>
+				<French>Poste avancé déployé</French>
+			</Key>
+			<Key ID="STR_MRH_MISC_FobDeployementCancelledHintC">
+				<Original>Deployment canceled</Original>
+				<English>Deployment canceled</English>
+				<French>Déploiment annulé</French>
+			</Key>
+			<Key ID="STR_MRH_MISC_DeployingFobProgress">
+				<Original>Deploying...</Original>
+				<English>Deploying...</English>
+				<French>Déploiement...</French>
+			</Key>
+			<Key ID="STR_MRH_MISC_FobDeployAceAction">
+				<Original>Deploy F.O.B.</Original>
+				<English>Deploy F.O.B.</English>
+				<French>Déployer le QG</French>
+			</Key>
+			<Key ID="STR_MRH_MISC_FobRepackedHintC">
+				<Original>F.O.B. repacked</Original>
+				<English>F.O.B. repacked</English>
+				<French>Poste avancé replié</French>
+			</Key>
+			<Key ID="STR_MRH_MISC_FobRepackCancelledHintC">
+				<Original>Repacking canceled</Original>
+				<English>Repacking canceled</English>
+				<French>Démontage annulé</French>
+			</Key>
+			<Key ID="STR_MRH_MISC_FobRepackProgress">
+				<Original>Repacking F.O.B....</Original>
+				<English>Repacking F.O.B....</English>
+				<French>Repli du poste avancé en cours</French>
+			</Key>
+			<Key ID="STR_MRH_MISC_FobRepackAceAction">
+				<Original>Repack F.O.B.</Original>
+				<English>Repack F.O.B.</English>
+				<French>Démonter le poste avancé</French>
+			</Key>
+			<Key ID="STR_MRH_MISC_MedicPatchInsignia">
+				<Original>Medic Shoulder Patch</Original>
+				<English>Medic Shoulder Patch</English>
+				<French>Ecusson d'AuxSan</French>
+			</Key>
 			<Key ID="STR_MRH_MISC_">
 				<Original></Original>
 				<English></English>
 				<French></French>
 			</Key>
+			
 
 		</Container>
 

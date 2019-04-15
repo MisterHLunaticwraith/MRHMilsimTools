@@ -117,7 +117,7 @@ class MRH_AcexFoodSuppliesCrate : CargoNet_01_box_F
 
 class MRH_FOB_container : B_Slingload_01_Cargo_F
 {
-	displayName = "Big FOB container";
+	displayName = $STR_MRH_MRHMiscItems_BigFobContainerDispName;
     editorCategory = "EdCat_MRH_Misc";
     editorSubcategory = "EdSubcat_MRH_Utilities";
     class TransportWeapons{};
@@ -132,7 +132,7 @@ class MRH_FOB_container : B_Slingload_01_Cargo_F
 
 class MRH_camp_container : MRH_emptySupplyBox
 {
-	displayName = "Small camp container";
+	displayName = $STR_MRH_MRHMiscItems_SmallCampContainerDispName;
 	class EventHandlers {
 		init = "[_this,'Camp'] call MRH_fnc_MilsimTools_MiscItems_FOB_init;";
 		

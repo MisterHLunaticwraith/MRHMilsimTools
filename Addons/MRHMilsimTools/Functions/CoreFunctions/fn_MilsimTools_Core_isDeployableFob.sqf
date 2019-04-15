@@ -42,7 +42,7 @@ _statementDeploy = {
 
 						_MOBsource setVariable ["MRH_MOBsource_SpawnedComp",_comp,true];
 						
-						hintC "Poste avancé déployé";
+						hintC (localize "STR_MRH_MISC_FobDeployedHintC");
 						["mrh_fobdeployed", [_MOBsource,_composition,_comp,MRH_player]] call CBA_fnc_globalEvent;
 
 				},
@@ -51,16 +51,16 @@ _statementDeploy = {
 					//cancel
 						_MOBsource = (_this select 0) select 0;
 						_MOBsource setVariable ["MRH_MOBsource_isNotDeploying",false,true];
-						hintC "Déploiment annulé";
+						hintC (localize "STR_MRH_MISC_FobDeployementCancelledHintC");
 
 
 				}, 
-				"Déploiement du poste avancé en cours" 
+				(localize "STR_MRH_MISC_DeployingFobProgress") 
 
 
 			] call ace_common_fnc_progressBar; 
 	};
-_loc = "Déployer le QG"; 
+_loc = localize "STR_MRH_MISC_FobDeployAceAction"; 
 _action =
 ["MRH_DeployHQ_action", 
 _loc,
@@ -93,23 +93,23 @@ _statementRepack = {
 				[_MOBsource,_comp,_deleteRadius] call MRH_fnc_deleteComposition;
 
 				_MOBsource setVariable ["MRH_MOBsource_MOBsourceisDeployed",false,true];
-				hintC "Poste avancé replié";
+				hintC (localize "STR_MRH_MISC_FobRepackedHintC");
 			},
 
 			{ 
 			//cancel
 				_MOBsource = (_this select 0) select 0;
 				_MOBsource setVariable ["MRH_MOBsource_isNotDeploying",false,true];
-				hintC "Repli du PO annulé";
+				hintC (localize "STR_MRH_MISC_FobRepackCancelledHintC");
 
 
 			}, 
-		"Repli du poste avancé en cours" 
+		(localize "STR_MRH_MISC_FobRepackProgress")
 
 
 			] call ace_common_fnc_progressBar; 
 	};
-_loc = "Repacker le QG"; 
+_loc = localize "STR_MRH_MISC_FobRepackAceAction"; 
 _actionRP =
 ["MRH_RepackHQ_action", 
 _loc,

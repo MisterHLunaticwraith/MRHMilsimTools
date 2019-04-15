@@ -332,11 +332,22 @@
 				<English>This medical tent can be deployed and serve as a field ACE3 medical facility.</English>
 				<French>Cette tente médicale peut être déployée et servir de zone médicale ACE3.</French>
 			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_BigFobContainerDispName">
+				<Original>Large FOB container</Original>
+				<English>Large FOB container</English>
+				<French>Conteneur pour poste avancé</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_SmallCampContainerDispName">
+				<Original>Small camp container</Original>
+				<English>Small camp container</English>
+				<French>Conteneur pour camp avancé</French>
+			</Key>
 			<Key ID="STR_MRH_MRHMiscItems_">
 				<Original></Original>
 				<English></English>
 				<French></French>
 			</Key>
+		
 			
 		</Container>
 	</Package>

@@ -83,3 +83,20 @@ class cfgNotifications
 
 #include"\MRHMilSimTools\cfghpp\cfgMRHcompositions.hpp"
 #include"\MRHMilSimTools\cfghpp\cfg3DEN.hpp"
+
+class CfgUnitInsignia
+{
+	class MRH_MedicShoulderPatch
+	{
+		author = "Mr H.";
+		displayName = $STR_MRH_MISC_MedicPatchInsignia;
+		texture = "\MRHMilSimTools\paa\medicpatch.paa";
+	};
+};
+class Extended_Init_EventHandlers {
+    class CAManBase {
+        class MRH_MedicPatch_init {
+            init = "_this call MRH_fnc_MilsimTools_Core_assignMedicPatch;";
+        };
+    };
+};
