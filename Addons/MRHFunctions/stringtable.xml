@@ -107,11 +107,196 @@
 				<English>Talk</English>
 				<French>Parler</French>
 			</Key>
-			<Key ID="STR_MRH_HP_">
+			<Key ID="STR_MRH_FUNCS_ActionOpenTent">
+				<Original>Toggle tent opening</Original>
+				<English>Toggle tent opening</English>
+				<French>Ouvrir/fermer tente</French>
+			</Key>
+
+			<Key ID="STR_MRH_FUNCS_SimpleACe_AttributesTitle">
+				<Original>MRH Simple conversation system</Original>
+				<English>MRH Simple conversation system</English>
+				<French></French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_AddAConvToTheUnit">
+				<Original>Add a conversation to this unit</Original>
+				<English>Add a conversation to this unit</English>
+				<French></French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_MessageTextATT">
+				<Original>Message text:</Original>
+				<English>Message text:</English>
+				<French></French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_MessageCodeToExecATT">
+				<Original>Code to execute: (Optional)</Original>
+				<English>Code to execute: (Optional)</English>
+				<French></French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_ParametersPassedATT">
+				<Original>Parameters passed to the code: (Optional)</Original>
+				<English>Parameters passed to the code: (Optional)</English>
+				<French></French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_GlobalExecATT">
+				<Original>Global exec</Original>
+				<English>Global exec</English>
+				<French></French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_RemoveActionAfterATT">
+				<Original>Remove interaction after conversation</Original>
+				<English>Remove interaction after conversation</English>
+				<French></French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_SimpleMessageATTDESC">
+				<Original>This will add an ACE3 'talk' interaction to the unit. If a player talks to the unit. You can optionally run some code when interaction is used. Enabling 'Global Exec' remote execute the code on all machines. The code receives the parameters in select 1, while select 0 is the unit eg: _unit = _this select 0;_passedParameters = (_this select 1);</Original>
+				<English>This will add an ACE3 'talk' interaction to the unit. If a player talks to the unit. You can optionally run some code when interaction is used. Enabling 'Global Exec' remote execute the code on all machines. The code receives the parameters in select 1, while select 0 is the unit eg: _unit = _this select 0;_passedParameters = (_this select 1);</English>
+				<French></French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_MessageTextTooltip">
+				<Original>Message the unit will say</Original>
+				<English>Message the unit will say</English>
+				<French>Message que l'unité dira</French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_MessageCodeToolTip">
+				<Original>Code to run when the message is said. Code receives parameters as _unit = _this select 0; _passedParameters = _this select 1;(see below)</Original>
+				<English>Code to run when the message is said. Code receives parameters as _unit = _this select 0; _passedParameters = _this select 1;(see below)</English>
+				<French>Code à executer quand le message est donné. Le code reçoit les paramètres suivants _unite = _this select 0;_parametresPasses = _this select 1;(voir ci-dessous)</French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_MessageParamsToolTip">
+				<Original>Params sent to the code. To get them in the code you can do: (_this select 1) params ["_param1","_param2","_paramN"];</Original>
+				<English>Params sent to the code. To get them in the code you can do: (_this select 1) params ["_param1","_param2","_paramN"];</English>
+				<French>Paramètres passés au code. Pour les récupérer dans le code vous pouvez faire: (_this select 1) params ["_param1","_param2","_paramN"];</French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_MessageGlobalToolTip">
+				<Original>If enabled the code will be executed on all machines.</Original>
+				<English>If enabled the code will be executed on all machines.</English>
+				<French>Si activé, le code sera executé sur toutes les machines.</French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_MessageRemoveAfterUseToolTip">
+				<Original>If enabled the talk action will be removed on all machines after any player has accessed the conversation.</Original>
+				<English>If enabled the talk action will be removed on all machines after any player has accessed the conversation.</English>
+				<French>Si ce réglage est activé l'action parler sera enlevée sur toutes les machines après que n'importe quel joueur ait accédé à la conversation.</French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_SearchObjectTitleATT">
+				<Original>MRH Search Object</Original>
+				<English>MRH Search Object</English>
+				<French>MRH Fouiller l'objet</French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_objectCanBeSearchedATT">
+				<Original>Object can be searched</Original>
+				<English>Object can be searched</English>
+				<French>L'objet peut être fouillé</French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_objectCanBeSearchedATTToolTip">
+				<Original>Enabling only this setting will result in a 'You haven't found anything' message.</Original>
+				<English>Enabling only this setting will result in a 'You haven't found anything' message.</English>
+				<French>Si ce réglage seulement est activé, la recherche entraînera un message 'Vous n'avez rien trouvé.</French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_SearchWillBeSuccATT">
+				<Original>Search will be successful</Original>
+				<English>Search will be successful</English>
+				<French>La fouille donne quelque chose.</French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_SearchWillBeSuccATTTooltip">
+				<Original>If you enable this setting you have to provide a name for the object that is found (see below)</Original>
+				<English>If you enable this setting you have to provide a name for the object that is found (see below)</English>
+				<French>Si vous activez ce réglage il faut fournir un nom pour ce qui est trouvé (voir ci-dessous)</French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_NameOfFoundObjectATT">
+				<Original>Name of found object</Original>
+				<English>Name of found object</English>
+				<French>Nom de l'objet trouvé</French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_NameOfFoundObjectATTToolTip">
+				<Original>This you be displayed in a hint 'you have found...'</Original>
+				<English>This you be displayed in a hint 'you have found...'</English>
+				<French>Sera affiché dans un hint de type 'Vous avez trouvé...'</French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_CodeToRunWhenObjectATT">
+				<Original>Code to run when object is found:</Original>
+				<English>Code to run when object is found:</English>
+				<French>Code à executer quand l'objet est trouvé.</French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_CodeToRunWhenObjectATTToolTip">
+				<Original>Upon finding the object a code will run (local to the player that found the object),source object is passed as a parameter (_this select 0)</Original>
+				<English>Upon finding the object a code will run (local to the player that found the object),source object is passed as a parameter (_this select 0)</English>
+				<French>Quand un objet est trouvé le code sera executé (local au joueur qui a trouvé l'objet), l'objet source est passé comme paramètre (_this select 0)</French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_SearchObjectDescHelp">
+				<Original>This will add an ACE3 'search object' interaction. If you just enable the 'object can be searched' setting, the search will result in a 'you haven't found anything' message otherwise you can make the search successful and give a name for the 'you have found...' message. Upon ending a successful search the (optional) code will be executed. The source object is passed to the code and can be retrieved with _this select 0</Original>
+				<English>This will add an ACE3 'search object' interaction. If you just enable the 'object can be searched' setting, the search will result in a 'you haven't found anything' message otherwise you can make the search successful and give a name for the 'you have found...' message. Upon ending a successful search the (optional) code will be executed. The source object is passed to the code and can be retrieved with _this select 0</English>
+				<French>Ceci ajoute une interaction ACE3 'fouiller l'objet'. Si vous activez seulement ke réglage 'L'objet peut être fouillé', la recherche renverra un message 'vous n'avez rien trouvé'. Vous pouvez faire que la recherche soit un succès et donner un nom à l'objet trouvé pour le message 'Vous avez trouvé...'. A la fin d'une recherche le code (optionel) sera executé. L'objet source est passé comme paramètre au code (_this select 0)</French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_HackAndDlTitleATT">
+				<Original>MRH add hack and download files</Original>
+				<English>MRH add hack and download files</English>
+				<French>MRH Ajouter piratage et téléchargement de fichiers</French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_addHackAndDlATT">
+				<Original>Add hack and collectible data to object</Original>
+				<English>Add hack and collectible data to object</English>
+				<French>Ajouter un piratage et des données à l'objet</French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_addHackAndDlATTToolTip">
+				<Original>This will add the option to hack and download data from this object</Original>
+				<English>This will add the option to hack and download data from this object</English>
+				<French>Ceci ajoutera l'option de pirater l'objet pour recevoir des données</French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_addHackNDLHackDurationATT">
+				<Original>Hack duration</Original>
+				<English>Hack duration</English>
+				<French>Durée du piratage</French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_addHackNDLHackDurationATTToolTip">
+				<Original>How long it will take to hack the object (in seconds)</Original>
+				<English>How long it will take to hack the object (in seconds)</English>
+				<French>Le temps que prendra le piratage (en secondes)</French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_addHackNDLFileSizeATT">
+				<Original>File size in Mo</Original>
+				<English>File size in Mo</English>
+				<French>Taille du fichier en Mo</French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_addHackNDLFileSizeATTToolTip">
+				<Original>The size of the file in Mo, download time depends on the size</Original>
+				<English>The size of the file in Mo, download time depends on the size</English>
+				<French>La taille du fichier en mega octets, le temps de téléchargement dépend de la taille du fichier.</French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_addHackNDLDataListATT">
+				<Original>Tablet data to receive</Original>
+				<English>Tablet data to receive</English>
+				<French>Données de la tablette à recevoir</French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_addHackNDLDataListATTToolTip">
+				<Original>Array of strings of data, defined in cfg MRH_SoldierTabData</Original>
+				<English>Array of strings of data, defined in cfg MRH_SoldierTabData</English>
+				<French>Array de Strings de données, définies dans le cfg MRH_SoldierTabData</French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_addHackNDLPicsListATT">
+				<Original>Tablet pictures to receive</Original>
+				<English>Tablet pictures to receive</English>
+				<French>Images à recevoir sur la tablette</French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_addHackNDLPicsListATTToolTip">
+				<Original>Array of strings of pictures, defined in cfg MRH_SoldierTabIntelPictures</Original>
+				<English>Array of strings of pictures, defined in cfg MRH_SoldierTabIntelPictures</English>
+				<French>Array de Strings d'images, définies dans le cfg MRH_SoldierTabIntelPictures</French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_addHackNDLDescHelp">
+				<Original>These settings allow you to add an interaction to hack and then download data from this object, depending on mission settings it may require a hacking tool. Once hack is done, the object will receive a download interaction. Upon downloading data a player will receive them on their soldier tab. Data and pictures must be classes defined in cfg MRH_SoldierTabData and cfg MRH_SoldierTabIntelPictures, stated as stings and between [] (see preset examples)</Original>
+				<English>These settings allow you to add an interaction to hack and then download data from this object, depending on mission settings it may require a hacking tool. Once hack is done, the object will receive a download interaction. Upon downloading data a player will receive them on their soldier tab. Data and pictures must be classes defined in cfg MRH_SoldierTabData and cfg MRH_SoldierTabIntelPictures, stated as stings and between [] (see preset examples)</English>
+				<French>Ces réglages permettent d'ajouter une interaction pour pirater et ensuite télécharger des données depuis cet objet, selon les réglages de la mission cela peut nécessiter un outil de piratage. Une fois le piratage terminé le joueur les recevra sur sa tablette.Les images et les données doivent être des classe définies dans les configs MRH_SoldierTabData et MRH_SoldierTabIntelPictures, écrites entre guillemets,séparées par des virgules et placées entre [] (voir exemples préréglés)</French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_">
 				<Original></Original>
 				<English></English>
 				<French></French>
 			</Key>
+			
+			
+			
+			
 		</Container>
 		<Container name="CfgWeaps">
 			<Key ID="STR_MRH_HP_HackphoneDisplayName">

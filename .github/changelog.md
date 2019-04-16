@@ -1,0 +1,365 @@
+Changelog:
+
+MRH Milsim Tools version : v.1.17.0
+
+- tweaked: For better practice. Heli Taxi, Cas Supports,Fire Supports and supply drops are now disabled by default. 
+> Mission makers and server owners can enable them if they need /want them.
+- added: ACE 3 medics, both players and AI will wear a medic patch insignia (if available on the uniform). Can be disabled from options.
+- added: deployable fob functions & objects.
+> In editor under MRHItems >> Utilities are a cargo container and a supply box both can be used to spawn a F.O.B. and a camp. The time it takes to deploy and repack them is configurable via CBA settings. By default they spawn compositions that are built in the mod but you can easily create and configure your own in an addon or in mission description.ext. See the function header for MRH_fnc_generateComposition on github or in the functions viewer for more information. Compositions are compatible with refill ammo and ammocrate functions as well as with my other mod MRH Satellite (if you use the generate function settings will be conveyed to the composition spawned).
+- added: field medical tent item & object.
+> tent item can be deployed and repacked and contains ACE 3 medical items. When deployed it serves as an ACE3 medical facility. How long it takes to deploy and repack tent can be modified in CBA settings.
+- added some configurable eden attributes:
+> - The hack and collect data function can be now configured from eligible objects attributes in 3DEN editor. Requires little to no scripting knowledge.
+> - The object search function can be now configured from eligible objects attributes in 3DEN editor. Requires little to no scripting knowledge.
+> - The simple conversation function can be now configured from units attributes in 3DEN editor. Requires little to no scripting knowledge.
+> - The ammo box function can be now configured from eligible objects attributes in 3DEN editor. Requires little to no scripting knowledge.
+> - The auto refill box function can be now configured from eligible objects attributes in 3DEN editor. Requires little to no scripting knowledge.
+- added: an empty crate and an empty supply box. Because sometimes having them empty from the start is realy useful ;-)
+- added: AceX food crate, if ACEX is enabled the box will contain ACEX field rations.
+- added: Tents based on Land_MedicalTent_01_base_F receive an ACE3 open/close action (when closed action appears at the bottom of the entrance , when opened at the center of the tent, visible from the threshold)
+- tweaked: Enhanced Map , map collect now uses core additem function. (if inventory is full object will spawn on the ground).
+- tweaked: CBA versioning: wrong version will return player to the lobby with message from this version onward.
+
+
+/////////////////////////////////////////////////////////////////////////
+Changelog:
+
+MRH Milsim Tools version : v.1.16.9
+
+-Code optimization: started to move conde to unscheduled environment only for addons: Core, Zeus Modules, Halo Gear, Admin Menu
+-Added unfoldable/draggable shooting mat that flattens grass.
+-Elevator function can now be used by zeus remote controlled units.
+-Fixed Folded map Ace Illumination
+-Enhanced map can now be used by zeus controlled units.
+-Fixed: Admin Menu heal all players no longer JIP. (Won't spam arriving players)
+-Tweaked: Changing a remote player's gear will result in remote player receiving a notification.
+-Tweaked: Unit insignia set with BIS_fnc_setUnitInsignia will be preserved.
+-Added: cba local event when gear is changed: MRH_admin_menu_playerloadoutchanged_eh local to the admin's machine. Parameters passed to the event: [admin player, remote player,old loadout, newloadout]
+-Fixed widthRailWay error on all map controls
+-Fixed missing textures on HALO mask, AAD, Elevator button (thx Diveyez for the reports)
+-Fixed VIP surrender
+-Fixed Scanner Ace Actions not working since last ACE update
+-Fixed CAS support (thx Larrow)
+-Vehicle spawner should display  RHS Mk V patrol boat in maritime spawns
+///////////////////////////////////////////////////////////////////////////////////
+Changelog:
+
+MRH Milsim Tools version : v.1.16.8
+*Zeus Modules:
+-Fixed set unit surrender module not working as intended (testing to be done)
+-Halo Jump module:
+tweaked >groups of objects parachuted along the players will be  transfered to the server
+added > The zeus menu now displays the altitude above sea level where the module is placed.
+
+ADDED: Debug mod
+>Disabled by default can be enabled in CBA options menu, don't forget to disable before exporting mission
+when enabled:
+-Shows all debugs messages in a box at the corner of the screen (latest is displayer)
+-CTRL + SHIFT + X opens a log with all MRH Milsim Tools error logs
+- You can add your own logs to the log by calling
+[<STRING>] call MRH_fnc_MilsimTools_DebugTools_trace
+useful macros:
+#define IS_DEBUG ["MRH_MilsimTools_DebugTools_isDebugMode"] call cba_settings_fnc_get
+#define TRACE(ARG) [(##ARG##)] call MRH_fnc_MilsimTools_DebugTools_trace
+
+>When in debug from ace self actions you can:
+draw/undraw all triggers in game (activated triggers will show in green)
+draw / undraw cursortarget selections positions with names
+draw/undra model to world positions
+///////////////////////////////////////////////////////////////////////////////////
+Changelog:
+
+MRH Milsim Tools version : v.1.16.7
+*fixed units surrendering from the zeus module should now behave properly in MP
+*Yet another attempt to solve the movein cargo function in MP, honestly I'm at my wits' end on that one and since it requires testing on a large scale with several guinea pigs / players on the server for each test its quite hard to solve...
+
+///////////////////////////////////////////////////////////////////////////////////
+Changelog:
+
+MRH Milsim Tools version : v.1.16.6
+
+*Zeus modules
+Added: module to make unit surrender
+Fixed: Halo Jump did not teletransport all players in the group (some testing remains to be done)
+
+*Functions
+Added : ambient conversation function
+Fixed: Animate data terminal video was not played on the screen in MP
+Tweaked: VIP surrender function overhauled, makes use of new ambient conversation function, allows playing a customized sound when unit surrenders,allows setting a chance percentage that the unit will surrender. See function header for more information
+
+*Core
+-Function to test if percentage chances are met
+///////////////////////////////////////////////////////////////////////////////////
+Changelog:
+
+MRH Milsim Tools version : v.1.16.5
+
+*Zeus modules
+Added modules for the tablet
+-Module to create data on the fly
+-Module to attribute data to a player /an object as a collect point/ an unit as a conversation upon which the player will receive the data
+-Module to add hack action to an object and let player hack and download data
+
+*Functions
+-Animate data terminal
+-Hack download and give data function
+
+*Core
+-Some UI related functions
+///////////////////////////////////////////////////////////////////////////////////
+Changelog:
+
+MRH Milsim Tools version : v.1.16.4
+HOTFIX: tablet pictures were not showing
+
+///////////////////////////////////////////////////////////////////////////////////
+Changelog:
+
+MRH Milsim Tools version : v.1.16.3
+
+*Added new functionality :
+*Zeus mmodules
+-Module to change a variable name in game (for coders/mission makers /advanced users)
+-Module to add a conversation to an unit (see functions)
+-Module to set availability of items for halo parachuting (see halo gear)
+-Module to generate a HALO jump (see halo gear)
+-Module to set how many helicopter taxis are available for each side
+
+
+*Functions:
+-fixed: MRH_fnc_MoveInCargo func should now work properly in MP and not cause server desync (large scale testing remains to be done)
+-tweaked: Massive overhaul of the "simple ace conversation" function, new interface with unit's name and video feed to replace the previous hintC box, unit lip movement when talking (only on local machine),you can now pass parameters to the executed script see function header for guidelines. The conversation can now be added/removed dynamicaly via a zeus module. Deleting the module will remove the conversation.
+
+*Milsim Tools Core:
+-tweaked: newly added internal functions
+
+*Soldier Tab:
+-Changed: >in preparation for the upcoming zeus module data can now be created by script midgame.
+ >tablet will now also look for data in configfile in addition to mission configfile and you can create data and pictures cfgs in an addon. New nearly empty addon added to the mod that will contain more preconfigured data in the future. 
+*Halo Gear
+
+-Added AAD inventory object & model. This AAD can be used to prepare an ammobox or a vehicule (Land vehicles and boats) for a paradrop (ACE 3 object interaction), and then set to open parachute at desired altitude when object is dropped.
+-Added two zeus modules: 
+>HALO list object add module: place it on any object and it will be made available in the list for the HALO module
+> Simple HALO drop module: Very powerful module, place on LZ on the map and it will allow you to program and execute a complete HALO drop for a player/ group of players and paradrop objects and vehicles along with them. You can disable every option enabled by default and let the players ready themselves and their gear for the drop but you can also automaticaly set the player's and objects' AADs to open at desired altitude, add rebreather mask (if possible currently equiped goggles will be stored in inventory), AAD capable parachute. Player's backpack will be attached to their chest and automatically restored upon touching ground and parachute left on the ground UNLESS the mod BackPack on chest is activated in which case it will be used to put backpack on chest and players will have to get rid of the parachute themselves and manually put their bags back on their backs.
+///////////////////////////////////////////////////////////////////////////////////
+Changelog:
+
+MRH Milsim Tools version : v.1.15.7
+
+*Tweaked & improved
+-nearest door finding function optional parameters
+-You cannow define which building the biometric scanner controls in its attributes
+///////////////////////////////////////////////////////////////////////////////////
+Changelog:
+
+MRH Milsim Tools version : v.1.15.6
+
+*Added
+New item:
+-Biometric scanner 
+==> The scanner includes functions to enhance its use, see the object's attributes in eden editor to access settings.
+
+Functions added to MilsimTools_Core:
+detect nearest door in nearest building, detect if door is locked, autoclose/lock door.
+
+
+///////////////////////////////////////////////////////////////////////////////////
+Changelog:
+
+MRH Milsim Tools version : v.1.15.5
+*Tweaked:
+-Move in cargo function hopefully improved and won't cause desync making all other functions using this one safely usable.
+*Added
+New items:
+-Elevator button, to be used with the elevator function
+-Usb key (prop for now, will have its use with the tablet later on)
+-Inventory item: RFID pass (by side), have no use for now (but you can scripr use for them in your mission, will be used in upcoming feature)
+///////////////////////////////////////////////////////////////////////////////////
+Changelog:
+
+MRH Milsim Tools version : v.1.15.0
+
+
+*Added new functionality : Parachuting addon (Halo Gear)
+-Features:
+* 2 Masks and 2 Parachutes with auto opening possibilities (CYPRES II Auto Activation Device).
+*Special HUD for Halo Mask
+*Chances of mask breaking (Halo Mask With ESS only)
+*Emulation of Hypoxia effects
+*Configurable key to open parachute (default SPACE) instead of scrollwheel action menu.
+*Objects that are attached to the player with ace interaction (IR Strobes chemLights etc) will also appeared attached when the chute is deployed.
+*Fully configurable
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////
+MRH Milsim Tools version : v.1.14.6
+
+*Demo mission updated
+*Admin menu:
+-fixed:
+> changing player gear with ace arsenal should now work properly even if the admin isn’t formation leader
+-changed:
+> added setting to allow non admin players to open the admin menu if they are in zeus interface (disabled by default)
+-tweaked:
+> when opening the admin menu and viewing a specific player the view camera will not be displayed (it fucked with the zeus cam) but the zeus cam will be centered on selected player instead.
+
+*Enhanced map:
+-fixed:
+>incorrect texture path for proving grounds would cause sharable map to be invisible
+-changed:
+>added icons for actions
+-tweaked:
+>foldable map actions can now be used in vehicles
+
+*Fire support:
+-fixed: 
+>some players wouldn’t get the actions
+> all functions now have complete headers
+>paradrop script now functions as intended
+-changed:
+> passed ace self-interactions from script to config, should be much more stable
+-tweaked:
+> you can call supports when in a vehicle or on the map
+
+*Functions:
+-fixed:
+> missing “talk” localization for simple ace message function
+>paradrop script now functions as intended
+
+
+*Heli Taxi
+-changed & tweaked:
+> massive overhaul of the heli taxi system
+> helis and their owners are now created and handled on & by the server
+> you can set waypoints to reach the destination
+> all members of the group that called the heli are now able to cancel it and set its course while inside
+> you can change the course of the heli midflight and give it new waypoints at any time (except if the heli is in its landing phase.
+> you can choose LZs over water and MOST helis will safely hover over the water. (be careful some bigger helis will sink)
+> If you are in the water and the helicopter is coming to pick you up, since you are too far for classic arma action, helis will receive an ACE3 “climb in” interaction allowing you to move inside from the water.
+> compatibility with some helis that do not land completely (RHS super stallion)
+>Sometimes helis do not land, in that case passengers will receive an ace3 action to force the landing after 3 seconds
+
+*Insertion Handler:
+-fixed:
+>settings are now parsed only on the server, no risk of overwriting by new connected player
+> all functions now have complete headers
+>paradrop script now functions as intended
+>scrollbars in listboxes
+-changed: 
+>Only groups with players will appear in the group choice combo
+-tweaked: 
+>Added exclusion list for cargo prepping, list is to be expanded with further use/users feedback.
+
+
+*Markers:
+-added: 
+>Waypoint marker
+
+*Milsim Tools Core:
+-added:
+> function to return wether a player is alive and conscious (ace + milsim tools status)
+> func that returns alive and conscious group members
+
+
+
+
+FOR LATER RELEASE
+*Soldier Tab:
+-fixed:
+-changed:
+-tweaked:
+
+*Vehicle spawner:
+-fixed:
+-changed:
+-tweaked:
+// to do: fix sorting not working anymore
+////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+Template :
+///////////////////////////////////////////////////////////////////////////////////
+Changelog:
+
+MRH Milsim Tools version : v.0.0.0
+
+*Added new functionality :
+*Admin menu:
+-fixed:
+-changed:
+-tweaked:
+
+*Enhanced map:
+-fixed:
+-changed:
+-tweaked:
+
+*Fiberscope:
+-fixed:
+-changed:
+-tweaked:
+
+*Fire support:
+-fixed:
+-changed:
+-tweaked:
+
+*Functions:
+-fixed:
+-changed:
+-tweaked:
+
+*Heli Taxi:
+-fixed:
+-changed:
+-tweaked:
+
+*Insertion Handler:
+-fixed:
+-changed:
+-tweaked:
+
+*Jip Menu:
+-fixed:
+-changed:
+-tweaked:
+
+*Markers:
+-fixed:
+-changed:
+-tweaked:
+
+*Milsim Tools Core:
+-fixed:
+-changed:
+-tweaked:
+
+*Radio Chatter:
+-fixed:
+-changed:
+-tweaked:
+
+*Sniper Aid:
+-fixed:
+-changed:
+-tweaked:
+
+*Soldier Tab:
+-fixed:
+-changed:
+-tweaked:
+
+*Vehicle spawner:
+-fixed:
+-changed:
+-tweaked:
+
+*Halo Gear
+
+-fixed:
+-changed:
+-tweaked:

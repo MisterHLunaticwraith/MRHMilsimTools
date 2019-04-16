@@ -24,6 +24,16 @@ class MRH // Defines the "owner"
 		{};
 		class MilsimTools_MiscItems_unfoldMat
 		{};
+		class MilsimTools_MiscItems_ammoCrateFromAttributes
+		{};
+		class MilsimTools_MiscItems_isRefillBoxFromAttributes
+		{};
+		class MilsimTools_MiscItems_medicalTentSpawn
+		{};
+		class MilsimTools_MiscItems_unFoldMedicalTent
+		{};
+		class MilsimTools_MiscItems_FOB_Init
+		{};
 	};
 	
 };

@@ -127,6 +127,36 @@ class MRH // Defines the "owner"
 		{};
 		class MilsimTools_Core_addItem
 		{};
+		class MilsimTools_Core_handleIncorrectVersion
+		{};
+		class MilsimTools_Core_cmpGrabObject
+		{};
+		class MilsimTools_Core_cmpCreateObject
+		{};
+		class MilsimTools_Core_cmpStoreComp
+		{};
+		class MilsimTools_Core_cmpSpawnComp
+		{};
+		class MilsimTools_Core_cmpCreateComp
+		{};
+		class MilsimTools_Core_cmpDeleteComp
+		{};
+		class MilsimTools_Core_cmpGetComp
+		{};
+		class MilsimTools_Core_stringListToArray
+		{};
+		class MilsimTools_Core_arrayToCfgArray
+		{}
+		class MilsimTools_Core_compGetAndSpawnComp
+		{};
+		class MilsimTools_Core_stringToBool
+		{};
+		class MilsimTools_Core_getBoolArray
+		{};
+		class MilsimTools_Core_isDeployableFob
+		{};
+		class MilsimTools_Core_assignMedicPatch
+		{};
 		/*
 		class MilsimTools_Core_
 		{};

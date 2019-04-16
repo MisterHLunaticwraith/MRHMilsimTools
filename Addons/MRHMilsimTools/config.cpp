@@ -4,12 +4,13 @@ class CfgPatches {
 		weapons[] = {}; //
 		requiredVersion = 0.1; //
 		requiredAddons[] = {"cba_main"};
-		version = 1.16.9;
-		versionStr = "1.16.9";
-		versionAr[] = {1,16,9};
+		version = 1.17.0;
+		versionStr = "1.17.0";
+		versionAr[] = {1,17,0};
 		versionDesc = "MRH Milsim Tools";
 		versionAct = "call compile preProcessFileLineNumbers '\MRHMilSimTools\about.sqf'";
 		author = "Mr H.";
+      authors[]= {"Mr H."};
 		url = "https://mrhmilsimtools-arma3-mod.wikia.com/wiki/MRHMilsimTools_ARMA3_Mod_Wiki";
 	};
 		
@@ -80,3 +81,22 @@ class cfgNotifications
 #include"\MRHMilSimTools\cfghpp\cfgMRHrankpictures.hpp"
 //==========
 
+#include"\MRHMilSimTools\cfghpp\cfgMRHcompositions.hpp"
+#include"\MRHMilSimTools\cfghpp\cfg3DEN.hpp"
+
+class CfgUnitInsignia
+{
+	class MRH_MedicShoulderPatch
+	{
+		author = "Mr H.";
+		displayName = $STR_MRH_MISC_MedicPatchInsignia;
+		texture = "\MRHMilSimTools\paa\medicpatch.paa";
+	};
+};
+class Extended_Init_EventHandlers {
+    class CAManBase {
+        class MRH_MedicPatch_init {
+            init = "_this call MRH_fnc_MilsimTools_Core_assignMedicPatch;";
+        };
+    };
+};

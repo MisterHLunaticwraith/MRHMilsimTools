@@ -217,11 +217,137 @@
 				<English>Unfold Shooting Mat</English>
 				<French>Déployer le tapi de tir</French>
 			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_EmptyAmmoCrate">
+				<Original>Empty ammunition box</Original>
+				<English>Empty ammunition box</English>
+				<French>Boîte de munitions vide</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_EmptySupplyBox">
+				<Original>Empty supply box</Original>
+				<English>Empty supply box</English>
+				<French>Caisse vide</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_AcexFoodCrate">
+				<Original>Field rations crate</Original>
+				<English>Field rations crate</English>
+				<French>Caisse de provisions</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_EdSubCatUtilities">
+				<Original>Utilities</Original>
+				<English>Utilities</English>
+				<French>Utilitaires</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_AmmoCrateAttributesCat">
+				<Original>MRH Ammocrate</Original>
+				<English>MRH Ammocrate</English>
+				<French>MRH Caisse de munition</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_IsRefillAmmoSet">
+				<Original>Is ammo crate</Original>
+				<English>Is is ammo crate</English>
+				<French>Est une caisse de munition automatique</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_NumberOfMagsSet">
+				<Original>Number of magazines per mag type</Original>
+				<English>Number of magazines per mag type</English>
+				<French>Nombre de chargeurs par type</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_InfiniteRefillSet">
+				<Original>Infinite refill</Original>
+				<English>Infinite refill</English>
+				<French>Contenu infini</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_CttRefreshSet">
+				<Original>Contents can be refreshed</Original>
+				<English>Contents can be refreshed</English>
+				<French>Le contenu peut-être rafraîchi</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_AmmocrateDescAndTooltip">
+				<Original>These settings allow you to make an ammocrate automatically filled with ammos fitting for the weapons equipped by players. If infinite refill is enabled the crate will be refilled everytime a player uses it. If content can be refreshed the box receives an ACE3 action and players can refresh its content when they equip a new weapon, it overrides the refill setting and enables it.</Original>
+				<English>These settings allow you to make an ammocrate automatically filled with ammos fitting for the weapons equipped by players. If infinite refill is enabled the crate will be refilled everytime a player uses it. If content can be refreshed the box receives an ACE3 action and players can refresh its content when they equip a new weapon, it overrides the refill setting and enables it.</English>
+				<French>Ces réglages vous permettent de remplir le conteneur de munitions adaptées aux armes des joueurs de manière automatique. Si le réglage contenu infini est activé la caisse sera reremplie à chaque fois qu'un joueur y accède. Si le contenu peut être rafraîchi, l'objet reçoit une interaction ACE3 qui permet au joueurs de rafrâichir son contenu quand ils changent d'arme, ce réglage rend automatiquement le contenu infini.</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_RefillBoxAttributesCat">
+				<Original>MRH Infinite Box</Original>
+				<English>MRH Infinite Box</English>
+				<French>MRH Boîte infinie</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_isInfiniteBoxSet">
+				<Original>Is infinite box</Original>
+				<English>Is infinite box</English>
+				<French>Est une boîte infinie</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_isInfiniteBoxToolTip">
+				<Original>If enabled the box's original content will be refilled every time a player opens the box</Original>
+				<English>If enabled the box's original content will be refilled every time a player opens the box</English>
+				<French>Si ce réglage est activé le contenu originel de la boîte sera restauré à chaque fois qu'un joueur l'ouvre</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_FieldMedicTentVehicleDisp">
+				<Original>Field Medical Tent</Original>
+				<English>Field Medical Tent</English>
+				<French>Tente médicale de terrain</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_AceInteractionsMain">
+				<Original>Interactions</Original>
+				<English>Interactions</English>
+				<French>Interactions</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_HintTentCollected">
+				<Original>Tent collected</Original>
+				<English>Tent collected</English>
+				<French>Tente ramassée</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_HintRepackingTentCancelled">
+				<Original>Repacking tent cancelled</Original>
+				<English>Repacking tent cancelled</English>
+				<French>Rangement de la tente annulé</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_MessRepackingAncCOllectTent">
+				<Original>Repacking and collecting medical tent</Original>
+				<English>Repacking and collecting medical tent</English>
+				<French>Rangement et récupération de la tente</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_AceActionRepackAndCollectTent">
+				<Original>Repack and collect tent</Original>
+				<English>Repack and collect tent</English>
+				<French>Démonter et récupérer la tente</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_AcePitchMedicalTent">
+				<Original>Pitch medical tent</Original>
+				<English>Pitch medical tent</English>
+				<French>Monter la tente médicale</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_HintPitchingTentCancelled">
+				<Original>Pitching tent cancelled</Original>
+				<English>Pitching tent cancelled</English>
+				<French>Assemblage de la tente annulé</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_ProgressPitchingMedTent">
+				<Original>Pitching medical tent</Original>
+				<English>Pitching medical tent</English>
+				<French>Assemblage de la tente</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_DescWPMedicalTent">
+				<Original>This medical tent can be deployed and serve as a field ACE3 medical facility.</Original>
+				<English>This medical tent can be deployed and serve as a field ACE3 medical facility.</English>
+				<French>Cette tente médicale peut être déployée et servir de zone médicale ACE3.</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_BigFobContainerDispName">
+				<Original>Large FOB container</Original>
+				<English>Large FOB container</English>
+				<French>Conteneur pour poste avancé</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_SmallCampContainerDispName">
+				<Original>Small camp container</Original>
+				<English>Small camp container</English>
+				<French>Conteneur pour camp avancé</French>
+			</Key>
 			<Key ID="STR_MRH_MRHMiscItems_">
 				<Original></Original>
 				<English></English>
 				<French></French>
 			</Key>
+		
 			
 		</Container>
 	</Package>

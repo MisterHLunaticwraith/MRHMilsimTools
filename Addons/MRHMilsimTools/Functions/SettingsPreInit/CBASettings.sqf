@@ -29,6 +29,8 @@ _script	Script to execute when setting is changed.  (optional) <CODE>
 ["MRH_MilsimTools_PlayIntro_ToPlayer", "CHECKBOX",   [localize "STR_MRH_MS_CBA_CORE_ALLOWINTROCUTPLAYERPRETTY",localize "STR_MRH_MS_CBA_CORE_ALLOWINTROCUTPLAYERTOOLTIP"],"MRH_MilsimTools - Core settings",true] call cba_settings_fnc_init;
 // setting for removing bodies of disconnected players
 ["MRH_MilsimTools_Delete_disconnected_body", "CHECKBOX",   [localize "STR_MRH_MS_CBA_CORE_REMOVEDISCONNECTEDBODYPRETTY",localize "STR_MRH_MS_CBA_CORE_REMOVEDISCONNECTEDBODYTOOLTIP"], "MRH_MilsimTools - Core settings",true,1] call cba_settings_fnc_init;
+//setting to apply medic patch on ace3 medics 
+["MRH_MilsimTools_Core_ApplyMedicPatch", "CHECKBOX",   [localize "STR_MRH_CBA_ApplyMedicPatchSetting",localize "STR_MRH_CBA_ApplyMedicPatchSettingToolTip"], "MRH_MilsimTools - Core settings",true,1] call cba_settings_fnc_init;
 //===Below are settings for the jip menu
 //allow jip menu on startup
 ["MRH_MilsimTools_Jip_MenuAllow", "CHECKBOX",   [localize "STR_MRH_MS_CBA_JIP_ALLOWPRETTY",localize "STR_MRH_MS_CBA_JIP_ALLOWTOOLTIP"], "MRH_MilsimTools - JIP settings",true,1] call cba_settings_fnc_init;
@@ -63,7 +65,7 @@ _script	Script to execute when setting is changed.  (optional) <CODE>
 //Settings to allow map on the tablet
 ["MRH_MilsimTools_RequireHackingTool", "CHECKBOX",   [localize "STR_MRH_RequireHackingToolPretty",localize "STR_MRH_RequireHackingToolTip"], "MRH_MilsimTools - Hacking settings",true,1] call cba_settings_fnc_init;
 //=====Below are settings for the heli taxi
-["MRH_MilsimTools_Heli_UseHeliTaxiInMission", "CHECKBOX",   [localize "STR_MRH_CBA_Heli_UseHeli",localize "STR_MRH_CBA_Heli_UseHeliToolTip"], "MRH_MilsimTools - Heli Taxi",true,1] call cba_settings_fnc_init;
+["MRH_MilsimTools_Heli_UseHeliTaxiInMission", "CHECKBOX",   [localize "STR_MRH_CBA_Heli_UseHeli",localize "STR_MRH_CBA_Heli_UseHeliToolTip"], "MRH_MilsimTools - Heli Taxi",false,1] call cba_settings_fnc_init;
 ["MRH_MilsimTools_Heli_NumberSimulTPerSide", "EDITBOX",   [localize "STR_MRH_CBA_Heli_NumberPerSide",localize "STR_MRH_CBA_Heli_NumberPerSideToolTip"],"MRH_MilsimTools - Heli Taxi","3",1] call cba_settings_fnc_init;
 
 
@@ -83,7 +85,7 @@ _script	Script to execute when setting is changed.  (optional) <CODE>
 ["MRH_MilsimTools_Map_ReplaceVanillaMap", "CHECKBOX",   [localize "STR_MRH_CBA_EnhancedMap_ReplaceVanillaMap",localize "STR_MRH_CBA_EnhancedMap_ReplaceVanillaMapToolTip"], "MRH_MilsimTools - Enhanced Map",false,1] call cba_settings_fnc_init;
 
 //--------------below are the settings for artillery fire support
-["MRH_MilsimTools_FireSupport_useFireSupport", "CHECKBOX",   [localize "STR_MRH_CBA_FireSupport_AllowFSsetting",localize "STR_MRH_CBA_FireSupport_AllowFSsettingToolTip"],["MRH_MilsimTools - Fire Suppport"],true,1] call cba_settings_fnc_init;
+["MRH_MilsimTools_FireSupport_useFireSupport", "CHECKBOX",   [localize "STR_MRH_CBA_FireSupport_AllowFSsetting",localize "STR_MRH_CBA_FireSupport_AllowFSsettingToolTip"],["MRH_MilsimTools - Fire Suppport"],false,1] call cba_settings_fnc_init;
 
 ["MRH_MilsimTools_FireSupport_ConditionIsFormLeader", "CHECKBOX",   [localize "STR_MRH_CBA_Heli_MustBeFL",localize "STR_MRH_CBA_General_MustBEFlToolTip"], ["MRH_MilsimTools - Fire Suppport",localize "STR_MRH_CBA_FireSupport_ConditionsAS_Cat"],true,1] call cba_settings_fnc_init;
 
@@ -97,7 +99,7 @@ _script	Script to execute when setting is changed.  (optional) <CODE>
 ["MRH_MilsimTools_FireSupport_ArtyShots", "EDITBOX",   [localize "STR_MRH_CBA_FireSupport_AVailableNumberOfArtilleryAmmo",localize "STR_MRH_CBA_FireSupport_AVailableNumberOfArtilleryAmmoToolTip"], ["MRH_MilsimTools - Fire Suppport","Available artillery shots"],"10",1] call cba_settings_fnc_init;
 
 //--------------------------below are the settings for CAS SUpport
-["MRH_MilsimTools_FireSupport_useCASSupport", "CHECKBOX",   [localize "STR_MRH_CBA_FireSupport_AllowCasSetting",localize "STR_MRH_CBA_FireSupport_AllowCasSettingToolTip"],["MRH_MilsimTools - CAS Suppport"],true,1] call cba_settings_fnc_init;
+["MRH_MilsimTools_FireSupport_useCASSupport", "CHECKBOX",   [localize "STR_MRH_CBA_FireSupport_AllowCasSetting",localize "STR_MRH_CBA_FireSupport_AllowCasSettingToolTip"],["MRH_MilsimTools - CAS Suppport"],false,1] call cba_settings_fnc_init;
 
 ["MRH_MilsimTools_FireSupport_CAS_ConditionIsFormLeader", "CHECKBOX",   [localize "STR_MRH_CBA_Heli_MustBeFL",localize "STR_MRH_CBA_General_MustBEFlToolTip"], ["MRH_MilsimTools - CAS Suppport",localize "STR_MRH_CBA_FireSupport_ConditionsForCASCat"],true,1] call cba_settings_fnc_init;
 
@@ -114,7 +116,7 @@ _script	Script to execute when setting is changed.  (optional) <CODE>
 
 ["MRH_MilsimTools_FireSupport_CASPlanesInde", "EDITBOX",   [localize "STR_MRH_CBA_FireSupport_CASAvailablePlanes",localize "STR_MRH_CBA_General_ClassnamesTypeRulesToolTip"], ["MRH_MilsimTools - CAS Suppport",localize "STR_MRH_CBA_FireSupport_AvailPlanesINDCat"],"I_Plane_Fighter_04_F,I_Plane_Fighter_03_dynamicLoadout_F",1] call cba_settings_fnc_init;
 //--------------------------below are the settings for  Supply drops
-["MRH_MilsimTools_FireSupport_Supplies_useSupplyDrops", "CHECKBOX",   [localize "STR_MRH_CBA_FireSupport_Supplies_Allow",localize "STR_MRH_CBA_FireSupport_Supplies_AllowTooltip"],["MRH_MilsimTools - Supply drops"],true,1] call cba_settings_fnc_init;
+["MRH_MilsimTools_FireSupport_Supplies_useSupplyDrops", "CHECKBOX",   [localize "STR_MRH_CBA_FireSupport_Supplies_Allow",localize "STR_MRH_CBA_FireSupport_Supplies_AllowTooltip"],["MRH_MilsimTools - Supply drops"],false,1] call cba_settings_fnc_init;
 
 ["MRH_MilsimTools_FireSupport_Supplies_ConditionIsFormLeader", "CHECKBOX",   [localize "STR_MRH_CBA_Heli_MustBeFL",localize "STR_MRH_CBA_General_MustBEFlToolTip"], ["MRH_MilsimTools - Supply drops", localize "STR_MRH_CBA_FireSupport_Supplies_ConditionsSupplies"],true,1] call cba_settings_fnc_init;
 
@@ -158,3 +160,19 @@ _script	Script to execute when setting is changed.  (optional) <CODE>
 
 //-----------below are the settings for the debug mode 
 ["MRH_MilsimTools_DebugTools_isDebugMode", "CHECKBOX",   [localize "STR_MRH_CBA_DebugMode_SettingName",localize "STR_MRH_CBA_DebugMode_SettingNameToolTip"],["MRH_MilsimTools - Debug Mode"],false,1,{call MRH_fnc_MilsimTools_DebugTools_debugHintboxInit;}] call cba_settings_fnc_init;
+
+//--------- below are the settings for the field medical tent
+
+["MRH_MilsimTools_MiscItems_FieldMedicalTentDeployTime", "SLIDER",   [localize "STR_MRH_CBA_MedTentDeploySetting",localize "STR_MRH_CBA_MedTentDeploySettingToolTip"], "MRH_MilsimTools - Medical Tent", [20, 120, 20, 0],1] call cba_settings_fnc_init;
+["MRH_MilsimTools_MiscItems_FieldMedicalTentRepackTime", "SLIDER",   [localize "STR_MRH_CBA_MedTentRepackSetting",localize "STR_MRH_CBA_MedTentRepackSettingToolTip"], "MRH_MilsimTools - Medical Tent", [10, 120, 10, 0],1] call cba_settings_fnc_init;
+
+//-----Below are the settings for FOB objects
+["MRH_MilsimTools_FOB_BIG_composition", "EDITBOX",   [localize "STR_MRH_CBA_CompforFobSet",localize "STR_MRH_CBA_CompNameTootip"], ["MRH_MilsimTools - Deployable Fobs", "FOB"],"MRH_FieldHQSmall_default",1] call cba_settings_fnc_init;
+["MRH_MilsimTools_MiscItems_FOB_BIGDeployTime", "SLIDER",   [localize "STR_MRH_CBA_CompDeployTime",localize "STR_MRH_CBA_CompDeployTimeTooltip"], ["MRH_MilsimTools - Deployable Fobs", "FOB"], [20, 240, 20, 0],1] call cba_settings_fnc_init;
+["MRH_MilsimTools_MiscItems_FOB_BIGRepackTime", "SLIDER",   [localize "STR_MRH_CBA_CompRepackTime",localize "STR_MRH_CBA_CompRepackTimeToolTip"], ["MRH_MilsimTools - Deployable Fobs", "FOB"], [20, 240, 20, 0],1] call cba_settings_fnc_init;
+["MRH_MilsimTools_MiscItems_FOB_BIGRepackRadius", "SLIDER",   [localize "STR_MRH_CBA_CompDeleteDistRadius",localize "STR_MRH_CBA_CompDeleteDistRadiusToolTip"], ["MRH_MilsimTools - Deployable Fobs", "FOB"], [0, 100, 50, 0],1] call cba_settings_fnc_init;
+
+["MRH_MilsimTools_CAMP_composition", "EDITBOX",   [localize "STR_MRH_CBA_CampDeployComp",localize "STR_MRH_CBA_CompNameTootip"], ["MRH_MilsimTools - Deployable Fobs", "Camp"],"MRH_SmallCamp_default",1] call cba_settings_fnc_init;
+["MRH_MilsimTools_MiscItems_CAMP_DeployTime", "SLIDER",   [localize "STR_MRH_CBA_CampDeployTime",localize "STR_MRH_CBA_CompDeployTimeTooltip"], ["MRH_MilsimTools - Deployable Fobs", "Camp"], [10, 240, 10, 0],1] call cba_settings_fnc_init;
+["MRH_MilsimTools_MiscItems_CAMP_GRepackTime", "SLIDER",   [localize "STR_MRH_CBA_CampRepackTime",localize "STR_MRH_CBA_CompRepackTimeToolTip"], ["MRH_MilsimTools - Deployable Fobs", "Camp"], [10, 240, 10, 0],1] call cba_settings_fnc_init;
+["MRH_MilsimTools_MiscItems_CAMP_GRepackRadius", "SLIDER",   [localize "STR_MRH_CBA_CampRadiusAroundDelete",localize "STR_MRH_CBA_CompDeleteDistRadiusToolTip"], ["MRH_MilsimTools - Deployable Fobs", "Camp"], [0, 100, 10, 0],1] call cba_settings_fnc_init;

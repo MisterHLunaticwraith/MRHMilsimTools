@@ -58,3 +58,23 @@ class ambientConversation
 {};
 class MilsimTools_Functions_internalVIPTrigger
 {};
+class MilsimTools_Functions_medicalTentIsOpen
+{};
+class MilsimTools_Functions_medicalTentAction
+{};
+class MilsimTools_Functions_simpleConvFromAttributes
+{};
+class MilsimTools_Functions_searchObjectFromAttributes
+{};
+class MilsimTools_Functions_addHackFromAttributes
+{};
+class generateComposition
+{};
+class deleteComposition
+{};
+class spawnComposition
+{};
+/*
+class MilsimTools_Functions_
+{};
+*/

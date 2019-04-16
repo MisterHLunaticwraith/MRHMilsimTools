@@ -11,6 +11,6 @@ call MRH_fnc_MilsimTools_EnhancedMap_;
 #include "MRH_C_Path.hpp"
 
 
-deleteVehicle (_this select 0);
-MRH_player addItem "MRH_Map";
+[(_this select 0),MRH_player,"MRH_Map"]CFUNC(addItem);
+//MRH_player addItem "MRH_Map";
 FUNC(playRandomSound);

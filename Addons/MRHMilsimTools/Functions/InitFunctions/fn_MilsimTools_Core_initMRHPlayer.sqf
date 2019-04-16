@@ -48,3 +48,6 @@ addMissionEventHandler ["PlayerViewChanged", {
 	_message = format ["MRH Milsim Tools - Player changed unit: MRH_Player definition now is: %1. %2",MRH_Player,_traceMessageComplement];
 	TRACE(_message);
 }];
+
+//redefine on respawn
+player addEventHandler ["Respawn",{MRH_player = player}];

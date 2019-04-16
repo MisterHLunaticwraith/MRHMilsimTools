@@ -1,8 +1,8 @@
 
 class CfgPatches {
 	class MRHMiscItems{
-		units[] = {"MRH_BioScanner_Base","MRH_BioScanner","MRH_ElevatorButton_Base","MRH_ElevatorButton","MRH_USB_ThumbDrive","MRH_ShootingMat_Khaki","MRH_ShootingMat_Olive"}; //
-		weapons[] = {}; //
+		units[] = {"MRH_BioScanner_Base","MRH_BioScanner","MRH_ElevatorButton_Base","MRH_ElevatorButton","MRH_USB_ThumbDrive","MRH_ShootingMat_Khaki","MRH_ShootingMat_Olive","MRH_emptyBox","MRH_emptySupplyBox","MRH_AcexFoodSuppliesCrate","MRH_MedicalTent","MRH_MedicalTent_Special","MRH_FOB_container","MRH_camp_container"}; //
+		weapons[] = {"MRH_FoldedMedicalTent","MRH_ShootingMat_Base","MRH_ShootingMat_Khaki","MRH_ShootingMat_Olive"}; //
 		requiredVersion = 0.1; //
 		requiredAddons[] = {"MRHMilsimTools"}; //
 	};
@@ -24,7 +24,7 @@ class CfgEditorSubcategories
 	};
 	class EdSubcat_MRH_Utilities // Category class, you point to it in editorSubcategory property
 	{
-		displayName = "Utilities"; // Name visible in the list
+		displayName = $STR_MRH_MRHMiscItems_EdSubCatUtilities; // Name visible in the list
 	};
 	class EdSubcat_MRH_InvIt // Category class, you point to it in editorSubcategory property
 	{
@@ -60,12 +60,12 @@ class cfgWeapons
 {
 	#include "\MRHMiscItems\cfgweapons.hpp"
 };
-/*
+
 class Cfg3DEN
 {
 	#include "\MRHMiscItems\cfg3DEN.hpp"
 };
-*/
+
 //------------Extended XEH
 /*
 class Extended_PostInit_EventHandlers
