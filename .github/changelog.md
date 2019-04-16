@@ -6,7 +6,7 @@ MRH Milsim Tools version : v.1.17.0
 > Mission makers and server owners can enable them if they need /want them.
 - added: ACE 3 medics, both players and AI will wear a medic patch insignia (if available on the uniform). Can be disabled from options.
 - added: deployable fob functions & objects.
-> In editor under MRHItems >> Utilities are a cargo container and a supply box both can be used two spawn a F.O.B. and a camp. The time it takes to deploy and repack them is configurable via CBA settings. By default they spawn compositions that are built in the mod but you can easily create and configure your own in an addon or in mission description.ext. See the function header for MRH_fnc_generateComposition on github or in the functions viewer for more information.
+> In editor under MRHItems >> Utilities are a cargo container and a supply box both can be used to spawn a F.O.B. and a camp. The time it takes to deploy and repack them is configurable via CBA settings. By default they spawn compositions that are built in the mod but you can easily create and configure your own in an addon or in mission description.ext. See the function header for MRH_fnc_generateComposition on github or in the functions viewer for more information. Compositions are compatible with refill ammo and ammocrate functions as well as with my other mod MRH Satellite (if you use the generate function settings will be conveyed to the composition spawned).
 - added: field medical tent item & object.
 > tent item can be deployed and repacked and contains ACE 3 medical items. When deployed it serves as an ACE3 medical facility. How long it takes to deploy and repack tent can be modified in CBA settings.
 - added some configurable eden attributes:
