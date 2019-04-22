@@ -22,6 +22,8 @@ class MRH // Defines the "owner"
 		{};
 		class MilsimTools_RHS_CBPS_fillAttributesCOmbo
 		{};
+		class MilsimTools_RHS_CBPS_deployCBPSModule
+		{};
 	};
 	
 };

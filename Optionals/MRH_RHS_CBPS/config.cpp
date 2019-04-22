@@ -1,10 +1,10 @@
 
 class CfgPatches {
 	class MRH_RHS_CBPS{
-		units[] = {}; //
+		units[] = {"MRH_RHS_CBPS_module"}; //
 		weapons[] = {}; //
 		requiredVersion = 0.1; //
-		requiredAddons[] = {"cba_main","MRHMilsimTools","rhsusf_c_fmtv","A3_Soft_F_HEMTT"}; //
+		requiredAddons[] = {"cba_main","MRHMilsimTools","rhsusf_c_fmtv","A3_Soft_F_HEMTT","MRHZeusModules"}; //
 	};
 };
 
@@ -43,6 +43,7 @@ class cfg3DEN
 class cfgVehicles
 {
 	#include "\MRH_RHS_CBPS\cfghpp\cfgvehicles.hpp"
+	#include "\MRH_RHS_CBPS\cfghpp\zeusModule.hpp"
 };
 
 class cfgMRHcompositions
@@ -50,7 +51,7 @@ class cfgMRHcompositions
 	#include "\MRH_RHS_CBPS\cfgMRHcompositions.hpp"
 };
 
-
+#include "\MRH_RHS_CBPS\Dialogs\zeuscbps.hpp"
 /*
 class cfgWeapons
 {

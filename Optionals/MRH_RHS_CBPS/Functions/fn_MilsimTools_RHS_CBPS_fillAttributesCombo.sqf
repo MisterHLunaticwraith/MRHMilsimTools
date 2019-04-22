@@ -20,7 +20,7 @@ _addonComps = FUNC(listAddonCompositions);
 _missionComps = FUNC(listMissionCompositions);
 
 _all = _addonComps + _missionComps;
-systemChat str _all;
+
 {
 	 _index = _ctrl lbAdd (_x select 0);
 	_ctrl lbSetData [_index,(_x select 1)];

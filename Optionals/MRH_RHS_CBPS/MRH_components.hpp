@@ -20,6 +20,7 @@
 #define SCFUNC(ARG) spawn MRH_fnc_MilsimTools_Core_##ARG
 #define SEFUNC(ARG1,ARG2) spawn MRH_fnc_MilsimTools_##ARG1##_##ARG2
 #define SGFUNC(ARG) spawn MRH_fnc_##ARG
+#define QFUNC(ARG) QUOTE##MRH_fnc_MilsimTools_RHS_CBPS_##ARG##QUOTE
 //Defines setVariables shortcuts
 #define QUOTE "
 #define ESVAR(ARG1,ARG2,ARG3) setVariable [##QUOTE##MRH_##ARG1##QUOTE,##ARG2,##ARG3]
