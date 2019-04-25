@@ -157,6 +157,8 @@ class MRH // Defines the "owner"
 		{};
 		class MilsimTools_Core_assignMedicPatch
 		{};
+		class MilsimTools_Core_findCtrlBoxIndexFor
+		{};
 		/*
 		class MilsimTools_Core_
 		{};

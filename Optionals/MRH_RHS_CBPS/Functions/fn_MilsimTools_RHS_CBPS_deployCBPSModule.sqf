@@ -18,6 +18,8 @@ if (isNull _unit) exitWith {[_logic,localize "STR_MRH_MRHMRHZeusModules_ERRORNOU
 if !(_unit isKindOf "rhsusf_M1085A1P2_B_Medical_fmtv_usarmy") exitWith {[_logic,"Error: unit must be a RHS CBPS"]EFUNC(ZeusModules,deleteAndError)};
 if (!alive _unit) exitWith {[_logic,localize "STR_MRH_MRHMRHZeusModules_ERRORMUSTBEALIVE"]EFUNC(ZeusModules,deleteAndError)};
 _logic setVariable ["MRH_fnc_MilsimTools_ZeusModules_attachedUnit",_unit];
+disableSerialization;
+
 createDialog "MRHZeusCBPS";
 _display = findDisplay 220419;
 _display setVariable ["MRH_ZeusModules_displayparams",[_logic,_unit]];
@@ -33,4 +35,10 @@ if (_useGlobalComp) exitWith
 		_x ctrlShow false;
 	} forEach [_CMPTEXT,_CMPCMB];
 };
+
+
+
 [_CMPCMB]FUNC(fillAttributesCombo);
+_previousComp =_unit getVariable ["MRH_CBPSSpecificCompSelected","None"];
+_index = [_CMPCMB,_previousComp]CFUNC(findCtrlBoxIndexFor);
+_CMPCMB lbSetCurSel _index;

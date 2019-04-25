@@ -13,3 +13,4 @@ call MRH_fnc_MilsimTools_RHS_CBPS_;
 params ["_veh"];
 _comp = _veh getVariable ["MRH_CBPS_spawnedComp",[]];
 [_veh,_comp] call MRH_fnc_deleteComposition;
+["mrh_milsimtools_CBPS_repacked", [_veh,_comp]] call CBA_fnc_globalEvent;

@@ -13,13 +13,14 @@ params ["_ctrl"];
 
 lbClear _ctrl;
 
+_default = [["None","None"]];
 
 _addonComps = FUNC(listAddonCompositions);
 
 
 _missionComps = FUNC(listMissionCompositions);
 
-_all = _addonComps + _missionComps;
+_all = _default + _addonComps + _missionComps;
 
 {
 	 _index = _ctrl lbAdd (_x select 0);

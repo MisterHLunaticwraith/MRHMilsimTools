@@ -4,10 +4,32 @@ class CfgPatches {
 		units[] = {"MRH_RHS_CBPS_module"}; //
 		weapons[] = {}; //
 		requiredVersion = 0.1; //
-		requiredAddons[] = {"cba_main","MRHMilsimTools","rhsusf_c_fmtv","A3_Soft_F_HEMTT","MRHZeusModules"}; //
+		requiredAddons[] = {"cba_main","MRHMilsimTools","rhsusf_c_fmtv","A3_Soft_F_HEMTT","MRHZeusModules"};
+		version = 0.99.1;
+		versionStr = "0.99.1";
+		versionAr[] = {0,99,1};
+		versionDesc = "MRH Milsim Tools -Optionals RHS CBPS";
+		versionAct = "call compile preProcessFileLineNumbers '\MRHMilSimTools\about.sqf'";
+		author = "Mr H.";
+      authors[]= {"Mr H."};
+		url = "https://mrhmilsimtools-arma3-mod.wikia.com/wiki/MRHMilsimTools_ARMA3_Mod_Wiki";
 	};
 };
 
+class CfgMods {
+    class MRHMilsimToolsOPT_RHS_CBPS {
+        dir = "@MRHMilsimTools - Optionals - RHS_CBPS";
+        name = "Mister H's Milsim Tools -Optionals";
+        picture = "A3\Ui_f\data\Logos\arma3_expansion_alpha_ca";
+        hidePicture = "true";
+        hideName = "true";
+        actionName = "Website";
+        action = "https://mrhmilsimtools-arma3-mod.wikia.com/wiki/MRHMilsimTools_ARMA3_Mod_Wiki";
+        description = "Issue Tracker: https://github.com/MisterHLunaticwraith/MRHMilsimTools/issues";
+    };
+};
+
+#include "\MRH_RHS_CBPS\cfgSettings.hpp"
 
 
 //----------addon dialogs
@@ -52,6 +74,14 @@ class cfgMRHcompositions
 };
 
 #include "\MRH_RHS_CBPS\Dialogs\zeuscbps.hpp"
+
+class Extended_Init_EventHandlers {
+    class rhsusf_M1083A1P2_B_fmtv_usarmy {
+        class MRH_RHS_CBPS_init_eh {
+            init = "_this call MRH_fnc_MilsimTools_RHS_CBPS_deployedInit";
+        };
+    };
+};
 /*
 class cfgWeapons
 {

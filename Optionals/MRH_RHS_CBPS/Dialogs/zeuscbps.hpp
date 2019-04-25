@@ -72,6 +72,7 @@ class MRHCancel: RscButtonMRH_RHS_CBPS
 	idc = 1600;
 	moving = true;
 	text = "Cancel"; //--- ToDo: Localize;
+	action = "closeDialog 0";
 	x = 0.443281 * safezoneW + safezoneX;
 	y = 0.522 * safezoneH + safezoneY;
 	w = 0.04125 * safezoneW;
@@ -81,6 +82,7 @@ class MRHApply: RscButtonMRH_RHS_CBPS
 {
 	idc = 1601;
 	moving = true;
+	action = "call MRH_fnc_MilsimTools_RHS_CBPS_deployCBPSModuleAction;";
 	text = "Apply"; //--- ToDo: Localize;
 	x = 0.5 * safezoneW + safezoneX;
 	y = 0.522 * safezoneH + safezoneY;

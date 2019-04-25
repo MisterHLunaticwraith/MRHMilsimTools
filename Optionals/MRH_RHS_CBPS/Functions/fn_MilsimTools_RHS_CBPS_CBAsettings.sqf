@@ -21,8 +21,8 @@ call MRH_fnc_MilsimTools_RHS_CBPS_CBAsettings;
 
 ] call cba_settings_fnc_init;
 
-_compUsedGlobalValues = [];
-_compUsedGlobalPretty = [];
+_compUsedGlobalValues = ["None"];
+_compUsedGlobalPretty = ["None"];
 
 _addonComps = FUNC(listAddonCompositions);
 {
@@ -41,7 +41,7 @@ _missionComps = FUNC(listMissionCompositions);
     "List",
     "Composition to use",
     "MRH_Milsim Tools - RHS CBPS",
-    [_compUsedGlobalValues,_compUsedGlobalPretty,0],
+    [_compUsedGlobalValues,_compUsedGlobalPretty,1],
     true
 
 ] call cba_settings_fnc_init;
