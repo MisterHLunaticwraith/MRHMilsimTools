@@ -23,7 +23,7 @@ class object
                     tooltip = $STR_MRH_FUNCS_SimpleMessageATTDESC; 
                     property = "mrh_hasConv"; 
                     control = "CheckboxState";    
-                    expression = "if (_value) then {[_this] call MRH_fnc_MilsimTools_Functions_simpleConvFromAttributes};";
+                    expression = "if (_value) then {[[_this],{_this call MRH_fnc_MilsimTools_Functions_simpleConvFromAttributes}] RemoteExec ['Call',[0,-2] select isDedicated,true];};";
                     defaultValue = false;
                     unique = 0; 
                     validate = "none";
@@ -37,7 +37,7 @@ class object
                     tooltip = $STR_MRH_FUNCS_MessageTextTooltip; 
                     property = "mrh_textMess"; 
                     control = "EditMulti5";    
-                    expression = "_this setVariable ['%s',_value]";
+                    expression = "_this setVariable ['%s',_value,true]";
                     defaultValue = "Write the message here";
                     unique = 0; 
                     validate = "none";
@@ -52,7 +52,7 @@ class object
                     tooltip = $STR_MRH_FUNCS_MessageCodeToolTip; 
                     property = "mrh_message_codeToExec"; 
                     control = "EditCodeMulti5";    
-                    expression = "_this setVariable ['%s',_value]";
+                    expression = "_this setVariable ['%s',_value,true]";
                     defaultValue = "_unit = _this select 0;_passedParameters = (_this select 1);";
                     unique = 0; 
                     validate = "none";
@@ -66,7 +66,7 @@ class object
                     tooltip = $STR_MRH_FUNCS_MessageParamsToolTip; 
                     property = "mrh_message_passedParams"; 
                     control = "EditCode";    
-                    expression = "_this setVariable ['%s',_value]";
+                    expression = "_this setVariable ['%s',_value,true]";
                     defaultValue = "[]";
                     unique = 0; 
                     validate = "none";
@@ -80,7 +80,7 @@ class object
                     tooltip = $STR_MRH_FUNCS_MessageGlobalToolTip; 
                     property = "mrh_message_isGlobalCode"; 
                     control = "Checkbox";    
-                    expression = "_this setVariable ['%s',_value]";
+                    expression = "_this setVariable ['%s',_value,true]";
                     defaultValue = false;
                     unique = 0; 
                     validate = "none";
@@ -94,7 +94,7 @@ class object
                     tooltip = $STR_MRH_FUNCS_MessageRemoveAfterUseToolTip; 
                     property = "mrh_message_removeAction"; 
                     control = "Checkbox";    
-                    expression = "_this setVariable ['%s',_value]";
+                    expression = "_this setVariable ['%s',_value,true]";
                     defaultValue = false;
                     unique = 0; 
                     validate = "none";
@@ -134,7 +134,7 @@ class object
                         tooltip = $STR_MRH_FUNCS_objectCanBeSearchedATTToolTip; 
                         property = "mrh_can_search_obj"; 
                         control = "CheckboxState";    
-                        expression = "if (_value) then {[_this] call MRH_fnc_MilsimTools_Functions_searchObjectFromAttributes};";
+                        expression = "if (_value) then {[[_this],{_this call MRH_fnc_MilsimTools_Functions_searchObjectFromAttributes}] RemoteExec ['Call',[0,-2] select isDedicated,true]};";
                         defaultValue = false;
                         unique = 0; 
                         validate = "none";
@@ -148,7 +148,7 @@ class object
                         tooltip = $STR_MRH_FUNCS_SearchWillBeSuccATTTooltip; 
                         property = "mrh_search_obj_success"; 
                         control = "Checkbox";    
-                        expression = "_this setVariable ['%s',_value]";
+                        expression = "_this setVariable ['%s',_value,true]";
                         defaultValue = false;
                         unique = 0; 
                         validate = "none";
@@ -163,7 +163,7 @@ class object
                         tooltip = $STR_MRH_FUNCS_NameOfFoundObjectATTToolTip; 
                         property = "mrh_search_nameFound"; 
                         control = "Edit";    
-                        expression = "_this setVariable ['%s',_value]";
+                        expression = "_this setVariable ['%s',_value,true]";
                         defaultValue = "name of object";
                         unique = 0; 
                         validate = "none";
@@ -178,7 +178,7 @@ class object
                         tooltip = $STR_MRH_FUNCS_CodeToRunWhenObjectATTToolTip; 
                         property = "mrh_search_CodeFound"; 
                         control = "EditCodeMulti5";    
-                        expression = "_this setVariable ['%s',_value]";
+                        expression = "_this setVariable ['%s',_value,true]";
                         defaultValue = "params ['_searchedObject']";
                         unique = 0; 
                         validate = "none";
@@ -219,7 +219,7 @@ class object
                         tooltip = $STR_MRH_FUNCS_addHackAndDlATTToolTip; 
                         property = "mrh_hackAndCollectData"; 
                         control = "CheckboxState";    
-                        expression = "if (_value) then {[_this] call MRH_fnc_MilsimTools_Functions_addHackFromAttributes};";
+                        expression = "if (_value) then {[[_this],{_this call MRH_fnc_MilsimTools_Functions_addHackFromAttributes}] RemoteExec ['Call',[0,-2] select isDedicated,true]};";
                         defaultValue = false;
                         unique = 0; 
                         validate = "none";
@@ -234,7 +234,7 @@ class object
                         tooltip = $STR_MRH_FUNCS_addHackNDLHackDurationATTToolTip; 
                         property = "mrh_hackAndCollectDataHackDuration"; 
                         control = "EditShort";    
-                        expression = "_this setVariable ['%s',_value]";
+                        expression = "_this setVariable ['%s',_value,true]";
                         defaultValue = "10";
                         unique = 0; 
                         validate = "none";
@@ -249,7 +249,7 @@ class object
                         tooltip = $STR_MRH_FUNCS_addHackNDLFileSizeATTToolTip; 
                         property = "mrh_hackAndCollectDataHackFileSize"; 
                         control = "EditShort";    
-                        expression = "_this setVariable ['%s',_value]";
+                        expression = "_this setVariable ['%s',_value,true]";
                         defaultValue = "10";
                         unique = 0; 
                         validate = "none";
@@ -264,7 +264,7 @@ class object
                         tooltip = $STR_MRH_FUNCS_addHackNDLDataListATTToolTip; 
                         property = "mrh_hackAndCollectDataHackData"; 
                         control = "Edit";    
-                        expression = "_this setVariable ['%s',_value]";
+                        expression = "_this setVariable ['%s',_value,true]";
                         defaultValue = "[""MRH_SdTabTestDataEntry"",""MRH_WP_M4""]";
                         unique = 0; 
                         validate = "none";
@@ -279,7 +279,7 @@ class object
                         tooltip = $STR_MRH_FUNCS_addHackNDLPicsListATTToolTip;
                         property = "mrh_hackAndCollectPicsHack"; 
                         control = "Edit";    
-                        expression = "_this setVariable ['%s',_value]";
+                        expression = "_this setVariable ['%s',_value,true]";
                         defaultValue = "[""MRH_poweredByMilsimtools"",""MRH_WP_M4""]";
                         unique = 0; 
                         validate = "none";
