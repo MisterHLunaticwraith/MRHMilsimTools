@@ -1,5 +1,13 @@
 Changelog:
 
+MRH Milsim Tools version : v.1.17.1
+- added RHS_CBPS_optional an optional module that can be found independantly on the workshop but requires milsim tools to function.
+- fixed : attributes set in 3Den editor did not work in MP.
+- Tweaked: Halo Mask hud can be completely disabled, or enabled elements can be selected.
+
+///////////////////////////////////////////
+Changelog:
+
 MRH Milsim Tools version : v.1.17.0
 
 - tweaked: For better practice. Heli Taxi, Cas Supports,Fire Supports and supply drops are now disabled by default. 
