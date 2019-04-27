@@ -27,6 +27,7 @@ _CMPCMB = CTRLF(2100);
 _deploy = cbChecked _DEPLOYTICK;
 deployAction_fnc = {
 	params ["_unit"];
+	if  (_unit animationSourcePhase 'deploy_tent' > 0) exitWith {[localize "STR_MRH_MRHMRHZeusModules_GENERROR", localize "STR_MRH_MRH_RHS_CBPS_ZeusMessageAlReadyDeployed", 5] call BIS_fnc_curatorHint;}; //exit if tent is already deployed
 	[_unit,'deploy_platform',1] spawn rhs_fnc_fmtv_Deploy;
 	_unit animateSource ['deploy_tent',1];
 	[_unit]FUNC(populate);
@@ -34,6 +35,7 @@ deployAction_fnc = {
 	
 	};
 repackAction_fnc = {
+	params ["_unit"];
 	[_unit,'deploy_platform',0] spawn rhs_fnc_fmtv_Deploy;
 	_unit animateSource ['deploy_tent',0];
 	[_unit]FUNC(repack);
@@ -53,7 +55,8 @@ if (_useGlobalComp && !_deploy) exitWith
 
 
 _selectedCmp =_CMPCMB lbData (lbCurSel _CMPCMB);
-systemChat str _selectedCmp;
+//systemChat str _selectedCmp;
+[localize "STR_MRH_MRH_RHS_CBPS_CmpassignedZeusModMess",_selectedCmp, 5] call BIS_fnc_curatorHint;
 
 _unit setVariable ["MRH_CBPSSpecificCompSelected",_selectedCmp,true];
 if (_deploy) then {

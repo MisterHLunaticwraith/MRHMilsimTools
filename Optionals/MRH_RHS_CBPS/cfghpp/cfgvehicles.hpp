@@ -29,11 +29,11 @@ class rhsusf_M1085A1P2_B_Medical_fmtv_usarmy: rhsusf_M1083A1P2_B_fmtv_usarmy
 
 		class MRH_useCBPSSpecificComp
 		{ 
-			displayName = "Use specific composition for this CBPS"; 
-			tooltip = "sometooltip"; 
+			displayName = $STR_MRH_MRH_RHS_CBPS_UseSpecCompATT; 
+			tooltip = $STR_MRH_MRH_RHS_CBPS_UseSpecCompATTTooltip; 
 			property = "mrh_CBPSuseSpeComp"; 
 			control = "Checkbox";
-			expression = "_this setVariable ['%s',_value];";
+			expression = "_this setVariable ['%s',_value,true];";
 			defaultValue = false;
 			unique = 0; 
 			validate = "none";
@@ -43,11 +43,11 @@ class rhsusf_M1085A1P2_B_Medical_fmtv_usarmy: rhsusf_M1083A1P2_B_fmtv_usarmy
 
 		class MRH_CBPSSpecificCompSelected
 		{ 
-			displayName = "Select composition"; 
-			tooltip = "sometooltip"; 
+			displayName = $STR_MRH_MRH_RHS_CBPS_SelectCompComboATT; 
+			tooltip = $STR_MRH_MRH_RHS_CBPS_SelectCompComboATTToolTip; 
 			property = "mrh_CBPSselectedCmp"; 
 			control = "MRH_CBPS_Cmb";
-			expression = "_this setVariable ['%s',_value];";
+			expression = "_this setVariable ['%s',_value,true];";
 			defaultValue = "MRH_defaultCBPS_medical_simple";
 			unique = 0; 
 			validate = "none";

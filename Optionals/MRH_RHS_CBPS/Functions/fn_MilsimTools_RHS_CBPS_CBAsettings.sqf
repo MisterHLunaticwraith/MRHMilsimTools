@@ -14,7 +14,7 @@ call MRH_fnc_MilsimTools_RHS_CBPS_CBAsettings;
 [
     "MRH_MT_RHSCBPS_useGlobal", 
     "CHECKBOX",
-    ["Use same composition for all CBPS vehicles",""],
+    [localize "STR_MRH_MRH_RHS_CBPS_UseSameCompCBA",localize "STR_MRH_MRH_RHS_CBPS_UseSameCompCBAToolTip"],
     "MRH_Milsim Tools - RHS CBPS",
     true,
     1
@@ -22,7 +22,7 @@ call MRH_fnc_MilsimTools_RHS_CBPS_CBAsettings;
 ] call cba_settings_fnc_init;
 
 _compUsedGlobalValues = ["None"];
-_compUsedGlobalPretty = ["None"];
+_compUsedGlobalPretty = [localize "STR_MRH_MRH_RHS_CBPS_None"];
 
 _addonComps = FUNC(listAddonCompositions);
 {
@@ -39,7 +39,7 @@ _missionComps = FUNC(listMissionCompositions);
 [
     "MRH_MT_RHSCBPS_globalComp", 
     "List",
-    "Composition to use",
+    [localize "STR_MRH_MRH_RHS_CBPS_CompToUseCBA",localize "STR_MRH_MRH_RHS_CBPS_CompToUseCBATootip"],
     "MRH_Milsim Tools - RHS CBPS",
     [_compUsedGlobalValues,_compUsedGlobalPretty,1],
     true

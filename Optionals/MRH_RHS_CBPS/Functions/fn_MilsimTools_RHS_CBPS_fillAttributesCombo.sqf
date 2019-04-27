@@ -13,7 +13,7 @@ params ["_ctrl"];
 
 lbClear _ctrl;
 
-_default = [["None","None"]];
+_default = [[localize "STR_MRH_MRH_RHS_CBPS_None","None"]];
 
 _addonComps = FUNC(listAddonCompositions);
 

@@ -15,7 +15,7 @@ _unit = attachedTo _logic;
 //systemChat format ["%1 %2",_logic,attachedObjects _logic];
 
 if (isNull _unit) exitWith {[_logic,localize "STR_MRH_MRHMRHZeusModules_ERRORNOUNSELECTED"]EFUNC(ZeusModules,deleteAndError)};
-if !(_unit isKindOf "rhsusf_M1085A1P2_B_Medical_fmtv_usarmy") exitWith {[_logic,"Error: unit must be a RHS CBPS"]EFUNC(ZeusModules,deleteAndError)};
+if !(_unit isKindOf "rhsusf_M1085A1P2_B_Medical_fmtv_usarmy") exitWith {[_logic,localize "STR_MRH_MRH_RHS_CBPS_ZeusErrorMustBeCBPS"]EFUNC(ZeusModules,deleteAndError)};
 if (!alive _unit) exitWith {[_logic,localize "STR_MRH_MRHMRHZeusModules_ERRORMUSTBEALIVE"]EFUNC(ZeusModules,deleteAndError)};
 _logic setVariable ["MRH_fnc_MilsimTools_ZeusModules_attachedUnit",_unit];
 disableSerialization;

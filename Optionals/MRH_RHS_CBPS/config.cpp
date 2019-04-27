@@ -5,9 +5,9 @@ class CfgPatches {
 		weapons[] = {}; //
 		requiredVersion = 0.1; //
 		requiredAddons[] = {"cba_main","MRHMilsimTools","rhsusf_c_fmtv","A3_Soft_F_HEMTT","MRHZeusModules"};
-		version = 0.99.1;
-		versionStr = "0.99.1";
-		versionAr[] = {0,99,1};
+		version = 1.0.0;
+		versionStr = "1.0.0";
+		versionAr[] = {1,0,0};
 		versionDesc = "MRH Milsim Tools -Optionals RHS CBPS";
 		versionAct = "call compile preProcessFileLineNumbers '\MRHMilSimTools\about.sqf'";
 		author = "Mr H.";

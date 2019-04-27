@@ -23,7 +23,7 @@ class MRHInfoText: RscTextMRH_RHS_CBPS
 {
 	idc = 1000;
 	moving = true;
-	text = "Chemical Biological Protective Shelter options:"; //--- ToDo: Localize;
+	text = $STR_MRH_MRH_RHS_CBPS_ZeusMenuTitleCBPS; //--- ToDo: Localize;
 	x = 0.407187 * safezoneW + safezoneX;
 	y = 0.379 * safezoneH + safezoneY;
 	w = 0.216563 * safezoneW;
@@ -42,7 +42,7 @@ class MRHDeployCBPStext: RscTextMRH_RHS_CBPS
 {
 	idc = 1001;
 	moving = true;
-	text = "Deploy CBPS"; //--- ToDo: Localize;
+	text = $STR_MRH_MRH_RHS_CBPS_ZeusModuleNameDeploy; //--- ToDo: Localize;
 	x = 0.407187 * safezoneW + safezoneX;
 	y = 0.412 * safezoneH + safezoneY;
 	w = 0.061875 * safezoneW;
@@ -52,7 +52,7 @@ class MRHCompositionText: RscTextMRH_RHS_CBPS
 {
 	idc = 1002;
 	moving = true;
-	text = "Composition to use for this vehicle:"; //--- ToDo: Localize;
+	text = $STR_MRH_MRH_RHS_CBPS_ZeusMenuCompToUse; //--- ToDo: Localize;
 	x = 0.407187 * safezoneW + safezoneX;
 	y = 0.445 * safezoneH + safezoneY;
 	w = 0.149531 * safezoneW;
@@ -71,7 +71,7 @@ class MRHCancel: RscButtonMRH_RHS_CBPS
 {
 	idc = 1600;
 	moving = true;
-	text = "Cancel"; //--- ToDo: Localize;
+	text = $STR_MRH_MRH_RHS_CBPS_ZeusMenuCancel; //--- ToDo: Localize;
 	action = "closeDialog 0";
 	x = 0.443281 * safezoneW + safezoneX;
 	y = 0.522 * safezoneH + safezoneY;
@@ -83,7 +83,7 @@ class MRHApply: RscButtonMRH_RHS_CBPS
 	idc = 1601;
 	moving = true;
 	action = "call MRH_fnc_MilsimTools_RHS_CBPS_deployCBPSModuleAction;";
-	text = "Apply"; //--- ToDo: Localize;
+	text = $STR_MRH_MRH_RHS_CBPS_ZeusMenuApply; //--- ToDo: Localize;
 	x = 0.5 * safezoneW + safezoneX;
 	y = 0.522 * safezoneH + safezoneY;
 	w = 0.04125 * safezoneW;
