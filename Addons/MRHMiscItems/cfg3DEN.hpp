@@ -22,7 +22,7 @@ class object
                         tooltip = $STR_MRH_MRHMiscItems_AmmocrateDescAndTooltip; 
                         property = "mrh_isAmmoCrate"; 
                         control = "CheckboxState";    
-                        expression = "[_this] call MRH_fnc_MilsimTools_MiscItems_ammoCrateFromAttributes";
+                        expression = "[[_this],{_this call MRH_fnc_MilsimTools_MiscItems_ammoCrateFromAttributes}] RemoteExec ['Call',0,true]";
                         defaultValue = false;
                         unique = 0; 
                         validate = "none";
@@ -36,7 +36,7 @@ class object
                         tooltip = $STR_MRH_MRHMiscItems_AmmocrateDescAndTooltip; 
                         property = "mrh_AmmoCrateNumberItem"; 
                         control = "EditShort";    
-                        expression = "_this setVariable ['%s',_value]";
+                        expression = "_this setVariable ['%s',_value,true]";
                         defaultValue = "10";
                         unique = 0; 
                         validate = "none";
@@ -51,7 +51,7 @@ class object
                         tooltip = $STR_MRH_MRHMiscItems_AmmocrateDescAndTooltip; 
                         property = "mrh_infiniteAmmoRefill"; 
                         control = "Checkbox";    
-                        expression = "_this setVariable ['%s',_value]";
+                        expression = "_this setVariable ['%s',_value,true]";
                         defaultValue = false;
                         unique = 0; 
                         validate = "none";
@@ -65,7 +65,7 @@ class object
                         tooltip = $STR_MRH_MRHMiscItems_AmmocrateDescAndTooltip; 
                         property = "mrh_isRefreshableAmmoCrate"; 
                         control = "Checkbox";    
-                        expression = "_this setVariable ['%s',_value]";
+                        expression = "_this setVariable ['%s',_value,true]";
                         defaultValue = false;
                         unique = 0; 
                         validate = "none";
@@ -105,7 +105,7 @@ class object
                             tooltip = $STR_MRH_MRHMiscItems_isInfiniteBoxToolTip; 
                             property = "mrh_isRefillBox"; 
                             control = "Checkbox";    
-                            expression = "[_this] call MRH_fnc_MilsimTools_MiscItems_isRefillBoxFromAttributes";
+                            expression = "[[_this],{_this call MRH_fnc_MilsimTools_MiscItems_isRefillBoxFromAttributes}] RemoteExec ['call',0,true]";
                             defaultValue = false;
                             unique = 0; 
                             validate = "none";

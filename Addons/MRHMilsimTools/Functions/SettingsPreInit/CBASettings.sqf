@@ -158,6 +158,15 @@ _script	Script to execute when setting is changed.  (optional) <CODE>
 
 ["MRH_MilsimTools_HaloGear_haloMaskBreakingChancePerc", "SLIDER",   [localize "STR_MRH_CBA_HaloGear_OddsOfBreaking",localize "STR_MRH_CBA_HaloGear_OddsOfBreakingToolTip"], "MRH_MilsimTools - Halo Jumps", [0, 100, 10, 0],1] call cba_settings_fnc_init;
 
+["MRH_MilsimTools_HaloGear_disableMaskHud", "CHECKBOX",   [localize "STR_MRH_CBA_HaloGear_disableHud",localize "STR_MRH_CBA_HaloGear_disableHudToolTip"],["MRH_MilsimTools - Halo Jumps"],false,1] call cba_settings_fnc_init;
+
+["MRH_MilsimTools_HaloGear_disableMaskHudCompass", "CHECKBOX",   [localize "STR_MRH_CBA_HaloGear_disableHudCompass",localize "STR_MRH_CBA_HaloGear_disableHudElToolTip"],["MRH_MilsimTools - Halo Jumps"],false,1] call cba_settings_fnc_init;
+
+["MRH_MilsimTools_HaloGear_disableMaskHudAltimeter", "CHECKBOX",   [localize "STR_MRH_CBA_HaloGear_disableHudAlt",localize "STR_MRH_CBA_HaloGear_disableHudElToolTip"],["MRH_MilsimTools - Halo Jumps"],false,1] call cba_settings_fnc_init;
+
+["MRH_MilsimTools_HaloGear_disableMaskHudVelocity", "CHECKBOX",   [localize "STR_MRH_CBA_HaloGear_disableHudVel",localize "STR_MRH_CBA_HaloGear_disableHudElToolTip"],["MRH_MilsimTools - Halo Jumps"],false,1] call cba_settings_fnc_init;
+
+
 //-----------below are the settings for the debug mode 
 ["MRH_MilsimTools_DebugTools_isDebugMode", "CHECKBOX",   [localize "STR_MRH_CBA_DebugMode_SettingName",localize "STR_MRH_CBA_DebugMode_SettingNameToolTip"],["MRH_MilsimTools - Debug Mode"],false,1,{call MRH_fnc_MilsimTools_DebugTools_debugHintboxInit;}] call cba_settings_fnc_init;
 

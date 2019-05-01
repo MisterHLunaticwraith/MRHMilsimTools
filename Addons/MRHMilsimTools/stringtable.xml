@@ -528,6 +528,36 @@
 				<English>Open parachute</English>
 				<French>Ouvrir le parachute</French>
 			</Key>
+			<Key ID="STR_MRH_CBA_HaloGear_disableHud">
+				<Original>Disable mask HUD</Original>
+				<English>Disable mask HUD</English>
+				<French>Désactiver le VTH du masque</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_HaloGear_disableHudToolTip">
+				<Original>If enabled diables whole HUD for the Halo Mask</Original>
+				<English>If enabled diables whole HUD for the Halo Mask</English>
+				<French>Si ce réglage est activé, le Viseur Tête Haute du masque sera complètement désactivé.</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_HaloGear_disableHudCompass">
+				<Original>Disable HUD Compass</Original>
+				<English>Disable HUD Compass</English>
+				<French>Déactiver le compas du VTH</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_HaloGear_disableHudAlt">
+				<Original>Disable HUD Altimeter</Original>
+				<English>Disable HUD Altimeter</English>
+				<French>Désactiver l'altimètre du VTH</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_HaloGear_disableHudVel">
+				<Original>Disable velocity counter</Original>
+				<English>Disable velocity counter</English>
+				<French>Désactiver l'affichage de la vélocité du VTH</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_HaloGear_disableHudElToolTip">
+				<Original>Will disable this element from the mask's HUD display, does not apply if the HUD is completely disabled</Original>
+				<English>Will disable this element from the mask's HUD display, does not apply if the HUD is completely disabled</English>
+				<French>Déactivera cet élément du Viseur Tête Haute du masque, ne s'applique pas si le VTH est complètement désactivé</French>
+			</Key>
 
 			<Key ID="STR_MRH_CBA_HaloGear_openChuteKeyToolTip">
 				<Original>Allows you to use a keybind to open your parachute.</Original>

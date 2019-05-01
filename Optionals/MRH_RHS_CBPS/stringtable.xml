@@ -1,0 +1,114 @@
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Project name="MRH_RHS_CBPS">
+	<Package name="MRH_RHS_CBPS">
+		<Container name="MRH_MRH_RHS_CBPS_AllSTrings">
+			<Key ID="STR_MRH_MRH_RHS_CBPS_CompNameMedicalBasic">
+				<Original>Basic CBPS medical</Original>
+				<English>Basic CBPS medical</English>
+				<French>Abris médical NRBC basique</French>
+			</Key>
+			<Key ID="STR_MRH_MRH_RHS_CBPS_CompNameFieldHQBasic">
+				<Original>Basic field HQ</Original>
+				<English>Basic field HQ</English>
+				<French>QG mobile basique</French>
+			</Key>
+			<Key ID="STR_MRH_MRH_RHS_CBPS_CompNameOperatingRoom">
+				<Original>Operating room</Original>
+				<English>Operating room</English>
+				<French>Salle d'opération chirurgicale</French>
+			</Key>
+			<Key ID="STR_MRH_MRH_RHS_CBPS_CompNameSHumanitCampSmall">
+				<Original>Small humanitarian camp</Original>
+				<English>Small humanitarian camp</English>
+				<French>Petit camp humanitaire</French>
+			</Key>
+			<Key ID="STR_MRH_MRH_RHS_CBPS_UseSpecCompATT">
+				<Original>Use specific composition for this CBPS</Original>
+				<English>Use specific composition for this CBPS</English>
+				<French>Utiliser un composition spécifique pour ce NRBC</French>
+			</Key>
+			<Key ID="STR_MRH_MRH_RHS_CBPS_UseSpecCompATTTooltip">
+				<Original>This vehicle will deploy the selected type of CBPS composition, will only work if 'use same composition for all CBPS' is disabled in CBA options.</Original>
+				<English>This vehicle will deploy the selected type of CBPS composition, will only work if 'use same composition for all CBPS' is disabled in CBA options.</English>
+				<French>Ce véhicule déploiera la composition NRBC sélectionnée, ne s'appliquera que si le réglage 'utiliser la même composition pour tous les NRBC' est désactivé dans les réglages CBA.</French>
+			</Key>
+			<Key ID="STR_MRH_MRH_RHS_CBPS_SelectCompComboATT">
+				<Original>Select composition</Original>
+				<English>Select composition</English>
+				<French>Sélectionnez la composition</French>
+			</Key>
+			<Key ID="STR_MRH_MRH_RHS_CBPS_SelectCompComboATTToolTip">
+				<Original>Select composition you want to use for this CBPS</Original>
+				<English>Select composition you want to use for this CBPS</English>
+				<French>Choisissez la composition à utiliser pour ce NRBC</French>
+			</Key>
+			<Key ID="STR_MRH_MRH_RHS_CBPS_ZeusModuleNameDeploy">
+				<Original>Deploy CBPS</Original>
+				<English>Deploy CBPS</English>
+				<French>Déployer l'abri NRBC</French>
+			</Key>
+			<Key ID="STR_MRH_MRH_RHS_CBPS_ZeusMenuTitleCBPS">
+				<Original>Chemical Biological Protective Shelter options:</Original>
+				<English>Chemical Biological Protective Shelter options:</English>
+				<French>Options pour l'abri Biologique Chimique:</French>
+			</Key>
+			<Key ID="STR_MRH_MRH_RHS_CBPS_ZeusMenuCompToUse">
+				<Original>Composition to use for this vehicle:</Original>
+				<English>Composition to use for this vehicle:</English>
+				<French>Composition à utiliser pour ce véhicule:</French>
+			</Key>
+			<Key ID="STR_MRH_MRH_RHS_CBPS_ZeusMenuCancel">
+				<Original>Cancel</Original>
+				<English>Cancel</English>
+				<French>Annuler</French>
+			</Key>
+			<Key ID="STR_MRH_MRH_RHS_CBPS_ZeusMenuApply">
+				<Original>Apply</Original>
+				<English>Apply</English>
+				<French>Appliquer</French>
+			</Key>
+			<Key ID="STR_MRH_MRH_RHS_CBPS_UseSameCompCBA">
+				<Original>Use same composition for all CBPS vehicles</Original>
+				<English>Use same composition for all CBPS vehicles</English>
+				<French>Utiliser la même composition pour tous les NRBC</French>
+			</Key>
+			<Key ID="STR_MRH_MRH_RHS_CBPS_UseSameCompCBAToolTip">
+				<Original>If this setting is enabled the same composition will be applied for all CBPS vehicles in game, no matter what setting is defined in their 3den attributes.</Original>
+				<English>If this setting is enabled the same composition will be applied for all CBPS vehicles in game, no matter what setting is defined in their 3den attributes.</English>
+				<French>Si ce réglage est activé la même composition sera utilisée pour tous les véhicules avec abri,les réglages dans les attributs de l'objet dans l'éditeur seront ignorés. </French>
+			</Key>
+			<Key ID="STR_MRH_MRH_RHS_CBPS_CompToUseCBA">
+				<Original>Composition to use</Original>
+				<English>Composition to use</English>
+				<French>Composition à utiliser</French>
+			</Key>
+			<Key ID="STR_MRH_MRH_RHS_CBPS_CompToUseCBATootip">
+				<Original>This composition will be applied to all vehicles if above setting is enabled.</Original>
+				<English>This composition will be applied to all vehicles if above setting is enabled.</English>
+				<French>Cette composition sera appliquée à tous les vhéicules si le réglage ci-dessus est activé.</French>
+			</Key>
+			<Key ID="STR_MRH_MRH_RHS_CBPS_None">
+				<Original>None</Original>
+				<English>None</English>
+				<French>Aucune</French>
+			</Key>
+			<Key ID="STR_MRH_MRH_RHS_CBPS_ZeusErrorMustBeCBPS">
+				<Original>Error: unit must be a RHS CBPS</Original>
+				<English>Error: unit must be a RHS CBPS</English>
+				<French>Erreur: l'unité doit être un véhicule CBPS de RHS</French>
+			</Key>
+			<Key ID="STR_MRH_MRH_RHS_CBPS_ZeusMessageAlReadyDeployed">
+				<Original>Tent already deployed</Original>
+				<English>Tent already deployed</English>
+				<French>Tente déjà déployée</French>
+			</Key>
+			<Key ID="STR_MRH_MRH_RHS_CBPS_CmpassignedZeusModMess">
+				<Original>Composition assigned:</Original>
+				<English>Composition assigned:</English>
+				<French>Composition assignée:</French>
+			</Key>
+			
+		</Container>
+	</Package>
+</Project>
