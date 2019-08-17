@@ -1,6 +1,7 @@
 #define mag_xx(a,b) class _xx_##a {magazine = a; count = b;}
 #define weap_xx(a,b) class _xx_##a {weapon = a; count = b;}
 #define item_xx(a,b) class _xx_##a {name = a; count = b;}
+#define backPack_xx(a,b) class _xx_##a {backpack = a; count = b;}
 //	#include "MRH_C_Path.hpp"
 //declare parents here
 class Items_base_F;
@@ -15,12 +16,14 @@ class CargoNet_01_box_F;
 class Camping_base_F;
 class ACE_medicalSupplyCrate_advanced;
 class B_Slingload_01_Cargo_F;
+class B_W_Static_Designator_01_F;
 //include items here
 #include "\MRHMiscItems\Models\ElevatorButton\ElevatorButton.hpp"
 #include "\MRHMiscItems\Models\UsbThumbDrive\usbDrive.hpp"
 #include "\MRHMiscItems\Models\BioScanner\bioscanner.hpp"
 #include "\MRHMiscItems\Models\ShootingMats\shootingmats.hpp"
 #include "\MRHMiscItems\Models\MedicalTent\medicalTent.hpp"
+#include "\MRHMiscItems\Models\Case\protectiveCase.hpp"
 
 class Man;
     class CAManBase: Man 
@@ -56,6 +59,16 @@ class Man;
 					exceptions[] = {"isNotSitting"};
 					statement = "call MRH_fnc_MilsimTools_MiscItems_unfoldMedicalTent;";
 					icon = "\MRHMiscItems\Models\MedicalTent\medicalTentInv_ca.paa";
+					
+				};
+
+				class MRH_Ace_UnpackLaserDesignator
+				{
+					displayName = "Unpack laser designator";
+					condition = "('MRH_laser_designator' in items MRH_player)";
+					exceptions[] = {"isNotSitting"};
+					statement = "call MRH_fnc_MilsimTools_MiscItems_LaserDesignatorUnpack;";
+					icon = "\MRHMiscItems\Models\LaserDesignator\LaserDesignatorInv_ca.paa";
 					
 				};
 			};
@@ -135,6 +148,30 @@ class MRH_camp_container : MRH_emptySupplyBox
 	displayName = $STR_MRH_MRHMiscItems_SmallCampContainerDispName;
 	class EventHandlers {
 		init = "[_this,'Camp'] call MRH_fnc_MilsimTools_MiscItems_FOB_init;";
+		
+	};
+};
+
+class MRH_laser_designator : B_W_Static_Designator_01_F //Static_Designator_01_base_F//
+{
+	displayName = $STR_MRH_MRHMiscItems_LaserDesignator;
+	scope = 2;
+	class UserActions {};
+	crew = "C_UAV_AI_F";
+	faction = "CIV_F";
+	side = 3;
+	//editorSubcategory = "EdSubcat_Turrets";
+	class assembleInfo
+	{
+		assembleTo = "";
+		base = "";
+		displayName = "";
+		primary = 0;
+		dissasembleTo[] = {};
+		
+	};
+	class EventHandlers {
+		init = "[_this] call MRH_fnc_MilsimTools_MiscItems_LaserDesignatorInit;";
 		
 	};
 };
