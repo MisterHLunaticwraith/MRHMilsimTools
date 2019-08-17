@@ -1,7 +1,7 @@
 class CfgPatches {
 	class MRHFunctions{
 		units[] = {}; //
-		weapons[] = {}; //
+		weapons[] = {"MRH_HackingTool"}; //
 		requiredVersion = 0.1; //
 		requiredAddons[] = {"MRHMilsimTools"}; //
 	};

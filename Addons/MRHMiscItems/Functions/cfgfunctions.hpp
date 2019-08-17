@@ -34,6 +34,10 @@ class MRH // Defines the "owner"
 		{};
 		class MilsimTools_MiscItems_FOB_Init
 		{};
+		class MilsimTools_MiscItems_LaserDesignatorInit
+		{};
+		class MilsimTools_MiscItems_LaserDesignatorUnPack
+		{};
 	};
 	
 };

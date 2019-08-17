@@ -5,3 +5,4 @@ class CBA_MiscItem_ItemInfo;
 #include "\MRHMiscItems\Models\RFIDPass\rfidpass.hpp"
 #include "\MRHMiscItems\Models\ShootingMats\cfgWeaponsShootingMats.hpp"
 #include "\MRHMiscItems\Models\MedicalTent\cfgWeaponsMedicalTent.hpp"
+#include "\MRHMiscItems\Models\LaserDesignator\cfgWeaponsLaserDesignator.hpp"

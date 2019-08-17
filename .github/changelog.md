@@ -1,4 +1,14 @@
 Changelog:
+MRH Milsim Tools version : v.1.17.2
+
+- added Laser designated tripod item (a modification of the remote laser designator introduced by the marksman DLC, can and must beused without uav controler, weighs the same as its real world counterpart) more realistic than using laser designator binoculars , or remote controlled designator).
+-Added empty protective case.
+-Added protective case containing all items from the mod.
+-Fixed sitOnChairFunction.
+-Fixed missing classnames in cfgPatches
+
+/////////
+Changelog:
 
 MRH Milsim Tools version : v.1.17.1
 - added RHS_CBPS_optional an optional module that can be found independantly on the workshop but requires milsim tools to function.

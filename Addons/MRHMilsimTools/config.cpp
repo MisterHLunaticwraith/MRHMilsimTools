@@ -4,9 +4,9 @@ class CfgPatches {
 		weapons[] = {}; //
 		requiredVersion = 0.1; //
 		requiredAddons[] = {"cba_main"};
-		version = 1.17.1;
-		versionStr = "1.17.1";
-		versionAr[] = {1,17,1};
+		version = 1.17.2;
+		versionStr = "1.17.2";
+		versionAr[] = {1,17,2};
 		versionDesc = "MRH Milsim Tools";
 		versionAct = "call compile preProcessFileLineNumbers '\MRHMilSimTools\about.sqf'";
 		author = "Mr H.";

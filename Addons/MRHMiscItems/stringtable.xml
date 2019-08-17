@@ -342,6 +342,41 @@
 				<English>Small camp container</English>
 				<French>Conteneur pour camp avancé</French>
 			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_LaserDesignator">
+				<Original>Laser designator</Original>
+				<English>Laser designator</English>
+				<French>Désignateur laser</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_LaserDesignatorFolded">
+				<Original>Laser designator (folded)</Original>
+				<English>Laser designator (folded)</English>
+				<French>Désignateur laser (replié)</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_LaserDesignatorDesc">
+				<Original>A laser designator, can be unfolded</Original>
+				<English>A laser designator, can be unfolded</English>
+				<French>Un désignateur laser, peut être déployé</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_LDFoldAndPickUp">
+				<Original>Fold and pick up</Original>
+				<English>Fold and pick up</English>
+				<French>Replier et ramasser</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_LaserDesignatorUse">
+				<Original>Use designator</Original>
+				<English>Use designator</English>
+				<French>Utiliser le désignateur</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_MRHMTItemsCrate">
+				<Original>Milsim Tools Items</Original>
+				<English>Milsim Tools Items</English>
+				<French>Objets Milsim Tools</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_EmptyProtCase">
+				<Original>Empty protective case</Original>
+				<English>Empty protective case</English>
+				<French>Caisse protectrice vide</French>
+			</Key>
 			<Key ID="STR_MRH_MRHMiscItems_">
 				<Original></Original>
 				<English></English>
