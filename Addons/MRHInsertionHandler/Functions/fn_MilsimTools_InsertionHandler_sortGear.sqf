@@ -10,7 +10,7 @@ Example(s):
 call MRH_fnc_MilsimTools_InsertionHandler_sortGear;
 */
 #include "MRH_C_Path.hpp"
-_gear = [player,side player] call MRH_fnc_MilsimTools_InsertionHandler_listAirdropSuppliesForSide;
+_gear = [MRH_player,side MRH_player] call MRH_fnc_MilsimTools_InsertionHandler_listAirdropSuppliesForSide;
 _loaded = [];
 _unloaded = [];
 {

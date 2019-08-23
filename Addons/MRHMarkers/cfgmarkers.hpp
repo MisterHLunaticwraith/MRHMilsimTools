@@ -433,3 +433,25 @@ size = 32;
 shadow = 1;
 scope = 2;
 };
+
+class MRH_IH_NO_GO
+{
+name = "Unavailable";
+markerClass = "MRHMarkers";
+icon = "\MRHMarkers\paa\pasok.paa";
+color[] = {1, 0, 0, 1};
+size = 32;
+shadow = 1;
+scope = 0;
+};
+
+class MRH_Submarine
+{
+name = $STR_MRH_MK_Submarine;
+markerClass = "MRHMarkers";
+icon = "\MRHMarkers\paa\Submarine.paa";
+color[] = {1, 1, 1, 1};
+size = 32;
+shadow = 1;
+scope = 2;
+};

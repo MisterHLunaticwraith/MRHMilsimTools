@@ -14,6 +14,7 @@ class CfgPatches {
 #include "\MRHInsertionHandler\Dialogs\insertionmenu.hpp"
 #include "\MRHInsertionHandler\Dialogs\cargopreparationinterface.hpp"
 //---------- addon cfgs
+
 class cfgFunctions
 {
 #include "\MRHInsertionHandler\Functions\cfgFunctions.hpp"
@@ -24,12 +25,12 @@ class cfgSounds
 	#include "\MRHInsertionHandler\Sounds\cfgsounds.hpp"
 };
 
-/*
+
 class cfgVehicles
 {
-	#include "MRHInsertionHandler\cfghpp\cfgvehicles.hpp"
+	#include "\MRHInsertionHandler\cfghpp\cfgvehicles.hpp"
 };
-*/
+
 /*
 class cfgWeapons
 {

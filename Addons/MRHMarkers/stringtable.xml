@@ -213,10 +213,10 @@
 				<English>Waypoint</English>
 				<French>Point de passage</French>
 			</Key>
-			<Key ID="STR_MRH_MK_">
-				<Original></Original>
-				<English></English>
-				<French></French>
+			<Key ID="STR_MRH_MK_Submarine">
+				<Original>Submarine</Original>
+				<English>Submarine</English>
+				<French>Sous-marin</French>
 			</Key>
 			<Key ID="STR_MRH_MK_">
 				<Original></Original>

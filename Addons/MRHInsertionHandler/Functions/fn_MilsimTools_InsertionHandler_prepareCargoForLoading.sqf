@@ -12,7 +12,7 @@ call MRH_fnc_MilsimTools_InsertionHandler_prepareCargoForLoading;
 #include "MRH_C_Path.hpp"
 params ["_object"];
 
-player SVAR(currentAdressedLoadingObj,_object,false);
+MRH_player SVAR(currentAdressedLoadingObj,_object,false);
 _handle = createDialog "MRHCargoPrepareInterface";
 _ctrlPic = FDIS2(1200);
 _ctrlEdit = FDIS2(1400);
@@ -21,9 +21,9 @@ _ctrlActionButton = FDIS2(1600);
 _pic = getText (configfile>>"cfgVehicles">>(typeOf _object)>>"editorpreview");
 _ctrlPic ctrlSetText _pic;
 //---
-_ctrlActionButton buttonSetAction "_prettyname = ctrlText 1400; player setVariable ['MRH_InsertionHandler_setPrettyName',_prettyname];call MRH_fnc_MilsimTools_InsertionHandler_prepObject;";
+_ctrlActionButton buttonSetAction "_prettyname = ctrlText 1400; MRH_player setVariable ['MRH_InsertionHandler_setPrettyName',_prettyname];call MRH_fnc_MilsimTools_InsertionHandler_prepObject;";
 //-----
-_isAlreadyCargo = _object getVariable ["MRH_InsertionHandler_isAirDropSupply_"+ (str side player),false];
+_isAlreadyCargo = _object getVariable ["MRH_InsertionHandler_isAirDropSupply_"+ (str side MRH_player),false];
 if (_isAlreadyCargo) then 
 {
 	_nameDefined = _object GVAR(supplyDropName);

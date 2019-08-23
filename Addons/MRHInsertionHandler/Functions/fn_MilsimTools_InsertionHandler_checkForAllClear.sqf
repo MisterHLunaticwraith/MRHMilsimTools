@@ -14,7 +14,7 @@ if (getMarkerColor "MRH_LZ_Marker" == "") then {_positionSet = false};
 
 _cargoSpaceClear = FUNC(checkCargoSpace);
 
-_playersListClear = (count (player GVARDef(playersToGo,[]))) >=1;
+_playersListClear = (count (MRH_player GVARDef(playersToGo,[]))) >=1;
 
 
 _allClear = false;

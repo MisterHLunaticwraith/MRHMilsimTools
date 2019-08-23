@@ -10,6 +10,14 @@ class MRH // Defines the "owner"
 		{}; 
 		class MilsimTools_InsertionHandler_
 		{};
+		class MilsimTools_InsertionHandler_canDeploySub
+		{};
+		class MilsimTools_InsertionHandler_onInsertionTypeChanged
+		{};
+		class MilsimTools_InsertionHandler_fillInsertionTypeCombo
+		{};
+		class MilsimTools_InsertionHandler_getInsertionType
+		{};
 		class MilsimTools_InsertionHandler_openInterface
 		{};
 		class MilsimTools_InsertionHandler_readVehicleCfg
@@ -74,6 +82,29 @@ class MRH // Defines the "owner"
 		{};
 		class MilsimTools_InsertionHandler_prepObject
 		{};
+		class MilsimTools_InsertionHandler_spawnSub
+		{};
+		class MilsimTools_InsertionHandler_canDetachSDV
+		{};
+		class MilsimTools_InsertionHandler_detachSDV
+		{};
+		class MilsimTools_InsertionHandler_prepUnitForDiving
+		{};
+		class MilsimTools_InsertionHandler_boardSDVs
+		{};
+		class MilsimTools_InsertionHandler_randomPosOnWaterWithinDepth
+		{};
+		class MilsimTools_InsertionHandler_subTransferEffects
+		{};
+		class MilsimTools_InsertionHandler_subWaypointStatement
+		{};
+		class MilsimTools_InsertionHandler_serverCallMaritimeInsertion
+		{};
+		class MilsimTools_InsertionHandler_localCallMaritimeInsertion
+		{};
+		class MilsimTools_InsertionHandler_submarineBubbles
+		{};
+
 
 	};
 	

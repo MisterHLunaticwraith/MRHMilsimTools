@@ -143,6 +143,11 @@ _script	Script to execute when setting is changed.  (optional) <CODE>
 
 ["MRH_MilsimTools_InsertionHandler_SupplyPlanesInde", "EDITBOX",   [localize "STR_MRH_CBA_FireSupport_CASAvailablePlanes",localize "STR_MRH_CBA_General_ClassnamesTypeRulesToolTip"], ["MRH_MilsimTools - Insertion Handler",localize "STR_MRH_CBA_FireSupport_AvailPlanesINDCat"],"I_Heli_Transport_02_F,I_Heli_light_03_unarmed_F,I_C_Plane_Civil_01_F",1] call cba_settings_fnc_init;
 
+["MRH_MilsimTools_InsertionHandler_allowStatic", "CHECKBOX",   [localize "STR_MRH_CBA_insertionHandler_settingUseStatic",localize "STR_MRH_CBA_insertionHandler_settingUseStaticToolTip"],["MRH_MilsimTools - Insertion Handler"],true,1] call cba_settings_fnc_init;
+
+["MRH_MilsimTools_InsertionHandler_allowHALO", "CHECKBOX",   [localize "STR_MRH_CBA_insertionHandler_settingUseHALO",localize "STR_MRH_CBA_insertionHandler_settingUseHALOToolTip"],["MRH_MilsimTools - Insertion Handler"],true,1] call cba_settings_fnc_init;
+
+["MRH_MilsimTools_InsertionHandler_allowSub","CHECKBOX",   [localize "STR_MRH_CBA_insertionHandler_settingUseSub",localize "STR_MRH_CBA_insertionHandler_settingUseSubToolTip"],["MRH_MilsimTools - Insertion Handler"],true,1] call cba_settings_fnc_init;
 //-----------------below are the settings for Halo Gear Addon
 ["MRH_MilsimTools_HaloGear_hypoxiaUse", "CHECKBOX",   [localize "STR_MRH_CBA_HaloGear_enabEPOSet",localize "STR_MRH_CBA_HaloGear_enabEPOSetToolTip"],["MRH_MilsimTools - Halo Jumps"],true,1] call cba_settings_fnc_init;
 

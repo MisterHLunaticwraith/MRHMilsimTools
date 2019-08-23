@@ -127,7 +127,8 @@ class MRHCecklistTitle: RscStructuredTextMRHInsertionInterface
 class MRHSelectInsertionTypeCombo: RscComboMRHInsertionInterface
 {
 	idc = 2101;
-	show = false;//for later devs
+	show = true;//for later devs
+	onLbSelChanged = "call MRH_fnc_MilsimTools_InsertionHandler_onInsertionTypeChanged";
 	x = -0.0104688 * safezoneW + safezoneX;
 	y = 0.027 * safezoneH + safezoneY;
 	w = 0.139219 * safezoneW;
@@ -136,8 +137,8 @@ class MRHSelectInsertionTypeCombo: RscComboMRHInsertionInterface
 class MRHSelectInsertionTypeText: RscStructuredTextMRHInsertionInterface
 {
 	idc = 1106;
-	show = false;//for later devs
-	text = "Select insertion type"; //--- ToDo: Localize;
+	show = true;//for later devs
+	text = $STR_MRH_MRHInsertionHandler_MenuSelectInsertTypeTitle; //--- ToDo: Localize;
 	x = -0.000156274 * safezoneW + safezoneX;
 	y = 0.00500001 * safezoneH + safezoneY;
 	w = 0.128906 * safezoneW;

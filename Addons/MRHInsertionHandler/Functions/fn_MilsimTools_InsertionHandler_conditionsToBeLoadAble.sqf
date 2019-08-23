@@ -17,7 +17,7 @@ _allConditionsCheck = false;
 _allNearObjects = _object nearObjects 50;
 _isNearEnough = false;
 {
-	_var= _x getVariable ["MRH_InsertionHandler_isAirInsertionPlanner_"+ (str side player),false];
+	_var= _x getVariable ["MRH_InsertionHandler_isAirInsertionPlanner_"+ (str side MRH_player),false];
   if(_var) then {_isNearEnough =true};
 }forEach _allNearObjects;
 //----- mass condition

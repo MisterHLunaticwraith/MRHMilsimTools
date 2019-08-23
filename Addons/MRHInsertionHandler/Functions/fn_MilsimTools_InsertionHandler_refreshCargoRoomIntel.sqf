@@ -12,9 +12,29 @@ call MRH_fnc_MilsimTools_InsertionHandler_refreshCargoRoomIntel;
 _ctrlStrText = FDIS(1102);
 _text = (localize "STR_MRH_MRHInsertionHandler_AvailCgStlotsVeh");
 
-_planeType = lbData [2100,(lbCurSel 2100)];
-_cargoSPace = ([_planeType]FUNC(readVehicleCfg)) select 1;
-_currentAssigned = player GVARDef(playersToGo,[]);
+_selectedType = FUNC(getInsertionType);
+_planeType = "";
+_cargoSPace = 0;
+switch (true) do {
+	case (_selectedType == "Standard") : 
+	{
+		 _planeType = lbData [2100,(lbCurSel 2100)];
+		_cargoSPace = ([_planeType]FUNC(readVehicleCfg)) select 1;
+	};
+	case (_selectedType == "Halo") : 
+	{
+		_cargoSPace =20;
+	};
+	case (_selectedType == "Submarine") : 
+	{
+		_cargoSPace =8;
+	};
+};
+
+
+
+
+_currentAssigned = MRH_player GVARDef(playersToGo,[]);
 _cargoItemsLoaded = (FUNC(sortGear)) select 0;
 _cargoCount = (count _cargoItemsLoaded)*3;
 _hasSpace = FUNC(checkCargoSpace);

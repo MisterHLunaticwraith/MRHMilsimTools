@@ -16,10 +16,10 @@ _grp = [_selectedGrpStr,"Grp"] CFUNC(stringTo);
 
 
 _units = units _grp;
-_unitsToDrop = player GVARDef(playersToGo,[]);
+_unitsToDrop = MRH_player GVARDef(playersToGo,[]);
 lbclear _listbox;
 {
-	if (!(_x in _unitsToDrop) && alive _x && ((_x distance player)<100)) then 
+	if (!(_x in _unitsToDrop) && alive _x && ((_x distance MRH_player)<100)) then 
 	{
 	_name = name _x;
 	_index = _listbox lbAdd _name;
