@@ -14,7 +14,7 @@ Example(s):
 
 params ["_unit","_chair",["_condition",{false}]];
 
-[[_unit,"SIT1", "ASIS", _chair], BIS_fnc_ambientAnim] remoteExec ["call",_unit];
+[[_unit,"SIT1", "ASIS", _chair], BIS_fnc_ambientAnim] remoteExec ["call",0];
 
 if !(_condition isEqualTo {false}) then { 
  0 = [_unit, _condition] spawn {
@@ -23,5 +23,5 @@ if !(_condition isEqualTo {false}) then {
 
  _cond = _condition;
  waitUntil {(_unit call _cond)};
-[[_unit], BIS_fnc_ambientAnim__terminate] remoteExec ["call"];};
+[[_unit], BIS_fnc_ambientAnim__terminate] remoteExec ["call",0];};
 };

@@ -13,8 +13,8 @@ Example(s):
 */
 #include "MRH_C_Path.hpp"
 params ["_toRemove","_list"];
-_var = player getVariable ["MRH_InsertionHandler_" + _list,[]];
+_var = MRH_player getVariable ["MRH_InsertionHandler_" + _list,[]];
 _index = _var find _toRemove;
 if (_index == -1) ExitWith {};
 _var deleteAt _index;
-player setVariable ["MRH_InsertionHandler_" + _list,_var];
+MRH_player setVariable ["MRH_InsertionHandler_" + _list,_var];

@@ -14,7 +14,7 @@ lbClear _listBox;
 _spaceLeft = FUNC(checkCargoSpace);
 FUNC(refreshCargoRoomIntel);
 if !(_spaceLeft) then {hintC (localize "STR_MRH_MRHInsertionHandler_hintCMaximumLoadForVeh")};
-_allPlayersToGo = player getVariable ["MRH_InsertionHandler_playersToGo",[]];
+_allPlayersToGo = MRH_player getVariable ["MRH_InsertionHandler_playersToGo",[]];
 {
 	if(alive _x) then {
 	_name = name _x;

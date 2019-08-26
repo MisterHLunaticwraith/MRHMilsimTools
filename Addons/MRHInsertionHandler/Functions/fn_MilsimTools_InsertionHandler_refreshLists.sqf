@@ -14,3 +14,4 @@ FUNC(fillPlayersToAddList);
 FUNC(fillPlayersToGoList);
 FUNC(fillGearToAddList);
 FUNC(fillGearLoadedList);
+FUNC(refreshCargoRoomIntel);

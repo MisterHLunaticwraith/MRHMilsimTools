@@ -46,7 +46,19 @@ class completeAirInsertion_core
 {};
 class completeAirInsertion
 {};
+class MoveInDriver
+{};
+class MoveInGunner
+{};
 class MoveInCargo_EH_init
+{
+    postInit = 1;
+};
+class MoveInDriver_EH_init
+{
+    postInit = 1;
+};
+class MoveInGunner_EH_init
 {
     postInit = 1;
 };

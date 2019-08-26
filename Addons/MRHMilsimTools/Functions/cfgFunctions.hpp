@@ -159,6 +159,10 @@ class MRH // Defines the "owner"
 		{};
 		class MilsimTools_Core_findCtrlBoxIndexFor
 		{};
+		class MilsimTools_Core_putContainerInVehicle
+		{};
+		class MilsimTools_Core_returnDepth
+		{};
 		/*
 		class MilsimTools_Core_
 		{};

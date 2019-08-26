@@ -13,6 +13,7 @@ _handle = createDialog "MRHInsertionInterface";
 FUNC(fillVehCombo);
 FUNC(fillGrpCombo);
 FUNC(startPosMark);
+FUNC(fillInsertionTypeCombo);
 
 
 FUNC(fillPlayersToAddList);
@@ -20,5 +21,6 @@ FUNC(fillPlayersToGoList);
 FUNC(fillGearToAddList);
 FUNC(fillGearLoadedList);
 FUNC(updateVarList);
+
 
 

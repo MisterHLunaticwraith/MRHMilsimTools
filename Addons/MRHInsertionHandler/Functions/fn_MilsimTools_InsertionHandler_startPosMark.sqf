@@ -13,8 +13,8 @@ call MRH_fnc_MilsimTools_InsertionHandler_startPosMark;
 	_mapCtrl = FDIS(1200);
 
 
-	_markerName = str player;
-	createMarkerLocal [_markerName , [(position player) select 0,(position player) select 1]];
+	_markerName = str MRH_player;
+	createMarkerLocal [_markerName , [(position MRH_player) select 0,(position MRH_player) select 1]];
 	_markerName setMarkerTypeLocal "MRH_Admin_PositionMarker";
 	//_markerName setMarkerPosLocal [(position player) select 0,(position player) select 1];
 	_mapCtrl ctrlmapAnimAdd [2, 0.5, markerPos _markerName];

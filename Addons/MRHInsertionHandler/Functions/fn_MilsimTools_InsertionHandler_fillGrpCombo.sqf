@@ -11,7 +11,7 @@ call MRH_fnc_MilsimTools_InsertionHandler_fillGrpCombo;
 #include "MRH_C_Path.hpp"
 _combo =FDIS(2102);
 _groupsWithPlayers = CFUNC(ListGroupsWithPlayers);
-_allPlaySide = [_groupsWithPlayers,side player] CFUNC(SortGroupsBySide);
+_allPlaySide = [_groupsWithPlayers,side MRH_player] CFUNC(SortGroupsBySide);
 
 
 {

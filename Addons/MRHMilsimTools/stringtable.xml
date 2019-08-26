@@ -664,6 +664,38 @@
 				<English>If enabled all ACE3 medics (players and AI), will wear a medic insignia.</English>
 				<French>Si ce réglage est activé tous les Auxiliaires Santitaires (médics IA et joueurs) porteront un écusson de médic</French>
 			</Key>
+			
+			<Key ID="STR_MRH_CBA_insertionHandler_settingUseStatic">
+				<Original>Enable static line jumps</Original>
+				<English>Enable static line jumps</English>
+				<French>Activer les sauts static</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_insertionHandler_settingUseStaticToolTip">
+				<Original>Disable to remove static line jumps from insertion menu.</Original>
+				<English>Disable to remove static line jumps from insertion menu.</English>
+				<French>Désactiver pour enlever les sauts static line du menu d'insertion</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_insertionHandler_settingUseHALO">
+				<Original>Enable H.A.L.O. jumps</Original>
+				<English>Enable H.A.L.O. jumps</English>
+				<French>Autoriser les sauts H.A.L.O.</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_insertionHandler_settingUseHALOToolTip">
+				<Original>Disable to remove HALO jumps from insertion menu.</Original>
+				<English>Disable to remove HALO jumps from insertion menu.</English>
+				<French>Désactiver pour enlever les sauts HALO du menu d'insertion</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_insertionHandler_settingUseSub">
+				<Original>Enable S.D.V. insertions</Original>
+				<English>Enable S.D.V. insertions</English>
+				<French>Autoriser les insertions sous marines</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_insertionHandler_settingUseSubToolTip">
+				<Original>Disable to remove submarine insertions from the insertion menu</Original>
+				<English>Disable to remove submarine insertions from the insertion menu</English>
+				<French>Désactiver pour enlever les insertions sous marines du menu d'insertion</French>
+			</Key>
+			
 			<Key ID="STR_MRH_CBA_">
 				<Original></Original>
 				<English></English>

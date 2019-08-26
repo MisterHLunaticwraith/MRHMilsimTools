@@ -13,6 +13,6 @@ Example(s):
 #include "MRH_C_Path.hpp"
 params ["_toAdd","_list"];
 if (!alive _toAdd) ExitWith{};
-_var = player getVariable ["MRH_InsertionHandler_" + _list,[]];
+_var = MRH_player getVariable ["MRH_InsertionHandler_" + _list,[]];
 _var pushBackUnique  _toAdd;
-player setVariable ["MRH_InsertionHandler_" + _list,_var];
+MRH_player setVariable ["MRH_InsertionHandler_" + _list,_var];
