@@ -34,7 +34,8 @@ MRH Milsim Tools version : v.1.17.4
 
 - Functions added MRH_fnc_isDoctor
 >[this] call MRH_fnc_isDoctor; will make a unit a doctor (talking to them with ace interaction heals player).
-*added
+
+- Vehicle Spawner will now presort categories only on server should save loading time, haven't had time to test it properly and delve into it, expect patch/ full revamp soon.
 /////////////////////////////////
 Changelog:
 MRH Milsim Tools version : v.1.17.3
