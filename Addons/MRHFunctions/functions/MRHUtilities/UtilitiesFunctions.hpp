@@ -86,6 +86,8 @@ class deleteComposition
 {};
 class spawnComposition
 {};
+class isDoctor
+{};
 /*
 class MilsimTools_Functions_
 {};

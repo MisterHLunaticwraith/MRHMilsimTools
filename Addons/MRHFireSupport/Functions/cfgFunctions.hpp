@@ -39,6 +39,10 @@ class MRH // Defines the "owner"
 		{};
 		class MilsimTools_FireSupport_conditions
 		{};
+		class MilsimTools_FireSupport_displayAvailability
+		{};
+		class MilsimTools_FireSupport_conditionsShowAvailability
+		{};
 
 	};
 	

@@ -12,7 +12,7 @@ Example(s):
 #include "MRH_C_Path.hpp"
 
 disableSerialization;
-_allAvailablePlanes = missionNamespace getVariable ["MRH_FireSupport_TypesSupportPlanes"+ (str side player),[]];
+_allAvailablePlanes = missionNamespace getVariable ["MRH_FireSupport_TypesSupportPlanes"+ (str side MRH_player),[]];
 if (_allAvailablePlanes isEqualTo []) exitWith {systemChat localize "STR_MRH_FireSupport_SC_NoSuppsAVSIDE"};
 _handle = createDialog "MRHArtilleryInterface";
 //redefine from arty interface
@@ -27,14 +27,17 @@ _availableTIP ctrlSetStructuredText parseText (localize "STR_MRH_FireSupport_SC_
 
 
 _ctrlGridRef = FDIS(1400);
-_savedGridGref = player getVariable ["MRH_FireSupport_PreviouslyEnteredGridRefSUPPLY","00000-00000"];
+_savedGridGref = MRH_player getVariable ["MRH_FireSupport_PreviouslyEnteredGridRefSUPPLY","00000-00000"];
 _ctrlGridRef ctrlSetText _savedGridGref;
 _ctrlAvailable = FDIS(1103);
 _ctrlNumberCombo = FDIS(2100);
 _ctrlAmmotypeCombo = FDIS(2101);
 
-_availableShots = missionNamespace getVariable ["MRH_FireSupport_NumberOfAvailableSupplyDrops" + (str side player),0]; //temporary do 0 after settings
+_availableShots = missionNamespace getVariable ["MRH_FireSupport_NumberOfAvailableSupplyDrops" + (str side MRH_player),0]; //temporary do 0 after settings
 _ctrlAvailable ctrlSetStructuredText parseText (str _availableShots);
+
+_numberAvailableSP = ["MRH_MilsimTools_FireSupport_NumberOfSuppliesDrops"] call cba_settings_fnc_get;
+if ((parseNumber _numberAvailableSP)<0) then {_ctrlAvailable ctrlSetStructuredText parseText "∞"};
 {
 _nameofplane = getText (configFile>>"cfgVehicles">>_x>>"displayName");
 _index = _ctrlNumberCombo lbAdd _nameofplane;
@@ -42,7 +45,7 @@ _ctrlNumberCombo lbSetData [_index, _x];
 } forEach _allAvailablePlanes;
 _ctrlNumberCombo lbSetCurSel 0;
 
-_availableSupplies = missionNamespace getVariable ["MRH_FireSupport_AvailableSupplyDropsTypes" + (str side player),[]]; //temporary do 0 after settings
+_availableSupplies = missionNamespace getVariable ["MRH_FireSupport_AvailableSupplyDropsTypes" + (str side MRH_player),[]]; //temporary do 0 after settings
 //onEachFrame {systemChat str (lbData [2100,lbcursel 2100]);};
 _index = _ctrlAmmotypeCombo lbAdd (localize "STR_MRH_FireSupport_SC_AmmoResupCratePretty");
 _ctrlAmmotypeCombo lbsetData [_index,"MRH_SupplyCrate_special"];

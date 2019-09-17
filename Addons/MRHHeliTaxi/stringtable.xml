@@ -162,8 +162,282 @@
 				<English>Force landing</English>
 				<French>Forcer l'aterrissage</French>
 			</Key>
-
-
+			<Key ID="STR_MRH_HeliTaxi_CancelMedEvac">
+				<Original>Cancel MEDEVAC</Original>
+				<English>Cancel MEDEVAC</English>
+				<French>Annuler l'EVASAN</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_MedEvacSendToHeal">
+				<Original>Send MEDEVAC to heal passengers</Original>
+				<English>Send MEDEVAC to heal passengers</English>
+				<French>Envoyer l'EVASAN soigner les passagers</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_moduleTaxiName">
+				<Original>Slave helicopter to group</Original>
+				<English>Slave helicopter to group</English>
+				<French>Asservir l'hélicoptère à un groupe.</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_moduleTaxiDesc">
+				<Original>Makes a helicopter slaved to a group. One helicopter in a different group must be synced with one unit from a group. The group will then have control of that helicopter provided they fit the conditions to call it (see options)</Original>
+				<English>Makes a helicopter slaved to a group. One helicopter in a different group must be synced with one unit from a group. The group will then have control of that helicopter provided they fit the conditions to call it (see options)</English>
+				<French>Asservit un hélicoptère à un groupe. Un hélicoptère dans groupe différent doit être synchronisé avec une unité du groupe. Le groupe aura le contrôle de cet hélicoptère s'il remplit les bonnes conditions pour l'appeler (voir options)</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_waitWord">
+				<Original>Wait</Original>
+				<English>Wait</English>
+				<French>Attendre</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_NatoMedEvacTitle">
+				<Original>+ NATO 9 Line MEDEVAC +</Original>
+				<English>+ NATO 9 Line MEDEVAC +</English>
+				<French>+ Appel EVASAN format OTAN +</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_NumberPatientsTitle">
+				<Original>3 - Number of patients:</Original>
+				<English>3 - Number of patients:</English>
+				<French>3 - Nombre de patients:</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_LocationTitle">
+				<Original>1 - Location:</Original>
+				<English>1 - Location:</English>
+				<French>1 - Lieu:</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_specialGearTitle">
+				<Original>4 - Special equipment:</Original>
+				<English>4 - Special equipment:</English>
+				<French>4 - Equipéments particuliers:</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_freqCallSignTitle">
+				<Original>2 - Frequency and callsign:</Original>
+				<English>2 - Frequency and callsign:</English>
+				<French>2 - Fréquence et identifiant:</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_sendSurgeonTitle">
+				<Original>5 - Send surgeon on site :</Original>
+				<English>5 - Send surgeon on site :</English>
+				<French>5 - Envoyer AuxSan sur site :</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_securityTitle">
+				<Original>6 - Security at pick-up site :</Original>
+				<English>6 - Security at pick-up site :</English>
+				<French>6 - Sécurité sur zone :</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_markingPickupTitle">
+				<Original>7 - Marking of pick up site :</Original>
+				<English>7 - Marking of pick up site :</English>
+				<French>7 - Marquage de la Z.A. :</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_patientNationalityTitle">
+				<Original>8 - Patient nationality: </Original>
+				<English>8 - Patient nationality: </English>
+				<French>8 - Nationalité du patient: </French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_nbcContTitle">
+				<Original>9 - NBC Contamination:</Original>
+				<English>9 - NBC Contamination:</English>
+				<French>9 - Contamination N.B.C.</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_penaltyTextTitle">
+				<Original>Expect a time delay of: </Original>
+				<English>Expect a time delay of: </English>
+				<French>Délais requis de : </French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_callButtonMed">
+				<Original>Call</Original>
+				<English>Call</English>
+				<French>Appeler</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_medEvacCallRequest">
+				<Original>This is %2 Requesting MEDEVAC at %1.</Original>
+				<English>This is %2 Requesting MEDEVAC at %1.</English>
+				<French>De %2 demande d'EvaSan à %1.</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_medEvacCallLocationError">
+				<Original>Error: coordinates are not valid</Original>
+				<English>Error: coordinates are not valid</English>
+				<French>Erreur: les coordonnées ne sont pas valides</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_medEvacPenaltyExpect">
+				<Original>Expect a time delay of: </Original>
+				<English>Expect a time delay of: </English>
+				<French>Délais requis de : </French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_genMinutes">
+				<Original>minutes</Original>
+				<English>minutes</English>
+				<French>minutes</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_medEvacFailedLZ">
+				<Original>You have failed to reach and mark the LZ in time, MEDEVAC Cancelled</Original>
+				<English>You have failed to reach and mark the LZ in time, MEDEVAC Cancelled</English>
+				<French>Vous n'avez pas atteint et marqué la Z.A. à temps, EvaSan annulée.</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_medEvacSpecialsNone">
+				<Original>None</Original>
+				<English>None</English>
+				<French>Aucun</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_medEvacSpecialsAceCrate">
+				<Original>Ace 3 medical crate</Original>
+				<English>Ace 3 medical crate</English>
+				<French>Caisse médicale ACE 3</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_medevacSpecialsFieldTent">
+				<Original>Medical field tent</Original>
+				<English>Medical field tent</English>
+				<French>Tente médicale</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_medEvacDefaultRadioLR">
+				<Original>Long Range Radio</Original>
+				<English>Long Range Radio</English>
+				<French>Radio Longues Ondes</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_medEvacNoEnemies">
+				<Original>N- No enemy troops in area</Original>
+				<English>N- No enemy troops in area</English>
+				<French>N- Pas de forces ennemies dans la zone</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_medEvacEnemyTroopsEscort">
+				<Original>X- Enemy troops in area (Armed escort required)</Original>
+				<English>X- Enemy troops in area (Armed escort required)</English>
+				<French>X- Présence ennemie sur zone (Escorte armée requise) </French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_medEvacCantMarkNoItem">
+				<Original>You don't have anything to mark the LZ!</Original>
+				<English>You don't have anything to mark the LZ!</English>
+				<French>Vous n'avez rien pour marquer la Z.A.!</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_medEvacTypeUSMIL">
+				<Original>A- US/ Coalition Military</Original>
+				<English>A- US/ Coalition Military</English>
+				<French>A- Personnel militaire de la coalition</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_medEvacTypeUSCIV">
+				<Original>B- US/Coalition Civilian</Original>
+				<English>B- US/Coalition Civilian</English>
+				<French>B- Personnel civil de la coalition</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_medevactypeNONUSMIL">
+				<Original>C -Non/Us Coalition soldier</Original>
+				<English>C -Non/Us Coalition soldier</English>
+				<French>C - Personnel militaire hors coalition</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_medEvacTypeNonUs">
+				<Original>D- Non US/Coalition Civilian</Original>
+				<English>D- Non US/Coalition Civilian</English>
+				<French>D- Personnel civil hors coalition</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_medEvacTypePOW">
+				<Original>E -Enemy P.O.W.</Original>
+				<English>E -Enemy P.O.W.</English>
+				<French>E- Prisonnier de guerre</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_medEvacTypeHVT">
+				<Original>F- High Value Target</Original>
+				<English>F- High Value Target</English>
+				<French>F- Cible de Grande Valeur</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_medEvacWPNameLandAndDrop">
+				<Original>Land and drop troups</Original>
+				<English>Land and drop troups</English>
+				<French>Atterir et déposer les troupes</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_medEvacWPNameLandAndWait">
+				<Original>Land and wait at LZ</Original>
+				<English>Land and wait at LZ</English>
+				<French>Atterir et attendre sur Z.A.</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_medEvacWPNameLoiter">
+				<Original>Loiter</Original>
+				<English>Loiter</English>
+				<French>Survol de zone</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_medEvacWPNameHoverAndWait">
+				<Original>Hover and wait</Original>
+				<English>Hover and wait</English>
+				<French>Vol stationnaire</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_medEvacWPNameFastRope">
+				<Original>Fast rope troups</Original>
+				<English>Fast rope troups</English>
+				<French>Dépos par corde lisse</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_medEvacGenGridColumn">
+				<Original>Grid:</Original>
+				<English>Grid:</English>
+				<French>Grille:</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_medEvacEtaMessage">
+				<Original>This is %1 we're almost there %2 ETA One Mike</Original>
+				<English>This is %1 we're almost there %2 ETA One Mike</English>
+				<French>Ici %1 nous sommes quasiment sur zone %2, ETA une minute.</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_medEvacMessageMedevacDestroyed">
+				<Original>%1 this is CROSSROADS. Our MEDEVAC has been shot down, last known position was %2</Original>
+				<English>%1 this is CROSSROADS. Our MEDEVAC has been shot down, last known position was %2</English>
+				<French>%1 ici CROSSROADS. Notre EvaSan a été abattu, dernière position connue %2</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_medEvacMessageCancel">
+				<Original>This is %1.Cancel MEDEVAC.</Original>
+				<English>This is %1.Cancel MEDEVAC.</English>
+				<French>De %1: Annulez l'EvaSan!</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_medEvacMessageBringSafe">
+				<Original>This is %2 you can go %1, bring them back safe!</Original>
+				<English>This is %2 you can go %1, bring them back safe!</English>
+				<French>De %2 vous pouvez décoller %1, ramenez-les sains et saufs!</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_medEvacMessageBringingGuysBack">
+				<Original>This is %1.We're bringing your guys back %2. Rendez-vous at %3</Original>
+				<English>This is %1.We're bringing your guys back %2. Rendez-vous at %3</English>
+				<French>Ici %1. On vous ramène vos gars %2. Rendez-vous aux coordonnées %3</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_heliReadyFastRope">
+				<Original>This is %1.We're in position guys. %2 Get ready to fast rope!</Original>
+				<English>This is %1.We're in position guys. %2 Get ready to fast rope!</English>
+				<French>De %1 nous sommes en position. %2 préparez-vous pour dépos corde lisse!</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_heliHoverMessage">
+				<Original>This is %1.We're at %3. I'll hover until you give me a new objective %2</Original>
+				<English>This is %1.We're at %3. I'll hover until you give me a new objective %2</English>
+				<French>Ici %1. Nous sommes à %3. Vol stationnaire jusqu'à nouvel ordre de votre part %2</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_heliLoiterPattern">
+				<Original>This is %1.We've reached %3 starting loiter pattern %2</Original>
+				<English>This is %1.We've reached %3 starting loiter pattern %2</English>
+				<French>Ici %1.  Nous sommes à %3 je commence le survol de la zone %2</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_heliLandAndDropWPDesc">
+				<Original>The helicopter will land at LZ and all troups inside will disembark. The helicopter will then fly away and despawn or go to base</Original>
+				<English>The helicopter will land at LZ and all troups inside will disembark. The helicopter will then fly away and despawn or go  to base</English>
+				<French>L'hélicoptère atterira sur la LZ déposera les troupes puis quittera la zone pour retour base ou despawn.</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_heliLoiterWPDesc">
+				<Original>The helicopter will fly in circles around the provided waypoint until it is given a new waypoint</Original>
+				<English>The helicopter will fly in circles around the provided waypoint until it is given a new waypoint</English>
+				<French>L'hélicoptère survolera la zone en faisant des tours autour du point marqué jusqu'à ce qu'un nouvel objectif lui soit donné.</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_heliLandAndWaitWPDesc">
+				<Original>The helicopter will land and wait at LZ until it is cancelled or given a new waypoint. After a while it will shut its engine down</Original>
+				<English>The helicopter will land and wait at LZ until it is cancelled or given a new waypoint. After a while it will shut its engine down</English>
+				<French>L'hélicoptère atterrira et attendra sur la Z.A. jusqu'à ce qu'il soit annulé où reçoive un nouvel ordre. Après un moment il coupera ses moteurs.</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_heliFastRopeWPDesc">
+				<Original>The helicopter will hover at a low altitude above provided waypoint giving time for units to fastrope.</Original>
+				<English>The helicopter will hover at a low altitude above provided waypoint giving time for units to fastrope.</English>
+				<French></French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_heliHoverWPDesc">
+				<Original>The helicopter will hover at given position and stay there until it receives other orders</Original>
+				<English>The helicopter will hover at given position and stay there until it receives other orders</English>
+				<French>L'hélicoptère entrera en vol stationnaire sur position jusqu'à ce qu'il reçoive de nouveaux ordres.</French>
+			</Key>
+			<Key ID="STR_MRH_HeliTaxi_">
+				<Original></Original>
+				<English></English>
+				<French></French>
+			</Key>
+			
 			
 			
 		</Container>

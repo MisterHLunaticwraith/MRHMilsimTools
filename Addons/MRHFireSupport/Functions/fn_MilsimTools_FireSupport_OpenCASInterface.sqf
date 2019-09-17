@@ -12,7 +12,7 @@ Example(s):
 #include "MRH_C_Path.hpp"
 
 disableSerialization;
-_allAvailablePlanes = missionNamespace getVariable ["MRH_FireSupport_TypesCASPLANES"+ (str side player),[]];
+_allAvailablePlanes = missionNamespace getVariable ["MRH_FireSupport_TypesCASPLANES"+ (str side MRH_player),[]];
 if (_allAvailablePlanes isEqualTo []) exitWith {systemChat localize "STR_MRH_FireSupport_CASnoCASForYourSide"};
 _handle = createDialog "MRHArtilleryInterface";
 //redefine from arty interface
@@ -27,14 +27,20 @@ _availableTIP ctrlSetStructuredText parseText (localize "STR_MRH_FireSupport_CAS
 
 
 _ctrlGridRef = FDIS(1400);
-_savedGridGref = player getVariable ["MRH_FireSupport_PreviouslyEnteredGridRefCAS","00000-00000"];
+_savedGridGref = MRH_player getVariable ["MRH_FireSupport_PreviouslyEnteredGridRefCAS","00000-00000"];
 _ctrlGridRef ctrlSetText _savedGridGref;
 _ctrlAvailable = FDIS(1103);
 _ctrlNumberCombo = FDIS(2100);
 _ctrlAmmotypeCombo = FDIS(2101);
 
-_availableShots = missionNamespace getVariable ["MRH_FireSupport_NumberOfAvailableCAS" + (str side player),0]; //temporary do 0 after settings
+_availableShots = missionNamespace getVariable ["MRH_FireSupport_NumberOfAvailableCAS" + (str side MRH_player),0]; //temporary do 0 after settings
 _ctrlAvailable ctrlSetStructuredText parseText (str _availableShots);
+
+_numberAvailableCAS = ["MRH_MilsimTools_FireSupport_CASShots"] call cba_settings_fnc_get;
+if ((parseNumber _numberAvailableCAS) < 0) then {
+ _ctrlAvailable ctrlSetStructuredText parseText "∞";
+}; //if setting is at a negative value then give infinite cas
+
 {
 _nameofplane = getText (configFile>>"cfgVehicles">>_x>>"displayName");
 _index = _ctrlNumberCombo lbAdd _nameofplane;

@@ -37,6 +37,23 @@ class CAManBase: Man
             statement = "call MRH_fnc_MilsimTools_HeliTaxi_forceLandAction";
             icon = "";
         };
+        class MRH_HeliTaxi_cancelMedEvac
+        {
+            displayName = $STR_MRH_HeliTaxi_CancelMedEvac;
+            condition = "call MRH_fnc_MilsimTools_HeliTaxi_conditionsCancelMedEvac";
+            exceptions[] = {"isNotSwimming"};
+            statement = "call MRH_fnc_MilsimTools_HeliTaxi_cancelMedEvacAction";
+            icon = "";
+        };
+
+        class MRH_HeliTaxi_SendMedEvacToBase
+        {
+            displayName = $STR_MRH_HeliTaxi_MedEvacSendToHeal;
+            condition = "call MRH_fnc_MilsimTools_HeliTaxi_conditionsSendMedEvac";
+            exceptions[] = {"isNotSwimming","isNotInside"};
+            statement = "[[MRH_player],MRH_fnc_MilsimTools_HeliTaxi_medeVacGoAndHeal] RemoteExec ['Spawn',2];";
+            icon = "";
+        };
 	
 
 	};
@@ -54,11 +71,104 @@ class Helicopter : Air
                 {
                         displayName = $STR_MRH_HeliTaxi_ClimbInACe;
                         condition = "[_target] call MRH_fnc_MilsimTools_HeliTaxi_conditionClimbIn";
-                        statement = "player moveinCargo _target";
+                        statement = "MRH_player moveinCargo _target";
                         icon = PAAPATH(ladder.paa); 
                         distance = 4; 
                         exceptions[] = {"isNotSwimming"};
                 };
             };
     };
+};
+
+class Logic;
+class Module_F: Logic
+{
+    class ArgumentsBaseUnits
+    {
+        class Units;
+    };
+    class ModuleDescription
+		{
+			
+			class Anything;
+			class AnyPerson;
+            class AnyVehicle;
+			class AnyStaticObject;
+			class AnyBrain;
+			class AnyAI;
+			class AnyPlayer;
+			class Curator_F;
+			class EmptyDetector;
+			class Condition;
+		};
+    class AttributesBase
+    {
+        class Default;
+        class Edit;
+        class Combo;
+        class Checkbox;
+        class CheckboxNumber;
+        class ModuleDescription;
+        class Units;
+    };
+};
+
+
+class MRH_physicalHeli : Module_F
+{
+ 
+
+		scope = 2;
+		scopeCurator = 1;
+
+		displayName = $STR_MRH_HeliTaxi_moduleTaxiName;
+		icon = "\MRHHeliTaxi\Paa\heli.paa";
+		picture = "\MRHHeliTaxi\Paa\heli.paa";
+		portrait = "\MRHHeliTaxi\Paa\heli.paa";
+        vehicleClass = "Modules";
+		category = "MRH_MilsimTools_Modules";
+		function = "MRH_fnc_MilsimTools_HeliTaxi_isTaxiModuleInit";
+		functionPriority = 1;
+		isGlobal = 0;
+		isTriggerActivated = 0;
+		isDisposable = 0;
+
+        dlc = "MRHMilsimTools";
+
+
+        class Attributes: AttributesBase
+		{
+			class Units: Units
+			{
+				property="MRH_HeliModule_Synched";
+			};
+            class ModuleDescription : ModuleDescription 
+            {};
+        };
+
+		class Arguments: ArgumentsBaseUnits
+		{
+            
+			class Units: Units
+			{
+			};
+			
+		};
+       
+        class ModuleDescription : ModuleDescription
+        {
+            description= $STR_MRH_HeliTaxi_moduleTaxiDesc;
+            position = 0;
+			direction = 0;
+			optional = 0;
+			duplicate = 0;
+			synced[] = {"AnyVehicle","AnyPerson"};
+			sync[]=
+			{
+				"AnyVehicle","AnyPerson"
+			};
+
+        };
+        
+		
 };

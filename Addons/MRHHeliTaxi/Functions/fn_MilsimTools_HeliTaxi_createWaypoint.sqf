@@ -9,7 +9,7 @@ call MRH_fnc_MilsimTools_HeliTaxi_createWaypoint;
 */
 #include "MRH_C_Path.hpp"
 params ["_ctrlMap","_pos"];
-_setWaypoints = player GVARDef(setWaypoints,[]);
+_setWaypoints = MRH_player GVARDef(setWaypoints,[]);
 _waypointNumber = (count _setWaypoints) +1;
 _marker = createMarkerLocal ["MRH_WP_Marker_"+(str _waypointNumber), _pos];
 
@@ -19,5 +19,5 @@ _marker setMarkerColorLocal "ColorYellow";
 _marker setMarkerAlphaLocal 1;
 _wpsNew = +_setWaypoints;
 _wpsNew pushBackUnique _marker;
-player SVAR(setWaypoints,_wpsNew,false);
+MRH_player SVAR(setWaypoints,_wpsNew,false);
 FUNC(refreshWaypointslist);

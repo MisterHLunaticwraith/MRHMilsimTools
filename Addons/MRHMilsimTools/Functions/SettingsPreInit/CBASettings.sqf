@@ -72,13 +72,44 @@ _script	Script to execute when setting is changed.  (optional) <CODE>
 ["MRH_MilsimTools_Heli_ConditionIsFormLeader", "CHECKBOX",   [localize "STR_MRH_CBA_Heli_MustBeFL",localize "STR_MRH_CBA_Heli_MustBeFLToolTip"], ["MRH_MilsimTools - Heli Taxi","Conditions to be able to call the Heli"],true,1] call cba_settings_fnc_init;
 ["MRH_MilsimTools_Heli_isCustomConditionSet", "CHECKBOX",   [localize "STR_MRH_CBA_Heli_UseCondition",localize "STR_MRH_CBA_Heli_UseConditionToolTip"],["MRH_MilsimTools - Heli Taxi",localize "STR_MRH_CBA_Heli_SubCatConditions"],false,1] call cba_settings_fnc_init;
 
-["MRH_MilsimTools_Heli_CustomCondition", "EDITBOX",   [localize "STR_MRH_CBA_Heli_CustomCondition",localize "STR_MRH_CBA_Heli_CustomConditionTooltip"],["MRH_MilsimTools - Heli Taxi",localize"STR_MRH_CBA_Heli_SubCatConditions"],"(isFormationLeader player) && ([player, 'ACRE_PRC117F'] call acre_api_fnc_hasKindOfRadio)",1] call cba_settings_fnc_init;
+["MRH_MilsimTools_Heli_CustomCondition", "EDITBOX",   [localize "STR_MRH_CBA_Heli_CustomCondition",localize "STR_MRH_CBA_Heli_CustomConditionTooltip"],["MRH_MilsimTools - Heli Taxi",localize"STR_MRH_CBA_Heli_SubCatConditions"],"(isFormationLeader MRH_player) && ([MRH_player, 'ACRE_PRC117F'] call acre_api_fnc_hasKindOfRadio)",1] call cba_settings_fnc_init;
 
 //////////
 ["MRH_MilsimTools_BluForHelis", "EDITBOX",   [localize "STR_MRH_CBA_Heli_ForBF",localize "STR_MRH_CBA_Heli_ClassnamesToolTip"], ["MRH_MilsimTools - Heli Taxi",localize "STR_MRH_CBA_Heli_ForBF"],"B_Heli_Transport_01_F,B_Heli_Light_01_F,B_Heli_Transport_03_unarmed_F,B_T_VTOL_01_infantry_F",1] call cba_settings_fnc_init;
 ["MRH_MilsimTools_BluForOpFor", "EDITBOX",   [localize "STR_MRH_CBA_Heli_ForOF",localize "STR_MRH_CBA_Heli_ClassnamesToolTip"], ["MRH_MilsimTools - Heli Taxi",localize "STR_MRH_CBA_Heli_ForOF"],"O_Heli_Transport_04_bench_F,O_Heli_Light_02_unarmed_F,O_Heli_Transport_04_covered_F",1] call cba_settings_fnc_init;
 ["MRH_MilsimTools_BluForInde", "EDITBOX",   [localize "STR_MRH_CBA_Heli_ForID",localize "STR_MRH_CBA_Heli_ClassnamesToolTip"], ["MRH_MilsimTools - Heli Taxi",localize "STR_MRH_CBA_Heli_ForID"],"I_Heli_Transport_02_F,I_Heli_light_03_unarmed_F",1] call cba_settings_fnc_init;
 ["MRH_MilsimTools_BluForCivs", "EDITBOX",   [localize "STR_MRH_CBA_Heli_ForCiv",localize "STR_MRH_CBA_Heli_ClassnamesToolTip"], ["MRH_MilsimTools - Heli Taxi",localize "STR_MRH_CBA_Heli_ForCiv"],"C_Heli_Light_01_civil_F",1] call cba_settings_fnc_init;
+//---------below are the settings for medevac
+["MRH_MilsimTools_MEDEVAC_UseMedEVACInMission", "CHECKBOX",   [localize "STR_MRH_CBA_MEDEVAC_useMedEvac",localize "STR_MRH_CBA_MEDEVAC_useMedEvacTooltip"], "MRH_MilsimTools - MEDEVAC",false,1] call cba_settings_fnc_init;
+["MRH_MilsimTools_MEDEVAC_DelayBetween", "SLIDER",   [localize "STR_MRH_CBA_MEDEVAC_delayBetweenSettings",localize "STR_MRH_CBA_MEDEVAC_delayBetweenSettingsToolTip"],"MRH_MilsimTools - MEDEVAC",[0,1200,120,0],1] call cba_settings_fnc_init;
+
+["MRH_MilsimTools_MEDEVAC_timeToReachLZ", "SLIDER",   [localize "STR_MRH_CBA_MEDEVAC_timeToReachLZSetting",localize "STR_MRH_CBA_MEDEVAC_timeToReachLZSettingToolTip"],"MRH_MilsimTools - MEDEVAC",[0,3000,600,0],1] call cba_settings_fnc_init; //set min to 60 after debug
+
+["MRH_MilsimTools_MEDEVAC_ConditionIsFormLeader", "CHECKBOX",   [localize "STR_MRH_CBA_Heli_MustBeFL",localize "STR_MRH_CBA_Heli_MustBeFLToolTip"], ["MRH_MilsimTools - MEDEVAC","Conditions to be able to call the Heli"],true,1] call cba_settings_fnc_init;
+["MRH_MilsimTools_MEDEVAC_isCustomConditionSet", "CHECKBOX",   [localize "STR_MRH_CBA_Heli_UseCondition",localize "STR_MRH_CBA_Heli_UseConditionToolTip"],["MRH_MilsimTools - MEDEVAC",localize "STR_MRH_CBA_Heli_SubCatConditions"],false,1] call cba_settings_fnc_init;
+
+["MRH_MilsimTools_MEDEVAC_CustomCondition", "EDITBOX",   [localize "STR_MRH_CBA_Heli_CustomCondition",localize "STR_MRH_CBA_Heli_CustomConditionTooltip"],["MRH_MilsimTools - MEDEVAC",localize"STR_MRH_CBA_Heli_SubCatConditions"],"(isFormationLeader MRH_player) && ([MRH_player, 'ACRE_PRC117F'] call acre_api_fnc_hasKindOfRadio)",1] call cba_settings_fnc_init;
+
+////////////avail medevac helis
+["MRH_MilsimTools_MEDEVAC_BluFor", "EDITBOX",   [localize "STR_MRH_CBA_Heli_ForBF",localize "STR_MRH_CBA_MEDEVAC_severalClassnamesToolTip"], ["MRH_MilsimTools - MEDEVAC",localize "STR_MRH_CBA_MEDEVAC_MEDEVACHelicoptersPerSide"],"B_Heli_Light_01_F,B_Heli_Transport_01_F,B_Heli_Transport_03_unarmed_F",1] call cba_settings_fnc_init;
+["MRH_MilsimTools_MEDEVAC_OpFor", "EDITBOX",   [localize "STR_MRH_CBA_Heli_ForOF",localize "STR_MRH_CBA_MEDEVAC_severalClassnamesToolTip"], ["MRH_MilsimTools - MEDEVAC",localize "STR_MRH_CBA_MEDEVAC_MEDEVACHelicoptersPerSide"],"O_Heli_Light_02_dynamicLoadout_F,O_Heli_Transport_04_medevac_F",1] call cba_settings_fnc_init;
+["MRH_MilsimTools_MEDEVAC_Inde", "EDITBOX",   [localize "STR_MRH_CBA_Heli_ForID",localize "STR_MRH_CBA_MEDEVAC_severalClassnamesToolTip"], ["MRH_MilsimTools - MEDEVAC",localize "STR_MRH_CBA_MEDEVAC_MEDEVACHelicoptersPerSide"],"I_Heli_light_03_unarmed_F,I_Heli_Transport_02_F",1] call cba_settings_fnc_init;
+["MRH_MilsimTools_MEDEVAC_Civs", "EDITBOX",   [localize "STR_MRH_CBA_Heli_ForCiv",localize "STR_MRH_CBA_MEDEVAC_severalClassnamesToolTip"], ["MRH_MilsimTools - MEDEVAC",localize "STR_MRH_CBA_MEDEVAC_MEDEVACHelicoptersPerSide"],"C_IDAP_Heli_Transport_02_F,C_Heli_Light_01_civil_F",1] call cba_settings_fnc_init;
+
+////// avail escort helis
+["MRH_MilsimTools_MEDEVAC_ESCORT_BluFor", "EDITBOX",   [localize "STR_MRH_CBA_MEDEVAC_EscortHeliBF",localize "STR_MRH_CBA_MEDEVAC_singleClassNameToolTip"], ["MRH_MilsimTools - MEDEVAC",localize "STR_MRH_CBA_MEDEVAC_EscortHelisPerSIde"],"B_Heli_Attack_01_dynamicLoadout_F",1] call cba_settings_fnc_init;
+["MRH_MilsimTools_MEDEVAC_ESCORT_OpFor", "EDITBOX",   [localize "STR_MRH_CBA_MEDEVAC_EscortHeliOP",localize "STR_MRH_CBA_MEDEVAC_singleClassNameToolTip"], ["MRH_MilsimTools - MEDEVAC",localize "STR_MRH_CBA_MEDEVAC_EscortHelisPerSIde"],"O_Heli_Attack_02_dynamicLoadout_F",1] call cba_settings_fnc_init;
+["MRH_MilsimTools_MEDEVAC_ESCORT_Inde", "EDITBOX",   [localize "STR_MRH_CBA_MEDEVAC_EscortHeliIND",localize "STR_MRH_CBA_MEDEVAC_singleClassNameToolTip"], ["MRH_MilsimTools - MEDEVAC",localize "STR_MRH_CBA_MEDEVAC_EscortHelisPerSIde"],"I_Heli_light_03_dynamicLoadout_F",1] call cba_settings_fnc_init;
+["MRH_MilsimTools_MEDEVAC_ESCORT_BluForCivs", "EDITBOX",   [localize "STR_MRH_CBA_MEDEVAC_EscortHeliCIVS",localize "STR_MRH_CBA_MEDEVAC_singleClassNameToolTip"], ["MRH_MilsimTools - MEDEVAC",localize "STR_MRH_CBA_MEDEVAC_EscortHelisPerSIde"],"C_Heli_Light_01_civil_F",1] call cba_settings_fnc_init;
+
+//medic class 
+["MRH_MilsimTools_MEDEVAC_MEDICCLASS_BluFor", "EDITBOX",   [localize "STR_MRH_CBA_MEDEVAC_MedicClassname_BF",localize "STR_MRH_CBA_MEDEVAC_MedicClassNameToolTip"], ["MRH_MilsimTools - MEDEVAC",localize "STR_MRH_CBA_MEDEVAC_MedicsPerSide"],"B_medic_F",1] call cba_settings_fnc_init;
+["MRH_MilsimTools_MEDEVAC_MEDICCLASS_OpFor", "EDITBOX",   [localize "STR_MRH_CBA_MEDEVAC_MedicClassname_OP",localize "STR_MRH_CBA_MEDEVAC_MedicClassNameToolTip"], ["MRH_MilsimTools - MEDEVAC",localize "STR_MRH_CBA_MEDEVAC_MedicsPerSide"],"O_medic_F",1] call cba_settings_fnc_init;
+["MRH_MilsimTools_MEDEVAC_MEDICCLASS_Inde", "EDITBOX",   [localize "STR_MRH_CBA_MEDEVAC_MedicClassname_INDE",localize "STR_MRH_CBA_MEDEVAC_MedicClassNameToolTip"], ["MRH_MilsimTools - MEDEVAC",localize "STR_MRH_CBA_MEDEVAC_MedicsPerSide"],"I_medic_F",1] call cba_settings_fnc_init;
+["MRH_MilsimTools_MEDEVAC_MEDICCLASS_Civs", "EDITBOX",   [localize "STR_MRH_CBA_MEDEVAC_MedicClassname_CIVS",localize "STR_MRH_CBA_MEDEVAC_MedicClassNameToolTip"], ["MRH_MilsimTools - MEDEVAC",localize "STR_MRH_CBA_MEDEVAC_MedicsPerSide"],"C_Man_Paramedic_01_F",1] call cba_settings_fnc_init;
+//extra items to call medevac
+["MRH_MilsimTools_MEDEVAC_MEDICCLASS_ItemsCall", "EDITBOX",   [localize "STR_MRH_CBA_MEDEVAC_CallItemsMags",localize "STR_MRH_CBA_MEDEVAC_CallItemsMagsToolTip"], ["MRH_MilsimTools - MEDEVAC",localize "STR_MRH_CBA_MEDEVAC_CallItemsMags"],"ACE_HandFlare_Red,SmokeShellOrange",1] call cba_settings_fnc_init;
+
 //---------below are settings for map
 ["MRH_MilsimTools_Map_ZoomRatio", "SLIDER",   [localize "STR_MRH_CBA_EnhancedMap_FoldZoomLevel",localize "STR_MRH_CBA_EnhancedMap_FoldZoomLevelToolTip"], "MRH_MilsimTools - Enhanced Map", [0, 1, 0.3, 2],1] call cba_settings_fnc_init;
 ["MRH_MilsimTools_Map_FoldUseAceLight", "CHECKBOX",   [localize "STR_MRH_CBA_EnhancedMap_UseAceLightFold",localize "STR_MRH_CBA_EnhancedMap_UseAceLightFoldToolTip"], "MRH_MilsimTools - Enhanced Map",true,1] call cba_settings_fnc_init;
@@ -91,12 +122,14 @@ _script	Script to execute when setting is changed.  (optional) <CODE>
 
 ["MRH_MilsimTools_FireSupport_isCustomConditionSet", "CHECKBOX",   [localize "STR_MRH_CBA_General_UseCustomCondition",localize "STR_MRH_CBA_General_UseCustomConditionToolTip"],["MRH_MilsimTools - Fire Suppport",localize "STR_MRH_CBA_FireSupport_ConditionsAS_Cat"],false,1] call cba_settings_fnc_init;
 
-["MRH_MilsimTools_FireSupport_CustomCondition", "EDITBOX",   [localize "STR_MRH_CBA_General_CustomConditionCodetoUse",localize "STR_MRH_CBA_General_CustomConditionCodetoUseToolTip"],["MRH_MilsimTools - Fire Suppport",localize "STR_MRH_CBA_FireSupport_ConditionsAS_Cat"],"(isFormationLeader player) && ([player, 'ACRE_PRC117F'] call acre_api_fnc_hasKindOfRadio)",1] call cba_settings_fnc_init;
+["MRH_MilsimTools_FireSupport_CustomCondition", "EDITBOX",   [localize "STR_MRH_CBA_General_CustomConditionCodetoUse",localize "STR_MRH_CBA_General_CustomConditionCodetoUseToolTip"],["MRH_MilsimTools - Fire Suppport",localize "STR_MRH_CBA_FireSupport_ConditionsAS_Cat"],"(isFormationLeader MRH_player) && ([MRH_player, 'ACRE_PRC117F'] call acre_api_fnc_hasKindOfRadio)",1] call cba_settings_fnc_init;
 
 
 ["MRH_MilsimTools_FireSupport_ArtyMagazines", "EDITBOX",   [localize "STR_MRH_CBA_FireSupport_AvailableArtyMags",localize "STR_MRH_CBA_General_ClassnamesTypeRulesToolTip"], ["MRH_MilsimTools - Fire Suppport",localize "STR_MRH_CBA_FireSupport_AvailableArtyMags"],"32Rnd_155mm_Mo_shells,6Rnd_155mm_Mo_smoke,6Rnd_155mm_Mo_mine,2Rnd_155mm_Mo_Cluster,6Rnd_155mm_Mo_AT_mine",1] call cba_settings_fnc_init;
 
 ["MRH_MilsimTools_FireSupport_ArtyShots", "EDITBOX",   [localize "STR_MRH_CBA_FireSupport_AVailableNumberOfArtilleryAmmo",localize "STR_MRH_CBA_FireSupport_AVailableNumberOfArtilleryAmmoToolTip"], ["MRH_MilsimTools - Fire Suppport","Available artillery shots"],"10",1] call cba_settings_fnc_init;
+//delay
+["MRH_MilsimTools_Arty_DelayBetween", "SLIDER",   [localize "STR_MRH_CBA_Supports_GenCoolOffSetting",localize "STR_MRH_CBA_Supports_GenCoolOffSettingTooltip"],"MRH_MilsimTools - Fire Suppport",[0,6000,60,0],1] call cba_settings_fnc_init;
 
 //--------------------------below are the settings for CAS SUpport
 ["MRH_MilsimTools_FireSupport_useCASSupport", "CHECKBOX",   [localize "STR_MRH_CBA_FireSupport_AllowCasSetting",localize "STR_MRH_CBA_FireSupport_AllowCasSettingToolTip"],["MRH_MilsimTools - CAS Suppport"],false,1] call cba_settings_fnc_init;
@@ -105,7 +138,7 @@ _script	Script to execute when setting is changed.  (optional) <CODE>
 
 ["MRH_MilsimTools_FireSupport_CAS_isCustomConditionSet", "CHECKBOX",   [localize "STR_MRH_CBA_General_UseCustomCondition",localize "STR_MRH_CBA_General_UseCustomConditionToolTip"],["MRH_MilsimTools - CAS Suppport",localize "STR_MRH_CBA_FireSupport_ConditionsForCASCat"],false,1] call cba_settings_fnc_init;
 
-["MRH_MilsimTools_FireSupport_CAS_CustomCondition", "EDITBOX",   [localize "STR_MRH_CBA_General_CustomConditionCodetoUse",localize "STR_MRH_CBA_General_CustomConditionCodetoUseToolTip"],["MRH_MilsimTools - CAS Suppport",localize "STR_MRH_CBA_FireSupport_ConditionsForCASCat"],"(isFormationLeader player) && ([player, 'ACRE_PRC117F'] call acre_api_fnc_hasKindOfRadio)",1] call cba_settings_fnc_init;
+["MRH_MilsimTools_FireSupport_CAS_CustomCondition", "EDITBOX",   [localize "STR_MRH_CBA_General_CustomConditionCodetoUse",localize "STR_MRH_CBA_General_CustomConditionCodetoUseToolTip"],["MRH_MilsimTools - CAS Suppport",localize "STR_MRH_CBA_FireSupport_ConditionsForCASCat"],"(isFormationLeader MRH_player) && ([MRH_player, 'ACRE_PRC117F'] call acre_api_fnc_hasKindOfRadio)",1] call cba_settings_fnc_init;
 
 
 ["MRH_MilsimTools_FireSupport_CASShots", "EDITBOX",   [localize "STR_MRH_CBA_FireSupport_AvailableNumberOfCas",localize "STR_MRH_CBA_FireSupport_AvailableNumberOfCasToolTip"], ["MRH_MilsimTools - CAS Suppport",localize "STR_MRH_CBA_FireSupport_AvailCASRunsCAT"],"5",1] call cba_settings_fnc_init;
@@ -115,6 +148,8 @@ _script	Script to execute when setting is changed.  (optional) <CODE>
 ["MRH_MilsimTools_FireSupport_CASPlanesOpFor", "EDITBOX",   [localize "STR_MRH_CBA_FireSupport_CASAvailablePlanes",localize "STR_MRH_CBA_General_ClassnamesTypeRulesToolTip"], ["MRH_MilsimTools - CAS Suppport",localize "STR_MRH_CBA_FireSupport_AvailPlanesOFCat"],"O_Plane_Fighter_02_F,O_UAV_02_dynamicLoadout_F,O_Plane_CAS_02_dynamicLoadout_F",1] call cba_settings_fnc_init;
 
 ["MRH_MilsimTools_FireSupport_CASPlanesInde", "EDITBOX",   [localize "STR_MRH_CBA_FireSupport_CASAvailablePlanes",localize "STR_MRH_CBA_General_ClassnamesTypeRulesToolTip"], ["MRH_MilsimTools - CAS Suppport",localize "STR_MRH_CBA_FireSupport_AvailPlanesINDCat"],"I_Plane_Fighter_04_F,I_Plane_Fighter_03_dynamicLoadout_F",1] call cba_settings_fnc_init;
+//delay 
+["MRH_MilsimTools_CAS_DelayBetween", "SLIDER",   [localize "STR_MRH_CBA_Supports_GenCoolOffSetting",localize "STR_MRH_CBA_Supports_GenCoolOffSettingTooltip"],"MRH_MilsimTools - CAS Suppport",[0,6000,120,0],1] call cba_settings_fnc_init;
 //--------------------------below are the settings for  Supply drops
 ["MRH_MilsimTools_FireSupport_Supplies_useSupplyDrops", "CHECKBOX",   [localize "STR_MRH_CBA_FireSupport_Supplies_Allow",localize "STR_MRH_CBA_FireSupport_Supplies_AllowTooltip"],["MRH_MilsimTools - Supply drops"],false,1] call cba_settings_fnc_init;
 
@@ -122,7 +157,7 @@ _script	Script to execute when setting is changed.  (optional) <CODE>
 
 ["MRH_MilsimTools_FireSupport_Supplies_isCustomConditionSet", "CHECKBOX",   [localize "STR_MRH_CBA_General_UseCustomCondition",localize "STR_MRH_CBA_General_UseCustomConditionToolTip"],["MRH_MilsimTools - Supply drops",localize "STR_MRH_CBA_FireSupport_Supplies_ConditionsSupplies"],false,1] call cba_settings_fnc_init;
 
-["MRH_MilsimTools_FireSupport_Supplies_CustomCondition", "EDITBOX",   [localize "STR_MRH_CBA_General_CustomConditionCodetoUse",localize "STR_MRH_CBA_General_CustomConditionCodetoUseToolTip"],["MRH_MilsimTools - Supply drops",localize "STR_MRH_CBA_FireSupport_Supplies_ConditionsSupplies"],"(isFormationLeader player) && ([player, 'ACRE_PRC117F'] call acre_api_fnc_hasKindOfRadio)",1] call cba_settings_fnc_init;
+["MRH_MilsimTools_FireSupport_Supplies_CustomCondition", "EDITBOX",   [localize "STR_MRH_CBA_General_CustomConditionCodetoUse",localize "STR_MRH_CBA_General_CustomConditionCodetoUseToolTip"],["MRH_MilsimTools - Supply drops",localize "STR_MRH_CBA_FireSupport_Supplies_ConditionsSupplies"],"(isFormationLeader MRH_player) && ([MRH_player, 'ACRE_PRC117F'] call acre_api_fnc_hasKindOfRadio)",1] call cba_settings_fnc_init;
 
 
 ["MRH_MilsimTools_FireSupport_NumberOfSuppliesDrops", "EDITBOX",   [localize "STR_MRH_CBA_FireSupport_Supplies_AvailSupplyDrpNb",localize "STR_MRH_CBA_FireSupport_Supplies_AvailSupplyDrpNbTooltip"], ["MRH_MilsimTools - Supply drops", localize "STR_MRH_CBA_FireSupport_Supplies_AvailSupplyDrpNb"],"3",1] call cba_settings_fnc_init;
@@ -136,6 +171,8 @@ _script	Script to execute when setting is changed.  (optional) <CODE>
 ["MRH_MilsimTools_FireSupport_Supplies_ListOfAvailableSupplies", "EDITBOX",   [localize "STR_MRH_CBA_FireSupport_Supplies_ObjectsToAllow", localize "STR_MRH_CBA_FireSupport_Supplies_ObjectsToAllowTooltip"],["MRH_MilsimTools - Supply drops",localize "STR_MRH_CBA_FireSupport_Supplies_ObjectsToAllow"],"B_LSV_01_unarmed_F,ACE_Box_82mm_Mo_Combo,ACE_medicalSupplyCrate_advanced,ACE_Box_Misc,B_supplyCrate_F",1] call cba_settings_fnc_init;
 
 ["MRH_MilsimTools_FireSupport_Supplies_DistanceForAircraft", "EDITBOX",   [localize "STR_MRH_CBA_FireSupport_Supplies_DistancePDZ", localize "STR_MRH_CBA_FireSupport_Supplies_DistancePDZTooltip"],["MRH_MilsimTools - Supply drops",localize "STR_MRH_CBA_FireSupport_Supplies_DistancePDZ"],"2000",1] call cba_settings_fnc_init;
+//delay 
+["MRH_MilsimTools_SupplyDrop_DelayBetween", "SLIDER",   [localize "STR_MRH_CBA_Supports_GenCoolOffSetting",localize "STR_MRH_CBA_Supports_GenCoolOffSettingTooltip"],"MRH_MilsimTools - Supply drops",[0,6000,600,0],1] call cba_settings_fnc_init;
 //-----------------below are the settings for insertion handler
 ["MRH_MilsimTools_InsertionHandler_SupplyPlanesBluFor", "EDITBOX",   [localize "STR_MRH_CBA_FireSupport_CASAvailablePlanes",localize "STR_MRH_CBA_General_ClassnamesTypeRulesToolTip"], ["MRH_MilsimTools - Insertion Handler",localize "STR_MRH_CBA_FireSupport_AvailPlanesBFCat"],"B_T_VTOL_01_infantry_F,B_Heli_Transport_03_unarmed_F,B_Heli_Transport_01_F",1] call cba_settings_fnc_init;
 

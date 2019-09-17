@@ -4,9 +4,9 @@ class CfgPatches {
 		weapons[] = {}; //
 		requiredVersion = 0.1; //
 		requiredAddons[] = {"cba_main"};
-		version = 1.17.3;
-		versionStr = "1.17.3";
-		versionAr[] = {1,17,3};
+		version = 1.17.4;
+		versionStr = "1.17.4";
+		versionAr[] = {1,17,4};
 		versionDesc = "MRH Milsim Tools";
 		versionAct = "call compile preProcessFileLineNumbers '\MRHMilSimTools\about.sqf'";
 		author = "Mr H.";
@@ -100,3 +100,22 @@ class Extended_Init_EventHandlers {
         };
     };
 };
+class CfgFontFamilies 
+{
+   #include "\MRHMilsimTools\Fonts\cfgFontFamilies.hpp"
+};
+
+class RscTitles
+{
+      class MRHEmptyDisplay
+   {
+      idd=070919;
+      movingenable=true;
+      onLoad = "uiNamespace setVariable ['MRHEmptyDisplay', _this select 0]";
+      duration = "2";
+      class controls 
+      {
+      };
+   };
+};
+#include "\MRHMilSimTools\animations\animations.hpp"

@@ -20,25 +20,33 @@ params ["_unit","_vehicle",["_type","UNIFORM"]];
 	if (_type == "VEST") then 
 	{
 		private _container = vest _unit;
+		private _itemsStart = vestItems _unit;
 		_index = count (everyContainer _vehicle);
 		_vehicle addItemCargoGlobal [_container, 1];
 		private _droppedContainer = (((everyContainer _vehicle) select _index) select 1);
 		{
 		_droppedContainer addItemCargoGlobal [_x, 1];
-		}forEach (vestItems _unit);
+		}forEach _itemsStart;
 		removeVest _unit;
+
+		private _toTrace = format ["Unit %1,Type %2 %3,moved to container: %4",_unit,_type,_itemsStart, _droppedContainer];
+		TRACE(_toTrace);
 
 	}
 	else
 	{
 		private _container = uniform _unit;
+		private _itemsStart = uniformItems _unit;
 		_index = count (everyContainer _vehicle);
 		_vehicle addItemCargoGlobal [_container, 1];
 		private _droppedContainer = (((everyContainer _vehicle) select _index) select 1);
 		{
 		_droppedContainer addItemCargoGlobal [_x, 1];
-		}forEach (uniformItems _unit);
+		}forEach _itemsStart;
 		removeUniform _unit;
+		
+		private _toTrace = format ["Unit %1,Type %2 %3,moved to container: %4",_unit,_type,_itemsStart, _droppedContainer];
+		TRACE(_toTrace);
 	};
 
 

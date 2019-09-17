@@ -39,7 +39,7 @@ _faction = gettext (configfile >> "CfgVehicles" >> _x >> "faction");
 if !(_faction in _allRemainingFactions) then {_allRemainingFactions pushBack _faction};
 } forEach _allFactionsFromAllowedFactions;
 
-missionNamespace setVariable ["SpawnerFilteredFactions", _allRemainingFactions];
+missionNamespace setVariable ["SpawnerFilteredFactions", _allRemainingFactions,true];
 //////////////////////////////////////////////////////
 //_selectedDLC = player getVariable "userSelectedDLC";
 

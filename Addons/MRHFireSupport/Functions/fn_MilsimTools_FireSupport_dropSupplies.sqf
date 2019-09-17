@@ -39,10 +39,10 @@ params ["_plane","_dropZone","_supply","_side","_startDisToDrop",["_caller",objN
 				params ["_player","_LZ","_myvec","_dropZone"];
 				
 				
-				if ((group player) != (group _player)) ExitWith {};
+				if ((group MRH_player) != (group _player)) ExitWith {};
 				//playSound "";
-				if (_player == player) then {
-			playSound3D ["A3\Sounds_F\sfx\radio\ambient_radio2.wss",player];
+				if (_player == MRH_player) then {
+			playSound3D ["A3\Sounds_F\sfx\radio\ambient_radio2.wss",MRH_player];
 				};
 			_player sideChat format [localize "STR_MRH_FireSupport_SC_SupplyDialog1",([_LZ] call MRH_fnc_MilsimTools_Core_realisticGrid),(_player getVariable "MRH_MilsimTools_Core_PlayerIntel") select 0];
 			sleep 4;
@@ -52,8 +52,8 @@ params ["_plane","_dropZone","_supply","_side","_startDisToDrop",["_caller",objN
 			sleep 10;
 			_ETA = [_myvec,_dropZone] call MRH_fnc_travelTimeEta;
 				_ETA = [_ETA, 0] call BIS_fnc_cutDecimals;
-				if (_player == player) then {
-			playSound3D ["A3\Sounds_F\sfx\radio\ambient_radio3.wss",player];
+				if (_player == MRH_player) then {
+			playSound3D ["A3\Sounds_F\sfx\radio\ambient_radio3.wss",MRH_player];
 				};
 			[side _player, "HQ"] sideChat format [localize "STR_MRH_FireSupport_SC_SupplyDialog3",_ETA,(_player getVariable "MRH_MilsimTools_Core_PlayerIntel") select 0];	
 			}] RemoteExec ["Spawn", [-2,0] select isServer];
@@ -73,6 +73,8 @@ params ["_plane","_dropZone","_supply","_side","_startDisToDrop",["_caller",objN
 	sleep 1;
 	if (_isForMod) then {
 	missionNamespace setVariable ["MRH_FireSupport_isAvailableSUPPLYfor_"+ str _side,true,true];
+	missionNamespace setVariable [("MRH_MilsimTools_SupplyDrop_DelayBetween_"+ (str _side)),CBA_missionTime,true];
+	missionNamespace setVariable ["MRH_FireSupport_SDisInActionFor_"+ (str _side),false,true];
 	};
 	_myvec allowDamage false;
 	[_supply,_pos] spawn MRH_fnc_MilsimTools_FireSupport_parachuteObject;
@@ -82,10 +84,10 @@ params ["_plane","_dropZone","_supply","_side","_startDisToDrop",["_caller",objN
 				params ["_player","_LZ"];
 				
 				
-				if ((group player) != (group _player)) ExitWith {};
+				if ((group MRH_player) != (group _player)) ExitWith {};
 				//playSound "";
-				if (_player == player) then {
-			playSound3D ["A3\Sounds_F\sfx\radio\ambient_radio2.wss",player];
+				if (_player == MRH_player) then {
+			playSound3D ["A3\Sounds_F\sfx\radio\ambient_radio2.wss",MRH_player];
 				};
 			
 			[side _player, "HQ"] sideChat format [localize "STR_MRH_FireSupport_SC_SupplyDialog5",([_LZ] call MRH_fnc_MilsimTools_Core_realisticGrid),(_player getVariable "MRH_MilsimTools_Core_PlayerIntel") select 0];

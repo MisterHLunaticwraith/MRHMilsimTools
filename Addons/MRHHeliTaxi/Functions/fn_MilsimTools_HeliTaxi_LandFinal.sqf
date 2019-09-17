@@ -41,15 +41,19 @@ _heli land _statement;//"GET IN";
 
 waitUntil {isTouchingGround _heli};
 };
-
+[_helipad]FUNC(deleteHelipad);
 [_heli,"Arrived"]FUNC(handleMessages);
 sleep 2;
-[[_heli],{params ["_heli"]; if (player in _heli) then {moveOut player};}] RemoteExec ["Call",[0,-2] select isDedicated];
+[_heli]FUNC(moveOutCargo);
+//[[_heli],{params ["_heli"]; if (player in _heli) then {moveOut player};}] RemoteExec ["Call",[0,-2] select isDedicated];
 sleep 2;
-
+_heli SVAR(isBusy,false,true);
+_heli SVAR(isInFinalApproachPhase,false,true);
+[_heli]FUNC(despawnOrGoHomeSwitch);
+/*
 _heli setVehicleLock "LOCKED"; 
 _ownerGrp = _heli GVAR(ownerGroup);
-[_ownerGrp,_destination,true]FUNC(createDeleteMarkerForGroup);
+[_ownerGrp,_destination,"",true]FUNC(createDeleteMarkerForGroup);
 sleep 10;
 _heli commandMove (_heli modelToWorld [0,1000,0]);
 _heli flyInHeight 60;
@@ -57,5 +61,5 @@ _heli limitSpeed 99999;
 // make heli available again 
 [_heli]FUNC(resetVariables);
 sleep 40;
-{deleteVehicle _x;}forEach crew _heli;
-deleteVehicle _heli;
+[_heli]CFUNC(deleteVehicleAndCrew);
+*/

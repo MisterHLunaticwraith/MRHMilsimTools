@@ -288,6 +288,26 @@
 				<English>These settings allow you to add an interaction to hack and then download data from this object, depending on mission settings it may require a hacking tool. Once hack is done, the object will receive a download interaction. Upon downloading data a player will receive them on their soldier tab. Data and pictures must be classes defined in cfg MRH_SoldierTabData and cfg MRH_SoldierTabIntelPictures, stated as stings and between [] (see preset examples)</English>
 				<French>Ces réglages permettent d'ajouter une interaction pour pirater et ensuite télécharger des données depuis cet objet, selon les réglages de la mission cela peut nécessiter un outil de piratage. Une fois le piratage terminé le joueur les recevra sur sa tablette.Les images et les données doivent être des classe définies dans les configs MRH_SoldierTabData et MRH_SoldierTabIntelPictures, écrites entre guillemets,séparées par des virgules et placées entre [] (voir exemples préréglés)</French>
 			</Key>
+			<Key ID="STR_MRH_FUNCS_goodHealedMess">
+				<Original>Alright mate, you're good to go!</Original>
+				<English>Alright mate, you're good to go!</English>
+				<French>C'est bon le petit bobo est soigné</French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_healingCancelled">
+				<Original>Healing canceled</Original>
+				<English>Healing canceled</English>
+				<French>Soin annulé annulé</French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_healingInProgress">
+				<Original>Treatment...</Original>
+				<English>Treatment...</English>
+				<French>Soin en cours</French>
+			</Key>
+			<Key ID="STR_MRH_FUNCS_doctorMessageHeal">
+				<Original>So someone got their arse kicked? Stay put soldier, I'll patch you up!</Original>
+				<English>So someone got their arse kicked? Stay put soldier, I'll patch you up!</English>
+				<French>Alors comme ça on vient jouer au docteur? Ne bougez pas soldat je vous soigne ça</French>
+			</Key>
 			<Key ID="STR_MRH_FUNCS_">
 				<Original></Original>
 				<English></English>

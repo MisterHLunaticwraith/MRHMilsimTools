@@ -248,6 +248,26 @@
 				<English>%2 be advised: Supplies dropped at grid %1.</English>
 				<French>%2 attention: Ravitaillement parachuté aux coordonnées %1.</French>
 			</Key>
+			<Key ID="STR_MRH_HeliTaxi_callMedEvac">
+				<Original>Request MEDEVAC</Original>
+				<English>Request MEDEVAC</English>
+				<French>Demander un EVASAN</French>
+			</Key>
+			<Key ID="STR_MRH_FireSupport_AceShowAvailabilities">
+				<Original>Show supports availabilities</Original>
+				<English>Show supports availabilities</English>
+				<French>Afficher la disponibbilité des supports</French>
+			</Key>
+			<Key ID="STR_MRH_FireSupport_supportIsAvailable">
+				<Original>AVAILABLE</Original>
+				<English>AVAILABLE</English>
+				<French></French>
+			</Key>
+			<Key ID="STR_MRH_FireSupport_supportIsInAction">
+				<Original>IN ACTION</Original>
+				<English>IN ACTION</English>
+				<French></French>
+			</Key>
 		</Container>
 	</Package>
 </Project>

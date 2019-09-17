@@ -41,6 +41,22 @@ class CAManBase: Man
 					statement = "call MRH_fnc_MilsimTools_FireSupport_openSuppliesInterface;";
 					icon = PAAPATH(paradrop.paa);
 				};
+				class MRH_FS_CallMedEvac
+				{
+					displayName = $STR_MRH_HeliTaxi_callMedEvac;
+					condition = "call MRH_fnc_MilsimTools_HeliTaxi_conditionsMEDEVAC";
+					exceptions[] = {"isNotInside", "notOnMap", "isNotSitting"};
+					statement = "call MRH_fnc_MilsimTools_HeliTaxi_openMedEvacInterface;";
+					icon = PAAPATH(medical.paa);
+				};
+				class MRH_FS_ShowSupportsAvailabilities
+				{
+					displayName = $STR_MRH_FireSupport_AceShowAvailabilities;
+					condition = "call MRH_fnc_MilsimTools_FireSupport_conditionsShowAvailability";
+					exceptions[] = {"isNotInside", "notOnMap", "isNotSitting"};
+					statement = "call MRH_fnc_MilsimTools_FireSupport_displayAvailability";
+					//icon = PAAPATH(medical.paa);
+				};
 
 
 			

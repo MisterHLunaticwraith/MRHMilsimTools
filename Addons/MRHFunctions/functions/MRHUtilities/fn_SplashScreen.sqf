@@ -18,10 +18,10 @@ _core = [_picpath, _duration] spawn {
 
 params ["_picpath","_duration"];
 
-_x = -0.00531249 * safezoneW + safezoneX;
-_y = -0.00399999 * safezoneH + safezoneY;
-_w = 1.01063 * safezoneW;
-_h = 1.008 * safezoneH;
+_x = -0 * safezoneW + safezoneX;
+_y = 0 * safezoneH + safezoneY;
+_w = 1 * safezoneW;
+_h = 1 * safezoneH;
 
 with uiNamespace do { 
  titleImage = findDisplay 46 ctrlCreate ["RscPicture", -1]; 
