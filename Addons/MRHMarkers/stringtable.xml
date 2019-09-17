@@ -218,25 +218,25 @@
 				<English>Submarine</English>
 				<French>Sous-marin</French>
 			</Key>
-			<Key ID="STR_MRH_MK_">
-				<Original></Original>
-				<English></English>
-				<French></French>
+			<Key ID="STR_MRH_MK_loiter">
+				<Original>Loiter</Original>
+				<English>Loiter</English>
+				<French>Patrouiller</French>
 			</Key>
-			<Key ID="STR_MRH_MK_">
-				<Original></Original>
-				<English></English>
-				<French></French>
+			<Key ID="STR_MRH_MK_wait">
+				<Original>Wait</Original>
+				<English>Wait</English>
+				<French>Attendre</French>
 			</Key>
-			<Key ID="STR_MRH_MK_">
-				<Original></Original>
-				<English></English>
-				<French></French>
+			<Key ID="STR_MRH_MK_rope">
+				<Original>Rope</Original>
+				<English>Rope</English>
+				<French>Corde</French>
 			</Key>
-			<Key ID="STR_MRH_MK_">
-				<Original></Original>
-				<English></English>
-				<French></French>
+			<Key ID="STR_MRH_MK_pause">
+				<Original>Pause</Original>
+				<English>Pause</English>
+				<French>Pause</French>
 			</Key>
 			
 		</Container>

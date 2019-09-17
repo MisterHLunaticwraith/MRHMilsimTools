@@ -18,7 +18,8 @@ _caller setVariable ["MRH_HeliTaxi_UserSelectedHeli",nil,true];
 _vecarray = [_caller modelToWorld [0,-2000,60], getDir _caller, _heliType,side _caller] call bis_fnc_spawnvehicle;
 _myvec = _vecarray select 0;
 [[(group _myvec)],{(_this select 0) setGroupId ["[REAPER 1-1]"];}] remoteExec ["Call",0];
-
+[_myvec] FUNC(flagCrew);
+[_myVec] CFUNC(lockNonCargo);
 //-- create variables
 //attach variables to the group
 _callingGRP = group _caller;
@@ -51,7 +52,7 @@ _caller SVAR(KilledEHIndex,_EHHeliownerKilled,true);
 [_myvec,"Request"]FUNC(handleMessages);
 //-- send the heli to Land
 _myvec flyInHeight 60;
-_myvec lockDriver true;
+//_myvec lockDriver true;
 _myvec setBehaviour "CARELESS";
 _myvec setCombatMode "GREEN";
 _myvec commandMove _LZ;
@@ -76,10 +77,9 @@ if (_isOnWater) then
 	_myvec flyInHeight 3;
 } else {
 _myvec land "GET IN";
+waitUntil {isTouchingGround _myvec};
 };
-
-	
-	
+[_helipad]FUNC(deleteHelipad);
 
 
 

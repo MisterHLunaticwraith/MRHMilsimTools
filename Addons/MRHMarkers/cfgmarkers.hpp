@@ -455,3 +455,47 @@ size = 32;
 shadow = 1;
 scope = 2;
 };
+
+class MRH_loiter
+{
+name = $STR_MRH_MK_loiter;
+markerClass = "MRHMarkers";
+icon = "\MRHMarkers\paa\loiter.paa";
+color[] = {1, 1, 1, 1};
+size = 32;
+shadow = 1;
+scope = 1;
+};
+
+class MRH_wait
+{
+name = $STR_MRH_MK_wait;
+markerClass = "MRHMarkers";
+icon = "\MRHMarkers\paa\wait.paa";
+color[] = {1, 1, 1, 1};
+size = 32;
+shadow = 1;
+scope = 1;
+};
+
+class MRH_rope
+{
+name = $STR_MRH_MK_rope;
+markerClass = "MRHMarkers";
+icon = "\MRHMarkers\paa\fastrope.paa";
+color[] = {1, 1, 1, 1};
+size = 32;
+shadow = 1;
+scope = 1;
+};
+
+class MRH_pause
+{
+name = $STR_MRH_MK_pause;
+markerClass = "MRHMarkers";
+icon = "\MRHMarkers\paa\pause.paa";
+color[] = {1, 1, 1, 1};
+size = 32;
+shadow = 1;
+scope = 1;
+};

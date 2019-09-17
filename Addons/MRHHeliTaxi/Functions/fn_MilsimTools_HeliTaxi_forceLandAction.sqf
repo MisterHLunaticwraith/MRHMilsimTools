@@ -8,7 +8,7 @@ Example(s):
 call MRH_fnc_MilsimTools_HeliTaxi_forceLandAction;
 */
 #include "MRH_C_Path.hpp"
-[[vehicle player],
+[[vehicle MRH_player],
 {
 	params ["_heli"];
 	_statement = "GET IN";

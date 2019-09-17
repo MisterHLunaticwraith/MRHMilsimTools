@@ -163,6 +163,28 @@ class MRH // Defines the "owner"
 		{};
 		class MilsimTools_Core_returnDepth
 		{};
+		class MilsimTools_Core_gridInPutCheck
+		{};
+		class MilsimTools_Core_checkGridValidity
+		{};
+		class MilsimTools_Core_parseCoordinates
+		{};
+		class MilsimTools_Core_fiveDigitsGridFormat
+		{};
+		class MilsimTools_Core_sortVehiclesObjectsByCargoSize
+		{};
+		class MilsimTools_Core_selectHasEnoughCargoObject
+		{};
+		class MilsimTools_Core_sortVehiclesByCargoSize
+		{};
+		class MilsimTools_Core_selectHasEnoughCargo
+		{};
+		class MilsimTools_Core_clearAllWaypoints
+		{};
+		class MilsimTools_Core_deleteVehicleAndCrew
+		{};
+		class MilsimTools_Core_lockNonCargo
+		{};
 		/*
 		class MilsimTools_Core_
 		{};

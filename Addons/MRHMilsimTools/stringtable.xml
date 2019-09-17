@@ -349,9 +349,9 @@
 				<French>Nombre de munition disponibles</French>
 			</Key>
 			<Key ID="STR_MRH_CBA_FireSupport_AVailableNumberOfArtilleryAmmoToolTip">
-				<Original>Number, represents how many shots can be fired</Original>
-				<English>Number, represents how many shots can be fired</English>
-				<French>Nombre, représente combien de tirs d'artilleries peuvent être faits</French>
+				<Original>Number, represents how many shots can be fired.Negative value for infinite.</Original>
+				<English>Number, represents how many shots can be fired. Negative value for infinite.</English>
+				<French>Nombre, représente combien de tirs d'artilleries peuvent être faits. Une valeur négative rend infini.</French>
 			</Key>
 			<Key ID="STR_MRH_CBA_FireSupport_AllowCasSetting">
 				<Original>Allow use of CAS support</Original>
@@ -374,9 +374,9 @@
 				<French>Nombre de supports aériens rapprochés disponibles</French>
 			</Key>
 			<Key ID="STR_MRH_CBA_FireSupport_AvailableNumberOfCasToolTip">
-				<Original>Number, represents how many times a side can call CAS</Original>
-				<English>Number, represents how many times a side can call CAS</English>
-				<French>Nombre, représente combien de fois un camps peut appeler un support aérien</French>
+				<Original>Number, represents how many times a side can call CAS.Negative value for infinite.</Original>
+				<English>Number, represents how many times a side can call CAS. Negative value for infinite.</English>
+				<French>Nombre, représente combien de fois un camps peut appeler un support aérien. Une valeur négative rend infini.</French>
 			</Key>
 			<Key ID="STR_MRH_CBA_FireSupport_CASAvailablePlanes">
 				<Original>Available planes</Original>
@@ -424,9 +424,9 @@
 				<French>Nombre de ravitaillements disponibles</French>
 			</Key>
 			<Key ID="STR_MRH_CBA_FireSupport_Supplies_AvailSupplyDrpNbTooltip">
-				<Original>This number represents how many times a side can call for air supplies.</Original>
-				<English>This number represents how many times a side can call for air supplies.</English>
-				<French>Ce chiffre représente le nombre de fois où un camps peut appeler un ravitaillement.</French>
+				<Original>This number represents how many times a side can call for air supplies. Negative value for infinite.</Original>
+				<English>This number represents how many times a side can call for air supplies. Negative value for infinite.</English>
+				<French>Ce chiffre représente le nombre de fois où un camps peut appeler un ravitaillement. Mettre une valeur négative pour rendre infini</French>
 			</Key>
 			<Key ID="STR_MRH_CBA_FireSupport_Supplies_ObjectsToAllow">
 				<Original>Objects to allow as supply drops</Original>
@@ -696,12 +696,129 @@
 				<French>Désactiver pour enlever les insertions sous marines du menu d'insertion</French>
 			</Key>
 			
-			<Key ID="STR_MRH_CBA_">
-				<Original></Original>
-				<English></English>
-				<French></French>
+			<Key ID="STR_MRH_CBA_MEDEVAC_useMedEvac">
+				<Original>Use MEDEVAC in this mission</Original>
+				<English>Use MEDEVAC in this mission</English>
+				<French>Utiliser l'EVASAN dans cette mission</French>
 			</Key>
-	
+			<Key ID="STR_MRH_CBA_MEDEVAC_useMedEvacTooltip">
+				<Original>Tick to enable MEDEVAC 9 liner calls in this mission. Requires mission restart</Original>
+				<English>Tick to enable MEDEVAC 9 liner calls in this mission. Requires mission restart</English>
+				<French>Activer l'utilisation des EVASAN dans cette mission. Requiert un redémarrage de la mission.</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_MEDEVAC_severalClassnamesToolTip">
+				<Original>Enter several helicopters classnames, without quotes, separated by comas. The mod will select what heli to send depending on cargo size and number of patients</Original>
+				<English>Enter several helicopters classnames, without quotes, separated by comas. The mod will select what heli to send depending on cargo size and number of patients</English>
+				<French>Entrer différents noms de classe d'hélicoptères, sans guillemets, séparés par des virgules. Le mod sélectionera quel hélicoptère envoyer en fonction de la capacité de transport de l'hélico et du nombre de patients.</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_MEDEVAC_EscortHeliBF">
+				<Original>Escort helicopter for BLUFOR</Original>
+				<English>Escort helicopter for BLUFOR</English>
+				<French>Hélicoptère d'escorte pour les BLUFOR</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_MEDEVAC_EscortHeliOP">
+				<Original>Escort helicopter for OPFOR</Original>
+				<English>Escort helicopter for OPFOR</English>
+				<French>Hélicoptère d'escorte pour les OPFOR</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_MEDEVAC_EscortHeliIND">
+				<Original>Escort helicopter for INDEPENDANTS</Original>
+				<English>Escort helicopter for INDEPENDANTS</English>
+				<French>Hélicoptère d'escorte pour les INDEPENDANTS</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_MEDEVAC_EscortHeliCIVS">
+				<Original>Escort helicopter for CIVILIANS</Original>
+				<English>Escort helicopter for CIVILIANS</English>
+				<French>Hélicoptère d'escorte pour les CIVILS</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_MEDEVAC_singleClassNameToolTip">
+				<Original>Enter A SINGLE classname (without quotes), preferably an attack helicopter. If an escort is required the MEDEVAC heli will be escorted by two helis of this type.</Original>
+				<English>Enter A SINGLE classname (without quotes), preferably an attack helicopter. If an escort is required the MEDEVAC heli will be escorted by two helis of this type.</English>
+				<French>Entrer UN SEUL nom de classe (sans guillemets), de préférence un hélcoptère d'attaque. Si une escorte est requise l'hélicoptère d'EVASAN sera accompagné de deux hélicoptères de cette classe.</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_MEDEVAC_MedicClassname_BF">
+				<Original>Medical personnel type for BLUFOR</Original>
+				<English>Medical personnel type for BLUFOR</English>
+				<French>Classe du personnel médical pour les BLUFOR</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_MEDEVAC_MedicClassname_OP">
+				<Original>Medical personnel type for OPFOR</Original>
+				<English>Medical personnel type for OPFOR</English>
+				<French>Classe du personnel médical pour les OPFOR</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_MEDEVAC_MedicClassname_INDE">
+				<Original>Medical personnel type for INDEPENDANTS</Original>
+				<English>Medical personnel type for INDEPENDANTS</English>
+				<French>Classe du personnel médical pour les INDEPENDANTS</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_MEDEVAC_MedicClassname_CIVS">
+				<Original>Medical personnel type for CIVILIANS</Original>
+				<English>Medical personnel type for CIVILIANS</English>
+				<French>Classe du personnel médical pour les CIVILS</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_MEDEVAC_MedicClassNameToolTip">
+				<Original>Enter a SINGLE soldier classname (without quotes). If a doctor is required this medic will be onboard the heli and go out when it lands. By talking to them players can be healed.</Original>
+				<English>Enter a SINGLE soldier classname (without quotes). If a doctor is required this medic will be onboard the heli and go out when it lands. By talking to them players can be healed.</English>
+				<French>Saisir un seul nom de classe de soldat (sans guillemets). SI un médecin est requis, il sera à bord de l'hélicoptère et en descendra à l'atterrissage pour prodiguer des soins au joueurs qui lui parlent.</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_MEDEVAC_CallItemsMags">
+				<Original>Extra markers to call MEDEVACS</Original>
+				<English>Extra markers to call MEDEVACS</English>
+				<French>Marqueurs supplémentaires pour appeler un EVASAN</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_MEDEVAC_CallItemsMagsToolTip">
+				<Original>Classnames from CfgMagazines (without quotes, separated by comas). Smoke grenades IR Grenades, chemlight etc. These are required to mark the LZ and will only show up if they are in the callers inventory. IR grenades will only show at night time</Original>
+				<English>Classnames from CfgMagazines (without quotes, separated by comas). Smoke grenades IR Grenades, chemlight etc. These are required to mark the LZ and will only show up if they are in the callers inventory. IR grenades will only show at night time</English>
+				<French>Nom(s) de classe (sans guillemets, séparés par des virgules) pris dans cfgMagazines. Grenades, fumis, infrarouges, chemlights etc. Ils sont requis pour marquer la LZ. Ils ne seront affichés que s'ils sont présents dans l'inventaire du joueur qui appelle l'EVASAN. Les grenades IR n'apparaissent que de nuit.</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_MEDEVAC_MEDEVACHelicoptersPerSide">
+				<Original>MEDEVAC Helicopters</Original>
+				<English>MEDEVAC Helicopters</English>
+				<French>Hélicoptères d'EVASAN</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_MEDEVAC_EscortHelisPerSIde">
+				<Original>Escort helicopters</Original>
+				<English>Escort helicopters</English>
+				<French>Hélicoptères d'escorte</French>
+			</Key>
+		
+		<Key ID="STR_MRH_CBA_MEDEVAC_MedicsPerSide">
+				<Original>Medical personnel</Original>
+				<English>Medical personnel</English>
+				<French>Personnel médical</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_MEDEVAC_delayBetweenSettings">
+				<Original>Delay (in seconds) between MEDEVAC calls</Original>
+				<English>Delay (in seconds) between MEDEVAC calls</English>
+				<French>Délais (en secondes) entre chaque EVASAN</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_MEDEVAC_delayBetweenSettingsToolTip">
+				<Original>MEDEVACS will be unavailable for the given time after a MEDEVAC has taken place. Starts when the first MEDEVAC is completely finished (eg the MEDEVAC heli has despawned or been destroyed)</Original>
+				<English>MEDEVACS will be unavailable for the given time after a MEDEVAC has taken place. Starts when the first MEDEVAC is completely finished (eg the MEDEVAC heli has despawned or been destroyed)</English>
+				<French>L'EVASAN ne sera pas disponible pendant ce délais après une précédente EVASAN. Commence après que la première EVASAN soit complètement terminée (l'hélicoptère a despawné ou a été détruit)</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_MEDEVAC_timeToReachLZSetting">
+				<Original>Time to reach and mark LZ</Original>
+				<English>Time to reach and mark LZ</English>
+				<French>Temps pour atteindre et marquer la zone d'atterissage</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_MEDEVAC_timeToReachLZSettingToolTip">
+				<Original>Time (in seconds) the players have to reach and mark the LZ before the MEDEVAC is cancelled.The LZ will always be  within 250m from the position of the calling unit. This setting is mostly here for testing purposes.</Original>
+				<English>Time (in seconds) the players have to reach and mark the LZ before the MEDEVAC is cancelled.The LZ will always be  within 250m from the position of the calling unit. This setting is mostly here for testing purposes.</English>
+				<French>Temps en secondes que les joueurs auront pour atteindre et marquer la zone d'atterissage. La LZ sera toujours dans les 250m autour du joueur qui appelle l'EVASAN. Ce réglage est principalement utile pour débugguer.</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_Supports_GenCoolOffSetting">
+				<Original>Cool off time</Original>
+				<English>Cool off time</English>
+				<French>Délais entre les utilisations</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_Supports_GenCoolOffSettingTooltip">
+				<Original>Cool off time in seconds between each use of this support (support will be unavailable during this time)</Original>
+				<English>Cool off time in seconds between each use of this support (support will be unavailable during this time)</English>
+				<French>Délais en seconde d'indisponibilité entre les utilisations</French>
+			</Key>
+		
+		
 
 
 			

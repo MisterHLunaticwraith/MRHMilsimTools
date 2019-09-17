@@ -14,5 +14,5 @@ params ["_veh"];
 [_veh,"Destroyed"]FUNC(handleMessages);
 _ownerGrp = _veh GVAR(ownerGroup);
 _destination = _veh GVAR(userSetDestination);
-[_ownerGrp,_destination,true]FUNC(createDeleteMarkerForGroup);
+[_ownerGrp,_destination,"",true]FUNC(createDeleteMarkerForGroup);
 [_veh]FUNC(resetVariables);

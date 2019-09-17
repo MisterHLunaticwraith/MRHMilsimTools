@@ -9,7 +9,7 @@ Example:
 call MRH_fnc_Spawner_SpawnerInit;
 (called upon clien int through cba preInit event handlers)
 */
-
+if !(isServer) exitWith {}; //leave processing to the server
 /////////////General List finds all vehicles in all cfgs
 
 _allVehicleConfigs = "true" configClasses (configFile >> "CfgVehicles");
@@ -46,7 +46,7 @@ _array = [];
 		};
 } forEach _allVehiclesArray;
 
-missionNameSpace setVariable ["SPAWNER_DLCsList", _array];
+missionNameSpace setVariable ["SPAWNER_DLCsList", _array,true];
 
 {
 	[_x , "CHECKBOX",gettext (configfile >> "CfgMods" >> _x >> "name"), "MRHSpawner Allowed DLCs", true,1, { call MRH_fnc_Spawner_AllowedDLCs;}] call cba_settings_fnc_init;
@@ -74,7 +74,7 @@ _FactionsArray = [];
 		Diag_log format ["MRH spawner AllFactions -SpawnerInit.sqf: %1", str _x];
 	};
 } forEach _FactionsArray;
-missionNameSpace setVariable ["SPAWNER_FactionsList", _FactionsArray];
+missionNameSpace setVariable ["SPAWNER_FactionsList", _FactionsArray,true];
 
 call MRH_fnc_Spawner_SortFactionsAlgo;
 

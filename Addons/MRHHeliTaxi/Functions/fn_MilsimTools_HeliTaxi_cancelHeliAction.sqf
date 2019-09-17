@@ -8,5 +8,5 @@ Example(s):
 call MRH_fnc_MilsimTools_HeliTaxi_cancelHeliAction;
 */
 #include "MRH_C_Path.hpp"
-_assignedHeli = (group player) GVAR(slavedHeli);
+_assignedHeli = (group MRH_player) GVAR(slavedHeli);
 [[_assignedHeli],MRH_fnc_MilsimTools_HeliTaxi_onHeliCancelled] remoteExec ["Spawn",2];

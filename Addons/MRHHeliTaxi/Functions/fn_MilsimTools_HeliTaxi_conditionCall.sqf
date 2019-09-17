@@ -9,11 +9,12 @@ call MRH_fnc_MilsimTools_HeliTaxi_conditionCall;
 */
 #include "MRH_C_Path.hpp"
 
-
+private _groupOwnsHeli = (group MRH_player)GVARDef(ownsPhysicalHeli,false);
+if (_groupOwnsHeli) exitWith {FUNC(conditionsPhysicalHeli)};
 
 _condition = FUNC(isHeliTaxiAvailable);
 _forceLeaderSetting =  ["MRH_MilsimTools_Heli_ConditionIsFormLeader"] call cba_settings_fnc_get;
-if (_forceLeaderSetting) then {_condition =call {isFormationLeader player && (FUNC(isHeliTaxiAvailable))};};
+if (_forceLeaderSetting) then {_condition =call {isFormationLeader MRH_player && (FUNC(isHeliTaxiAvailable))};};
 _isCustomSettingSet = ["MRH_MilsimTools_Heli_isCustomConditionSet"] call cba_settings_fnc_get;
 if (_isCustomSettingSet) then
 	{

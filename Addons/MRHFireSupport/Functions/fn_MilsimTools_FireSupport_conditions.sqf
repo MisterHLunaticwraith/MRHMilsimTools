@@ -23,7 +23,7 @@ switch (true) do {
 		{
 			
 			private _forceLeaderSetting =  ["MRH_MilsimTools_FireSupport_ConditionIsFormLeader"] call cba_settings_fnc_get;
-			if (_forceLeaderSetting) then {_condition = isFormationLeader player;};
+			if (_forceLeaderSetting) then {_condition = isFormationLeader MRH_player;};
 			private _isCustomSettingSet = ["MRH_MilsimTools_FireSupport_isCustomConditionSet"] call cba_settings_fnc_get;
 			if (_isCustomSettingSet) then
 				{
@@ -33,6 +33,11 @@ switch (true) do {
 					_condition =call compile _customSetString;
 					
 				};
+				private _timeCheck = [side MRH_player,"MRH_MilsimTools_Arty_DelayBetween"] EFUNC(HeliTaxi,returnRemainingWaitTime);
+				private _can = _timeCheck select 0;
+				if !(_can) then { _condition = false};
+
+
 				private _allowFS = ["MRH_MilsimTools_FireSupport_useFireSupport"] call cba_settings_fnc_get;
 				if !(_allowFS) then  {_condition = false;};
 		};
@@ -41,7 +46,7 @@ switch (true) do {
 		{
 			
 			private _forceLeaderSetting =  ["MRH_MilsimTools_FireSupport_CAS_ConditionIsFormLeader"] call cba_settings_fnc_get;
-			if (_forceLeaderSetting) then {_condition = isFormationLeader player;};
+			if (_forceLeaderSetting) then {_condition = isFormationLeader MRH_player;};
 			private _isCustomSettingSet = ["MRH_MilsimTools_FireSupport_CAS_isCustomConditionSet"] call cba_settings_fnc_get;
 			if (_isCustomSettingSet) then
 				{
@@ -51,6 +56,11 @@ switch (true) do {
 					_condition =call compile _customSetString;
 					
 				};
+
+				private _timeCheck = [side MRH_player,"MRH_MilsimTools_CAS_DelayBetween"] EFUNC(HeliTaxi,returnRemainingWaitTime);
+				private _can = _timeCheck select 0;
+				if !(_can) then { _condition = false};
+
 			private _allowFS = ["MRH_MilsimTools_FireSupport_useCASSupport"] call cba_settings_fnc_get;
 			if !(_allowFS) then {_condition = false;};
 		};
@@ -58,7 +68,7 @@ switch (true) do {
 		{
 			
 			private _forceLeaderSetting =  ["MRH_MilsimTools_FireSupport_Supplies_ConditionIsFormLeader"] call cba_settings_fnc_get;
-			if (_forceLeaderSetting) then {_condition = isFormationLeader player;};
+			if (_forceLeaderSetting) then {_condition = isFormationLeader MRH_player;};
 			private _isCustomSettingSet = ["MRH_MilsimTools_FireSupport_Supplies_isCustomConditionSet"] call cba_settings_fnc_get;
 			if (_isCustomSettingSet) then
 				{
@@ -68,6 +78,12 @@ switch (true) do {
 					_condition =call compile _customSetString;
 					Diag_Log format ["MRH_MilsimTools_FireSupport_Supplies - User set condition: %1" ,str _condition];
 				};
+			
+			private _timeCheck = [side MRH_player,"MRH_MilsimTools_SupplyDrop_DelayBetween"] EFUNC(HeliTaxi,returnRemainingWaitTime);
+			private _can = _timeCheck select 0;
+			if !(_can) then { _condition = false};
+
+			
 			private _allowFS = ["MRH_MilsimTools_FireSupport_Supplies_useSupplyDrops"] call cba_settings_fnc_get;
 			if !(_allowFS) then {_condition = false;};
 		};

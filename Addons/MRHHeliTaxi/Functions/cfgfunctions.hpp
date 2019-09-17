@@ -70,6 +70,81 @@ class MRH // Defines the "owner"
 		{};
 		class MilsimTools_HeliTaxi_forceLandAction
 		{};
+		class MilsimTools_HeliTaxi_medEvacSpawnAndGo
+		{};
+		class MilsimTools_HeliTaxi_medEvacGoAndHeal
+		{};
+		class MilsimTools_HeliTaxi_openMedevacInterface
+		{};
+		class MilsimTools_HeliTaxi_medEvacCalculateTimePenalty
+		{};
+		class MilsimTools_HeliTaxi_medEvacRefreshPenaltyText
+		{};
+		class MilsimTools_HeliTaxi_medEvacCallAction
+		{};
+		class MilsimTools_HeliTaxi_medEvacServerCall
+		{};
+		class MilsimTools_HeliTaxi_medEvacFindSafePos
+		{};
+		class MilsimTools_HeliTaxi_escortBehavior
+		{};
+		class MilsimTools_HeliTaxi_moveOutCargo
+		{};
+		class MilsimTools_HeliTaxi_conditionsCancelMedEvac
+		{};
+		class MilsimTools_HeliTaxi_conditionsMEDEVAC
+		{};
+		class MilsimTools_HeliTaxi_conditionsSendMedEvac
+		{};
+		class MilsimTools_HeliTaxi_cancelMedEvacAction
+		{};
+		class MilsimTools_HeliTaxi_resetMedEvacVars
+		{};
+		class MilsimTools_HeliTaxi_flagCrew
+		{};
+		class MilsimTools_HeliTaxi_returnRemainingWaitTime
+		{};
+		class MilsimTools_HeliTaxi_timeLeftBeforeEvacCounter
+		{};	
+		class MilsimTools_HeliTaxi_onFinalWaypointTypeChanged
+		{};
+		class MilsimTools_HeliTaxi_loiterFinal
+		{};
+		class MilsimTools_HeliTaxi_landAndWaitFinal
+		{};
+		class MilsimTools_HeliTaxi_isPhysicalHeli
+		{};
+		class MilsimTools_HeliTaxi_fastRopeFinal
+		{};
+		class MilsimTools_HeliTaxi_canReceiveFries
+		{};
+		class MilsimTools_HeliTaxi_utilitiesListHelicoptersThatCanReceiveFries
+		{};
+		class MilsimTools_HeliTaxi_ATLReal
+		{};
+		class MilsimTools_HeliTaxi_landAtHomeBase
+		{};
+		class MilsimTools_HeliTaxi_hoverFinal
+		{};
+		class MilsimTools_HeliTaxi_goAwayAndDespawn
+		{};
+		class MilsimTools_HeliTaxi_despawnOrGoHomeSwitch
+		{};
+		class MilsimTools_HeliTaxi_isTaxiModuleInit
+		{};
+		class MilsimTools_HeliTaxi_conditionsPhysicalHeli
+		{};
+		class MilsimTools_HeliTaxi_conditionsCancelPhysicalHeli
+		{};
+		class MilsimTools_HeliTaxi_PhysicalHeliOnTheWay
+		{};
+		class MilsimTools_HeliTaxi_deleteHelipad
+		{};
+		/*
+		class MilsimTools_HeliTaxi_
+		{};
+		*/
+		
 	};
 	
 	

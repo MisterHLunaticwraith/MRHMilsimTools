@@ -67,6 +67,7 @@ class MRHCancelButton: RscButtonMRHHeliTaxi
 	idc = 1603;
 
 	text = $STR_MRH_HeliTaxi_CancelButton; //--- ToDo: Localize;
+	action = "closeDialog 0;";
 	x = 0.195781 * safezoneW + safezoneX;
 	y = 0.797 * safezoneH + safezoneY;
 	w = 0.159844 * safezoneW;
@@ -81,6 +82,43 @@ class MRHMap: RscMapControlMRHHeliTaxi
 	y = 0.181 * safezoneH + safezoneY;
 	w = 0.53625 * safezoneW;
 	h = 0.66 * safezoneH;
+};
+///
+class MRHSelectWpTypeCombo: RscComboMRHHeliTaxi
+{
+	idc = 2110;
+	onLBSelChanged = "_this call MRH_fnc_MilsimTools_HeliTaxi_onFinalWaypointTypeChanged;";
+	x = 0.0875 * safezoneW + safezoneX;
+	y = 0.203 * safezoneH + safezoneY;
+	w = 0.108281 * safezoneW;
+	h = 0.022 * safezoneH;
+};
+class MRHSelectWPTypeImg: RscPictureMRHHeliTaxi
+{
+	idc = 1211;
+	text = "\MRHHeliTaxi\Paa\heli_large.paa";
+	x = 0.0875 * safezoneW + safezoneX;
+	y = 0.225 * safezoneH + safezoneY;
+	w = 0.108281 * safezoneW;
+	h = 0.176 * safezoneH;
+};
+class MRHSelectWPTypeInfo: RscStructuredTextMRHHeliTaxi
+{
+	idc = 2111;
+	text = "Select final waypoint type";
+	x = 0.0875 * safezoneW + safezoneX;
+	y = 0.181 * safezoneH + safezoneY;
+	w = 0.108281 * safezoneW;
+	h = 0.022 * safezoneH;
+};
+class MRHSelectWPtypeDesc: RscStructuredTextMRHHeliTaxi
+{
+	idc = 1212;
+	text = "SomeDummyText";
+	x = 0.0875 * safezoneW + safezoneX;
+	y = 0.401 * safezoneH + safezoneY;
+	w = 0.108281 * safezoneW;
+	h = 0.44 * safezoneH;
 };
 ////////////////////////////////////////////////////////
 // GUI EDITOR OUTPUT END

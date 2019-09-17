@@ -1,4 +1,55 @@
 Changelog:
+MRH Milsim Tools version : v.1.17.4
+
+- Heli Taxi revamped:
+* The heli taxi system has been deeply reworked!
+* You can now also use the system with an editor placed heli. To do that:
+> place the heli in the editor and sync it to the heli taxi module. Sync the module to another group, the group will then have controls over this heli. If it's destroyed they will not be able to call a new one. Heli and commanding group MUST be different groups. Do not place anyone inside the heli except its flight crew in the editor. Where the heli is at mission start is its 'homebase', it will fly back and land there when cancelled or sent back. After a while it will shut its engines down and get repaired and refueled.Editor placed helis are not affected by the max number per side setting, but they DO affect it.
+* You can now choose between different types of 'final waypoints':
+>Land and drop troops: the helicopter will drop troops and fly back to base or go away and despawn (for helis that are spawned).
+>land and wait at LZ the heli will land and wait at LZ until instructed otherwise. After a while it will shut its engines down. You can come back to it at any time.
+>Loiter: the heli will fly over the waypoint and then loiter in circles around it until instructed otherwise.
+>Hover: the heli will go to the waipoint and hover until instructed otherwise.
+> fastrope troops: the heli will fast rope troops at given position and fly back to base or go away and despawn (for helis that are spawned)
+* Fixed: AI units should be properly left at the LZ if the land and drop troups approach is selected.
+* Fixed: units controlled by zeus wille be able to properly use and command the helo defined for their side/ group its linked too.
+
+-Full 9 liner MEDEVAC functionality
+>The 9 liner medevac function is quite complex, its settings can be found in addons settings. The different lines of the calling interface change the waiting time. You can require an escort (two helis will come along and loiter around the LZ when medevac is in effect), you can set the number of patients (the mod will select bigger helis for larger numbers). Decide to include a surgeon ( an AI medic will disembark the heli, talking to them with ace interaction will heal players, they will reembark when the heli leaves. You can ask for the heli to bring supplies (if ace medical crate it will be in the ACE3 virtual cargo interface, if you request medical tents 2 will be placed in the heli's inventory).Or ask for the crew to wear NBC gear (from contact dlc, useful if you use a radiation script for example).
+>Upon calling the MEDEVAC you will receive a LZ near the position you gave (within 250m). You must then reach the LZ and mark it with the selected method (smoke etc.)to launch the medevac sequence. (failing to do that the medevac will be cancelled after a while).
+>You can put uncounscious or severely wounded AIs or players in the Heli and send it away. It will fly back a while later and drop the fully healed units/ players at the LZ.
+>Medevac helis can still be destroyed! Only one per side can be in action at the same time, you can set cooloff delays in the options.
+
+- Supports: Artillery /CAS/Supply drops
+* Fixed CAS no longer working
+* Improved coordinates function should now work on all maps. (And hopefully not break everytime arma is updated).
+* Setting the available number to -1 will make each of the supports infinite.
+* You can instead or also set a cool off time for each support.
+* ACE self interaction>>Contact HQ>>check availability will show available supports or cool off times (including medevacs).
+
+- Insertion handler: 
+*fixed gear should now be moved correctly to submarine cargo for submarine insertions.
+
+- Core added several functions, added two free public domain fonts: Unifont and BethEllen2
+
+- Functions added MRH_fnc_isDoctor
+>[this] call MRH_fnc_isDoctor; will make a unit a doctor (talking to them with ace interaction heals player).
+*added
+/////////////////////////////////
+Changelog:
+MRH Milsim Tools version : v.1.17.3
+
+- Insertion handler revamped:
+* added different insertion types: the default static line jump, the HALO jump and submarine S.D.V. insertion.
+* fixed : AI units couldn't be transfered onboard. Unchanged: this works only for AIs that are in groups with players.
+*tweaked : added animation when preparing cargo.
+
+- Added several internal functions
+- Added submarine map marker
+- Fixed sitOnChair function in MP
+
+////////////////////
+Changelog:
 MRH Milsim Tools version : v.1.17.2
 
 - added Laser designated tripod item (a modification of the remote laser designator introduced by the marksman DLC, can and must beused without uav controler, weighs the same as its real world counterpart) more realistic than using laser designator binoculars , or remote controlled designator).

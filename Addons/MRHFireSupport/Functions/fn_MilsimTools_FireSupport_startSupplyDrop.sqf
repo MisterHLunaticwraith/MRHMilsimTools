@@ -18,25 +18,31 @@ _requestedPos = ctrlText 1400;
 _isValid = [_requestedPos] FUNC(checkGridValidity);
 if !(_isValid) ExitWith {systemChat format [localize "STR_MRH_FireSupport_SC_Bad_coord",_requestedPos];};
 //
-_availability = missionNamespace getVariable ["MRH_FireSupport_isAvailableSUPPLYfor_"+ (str side player),true];
+_availability = missionNamespace getVariable ["MRH_FireSupport_isAvailableSUPPLYfor_"+ (str side MRH_player),true];
+
 if !(_availability) ExitWith {systemChat localize "STR_MRH_FireSupport_SC_SupAlreadyInAction"};
-_availableSD = missionNamespace getVariable ["MRH_FireSupport_NumberOfAvailableSupplyDrops" + (str side player),10]; //temporary do 0 after settings
+_availableSD = missionNamespace getVariable ["MRH_FireSupport_NumberOfAvailableSupplyDrops" + (str side MRH_player),10]; //temporary do 0 after settings
 //
+_numberAvailableSP = ["MRH_MilsimTools_FireSupport_NumberOfSuppliesDrops"] call cba_settings_fnc_get;
+if ((parseNumber _numberAvailableSP)<0) then {_availableSD =9999};
+
+
 if (_availableSD < 1) ExitWith {systemchat localize "STR_MRH_FireSupport_SC_NoRemainingSupplyDrops"};
 _leftSDNew = _availableSD - 1;
-missionNamespace setVariable ["MRH_FireSupport_NumberOfAvailableSupplyDrops" + (str side player),_leftSDNew,true];
-missionNamespace setVariable ["MRH_FireSupport_isAvailableSUPPLYfor_"+ (str side player),false,true];
+missionNamespace setVariable ["MRH_FireSupport_NumberOfAvailableSupplyDrops" + (str side MRH_player),_leftSDNew,true];
+missionNamespace setVariable ["MRH_FireSupport_isAvailableSUPPLYfor_"+ (str side MRH_player),false,true];
+missionNamespace setVariable ["MRH_FireSupport_SDisInActionFor_"+ (str side MRH_player),true,true];
 
 _requestedPos = ctrlText 1400;
-player setVariable ["MRH_FireSupport_PreviouslyEnteredGridRefSUPPLY",_requestedPos];
+MRH_player setVariable ["MRH_FireSupport_PreviouslyEnteredGridRefSUPPLY",_requestedPos];
 _requestedPosFormated = [_requestedPos] FUNC(ParseCoordinates);
 
 closeDialog 0;
 //
 if (_toDrop == "MRH_SupplyCrate_special") then {
 _numberOfMags = missionNamespace getVariable ["MRH_FireSupport_SupplyAmmoCrateNumberOfMags",15];
-_toDrop = [_numberOfMags,side player,[0,0,0]] call MRH_fnc_MilsimTools_FireSupport_createAmmoBox;
+_toDrop = [_numberOfMags,side MRH_player,[0,0,0]] call MRH_fnc_MilsimTools_FireSupport_createAmmoBox;
 };
 
 _distanceOffset = missionNamespace getVariable ["MRH_FireSupport_SupplyDropTravelDistance",2000];
-[[_vehicle,_requestedPosFormated,_toDrop,side player,_distanceOffset,player],MRH_fnc_MilsimTools_FireSupport_dropSupplies] RemoteExec ["Spawn",2];
+[[_vehicle,_requestedPosFormated,_toDrop,side MRH_player,_distanceOffset,MRH_player],MRH_fnc_MilsimTools_FireSupport_dropSupplies] RemoteExec ["Spawn",2];

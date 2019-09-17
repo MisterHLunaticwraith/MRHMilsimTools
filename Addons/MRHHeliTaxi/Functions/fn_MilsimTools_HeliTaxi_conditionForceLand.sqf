@@ -8,5 +8,6 @@ Example(s):
 call MRH_fnc_MilsimTools_HeliTaxi_conditionForceLand;
 */
 #include "MRH_C_Path.hpp"
-_result = (vehicle player)GVARDef(heliShouldHaveLanded,false);
+if (isTouchingGround (vehicle MRH_player)) exitWith {false};
+_result = (vehicle MRH_player)GVARDef(heliShouldHaveLanded,false);
 _result

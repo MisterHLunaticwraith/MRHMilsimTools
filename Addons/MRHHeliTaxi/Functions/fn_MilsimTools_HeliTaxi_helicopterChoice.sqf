@@ -10,13 +10,18 @@ call MRH_fnc_MilsimTools_HeliTaxi_helicopterChoice;
 */
 #include "MRH_C_Path.hpp"
 
- disableSerialization;
+
+private _groupOwnsHeli = (group MRH_player)GVARDef(ownsPhysicalHeli,false);
+
+if (_groupOwnsHeli) exitWith {call MRH_fnc_MilsimTools_HeliTaxi_HeliTaxiCall;};
+
+disableSerialization;
 createDialog "MRHHeliChoice";
 
  
 
 
-_settingsEntry = [player,"MRH_MilsimTools_BluForHelis","MRH_MilsimTools_BluForOpFor","MRH_MilsimTools_BluForInde","MRH_MilsimTools_BluForCivs"] CFUNC(resultForSide);
+_settingsEntry = [MRH_player,"MRH_MilsimTools_BluForHelis","MRH_MilsimTools_BluForOpFor","MRH_MilsimTools_BluForInde","MRH_MilsimTools_BluForCivs"] CFUNC(resultForSide);
 _allHelis =[_settingsEntry] FUNC(returnHeliListFromSettings);
 _ctrlBox = ((findDisplay 160718) displayCtrl 2100);
 {
@@ -36,7 +41,7 @@ _ctrlButton = ((findDisplay 160718) displayCtrl 1600);
 _ctrlButton buttonSetAction "
 	_heli = lbdata [2100,(lbCurSel 2100)];
 	
-	player setVariable ['MRH_HeliTaxi_UserSelectedHeli',_heli,true];
+	MRH_player setVariable ['MRH_HeliTaxi_UserSelectedHeli',_heli,true];
 	call MRH_fnc_MilsimTools_HeliTaxi_HeliTaxiCall; 
 	closedialog 0;
 	";

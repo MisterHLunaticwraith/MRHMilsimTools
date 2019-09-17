@@ -14,12 +14,12 @@ call MRH_fnc_MilsimTools_HeliTaxi_isHeliTaxiAvailable;
 */
 #include "MRH_C_Path.hpp"
 
-_settingsValue = missionNamespace getVariable ["MRH_MilsimTools_HeliTaxi_simultaneousPerSide_" + str (side player),1];
-_currentlyUsed  = missionNamespace getVariable ["MRH_MilsimTools_HeliTaxi_currentlyUsedHelisPerSide_" + (str side player),0];
+_settingsValue = missionNamespace getVariable ["MRH_MilsimTools_HeliTaxi_simultaneousPerSide_" + str (side MRH_player),1];
+_currentlyUsed  = missionNamespace getVariable ["MRH_MilsimTools_HeliTaxi_currentlyUsedHelisPerSide_" + (str side MRH_player),0];
 if (_currentlyUsed >= _settingsValue) ExitWith {false};
-_groupHasHeli = (group player) GVARDef(isUsingHeli,false);
+_groupHasHeli = (group MRH_player) GVARDef(isUsingHeli,false);
 if (_groupHasHeli) exitWith {false};
-_isMilsimToolsDead = player getVariable ["MRH_MilsimTools_Core_HasDied",false];
+_isMilsimToolsDead = MRH_player getVariable ["MRH_MilsimTools_Core_HasDied",false];
 if (_isMilsimToolsDead) exitWith {false};
 
 true
