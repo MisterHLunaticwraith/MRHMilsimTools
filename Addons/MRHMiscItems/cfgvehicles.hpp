@@ -84,6 +84,7 @@ class Man;
     class TransportWeapons{};
 	class TransportMagazines{};
 	class TransportItems{};
+	class TransportBackpacks{};
 };
 
 class MRH_emptySupplyBox : B_supplyCrate_F
@@ -97,6 +98,18 @@ class MRH_emptySupplyBox : B_supplyCrate_F
     class TransportBackpacks{};
 	ace_cargo_size = 2;
     ace_cargo_canLoad = 1;
+};
+class MRH_TrashBin : MRH_emptyBox
+{
+	displayName = $STR_MRH_MRHMiscItems_wheelieBinName;
+	model = "\A3\Structures_F_Heli\Civ\Garbage\WheelieBin_01_F.p3d";
+	editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_WheelieBin_01_F.jpg";
+	ace_dragging_carryDirection = 180;
+	ace_dragging_carryPosition[] = {0,1,0.1};
+	ace_dragging_dragDirection = 180;
+	class EventHandlers {
+	init = "_this call MRH_fnc_MilsimTools_MiscItems_binHandlers;";
+	};
 };
 
 class MRH_AcexFoodSuppliesCrate : CargoNet_01_box_F

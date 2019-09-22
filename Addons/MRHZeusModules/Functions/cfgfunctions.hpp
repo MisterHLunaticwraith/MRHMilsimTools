@@ -89,6 +89,12 @@ class MRH // Defines the "owner"
 		{};
 		class MilsimTools_ZeusModules_setForSurrenderModuleAction
 		{};
+		class MilsimTools_ZeusModules_setZeus
+		{};
+		/*
+		class MilsimTools_ZeusModules_
+		{};
+		*/
 
 
 		

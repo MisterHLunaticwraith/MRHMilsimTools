@@ -1,4 +1,35 @@
 Changelog:
+MRH Milsim Tools version : v.1.17.5
+- Core :
+* Added setting to disable loading of personal loadouts in Ace Arsenal
+* Added attributes checkbox to allow a full zeus for unit (no need to add the module etc.)
+* Added utility function to generate ace default loadouts:
+>Function name:MRH_fnc_MilsimTools_Core_generateAceDefaultLoadOuts
+
+Description: Generates a ready to paste file to run from mission or addon's init that will set Ace default loadouts for the ace arsenal tab.
+HOW TO: create your loadouts on different units placed in the editor, give each unit a variable name that corresponds to the loadout (it will be the loadout name). When you're done, run the function. Paste the results to your mission's init.sqf (or any other sqf filled executed from init.sqf).
+
+The result file also contains a list of the objetcs to allow for the arsenal box if you want a limited arsenal as well as a how to. (see comments at the bottom of the generated file)
+
+Alternatively for sexier loadout names you can set them in the roledescription field of the unit and call the function with true as a parameter (but it will only grab playable units)
+Return value: file to paste from clipboard
+Public: Yes
+Parameters:
+0- <BOOL> (optional) to use roledescription instead of variable name
+Example(s):
+call MRH_fnc_MilsimTools_Core_generateAceDefaultLoadOuts; //will use allunits and variable names
+or
+true call MRH_fnc_MilsimTools_Core_generateAceDefaultLoadOuts; // will grab only playable units and use role descriptions
+
+- Zeus modules 
+* Added module to grant any player zeus powers
+
+- Misc Items
+* Added Magic Whellie bin:
+>Anything placed in the bin wheel be deleted (when the bin's inventory tab is closed) useful if your players are the type to leave stuff everywher, the been can be carried and dragged with ace, have someone on cleanup duty!
+
+/////////////////////////////////
+Changelog:
 MRH Milsim Tools version : v.1.17.4
 
 - Heli Taxi revamped:

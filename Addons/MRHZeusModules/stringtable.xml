@@ -488,6 +488,21 @@
 				<English>LZ altitude (above see level): %1</English>
 				<French>Altitude de la LZ (niveau de la mer): %1</French>
 			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_setZeusName">
+				<Original>Give zeus powers</Original>
+				<English>Give zeus powers</English>
+				<French>Attribuer un Zeus</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_ERRMUSTBEPLAYER">
+				<Original>Error: Selected unit must be a player</Original>
+				<English>Error: Selected unit must be a player</English>
+				<French>Erreur l'unité selectionnée doit être un joueur</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMRHZeusModules_ZEUSPOWERSGRANTED">
+				<Original>Zeus powers granted to: %1</Original>
+				<English>Zeus powers granted to: %1</English>
+				<French>Pouvoir de zeus attribués à: %1</French>
+			</Key>
 			<Key ID="STR_MRH_MRHMRHZeusModules_">
 				<Original></Original>
 				<English></English>

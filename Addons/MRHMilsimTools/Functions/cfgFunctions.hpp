@@ -185,6 +185,14 @@ class MRH // Defines the "owner"
 		{};
 		class MilsimTools_Core_lockNonCargo
 		{};
+		class MilsimTools_Core_generateAceDefaultLoadOuts
+		{};
+		class MilsimTools_Core_isCurator
+		{};
+		class MilsimTools_Core_serverCreateCurator
+		{};
+		class MilsimTools_Core_cbaEventHandlersPlayer
+		{};
 		/*
 		class MilsimTools_Core_
 		{};

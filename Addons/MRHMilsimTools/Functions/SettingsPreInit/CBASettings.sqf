@@ -31,6 +31,7 @@ _script	Script to execute when setting is changed.  (optional) <CODE>
 ["MRH_MilsimTools_Delete_disconnected_body", "CHECKBOX",   [localize "STR_MRH_MS_CBA_CORE_REMOVEDISCONNECTEDBODYPRETTY",localize "STR_MRH_MS_CBA_CORE_REMOVEDISCONNECTEDBODYTOOLTIP"], "MRH_MilsimTools - Core settings",true,1] call cba_settings_fnc_init;
 //setting to apply medic patch on ace3 medics 
 ["MRH_MilsimTools_Core_ApplyMedicPatch", "CHECKBOX",   [localize "STR_MRH_CBA_ApplyMedicPatchSetting",localize "STR_MRH_CBA_ApplyMedicPatchSettingToolTip"], "MRH_MilsimTools - Core settings",true,1] call cba_settings_fnc_init;
+["MRH_MilsimTools_hideAceMyLoadOuts", "CHECKBOX",   [localize "STR_MRH_CBA_DISABLEACELOADOUTS",localize "STR_MRH_CBA_DISABLEACELOADOUTSToolTip"],"MRH_MilsimTools - Core settings",false,1] call cba_settings_fnc_init;
 //===Below are settings for the jip menu
 //allow jip menu on startup
 ["MRH_MilsimTools_Jip_MenuAllow", "CHECKBOX",   [localize "STR_MRH_MS_CBA_JIP_ALLOWPRETTY",localize "STR_MRH_MS_CBA_JIP_ALLOWTOOLTIP"], "MRH_MilsimTools - JIP settings",true,1] call cba_settings_fnc_init;

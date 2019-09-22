@@ -6,6 +6,7 @@
 {
 	FUNC(InitPlayerLocal);
 	FUNC(initMRHPlayer);
+	FUNC(cbaEventHandlersPlayer);
 
 }] call CBA_fnc_waitUntilAndExecute;
 
