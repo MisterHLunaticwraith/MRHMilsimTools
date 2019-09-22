@@ -139,3 +139,14 @@
 			icon = PAAPATH(ModuleSurrender);
 			portrait = PAAPATH(ModuleSurrender);
 	};
+
+	class MRH_setZeus : MRH_Module_Base
+	{
+			scopeCurator = 2;
+			_generalMacro = "MRH_setZeus";
+			displayName = $STR_MRH_MRHMRHZeusModules_setZeusName;
+			curatorCanAttach = 1;
+			function = QFUNC(setZeus);
+			icon = PAAPATH(ModuleZeus);
+			portrait = PAAPATH(ModuleZeus);
+	};

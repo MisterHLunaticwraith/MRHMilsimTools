@@ -1067,6 +1067,26 @@
 				<English>Medic Shoulder Patch</English>
 				<French>Ecusson d'AuxSan</French>
 			</Key>
+			<Key ID="STR_MRH_MISC_isZeus3DENATT">
+				<Original>Assign a Zeus to this unit</Original>
+				<English>Assign a Zeus to this unit</English>
+				<French>Assigner un Zeus à cette unité</French>
+			</Key>
+			<Key ID="STR_MRH_MISC_isZeus3DENATTToolTip">
+				<Original>A Zeus module with full powers will be created and assigned to this unit</Original>
+				<English>A Zeus module with full powers will be created and assigned to this unit</English>
+				<French>Un module Zeus avec tous les pouvoirs sera créé et assigné à cette unité</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_DISABLEACELOADOUTS">
+				<Original>Ace Arsenal: disable user loadouts</Original>
+				<English>Ace Arsenal: disable user loadouts</English>
+				<French>Arsenal Ace : désactiver le chargement des loadouts de l'utilisateur</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_DISABLEACELOADOUTSToolTip">
+				<Original>If this setting is enabled, players will not be able to load/save their personnal loadouts. Can be changed at any time during the game. Doesn't affect logged in admins</Original>
+				<English>If this setting is enabled, players will not be able to load/save their personnal loadouts. Can be changed at any time during the game. Doesn't affect logged in admins</English>
+				<French>Si ce réglage est activé les joueurs ne pourront pas charger/sauver de loadouts personnels. Peut être changé en cours de partie, n'affecte pas les admins loggués.</French>
+			</Key>
 			<Key ID="STR_MRH_MISC_">
 				<Original></Original>
 				<English></English>

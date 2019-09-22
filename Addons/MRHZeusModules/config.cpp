@@ -11,7 +11,8 @@ class CfgPatches {
 			"MRH_attributeData",
 			"MRH_attributeDataForHack",
 			"MRH_createData",
-			"MRH_setForSurrender"
+			"MRH_setForSurrender",
+			"MRH_setZeus"
 		}; //
 		weapons[] = {}; //
 		requiredVersion = 0.1; //

@@ -377,6 +377,11 @@
 				<English>Empty protective case</English>
 				<French>Caisse protectrice vide</French>
 			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_wheelieBinName">
+				<Original>Magic wheelie bin</Original>
+				<English>Magic wheelie bin</English>
+				<French>Poubelle magique</French>
+			</Key>
 			<Key ID="STR_MRH_MRHMiscItems_">
 				<Original></Original>
 				<English></English>
