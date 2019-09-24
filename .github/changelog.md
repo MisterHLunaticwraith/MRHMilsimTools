@@ -1,4 +1,18 @@
 Changelog:
+MRH Milsim Tools version : v.1.17.6
+- Debug tools : Added tab in 3 den under tools: lists all mods and their addons, can be exported to clipboard, can be exported in github bug report format (compliant with the bug report templates for cba and ace 3)
+
+- Heli taxi:
+* Fixed, marker was not deleted after fast roping.
+* Fixed heli speed when returning to base
+
+- Medevac :
+* Tweaked some bigger helis (rhs chinook )would never go to the end of the heal troops and come back function.
+
+- Bio scanner:
+* fixed missing text in a hintC message
+///////////////////////////////////////
+Changelog:
 MRH Milsim Tools version : v.1.17.5
 - Core :
 * Added setting to disable loading of personal loadouts in Ace Arsenal

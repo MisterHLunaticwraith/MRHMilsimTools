@@ -4,9 +4,9 @@ class CfgPatches {
 		weapons[] = {}; //
 		requiredVersion = 0.1; //
 		requiredAddons[] = {"cba_main"};
-		version = 1.17.5;
-		versionStr = "1.17.5";
-		versionAr[] = {1,17,5};
+		version = 1.17.6;
+		versionStr = "1.17.6";
+		versionAr[] = {1,17,6};
 		versionDesc = "MRH Milsim Tools";
 		versionAct = "call compile preProcessFileLineNumbers '\MRHMilSimTools\about.sqf'";
 		author = "Mr H.";
@@ -59,6 +59,10 @@ class Extended_PostInit_EventHandlers
    class MRHMilsimTools_Core_PlayersRegistry
    {
       serverInit = "call compile preProcessFileLineNumbers '\MRHMilSimTools\Functions\InitFunctions\XEHserver.sqf'";
+   };
+   class MRHMilsimTools_Core_Init
+   {
+      init = "call compile preProcessFileLineNumbers '\MRHMilSimTools\Functions\InitFunctions\XEHinit.sqf'";
    };
    
 };

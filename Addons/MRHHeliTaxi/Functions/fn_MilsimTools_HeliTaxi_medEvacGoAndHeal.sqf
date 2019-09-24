@@ -41,18 +41,20 @@ _escortGuys = _heli getVariable ["MRH_HeliTaxi_escortHelis",[objNull,objNull]];
 _dummyDestination = _heli modelToWorld [0,-2000,60];
 
 (units group _heli) commandMove _dummyDestination;
+_heli limitSpeed 120;
 {
 	if !(isNull _x) then
 	{
 		if (alive _x) then {
 		_x  commandMove (_dummyDestination vectorAdd [([-100,100] select _forEachIndex),0,0]);
-		_x limitSpeed 90;
+		_x limitSpeed 120;
 		};
 		
 	};
 }forEach _escortGuys;
 // heal all inside when dummy pos is reached
-waitUntil {(_heli distance _dummyDestination < 300)};
+[_heli,_dummyDestination] spawn {params ["_heli","_dummyDestination"]; sleep 180; if ((_heli distance _dummyDestination)<400) then {_heli setPos _dummyDestination}};//safety, some helis do not reach LZ
+waitUntil {(_heli distance _dummyDestination < 400)};
 {
 	[_x, _x] call ACE_medical_fnc_treatmentAdvanced_fullHeal;
 	if (isPlayer _x) then {

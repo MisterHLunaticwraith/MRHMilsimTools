@@ -18,7 +18,7 @@ _this spawn
 	_condition = _scanner  getVariable ["MRH_ScannerSettings_conditionUnlock","true"];
 	_condition = "params ['_scanner','_caller'];" + _condition;
 	
-	_Message = "";
+	_Message = (localize "STR_MRH_MRHMiscItems_doorIsLockedMessage");
 	_useEyeScan = _scanner getVariable ["MRH_BS_MustScanEyes", false];
 	if (_useEyeScan) then 
 	{
