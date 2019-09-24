@@ -42,6 +42,14 @@ class MRH // Defines the "owner"
 		{};
 		class MilsimTools_DebugTools_conditionsDebugAction
 		{};
+		class MilsimTools_DebugTools_ListModsAndAddons
+		{};
+		class MilsimTools_DebugTools_readAbleList
+		{};
+		class MilsimTools_DebugTools_showAddons
+		{};
+		class MilsimTools_DebugTools_showAddonsButtonAction
+		{};
 		
 		
 

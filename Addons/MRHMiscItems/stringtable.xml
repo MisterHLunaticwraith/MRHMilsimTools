@@ -382,6 +382,11 @@
 				<English>Magic wheelie bin</English>
 				<French>Poubelle magique</French>
 			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_doorIsLockedMessage">
+				<Original>The door is locked</Original>
+				<English>The door is locked</English>
+				<French>La porte est vérouillée</French>
+			</Key>
 			<Key ID="STR_MRH_MRHMiscItems_">
 				<Original></Original>
 				<English></English>

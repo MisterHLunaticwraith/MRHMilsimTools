@@ -68,16 +68,65 @@
 				<English>Copy log to clipboard</English>
 				<French>Copier le journal dans le presse-papier</French>
 			</Key>
-			<Key ID="STR_MRH_MRHDebugTools_">
-				<Original></Original>
-				<English></English>
-				<French></French>
+			<Key ID="STR_MRH_MRHDebugTools_listModsMenuTitle">
+				<Original>List loaded mods</Original>
+				<English>List loaded mods</English>
+				<French>Liste des mods chargés</French>
+			</Key>
+			<Key ID="STR_MRH_MRHDebugTools_ButtonAll">
+				<Original>All</Original>
+				<English>All</English>
+				<French>Tous</French>
+			</Key>
+			<Key ID="STR_MRH_MRHDebugTools_ButtonMods">
+				<Original>Just mods</Original>
+				<English>Just mods</English>
+				<French>Mods seulement</French>
+			</Key>
+			<Key ID="STR_MRH_MRHDebugTools_ButtonAllAddons">
+				<Original>All addons</Original>
+				<English>All addons</English>
+				<French>Tous les addons</French>
+			</Key>
+			
+			<Key ID="STR_MRH_MRHDebugTools_ButtonGitHub">
+				<Original>For Github</Original>
+				<English>For Github</English>
+				<French>Pour Github</French>
+			</Key>
+			<Key ID="STR_MRH_MRHDebugTools_ButtonToClipBoard">
+				<Original>To clipboard</Original>
+				<English>To clipboard</English>
+				<French>Copier</French>
+			</Key>
+			
+			<Key ID="STR_MRH_MRHDebugTools_helpAll">
+				<Original>All mods that have a proper cfgMods config file will be listed below, the addons that are parts of each mod are listed below them. Some improperly configured mods might not show, some addons might not show for a given mod. For example, for Milsim Tools only the main addon will show beciause I used improper addon naming convention, oh the irony!</Original>
+				<English>All mods that have a proper cfgMods config file will be listed below, the addons that are parts of each mod are listed below them. Some improperly configured mods might not show, some addons might not show for a given mod. For example, for Milsim Tools only the main addon will show beciause I used improper addon naming convention, oh the irony!</English>
+				<French>Tous les mods qui sont correctement configurés avec un cfgMods sont listés ci-dessous, les addons qui constituent ces mods sont listés pour chacun. Certains mods mal configurés peuvent ne pas apparaître, certains addons peuvent ne pas apparâitre pour certains mods. Par exemple pour Milsim Tous seul l'addon principal est affiché parce que j'ai utilisé une convention de dénomination imparfaite... L'ironie du truc...</French>
+			</Key>
+			<Key ID="STR_MRH_MRHDebugTools_helpGitHub">
+				<Original>Mods that have a proper cfgMods in their config will be listed here, the text is preformated for github bug reports in the format they are required on the Ace 3 or CBA github bug report template. If the mods use cba versioning the version will be listed. Mods missing a cfgMods won't be listed.</Original>
+				<English>Mods that have a proper cfgMods in their config will be listed here, the text is preformated for github bug reports in the format they are required on the Ace 3 or CBA github bug report template. If the mods use cba versioning the version will be listed. Mods missing a cfgMods won't be listed.</English>
+				<French>Les mods qui ont un cfgMods correctement définit dans leur config seront listés ici, le texte est préformaté au format des rapports de bug sur Github utilisé par les équipes de Ace3 et de CBA. Si le mod utilise le versioning de CBA la version sera mentionnée. Les mods n'ayant pas de cfgMods ne sont pas listés.</French>
+			</Key>
+			
+			<Key ID="STR_MRH_MRHDebugTools_allAddons">
+				<Original>All addons (excluding arma's base addons) will be listed here, list should be complete and accurate.</Original>
+				<English>All addons (excluding arma's base addons) will be listed here, list should be complete and accurate.</English>
+				<French>Tous les addons (sauf les addons de base d'arma) sont listés, la liste devrait être complète et exhaustive.</French>
+			</Key>
+			<Key ID="STR_MRH_MRHDebugTools_onlyMods">
+				<Original>Only mods will be listed (without their addons components) mods missing a proper cfgMods won't be listed here.</Original>
+				<English>Only mods will be listed (without their addons components) mods missing a proper cfgMods won't be listed here.</English>
+				<French>Seul les mods seront listés (sans les addons qui les composent) les mods n'ayant pas de cfgMods ne sont pas listés.</French>
 			</Key>
 			<Key ID="STR_MRH_MRHDebugTools_">
 				<Original></Original>
 				<English></English>
 				<French></French>
 			</Key>
+			
 			
 		</Container>
 	</Package>

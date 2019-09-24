@@ -36,23 +36,27 @@ class cfgVehicles
 {
 	#include "\MRHDebugTools\cfghpp\cfgvehicles.hpp"
 };
-
-/*
-class cfgWeapons
+#include "\MRHDebugTools\Dialogs\3DENAddonsDisplay.hpp"
+class display3DEN
 {
-	#include "MRHDebugTools\cfghpp\cfgweapons.hpp"
+	class Controls
+	{
+		class MenuStrip: ctrlMenuStrip
+		{
+			class Items
+			{
+				class Tools
+				{
+					items[] += {"MRH_listMods"}; // += must be used; you want to expand the array, not override it!
+				};
+				class MRH_listMods
+				{
+					text = $STR_MRH_MRHDebugTools_listModsMenuTitle; // Item text
+					picture = "\MRHMilsimTools\milsimtoolsIco.paa"; // Item picture toDo
+					action = "call MRH_fnc_MilsimTools_DebugTools_showAddons";// Expression called upon clicking; ideally, it should call your custom function
+                    opensNewWindow = 1;// Adds ... to the name of the menu entry, indicating the user that a new window will be opened.
+				};
+			};
+		};
+	};
 };
-*/
-//------------Extended XEH
-/*
-class Extended_PostInit_EventHandlers
-{
-   
-   class MRHDebugTools_
-   {
-      clientInit = "call compile preProcessFileLineNumbers 'MRHDebugTools\Functions\fn_.sqf'";
-   };
-      
-	
-};
-*/
