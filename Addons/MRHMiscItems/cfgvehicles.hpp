@@ -17,6 +17,7 @@ class Camping_base_F;
 class ACE_medicalSupplyCrate_advanced;
 class B_Slingload_01_Cargo_F;
 class B_W_Static_Designator_01_F;
+class Banner_01_F;
 //include items here
 #include "\MRHMiscItems\Models\ElevatorButton\ElevatorButton.hpp"
 #include "\MRHMiscItems\Models\UsbThumbDrive\usbDrive.hpp"
@@ -24,6 +25,7 @@ class B_W_Static_Designator_01_F;
 #include "\MRHMiscItems\Models\ShootingMats\shootingmats.hpp"
 #include "\MRHMiscItems\Models\MedicalTent\medicalTent.hpp"
 #include "\MRHMiscItems\Models\Case\protectiveCase.hpp"
+#include "\MRHMiscItems\Models\ProjectionScreen\projectionScreens.hpp"
 
 class Man;
     class CAManBase: Man 

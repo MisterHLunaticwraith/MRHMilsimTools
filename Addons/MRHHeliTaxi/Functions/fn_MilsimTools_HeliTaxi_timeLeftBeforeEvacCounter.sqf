@@ -28,14 +28,14 @@ _this spawn {
 			_progressBar progressSetPosition _progress;
 			uisleep 1;
 		};
-
+TRACE("MRH_MedEvac_WaitScreen: penalty time passed, waiting for heli spawn");
 		waitUntil {!isNull (missionNamespace getVariable [("MRH_HeliTaxi_CurrentMedEvacHeli_"+ (str (side MRH_player))),objNull])};
-
+TRACE("MRH_MedEvac_WaitScreen: heli spawned starting ETA countDown");
 		_medEvac = missionNamespace getVariable [("MRH_HeliTaxi_CurrentMedEvacHeli_"+ (str (side MRH_player))),objNull];
 		_LZ = getMarkerPos "MRH_LZ_Evac_Marker";
 		_totalDist = _medEvac distance _LZ;
 		_status ctrlSetStructuredText parseText "E.T.A.";
-		while {(alive _medEvac) && !(isTouchingGround _medEvac) && !(_medEvac getVariable ["MRH_HeliTaxi_isCancelled",false])} do
+		while {(alive _medEvac) && !(isTouchingGround _medEvac) && !(_medEvac getVariable ["MRH_HeliTaxi_isCancelled",false]) && (!isNull _medEvac)} do
 
 
 		{
@@ -47,4 +47,5 @@ _this spawn {
 			uisleep 1;
 		};
 		_display closedisplay 2;
+TRACE("MRH_MedEvac_WaitScreen: heli touchdown coutdown closed");
 };

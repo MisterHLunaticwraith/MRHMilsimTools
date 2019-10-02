@@ -79,7 +79,7 @@ waitUntil {time>1};
 		5] call ace_interact_menu_fnc_createAction;
 
 
-			_message = format ["MRH BioScanner ace action added to %1, action name %2, action %3",_object,_actionName,_action];
+			private _message = format ["MRH BioScanner ace action added to %1, action name %2",_object,_actionName];
 			[_message] call MRH_fnc_MilsimTools_DebugTools_trace;
 			[_object, 0, [_actionName], _action] call ace_interact_menu_fnc_addActionToObject;
 	}]RemoteExec ["Call",0,true];

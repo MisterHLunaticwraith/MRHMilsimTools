@@ -193,6 +193,12 @@ class MRH // Defines the "owner"
 		{};
 		class MilsimTools_Core_cbaEventHandlersPlayer
 		{};
+		class MilsimTools_Core_getSoundFile
+		{};
+		class MilsimTools_Core_playSound3D
+		{};
+		class MilsimTools_Core_playSound3Dlocal
+		{};
 		/*
 		class MilsimTools_Core_
 		{};

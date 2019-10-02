@@ -82,7 +82,7 @@ _script	Script to execute when setting is changed.  (optional) <CODE>
 ["MRH_MilsimTools_BluForCivs", "EDITBOX",   [localize "STR_MRH_CBA_Heli_ForCiv",localize "STR_MRH_CBA_Heli_ClassnamesToolTip"], ["MRH_MilsimTools - Heli Taxi",localize "STR_MRH_CBA_Heli_ForCiv"],"C_Heli_Light_01_civil_F",1] call cba_settings_fnc_init;
 //---------below are the settings for medevac
 ["MRH_MilsimTools_MEDEVAC_UseMedEVACInMission", "CHECKBOX",   [localize "STR_MRH_CBA_MEDEVAC_useMedEvac",localize "STR_MRH_CBA_MEDEVAC_useMedEvacTooltip"], "MRH_MilsimTools - MEDEVAC",false,1] call cba_settings_fnc_init;
-["MRH_MilsimTools_MEDEVAC_DelayBetween", "SLIDER",   [localize "STR_MRH_CBA_MEDEVAC_delayBetweenSettings",localize "STR_MRH_CBA_MEDEVAC_delayBetweenSettingsToolTip"],"MRH_MilsimTools - MEDEVAC",[0,1200,120,0],1] call cba_settings_fnc_init;
+["MRH_MilsimTools_MEDEVAC_DelayBetween", "SLIDER",   [localize "STR_MRH_CBA_MEDEVAC_delayBetweenSettings",localize "STR_MRH_CBA_MEDEVAC_delayBetweenSettingsToolTip"],"MRH_MilsimTools - MEDEVAC",[0,3600,120,0],1] call cba_settings_fnc_init;
 
 ["MRH_MilsimTools_MEDEVAC_timeToReachLZ", "SLIDER",   [localize "STR_MRH_CBA_MEDEVAC_timeToReachLZSetting",localize "STR_MRH_CBA_MEDEVAC_timeToReachLZSettingToolTip"],"MRH_MilsimTools - MEDEVAC",[0,3000,600,0],1] call cba_settings_fnc_init; //set min to 60 after debug
 

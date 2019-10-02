@@ -387,6 +387,16 @@
 				<English>The door is locked</English>
 				<French>La porte est vérouillée</French>
 			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_smallProjScreen">
+				<Original>Small projection screen</Original>
+				<English>Small projection screen</English>
+				<French>Ecran de projection (petit)</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_largeProjScreen">
+				<Original>Large projection screen</Original>
+				<English>Large projection screen</English>
+				<French>Ecran de projection (grand)</French>
+			</Key>
 			<Key ID="STR_MRH_MRHMiscItems_">
 				<Original></Original>
 				<English></English>
