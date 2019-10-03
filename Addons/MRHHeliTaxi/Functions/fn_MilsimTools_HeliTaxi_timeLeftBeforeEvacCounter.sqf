@@ -15,7 +15,7 @@ _this spawn {
 		//if (_penaltyTime <= 0) exitWith {};
 		080919 cutRsc ["MRH_HUDIntel", "PLAIN"];
 		disableSerialization;
-		_display = uiNamespace getVariable "MRH_HUDIntel";
+		private _display = uiNamespace getVariable "MRH_HUDIntel";
 		_progressBar = _display displayCtrl 1201;
 		_status = _display displayCtrl 1100;
 		_etaCtrl = _display displayCtrl 1101;

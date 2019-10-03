@@ -12,7 +12,7 @@ switch (true) do
 			 _sourceObject = _this select 0;
 			 _sourceObject say3D "MRH_radiochatter_radioclick";
 			 _faction = _sourceObject getVariable "MRH_RadioChatter_Faction";
-			 [[_sourceObject,_faction],MRH_fnc_RadioChatter] RemoteExec ["Call",[0,2] select isDedicated];
+			 [[_sourceObject,_faction],MRH_fnc_RadioChatter] RemoteExec ["Call",2];//[0,2] select isDedicated];
 			 [[_sourceObject,0,["ACE_MainActions","RadioSwitch"]],ace_interact_menu_fnc_removeActionFromObject] RemoteExec ["Call",[0,-2] select isDedicated,true];
 			 [[_sourceObject,"OFF"],MRH_fnc_RadioAceAction] RemoteExec ["Call",[0,-2] select isDedicated,true];
 		 }, 
@@ -31,6 +31,7 @@ switch (true) do
 		 _paa, 
 		 { 
 			 _sourceObject = _this select 0;
+			 /*
 			 [[_sourceObject],
 				 {
 				 params ["_sourceObject"];
@@ -38,7 +39,8 @@ switch (true) do
 				 deleteVehicle _sound;
 				 }
 			 ] RemoteExec ["Spawn",[0,-2] select isDedicated,false];
-			
+			*/
+			//with playsound3D you can't delete the sound but still it will be less messy in MP where this didn't work half the time anyway
 			 _sourceObject say3D "MRH_radiochatter_radioclick";
 			 _faction = _sourceObject getVariable "MRH_RadioChatter_Faction";
 			 [_sourceObject,_faction] call MRH_fnc_RadioChatter;
