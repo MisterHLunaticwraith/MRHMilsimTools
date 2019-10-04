@@ -199,6 +199,10 @@ class MRH // Defines the "owner"
 		{};
 		class MilsimTools_Core_playSound3Dlocal
 		{};
+		class MilsimTools_Core_CuratorViewEh
+		{};
+		class MilsimTools_Core_handleCuratorWaterMark
+		{};
 		/*
 		class MilsimTools_Core_
 		{};

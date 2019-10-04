@@ -35,12 +35,18 @@ private _logTime = [_time/6000,"HH:MM:SS:MM"] call BIS_fnc_timeToString;
 private _timestamp = _formatedDate + " at " + _logTime +" - ";
 
 
+private _doLog = ["MRH_MilsimTools_DebugTools_DoLogDebugMode"] call cba_settings_fnc_get;
+private _isDebugMode = ["MRH_MilsimTools_DebugTools_isDebugMode"] call cba_settings_fnc_get;
 
 //final log message
 private _log = _origin + _timestamp + _message + _localMachine;
-diag_log _log;
 
-private _isDebugMode = ["MRH_MilsimTools_DebugTools_isDebugMode"] call cba_settings_fnc_get;
+if (_doLog || _isDebugMode) then 
+{
+	diag_log _log;
+};
+
+
 
 if (_isDebugMode) then
 { 

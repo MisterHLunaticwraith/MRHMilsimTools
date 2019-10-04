@@ -123,3 +123,31 @@ class RscTitles
    };
 };
 #include "\MRHMilSimTools\animations\animations.hpp"
+class RscPicture;
+//class Watermark;
+class RscDisplayCurator 
+{
+   
+	class controls 
+	{
+      class MRHDummyCuratorCtrl: RscPicture
+         {
+            idc = 6547;
+            show = false;
+            text = "";
+            x = 1 * safezoneW + safezoneX;
+            y = 1 * safezoneH + safezoneY;
+            w = 0 * safezoneW;
+            h = 0 * safezoneH;
+            onLoad = "[(ctrlParent (_this select 0)),'Load'] call MRH_fnc_MilsimTools_Core_curatorViewEH";
+            
+         };
+     
+      class Watermark : RscPicture
+      {
+         onLoad = "(_this select 0) call MRH_fnc_MilsimTools_Core_handleCuratorWaterMark";//to hide check curatorToggleInterface https://community.bistudio.com/wiki/inputAction/actions#Zeus
+         
+      };
+   };
+    
+};

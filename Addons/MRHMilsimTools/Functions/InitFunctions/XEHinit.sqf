@@ -22,3 +22,18 @@ if(MRH_MISSION_ROOT_FOUND) then {
 	_missionRootTrace = format ["MRH Milsim Tools Core- Local mission root is: %1",MRH_MISSION_ROOT];
 	TRACE(_missionRootTrace);
 };
+
+["MRH_curatorViewOpened", 
+{
+	params ["_display","_player"];
+	private _toTrace = format ["Player %1 has accessed curator",_player];
+	TRACE(_toTrace);
+	
+}] call CBA_fnc_addEventHandler;
+
+["MRH_curatorViewClosed", 
+{
+	params ["_display","_player"];
+	private _toTrace = format ["Player %1 has left curator",_player];
+	TRACE(_toTrace)
+}] call CBA_fnc_addEventHandler;

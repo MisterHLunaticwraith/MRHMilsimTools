@@ -30,6 +30,12 @@ class CfgEditorSubcategories
 	{
 		displayName = $STR_MRH_MRHMiscItems_InvItEdSubCat; // Name visible in the list
 	};
+	class EdSubcat_MRH_ScreenShotProps // Category class, you point to it in editorSubcategory property
+	{
+		displayName = $STR_MRH_MRHMiscItems_edSubCatScreenShotHelpers; // Name visible in the list
+	};
+
+
 
 };
 

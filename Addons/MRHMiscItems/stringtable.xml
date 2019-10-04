@@ -397,6 +397,16 @@
 				<English>Large projection screen</English>
 				<French>Ecran de projection (grand)</French>
 			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_edSubCatScreenShotHelpers">
+				<Original>Screenshot helpers</Original>
+				<English>Screenshot helpers</English>
+				<French>Aides aux screenshot</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_bigGreenBoxName">
+				<Original>Big green box (for screenshots)</Original>
+				<English>Big green box (for screenshots)</English>
+				<French>Grosse boîte verte (aide aux screenshots)</French>
+			</Key>
 			<Key ID="STR_MRH_MRHMiscItems_">
 				<Original></Original>
 				<English></English>
