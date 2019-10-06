@@ -27,6 +27,7 @@ class Banner_01_F;
 #include "\MRHMiscItems\Models\Case\protectiveCase.hpp"
 #include "\MRHMiscItems\Models\ProjectionScreen\projectionScreens.hpp"
 #include "\MRHMiscItems\Models\BigGreenBox\BigGreenBox.hpp"
+#include "\MRHMiscItems\Models\ANPRC117\prc117.hpp"
 
 class Man;
     class CAManBase: Man 

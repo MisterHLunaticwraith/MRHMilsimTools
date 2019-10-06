@@ -16,7 +16,7 @@ class MRH_ElevatorButton : MRH_ElevatorButton_Base
 		//init = "''";
 	};
 	*/
-	editorPreview = "";
+	editorPreview = "\MRHMiscItems\Models\ElevatorButton\Data\MRH_ElevatorButton.jpg";
 	//_generalMacro = "Land_BottlePlastic_V2_F";
 	scope = 2;
 	scopeCurator = 2;
