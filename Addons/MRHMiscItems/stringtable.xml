@@ -412,6 +412,16 @@
 				<English>AN/PRC 117F Radio</English>
 				<French>Radio AN/PRC 117F</French>
 			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_FlipAction">
+				<Original>Flip</Original>
+				<English>Flip</English>
+				<French>Retourner</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_prc152DispName">
+				<Original>AN/PRC 152 Radio</Original>
+				<English>AN/PRC 152 Radio</English>
+				<French>Radio AN/PRC 152</French>
+			</Key>
 			<Key ID="STR_MRH_MRHMiscItems_">
 				<Original></Original>
 				<English></English>

@@ -3,6 +3,7 @@
 #define item_xx(a,b) class _xx_##a {name = a; count = b;}
 #define backPack_xx(a,b) class _xx_##a {backpack = a; count = b;}
 //	#include "MRH_C_Path.hpp"
+
 //declare parents here
 class Items_base_F;
 class Static;
@@ -28,6 +29,7 @@ class Banner_01_F;
 #include "\MRHMiscItems\Models\ProjectionScreen\projectionScreens.hpp"
 #include "\MRHMiscItems\Models\BigGreenBox\BigGreenBox.hpp"
 #include "\MRHMiscItems\Models\ANPRC117\prc117.hpp"
+#include "\MRHMiscItems\Models\ANPRC152\prc152.hpp"
 
 class Man;
     class CAManBase: Man 
@@ -143,6 +145,7 @@ class MRH_AcexFoodSuppliesCrate : CargoNet_01_box_F
                
     };
     class TransportBackpacks{};
+	#include "canFlipMacro.hpp"
 };
 
 class MRH_FOB_container : B_Slingload_01_Cargo_F
@@ -158,6 +161,7 @@ class MRH_FOB_container : B_Slingload_01_Cargo_F
 		init = "[_this,'MainFob'] call MRH_fnc_MilsimTools_MiscItems_FOB_init;";
 		
 	};
+	#include "canFlipMacro.hpp"
 };
 
 class MRH_camp_container : MRH_emptySupplyBox
@@ -167,6 +171,7 @@ class MRH_camp_container : MRH_emptySupplyBox
 		init = "[_this,'Camp'] call MRH_fnc_MilsimTools_MiscItems_FOB_init;";
 		
 	};
+	#include "canFlipMacro.hpp"
 };
 
 class MRH_laser_designator : B_W_Static_Designator_01_F //Static_Designator_01_base_F//
