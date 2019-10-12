@@ -422,6 +422,11 @@
 				<English>AN/PRC 152 Radio</English>
 				<French>Radio AN/PRC 152</French>
 			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_TrivecAventSATCOMAnt">
+				<Original>Trivec Avant SATCOM Antenna</Original>
+				<English>Trivec Avant SATCOM Antenna</English>
+				<French>Antenne satellite Trivec Avant</French>
+			</Key>
 			<Key ID="STR_MRH_MRHMiscItems_">
 				<Original></Original>
 				<English></English>

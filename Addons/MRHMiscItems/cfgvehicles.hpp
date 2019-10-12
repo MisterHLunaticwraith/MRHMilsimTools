@@ -30,6 +30,7 @@ class Banner_01_F;
 #include "\MRHMiscItems\Models\BigGreenBox\BigGreenBox.hpp"
 #include "\MRHMiscItems\Models\ANPRC117\prc117.hpp"
 #include "\MRHMiscItems\Models\ANPRC152\prc152.hpp"
+#include "\MRHMiscItems\Models\SatComAntenna\satcomAntenna.hpp"
 
 class Man;
     class CAManBase: Man 
