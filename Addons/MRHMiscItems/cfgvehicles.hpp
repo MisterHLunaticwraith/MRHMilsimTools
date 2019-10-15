@@ -31,6 +31,7 @@ class Banner_01_F;
 #include "\MRHMiscItems\Models\ANPRC117\prc117.hpp"
 #include "\MRHMiscItems\Models\ANPRC152\prc152.hpp"
 #include "\MRHMiscItems\Models\SatComAntenna\satcomAntenna.hpp"
+#include "\MRHMiscItems\Models\117RadioStation\117RadioStation.hpp"
 
 class Man;
     class CAManBase: Man 
