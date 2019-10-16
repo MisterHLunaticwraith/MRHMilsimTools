@@ -7,6 +7,7 @@
 //declare parents here
 class Items_base_F;
 class Static;
+//class LandVehicle;
 class ShootingMat_01_folded_Olive_F;
 class ShootingMat_01_folded_Khaki_F;
 class ShootingMat_01_Olive_F;
@@ -19,6 +20,26 @@ class ACE_medicalSupplyCrate_advanced;
 class B_Slingload_01_Cargo_F;
 class B_W_Static_Designator_01_F;
 class Banner_01_F;
+ class Land;
+    class LandVehicle : Land {
+        class Turrets;
+    };
+    class StaticWeapon : LandVehicle {
+        class Turrets : Turrets {
+            class MainTurret;
+        };
+    };
+/*
+class StaticWeapon: LandVehicle {
+	class Turrets {
+		class MainTurret;
+	};
+
+	class ACE_Actions {
+		class ACE_MainActions;
+	};
+};
+*/
 //include items here
 #include "\MRHMiscItems\Models\ElevatorButton\ElevatorButton.hpp"
 #include "\MRHMiscItems\Models\UsbThumbDrive\usbDrive.hpp"
