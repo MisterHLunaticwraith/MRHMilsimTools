@@ -427,6 +427,21 @@
 				<English>Trivec Avant SATCOM Antenna</English>
 				<French>Antenne satellite Trivec Avant</French>
 			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_RadioPosts">
+				<Original>Radio station</Original>
+				<English>Radio station</English>
+				<French>Positions radios</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_117FStationDisplay">
+				<Original>117F Radio SATCOM station</Original>
+				<English>117F Radio SATCOM station</English>
+				<French>Poste radio 117F SATCOM</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_AcreDashName">
+				<Original>Radio</Original>
+				<English>Radio</English>
+				<French>Radio</French>
+			</Key>
 			<Key ID="STR_MRH_MRHMiscItems_">
 				<Original></Original>
 				<English></English>

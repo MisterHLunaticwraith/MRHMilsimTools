@@ -14,6 +14,11 @@ class CfgEditorCategories
 	{
 		displayName = $STR_MRH_MRHMiscItems_ItemEdCat; // Name visible in the list
 	};
+
+	class EdCat_MRH_RadioPosts
+	{
+		displayName = $STR_MRH_MRHMiscItems_RadioPosts;
+	};
 };
 
 class CfgEditorSubcategories

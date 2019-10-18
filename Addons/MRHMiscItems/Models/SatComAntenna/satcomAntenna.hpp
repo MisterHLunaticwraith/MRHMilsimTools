@@ -48,6 +48,27 @@ class MRH_MT_SatCom_Antenna: MRH_MT_SatCom_Antenna_Base {
         ace_dragging_carryPosition[] = {0, 1.2, 0};  // Offset of the model from the body while dragging (same as attachTo)
         ace_dragging_carryDirection = 0;  // Model direction while dragging (same as setDir after attachTo)
 	/////
+	class ACE_Actions
+	{
+		class ACE_MainActions
+		{
+			displayName = $STR_MRH_MRHMiscItems_AceInteractionsMain;
+			icon = "";
+			distance = 2;
+			selection = "mem01";
+			
+			
+			class AntennaConnectTablet {
+					displayName = "Connect to tablet";
+					condition = "('MRH_SoldierTab' in items MRH_player) && ((MRH_player getVariable ['MRH_AntennaLinkedToSoldierTablet',objNull]) != _target)";
+					exceptions[] = {};
+					statement = "MRH_player setVariable ['MRH_AntennaLinkedToSoldierTablet',_target,true];playSound3D['MRHMiscItems\Sounds\MRH_SAT_AntennaLinked.ogg',_target];[_target,MRH_player] call MRH_fnc_MilsimTools_MiscItems_handleAntennaConnection;";
+					icon = "\MRHMarkers\paa\iconconnect";
+					
+				};
+			
+		};
+	};
 	/*
 	class ACE_Actions {
 		class ACE_AntennaOptions 

@@ -40,6 +40,8 @@ class MRH // Defines the "owner"
 		{};
 		class MilsimTools_MiscItems_binHandlers
 		{};
+		class MilsimTools_MiscItems_handleAntennaConnection
+		{};
 	};
 	
 };

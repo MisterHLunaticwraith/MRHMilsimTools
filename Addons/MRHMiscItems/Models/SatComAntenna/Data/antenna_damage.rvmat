@@ -1,0 +1,13 @@
+#define _ARMA_
+
+
+Ambient[]={1,1,1,1};
+Diffuse[]={0.5,0.5,0.5,1};
+ForcedDiffuse[]={0,0,0,0}; 
+emmisive[]={0,0,0,0}; 
+specular[]={0.5,0.5,0.5,0.5};
+
+specularPower=90;
+
+PixelShaderID="Normal";
+VertexShaderID="Basic";
