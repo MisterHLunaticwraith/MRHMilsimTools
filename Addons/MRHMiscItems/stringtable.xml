@@ -442,11 +442,50 @@
 				<English>Radio</English>
 				<French>Radio</French>
 			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_satComBagAntennaDisp">
+				<Original>SATCOM Antenna in bag</Original>
+				<English>SATCOM Antenna in bag</English>
+				<French>Antenne satellite (sac)</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_satcomBagdesc">
+				<Original>A SATCOM antenna used to transmit long range, can be connected to a tablet</Original>
+				<English>A SATCOM antenna used to transmit long range, can be connected to a tablet</English>
+				<French>Une antenne satellite, utilisée pour les transmissions longue distance peut se connecter à la tablette</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_connectantennatab">
+				<Original>Connect to tablet</Original>
+				<English>Connect to tablet</English>
+				<French>Connecter la tablette à l'antenne</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_foldAntenna">
+				<Original>Fold antenna</Original>
+				<English>Fold antenna</English>
+				<French>Replier l'antenne</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_unpacklaserdesignator">
+				<Original>Unpack laser designator</Original>
+				<English>Unpack laser designator</English>
+				<French></French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_unfoldSatcomAntenna">
+				<Original>Unfold SATCOM antenna</Original>
+				<English>Unfold SATCOM antenna</English>
+				<French></French>
+			</Key>
 			<Key ID="STR_MRH_MRHMiscItems_">
 				<Original></Original>
 				<English></English>
 				<French></French>
 			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_">
+				<Original></Original>
+				<English></English>
+				<French></French>
+			</Key>
+		
+		
+		
+		
 		
 			
 		</Container>

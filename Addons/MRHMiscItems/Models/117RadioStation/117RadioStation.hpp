@@ -22,6 +22,10 @@ class MRH_117FRadioStation_Base: StaticWeapon //static
 	threat[] = {0.7, 0.3, 0};
 	accuracy = 0.12;
 	cost = 10000;
+	class EventHandlers {
+		init = "_this call MRH_fnc_MilsimTools_MiscItems_117StationInit;";
+		
+	};
 	attenuationEffectType = "";
 	class SpeechVariants {
 		class Default {
@@ -180,6 +184,38 @@ class AcreRacks {
 	};
 };
 
+class MRH_117FRadioStation_NoRack : MRH_117FRadioStation_Base
+{
+	class ACE_Actions : ACE_Actions
+	{
+		class ACE_MainActions :ACE_MainActions
+		{
+			class MRH_Ace_repack117Fstation
+				{
+					displayName = "Repack 117F Radio station";
+					condition = "[_target] call MRH_fnc_MilsimTools_MiscItems_canRepackRadioStation";
+					exceptions[] = {"isNotSitting"};
+					statement = "[_target,MRH_player] call MRH_fnc_MilsimTools_MiscItems_repackRadioStation;";
+					icon = ""; //todo
+					
+				};
+		};
+	};
+	class AcreRacks {
+		class Rack_1 {
+			displayName = $STR_MRH_MRHMiscItems_AcreDashName; // Name is displayed in the interaction menu.
+			shortName = $STR_MRH_MRHMiscItems_AcreDashName;
+			componentName = "ACRE_VRC103";
+			allowedPositions[] = {"gunner","external"}; // Who has access. "inside" - anyone inside, "external" - provides access upto 10m away, "driver", "gunner", "copilot", "commander"
+			disabledPositions[] = {};
+			defaultComponents[] = {};
+			mountedRadio = "";                 // Predefined mounted radio
+			isRadioRemovable = 1;
+			intercom[] = {"intercom_1"};                   // All units in intercom can receive/send transmittions (ACE3 interaction menu) but they cannot manipulate the radio (GUI interface).
+
+		};
+	};
+};
 class  B_MRH_117FRadioStation :  MRH_117FRadioStation_Base
 {
 	_generalMacro = "B_MRH_117FRadioStation";
@@ -217,5 +253,16 @@ class  C_MRH_117FRadioStation :  MRH_117FRadioStation_Base
 	side = 3;
 	faction = "CIV_F";
 	crew = "C_man_p_fugitive_F";
+	
+};
+//todelete
+class  B_MRH_117FRadioStationTest :  MRH_117FRadioStation_NoRack
+{
+	_generalMacro = "B_MRH_117FRadioStation";
+	displayName = "test";
+	scope = 2;
+	side = 1;
+	faction = "BLU_F";
+	crew = "B_officer_F";
 	
 };

@@ -1,14 +1,18 @@
-ambient[]={0.60200065,0.60200065,0.60200065,1};
-diffuse[]={0.60200065,0.60200065,0.60200065,1};
+class StageTI
+{
+	texture="#(argb,8,8,3)color(0,0,0,0)";
+};
+ambient[]={1,1,1,1};
+diffuse[]={1,1,1,1};
 forcedDiffuse[]={0,0,0,0};
 emmisive[]={0,0,0,1};
-specular[]={0.51100099,0.51100093,0.51076579,1};
-specularPower=450;
+specular[]={0.25,0.25,0.25,1};
+specularPower=80;
 PixelShaderID="Super";
 VertexShaderID="Super";
 class Stage1
 {
-	texture="MRHMiscItems\Models\117RadioStation\Data\117FwBattery_nohq.paa";
+	texture="MRHMiscItems\Models\SatComAntenna\Data\bag_nohq.paa";
 	uvSource="tex";
 	class uvTransform
 	{

@@ -100,11 +100,31 @@ class Man;
 
 				class MRH_Ace_UnpackLaserDesignator
 				{
-					displayName = "Unpack laser designator";
+					displayName = $STR_MRH_MRHMiscItems_unpacklaserdesignator;
 					condition = "('MRH_laser_designator' in items MRH_player)";
 					exceptions[] = {"isNotSitting"};
 					statement = "call MRH_fnc_MilsimTools_MiscItems_LaserDesignatorUnpack;";
 					icon = "\MRHMiscItems\Models\LaserDesignator\LaserDesignatorInv_ca.paa";
+					
+				};
+
+				class MRH_Ace_unfoldSatcomAntenna
+				{
+					displayName = $STR_MRH_MRHMiscItems_unfoldSatcomAntenna;
+					condition = "('MRH_MT_FoldedSatcomAntenna' in items MRH_player)";
+					exceptions[] = {"isNotSitting"};
+					statement = "[MRH_player] call MRH_fnc_MilsimTools_MiscItems_unfoldAntenna;";
+					icon = "\MRHMiscItems\Models\SatComAntenna\Data\bagIco_ca.paa";
+					
+				};
+
+				class MRH_Ace_deploy117Fstation
+				{
+					displayName = "Deploy 117F Radio station";
+					condition = "call MRH_fnc_MilsimTools_MiscItems_canDeployRadioStation";
+					exceptions[] = {"isNotSitting"};
+					statement = "[MRH_player] call MRH_fnc_MilsimTools_MiscItems_deployRadioStation;";
+					icon = ""; //todo
 					
 				};
 			};
