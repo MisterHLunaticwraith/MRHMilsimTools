@@ -25,6 +25,7 @@ lbSetPicture [1500,_indexGrp,PAAPATH(icongroup.paa)];
 lbSetData [1500,_indexGrp,"GrpButton"];
 
 _showMap = ["MRH_MilsimTools_AllowMapTablet"] call cba_settings_fnc_get;
+if ([MRH_player]CFUNC(isConnectedToAntenna)) then {_showMap =true};
 if (_showMap) then {
 	_indexMap = _ctrlIcons lbAdd ""; 
 	lbSetPicture [1500,_indexMap,PAAPATH(iconmap.paa)];

@@ -6,7 +6,8 @@ Return value: none
 Public: no
 Parameters: none
 Example(s):
-call MRH_fnc_MilsimTools_SoldierTab_;
+["dataEntry7"]call MRH_fnc_MilsimTools_SoldierTab_findAndReadDataEntry;
+//returs [entryClass,entryTitle,entryBody,[subentries in format [subEntryTitle,subEntryBody]]]
 */
 #include "MRH_C_Path.hpp"
 params ["_dataEntry"];

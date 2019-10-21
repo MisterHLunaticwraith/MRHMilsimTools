@@ -465,17 +465,27 @@
 			<Key ID="STR_MRH_MRHMiscItems_unpacklaserdesignator">
 				<Original>Unpack laser designator</Original>
 				<English>Unpack laser designator</English>
-				<French></French>
+				<French>Déployer le désignateur laser</French>
 			</Key>
 			<Key ID="STR_MRH_MRHMiscItems_unfoldSatcomAntenna">
 				<Original>Unfold SATCOM antenna</Original>
 				<English>Unfold SATCOM antenna</English>
-				<French></French>
+				<French>Déployer l'antenne satellite</French>
 			</Key>
-			<Key ID="STR_MRH_MRHMiscItems_">
-				<Original></Original>
-				<English></English>
-				<French></French>
+			<Key ID="STR_MRH_MRHMiscItems_deploy117Station">
+				<Original>Deploy 117F Radio station</Original>
+				<English>Deploy 117F Radio station</English>
+				<French>Déployer la station radio 117F</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_repack117Station">
+				<Original>Repack 117F Radio station</Original>
+				<English>Repack 117F Radio station</English>
+				<French>Replier la station radio</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_connectedToNewAntenna">
+				<Original>Connected to new antenna, old antenna disconnected.</Original>
+				<English>Connected to new antenna, old antenna disconnected.</English>
+				<French>Connecté à la nouvelle antenne,ancienne antenne déconnectée.</French>
 			</Key>
 			<Key ID="STR_MRH_MRHMiscItems_">
 				<Original></Original>

@@ -9,7 +9,9 @@ Example(s):
 call MRH_fnc_MilsimTools_SoldierTab_PictureChange;
 */
 #include "MRH_C_Path.hpp"
-_pic = lbdata [1206,(lbCursel 1206)]; 
+_picData = lbdata [1206,(lbCursel 1206)]; 
+if (_picData isEqualTo "") exitWith {}; 
+_pic = lbPicture [1206,(lbCursel 1206)];
 _ctrl = FDIS(1207); 
 _ctrl ctrlSetText _pic;
 _whereto = player getVariable ["MRH_SoldierTab_ownedPics",[]];

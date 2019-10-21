@@ -6,8 +6,10 @@ class MRH // Defines the "owner"
 	{
 	tag = "MRH";
 	file = "\MRHSoldierTab\Functions";
+	/*
 	    class MilsimTools_SoldierTab_
 		{};
+	*/
 		class MilsimTools_SoldierTab_AllCtrlsHide
 		{};
 	    class MilsimTools_SoldierTab_TabHub
@@ -53,6 +55,14 @@ class MRH // Defines the "owner"
 		class MilsimTools_SoldierTab_findAndReadDataEntry
 		{};
 		class MilsimTools_SoldierTab_createDataOnTheFly
+		{};
+		class MilsimTools_SoldierTab_HQModuleInit
+		{};
+		class MilsimTools_SoldierTab_getSideHQ
+		{};
+		class hasDataOrPicture
+		{};
+		class MilsimTools_SoldierTab_findAndReadPictureInfo
 		{};
 
 	};

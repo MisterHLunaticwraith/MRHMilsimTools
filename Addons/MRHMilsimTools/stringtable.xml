@@ -159,9 +159,9 @@
 				<French>Autoriser la carte sur la tablette</French>
 			</Key>
 			<Key ID="STR_MRH_CBA_TABLET_ALLOWMAPTOOLTIP">
-				<Original>If disabled the map tab will be hidden on the tablet</Original>
-				<English>If disabled the map tab will be hidden on the tablet</English>
-				<French>Désactiver pour cacher l'onglet carte sur la tablette</French>
+				<Original>If disabled the map tab will be hidden on the tablet,(connecting the tablet to an antenna will always override this setting and allow the map while connected)</Original>
+				<English>If disabled the map tab will be hidden on the tablet,(connecting the tablet to an antenna will always override this setting and allow the map while connected)</English>
+				<French>Désactiver pour cacher l'onglet carte sur la tablette,(n'a pas d'effet si la tablette est connectée à une antenne,tant qu'elle est connectée)</French>
 			</Key>
 			<Key ID="STR_MRH_RequireHackingToolPretty">
 				<Original>Require hacking tool</Original>

@@ -120,11 +120,11 @@ class Man;
 
 				class MRH_Ace_deploy117Fstation
 				{
-					displayName = "Deploy 117F Radio station";
+					displayName = $STR_MRH_MRHMiscItems_deploy117Station;
 					condition = "call MRH_fnc_MilsimTools_MiscItems_canDeployRadioStation";
 					exceptions[] = {"isNotSitting"};
 					statement = "[MRH_player] call MRH_fnc_MilsimTools_MiscItems_deployRadioStation;";
-					icon = ""; //todo
+					icon = "\MRHMiscItems\Models\117RadioStation\Data\117StationUnpackIco.paa"; //todo
 					
 				};
 			};

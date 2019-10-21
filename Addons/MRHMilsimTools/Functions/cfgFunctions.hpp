@@ -203,6 +203,12 @@ class MRH // Defines the "owner"
 		{};
 		class MilsimTools_Core_handleCuratorWaterMark
 		{};
+		class MilsimTools_Core_isConnectedToAntenna
+		{};
+		class MilsimTools_Core_getPlayersWithZeusPowers
+		{};
+		class MilsimTools_Core_addObjectsToCurators
+		{};
 		/*
 		class MilsimTools_Core_
 		{};

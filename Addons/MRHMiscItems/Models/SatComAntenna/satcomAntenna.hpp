@@ -62,7 +62,7 @@ class MRH_MT_SatCom_Antenna: MRH_MT_SatCom_Antenna_Base {
 					displayName = $STR_MRH_MRHMiscItems_connectantennatab;
 					condition = "('MRH_SoldierTab' in items MRH_player) && ((MRH_player getVariable ['MRH_AntennaLinkedToSoldierTablet',objNull]) != _target)";
 					exceptions[] = {};
-					statement = "MRH_player setVariable ['MRH_AntennaLinkedToSoldierTablet',_target,true];playSound3D['MRHMiscItems\Sounds\MRH_SAT_AntennaLinked.ogg',_target];[_target,MRH_player] call MRH_fnc_MilsimTools_MiscItems_handleAntennaConnection;";
+					statement = "[_target,MRH_player] call MRH_fnc_MilsimTools_MiscItems_handleAntennaConnection;";
 					icon = "\MRHMarkers\paa\iconconnect";
 					
 				};

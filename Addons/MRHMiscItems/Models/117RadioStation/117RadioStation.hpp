@@ -41,6 +41,14 @@ class ACE_Actions : ACE_Actions
 		class ACE_MainActions :ACE_MainActions
 		{
 			selection = "mem01";
+			class AntennaConnectTablet {
+					displayName = $STR_MRH_MRHMiscItems_connectantennatab;
+					condition = "('MRH_SoldierTab' in items MRH_player) && ((MRH_player getVariable ['MRH_AntennaLinkedToSoldierTablet',objNull]) != _target)";
+					exceptions[] = {};
+					statement = "[_target,MRH_player] call MRH_fnc_MilsimTools_MiscItems_handleAntennaConnection;";
+					icon = "\MRHMarkers\paa\iconconnect";
+					
+				};
 		};
 	};
 class Turrets: Turrets {
@@ -192,11 +200,11 @@ class MRH_117FRadioStation_NoRack : MRH_117FRadioStation_Base
 		{
 			class MRH_Ace_repack117Fstation
 				{
-					displayName = "Repack 117F Radio station";
+					displayName = $STR_MRH_MRHMiscItems_repack117Station;
 					condition = "[_target] call MRH_fnc_MilsimTools_MiscItems_canRepackRadioStation";
 					exceptions[] = {"isNotSitting"};
 					statement = "[_target,MRH_player] call MRH_fnc_MilsimTools_MiscItems_repackRadioStation;";
-					icon = ""; //todo
+					icon = "\MRHMiscItems\Models\117RadioStation\Data\117StationUnpackIco.paa"; //todo
 					
 				};
 		};
@@ -210,7 +218,7 @@ class MRH_117FRadioStation_NoRack : MRH_117FRadioStation_Base
 			disabledPositions[] = {};
 			defaultComponents[] = {};
 			mountedRadio = "";                 // Predefined mounted radio
-			isRadioRemovable = 1;
+			isRadioRemovable = 0;
 			intercom[] = {"intercom_1"};                   // All units in intercom can receive/send transmittions (ACE3 interaction menu) but they cannot manipulate the radio (GUI interface).
 
 		};
@@ -255,7 +263,8 @@ class  C_MRH_117FRadioStation :  MRH_117FRadioStation_Base
 	crew = "C_man_p_fugitive_F";
 	
 };
-//todelete
+//uncomment for testing purposes
+/*
 class  B_MRH_117FRadioStationTest :  MRH_117FRadioStation_NoRack
 {
 	_generalMacro = "B_MRH_117FRadioStation";
@@ -266,3 +275,4 @@ class  B_MRH_117FRadioStationTest :  MRH_117FRadioStation_NoRack
 	crew = "B_officer_F";
 	
 };
+*/

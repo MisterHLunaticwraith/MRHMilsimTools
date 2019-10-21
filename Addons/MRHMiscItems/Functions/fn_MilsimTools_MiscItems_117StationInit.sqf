@@ -12,7 +12,7 @@ call MRH_fnc_MilsimTools_MiscItems_;
 params ["_station"];
 if (is3DEN) exitWith {};
 if !(isServer && (isClass (configFile>>'cfgPatches'>>'acre_main'))) exitWith {};
-systemChat str _station;
+
 [
     {_this == _this}, 
     {

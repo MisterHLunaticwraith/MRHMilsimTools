@@ -24,6 +24,7 @@ class MRH_MT_protectiveCase : Box_NATO_Ammo_F
 		item_xx(MRH_SoldierTab,15);
 		item_xx(MRH_AADEquippedParachute,10);
 		item_xx(MRH_AADEquippedNSParachute,10);
+		item_xx(MRH_MT_FoldedSatcomAntenna,10);
 	};
 	class TransportBackpacks{};
 };

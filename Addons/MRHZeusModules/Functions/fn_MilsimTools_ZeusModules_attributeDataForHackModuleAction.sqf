@@ -23,7 +23,10 @@ _allDataToAddData = [200119,1500] FUNC(allListBoxData);
 _allPicsToAddData = [200119,1501] FUNC(allListBoxData);
 
 if ((_allDataToAddData isEqualTo []) && (_allPicsToAddData isEqualTo [])) exitWith {[objNull,localize "STR_MRH_MRHMRHZeusModules_ERRORNODATAORPIC"] call BIS_fnc_showCuratorFeedbackMessage;};
-if (isNull _unit) then {_unit = (_CREATECOMBO lbData (lbCurSel _CREATECOMBO)) createVehicle (position _logic)};
+if (isNull _unit) then {
+	_unit = (_CREATECOMBO lbData (lbCurSel _CREATECOMBO)) createVehicle (position _logic);
+	[[_unit]]CFUNC(addObjectsToCurators);
+	};
 
 [[_unit,_duration,_weight,_allDataToAddData,_allPicsToAddData],MRH_fnc_hackDownloadAndCollectData] remoteExec ["Call",[0,-2] select isDedicated,true];
 
