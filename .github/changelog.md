@@ -30,7 +30,8 @@
 * Tweaked : Transfering data and pictures used to transfer all of the owned datas and pictures, now it will only transfer the one that's currently active in the tablet (image or picture), meaning you have to click it in the tablet before sending. For data the whole entry will be stranfered even if a sub entry is active.
 * Added : API function MRH_fnc_hasDataOrPicture to check wether a unit or object owns a given data / picture
 > Parameters are 0 OBJECT unit or HQ to check 1 STRING Data or picture config entry to check for (case sensitive).
-> Examples  ```[MRH_player,"DataEntry_7"]call MRH_fnc_hasDataOrPicture;// will return true if player owns given data ```
+> Examples  
+```[MRH_player,"DataEntry_7"]call MRH_fnc_hasDataOrPicture;// will return true if player owns given data ```
 > ``` 
 TAG_HQHasData_fnc = {
 	params ["_player","_data"];
