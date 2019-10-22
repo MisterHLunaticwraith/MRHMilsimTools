@@ -6,6 +6,7 @@ Return value:
 Public:
 Parameters:
 Example(s):
+//must run on all clients
 [this] call MRH_fnc_dataTerminalAnimate;
 */
 #include "MRH_C_Path.hpp"
@@ -15,12 +16,12 @@ params ["_DT",["_videoToPlay","\MRHMiscItems\Videos\compuHack.ogv"]];
 
 	[_DT, "red", "blue", "green"] call BIS_fnc_DataTerminalColor;
 	[_DT, 1] call BIS_fnc_DataTerminalAnimate;
-	playSound3D ["MRHFunctions\sounds\computerstartup.ogg",_DT];
+	_DT say3D "MRH_DT_computerStartUp";
 	sleep 2;
 	[_DT, 2] call BIS_fnc_DataTerminalAnimate;
-	playSound3D ["MRHFunctions\sounds\computerbip.ogg",_DT];
+	_DT say3D "MRH_DT_computerBip";
 	sleep 2;
 	[_DT, 3] call BIS_fnc_DataTerminalAnimate;
-	playSound3D ["MRHFunctions\sounds\computerkeystrokes.ogg",_DT];
+	_DT say3D "MRH_DT_computerKeyStrokes";
 	[_DT,_videoToPlay] spawn MRH_fnc_MilsimTools_Core_playVideoOnObject;
 };

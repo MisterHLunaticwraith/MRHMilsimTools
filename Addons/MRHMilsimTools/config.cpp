@@ -4,9 +4,9 @@ class CfgPatches {
 		weapons[] = {}; //
 		requiredVersion = 0.1; //
 		requiredAddons[] = {"cba_main"};
-		version = 1.17.6;
-		versionStr = "1.17.6";
-		versionAr[] = {1,17,6};
+		version = 1.17.7;
+		versionStr = "1.17.7";
+		versionAr[] = {1,17,7};
 		versionDesc = "MRH Milsim Tools";
 		versionAct = "call compile preProcessFileLineNumbers '\MRHMilSimTools\about.sqf'";
 		author = "Mr H.";
@@ -123,3 +123,31 @@ class RscTitles
    };
 };
 #include "\MRHMilSimTools\animations\animations.hpp"
+class RscPicture;
+//class Watermark;
+class RscDisplayCurator 
+{
+   
+	class controls 
+	{
+      class MRHDummyCuratorCtrl: RscPicture
+         {
+            idc = 6547;
+            show = false;
+            text = "";
+            x = 1 * safezoneW + safezoneX;
+            y = 1 * safezoneH + safezoneY;
+            w = 0 * safezoneW;
+            h = 0 * safezoneH;
+            onLoad = "[(ctrlParent (_this select 0)),'Load'] call MRH_fnc_MilsimTools_Core_curatorViewEH";
+            
+         };
+     
+      class Watermark : RscPicture
+      {
+         onLoad = "(_this select 0) call MRH_fnc_MilsimTools_Core_handleCuratorWaterMark";//to hide check curatorToggleInterface https://community.bistudio.com/wiki/inputAction/actions#Zeus
+         
+      };
+   };
+    
+};

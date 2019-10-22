@@ -159,9 +159,9 @@
 				<French>Autoriser la carte sur la tablette</French>
 			</Key>
 			<Key ID="STR_MRH_CBA_TABLET_ALLOWMAPTOOLTIP">
-				<Original>If disabled the map tab will be hidden on the tablet</Original>
-				<English>If disabled the map tab will be hidden on the tablet</English>
-				<French>Désactiver pour cacher l'onglet carte sur la tablette</French>
+				<Original>If disabled the map tab will be hidden on the tablet,(connecting the tablet to an antenna will always override this setting and allow the map while connected)</Original>
+				<English>If disabled the map tab will be hidden on the tablet,(connecting the tablet to an antenna will always override this setting and allow the map while connected)</English>
+				<French>Désactiver pour cacher l'onglet carte sur la tablette,(n'a pas d'effet si la tablette est connectée à une antenne,tant qu'elle est connectée)</French>
 			</Key>
 			<Key ID="STR_MRH_RequireHackingToolPretty">
 				<Original>Require hacking tool</Original>
@@ -1087,11 +1087,72 @@
 				<English>If this setting is enabled, players will not be able to load/save their personnal loadouts. Can be changed at any time during the game. Doesn't affect logged in admins</English>
 				<French>Si ce réglage est activé les joueurs ne pourront pas charger/sauver de loadouts personnels. Peut être changé en cours de partie, n'affecte pas les admins loggués.</French>
 			</Key>
-			<Key ID="STR_MRH_MISC_">
-				<Original></Original>
-				<English></English>
-				<French></French>
+			<Key ID="STR_MRH_CBA_DoNotLogDebug">
+				<Original>Log to RPT</Original>
+				<English>Log to RPT</English>
+				<French>Enregistrer les logs</French>
 			</Key>
+			<Key ID="STR_MRH_CBA_DoNotLogDebugToolTip">
+				<Original>If disabled, the mod won't log anything to RPT, not recommanded! (switching on debug mode will override this and log anyway)</Original>
+				<English>If disabled, the mod won't log anything to RPT, not recommanded! (switching on debug mode will override this and log anyway)</English>
+				<French>Si ce réglage est désactivé le mod ne logguera rien dans le RPT,désactiver ce réglage n'est pas recommandé! (Si le mod débuggage est enclenché ce réglage est ignoré et les logs sont enregistrés)</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_ZeusHideWaterMarkPretty">
+				<Original>Hide zeus watermark</Original>
+				<English>Hide zeus watermark</English>
+				<French>Cacher le logo Zeus</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_ZeusHideWaterMarkToolTip">
+				<Original>If enabled Zeus watermark will be hidden in the zeus interface</Original>
+				<English>If enabled Zeus watermark will be hidden in the zeus interface</English>
+				<French>Si ce réglage est activé le logo zeus sera caché dans l'interface Zeus</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_ZeusWaterMarkListPretty">
+				<Original>Use alternate watermark</Original>
+				<English>Use alternate watermark</English>
+				<French>Utiliser un logo différent</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_ZeusWaterMarkListToolTip">
+				<Original>If you chose 'Squad Insignia' the Zeus logo will be replaced by the player's squad logo (from arma 3 units), if you chose 'custom', enter the path to the picture in the setting custom watermark image</Original>
+				<English>If you chose 'Squad Insignia' the Zeus logo will be replaced by the player's squad logo (from arma 3 units), if you chose 'custom', enter the path to the picture in the setting custom watermark image</English>
+				<French>Si vous choisissez 'Insigne de l'unit' le logo Zeus sera remplacé par celui de l'unité du joueur (sur arma 3 units), si vous choisissez 'personnalisé', entrez le chemin de l'image dans le réglage image personnalisée</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_ZeusUseVanillaIcon">
+				<Original>Use default</Original>
+				<English>Use default</English>
+				<French>Logo par défaut</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_ZeusUseMilsimToolsIcon">
+				<Original>Milsim Tools Logo</Original>
+				<English>Milsim Tools Logo</English>
+				<French>Logo Milsim Tools</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_ZeusUsePlayerSquadIcon">
+				<Original>Squad insignia</Original>
+				<English>Squad insignia</English>
+				<French>Insigne de l'unit.</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_ZeusUseCustomSet">
+				<Original>Custom</Original>
+				<English>Custom</English>
+				<French>Personnalisé</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_ZeusCustomSetWatermarkPretty">
+				<Original>Custom watermark image:</Original>
+				<English>Custom watermark image:</English>
+				<French>Image personnalisée</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_ZeusCustomSetWatermarkToolTip">
+				<Original>This picture will be used if alternate watermark setting is set to 'Custom'</Original>
+				<English>This picture will be used if alternate watermark setting is set to 'Custom'</English>
+				<French>Cette image sera utilisée si le réglage utilisé un logo différent est réglé sur 'personnalisé'</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_">
+				<Original>Path to the picture</Original>
+				<English>Path to the picture</English>
+				<French>Chemin de l'image</French>
+			</Key>
+		
 			
 
 		</Container>

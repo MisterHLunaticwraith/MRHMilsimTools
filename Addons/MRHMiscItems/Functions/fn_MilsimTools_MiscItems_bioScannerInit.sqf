@@ -15,7 +15,7 @@ params ["_do","_scanner"];
 
 waitUntil {time>1};
 
-if !(_do) exitWith {_message = format ["Scanner %1 setting: do not lock ",_scanner]; [_message] call MRH_fnc_MilsimTools_DebugTools_trace;};
+if !(_do) exitWith {private _message = format ["Scanner %1 setting: do not lock ",_scanner]; [_message] call MRH_fnc_MilsimTools_DebugTools_trace;};
 _scanner setVariable ['MRH_ScannerSettings_autoLockNearestDoor',_do,true];
 
 private "_building";
@@ -25,5 +25,5 @@ if (_bldStr != "<NULL-object>") then {_building = call compile _bldStr} else {_b
 
 _doorNumber = [_scanner,_building] CFUNC(nearestDoorNumber);
 [_building,_doorNumber] CFUNC(toggleDoorState);
-_message = format ["Bioscanner %1 lock  engaged for building %2 door %3",_scanner,_building,_doorNumber];
+private _message = format ["Bioscanner %1 lock  engaged for building %2 door %3",_scanner,_building,_doorNumber];
 [_message]call MRH_fnc_MilsimTools_DebugTools_trace;

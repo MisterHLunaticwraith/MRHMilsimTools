@@ -50,7 +50,8 @@ class MRH // Defines the "owner"
 		{};
 		class MilsimTools_DebugTools_showAddonsButtonAction
 		{};
-		
+		class MilsimTools_DebugTools_stampLog
+		{};
 		
 
 		/*

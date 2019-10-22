@@ -11,7 +11,7 @@ Example(s):
 [player,["pic1","pic2"]]call MRH_fnc_MilsimTools_SoldierTab_attributePictures;
 */
 #include "MRH_C_Path.hpp"
-params ["_receiver","_picturesArray"];
+params ["_receiver","_picturesArray",["_sender",objNull]];
 _playerPics = _receiver getVariable ["MRH_SoldierTab_ownedPics",[]];
 {
 _playerPics pushBackUnique _x;
@@ -25,4 +25,9 @@ if (isPlayer _receiver) then
 		["MRH_Data_Received",[localize "STR_MRH_ST_FC_PictureNotif"]] call BIS_fnc_showNotification;
 
 	},[]] call MRH_fnc_MilsimTools_Core_RemoteFor;
+	["MRH_Player_ReceivedPictures",[_receiver,_picturesArray,_sender],_receiver] call CBA_fnc_targetEvent;
+};
+if (_receiver isKindOf "MRH_HQ_Module_Base") then 
+{
+	["MRH_SideHQ_ReceivedPictures",[_receiver,_picturesArray,_sender],_receiver] call CBA_fnc_targetEvent;
 };

@@ -33,7 +33,9 @@ _unit setCombatMode _targetBehaviour;
 _grp = group _unit;
 _grp setBehaviour "SAFE";
 _unit setSpeedMode _targetSpeed;
-_success = [_grp, getPos _unit, _patrolDis] call BIS_fnc_taskPatrol;
+if !(_patrolDis <= 0) then {
+private _success = [_grp, getPos _unit, _patrolDis] call BIS_fnc_taskPatrol;
+};
 [_veh] call MRH_fnc_MilsimTools_SniperTraining_isTarget;
 {
 [_x] call MRH_fnc_MilsimTools_SniperTraining_isTarget;
@@ -45,6 +47,8 @@ _unit = _grp createUnit [_toCreate,  call compile _spawnPos, [], 0, "NONE"];
 _unit setCombatMode _targetBehaviour;
 _grp setBehaviour "SAFE";
 _unit setSpeedMode _targetSpeed;
-_success = [_grp, getPos _unit, _patrolDis] call BIS_fnc_taskPatrol;
+if !(_patrolDis <= 0) then {
+private _success = [_grp, getPos _unit, _patrolDis] call BIS_fnc_taskPatrol;
+};
 
 [_unit] call MRH_fnc_MilsimTools_SniperTraining_isTarget; };

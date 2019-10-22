@@ -6,3 +6,4 @@ class CBA_MiscItem_ItemInfo;
 #include "\MRHMiscItems\Models\ShootingMats\cfgWeaponsShootingMats.hpp"
 #include "\MRHMiscItems\Models\MedicalTent\cfgWeaponsMedicalTent.hpp"
 #include "\MRHMiscItems\Models\LaserDesignator\cfgWeaponsLaserDesignator.hpp"
+#include "\MRHMiscItems\Models\SatComAntenna\antennaInventoryItem.hpp"

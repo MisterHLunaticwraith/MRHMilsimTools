@@ -82,7 +82,7 @@ _script	Script to execute when setting is changed.  (optional) <CODE>
 ["MRH_MilsimTools_BluForCivs", "EDITBOX",   [localize "STR_MRH_CBA_Heli_ForCiv",localize "STR_MRH_CBA_Heli_ClassnamesToolTip"], ["MRH_MilsimTools - Heli Taxi",localize "STR_MRH_CBA_Heli_ForCiv"],"C_Heli_Light_01_civil_F",1] call cba_settings_fnc_init;
 //---------below are the settings for medevac
 ["MRH_MilsimTools_MEDEVAC_UseMedEVACInMission", "CHECKBOX",   [localize "STR_MRH_CBA_MEDEVAC_useMedEvac",localize "STR_MRH_CBA_MEDEVAC_useMedEvacTooltip"], "MRH_MilsimTools - MEDEVAC",false,1] call cba_settings_fnc_init;
-["MRH_MilsimTools_MEDEVAC_DelayBetween", "SLIDER",   [localize "STR_MRH_CBA_MEDEVAC_delayBetweenSettings",localize "STR_MRH_CBA_MEDEVAC_delayBetweenSettingsToolTip"],"MRH_MilsimTools - MEDEVAC",[0,1200,120,0],1] call cba_settings_fnc_init;
+["MRH_MilsimTools_MEDEVAC_DelayBetween", "SLIDER",   [localize "STR_MRH_CBA_MEDEVAC_delayBetweenSettings",localize "STR_MRH_CBA_MEDEVAC_delayBetweenSettingsToolTip"],"MRH_MilsimTools - MEDEVAC",[0,3600,120,0],1] call cba_settings_fnc_init;
 
 ["MRH_MilsimTools_MEDEVAC_timeToReachLZ", "SLIDER",   [localize "STR_MRH_CBA_MEDEVAC_timeToReachLZSetting",localize "STR_MRH_CBA_MEDEVAC_timeToReachLZSettingToolTip"],"MRH_MilsimTools - MEDEVAC",[0,3000,600,0],1] call cba_settings_fnc_init; //set min to 60 after debug
 
@@ -213,6 +213,8 @@ _script	Script to execute when setting is changed.  (optional) <CODE>
 //-----------below are the settings for the debug mode 
 ["MRH_MilsimTools_DebugTools_isDebugMode", "CHECKBOX",   [localize "STR_MRH_CBA_DebugMode_SettingName",localize "STR_MRH_CBA_DebugMode_SettingNameToolTip"],["MRH_MilsimTools - Debug Mode"],false,1,{call MRH_fnc_MilsimTools_DebugTools_debugHintboxInit;}] call cba_settings_fnc_init;
 
+["MRH_MilsimTools_DebugTools_DoLogDebugMode", "CHECKBOX",   [localize "STR_MRH_CBA_DoNotLogDebug",localize "STR_MRH_CBA_DoNotLogDebugToolTip"],["MRH_MilsimTools - Debug Mode"],true,1] call cba_settings_fnc_init;
+
 //--------- below are the settings for the field medical tent
 
 ["MRH_MilsimTools_MiscItems_FieldMedicalTentDeployTime", "SLIDER",   [localize "STR_MRH_CBA_MedTentDeploySetting",localize "STR_MRH_CBA_MedTentDeploySettingToolTip"], "MRH_MilsimTools - Medical Tent", [20, 120, 20, 0],1] call cba_settings_fnc_init;
@@ -228,3 +230,8 @@ _script	Script to execute when setting is changed.  (optional) <CODE>
 ["MRH_MilsimTools_MiscItems_CAMP_DeployTime", "SLIDER",   [localize "STR_MRH_CBA_CampDeployTime",localize "STR_MRH_CBA_CompDeployTimeTooltip"], ["MRH_MilsimTools - Deployable Fobs", "Camp"], [10, 240, 10, 0],1] call cba_settings_fnc_init;
 ["MRH_MilsimTools_MiscItems_CAMP_GRepackTime", "SLIDER",   [localize "STR_MRH_CBA_CampRepackTime",localize "STR_MRH_CBA_CompRepackTimeToolTip"], ["MRH_MilsimTools - Deployable Fobs", "Camp"], [10, 240, 10, 0],1] call cba_settings_fnc_init;
 ["MRH_MilsimTools_MiscItems_CAMP_GRepackRadius", "SLIDER",   [localize "STR_MRH_CBA_CampRadiusAroundDelete",localize "STR_MRH_CBA_CompDeleteDistRadiusToolTip"], ["MRH_MilsimTools - Deployable Fobs", "Camp"], [0, 100, 10, 0],1] call cba_settings_fnc_init;
+
+//----Below are the settings for Zeus
+["MRH_MilsimTools_Zeus_hideWaterMark", "CHECKBOX",   [localize "STR_MRH_CBA_ZeusHideWaterMarkPretty",localize "STR_MRH_CBA_ZeusHideWaterMarkToolTip"],["MRH_MilsimTools - Zeus"],false,0] call cba_settings_fnc_init;
+["MRH_MilsimTools_Zeus_waterMark", "LIST",[localize "STR_MRH_CBA_ZeusWaterMarkListPretty",localize "STR_MRH_CBA_ZeusWaterMarkListToolTip"],["MRH_MilsimTools - Zeus"],[["UseVanilla","UseMilsimTools","UseSquadXml","UseCustom"],[(localize "STR_MRH_CBA_ZeusUseVanillaIcon"),(localize "STR_MRH_CBA_ZeusUseMilsimToolsIcon"),(localize "STR_MRH_CBA_ZeusUsePlayerSquadIcon"),(localize "STR_MRH_CBA_ZeusUseCustomSet")],0],0] call cba_settings_fnc_init;
+["MRH_MilsimTools_Zeus_waterMarkCustomImg", "EDITBOX",   [localize "STR_MRH_CBA_ZeusCustomSetWatermarkPretty",localize "STR_MRH_CBA_ZeusCustomSetWatermarkToolTip"],["MRH_MilsimTools - Zeus"],"\MRHMilsimTools\Paa\zeusicon.paa",0] call cba_settings_fnc_init;

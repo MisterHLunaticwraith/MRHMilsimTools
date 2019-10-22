@@ -5,7 +5,7 @@ class MRH_BioScanner : MRH_BioScanner_Base
 {
 	author = "Mr H";
 	mapSize = 0.07;
-	editorPreview = "";
+	editorPreview = "\MRHMiscItems\Models\BioScanner\Data\bioscannerpreview.jpg";
 	scope = 2;
 	scopeCurator = 2;
 	displayName = $STR_MRH_MRHMiscItems_bioscanDisp;

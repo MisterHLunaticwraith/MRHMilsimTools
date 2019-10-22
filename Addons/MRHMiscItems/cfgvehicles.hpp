@@ -3,9 +3,11 @@
 #define item_xx(a,b) class _xx_##a {name = a; count = b;}
 #define backPack_xx(a,b) class _xx_##a {backpack = a; count = b;}
 //	#include "MRH_C_Path.hpp"
+
 //declare parents here
 class Items_base_F;
 class Static;
+//class LandVehicle;
 class ShootingMat_01_folded_Olive_F;
 class ShootingMat_01_folded_Khaki_F;
 class ShootingMat_01_Olive_F;
@@ -17,6 +19,34 @@ class Camping_base_F;
 class ACE_medicalSupplyCrate_advanced;
 class B_Slingload_01_Cargo_F;
 class B_W_Static_Designator_01_F;
+class Banner_01_F;
+ class Land;
+class LandVehicle : Land 
+{
+	class Turrets;
+};
+class StaticWeapon : LandVehicle 
+{
+	class Turrets : Turrets 
+	{
+		class MainTurret;
+	};
+	class ACE_Actions 
+	{
+		class ACE_MainActions;
+	};
+};
+/*
+class StaticWeapon: LandVehicle {
+	class Turrets {
+		class MainTurret;
+	};
+
+	class ACE_Actions {
+		class ACE_MainActions;
+	};
+};
+*/
 //include items here
 #include "\MRHMiscItems\Models\ElevatorButton\ElevatorButton.hpp"
 #include "\MRHMiscItems\Models\UsbThumbDrive\usbDrive.hpp"
@@ -24,6 +54,12 @@ class B_W_Static_Designator_01_F;
 #include "\MRHMiscItems\Models\ShootingMats\shootingmats.hpp"
 #include "\MRHMiscItems\Models\MedicalTent\medicalTent.hpp"
 #include "\MRHMiscItems\Models\Case\protectiveCase.hpp"
+#include "\MRHMiscItems\Models\ProjectionScreen\projectionScreens.hpp"
+#include "\MRHMiscItems\Models\BigGreenBox\BigGreenBox.hpp"
+#include "\MRHMiscItems\Models\ANPRC117\prc117.hpp"
+#include "\MRHMiscItems\Models\ANPRC152\prc152.hpp"
+#include "\MRHMiscItems\Models\SatComAntenna\satcomAntenna.hpp"
+#include "\MRHMiscItems\Models\117RadioStation\117RadioStation.hpp"
 
 class Man;
     class CAManBase: Man 
@@ -64,11 +100,31 @@ class Man;
 
 				class MRH_Ace_UnpackLaserDesignator
 				{
-					displayName = "Unpack laser designator";
+					displayName = $STR_MRH_MRHMiscItems_unpacklaserdesignator;
 					condition = "('MRH_laser_designator' in items MRH_player)";
 					exceptions[] = {"isNotSitting"};
 					statement = "call MRH_fnc_MilsimTools_MiscItems_LaserDesignatorUnpack;";
 					icon = "\MRHMiscItems\Models\LaserDesignator\LaserDesignatorInv_ca.paa";
+					
+				};
+
+				class MRH_Ace_unfoldSatcomAntenna
+				{
+					displayName = $STR_MRH_MRHMiscItems_unfoldSatcomAntenna;
+					condition = "('MRH_MT_FoldedSatcomAntenna' in items MRH_player)";
+					exceptions[] = {"isNotSitting"};
+					statement = "[MRH_player] call MRH_fnc_MilsimTools_MiscItems_unfoldAntenna;";
+					icon = "\MRHMiscItems\Models\SatComAntenna\Data\bagIco_ca.paa";
+					
+				};
+
+				class MRH_Ace_deploy117Fstation
+				{
+					displayName = $STR_MRH_MRHMiscItems_deploy117Station;
+					condition = "call MRH_fnc_MilsimTools_MiscItems_canDeployRadioStation";
+					exceptions[] = {"isNotSitting"};
+					statement = "[MRH_player] call MRH_fnc_MilsimTools_MiscItems_deployRadioStation;";
+					icon = "\MRHMiscItems\Models\117RadioStation\Data\117StationUnpackIco.paa"; //todo
 					
 				};
 			};
@@ -139,6 +195,7 @@ class MRH_AcexFoodSuppliesCrate : CargoNet_01_box_F
                
     };
     class TransportBackpacks{};
+	#include "canFlipMacro.hpp"
 };
 
 class MRH_FOB_container : B_Slingload_01_Cargo_F
@@ -154,6 +211,7 @@ class MRH_FOB_container : B_Slingload_01_Cargo_F
 		init = "[_this,'MainFob'] call MRH_fnc_MilsimTools_MiscItems_FOB_init;";
 		
 	};
+	#include "canFlipMacro.hpp"
 };
 
 class MRH_camp_container : MRH_emptySupplyBox
@@ -163,6 +221,7 @@ class MRH_camp_container : MRH_emptySupplyBox
 		init = "[_this,'Camp'] call MRH_fnc_MilsimTools_MiscItems_FOB_init;";
 		
 	};
+	#include "canFlipMacro.hpp"
 };
 
 class MRH_laser_designator : B_W_Static_Designator_01_F //Static_Designator_01_base_F//

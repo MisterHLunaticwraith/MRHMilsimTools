@@ -1,9 +1,9 @@
 class CfgPatches {
 	class SoldierTab{
-		units[] = {}; //
+		units[] = {"B_MRH_HQ_Module","O_MRH_HQ_Module","I_MRH_HQ_Module","C_MRH_HQ_Module"}; //
 		weapons[] = {"MRH_SoldierTab"}; //
 		requiredVersion = 0.1; //
-		requiredAddons[] = {"MRHMilsimTools"}; //
+		requiredAddons[] = {"MRHMilsimTools","MRHZeusModules","MRHMarkers"}; //
 	};
 };
 

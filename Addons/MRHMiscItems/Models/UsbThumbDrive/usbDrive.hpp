@@ -9,7 +9,7 @@ class MRH_USB_ThumbDrive : Items_base_F {
 		verticalOffsetWorld = 0;
 		init = "''";
 	};
-	editorPreview = "";
+	editorPreview = "\MRHMiscItems\Models\UsbThumbDrive\Data\MRH_USB_ThumbDrive.jpg";
 	//_generalMacro = "Land_BottlePlastic_V2_F";
 	scope = 2;
 	scopeCurator = 2;

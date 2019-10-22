@@ -11,7 +11,7 @@ Example(s):
 [player,["dataEntry1","dataEntry2"]]call MRH_fnc_MilsimTools_SoldierTab_attributeData;
 */
 #include "MRH_C_Path.hpp"
-params ["_receiver","_DataToAdd"];
+params ["_receiver","_DataToAdd",["_sender",objNull]];
 _playerData = _receiver getVariable ["MRH_SoldierTab_ownedData",[]];
 {
 _playerData pushBackUnique _x;
@@ -26,4 +26,9 @@ if (isPlayer _receiver) then
 		["MRH_Data_Received",[localize "STR_MRH_ST_FC_DataNotif"]] call BIS_fnc_showNotification;
 
 	},[]] call MRH_fnc_MilsimTools_Core_RemoteFor;
+	["MRH_Player_ReceivedData",[_receiver,_DataToAdd,_sender],_receiver] call CBA_fnc_targetEvent;
+};
+if (_receiver isKindOf "MRH_HQ_Module_Base") then 
+{
+	["MRH_SideHQ_ReceivedData",[_receiver,_DataToAdd,_sender],_receiver] call CBA_fnc_targetEvent;
 };

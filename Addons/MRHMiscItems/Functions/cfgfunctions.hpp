@@ -40,6 +40,22 @@ class MRH // Defines the "owner"
 		{};
 		class MilsimTools_MiscItems_binHandlers
 		{};
+		class MilsimTools_MiscItems_handleAntennaConnection
+		{};
+		class MilsimTools_MiscItems_foldAntenna
+		{};
+		class MilsimTools_MiscItems_unfoldAntenna
+		{};
+		class MilsimTools_MiscItems_117StationInit
+		{};
+		class MilsimTools_MiscItems_deployRadioStation
+		{};
+		class MilsimTools_MiscItems_repackRadioStation
+		{};
+		class MilsimTools_MiscItems_canDeployRadioStation
+		{};
+		class MilsimTools_MiscItems_canRepackRadioStation
+		{};
 	};
 	
 };

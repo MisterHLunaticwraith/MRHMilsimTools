@@ -387,11 +387,115 @@
 				<English>The door is locked</English>
 				<French>La porte est vérouillée</French>
 			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_smallProjScreen">
+				<Original>Small projection screen</Original>
+				<English>Small projection screen</English>
+				<French>Ecran de projection (petit)</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_largeProjScreen">
+				<Original>Large projection screen</Original>
+				<English>Large projection screen</English>
+				<French>Ecran de projection (grand)</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_edSubCatScreenShotHelpers">
+				<Original>Screenshot helpers</Original>
+				<English>Screenshot helpers</English>
+				<French>Aides aux screenshot</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_bigGreenBoxName">
+				<Original>Big green box (for screenshots)</Original>
+				<English>Big green box (for screenshots)</English>
+				<French>Grosse boîte verte (aide aux screenshots)</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_ANPRC117F_name">
+				<Original>AN/PRC 117F Radio</Original>
+				<English>AN/PRC 117F Radio</English>
+				<French>Radio AN/PRC 117F</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_FlipAction">
+				<Original>Flip</Original>
+				<English>Flip</English>
+				<French>Retourner</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_prc152DispName">
+				<Original>AN/PRC 152 Radio</Original>
+				<English>AN/PRC 152 Radio</English>
+				<French>Radio AN/PRC 152</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_TrivecAventSATCOMAnt">
+				<Original>Trivec Avant SATCOM Antenna</Original>
+				<English>Trivec Avant SATCOM Antenna</English>
+				<French>Antenne satellite Trivec Avant</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_RadioPosts">
+				<Original>Radio station</Original>
+				<English>Radio station</English>
+				<French>Positions radios</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_117FStationDisplay">
+				<Original>117F Radio SATCOM station</Original>
+				<English>117F Radio SATCOM station</English>
+				<French>Poste radio 117F SATCOM</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_AcreDashName">
+				<Original>Radio</Original>
+				<English>Radio</English>
+				<French>Radio</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_satComBagAntennaDisp">
+				<Original>SATCOM Antenna in bag</Original>
+				<English>SATCOM Antenna in bag</English>
+				<French>Antenne satellite (sac)</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_satcomBagdesc">
+				<Original>A SATCOM antenna used to transmit long range, can be connected to a tablet</Original>
+				<English>A SATCOM antenna used to transmit long range, can be connected to a tablet</English>
+				<French>Une antenne satellite, utilisée pour les transmissions longue distance peut se connecter à la tablette</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_connectantennatab">
+				<Original>Connect to tablet</Original>
+				<English>Connect to tablet</English>
+				<French>Connecter la tablette à l'antenne</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_foldAntenna">
+				<Original>Fold antenna</Original>
+				<English>Fold antenna</English>
+				<French>Replier l'antenne</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_unpacklaserdesignator">
+				<Original>Unpack laser designator</Original>
+				<English>Unpack laser designator</English>
+				<French>Déployer le désignateur laser</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_unfoldSatcomAntenna">
+				<Original>Unfold SATCOM antenna</Original>
+				<English>Unfold SATCOM antenna</English>
+				<French>Déployer l'antenne satellite</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_deploy117Station">
+				<Original>Deploy 117F Radio station</Original>
+				<English>Deploy 117F Radio station</English>
+				<French>Déployer la station radio 117F</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_repack117Station">
+				<Original>Repack 117F Radio station</Original>
+				<English>Repack 117F Radio station</English>
+				<French>Replier la station radio</French>
+			</Key>
+			<Key ID="STR_MRH_MRHMiscItems_connectedToNewAntenna">
+				<Original>Connected to new antenna, old antenna disconnected.</Original>
+				<English>Connected to new antenna, old antenna disconnected.</English>
+				<French>Connecté à la nouvelle antenne,ancienne antenne déconnectée.</French>
+			</Key>
 			<Key ID="STR_MRH_MRHMiscItems_">
 				<Original></Original>
 				<English></English>
 				<French></French>
 			</Key>
+		
+		
+		
+		
 		
 			
 		</Container>

@@ -138,6 +138,57 @@
 				<English>You need to have a PDA to collect this data</English>
 				<French>Vous avez besoin d'un PDA pour récupérer les données</French>
 			</Key>
+			<Key ID="STR_MRH_ST_ModuleAttributeHQNAME">
+				<Original>HQ Callsign</Original>
+				<English>HQ Callsign</English>
+				<French>Indicatif du QG</French>
+			</Key>
+			<Key ID="STR_MRH_ST_noOneInRange">
+				<Original>Unavailable</Original>
+				<English>Unavailable</English>
+				<French>Indisponible</French>
+			</Key>
+			<Key ID="STR_MRH_ST_noOneInRangeHint">
+				<Original>No one in range, get closer to another player of your side or connect to an antenna to increase range.</Original>
+				<English>No one in range, get closer to another player of your side or connect to an antenna to increase range.</English>
+				<French>Personne n'est à votre portée, rapprochez vous d'un autre joueur de votre camps ou connectez-vous à une antenne pour augmenter la portée</French>
+			</Key>
+			<Key ID="STR_MRH_ST_moduleDescHQM">
+				<Original>This module creates a HQ for its side, everytime the module receives data or pictures, all synchronized units receive the data or pictures too, a global cba EH is fired</Original>
+				<English>This module creates a HQ for its side, everytime the module receives data or pictures, all synchronized units receive the data or pictures too, a global cba EH is fired</English>
+				<French>Ce module crée un QG pour sa faction, à chaque fois que le module reçoit des images ou des données un event CBA global est déclenché et toutes les unités qui lui sont synchronisées reçoivent les données aussi.</French>
+			</Key>
+			<Key ID="STR_MRH_ST_moduleNameHQWEST">
+				<Original>BLUFOR HQ</Original>
+				<English>BLUFOR HQ</English>
+				<French>QG BLUFOR</French>
+			</Key>
+			
+			<Key ID="STR_MRH_ST_moduleNameHQEAST">
+				<Original>OPFOR HQ</Original>
+				<English>OPFOR HQ</English>
+				<French>QG OPFOR</French>
+			</Key>
+			
+			<Key ID="STR_MRH_ST_moduleNameHQIND">
+				<Original>IND. HQ</Original>
+				<English>IND. HQ</English>
+				<French>QG INDE</French>
+			</Key>
+			
+			<Key ID="STR_MRH_ST_moduleNameHQCIV">
+				<Original>CIV. HQ</Original>
+				<English>CIV. HQ</English>
+				<French>QG CIVIL</French>
+			</Key>
+			
+			<Key ID="STR_MRH_ST_">
+				<Original></Original>
+				<English></English>
+				<French></French>
+			</Key>
+			
+			
 		</Container>
 	</Package>
 </Project>
