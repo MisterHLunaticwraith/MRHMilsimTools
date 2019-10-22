@@ -1,3 +1,76 @@
+#Changelog: MRH Milsim Tools version : v.1.17.7
+## Core
+* Added: MRH_MISSION_ROOT public variable <STRING>
+> Whenever a mission as a description.ext this variable will be created pointing to the mission root see here http://killzonekid.com/arma-scripting-tutorials-mission-root/ for possible uses
+* Added : several utilty core functions
+## Medevac
+* Fixed: ETA counter will now show properly in MP
+* Tweaked: max delay setting can go up to 3600 seconds
+## Items
+###### Fixes:
+* Multiple RVMATS reworked, transparency issue with Bioscanner fixed. THX to Horrible Goat for is help on the Arma 3 Discord
+* Multiple missing editor previews added
+* Fixed: missing string message for one of the Bioscanner actions
+* Tweaked : MOB and camp containers can now be flipped when tilted with ace action
+###### Added items and props
+* Added: projection screens (large and small ones)THX to Horrible Goat and Dedmen for their help on the Arma 3 Discord
+> They have two hidden selections  where you can apply custom textures 0 and 1 (1 overlays above 0)
+* Added : Giant green box
+> useful for taking screenshots with a green background or filming hollywood style! Color can be changed from the attributes, rvmat can be changed with setObjectMaterial command. Setting to a black lightless rvmat has a cool eerie effect, maybe you can use it in a trippy mission. Box is very big, meant to be used by placing things inside.
+* Added : AN/PRC117F radio prop
+* Added : AN/PRC152 prop radio
+* Added : Trivec Avant SATCOM antenna
+> This is not the same as MRH Satellite's own antenna, the base model was the same but I reworked it, optimized it, rescaled it and retextured it. In time this model will also replace the satellite's mod SATCOM Antenna. The antenna can be folded and carried in inventory and connected to with a tablet (see more in the tablet changes section of this changelog). It is NOT YET compatible with MRH Satellite mod features but will be in a very short time.
+* Added : AN/PRC 117F radio station
+> Now that's a big one! This prop is actually an enterable vehicle that you will find in the editor under Radio Stations > turrets for each side. It's a PRC117F connected to an antenna and with pluggued in 'phone'.It can be connected to a tablet just like the satcom antenna (ACE interactions). Using it with TFAR it has a rack vehicle radio. (I don't use TFAR so that's the only use I could think of with it any other ideas are welcome). Now ACRE2 users will have a way more in depth experience: the vehicle comes equipped with a rack 117F radio that you can use from both inside and outside (you can only set the channel from inside). In addition to that, players carrying both an ACRE2 117F radio and a folded satcom antenna will be able to deploy this station (ACE self interactions>> equipment) on the ground and their 117F will be mounted inside, retaining its settings. When repacking it the 117F is replaced in the player's inventory but the folded SATCOM antenna is left on the ground, don't forget to get it back. The station can and will be damaged when taking fire in the antenna, once damaged you can't repack it and so loose the radio. A variant of this functionnality for TFAR users might be added in the future if players have some interest for it.
+## Tablet
+* Changed: tablet can be connected to a SATCOM antenna or a 117F radio to share data to distant users, the distant user has too be connected to an antenna to appear in the transfer file list and be able to receive data (stil only works for users of the same side). Unconnected the data transfer range is still 10m / or all users inside the same vehicle.
+* Changed : when connected to an antenna/ a radio station the map tab will be available, even if it's disabled in the settings.
+* Fixed : transmitting players won't showup in their own transfer list
+* Tweaked : Transfering data and pictures used to transfer all of the owned datas and pictures, now it will only transfer the one that's currently active in the tablet (image or picture), meaning you have to click it in the tablet before sending. For data the whole entry will be stranfered even if a sub entry is active.
+* Added : API function MRH_fnc_hasDataOrPicture to check wether a unit or object owns a given data / picture
+> Parameters are 0 <OBJECT> unit or HQ to check 1 <STRING> Data or picture config entry to check for (case sensitive).
+> Examples  ```[MRH_player,"DataEntry_7"]call MRH_fnc_hasDataOrPicture;// will return true if player owns given data ```
+> ``` 
+TAG_HQHasData_fnc = {
+	params ["_player","_data"];
+	private _hq = ([_player] call MRH_fnc_MilsimTools_SoldierTab_getSideHQ)#2;
+	private _HQHASPIC = [_hq,_data]call MRH_fnc_hasDataOrPicture;
+	_HQHASPIC
+	};
+	[MRH_player,"My_CaseSensitive_PicCfg_Entry"] call TAG_HQHasData_fnc; // will return true if the player's side HQ has received the picture (will only work if a HQ is set for player's side in the mission) see below for explanations on HQs
+ ```
+ * Added : Optionnal Mission HQ modules (in the editor Systems>>modules>> MRH Modules)
+ > HQs pretty name can be defined in their attributes, default is PAPA BEAR, each HQ works as a receiver for datas and pictures. Players need to be connected to a satcom antenna / 117F radio station to be able to transmit to HQ, HQ will then be listed in the receivers under its pretty name.
+ > Upon receiving a data / picture three things will happen:
+ 1. Any unit that's synchronized to the HQ in the editor will also receive the data.
+ 2. All players that have zeus powers will be prompted with a notification telling them which data/ picture has been received by the hq
+ 3. A global cba event is raised
+ > "MRH_SideHQ_ReceivedData_global" parameters passed to the event are 0 <OBJECT> HQ module 1 <STRING> HQ call sign 2 <ARRAY> of <STRINGS> data entries transmitted to the HQ 3 <OBJECT> sender (player or objNull if data is added by attributeData function)
+ > "MRH_SideHQ_ReceivedPictures_global" parameters passed to the event are 0 <OBJECT> HQ module 1 <STRING> HQ call sign 2 <ARRAY> of <STRINGS> picture entries transmitted to the HQ 3 <OBJECT> sender (player or objNull if data is added by attributePictures function)
+## Zeus features
+- Added: CBA Events when a player goes into zeus interface:
+> "MRH_curatorViewOpened_global" fires globally whenever a player enters the zeus interface, player entering zeus is passed as parameter (_this select 0)
+> "MRH_curatorViewOpened" fires on the client who entered zeus interface only, passed parameters are 0 <DISPLAY> zeus interface display and 1 <OBJECT> player unit
+> "MRH_curatorViewClosed_global" fires globally whenever a player leaves the zeus interface, player leaving zeus is passed as parameter (_this select 0)
+> "MRH_curatorViewClosed" fires on the client who left zeus interface only, passed parameters are 0 <DISPLAY> zeus interface display and 1 <OBJECT> player unit
+* Added: settings to hide and customize the zeus logo watermark in zeus interface.
+> You can set the watermark to be: always hidden, a custom image, the player who is zeus's team logo if they are in an arma unit, or milsim tool's logo. These setteings can be changed midgame. This also works with achilles enabled but won't be applied when the interface takes too long a time to load with achilles enabled. Just exit and reenter and it should be okay. 
+## Zeus modules
+* Fixed : the Data Terminal sounds would play several times in MP when the terminal is hacked
+* Fixed : data terminal and laptop created with the create hack functions are now added to allcurators
+## Sniper aid
+* Fixed: target spawner can now spawn non moving targets (0m patrol range) without divided by 0 errors
+* Fixed: ZoneHeight parameter for the training area function now has intented effect
+* Tweaked: in target spawner interface, positions are now listed ordered by distance
+## Debug Tools
+* Fixed: logged variables whould sometimes get messed up
+* Added : setting to disable all logs from the mod (at list those created with the mod's own logging system, older Diag_logs in some functions will still show but will be replaced in time). This setting doesn't apply when in debug mod obviously.
+## Radio chatter
+* Tweaked: Now uses playSound 3D instead of say3D
+>Upside: should fix the mess in mp that sometimes happened when players jiped,Downside: when turning off the radio the current sound will continue playing until finished (immediate shutdown didn't work correctly in MP anyway)
+###### Wow that's all folks! A pretty big changelog for a pretty big update!
+///////////////////////////////////
 Changelog:
 MRH Milsim Tools version : v.1.17.6
 - Debug tools : Added tab in 3 den under tools: lists all mods and their addons, can be exported to clipboard, can be exported in github bug report format (compliant with the bug report templates for cba and ace 3)
