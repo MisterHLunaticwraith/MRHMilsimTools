@@ -32,7 +32,8 @@
 > Parameters are 0 OBJECT unit or HQ to check 1 STRING Data or picture config entry to check for (case sensitive).
 > Examples  
 ```[MRH_player,"DataEntry_7"]call MRH_fnc_hasDataOrPicture;// will return true if player owns given data ```
-> ``` 
+
+ ``` 
 TAG_HQHasData_fnc = {
 	params ["_player","_data"];
 	private _hq = ([_player] call MRH_fnc_MilsimTools_SoldierTab_getSideHQ)#2;
