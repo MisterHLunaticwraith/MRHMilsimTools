@@ -1,4 +1,4 @@
-#Changelog: MRH Milsim Tools version : v.1.17.7
+# Changelog: MRH Milsim Tools version : v.1.17.7
 ## Core
 * Added: MRH_MISSION_ROOT public variable <STRING>
 > Whenever a mission as a description.ext this variable will be created pointing to the mission root see here http://killzonekid.com/arma-scripting-tutorials-mission-root/ for possible uses
@@ -12,7 +12,7 @@
 * Multiple missing editor previews added
 * Fixed: missing string message for one of the Bioscanner actions
 * Tweaked : MOB and camp containers can now be flipped when tilted with ace action
-###### Added items and props
+###### Added items and props:
 * Added: projection screens (large and small ones)THX to Horrible Goat and Dedmen for their help on the Arma 3 Discord
 > They have two hidden selections  where you can apply custom textures 0 and 1 (1 overlays above 0)
 * Added : Giant green box
@@ -29,7 +29,7 @@
 * Fixed : transmitting players won't showup in their own transfer list
 * Tweaked : Transfering data and pictures used to transfer all of the owned datas and pictures, now it will only transfer the one that's currently active in the tablet (image or picture), meaning you have to click it in the tablet before sending. For data the whole entry will be stranfered even if a sub entry is active.
 * Added : API function MRH_fnc_hasDataOrPicture to check wether a unit or object owns a given data / picture
-> Parameters are 0 <OBJECT> unit or HQ to check 1 <STRING> Data or picture config entry to check for (case sensitive).
+> Parameters are 0 OBJECT unit or HQ to check 1 STRING Data or picture config entry to check for (case sensitive).
 > Examples  ```[MRH_player,"DataEntry_7"]call MRH_fnc_hasDataOrPicture;// will return true if player owns given data ```
 > ``` 
 TAG_HQHasData_fnc = {
@@ -46,14 +46,14 @@ TAG_HQHasData_fnc = {
  1. Any unit that's synchronized to the HQ in the editor will also receive the data.
  2. All players that have zeus powers will be prompted with a notification telling them which data/ picture has been received by the hq
  3. A global cba event is raised
- > "MRH_SideHQ_ReceivedData_global" parameters passed to the event are 0 <OBJECT> HQ module 1 <STRING> HQ call sign 2 <ARRAY> of <STRINGS> data entries transmitted to the HQ 3 <OBJECT> sender (player or objNull if data is added by attributeData function)
- > "MRH_SideHQ_ReceivedPictures_global" parameters passed to the event are 0 <OBJECT> HQ module 1 <STRING> HQ call sign 2 <ARRAY> of <STRINGS> picture entries transmitted to the HQ 3 <OBJECT> sender (player or objNull if data is added by attributePictures function)
+ > "MRH_SideHQ_ReceivedData_global" parameters passed to the event are 0 OBJECT HQ module 1 STRING HQ call sign 2 ARRAY of STRINGS data entries transmitted to the HQ 3 OBJECT sender (player or objNull if data is added by attributeData function)
+ > "MRH_SideHQ_ReceivedPictures_global" parameters passed to the event are 0 OBJECT HQ module 1 STRING HQ call sign 2 ARRAY of STRINGS picture entries transmitted to the HQ 3 OBJECT sender (player or objNull if data is added by attributePictures function)
 ## Zeus features
 - Added: CBA Events when a player goes into zeus interface:
 > "MRH_curatorViewOpened_global" fires globally whenever a player enters the zeus interface, player entering zeus is passed as parameter (_this select 0)
-> "MRH_curatorViewOpened" fires on the client who entered zeus interface only, passed parameters are 0 <DISPLAY> zeus interface display and 1 <OBJECT> player unit
+> "MRH_curatorViewOpened" fires on the client who entered zeus interface only, passed parameters are 0 DISPLAY zeus interface display and 1 OBJECT player unit
 > "MRH_curatorViewClosed_global" fires globally whenever a player leaves the zeus interface, player leaving zeus is passed as parameter (_this select 0)
-> "MRH_curatorViewClosed" fires on the client who left zeus interface only, passed parameters are 0 <DISPLAY> zeus interface display and 1 <OBJECT> player unit
+> "MRH_curatorViewClosed" fires on the client who left zeus interface only, passed parameters are 0 DISPLAY zeus interface display and 1 OBJECT player unit
 * Added: settings to hide and customize the zeus logo watermark in zeus interface.
 > You can set the watermark to be: always hidden, a custom image, the player who is zeus's team logo if they are in an arma unit, or milsim tool's logo. These setteings can be changed midgame. This also works with achilles enabled but won't be applied when the interface takes too long a time to load with achilles enabled. Just exit and reenter and it should be okay. 
 ## Zeus modules
