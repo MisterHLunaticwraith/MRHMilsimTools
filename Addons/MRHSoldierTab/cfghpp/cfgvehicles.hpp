@@ -133,7 +133,7 @@ class  O_MRH_HQ_Module : MRH_HQ_Module_Base
 
 		scope = 2;
 		//scopeCurator = 1;
-		displayName = STR_MRH_ST_moduleNameHQEAST;
+		displayName = $STR_MRH_ST_moduleNameHQEAST;
 };
 
 class  I_MRH_HQ_Module : MRH_HQ_Module_Base
