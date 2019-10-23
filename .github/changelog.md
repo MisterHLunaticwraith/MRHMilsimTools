@@ -1,3 +1,41 @@
+# Changelog: MRH Milsim Tools version : v.1.17.8
+## Soldier tab
+* Fixed : Missing $ on displayname cfg entry for HQ module west
+* Added : Local events when viewing data and pictures:
+For data:
+ ``` 
+ // "MRH_ST_dataViewedChanged" with passed parameters : ARRAY
+ params ["_entryClass","_entryTitle","_entryBody",["_subEntries",[]]];
+ //eg
+ (_subEntries select 0) params ["_subEntryTitle","_subEntryBody"];
+ 
+ //example :
+ ["MRH_ST_dataViewedChanged", 
+{
+	params ["_entryClass","_entryTitle","_entryBody",["_subEntries",[]]];
+	systemChat str _this;
+	hintSilent format ["Now viewing data: %1", _entryTitle];
+}] call CBA_fnc_addEventHandler;
+ 
+ ```
+ For pics:
+ ```
+ //"MRH_ST_picViewedChanged" with passed parameters ARRAY
+ params ["_picEntry","_caption","_picpath"];
+ // example :
+ 
+ ["MRH_ST_picViewedChanged", 
+{
+	params ["_picEntry","_caption","_picpath"];
+	systemChat str _this;
+	hintSilent format ["Now viewing picture: %1", _caption];
+}] call CBA_fnc_addEventHandler;
+ ```
+## Misc Items
+* Fixed : several Rvmats that needed fixing
+
+
+///////////////////////////
 # Changelog: MRH Milsim Tools version : v.1.17.7
 ## Core
 * Added: MRH_MISSION_ROOT public variable <STRING>

@@ -28,12 +28,13 @@ if (_pathCount == 2) then
 _subSectionData = call compile (tvdata [1208,tvCurSel 1208]); 
 _title = _subSectionData select 0;
 _text = _subSectionData select 1;
+_rawData = [(tvdata [1208,[((tvCurSel 1208)select 0)]])] FUNC(findAndReadDataEntry);
 };
 
 _textFinal = "<t size = '2'><t color='#ffa42d'>" + _title + "</t></t>" + "<br/><br/>" + _text;
 FDIS(1209) ctrlSetStructuredText parsetext _textFinal;
 CTRLRSZ(1209);
-
+["MRH_ST_dataViewedChanged",_rawData] call CBA_fnc_localEvent;
 /*
 //oold version just in case
 _rawData = [tvdata [1208,tvCurSel 1208], []] call BIS_fnc_configPath;
