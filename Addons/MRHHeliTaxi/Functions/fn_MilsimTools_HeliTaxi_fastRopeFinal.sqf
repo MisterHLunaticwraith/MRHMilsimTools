@@ -9,7 +9,7 @@ call MRH_fnc_MilsimTools_HeliTaxi_;
 */
 #include "MRH_C_Path.hpp"
 params ["_heli","_destination"];
-
+if !(isServer) exitWith {};
 if !([typeOf _heli]FUNC(canReceiveFries)) exitWith {private _toTrace = format ["%1 isn't configured for ACE3 FRIES"];TRACE(_toTrace)};
 //----------approach phase
 //_heli flyInHeight 20;
