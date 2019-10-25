@@ -25,4 +25,11 @@ class cfgSounds
 	};
 
 };
+class Extended_PostInit_EventHandlers
+{
+	class MRHMilsimTools_RadioChatter_XEH_server
+   {
+      serverInit = "call compile preProcessFileLineNumbers '\MRHRadioChatter\XEHserver.sqf'";
+   };
+};
 #include "\MRHRadioChatter\cfgMRHFactionSounds.hpp"
