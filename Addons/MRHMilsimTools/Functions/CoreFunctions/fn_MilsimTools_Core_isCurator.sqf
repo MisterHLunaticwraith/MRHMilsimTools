@@ -14,8 +14,13 @@ Example(s):
 if (is3DEN) exitWith{};
 _this spawn {
 		params ["_unit"];
-		waitUntil {(time>5) && (player == _unit)};
-		[[_unit],MRH_fnc_MilsimTools_Core_serverCreateCurator] RemoteExec ["Call",2];
+		TRACE("Is curator called");
+		if (hasInterface) then {
+		waitUntil {(time>5) && (player == _unit)}; // if called on the server in MP (as from mission attributes) player does not exist, skip that part
+		}
+		else
+		{waitUntil {(time>5)&& (alive _unit)}};
+		[[_unit],MRH_fnc_MilsimTools_Core_serverCreateCurator] RemoteExec ["Call",2]; //only happens on the server when called from attributes but can be called from a client too
 		_toTrace = format ["isCurator function called for %1",_unit];
 		TRACE(_toTrace);
 	};
