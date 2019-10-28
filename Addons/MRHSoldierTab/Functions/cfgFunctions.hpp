@@ -64,6 +64,8 @@ class MRH // Defines the "owner"
 		{};
 		class MilsimTools_SoldierTab_findAndReadPictureInfo
 		{};
+		class MilsimTools_SoldierTab_RefreshSatPage
+		{};
 
 	};
 	
