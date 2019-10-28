@@ -117,3 +117,50 @@ if(MRH_MISSION_ROOT_FOUND) then {
 		["MRH_Zeus_Notif",[_message]] call BIS_fnc_showNotification;
 	};
 }] call CBA_fnc_addEventHandler;
+
+["MRH_Core_ActivateTrigger_event",
+	{
+				params ["_trigger",["_reset",false]];
+		//----set Trigger to be repeatable
+		private _trgACT =triggerActivation _trigger;
+		if (_trgACT select 2) then {_reset = true};
+		_trgACTTEMP =  +_trgACT;
+		_trgACTTEMP = [(_trgACT select 0),(_trgACT select 1),true];
+		_trigger setTriggerActivation _trgACTTEMP;
+
+
+		//-----Activate Trigger
+		private _trgSTAT = triggerStatements _trigger;
+
+		private _trgSTATSTEMP = +_trgSTAT;
+		_trgSTATSTEMP set [0,"true"];
+		_trigger setTriggerStatements _trgSTATSTEMP;
+		if !(_reset) exitWith {_trigger setTriggerActivation _trgACT;};
+		//---- wait 3 seconds and reset trigger to its orginal state
+		[
+			{
+				params ["_trigger", "_trgSTATSTemp","_trgACT","_trgSTAT"];
+				//---- deactivate trigger
+				_trgSTATSTEMP set [0,"false"];
+				_trigger setTriggerStatements _trgSTATSTEMP;
+				//--requires some delay
+				[
+					{
+						params ["_trigger", "_trgACT","_trgSTAT"];
+						//--- reset trigger to its orginal state
+						_trigger setTriggerActivation _trgACT;
+						_trigger setTriggerStatements _trgSTAT;
+
+					}, 
+					[_trigger, _trgACT,_trgSTAT], 
+					1
+				] call CBA_fnc_waitAndExecute;
+
+				
+			}, 
+			[_trigger, _trgSTATSTemp,_trgACT,_trgSTAT], 
+			3
+		] call CBA_fnc_waitAndExecute;
+
+	}
+] call CBA_fnc_addEventHandler;

@@ -209,6 +209,10 @@ class MRH // Defines the "owner"
 		{};
 		class MilsimTools_Core_addObjectsToCurators
 		{};
+		class MilsimTools_Core_triggerActivate_global
+		{};
+		class MilsimTools_Core_triggerActivate_target
+		{};
 		/*
 		class MilsimTools_Core_
 		{};
