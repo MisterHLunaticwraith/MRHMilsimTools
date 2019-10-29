@@ -60,6 +60,23 @@ class MRH // Defines the "owner"
 		{};
 		class MilsimTools_SoldierTab_RefreshSatPage
 		{};
+		class MilsimTools_SoldierTab_tabPicOnBriefingScreen
+		{};
+		class MilsimTools_SoldierTab_briefingScreenControlsHub
+		{};
+		class MilsimTools_SoldierTab_connectToRemote
+		{};
+		class MilsimTools_SoldierTab_includesScreenWithOverlayCapability
+		{};
+		class MilsimTools_SoldierTab_playVideoOnScreens
+		{};
+		class MilsimTools_SoldierTab_killVideoFeeds
+		{};
+		class MilsimTools_SoldierTab_getTexturePath
+		{};
+		class MilsimTools_SoldierTab_briefTransmitHQData
+		{};
+	
 		//--- API FUNCS
 		class MilsimTools_SoldierTab_attributePictures
 		{};
@@ -68,6 +85,8 @@ class MRH // Defines the "owner"
 		class hasDataOrPicture
 		{};
 		class HQHasData
+		{};
+		class isBriefingRemote
 		{};
 
 	};

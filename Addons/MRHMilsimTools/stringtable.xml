@@ -1147,10 +1147,30 @@
 				<English>This picture will be used if alternate watermark setting is set to 'Custom'</English>
 				<French>Cette image sera utilisée si le réglage utilisé un logo différent est réglé sur 'personnalisé'</French>
 			</Key>
+			<Key ID="STR_MRH_CBA_briefScreenSpecOverlay">
+				<Original>Special overlay for briefing screens</Original>
+				<English>Special overlay for briefing screens</English>
+				<French>Overlay spécial pour les écrans de briefing</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_briefScreenSpecOverlayToolTip">
+				<Original>Choose an overlay image in paa format with transparent alpha, it can be toggled on and off, the option to display it will only show if one of the briefing screen is a MRH_ProjectionScreen object</Original>
+				<English>Choose an overlay image in paa format with transparent alpha, it can be toggled on and off, the option to display it will only show if one of the briefing screen is a MRH_ProjectionScreen object</English>
+				<French>Choisir une image d'overlay au format paa avec un alpha transparent, il peut être montré ou caché en cours de jeu, l'option ne sera affichée que si l'un des écrans de briefing est du type MRH_ProjectionScreen</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_briefSCreenPathToVideos">
+				<Original>Path to videos you can play on the screen</Original>
+				<English>Path to videos you can play on the screen</English>
+				<French>Chemin des vidéos jouables sur l'écran</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_briefSCreenPathToVideosToolTip">
+				<Original>Path(s) to videos, separated by comas. Videos must be in .ogv format</Original>
+				<English>Path(s) to videos, separated by comas. Videos must be in .ogv format</English>
+				<French>Chemins des vidéos, séparés par des virgules. Les vidéos doivent être au format .ogv </French>
+			</Key>
 			<Key ID="STR_MRH_CBA_">
-				<Original>Path to the picture</Original>
-				<English>Path to the picture</English>
-				<French>Chemin de l'image</French>
+				<Original></Original>
+				<English></English>
+				<French></French>
 			</Key>
 		
 			
