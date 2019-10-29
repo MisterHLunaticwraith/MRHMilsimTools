@@ -8,7 +8,7 @@
 				class MRH_Ace_USE_SOLDIERPDA
 				{
 					displayName = $STR_MRH_ST_ACE_EQUIPOPENPDA;
-					condition = "'MRH_SoldierTab' in items player";
+					condition = "'MRH_SoldierTab' in items MRH_player";
 					exceptions[] = {"notOnMap", "isNotInside", "isNotSitting"};
 					statement = "call MRH_fnc_MilsimTools_SoldierTab_OpenTablet;";
 					icon = "\MRHSoldierTab\models\Tablet\tableticon.paa";

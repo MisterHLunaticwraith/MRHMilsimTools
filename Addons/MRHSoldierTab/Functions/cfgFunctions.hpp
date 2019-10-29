@@ -28,10 +28,6 @@ class MRH // Defines the "owner"
 		{};
 		class MilsimTools_SoldierTab_PictureChange
 		{};
-		 class MilsimTools_SoldierTab_attributePictures
-		{};
-		class MilsimTools_SoldierTab_attributeData
-		{};
 		class MilsimTools_SoldierTab_onTvCurSelChanged
 		{};
 		class MilsimTools_SoldierTab_StopWatch
@@ -60,11 +56,18 @@ class MRH // Defines the "owner"
 		{};
 		class MilsimTools_SoldierTab_getSideHQ
 		{};
-		class hasDataOrPicture
-		{};
 		class MilsimTools_SoldierTab_findAndReadPictureInfo
 		{};
 		class MilsimTools_SoldierTab_RefreshSatPage
+		{};
+		//--- API FUNCS
+		class MilsimTools_SoldierTab_attributePictures
+		{};
+		class MilsimTools_SoldierTab_attributeData
+		{};
+		class hasDataOrPicture
+		{};
+		class HQHasData
 		{};
 
 	};

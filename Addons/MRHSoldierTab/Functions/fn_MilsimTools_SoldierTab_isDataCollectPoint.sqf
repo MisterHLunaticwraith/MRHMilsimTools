@@ -23,12 +23,12 @@ _object SVAR(PicturesToCollect,_pictures,true);
 _object SVAR(MustBeRemoved,_remove,true);
 
 _statement = {
-	if !("MRH_SoldierTab" in items player) ExitWith {hint (localize "STR_MRH_ST_FC_HintNeedTab");};
+	if !("MRH_SoldierTab" in items MRH_player) ExitWith {hint (localize "STR_MRH_ST_FC_HintNeedTab");};
 	_object = _this select 0;
 	_Data = _object GVAR(DataToCollect);
-	if !(_Data isEqualTo []) then {[player,_Data] FUNC(attributeData);};
+	if !(_Data isEqualTo []) then {[MRH_player,_Data] FUNC(attributeData);};
 	_Pictures = _object GVAR(PicturesToCollect);
-	if !(_Pictures isEqualTo []) then {[player,_Pictures] FUNC(attributePictures);};
+	if !(_Pictures isEqualTo []) then {[MRH_player,_Pictures] FUNC(attributePictures);};
 	_remove = _object GVAR(MustBeRemoved);
 	if (_remove) then {
 		[_object,0,["ACE_MainActions","MRH_SoldierTab_CollectDataAndPics"]] remoteExecCall ["ace_interact_menu_fnc_removeActionFromObject", 0, true];

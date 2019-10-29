@@ -14,7 +14,7 @@ _pageSpecificCtrls = [1206,1207,12071,8200,8201];
 {
 ctrlShow [_x,true];
 }ForEach _pageSpecificCtrls;
-_playerPics = player getVariable ["MRH_SoldierTab_ownedPics",[]];
+_playerPics = MRH_player getVariable ["MRH_SoldierTab_ownedPics",[]];
 _missionPics = missionNamespace getVariable ["MRH_SoldierTab_missionPics",[]];
 _picsListBox = FDIS(1206);
 _picsToDisplay = [];

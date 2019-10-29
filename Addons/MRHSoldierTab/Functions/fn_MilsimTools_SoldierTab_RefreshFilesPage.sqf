@@ -16,7 +16,7 @@ ctrlShow [_x,true];
 }ForEach _pageSpecificCtrls;
 _ctrlTree = FDIS(1208);
 _ctrlText = FDIS(1209);
-_allDataEntries = player getVariable ["MRH_SoldierTab_ownedData",[]];
+_allDataEntries = MRH_player getVariable ["MRH_SoldierTab_ownedData",[]];
 
 tvClear 1208;
 if (_allDataEntries isEqualTo []) ExitWith {_ctrlText ctrlSetStructuredText parseText (localize "STR_MRH_ST_FC_NoData")};

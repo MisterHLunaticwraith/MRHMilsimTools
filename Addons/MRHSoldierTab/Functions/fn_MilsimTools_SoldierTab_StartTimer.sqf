@@ -10,7 +10,7 @@ call MRH_fnc_MilsimTools_SoldierTab_StartTimer;
 */
 [] spawn {
 	#include "MRH_C_Path.hpp"
-	_aTimerIsRunning = player getVariable ["MRH_SoldierTab_timerIsRunning",false];
+	_aTimerIsRunning = MRH_player getVariable ["MRH_SoldierTab_timerIsRunning",false];
 	if (_aTimerIsRunning) ExitWith {};
 	_hours = ctrlText 7708;
 	_hours = parseNumber _hours;
@@ -39,7 +39,7 @@ call MRH_fnc_MilsimTools_SoldierTab_StartTimer;
 	if (_isStillRunning) then {
 	//_soundPath = [(str missionConfigFile), 0, -15] call BIS_fnc_trimString;//Temptodelete
 	_soundToPlay = "MRHSoldierTab\Sounds\MRH_TAB_VibrateAlarm.ogg";//temptodelete_soundPath + 
-	playSound3D [_soundToPlay,player,false,getPosASL player,10,1,10];
+	playSound3D [_soundToPlay,MRH_player,false,getPosASL MRH_player,10,1,10];
 	
 	};
 	PLSVAR(timerIsRunning,false,false);

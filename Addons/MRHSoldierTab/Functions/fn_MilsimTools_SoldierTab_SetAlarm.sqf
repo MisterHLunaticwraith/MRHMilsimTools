@@ -9,7 +9,7 @@ Example(s):
 call MRH_fnc_MilsimTools_SoldierTab_SetAlarm;
 */
 #include "MRH_C_Path.hpp"
-_isAlarmRunning = player getVariable ["MRH_SoldierTab_runningAlarmScript", scriptNull];
+_isAlarmRunning = MRH_player getVariable ["MRH_SoldierTab_runningAlarmScript", scriptNull];
 if !(isNull _isAlarmRunning) ExitWith {};
 _hours = ctrlText 7715;
 _hours = parseNumber _hours;
@@ -46,7 +46,7 @@ PLSVAR(nextAlarmText,_alarmText,false);
 		PLSVAR(runningAlarmScript,scriptNull,false);
 			//_soundPath = [(str missionConfigFile), 0, -15] call BIS_fnc_trimString;//Temptodelete
 	_soundToPlay = "MRHSoldierTab\Sounds\MRH_TAB_VibrateAlarm.ogg";//temptodelete//_soundPath +
-	playSound3D [_soundToPlay,player,false,getPosASL player,10,1,10]; 
+	playSound3D [_soundToPlay,MRH_player,false,getPosASL MRH_player,10,1,10]; 
 	for "_i" from 1 to 6 do {
 	FDIS(7703) ctrlSetStructuredText parseText _alarmText;
 	sleep 0.5;

@@ -11,7 +11,7 @@ call MRH_fnc_MilsimTools_SoldierTab_StopWatch;
 [] spawn{
 	#include "MRH_C_Path.hpp"
 	PLSVAR(StopWatchRunning,true,false);
-	_resumeTime = player getVariable ["MRH_SoldierTab_StopWatchStoppedAt",0];
+	_resumeTime = MRH_player getVariable ["MRH_SoldierTab_StopWatchStoppedAt",0];
 	_time = 0;
 	_runTime = 0;
 	if (_resumeTime !=0) then {_time = (time - _resumeTime)} else {_time = time};
