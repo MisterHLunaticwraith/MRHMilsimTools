@@ -1,3 +1,72 @@
+# Changelog: MRH Milsim Tools version : v.1.17.9
+## Soldier Tab
+* Tweaked: Zeus controlled units can now use the tablet, they can transmit it and share it but they can't receive it via shared transfer (only by script or collecting data), players won't get a notification when they receive data as a zeus controlled unit.
+* Tweaked: getSideHQ function now accepts side as well as object as a parameter
+* Added compatibility with MRH Satellite mod. If the mod is enabled and the tablet is connected to an antenna, it can receive the satellite feed. (but not control the satellite, you still need a sat backback, a preset device or an UTD to do that).
+* Added : MRH_fnc_HQHAsData function to test wether a HQ has a data or picture
+```
+Function name: MRH_fnc_HQHasData
+Author: Mr H.
+Description: returns wether the side's hq has received givent data or picture
+Return value: <BOOL>
+Public: Yes
+Parameters: none
+0-<SIDE> or <OBJECT> if object side of object will be used
+1- <STRING> cfg entry of picture or data, /!\ case sensitive /!\
+Example(s):
+[player,"pic1"]call MRH_fnc_HQHAsData;
+or
+[west,"pic1"]call MRH_fnc_HQHAsData;
+```
+* Added: MRH_fnc_isBriefingRemote function
+>With this function you can turn a briefing room into something more. Use it to make an object a "briefing controller" and make it control your briefing room's screen(s), you can then use it with ACE3 actions to do several things:
+- Connect your tablet to it: Any picture you look at on your tablet will be shown on the screens.
+- Play videos (the videos you can play must be listed in the cba settings) the videos are played on the screen. To stop the video on from playing on every client hit play when "no video" is selected in the drop down menu.
+- Show/hide an overlay (any picture in paa format with a transparent alpha can be used) on some screens (for the moment only the mod's "MRH_projectionScreenSmall","MRH_projectionScreenLarge", can do that and the option in the ace action will only show if an object of this type is listed in the screens).
+-Send data and pictures owned by your side's HQ to all nearby players (20m radius).
+-If the mod MRHSatellite is enabled you will also be able to display the satellite feed once the satellite is initiated.
+```
+ Function name: MRH_fnc_isBriefingRemote
+Author: Mr H.
+Description: Turns given object into a briefing controls console, can control multiple screens.
+Return value: none
+Public: yes
+Parameters:
+0-<OBJECT> Object that will be the remote controller and receive ACE3 actions.
+1-<ARRAY>of <OBJECTS> Screens that will receive the image (if one of the screens is of type "MRH_projectionScreenSmall","MRH_projectionScreenLarge" there will be an extra action to add an overlay.)
+Example(s):
+[this,[this,satScreen]]call MRH_fnc_isBriefingRemote;
+```
+
+##Misc Items
+* Fixed : Antenna bag Rvmat
+## Core
+* Added:
+Two functions to activate triggers by script:
+>MRH_fnc_MilsimTools_Core_triggerActivate_global will activate trigger everywhere while MRH_fnc_MilsimTools_Core_triggerActivate_target will activate only on a selected client.
+See functions headers for more
+* Tweaked : playsound3D functions now retrieves sound volume and pitch distance info too and use them
+* Fixed : Ticking is zeus in attributes wouldn't work in MP
+
+## Radio Chatter
+* Complete revamp of the system, code optimization, passed to unscheduled environment only
+* Fixed: players cannot exploit the radio to start it on and off multiple times and play multiple sounds at once.
+* Tweaked because of the changes of playSound3D core functions settings (volume,pitch,distance) set in the cfgsounds will be used.
+* Tweaked: less calls between clients and server means a lot of ressources are saved.
+* Added: Function to stop all radios from playing:
+```true call MRH_fnc_MilsimTools_RadioChatter_killAllRadios; ```
+Will stop all radios (ONCE they are finished playing their sounds) and immediatly hide ace 3 actions.
+```false call MRH_fnc_MilsimTools_RadioChatter_killAllRadios; ```
+Will reeanable the action and allow players to restart the radios but not restart them
+
+``` call MRH_fnc_MilsimTools_RadioChatter_restartAllRadios;```
+Will reenable the radios and restart them.
+
+## Heli taxi:
+fixed: Loiter, Hover and Fastrope functions were called several times causing issues.
+
+
+////////////////////////////////////////////////////
 # Changelog: MRH Milsim Tools version : v.1.17.8
 ## Soldier tab
 * Fixed : Missing $ on displayname cfg entry for HQ module west
