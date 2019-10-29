@@ -42,6 +42,11 @@ lbSetData [1500,_indexAlarm,"AlarmButton"];
 _indexFiles = _ctrlIcons lbAdd ""; 
 lbSetPicture [1500,_indexFiles,PAAPATH(iconfiles.paa)];
 lbSetData [1500,_indexFiles,"FilesButton"];
+if (isClass (configFile>>"cfgPatches">>"MRHSatellite"))then {
+	_indexSat = _ctrlIcons lbAdd ""; 
+	lbSetPicture [1500,_indexSat,PAAPATH(satBlack_ca.paa)];
+	lbSetData [1500,_indexSat,"SatButton"];
+};
 
 
 

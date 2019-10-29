@@ -56,7 +56,7 @@ class ChronoStop: RscButtonMRHSoldierTab
 	FS;
 	TXT_SP;
 	MVT;
-	action = "player setVariable ['MRH_SoldierTab_StopwatchRunning',false];";
+	action = "MRH_player setVariable ['MRH_SoldierTab_StopwatchRunning',false];";
 	x = 0.556719 * safezoneW + safezoneX;
 	y = 0.335 * safezoneH + safezoneY;
 	w = 0.04125 * safezoneW;
@@ -264,7 +264,7 @@ class TimerCancel: RscButtonMRHSoldierTab
 	FS;
 	TXT_SP;
 	MVT;
-	action = "player setVariable ['MRH_SoldierTab_timerIsRunning',false];";
+	action = "MRH_player setVariable ['MRH_SoldierTab_timerIsRunning',false];";
 	x = 0.618594 * safezoneW + safezoneX;
 	y = 0.511 * safezoneH + safezoneY;
 	w = 0.0309375 * safezoneW;

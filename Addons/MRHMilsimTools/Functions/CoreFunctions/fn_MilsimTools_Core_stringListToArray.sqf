@@ -7,7 +7,7 @@ Public: No
 Parameters:
 
 Example(s):
-[]call MRH_fnc_MilsimTools_Core_;
+[]call MRH_fnc_MilsimTools_Core_stringListToArray;
 */
 #include "MRH_C_Path.hpp"
 params ["_string"];

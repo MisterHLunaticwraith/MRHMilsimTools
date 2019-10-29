@@ -18,4 +18,5 @@ case (_selected == "MapButton"):{FUNC(RefreshMapPage)};
 case (_selected == "PicsButton"):{FUNC(RefreshPicsPage)};
 case (_selected == "AlarmButton"):{FUNC(RefreshAlarmPage)};
 case (_selected == "FilesButton"):{FUNC(RefreshFilesPage)};
+case (_selected == "SatButton"):{FUNC(RefreshSatPage)};
 };

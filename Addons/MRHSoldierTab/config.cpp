@@ -10,6 +10,7 @@ class CfgPatches {
 //interface components
 #include "\MRHSoldierTab\dialogs\defines.hpp"
 #include "\MRHSoldierTab\dialogs\dialogsSoldierTablet.hpp"
+#include "\MRHSoldierTab\dialogs\videoChoiceMenu.hpp"
 //
 
 class cfgFunctions

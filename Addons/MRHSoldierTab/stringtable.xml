@@ -182,11 +182,67 @@
 				<French>QG CIVIL</French>
 			</Key>
 			
+			<Key ID="STR_MRH_ST_selectVidToPlay">
+				<Original>Select video to play</Original>
+				<English>Select video to play</English>
+				<French>Sélectionnez la vidéo</French>
+			</Key>
+			<Key ID="STR_MRH_ST_cancel">
+				<Original>Cancel</Original>
+				<English>Cancel</English>
+				<French>Annuler</French>
+			</Key>
+			<Key ID="STR_MRH_ST_playVid">
+				<Original>Play</Original>
+				<English>Play</English>
+				<French>Jouer</French>
+			</Key>
+			<Key ID="STR_MRH_ST_hintConnectedSystemBriefing">
+				<Original>You are connected to the briefing system</Original>
+				<English>You are connected to the briefing system</English>
+				<French>Vous êtes connecté au système de briefing</French>
+			</Key>
+			<Key ID="STR_MRH_ST_hintBriefSystemDisco">
+				<Original>You've been disconnected from briefing controls</Original>
+				<English>You've been disconnected from briefing controls</English>
+				<French>Vous êtes déconnecté du contrôle de l'écran.</French>
+			</Key>
+			<Key ID="STR_MRH_ST_connectToConsAction">
+				<Original>Connect to console</Original>
+				<English>Connect to console</English>
+				<French>Se connecter à la console</French>
+			</Key>
+			<Key ID="STR_MRH_ST_showSatFeedAction">
+				<Original>Show Satellite Feed</Original>
+				<English>Show Satellite Feed</English>
+				<French>Afficher le flux du satellite</French>
+			</Key>
+			<Key ID="STR_MRH_ST_hideShowOlayToggle">
+				<Original>Toggle overlay</Original>
+				<English>Toggle overlay</English>
+				<French>Montrer / cacher overlay</French>
+			</Key>
+			<Key ID="STR_MRH_ST_playVidAction">
+				<Original>Play a video</Original>
+				<English>Play a video</English>
+				<French>Jouer une vidéo</French>
+			</Key>
+			<Key ID="STR_MRH_ST_transmitHQDataAction">
+				<Original>Transmit data from HQ: %1 to players (within a 20 m radius)</Original>
+				<English>Transmit data from HQ: %1 to players (within a 20 m radius)</English>
+				<French>Transmettre les données du QG: %1 aux joueurs présents (rayon de 20 m)</French>
+			</Key>
+			<Key ID="STR_MRH_ST_briefingMainCtrlACtion">
+				<Original>Briefing controls</Original>
+				<English>Briefing controls</English>
+				<French>Controles de briefing</French>
+			</Key>
 			<Key ID="STR_MRH_ST_">
 				<Original></Original>
 				<English></English>
 				<French></French>
 			</Key>
+			
 			
 			
 		</Container>

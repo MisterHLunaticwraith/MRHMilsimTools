@@ -17,8 +17,8 @@ ctrlShow [_x,true];
 
 [] spawn {
 	_mapCtrl = FDIS(1205);
-	_markerName = str player;
-	createMarkerLocal [_markerName , [(position player) select 0,(position player) select 1]];
+	_markerName = str MRH_player;
+	createMarkerLocal [_markerName , [(position MRH_player) select 0,(position MRH_player) select 1]];
 	_markerName setMarkerTypeLocal "MRH_Admin_PositionMarker";
 	_mapCtrl ctrlmapAnimAdd [0, 0.1, markerPos _markerName];
 	ctrlmapAnimCommit _mapCtrl;
@@ -28,7 +28,7 @@ ctrlShow [_x,true];
 	} 
 	do 
 	{
-	_markerName setMarkerPosLocal [(position player) select 0,(position player) select 1];
+	_markerName setMarkerPosLocal [(position MRH_player) select 0,(position MRH_player) select 1];
 	sleep 1;
 	};
 	deleteMarkerLocal _markerName;

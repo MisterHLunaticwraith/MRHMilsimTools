@@ -12,7 +12,8 @@ Example(s):
 or 
 [this,"YourRadioStationClassname"] call  MRH_fnc_isRadioChatterSource;
 */
+#include "MRH_C_Path.hpp"
 params ["_sourceObject","_faction"];
 _sourceObject setVariable ["MRH_RadioChatter_Faction",_faction,true];
-[_sourceObject, _faction] call MRH_fnc_RadioChatter;
-[_sourceObject,"OFF"] call MRH_fnc_RadioAceAction;
+[_sourceObject, _faction] FUNC(RadioChatter);
+[_sourceObject,"OFF"] FUNC(RadioAceAction);

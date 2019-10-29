@@ -42,4 +42,30 @@ call MRH_fnc_MilsimTools_Core_cbaEventHandlersPlayer;
 	}
 ] call CBA_fnc_addEventHandler;
 
+["MRH_ST_picViewedChanged", 
+{
+	params ["_picEntry","_caption","_picpath"];
+	_this EFUNC(SoldierTab,tabPicOnBriefingScreen);
+}] call CBA_fnc_addEventHandler;
+
+["MRH_ST_set_screen_video",
+	{
+		params ["_video","_screens"];
+		missionNamespace setVariable ['MRH_stop_vid', true];
+		missionNamespace setVariable ['MRH_stop_vid',nil];
+		{
+			_x setObjectTexture [(_x EFUNC(SoldierTab,getTexturePath)),_video];
+		}forEach _screens;
+		[_video, [10, 10],[1,1,1,1],'MRH_stop_vid'] call BIS_fnc_playVideo;
+	}
+]call CBA_fnc_addEventHandler;
+
+["MRH_ST_Kill_video_Feed",
+	{
+		missionNamespace setVariable ['MRH_stop_vid', true];
+		missionNamespace setVariable ['MRH_stop_vid',nil]; 
+		["", [10, 10],[1,1,1,1],'MRH_stop_vid'] call BIS_fnc_playVideo;//needs to be called with the above to kill videos
+	}
+
+]call CBA_fnc_addEventHandler;
 TRACE("Player CBA Even tHandlers Added");

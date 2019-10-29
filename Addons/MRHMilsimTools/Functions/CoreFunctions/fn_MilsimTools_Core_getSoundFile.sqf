@@ -15,9 +15,18 @@ private _config = [missionConfigfile,configFile] select (isClass (configFile>>"c
 private _configPath = _config>>"cfgSounds">>_className;
 
 if !(isClass (_configPath)) exitWith {private _toTrace = format ["%1 Sound class not found in mission config file or configfile",_className]; TRACE(_toTrace);false};
-private _soundPath = (getArray (_configPath>>"sound")) select 0;
+private _soundCfg = (getArray (_configPath>>"sound"));
+_soundCfg params 
+	[
+		"_soundPath",
+		["_volume",1],
+		["_pitch",1],
+		["_distance",100]
+	];
+//private _soundPath = (getArray (_configPath>>"sound")) select 0;
 private _soundPathFormated= _soundPath splitString "";
 if ((_soundPathFormated select 0)isEqualTo "\") then {_soundPathFormated deleteAt 0};
-private _return = _soundPathFormated joinString "";
-if (_config isEqualTo missionConfigFile) then {_return = MRH_MISSION_ROOT + _return};
+private _soundPathFinal = _soundPathFormated joinString "";
+if (_config isEqualTo missionConfigFile) then {_soundPathFinal = MRH_MISSION_ROOT + _soundPathFinal};
+private _return = [_soundPathFinal,_volume,_pitch,_distance];
 _return

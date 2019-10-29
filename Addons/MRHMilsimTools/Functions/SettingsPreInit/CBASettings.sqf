@@ -62,6 +62,10 @@ _script	Script to execute when setting is changed.  (optional) <CODE>
 //=======Below are settings for the tablet
 //Settings to allow map on the tablet
 ["MRH_MilsimTools_AllowMapTablet", "CHECKBOX",   [localize "STR_MRH_CBA_TABLET_ALLOWMAPPRETTY",localize "STR_MRH_CBA_TABLET_ALLOWMAPTOOLTIP"], "MRH_MilsimTools - Tablet settings",true,1] call cba_settings_fnc_init;
+
+["MRH_MilsimTools_ST_BriefingRemote_overlay", "EDITBOX", [localize "STR_MRH_CBA_briefScreenSpecOverlay",localize "STR_MRH_CBA_briefScreenSpecOverlayToolTip"], "MRH_MilsimTools - Tablet settings","\MRHMilsimTools\Paa\cnn_news_ca.paa",1] call cba_settings_fnc_init;
+["MRH_MilsimTools_ST_BriefingRemote_videosToPlay", "EDITBOX", [localize "STR_MRH_CBA_briefSCreenPathToVideos",localize "STR_MRH_CBA_briefSCreenPathToVideosToolTip"], "MRH_MilsimTools - Tablet settings","\a3\missions_f_bootcamp\video\vr_generictransition_1.ogv,\a3\missions_f_epa\video\a_in_intro.ogv",1] call cba_settings_fnc_init;
+
 //=======Below are settings for the hackingtool
 //Settings to allow map on the tablet
 ["MRH_MilsimTools_RequireHackingTool", "CHECKBOX",   [localize "STR_MRH_RequireHackingToolPretty",localize "STR_MRH_RequireHackingToolTip"], "MRH_MilsimTools - Hacking settings",true,1] call cba_settings_fnc_init;

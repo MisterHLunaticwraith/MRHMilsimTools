@@ -288,6 +288,33 @@ class CtrlGrpDataTextZone : RscControlsGroupMRHSoldierTab
 		};	
 	};
 };
+////////////////////////////////////////////////////////
+// CTRLS for satelliteFeed (map)
+////////////////////////////////////////////////////////
+class MRHSSatFeed: RscPictureMRHSoldierTab
+{
+	idc = 1211;
+	MVT;
+	show = false;
+	text = "";//toDo Nofeed
+	x = 0.267969 * safezoneW + safezoneX;
+	y = 0.247 * safezoneH + safezoneY;
+	w = 0.443438 * safezoneW;
+	h = 0.495 * safezoneH;
+
+};
+class MRHSSatFeedOverLay: RscPictureMRHSoldierTab
+{
+	idc = 1212;
+	MVT;
+	show = false;
+	text = "";//toDo Nofeed
+	x = 0.267969 * safezoneW + safezoneX;
+	y = 0.247 * safezoneH + safezoneY;
+	w = 0.443438 * safezoneW;
+	h = 0.495 * safezoneH;
+
+};
 /////////////////////////////////////
 // timerpage ctrls
 ////////////////////////

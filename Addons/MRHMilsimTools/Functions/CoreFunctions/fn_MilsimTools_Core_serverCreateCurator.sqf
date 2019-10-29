@@ -61,6 +61,8 @@ if !(isServer) ExitWith {};
 		_zeusPlayer addEventHandler ["Respawn",{params ["_unit", "_corpse"]; [_unit] call MRH_fnc_isCurator}];
 	}
 	]RemoteExec ["Call",_zeusPlayer];
+	_PLAYERSLOT_Zeus_Module setVariable [ "bis_fnc_initModules_disableAutoActivation", false, !isServer ];
+
 	_toTrace = format ["Zeus module %1 Created and assigner to %1",_zeusPlayer,_PLAYERSLOT_Zeus_Module];
 	TRACE(_toTrace);
 	["MRH_Events_curatorObjectCreated", [_zeusPlayer,_PLAYERSLOT_Zeus_Module]] call CBA_fnc_globalEvent;

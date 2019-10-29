@@ -9,5 +9,6 @@ call MRH_fnc_MilsimTools_HeliTaxi_;
 */
 #include "MRH_C_Path.hpp"
 params ["_heli","_destination"];
+if !(isServer) exitWith {};
 _heli SVAR(isBusy,false,true);
 [_heli,"Hovering",_destination]FUNC(handleMessages);

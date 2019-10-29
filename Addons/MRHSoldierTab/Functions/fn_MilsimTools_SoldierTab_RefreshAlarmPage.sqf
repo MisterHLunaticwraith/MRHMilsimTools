@@ -17,7 +17,7 @@ ctrlShow [_x,true];
 
 //refreshes the stopwatch
 _chronoText = "<img size = '2' image ='" + PAAPATH(stopwatch.paa) +"'/>" + (localize "STR_MRH_ST_FC_StopWatchApp");
-_resumeTime = player getVariable ["MRH_SoldierTab_StopWatchStoppedAt",0];
+_resumeTime = MRH_player getVariable ["MRH_SoldierTab_StopWatchStoppedAt",0];
 _runTimePretty = [_resumeTime,"HH:MM:SS.MS"] call BIS_fnc_secondsToString;
 _runTimePretty = "<t size = '2' color = '#ff9900'>" + _runTimePretty + "</t>";
 if(ctrlshown FDIS(7707)) then {FDIS(7707) ctrlSetStructuredText parseText _runTimePretty;};
@@ -31,6 +31,6 @@ FDIS(7702) ctrlSetStructuredText parseText _timerText;
 _alarmText = "<img size = '2' image ='" + PAAPATH(alarm.paa) +"'/>" + (localize "STR_MRH_ST_FC_AlarmApp");
 
 
-_isAlarmRunning = player getVariable ["MRH_SoldierTab_runningAlarmScript", scriptNull];
+_isAlarmRunning = MRH_player getVariable ["MRH_SoldierTab_runningAlarmScript", scriptNull];
 if !(isNull _isAlarmRunning) then {_alarmText = PLGVAR(nextAlarmText)};
 FDIS(7703) ctrlSetStructuredText parseText _alarmText;
