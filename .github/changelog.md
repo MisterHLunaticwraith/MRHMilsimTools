@@ -38,7 +38,7 @@ Example(s):
 [this,[this,satScreen]]call MRH_fnc_isBriefingRemote;
 ```
 
-##Misc Items
+## Misc Items
 * Fixed : Antenna bag Rvmat
 ## Core
 * Added:
@@ -63,7 +63,7 @@ Will reeanable the action and allow players to restart the radios but not restar
 Will reenable the radios and restart them.
 
 ## Heli taxi:
-fixed: Loiter, Hover and Fastrope functions were called several times causing issues.
+* Fixed: Loiter, Hover and Fastrope functions were called several times causing issues.
 
 
 ////////////////////////////////////////////////////
