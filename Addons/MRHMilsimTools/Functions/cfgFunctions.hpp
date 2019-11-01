@@ -213,6 +213,17 @@ class MRH // Defines the "owner"
 		{};
 		class MilsimTools_Core_triggerActivate_target
 		{};
+		class MilsimTools_Core_updateLoadOutText
+		{};
+		class MilsimTools_Core_generateLoadOutText
+		{};
+		class MilsimTools_Core_generateMagazinesText
+		{};
+		class MilsimTools_Core_generateItemText
+		{};
+		class MilsimTools_Core_getCfgInfo
+		{};
+
 		/*
 		class MilsimTools_Core_
 		{};

@@ -45,9 +45,19 @@ addMissionEventHandler ["PlayerViewChanged", {
 
 	// close opened instances of foldable map
 	call MRH_fnc_MilsimTools_EnhancedMap_closeFoldableMap;
+	//update loadout diarySubject
+	[MRH_player]FUNC(generateLoadOutText);
+	MRH_player addEventHandler ["InventoryClosed", {
+			params ["_unit", "_container"];
+			[MRH_player]FUNC(generateLoadOutText);
+		}];
 	_message = format ["MRH Milsim Tools - Player changed unit: MRH_Player definition now is: %1. %2",MRH_Player,_traceMessageComplement];
 	TRACE(_message);
 }];
 
 //redefine on respawn
 player addEventHandler ["Respawn",{MRH_player = player}];
+player addEventHandler ["InventoryClosed", {
+	params ["_unit", "_container"];
+	[MRH_player]FUNC(generateLoadOutText);
+}];
