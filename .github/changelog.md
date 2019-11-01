@@ -1,3 +1,8 @@
+# Changelog: MRH Milsim Tools version : v.1.18.0
+## Core
+* Added : Loadout summary in diary.
+> This loadout summary displays pictures of all items (can be resized in options.) It can be disabled completely in options. Thanks to Arma's latest update the diary entry refreshes everytime you switch unit with zeus or close your inventory, so it stays accurate throughout the game.
+///////////////////////////////
 # Changelog: MRH Milsim Tools version : v.1.17.9
 ## Soldier Tab
 * Tweaked: Zeus controlled units can now use the tablet, they can transmit it and share it but they can't receive it via shared transfer (only by script or collecting data), players won't get a notification when they receive data as a zeus controlled unit.

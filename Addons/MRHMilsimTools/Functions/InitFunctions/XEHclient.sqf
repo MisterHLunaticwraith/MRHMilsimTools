@@ -1,5 +1,5 @@
 #include "MRH_C_Path.hpp"
-
+[player]FUNC(generateLoadOutText);
 //functions that need to wait until the player is initialized
 
 [{(player == player) && (!isNull (findDisplay 46))},

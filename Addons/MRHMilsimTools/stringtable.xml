@@ -1167,7 +1167,102 @@
 				<English>Path(s) to videos, separated by comas. Videos must be in .ogv format</English>
 				<French>Chemins des vidéos, séparés par des virgules. Les vidéos doivent être au format .ogv </French>
 			</Key>
-			<Key ID="STR_MRH_CBA_">
+			<Key ID="STR_MRH_CBA_LD_showLoadoutinBriefing">
+				<Original>Show loadout tab in diary</Original>
+				<English>Show loadout tab in diary</English>
+				<French>Afficher les équipements dans le journal</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_LD_showLoadoutinBriefingToolTip">
+				<Original>If this setting is enabled players will get a summary of their loadout in the diary menu,the diary updates evry time a player closes their inventory or switch units</Original>
+				<English>If this setting is enabled players will get a summary of their loadout in the diary menu,the diary updates evry time a player closes their inventory or switch units</English>
+				<French>Si ce réglage est activé, les joueurs auront un résumé de leur équipement dans le journal. Se met à jour à chaque fois que le joueur ferme son inventaire ou change d'unité (possession avec zeus).</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_LDSizeOfPic">
+				<Original>Size of pictures in the loadout diary tab</Original>
+				<English>Size of pictures in the loadout diary tab</English>
+				<French>Taille des images dans le journal, section equipement.</French>
+			</Key>
+			<Key ID="STR_MRH_CBA_LDSizeOfPicToolTip">
+				<Original>Size in pixels of the pictures in the loadout tab, this size determines the height, the width is calculated in proportion.</Original>
+				<English>Size in pixels of the pictures in the loadout tab, this size determines the height, the width is calculated in proportion.</English>
+				<French>Taille en pixels des images dans l'onglet équipement, cette taille correspond à la hauteur des images, la largeur est calculée en proportion.</French>
+			</Key>
+			<Key ID="STR_MRH_LO_Di_NOTES">
+				<Original>NOTES</Original>
+				<English>NOTES</English>
+				<French>NOTES</French>
+			</Key>
+			<Key ID="STR_MRH_LO_Di_LTTITLE">
+				<Original>LOADOUT TEXT</Original>
+				<English>LOADOUT TEXT</English>
+				<French>RESUME DU PAQUETAGE</French>
+			</Key>
+			<Key ID="STR_MRH_LO_Di_LTMTADD">
+				<Original>This loadout text is generated with MRH Milsim Tools, it updates everytime you close your inventory or possess a unit in zeus</Original>
+				<English>This loadout text is generated with MRH Milsim Tools, it updates everytime you close your inventory or possess a unit in zeus</English>
+				<French>Cet inventaire du paquetage est généré avec MRH Milsim Tools, il se met à jour à chaque fois que vous fermez votre inventaire ou possédez une unité en zeus</French>
+			</Key>
+			<Key ID="STR_MRH_LO_Di_LT_Helmet">
+				<Original>Helmet</Original>
+				<English>Helmet</English>
+				<French>Casque</French>
+			</Key>
+			<Key ID="STR_MRH_LO_Di_LT_VEST">
+				<Original>Vest</Original>
+				<English>Vest</English>
+				<French>Gilet</French>
+			</Key>
+			<Key ID="STR_MRH_LO_Di_LT_UNI">
+				<Original>Uniform</Original>
+				<English>Uniform</English>
+				<French></French>
+			</Key>
+			<Key ID="STR_MRH_LO_Di_LT_BackPack">
+				<Original>Backpack</Original>
+				<English>Backpack</English>
+				<French>Sac à dos</French>
+			</Key>
+			<Key ID="STR_MRH_LO_Di_LT_PW">
+				<Original>Primary weapon</Original>
+				<English>Primary weapon</English>
+				<French>Arme principale</French>
+			</Key>
+			<Key ID="STR_MRH_LO_Di_LT_SW">
+				<Original>Secondary weapon</Original>
+				<English>Secondary weapon</English>
+				<French>Arme secondaire</French>
+			</Key>
+			<Key ID="STR_MRH_LO_Di_LT_HG">
+				<Original>Hand weapon</Original>
+				<English>Hand weapon</English>
+				<French>Arme de poing</French>
+			</Key>
+			<Key ID="STR_MRH_LO_Di_LT_AMMO">
+				<Original>Ammo</Original>
+				<English>Ammo</English>
+				<French>Munitions</French>
+			</Key>
+			<Key ID="STR_MRH_LO_Di_ITEMS">
+				<Original>Items</Original>
+				<English>Items</English>
+				<French>Objets d'inventaire</French>
+			</Key>
+			<Key ID="STR_MRH_LO_Di_EQUIPMENT">
+				<Original>Equipment</Original>
+				<English>Equipment</English>
+				<French>Equipements</French>
+			</Key>
+			<Key ID="STR_MRH_LO_Di_LDMAINT">
+				<Original>Loadout</Original>
+				<English>Loadout</English>
+				<French>Paquetage</French>
+			</Key>
+			<Key ID="STR_MRH_LO_Di_NoGear">
+				<Original>No equipment</Original>
+				<English>No equipment</English>
+				<French>Pas d'équipement</French>
+			</Key>
+			<Key ID="STR_MRH_LO_Di_">
 				<Original></Original>
 				<English></English>
 				<French></French>
