@@ -14,7 +14,7 @@ TRACE("Player initialized InitPlayerLocal starting");
 FUNC(BriefingAdminMenuLink);
 //======init for the Has died variable
 player setVariable ["MRH_MilsimTools_Core_HasDied", false, true];
-FUNC(AddBriefingRoster);
+
 //removes the map of players that are not leaders according to setting
 _mapKeepSetting = ["MRH_MilsimTools_Rmv_map_nolead"] call cba_settings_fnc_get;
 if (_mapKeepSetting) then 

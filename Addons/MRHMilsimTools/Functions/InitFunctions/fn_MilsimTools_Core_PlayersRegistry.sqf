@@ -83,7 +83,7 @@ addMissionEventHandler ["PlayerConnected",
 	call MRH_fnc_MilsimTools_Core_SetPlayerIntel; //Updates player intel
 	Diag_Log "MRH_MilsimToolsCore Player Connected EH Fired";
 	
-	
+	["MRH_playerConnected_EH",_this] call CBA_fnc_globalEvent;
 }];
 	
 //delete bodies of disconnected players
