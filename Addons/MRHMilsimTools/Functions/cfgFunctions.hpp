@@ -223,6 +223,12 @@ class MRH // Defines the "owner"
 		{};
 		class MilsimTools_Core_getCfgInfo
 		{};
+		class MilsimTools_Core_diaryPercentageBar
+		{};
+		class MilsimTools_Core_getContainerWeightAndMaxLoad
+		{};
+		class MilsimTools_Core_armaWeightToReal
+		{};
 
 		/*
 		class MilsimTools_Core_

@@ -1262,6 +1262,36 @@
 				<English>No equipment</English>
 				<French>Pas d'équipement</French>
 			</Key>
+			<Key ID="STR_MRH_LO_Di_LDINFO">
+				<Original>Loadout Info</Original>
+				<English>Loadout Info</English>
+				<French>Infos paquetage</French>
+			</Key>
+			<Key ID="STR_MRH_LO_Di_NOTEQUIP">
+				<Original>NOT EQUIPPED</Original>
+				<English>NOT EQUIPPED</English>
+				<French>PAS EQUIPE</French>
+			</Key>
+			<Key ID="STR_MRH_LO_Di_TotalWeight">
+				<Original>Total weight :</Original>
+				<English>Total weight :</English>
+				<French>Poids total :</French>
+			</Key>
+			<Key ID="STR_MRH_LO_Di_UniSpace">
+				<Original>Uniform space :</Original>
+				<English>Uniform space :</English>
+				<French>Place dans l'uniforme :</French>
+			</Key>
+			<Key ID="STR_MRH_LO_Di_VestSpace">
+				<Original>Vest space :</Original>
+				<English>Vest space :</English>
+				<French>Place dans le gilet :</French>
+			</Key>
+			<Key ID="STR_MRH_LO_Di_BPSpace">
+				<Original>Backpack space :</Original>
+				<English>Backpack space :</English>
+				<French>Place dans le sac à dos :</French>
+			</Key>
 			<Key ID="STR_MRH_LO_Di_">
 				<Original></Original>
 				<English></English>
