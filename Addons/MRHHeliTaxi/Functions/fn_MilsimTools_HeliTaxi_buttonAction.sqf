@@ -8,26 +8,18 @@ Example(s):
 call MRH_fnc_MilsimTools_HeliTaxi_buttonAction;
 */
 #include "MRH_C_Path.hpp"
-_veh = vehicle MRH_player;
-_isInFinalApp = _veh GVARDef(isInFinalApproachPhase,false);
+private _veh = vehicle MRH_player;
+private _isInFinalApp = _veh GVARDef(isInFinalApproachPhase,false);
 if (_isInFinalApp) exitWith {closedialog 0; hintC (localize "STR_MRH_HeliTaxi_LandingChangeDeniedHint");};
-_wayPointsMarkers = MRH_player GVARDef(setWaypoints,[]);
+private _wayPointsMarkers = MRH_player GVARDef(setWaypoints,[]);
 //check that destination is set
-_color = getMarkerColor "MRH_LZ_Marker";
+private _color = getMarkerColor "MRH_LZ_Marker";
 if (_color == "") ExitWith {hint (localize "STR_MRH_HeliTaxi_NoDestError")};
 //-- clear previous waypoints for the vehicle
-_oldWaypoints = waypoints group _veh;
-_hadWaypoints =false;
+private _oldWaypoints = waypoints group _veh;
+private _hadWaypoints =false;
 if (count _oldWaypoints >1) then {
-	_testArrAy= [];
-	_waypoint0 = (group _veh) addwaypoint [getpos _veh,0];
-	(group _veh) setCurrentWaypoint _waypoint0;
-	for "_i" from 0 to ((count _oldWaypoints)+1) do
-	{
-		
-		deleteWaypoint [group _veh, 1];
-		
-	};
+	[group _veh] CFUNC(clearAllWayPoints);
 	
 	_hadWaypoints = true;
 };
