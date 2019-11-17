@@ -43,6 +43,8 @@ addMissionEventHandler ["PlayerDisconnected",
 	};
 	//add delay for disconnecting before calling function
 	[{call MRH_fnc_MilsimTools_Core_GenAliveAndDead; Diag_Log "MRH_MilsimToolsCore PlayerDisconnected EH fired";},[], 3] call CBA_fnc_waitAndExecute;
+	0 FUNC(allPlayers);
+	["MRH_playerDisconnected_EH",_this] call CBA_fnc_globalEvent;
 
 }];
 
@@ -82,7 +84,7 @@ addMissionEventHandler ["PlayerConnected",
 	missionNamespace setVariable ["MRH_MilsimTools_Core_allIncludingDisconnectedDeadPlayers",_deadPlayersNew,true];
 	call MRH_fnc_MilsimTools_Core_SetPlayerIntel; //Updates player intel
 	Diag_Log "MRH_MilsimToolsCore Player Connected EH Fired";
-	
+	0 FUNC(allPlayers);
 	["MRH_playerConnected_EH",_this] call CBA_fnc_globalEvent;
 }];
 	

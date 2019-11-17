@@ -39,7 +39,7 @@ _EHkilledIdx = player addEventHandler ["killed",
 	[[],MRH_fnc_MilsimTools_Core_GenAliveAndDead] RemoteExec ["Call",0];
 	// shows hint to admin
 	[[],MRH_fnc_MilsimTools_Core_AdminDeadCount] RemoteExec ["Call",[0,-2] select isDedicated];
-	
+	["MRH_playerKilled",_this] call CBA_fnc_globalEvent;
 	}
 ];
 
@@ -95,6 +95,12 @@ if (_reinitUponRespawn) then {
 	}];
 
 };
+
+player addEventHandler ["Respawn", {
+		params ["_unit", "_corpse"];
+		["MRH_playerRespawned_global",_this] call CBA_fnc_globalEvent;
+
+	}];
 //ReRegister just in case
 
 [[],MRH_fnc_MilsimTools_Core_GenAliveAndDead] RemoteExec ["Call",0];

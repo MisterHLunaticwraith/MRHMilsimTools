@@ -229,6 +229,8 @@ class MRH // Defines the "owner"
 		{};
 		class MilsimTools_Core_armaWeightToReal
 		{};
+		class MilsimTools_Core_allPlayers
+		{};
 
 		/*
 		class MilsimTools_Core_
