@@ -231,6 +231,16 @@ class MRH // Defines the "owner"
 		{};
 		class MilsimTools_Core_allPlayers
 		{};
+		class MilsimTools_Core_BFT
+		{};
+		class MilsimTools_Core_NATO_symbols_for
+		{};
+		class MilsimTools_Core_showOnBFT
+		{};
+		class MilsimTools_Core_addToBFTenabledList
+		{};
+		class MilsimTools_Core_childrenClasses
+		{};
 
 		/*
 		class MilsimTools_Core_

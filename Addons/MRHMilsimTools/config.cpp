@@ -151,3 +151,11 @@ class RscDisplayCurator
    };
     
 };
+
+class MRH_BFT_enabledClasses
+{
+   class enabledClasses
+   {
+      classes[]={"MRH_SoldierTab","MRH_BluForTransponder","ItemcTab","ItemAndroid","ACE_microDAGR"};
+   };
+};

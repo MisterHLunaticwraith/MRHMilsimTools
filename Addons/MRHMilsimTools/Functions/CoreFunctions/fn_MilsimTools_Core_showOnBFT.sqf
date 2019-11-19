@@ -1,0 +1,19 @@
+/*
+Function name:MRH_fnc_MilsimTools_Core_
+Author: Mr H.
+Description: 
+Return value: 
+Public: No
+Parameters:
+
+Example(s):
+[]call MRH_fnc_MilsimTools_Core_;
+*/
+#include "MRH_C_Path.hpp"
+	params ["_unit"];
+
+	private _allowedClasses = missionNamespace getVariable ["MRH_soldierTab_BFT_enabling_items_andVehs",[]];
+	if !((_allowedClasses arrayIntersect (items _unit)) isEqualTo []) exitWith {true};
+	if !((_allowedClasses arrayIntersect (AssignedItems _unit)) isEqualTo []) exitWith {true};
+	if ((typeOf (objectParent _unit)) in _allowedClasses) exitWith {true};
+	false

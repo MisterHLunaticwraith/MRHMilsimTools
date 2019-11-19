@@ -33,3 +33,10 @@ ctrlShow [_x,true];
 	};
 	deleteMarkerLocal _markerName;
 };
+if ([MRH_player] CFUNC(isConnectedToAntenna)) then 
+{
+	private _unitsToShow = [allUnits,side MRH_player] CFUNC(SortUnitsBySide);
+	private _Map = ((findDisplay 03062018 )displayCtrl 1205);
+
+	[_unitsToShow,_Map]CFUNC(BFT)
+};

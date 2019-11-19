@@ -10,4 +10,9 @@ call MRH_fnc_MilsimTools_Core_PlayersRegistry;
 		};
 	}
 ] call CBA_fnc_addEventHandler;
+// update of BFT_enabledClasses
+private _enabled = getArray (configFile>>"MRH_BFT_enabledClasses">>"enabledClasses">>"classes");
+#include "..\..\bftVehicles.inc"
+_enabled append _bftVehs;
+[_enabled]FUNC(addToBFTenabledList);
 TRACE("Core Xeh: calling PlayersRegistryInit");
