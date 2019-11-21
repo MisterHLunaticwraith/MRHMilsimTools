@@ -1292,6 +1292,21 @@
 				<English>Backpack space :</English>
 				<French>Place dans le sac à dos :</French>
 			</Key>
+			<Key ID="STR_MRH_core_satComSystem">
+				<Original>SATCOM system</Original>
+				<English>SATCOM system</English>
+				<French></French>
+			</Key>
+			<Key ID="STR_MRH_core_connectToVehSat">
+				<Original>Connect to vehicle SATCOM system</Original>
+				<English>Connect to vehicle SATCOM system</English>
+				<French></French>
+			</Key>
+			<Key ID="STR_MRH_core_">
+				<Original></Original>
+				<English></English>
+				<French></French>
+			</Key>
 			<Key ID="STR_MRH_LO_Di_">
 				<Original></Original>
 				<English></English>

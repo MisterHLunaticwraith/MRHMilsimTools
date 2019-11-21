@@ -241,6 +241,10 @@ class MRH // Defines the "owner"
 		{};
 		class MilsimTools_Core_childrenClasses
 		{};
+		class MilsimTools_Core_vehHasSatcom
+		{};
+		class MilsimTools_Core_canConnectToVehSatCom
+		{};
 
 		/*
 		class MilsimTools_Core_

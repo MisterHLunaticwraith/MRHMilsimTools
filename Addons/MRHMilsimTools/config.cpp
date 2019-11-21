@@ -159,3 +159,8 @@ class MRH_BFT_enabledClasses
       classes[]={"MRH_SoldierTab","MRH_BluForTransponder","ItemcTab","ItemAndroid","ACE_microDAGR"};
    };
 };
+
+class cfgVehicles
+{
+   #include"\MRHMilSimTools\cfghpp\cfgVehicles.hpp"
+};
