@@ -28,3 +28,4 @@ if (_uid == _x select 0) then {_deadPlayersNew deleteAt (_deadPlayersNew find  _
 } forEach _allDeadPlayersInclude; 
 
 missionNamespace setVariable ["MRH_MilsimTools_Core_allIncludingDisconnectedDeadPlayers",_deadPlayersNew,true];
+["MRH_playerWasSetAsRevived",_target] call CBA_fnc_globalEvent;

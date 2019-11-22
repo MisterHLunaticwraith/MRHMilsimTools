@@ -16,6 +16,11 @@ params ["_unit"];
 	private _previous = missionNamespace getVariable ["MRH_MilsimTools_Core_LoadOutDiaryHandles",[]];
 	if !(_previous isEqualTo []) exitWith {[_unit,_previous]FUNC(updateLoadOutText)};
 	player createDiarySubject ["MRH_Loadout_summary",(localize "STR_MRH_LO_Di_LDMAINT"),"\MRHMarkers\paa\repack.paa"];
+	
+	([(loadAbs _unit)]FUNC(armaWeightToReal)) params ["_weight","_units"];
+
+
+
 	private _recordNotes = player createDiaryRecord ["MRH_Loadout_summary", 
 			[
 				(localize "STR_MRH_LO_Di_NOTES"),
@@ -37,21 +42,21 @@ params ["_unit"];
 	private _recordVest = player createDiaryRecord ["MRH_Loadout_summary", 
 				[
 					(localize "STR_MRH_LO_Di_LT_VEST"),
-					"<font size='18' color='#BD8700'>" +(toUpper(localize "STR_MRH_LO_Di_LT_VEST")) +"</font><br/><br/>"+([Vest _unit]FUNC(generateItemText))
+					"<font size='18' color='#BD8700'>" +(toUpper(localize "STR_MRH_LO_Di_LT_VEST")) +"</font><br/><br/>"+([Vest _unit]FUNC(generateItemText))+"<br/><br/>"+(localize "STR_MRH_LO_Di_VestSpace") + ([([(loadVest _unit)*100,17]FUNC(diaryPercentageBar)),"<br/><br/><font color='#ff0000'>"+"<br/><br/>"+(localize "STR_MRH_LO_Di_NOTEQUIP")+"</font><br/><br/>"]select ((vest _unit )isEqualTo ""))
 				]
 	];
 
 	private _recordUniform= player createDiaryRecord ["MRH_Loadout_summary",
 				[
 					(localize "STR_MRH_LO_Di_LT_UNI"),
-					"<font size='18' color='#BD8700'>" +(toUpper(localize "STR_MRH_LO_Di_LT_UNI")) +"</font><br/><br/>"+([uniform _unit]FUNC(generateItemText))
+					"<font size='18' color='#BD8700'>" +(toUpper(localize "STR_MRH_LO_Di_LT_UNI")) +"</font><br/><br/>"+([uniform _unit]FUNC(generateItemText))+"<br/><br/>"+(localize "STR_MRH_LO_Di_UniSpace")+ ([([(loadUniform _unit)*100,17]FUNC(diaryPercentageBar)),"<br/><br/><font color='#ff0000'>"+"<br/><br/>"+(localize "STR_MRH_LO_Di_NOTEQUIP")+"</font><br/><br/>"]select ((uniform _unit )isEqualTo ""))
 				]
 	];
 
 	private _recordBackPack = player createDiaryRecord ["MRH_Loadout_summary",
 				[
 					(localize "STR_MRH_LO_Di_LT_BackPack"),
-					"<font size='18' color='#BD8700'>" +(toUpper(localize "STR_MRH_LO_Di_LT_BackPack")) +"</font><br/><br/>"+([backpack _unit,true]FUNC(generateItemText))
+					"<font size='18' color='#BD8700'>" +(toUpper(localize "STR_MRH_LO_Di_LT_BackPack")) +"</font><br/><br/>"+([backpack _unit,true]FUNC(generateItemText))+"<br/><br/>"+(localize "STR_MRH_LO_Di_BPSpace")+ ([([(loadBackpack _unit)*100,17]FUNC(diaryPercentageBar)),"<br/><br/><font color='#ff0000'>"+"<br/><br/>"+(localize "STR_MRH_LO_Di_NOTEQUIP")+"</font><br/><br/>"]select ((backpack _unit )isEqualTo ""))
 				]
 	];
 
@@ -95,5 +100,19 @@ params ["_unit"];
 					"<font size='18' color='#BD8700'>" +(toUpper(localize "STR_MRH_LO_Di_EQUIPMENT")) +"</font><br/><br/>"+([_unit,true,4]FUNC(generateMagazinesText))
 				]
 	];
-	private _recordHandles = [_recordNotes,_recordHelmet,_recordVest,_recordUniform,_recordBackPack,_recordPW,_recordSW,_recordHGW,_recordAmmo,_recordItems,_recordEquips];
+
+	private _recordGenInfo = player createDiaryRecord ["MRH_Loadout_summary", 
+			[
+				(localize "STR_MRH_LO_Di_LDINFO"),
+				"<font size='18' color='#BD8700'>" +(toUpper (localize "STR_MRH_LO_Di_LDINFO")) +"</font><br/><br/>"+
+				(localize "STR_MRH_LO_Di_TotalWeight")+" "+"<font color='#2bfa06'>" +(_weight toFixed 2) + " " + _units + "</font><br/><br/>"+
+				(localize "STR_MRH_LO_Di_UniSpace")+ ([([(loadUniform _unit)*100,17]FUNC(diaryPercentageBar)),"<br/><br/><font color='#ff0000'>"+(localize "STR_MRH_LO_Di_NOTEQUIP")+"</font><br/><br/>"]select ((uniform _unit )isEqualTo ""))+
+				(localize "STR_MRH_LO_Di_VestSpace") + ([([(loadVest _unit)*100,17]FUNC(diaryPercentageBar)),"<br/><br/><font color='#ff0000'>"+(localize "STR_MRH_LO_Di_NOTEQUIP")+"</font><br/><br/>"]select ((vest _unit )isEqualTo ""))+
+				(localize "STR_MRH_LO_Di_BPSpace")+ ([([(loadBackpack _unit)*100,17]FUNC(diaryPercentageBar)),"<br/><br/><font color='#ff0000'>"+(localize "STR_MRH_LO_Di_NOTEQUIP")+"</font><br/><br/>"]select ((backpack _unit )isEqualTo ""))
+			]
+
+
+
+		];
+	private _recordHandles = [_recordNotes,_recordHelmet,_recordVest,_recordUniform,_recordBackPack,_recordPW,_recordSW,_recordHGW,_recordAmmo,_recordItems,_recordEquips,_recordGenInfo];
 	missionNamespace setVariable ["MRH_MilsimTools_Core_LoadOutDiaryHandles",_recordHandles];

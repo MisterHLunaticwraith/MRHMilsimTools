@@ -223,6 +223,28 @@ class MRH // Defines the "owner"
 		{};
 		class MilsimTools_Core_getCfgInfo
 		{};
+		class MilsimTools_Core_diaryPercentageBar
+		{};
+		class MilsimTools_Core_getContainerWeightAndMaxLoad
+		{};
+		class MilsimTools_Core_armaWeightToReal
+		{};
+		class MilsimTools_Core_allPlayers
+		{};
+		class MilsimTools_Core_BFT
+		{};
+		class MilsimTools_Core_NATO_symbols_for
+		{};
+		class MilsimTools_Core_showOnBFT
+		{};
+		class MilsimTools_Core_addToBFTenabledList
+		{};
+		class MilsimTools_Core_childrenClasses
+		{};
+		class MilsimTools_Core_vehHasSatcom
+		{};
+		class MilsimTools_Core_canConnectToVehSatCom
+		{};
 
 		/*
 		class MilsimTools_Core_

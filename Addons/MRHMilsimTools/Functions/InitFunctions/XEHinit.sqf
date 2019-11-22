@@ -1,4 +1,5 @@
 #include "MRH_C_Path.hpp"
+
 _fullVersioning = (call MRH_fnc_MilsimTools_DebugTools_ListModsAndAddons) select 0;
 _toTraceFullV = format ["MRH MilsimTools: Activated mods and addons:%1 %2",endl,_fullVersioning];
 TRACE(_toTraceFullV);
@@ -22,7 +23,9 @@ if(MRH_MISSION_ROOT_FOUND) then {
 	_missionRootTrace = format ["MRH Milsim Tools Core- Local mission root is: %1",MRH_MISSION_ROOT];
 	TRACE(_missionRootTrace);
 };
-
+//---Define allPlayers at start
+	0 FUNC(allPlayers);
+//------EHs
 ["MRH_curatorViewOpened", 
 {
 	params ["_display","_player"];
@@ -162,5 +165,28 @@ if(MRH_MISSION_ROOT_FOUND) then {
 			3
 		] call CBA_fnc_waitAndExecute;
 
+	}
+] call CBA_fnc_addEventHandler;
+
+["MRH_playerKilled",
+	{
+		params ["_unit", "_killer", "_instigator", "_useEffects"];
+		0 FUNC(allPlayers);
+	}
+
+] call CBA_fnc_addEventHandler;
+
+
+["MRH_playerRespawned_global",
+	{
+		params ["_unit", "_corpse"];
+		0 FUNC(allPlayers);
+	}
+] call CBA_fnc_addEventHandler;
+
+["MRH_playerWasSetAsRevived",
+	{
+		params ["_revivedPlayer"];
+		0 FUNC(allPlayers);
 	}
 ] call CBA_fnc_addEventHandler;
