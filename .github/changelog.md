@@ -1,3 +1,68 @@
+# Changelog: MRH Milsim Tools version : v.1.18.1
+
+## Core
+* Added : Loadout recap in diary will now display loadout weight as well as occupied space in vest, uniform, and backpack. As with the rest it is updated everytime inventory is closed.
+* Changed : Roster was only added to diary after the briefing phase, now it will be there from the start.
+* Tweaked : Briefing roster should now get refresehed every time a new player gets connected.
+* Added some new global variables :
+**MRH_allPlayers** = All players minus headless clients.
+**MRH_allAlivePlayers** =  All players that are considered 'Alive' by milsim tools minus headless clients.
+**MRH_allAliveAndConsciousPlayers** = All players that are considered 'Alive' by milsim tools, conscious by ACE 3 minus headless clients.
+The variables are refreshed on all clients and the server :
+-Whenever a player connects
+-Whenever a player disconnects
+-Whenever a player is killed
+-Whenever a player's conscious state is changed
+-Whenever a player respawns
+-Whenever the setRevived function is called on a unit
+* You can MRH_fnc_MilsimTools_Core_allPlayers to manually update them on a local machine, the function also returns one of these depending on parameters sent to it, see function header for more.
+* Added :
+##### CBA Events
+```
+"MRH_playerConnected_EH","MRH_playerDisconnected_EH","MRH_playerOnly_ace_unconscious","MRH_playerKilled","MRH_playerRespawned_global","MRH_playerWasSetAsRevived"
+```
+
+## Radio Chatter
+* Changed : Volume of sounds of default radio lowered to 5 .  Since arma  A3 v1.91.145537 any volume exceeding 5 will not play since the function uses  <a href="https://community.bistudio.com/wiki/playSound3D">playSound3D</a> getSoundFile function will automatically reduce returned volume to file if volume is above that.
+
+## Heli Taxi : 
+* Tweaked: Heli taxi now makes use of the core clear waypoints function, should opefully fix some issues when setting a new course
+
+## Soldier tab
+* Added : BluFor Tracker on tablet
+> Blufor tracker only works when the tablet is connected to an antenna. On the tracker units will only show up if they are equipped with one of the following items:
+1. "MRH_SoldierTab", PDA from milsim tools
+2. "MRH_BluForTransponder", transponder from MRH Satellite mod
+3. "ItemcTab", rugged tabler from CTab mod
+4. "ItemAndroid", android device from cTab mod
+5. "ACE_microDAGR" from ACE3
+In addition, units will show on the blufor tracker if they are in a vehicle that's listed by the mod. by default most of vanilla, RHS USAF, RHS AFRF and RHS GREF APCs, Tanks, MRAPS, helicopters, boats and planes are included.
+If you want to include a custom class of either Items or vehicles to the recognized vehicles you can use:
+```
+Function name:MRH_fnc_MilsimTools_Core_addToBFTenabledList
+Author: Mr H.
+Description: Will add the class to vehicles or items that show up on the BluFor tracker (provided a friendly unit is in them or they have item on self)
+Return value: List of all allowed classes, updated with new ones
+Public: Yes
+Parameters:
+0-<STRING> or <ARRAY> of <STRINGS> can either be vehicles classnames or items classnames
+Example(s):
+["My_vehicle"]call MRH_fnc_MilsimTools_Core_addToBFTenabledList;
+["My_item"]call MRH_fnc_MilsimTools_Core_addToBFTenabledList;
+[["My_veh1","My_veh2","My_veh3","My_item1","My_item2"]]call MRH_fnc_MilsimTools_Core_addToBFTenabledList;
+```
+
+* Added : In vehicles with satcom capabilities players can connect their tablet's to the vehicle's satcom system, they can also connect it from outside but distance limitations apply and you will loose the signal when going too far frome a vehicle.
+> Addon builders can add the property
+```
+mrh_satcom = 1;
+```
+To their configs to add satcom capabilities to their vehicles.
+> Some RHS/gref/usaf/afrf vehicles are already added by script (so as not to add a dependency.
+I may release a compatibilty mod in the future for RHS if requested.
+
+//////////////////////////////////////////////////
+
 # Changelog: MRH Milsim Tools version : v.1.18.0
 ## Core
 * Added : Loadout summary in diary.
