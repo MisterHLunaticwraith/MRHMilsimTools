@@ -19,7 +19,12 @@ The variables are refreshed on all clients and the server :
 * Added :
 ##### CBA Events
 ```
-"MRH_playerConnected_EH","MRH_playerDisconnected_EH","MRH_playerOnly_ace_unconscious","MRH_playerKilled","MRH_playerRespawned_global","MRH_playerWasSetAsRevived"
+"MRH_playerConnected_EH", //same parametres as player connected EH but raised on every client
+"MRH_playerDisconnected_EH", //same parametres as player disconnected EH but raised on every client
+"MRH_playerOnly_ace_unconscious", // same as ace_uncounsious event, raised globally but only when a player's state changes params ["_unit", "_state"];
+"MRH_playerKilled", Same as MPKilled 
+"MRH_playerRespawned_global", // raised globally when a player respawns params ["_unit", "_corpse"];
+"MRH_playerWasSetAsRevived" // raised globally when an admin resets "hasDied" condition on a player (via the admin menu or the setRevived function) target player is passed as a parameter.
 ```
 
 ## Radio Chatter
