@@ -1,20 +1,18 @@
 class CfgPatches {
-	class MRHMilsimTools{
-		units[] = {}; //
-		weapons[] = {}; //
-		requiredVersion = 0.1; //
-		requiredAddons[] = {"cba_main"};
-		version = 1.18.1;
-		versionStr = "1.18.1";
-		versionAr[] = {1,18,1};
-		versionDesc = "MRH Milsim Tools";
-		versionAct = "call compile preProcessFileLineNumbers '\MRHMilSimTools\about.sqf'";
-		author = "Mr H.";
-      authors[]= {"Mr H."};
-		url = "https://mrhmilsimtools-arma3-mod.wikia.com/wiki/MRHMilsimTools_ARMA3_Mod_Wiki";
-	};
-		
-		
+    class MRHMilsimTools {
+        units[] = {}; //
+        weapons[] = {}; //
+        requiredVersion = 0.1; //
+        requiredAddons[] = {"cba_main"};
+        version = 1.18.1;
+        versionStr = "1.18.1";
+        versionAr[] = {1,18,1};
+        versionDesc = "MRH Milsim Tools";
+        versionAct = "call compile preProcessFileLineNumbers '\MRHMilSimTools\about.sqf'";
+        author = "Mr H.";
+        authors[]= {"Mr H."};
+        url = "https://mrhmilsimtools-arma3-mod.wikia.com/wiki/MRHMilsimTools_ARMA3_Mod_Wiki";
+    };
 };
 
 class CfgMods {
@@ -32,53 +30,43 @@ class CfgMods {
 
 #include "\MRHMilSimTools\cfgSettings.hpp"
 
-class Extended_PreInit_EventHandlers
-{
-   class MRHMilsimTools_CBA_Settings
-   {
-      init = "call compile preProcessFileLineNumbers '\MRHMilSimTools\Functions\SettingsPreInit\CBASettings.sqf'";
-   }; 
-   class MRHMilsimTools_CBA_Settings_keybinds
-   {
-      init = "call compile preProcessFileLineNumbers '\MRHMilSimTools\Functions\SettingsPreInit\CBAKeys.sqf'";
-   };    
-	   
+class Extended_PreInit_EventHandlers {
+    class MRHMilsimTools_CBA_Settings {
+        init = "call compile preProcessFileLineNumbers '\MRHMilSimTools\Functions\SettingsPreInit\CBASettings.sqf'";
+    };
+    class MRHMilsimTools_CBA_Settings_keybinds {
+        init = "call compile preProcessFileLineNumbers '\MRHMilSimTools\Functions\SettingsPreInit\CBAKeys.sqf'";
+    };
+
 };
-class Extended_PostInit_EventHandlers
-{
-   class MRHMilsimTools_Core_SetPlayerIntel
-   {
-      clientInit = "call compile preProcessFileLineNumbers '\MRHMilSimTools\Functions\InitFunctions\fn_MilsimTools_Core_SetPlayerIntel.sqf'";
-   };
-   
-   class MRHMilsimTools_Core_InitPlayerLocal
-   {
-      clientInit = "call compile preProcessFileLineNumbers '\MRHMilSimTools\Functions\InitFunctions\XEHclient.sqf'";
-   };
-   
-   class MRHMilsimTools_Core_PlayersRegistry
-   {
-      serverInit = "call compile preProcessFileLineNumbers '\MRHMilSimTools\Functions\InitFunctions\XEHserver.sqf'";
-   };
-   class MRHMilsimTools_Core_Init
-   {
-      init = "call compile preProcessFileLineNumbers '\MRHMilSimTools\Functions\InitFunctions\XEHinit.sqf'";
-   };
-   
+class Extended_PostInit_EventHandlers {
+    class MRHMilsimTools_Core_SetPlayerIntel {
+        clientInit = "call compile preProcessFileLineNumbers '\MRHMilSimTools\Functions\InitFunctions\fn_MilsimTools_Core_SetPlayerIntel.sqf'";
+    };
+
+    class MRHMilsimTools_Core_InitPlayerLocal {
+        clientInit = "call compile preProcessFileLineNumbers '\MRHMilSimTools\Functions\InitFunctions\XEHclient.sqf'";
+    };
+
+    class MRHMilsimTools_Core_PlayersRegistry {
+        serverInit = "call compile preProcessFileLineNumbers '\MRHMilSimTools\Functions\InitFunctions\XEHserver.sqf'";
+    };
+    class MRHMilsimTools_Core_Init {
+        init = "call compile preProcessFileLineNumbers '\MRHMilSimTools\Functions\InitFunctions\XEHinit.sqf'";
+    };
+
 };
 
 /////=========cfgFunctions========
-class CfgFunctions
-{
-	#include "\MRHMilSimTools\Functions\cfgFunctions.hpp"
+class CfgFunctions {
+    #include "\MRHMilSimTools\Functions\cfgFunctions.hpp"
 };
 ////=============fincfgFunctions
 // =============CFG======================================================
 
 /////=========cfgNotifications=====
-class cfgNotifications
-{
-#include"\MRHMilSimTools\cfghpp\cfgnotifications.hpp"
+class cfgNotifications {
+    #include"\MRHMilSimTools\cfghpp\cfgnotifications.hpp"
 };
 ////=============fincfgNotifications
 //===cfgMRHRanks
@@ -88,14 +76,12 @@ class cfgNotifications
 #include"\MRHMilSimTools\cfghpp\cfgMRHcompositions.hpp"
 #include"\MRHMilSimTools\cfghpp\cfg3DEN.hpp"
 
-class CfgUnitInsignia
-{
-	class MRH_MedicShoulderPatch
-	{
-		author = "Mr H.";
-		displayName = $STR_MRH_MISC_MedicPatchInsignia;
-		texture = "\MRHMilSimTools\paa\medicpatch.paa";
-	};
+class CfgUnitInsignia {
+    class MRH_MedicShoulderPatch {
+        author = "Mr H.";
+        displayName = $STR_MRH_MISC_MedicPatchInsignia;
+        texture = "\MRHMilSimTools\paa\medicpatch.paa";
+    };
 };
 class Extended_Init_EventHandlers {
     class CAManBase {
@@ -104,34 +90,26 @@ class Extended_Init_EventHandlers {
         };
     };
 };
-class CfgFontFamilies 
-{
-   #include "\MRHMilsimTools\Fonts\cfgFontFamilies.hpp"
+class CfgFontFamilies {
+    #include "\MRHMilsimTools\Fonts\cfgFontFamilies.hpp"
 };
 
-class RscTitles
-{
-      class MRHEmptyDisplay
-   {
-      idd=070919;
-      movingenable=true;
-      onLoad = "uiNamespace setVariable ['MRHEmptyDisplay', _this select 0]";
-      duration = "2";
-      class controls 
-      {
-      };
-   };
+class RscTitles {
+    class MRHEmptyDisplay {
+        idd=070919;
+        movingenable=true;
+        onLoad = "uiNamespace setVariable ['MRHEmptyDisplay', _this select 0]";
+        duration = "2";
+        class controls {
+        };
+    };
 };
 #include "\MRHMilSimTools\animations\animations.hpp"
 class RscPicture;
 //class Watermark;
-class RscDisplayCurator 
-{
-   
-	class controls 
-	{
-      class MRHDummyCuratorCtrl: RscPicture
-         {
+class RscDisplayCurator {
+    class controls {
+        class MRHDummyCuratorCtrl: RscPicture {
             idc = 6547;
             show = false;
             text = "";
@@ -140,27 +118,21 @@ class RscDisplayCurator
             w = 0 * safezoneW;
             h = 0 * safezoneH;
             onLoad = "[(ctrlParent (_this select 0)),'Load'] call MRH_fnc_MilsimTools_Core_curatorViewEH";
-            
-         };
-     
-      class Watermark : RscPicture
-      {
-         onLoad = "(_this select 0) call MRH_fnc_MilsimTools_Core_handleCuratorWaterMark";//to hide check curatorToggleInterface https://community.bistudio.com/wiki/inputAction/actions#Zeus
-         
-      };
-   };
-    
+        };
+
+        class Watermark : RscPicture {
+            onLoad = "(_this select 0) call MRH_fnc_MilsimTools_Core_handleCuratorWaterMark";//to hide check curatorToggleInterface https://community.bistudio.com/wiki/inputAction/actions#Zeus
+
+        };
+    };
 };
 
-class MRH_BFT_enabledClasses
-{
-   class enabledClasses
-   {
-      classes[]={"MRH_SoldierTab","MRH_BluForTransponder","ItemcTab","ItemAndroid","ACE_microDAGR"};
-   };
+class MRH_BFT_enabledClasses {
+    class enabledClasses {
+        classes[]={"MRH_SoldierTab","MRH_BluForTransponder","ItemcTab","ItemAndroid","ACE_microDAGR"};
+    };
 };
 
-class cfgVehicles
-{
-   #include"\MRHMilSimTools\cfghpp\cfgVehicles.hpp"
+class cfgVehicles {
+    #include"\MRHMilSimTools\cfghpp\cfgVehicles.hpp"
 };
