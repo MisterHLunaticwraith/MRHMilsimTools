@@ -68,7 +68,7 @@ params ["_units","_ctrlMap"];
 						};
 				};
 
-			}forEach _units;
+			} foreach _units;
 			
 		},
 		[_units,_ctrlMap],

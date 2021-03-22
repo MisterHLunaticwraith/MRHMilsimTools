@@ -15,5 +15,5 @@ _allVehs = missionNamespace getVariable ["MRH_InsertionHandler_AvailVehs"+(str s
 	_name = ([_x] FUNC(readVehicleCfg)) select 0;
 	_index = _combo lbAdd _name;
 	_data = _combo lbSetData [_index,_x];
-}forEach _allVehs;
+} foreach _allVehs;
 _combo lbSetCurSel 0;

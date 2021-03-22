@@ -21,4 +21,4 @@ private _allPics = _HQObject getVariable ["MRH_SoldierTab_ownedPics",[]];
 			[_x,_allData,_HQObject]FUNC(attributeData); 
 			[_x,_allPics,_HQObject]FUNC(attributePictures); 
 			};
-}forEach allPlayers;
+} foreach allPlayers;

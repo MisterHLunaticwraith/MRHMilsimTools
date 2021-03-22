@@ -21,7 +21,7 @@ _caller = objNull;
 {
 	_groups pushBackUnique (group _x);
 	if (_x isKindOf "Air") then {_heli =_x};
-}forEach _units;
+} foreach _units;
 _groups deleteAt (_groups find (group _heli));
 if (isNull _heli) exitWith {systemChat "heliNull"};
 if (_groups isEqualTo []) exitWith {systemChat "grpNull"};

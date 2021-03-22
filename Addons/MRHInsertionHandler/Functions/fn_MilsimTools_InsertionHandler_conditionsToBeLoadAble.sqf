@@ -19,7 +19,7 @@ _isNearEnough = false;
 {
 	_var= _x getVariable ["MRH_InsertionHandler_isAirInsertionPlanner_"+ (str side MRH_player),false];
   if(_var) then {_isNearEnough =true};
-}forEach _allNearObjects;
+} foreach _allNearObjects;
 //----- mass condition
 _okMass = false;
 if (((getmass _object) < 10000) && ((getmass _object) >= 5)) then {_okMass = true};

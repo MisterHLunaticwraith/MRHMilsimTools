@@ -21,5 +21,5 @@ private _result = [];
 		if (_parentClass in ([(configFile >> _cfg >> _x),true ] call BIS_fnc_returnParents)) then {_result pushBackUnique _x};	
 	};
 	
-}forEach _all;
+} foreach _all;
 _result

@@ -53,7 +53,7 @@ _ctrlAmmotypeCombo lbsetData [_index,"MRH_SupplyCrate_special"];
 
 _index = _ctrlAmmotypeCombo lbAdd (getText (configFile>>"cfgVehicles">>_x>>"displayName"));
 _ctrlAmmotypeCombo lbsetData [_index,_x]; 
-}forEach _availableSupplies;
+} foreach _availableSupplies;
 _ctrlAmmotypeCombo lbSetCurSel 0;
 
 _button = FDIS(1601);

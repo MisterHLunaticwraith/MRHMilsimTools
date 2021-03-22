@@ -11,7 +11,7 @@ call MRH_fnc_MilsimTools_SoldierTab_playVideoOnScreens;
 #include "MRH_C_Path.hpp"
 params ["_video","_screens"];
 
-if (_screens isEqualTo [])exitWith {};
+if (_screens isEqualTo []) exitWith {};
 ["MRH_ST_set_screen_video",_this] call CBA_fnc_globalEvent;
 /*
 if !(isServer) exitWith {[_this,MRH_fnc_MilsimTools_SoldierTab_playVideoOnScreens]remoteExec ["Call,2"]};
@@ -22,7 +22,7 @@ if !(isServer) exitWith {[_this,MRH_fnc_MilsimTools_SoldierTab_playVideoOnScreen
 	missionNamespace setVariable ['MRH_stop_vid',nil];
 	{
 		_x setObjectTexture [(_x FUNC(getTexturePath)),_video];
-	}forEach _screens;
+	} foreach _screens;
 	[_video, [10, 10],[1,1,1,1],'MRH_stop_vid'] call BIS_fnc_playVideo;
 
 }

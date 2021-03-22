@@ -21,5 +21,5 @@ lbClear _ctrlList;
 	_ctrlList lbSetData [_index,str _x];
 	if !(_spaceLeft) then {_ctrlList lbSetColor [_index,[1,0,0,1]]} else {_ctrlList lbSetColor [_index,[0,1,0,1]]};
 
-}forEach _gear;
+} foreach _gear;
 FUNC(checkListUpdate);

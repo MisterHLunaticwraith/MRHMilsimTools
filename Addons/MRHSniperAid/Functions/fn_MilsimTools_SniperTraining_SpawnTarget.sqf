@@ -39,7 +39,7 @@ private _success = [_grp, getPos _unit, _patrolDis] call BIS_fnc_taskPatrol;
 [_veh] call MRH_fnc_MilsimTools_SniperTraining_isTarget;
 {
 [_x] call MRH_fnc_MilsimTools_SniperTraining_isTarget;
-}forEach crew _veh;
+} foreach crew _veh;
 } 
 else {
 _grp = createGroup east;

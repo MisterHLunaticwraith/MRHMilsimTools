@@ -35,7 +35,7 @@ _colorGreen = "#06ff02";
 	 _subText = ORSTRING(_timeStamp) +" " +"owner :"+" "+ ([GREENSTRING(str _owner),REDSTRING(str _owner)] select (_owner ==2)) + " " + _logEntry + "<br/>";
 	_logToPrint = _logToPrint + _subText;
 
-}forEach _log;
+} foreach _log;
 
 _LOGTEXT ctrlSetStructuredText parseText _logToPrint;
 CTRLRSZ(1100);

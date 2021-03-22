@@ -33,7 +33,7 @@ _subsArray = [];
 	_subText = gettext (configFile>>"MRH_SoldierTabData">>_Data >> _x >> "textSub");
 	_entryArray = [_subTitle,_subText];
 	_subsArray pushBackUnique _entryArray;
-	}forEach _subSections;
+	} foreach _subSections;
 _mainArray = [_data,_titleEntry,_titleData,_subsArray];
 _missionDataSubs pushBackUnique _mainArray;
 } forEach _configSetData;

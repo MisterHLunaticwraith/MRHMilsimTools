@@ -54,7 +54,7 @@ params ["_classname","_dropPos",["_attachSmoke",true],["_attachIR",true]];
 		_smokeRedgear = "SmokeShellGreen" createVehicle (position _toDrop);
 		_smokeRedgear attachto [_toDrop, [0,0,0]];
 		};
-		if (_attachIR)then {
+		if (_attachIR) then {
 		_IRG = "B_IRStrobe" createVehicle (position _toDrop);
 		_IRG attachto [_toDrop, [0,0,0.5]];
 		};

@@ -16,7 +16,7 @@ Example(s):
 	switch (true) do 
 	{
 		case (isNull (objectParent _leader)):{
-				if ((rank _leader) in ["CAPTAIN","MAJOR","COLONEL"])then {_icon ="\A3\Ui_f\data\Map\Markers\NATO\b_hq.paa"}else {_icon ="\A3\Ui_f\data\Map\Markers\NATO\b_inf.paa"
+				if ((rank _leader) in ["CAPTAIN","MAJOR","COLONEL"]) then {_icon ="\A3\Ui_f\data\Map\Markers\NATO\b_hq.paa"}else {_icon ="\A3\Ui_f\data\Map\Markers\NATO\b_inf.paa"
 			}};
 		case( (objectParent _leader)isKindOf "AIR") :{_icon ="\A3\ui_f\data\map\markers\nato\b_plane.paa"};
 		case( (objectParent _leader)isKindOf "Car") :{_icon = "\A3\ui_f\data\map\markers\nato\b_motor_inf.paa"};

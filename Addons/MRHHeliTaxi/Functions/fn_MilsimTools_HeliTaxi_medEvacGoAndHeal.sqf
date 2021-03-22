@@ -14,7 +14,7 @@ _heli = missionNamespace getVariable [("MRH_HeliTaxi_CurrentMedEvacHeli_"+ (str 
 if (isNull _heli) exitWith {};
 [_heli,"MedEvacGoAndHeal"] FUNC(handleMessages);
 _surgeon = _heli GVARDef(assignedSurgeon,objNull);
-if !(isNull _surgeon)then 
+if !(isNull _surgeon) then 
 {
 	if (alive _surgeon) then {
 	_surgeon doMove (position _heli);
@@ -35,7 +35,7 @@ _escortGuys = _heli getVariable ["MRH_HeliTaxi_escortHelis",[objNull,objNull]];
 		//[_x] joinSilent (group _heli);
 		};
 	};
-}forEach _escortGuys;
+} foreach _escortGuys;
 
 
 _dummyDestination = _heli modelToWorld [0,-2000,60];
@@ -51,7 +51,7 @@ _heli limitSpeed 120;
 		};
 		
 	};
-}forEach _escortGuys;
+} foreach _escortGuys;
 // heal all inside when dummy pos is reached
 [_heli,_dummyDestination] spawn {params ["_heli","_dummyDestination"]; sleep 180; if ((_heli distance _dummyDestination)<400) then {_heli setPos _dummyDestination}};//safety, some helis do not reach LZ
 waitUntil {(_heli distance _dummyDestination < 400)};
@@ -78,7 +78,7 @@ waitUntil {(_heli distance _dummyDestination < 400)};
 		_x  commandMove (_startUpPos vectorAdd [([-100,100] select _forEachIndex),0,0]);
 		};
 	};
-}forEach _escortGuys;
+} foreach _escortGuys;
 
 _heli SVAR(isInFinalApproachPhase,true,true);
 [_heli] spawn {sleep 30; (_this select 0) SVAR(heliShouldHaveLanded,true,true)};//sometimes the heli won't land if so give players ability to force land
@@ -134,7 +134,7 @@ sleep 10;
 		};
 		
 	};
-}forEach _escortGuys;
+} foreach _escortGuys;
 _heli flyInHeight 60;
 _heli limitSpeed 99999;
 // make heli available again 
@@ -152,4 +152,4 @@ sleep 40;
 		};
 		
 	};
-}forEach _escortGuys;
+} foreach _escortGuys;

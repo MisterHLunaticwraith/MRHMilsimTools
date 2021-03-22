@@ -39,7 +39,7 @@ params ["_jumpersArray",["_isSteerable",false],["_jumpInterval",0.5],["_extraGea
 			{
 				[_x,_sourceVehicle modelToWorld [0,0,-10]] call MRH_fnc_parachuteObject;
 				sleep (_jumpInterval + random [0.1,0.15,0.5]);
-			}ForEach _extraGear;
+			} foreach _extraGear;
 		_sourceVehicle allowDamage true;
 		};
 		

@@ -14,7 +14,7 @@ Example(s):
 	if (_type isEqualTo "") exitWith {["N/A","N/A","N/A"]};
 	private _cfg = "cfgWeapons";
 	if (_isBackPack) then {_cfg = "cfgVehicles"};
-	if (_isMagazine)then {_cfg = "cfgMagazines"};
+	if (_isMagazine) then {_cfg = "cfgMagazines"};
 
 	private _displayName = getText (configFile >>_cfg>>_type>>"displayName");
 	private _picture = getText (configFile >>_cfg>>_type>>"picture");

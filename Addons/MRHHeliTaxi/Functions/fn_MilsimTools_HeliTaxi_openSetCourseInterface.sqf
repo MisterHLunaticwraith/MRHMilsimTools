@@ -29,6 +29,6 @@ if ([(typeOf (vehicle MRH_Player))]FUNC(canReceiveFries)) then {_waypointTypes p
 	_index = _comboWP lbAdd _prettyName;
 	_comboWP lbSetData [_index,_data];
 	_comboWP lbSetPicture [_index,_picture];
-}forEach _waypointTypes;
+} foreach _waypointTypes;
 _comboWP lbSetCurSel 0;
 [_comboWP,0] FUNC(onFinalWayPointTypeChanged);

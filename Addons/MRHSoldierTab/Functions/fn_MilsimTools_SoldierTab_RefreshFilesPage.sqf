@@ -13,7 +13,7 @@ FUNC(AllCtrlsHide);
 _pageSpecificCtrls = [1208,1209,9909,8200,8201];
 {
 ctrlShow [_x,true];
-}ForEach _pageSpecificCtrls;
+} foreach _pageSpecificCtrls;
 _ctrlTree = FDIS(1208);
 _ctrlText = FDIS(1209);
 _allDataEntries = MRH_player getVariable ["MRH_SoldierTab_ownedData",[]];
@@ -38,7 +38,7 @@ _ctrlTree tvSetPictureColor [[_index], [1,0,1,1]];
 	_dataSubPath = str _x;
 	_subIndex = _ctrlTree tvAdd [[_index], _subBranchTitle];
 	_ctrlTree tvSetData [ [_index,_subIndex], _dataSubPath];
-	}forEach _subSections;
+	} foreach _subSections;
 
 } forEach _allDataEntries;
 _ctrlText ctrlSetStructuredText parsetext (localize "STR_MRH_ST_FC_PleaseSelectFile");
@@ -49,7 +49,7 @@ FUNC(AllCtrlsHide);
 _pageSpecificCtrls = [1208,1209,9909,8200,8201];
 {
 ctrlShow [_x,true];
-}ForEach _pageSpecificCtrls;
+} foreach _pageSpecificCtrls;
 _ctrlTree = FDIS(1208);
 _ctrlText = FDIS(1209);
 _allDataEntries = player getVariable ["MRH_SoldierTab_ownedData",[]];
@@ -72,7 +72,7 @@ _mainEntry = _x;
 	_dataSubPath = str (missionConfigFile>>"MRH_SoldierTabData">>_mainEntry >> _x);
 	_subIndex = _ctrlTree tvAdd [[_index], _subBranchTitle];
 	_ctrlTree tvSetData [ [_index,_subIndex], _dataSubPath];
-	}forEach _subSections;
+	} foreach _subSections;
 
 } forEach _allDataEntries;
 _ctrlText ctrlSetStructuredText parsetext (localize "STR_MRH_ST_FC_PleaseSelectFile");

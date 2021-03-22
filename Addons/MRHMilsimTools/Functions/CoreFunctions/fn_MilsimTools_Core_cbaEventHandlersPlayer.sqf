@@ -55,7 +55,7 @@ call MRH_fnc_MilsimTools_Core_cbaEventHandlersPlayer;
 		missionNamespace setVariable ['MRH_stop_vid',nil];
 		{
 			_x setObjectTexture [(_x EFUNC(SoldierTab,getTexturePath)),_video];
-		}forEach _screens;
+		} foreach _screens;
 		[_video, [10, 10],[1,1,1,1],'MRH_stop_vid'] call BIS_fnc_playVideo;
 	}
 ]call CBA_fnc_addEventHandler;

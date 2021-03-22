@@ -17,4 +17,4 @@ lbClear _ctrlList;
 	_index = _ctrlList lbAdd _name;
 	_ctrlList lbSetData [_index,str _x];
 	
-}forEach _gear;
+} foreach _gear;

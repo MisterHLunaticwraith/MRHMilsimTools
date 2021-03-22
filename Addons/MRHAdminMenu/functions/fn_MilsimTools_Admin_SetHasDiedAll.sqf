@@ -11,7 +11,7 @@ call MRH_fnc_MilsimTools_Admin_SetHasDiedAll;
 #include "MRH_C_Path.hpp"
 {
 [_x] CFUNC(SetRevived);
-}forEach allPlayers;
+} foreach allPlayers;
 
 FUNC(RefreshPlayersList);
 systemchat (localize "STR_MRH_ADMIN_SETHASDIEDALLSYSTEMCHAT");

@@ -26,7 +26,7 @@ params ["_unit","_vehicle",["_type","UNIFORM"]];
 		private _droppedContainer = (((everyContainer _vehicle) select _index) select 1);
 		{
 		_droppedContainer addItemCargoGlobal [_x, 1];
-		}forEach _itemsStart;
+		} foreach _itemsStart;
 		removeVest _unit;
 
 		private _toTrace = format ["Unit %1,Type %2 %3,moved to container: %4",_unit,_type,_itemsStart, _droppedContainer];
@@ -42,7 +42,7 @@ params ["_unit","_vehicle",["_type","UNIFORM"]];
 		private _droppedContainer = (((everyContainer _vehicle) select _index) select 1);
 		{
 		_droppedContainer addItemCargoGlobal [_x, 1];
-		}forEach _itemsStart;
+		} foreach _itemsStart;
 		removeUniform _unit;
 		
 		private _toTrace = format ["Unit %1,Type %2 %3,moved to container: %4",_unit,_type,_itemsStart, _droppedContainer];

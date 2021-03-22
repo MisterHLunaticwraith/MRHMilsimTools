@@ -14,5 +14,5 @@ _isEmpty = true;
 	//if(_x in _veh) then {_isEmpty = false};
 	private _isCrew = _x getVariable ["MRH_HeliTaxi_isHeliCrew",false];
 	if !(_isCrew) then  {_isEmpty = false};
-}forEach (crew _veh);
+} foreach (crew _veh);
 _isEmpty

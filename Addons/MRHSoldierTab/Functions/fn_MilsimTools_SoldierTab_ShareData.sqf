@@ -42,7 +42,7 @@ else
 				_toList pushBackUnique [name _x,getPlayerUID _x];
 			};
 	} forEach _unitsForPlayerside;
-	if (_hq select 0 != "nohqWildCard")then {_toList pushBackUnique _hq};
+	if (_hq select 0 != "nohqWildCard") then {_toList pushBackUnique _hq};
 };
 if (_toList isEqualTo []) 
 exitWith 
@@ -55,5 +55,5 @@ exitWith
 {
 	_index = _cbList lbAdd (_x select 0);
 	_cbList lbSetData [_index,(_x select 1)];
-}forEach _toList;
+} foreach _toList;
 _cbList lbSetCurSel 0;

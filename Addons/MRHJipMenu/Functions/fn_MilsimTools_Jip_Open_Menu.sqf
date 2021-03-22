@@ -39,7 +39,7 @@ if (_AdminGrpSideSetting) then
 	{
 	  {
 		if (side _x == side player) then {_groupsSidePlayer pushBackUnique _x};
-	  }forEach _GroupsWithPlayers;
+	  } foreach _GroupsWithPlayers;
 	  _GroupsWithPlayers = _groupsSidePlayer;
 	};
 
@@ -60,7 +60,7 @@ _colorCiv = [0.4,0,0.5,1];
 _color = [1,1,1,1];
 
 //step 4 change colors
-	switch (true)do 
+	switch (true) do 
 	{
 	case (side player == east):{_color = _colorBF};
 	case (side player == west):{_color = _colorOP};
@@ -81,7 +81,7 @@ _ctrlBOX = ((findDisplay 210382) displayCtrl 2100);
 	_text = format ["%1",groupID _x];
 	_index = _ctrlBOX  lbAdd  _text;
 	lbSetData [2100, _index,str _x ];
-	switch (true)do 
+	switch (true) do 
 	{
 	case (side _x == east):{_color = _colorBF};
 	case (side _x == west):{_color = _colorOP};

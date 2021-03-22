@@ -76,7 +76,7 @@ class RscEdit_1400: RscEditMRHZeusModules
 {
 	idc = 1400;
     onChar = "[_this,MRH_fnc_MilsimTools_Core_isExistingVariableName,true] call MRH_fnc_MilsimTools_ZeusModules_onCharCheck;";
-	onKeyDown = "if ((_this select 1)==14)ExitWith {[_this,MRH_fnc_MilsimTools_Core_isExistingVariableName,true] call MRH_fnc_MilsimTools_ZeusModules_onCharCheck;};";
+	onKeyDown = "if ((_this select 1)==14) exitWith {[_this,MRH_fnc_MilsimTools_Core_isExistingVariableName,true] call MRH_fnc_MilsimTools_ZeusModules_onCharCheck;};";
 	x = 0.381406 * safezoneW + safezoneX;
 	y = 0.566 * safezoneH + safezoneY;
 	w = 0.170156 * safezoneW;

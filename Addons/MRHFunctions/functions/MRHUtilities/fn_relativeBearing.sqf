@@ -16,7 +16,7 @@ _angle = acos (_ab/_ac);
 _angle2 = 360 - _angle;
 //_xjoueur = (getPos _unit1) select 0;
 _anglefinal = 0;
-if (_xjoueur > _xcible)then { _anglefinal = _angle2} else {_anglefinal = _angle};
+if (_xjoueur > _xcible) then { _anglefinal = _angle2} else {_anglefinal = _angle};
 _anglefinal = [_anglefinal,0] call BIS_fnc_cutDecimals;
 //returned:
 _anglefinal

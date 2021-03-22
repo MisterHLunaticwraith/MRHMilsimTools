@@ -97,5 +97,5 @@ params ["_plane","_dropZone","_supply","_side","_startDisToDrop",["_caller",objN
 	waitUntil {(_myvec distance2D _dropZone) >200};
 	_myvec allowDamage true;
 	waitUntil {(_myvec distance2D _dropZone) >2000};
-	{deleteVehicle _x;}forEach crew _myvec;
+	{deleteVehicle _x;} foreach crew _myvec;
 	deleteVehicle _myvec;

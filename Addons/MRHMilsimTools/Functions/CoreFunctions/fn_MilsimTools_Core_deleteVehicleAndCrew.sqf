@@ -11,5 +11,5 @@ Example(s):
 */
 #include "MRH_C_Path.hpp"
 params ["_veh"];
-{deleteVehicle _x;}forEach crew _veh;
+{deleteVehicle _x;} foreach crew _veh;
 deleteVehicle _veh;

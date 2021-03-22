@@ -60,7 +60,7 @@ _do= _box addMagazineCargoGlobal [_x, _Ammount];
 
 ////if unlimited is set to true, the box will be refilled automatically
 
-if (_isUnlimited)then {
+if (_isUnlimited) then {
 _box setVariable ["MRH_AmmoMagazines", _allMagazinesType];
 
 _handlerIndex = _box addEventHandler 

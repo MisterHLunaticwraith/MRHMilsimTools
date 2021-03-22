@@ -11,12 +11,12 @@ Example(s):
 */
 #include "MRH_C_Path.hpp"
 params ["_percentage",["_size",10]];
-	if (_size>18)then {_size =18};
+	if (_size>18) then {_size =18};
 	private _size = "'"+ (str _size) + "'";
 	private _emptyColor = "'#D0CCFE'";
 	private _fullColor = "'#2bfa06'";
 	private _over90Color = "'#ff0000'";
-	if (_percentage >=90)then {_fullColor = _over90Color};
+	if (_percentage >=90) then {_fullColor = _over90Color};
 	private _bar = "";
 	private _1 = "|";
 	private _empty = 100-_percentage;

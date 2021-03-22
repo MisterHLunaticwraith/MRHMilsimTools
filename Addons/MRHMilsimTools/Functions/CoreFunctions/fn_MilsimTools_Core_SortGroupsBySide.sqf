@@ -14,5 +14,5 @@ params ["_groups","_inputSide"];
 _groupsForSide = [];
 {
 if (side _x == _inputSide) then {_groupsForSide pushBackUnique _x};
-}forEach _groups;
+} foreach _groups;
 _groupsForSide

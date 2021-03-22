@@ -18,7 +18,7 @@ if (_allPics isEqualTo []) exitWith {Diag_Log "MRH_MilsimTools_SoldierTab: No pi
 _selectedPic = [];
 {
 	if ((_x select 0) == _picEntry) then {_selectedPic = _x};
-}forEach _allPics;
+} foreach _allPics;
 
 if (_selectedPic isEqualTo []) exitWith {Diag_Log "MRH_MilsimTools_SoldierTab: Picture not found"};
 

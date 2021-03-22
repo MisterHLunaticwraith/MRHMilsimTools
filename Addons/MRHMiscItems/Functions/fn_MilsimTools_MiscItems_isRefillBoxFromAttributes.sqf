@@ -9,7 +9,7 @@ Example(s):
 call MRH_fnc_MilsimTools_MiscItems_;
 */
 #include "MRH_C_Path.hpp"
-if (is3DEN)exitWith {};
+if (is3DEN) exitWith {};
 _statement = {
 	params ["_box"];
 	_check= _box getVariable ["MRH_AmmoCrateParameters",[]];

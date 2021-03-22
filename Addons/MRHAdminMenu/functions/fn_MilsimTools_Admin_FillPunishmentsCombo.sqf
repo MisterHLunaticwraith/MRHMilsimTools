@@ -30,7 +30,7 @@ lbSetPicture [2102, _index, _pic];
 //add configfile punishments
 _cfgM = missionconfigfile;
 _allPunishmentsMission = [(_cfgM >> "cfgMRHPunishments")]call BIS_fnc_getCfgSubClasses;
-if !(_allPunishmentsMission isEqualTo [])then {
+if !(_allPunishmentsMission isEqualTo []) then {
 	{
 	_text2 = gettext (_cfgM >> "cfgMRHPunishments">>_x>>"displayname");
 	_pic2 = gettext (_cfgM >> "cfgMRHPunishments">>_x>>"picture");

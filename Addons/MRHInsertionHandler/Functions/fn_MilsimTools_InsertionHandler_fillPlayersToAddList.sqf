@@ -26,4 +26,4 @@ lbclear _listbox;
 	_data = _listbox lbSetData [_index,str _x];
 	};
 
-}forEach _units;
+} foreach _units;

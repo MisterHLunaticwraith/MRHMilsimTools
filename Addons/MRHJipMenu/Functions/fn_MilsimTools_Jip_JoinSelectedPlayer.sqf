@@ -19,7 +19,7 @@ _selectedPlayerConverted = objNull;
 {
 	if (str _x == _selectedPlayer) then {_selectedPlayerConverted = _x};
 
-}forEach playableUnits;
+} foreach playableUnits;
 
 //starts the process
 [_selectedPlayerConverted] spawn 

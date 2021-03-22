@@ -30,7 +30,7 @@ if ((_missionData find _entryName) != -1) then
 	{
 		if ((_x select 0)== _entryName) then {_missionDataSubs deleteAt (_missionDataSubs find _x);};
 
-	}forEach _missionDataSubs;
+	} foreach _missionDataSubs;
 };
 
 

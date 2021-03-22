@@ -23,6 +23,6 @@ _unloaded = [];
 	{
 		_unloaded pushBackUnique _x;
 	};
-}forEach _gear;
+} foreach _gear;
 _result =[_loaded,_unloaded];
 _result

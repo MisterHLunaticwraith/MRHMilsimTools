@@ -42,7 +42,7 @@ _getName = {
 	private _toString =[endl,endl,"//-----",_name,"-----//",endl,"[","""",_name,"""",",",getUnitLoadOut _x,"]"];
 	_toString append ([[",",endl,endl],[endl,endl]] select (_forEachIndex isEqualTo ((count _allUnits)-1)));
 	_allLoadOuts append _toSTring; 
-}forEach _allunits;
+} foreach _allunits;
 _allLoadOuts pushBackUnique "];";
 
 _info1 = "/*";
@@ -51,7 +51,7 @@ _info3 = "If you want to create an arsenal that contains only items from the abo
 _info4 ="this spawn {waitUntil{!isNil 'ACE_ArsenalAllowedItems'};[_this,ACE_ArsenalAllowedItems,true] call ace_arsenal_fnc_initBox};";
 _info5 ="*/";
 _script = ["//-----------Load Outs-----------//",endl,endl,"_allLoadOuts = "];
-_footer = [endl,endl,"//----------LoadOuts End----------//",endl,endl,"//-------add loadouts to ace default------",endl,"{[_x select 0,_x select 1] call ace_arsenal_fnc_addDefaultLoadout}forEach _allLoadOuts;",endl,endl,"ACE_ArsenalAllowedItems =",_items,";",endl,endl,_info1,endl,_info2,endl,_info3,endl,_info4,endl,_info5];
+_footer = [endl,endl,"//----------LoadOuts End----------//",endl,endl,"//-------add loadouts to ace default------",endl,"{[_x select 0,_x select 1] call ace_arsenal_fnc_addDefaultLoadout} foreach _allLoadOuts;",endl,endl,"ACE_ArsenalAllowedItems =",_items,";",endl,endl,_info1,endl,_info2,endl,_info3,endl,_info4,endl,_info5];
 
 _script append _allLoadOuts;
 _script append _footer;

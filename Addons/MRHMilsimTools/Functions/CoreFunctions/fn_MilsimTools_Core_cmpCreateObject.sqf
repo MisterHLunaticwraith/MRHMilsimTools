@@ -15,7 +15,7 @@ params ["_pivot","_className","_relPos","_relDir","_isAceMedicalFacility","_isMR
 /*
 {
 	_x = [_x]FUNC(stringToBool);
-}forEach [_isAceMedicalFacility,_isMRHSatelliteConsole,_isMRHSatelliteScreen,_isAmmoBox,_AmmoCrateParams];
+} foreach [_isAceMedicalFacility,_isMRHSatelliteConsole,_isMRHSatelliteScreen,_isAmmoBox,_AmmoCrateParams];
 */
 
 _isAceMedicalFacility= [_isAceMedicalFacility]FUNC(stringToBool);

@@ -19,6 +19,6 @@ _isFull = false;
 _emptySeat = [];
 {
 	if (isNull (_x select 0)) then {_emptySeat pushBackUnique (_x select 2)};
-}forEach _fullcrew;
+} foreach _fullcrew;
 if (_emptySeat isEqualTo []) then {_isFull = true};
 [_isFull,_emptySeat]

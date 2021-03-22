@@ -13,6 +13,6 @@ params [["_handles",[]]];
 
 {
 	[_x] call CBA_fnc_removePerFrameHandler;
-}forEach _handles;
+} foreach _handles;
 _toTrace = format ["Handles removed: %1",_handles];
 TRACE(_toTrace);

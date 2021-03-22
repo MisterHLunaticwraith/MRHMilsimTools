@@ -15,7 +15,7 @@ params ["_receiver","_picturesArray",["_sender",objNull]];
 _playerPics = _receiver getVariable ["MRH_SoldierTab_ownedPics",[]];
 {
 _playerPics pushBackUnique _x;
-}forEach _picturesArray;
+} foreach _picturesArray;
 _receiver SVAR(ownedPics,_playerPics,true);
 if (isPlayer _receiver) then 
 {

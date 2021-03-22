@@ -100,7 +100,7 @@ if (_security == "unsafe") then
 	_vecarray2 = [_myvec modelToWorld [10,-50,20], getDir _myvec, _escortHeliClass,side _myVec] call bis_fnc_spawnvehicle;
 	_escort2 = _vecarray2 select 0;
 
-	{[_myVec,_x,_LZ,_forEachIndex] FUNC(escortBehavior)}forEach [_escort1,_escort2];
+	{[_myVec,_x,_LZ,_forEachIndex] FUNC(escortBehavior)} foreach [_escort1,_escort2];
 	_myVec setVariable ["MRH_HeliTaxi_escortHelis",[_escort1,_escort2],true];
 	_myVec addEventHandler ["Deleted", {
 	params ["_entity"];

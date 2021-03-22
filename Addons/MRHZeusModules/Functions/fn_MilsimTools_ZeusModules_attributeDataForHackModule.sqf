@@ -41,5 +41,5 @@ _creatable = ["Land_DataTerminal_01_F","Land_Laptop_device_F"];
 	_index = _CREATECOMBO lbAdd (getText(configFile>>"cfgVehicles">>_x>>"displayName"));
 	_CREATECOMBO lbSetData [_index,_x];
 
-}forEach _creatable;
+} foreach _creatable;
 _CREATECOMBO lbSetCurSel 0;

@@ -21,7 +21,7 @@ _availSupports =[
 _toCreateCtrls = [];
 {
 	if ([(_x select 2)]call cba_settings_fnc_get) then {_toCreateCtrls pushBackUnique _x};
-}forEach _availSupports;
+} foreach _availSupports;
 
 if (_toCreateCtrls isEqualTo []) exitWith {};
 
@@ -51,4 +51,4 @@ _colorHex = [];
 	_ctrlText ctrlSetTextColor (_colorRGB select _avail);
 	_ctrlText ctrlCommit 0; 
 
-}forEach _toCreateCtrls
+} foreach _toCreateCtrls

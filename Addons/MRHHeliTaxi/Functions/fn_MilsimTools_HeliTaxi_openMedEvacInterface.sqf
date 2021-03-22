@@ -26,7 +26,7 @@ _specials =
 {
  _index = _specCombo lbAdd (_x select 1);
  _specCombo lbSetData [_index,(_x select 0)];
-}forEach _specials;
+} foreach _specials;
 _specCombo lbSetCurSel 0;
 _intel =MRH_player getVariable ["MRH_MilsimTools_Core_PlayerIntel",[groupId (group MRH_player),(getText(configFile >> "CfgVehicles" >> typeOf( MRH_player) >> "displayName")),(localize "STR_MRH_HeliTaxi_medEvacDefaultRadioLR")]];
 _intel params ["_grpId","_notNeeded","_RF"];
@@ -42,7 +42,7 @@ _securityStatus =
 {
 	_index = _securityCombo lbAdd (_x select 1);
 	_securityCombo lbSetData [_index, (_x select 0)];
-}forEach _securityStatus;
+} foreach _securityStatus;
 _securityCombo lbSetCurSel 0;
 
 _zoneMarkingMethods =[];
@@ -58,7 +58,7 @@ _zoneMarkingMethodsAvail =
 _extraMarkings =missionNamespace getVariable "MRH_MilsimTools_HeliTaxi_MEDEVAC_itemsCall";
 {
 	_zoneMarkingMethodsAvail pushBackUnique _x;
-}forEach _extraMarkings;
+} foreach _extraMarkings;
 //-------------
 if !(CFUNC(isNight)) then
 {
@@ -75,7 +75,7 @@ if !(CFUNC(isNight)) then
 
 {
 		if (_x in (magazines MRH_player)) then {_zoneMarkingMethods pushBackUnique _x};
-}forEach _zoneMarkingMethodsAvail;
+} foreach _zoneMarkingMethodsAvail;
 
 
 if (_zoneMarkingMethods isEqualTo []) exitWith {closedialog 0; hint (localize "STR_MRH_HeliTaxi_medEvacCantMarkNoItem")};
@@ -84,7 +84,7 @@ if (_zoneMarkingMethods isEqualTo []) exitWith {closedialog 0; hint (localize "S
 	_index = _zoneMarkingCombo lbAdd (getText (configFile>>"cfgMagazines">>_x >> "displayName"));
 	_zoneMarkingCombo lbSetData [_index,_x];
 
-}forEach _zoneMarkingMethods;
+} foreach _zoneMarkingMethods;
 _zoneMarkingCombo lbSetCurSel 0;
 
 _patientNationalities =
@@ -100,5 +100,5 @@ _patientNationalities =
 {
 	_index = _nationalityCombo lbAdd (_x select 1);
 	_nationalityCombo lbSetData [_index,(_x select 0)];
-}forEach _patientNationalities;
+} foreach _patientNationalities;
 _nationalityCombo lbSetCurSel 0;

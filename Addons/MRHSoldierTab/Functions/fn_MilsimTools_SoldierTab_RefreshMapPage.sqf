@@ -13,7 +13,7 @@ FUNC(AllCtrlsHide);
 _pageSpecificCtrls = [1205];
 {
 ctrlShow [_x,true];
-}ForEach _pageSpecificCtrls;
+} foreach _pageSpecificCtrls;
 
 [] spawn {
 	_mapCtrl = FDIS(1205);

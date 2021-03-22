@@ -40,7 +40,7 @@ TRACE(_toTrace2);
     private _index = lbAdd [1500,(localize "STR_MRH_SniperTraining_Distance") +" "+ (str round (_x select 1))+" "+ (localize "STR_MRH_SniperTraining_Meters")];
     lbSetColor [1500, _index, [0, 1, 0, 0.5]];
     lbSetData [1500, _index, str (getMarkerPos (_x select 0))];
-}forEach _allMarkersSorted;
+} foreach _allMarkersSorted;
 lbSetCurSel [1500,0];
 /*
 onEachFrame {systemChat  lbData [1500,lbCurSel 1500];

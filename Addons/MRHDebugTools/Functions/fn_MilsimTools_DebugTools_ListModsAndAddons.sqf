@@ -80,7 +80,7 @@ _allCfgModsConfigNames = _allCfgMods apply {configName _x};
 _toExcludeMods = ["A3","Mod_Base","DLCBundle","UnknownMod","Curator","Kart","Heli","Mark","OfficialMod","Expansion","DLCBundle2","Jets","Argo","Orange","Tacops","Tank","Warlords","Enoch"];
 _allNonVanillaMods = [];
 {
-	if !(_x in _toExcludeMods)then {_allNonVanillaMods pushBackUnique _x};
+	if !(_x in _toExcludeMods) then {_allNonVanillaMods pushBackUnique _x};
 } forEach _allCfgModsConfigNames;
 _fnc_findParentMod = {
 	params ["_mod","_allPatches"];
@@ -88,7 +88,7 @@ _fnc_findParentMod = {
 	_mod = toLower _mod;
 	{
 		if ((toLower _x) find (toLower _mod) == 0) then {_return pushBackUnique _x};
-	}forEach _allpatches;
+	} foreach _allpatches;
 	_return
 };
 
@@ -96,7 +96,7 @@ _sorted = [];
 {
 	private _addonsForThis= [_x,_allNonVanilla] call _fnc_findParentMod;
 	_sorted pushBackUnique [_x,_addonsForThis];
-}forEach _allNonVanillaMods;
+} foreach _allNonVanillaMods;
 
 _fnc_addonWithVersion ={
 	params ["_addons"];
@@ -106,7 +106,7 @@ _fnc_addonWithVersion ={
 		private _version = getText (configFile >>"CfgPatches">>_x>>"versionStr");
 		_versionMod = _version;
 		_return PushBackUnique ([endl,"      ",_x,"  version  :",_version] joinString "");
-	}forEach _addons;
+	} foreach _addons;
 	[_return,_versionMod]
 };
 _armaVersion = (productVersion select 0)+ " " + str (productVersion select 2) +","+ str (productVersion select 3) + " " +  (productVersion select 4);
@@ -119,7 +119,7 @@ _final =[];
 	if (_onlyMods) then {_array = [endl,"//---------",_ModName," version :",(_withVersion select 1),"---------//",endl]};
 	if (_forBugReport) then {_array = [endl,"- **",_ModName,":** ","`",(_withVersion select 1),"`",endl]};
 	_final pushBackUnique (_array joinString "");
-}forEach _sorted;
+} foreach _sorted;
 _final append [endl,endl,"//----GENERATED WITH MRH MILSIM TOOLS----//"];
 _final2 = [_armaVersion,endl];
 _final2 append _final;
