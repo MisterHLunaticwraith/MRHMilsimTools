@@ -53,7 +53,7 @@ _ctrlNumberCombo lbSetCurSel 0;
 
 _index = _ctrlAmmotypeCombo lbAdd (_x select 1);
 _ctrlAmmotypeCombo lbsetData [_index,(str (_x select 0))]; 
-}forEach [[0,(localize "STR_MRH_FireSupport_CASChooseGuns")],[1,(localize "STR_MRH_FireSupport_CASChooseMissiles")],[2,(localize "STR_MRH_FireSupport_CASChooseGunsAndMissiles")],[3,(localize "STR_MRH_FireSupport_CASChooseBomb")]];
+} foreach [[0,(localize "STR_MRH_FireSupport_CASChooseGuns")],[1,(localize "STR_MRH_FireSupport_CASChooseMissiles")],[2,(localize "STR_MRH_FireSupport_CASChooseGunsAndMissiles")],[3,(localize "STR_MRH_FireSupport_CASChooseBomb")]];
 _ctrlAmmotypeCombo lbSetCurSel 0;
 
 _button = FDIS(1601);

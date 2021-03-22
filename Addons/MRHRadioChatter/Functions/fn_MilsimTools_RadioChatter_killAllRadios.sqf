@@ -14,4 +14,4 @@ missionNamespace setVariable ["MRH_MilsimTools_RadioChatter_radiosAreKilled",_ki
 private _allMissionRadios = missionNamespace getVariable ["MRH_MilsimTools_RadioChatter_AllMissionRadios",[]];
 {
 			_x setVariable ["MRH_RadioChatter_RadioOn",false,true];
-}forEach _allMissionRadios;
+} foreach _allMissionRadios;

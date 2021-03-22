@@ -41,7 +41,7 @@ lbSetPictureColor [1500, _index, [0,0,0,0]];
 lbSetPicture [1500, _index, PAAPATH(alive.paa)];
 lbSetPictureRight [1500, _index, _rankPAA];
 lbSetTooltip [1500,_index,_toolTip];
-}forEach _alivePlayers;
+} foreach _alivePlayers;
 //with dead players
 {
 _name = _x select 1;
@@ -67,4 +67,4 @@ lbSetPictureColor [1500, _index, [0,0,0,0]];
 lbSetPicture [1500, _index, PAAPATH(dead.paa)];
 lbSetPictureRight [1500, _index, _rankPAA];
 lbSetTooltip [1500,_index,_toolTip];
-}forEach _deadPlayers;
+} foreach _deadPlayers;

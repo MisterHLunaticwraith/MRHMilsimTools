@@ -53,7 +53,7 @@ _ctrlTree tvExpand [_index];
 	_dataSubPath = str _x;
 	_subIndex = _ctrlTree tvAdd [[_index], _subBranchTitle];
 	_ctrlTree tvSetData [ [_index,_subIndex], _dataSubPath];
-	}forEach _subSections;
+	} foreach _subSections;
 
 } forEach _allDataEntries;
 _ctrlText ctrlSetStructuredText parsetext (localize "STR_MRH_ST_FC_PleaseSelectFile");
@@ -89,7 +89,7 @@ _index = _picsListBox lbAdd _caption;
 _picsListBox lbSetPicture [_index,_picture];
 _picsListBox lbSetData [_index,_data];
 _picsListBox lbsetTooltip [_index,_caption];
-}forEach _missionPics;
+} foreach _missionPics;
 _picsListBox lbSetCurSel 0;
 
 _refreshButton buttonSetAction format ["[[(findDisplay %1 displayCtrl 9902)]] spawn MRH_fnc_MilsimTools_ZeusModules_refreshDataPreviewer", ctrlIDD _display]; // hack since button action doesn't return ctrl

@@ -21,7 +21,7 @@ Example(s):
 	{
 		if !(_x isEqualTo "") then {_magUniques pushBackUnique _x};
 		
-	}forEach _list;
+	} foreach _list;
 	private _return = [];
 	{
 		private _str = _x;
@@ -31,6 +31,6 @@ Example(s):
 		_array append [_data,"<font color='#56EF78'> X ",_count,"</font><br/>"];
 		_return append _array
 
-	}forEach _magUniques;
+	} foreach _magUniques;
 	_return = _return joinstring "";
 	_return

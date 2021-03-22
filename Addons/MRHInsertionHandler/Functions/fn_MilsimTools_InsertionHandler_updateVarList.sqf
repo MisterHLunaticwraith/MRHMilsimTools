@@ -13,5 +13,5 @@ _var = MRH_player getVariable ["MRH_InsertionHandler_playersToGo",[]];
 _newList =[];
 {
 	if (alive _x) then {_newList pushBackUnique _x};
-}forEach _var;
+} foreach _var;
 MRH_player SVAR(playersToGo,_newList,false);

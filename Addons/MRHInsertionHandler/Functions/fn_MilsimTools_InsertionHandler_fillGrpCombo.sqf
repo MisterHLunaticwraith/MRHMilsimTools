@@ -19,5 +19,5 @@ _allPlaySide = [_groupsWithPlayers,side MRH_player] CFUNC(SortGroupsBySide);
 	_index= _combo lbAdd _name;
 	_data = _combo lbSetData [_index,str _x];
 
-}forEach _allPlaySide;
+} foreach _allPlaySide;
 _combo lbSetCurSel 0;

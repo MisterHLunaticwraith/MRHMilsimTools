@@ -39,7 +39,7 @@ if (_AdminGrpSideSetting) then
 	{
 	  {
 		if (side _x == side player) then {_groupsSidePlayer pushBackUnique _x};
-	  }forEach _GroupsWithPlayers;
+	  } foreach _GroupsWithPlayers;
 	  _GroupsWithPlayers = _groupsSidePlayer;
 	};
 

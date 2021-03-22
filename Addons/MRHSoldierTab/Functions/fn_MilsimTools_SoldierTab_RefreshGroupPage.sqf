@@ -13,7 +13,7 @@ FUNC(AllCtrlsHide);
 _pageSpecificCtrls = [9910,1210];
 {
 ctrlShow [_x,true];
-}ForEach _pageSpecificCtrls;
+} foreach _pageSpecificCtrls;
 _parameters = CFUNC(ApplyRosterTextSettings);
 _rosterText =  _parameters CFUNC(GenerateRosterText);
 _ctrlRst = FDIS(1210);

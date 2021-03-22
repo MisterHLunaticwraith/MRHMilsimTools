@@ -30,7 +30,7 @@ _index = _ctrlBox lbAdd _prettyName;
 _ctrlBox lbSetData [_index,_x];
 
 
-}forEach _allHelis;
+} foreach _allHelis;
 
 
 

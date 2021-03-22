@@ -52,7 +52,7 @@ if(MRH_MISSION_ROOT_FOUND) then {
 		[_x,_data,_HQ] call MRH_fnc_MilsimTools_SoldierTab_attributeData;
 		
 		
-	}forEach _synched;
+	} foreach _synched;
 	private _toTrace = format ["MRH_sideHQ_targetEventData: HQ %1 (%2)has received data %3 sent by %4",_hq,_hqCallSign,_data,_sender];
 	TRACE(_toTrace)
 }] call CBA_fnc_addEventHandler;
@@ -73,7 +73,7 @@ if(MRH_MISSION_ROOT_FOUND) then {
 		private _dataTitles = [];
 		{
 			_dataTitles pushBackUnique (([_x]call MRH_fnc_MilsimTools_SoldierTab_findAndReadDataEntry) select 1);
-		}forEach _data;
+		} foreach _data;
 		_dataTitles = _dataTitles joinString ",";
 		private _message = format ["HQ: %1 has received the following data %2 sent by %3",_hqCallSign,_dataTitles,_sender];
 		["MRH_Zeus_Notif",[_message]] call BIS_fnc_showNotification;
@@ -92,7 +92,7 @@ if(MRH_MISSION_ROOT_FOUND) then {
 		[_x,_pics,_HQ] call MRH_fnc_MilsimTools_SoldierTab_attributePictures;
 		
 		
-	}forEach _synched;
+	} foreach _synched;
 	private _toTrace = format ["MRH_sideHQ_targetEventPics HQ %1 (%2)has received pictures %3 sent by %4",_hq,_hqCallSign,_pics,_sender];
 	TRACE(_toTrace)
 }] call CBA_fnc_addEventHandler;
@@ -114,7 +114,7 @@ if(MRH_MISSION_ROOT_FOUND) then {
 		private _picsTitles = [];
 		{
 			_picsTitles pushBackUnique (([_x]call MRH_fnc_MilsimTools_SoldierTab_findAndReadPictureInfo) select 1);
-		}forEach _pics;
+		} foreach _pics;
 		_picsTitles = _picsTitles joinString ",";
 		private _message = format ["HQ: %1 has received the following picture(s) %2 sent by %3",_hqCallSign,_picsTitles,_sender];
 		["MRH_Zeus_Notif",[_message]] call BIS_fnc_showNotification;

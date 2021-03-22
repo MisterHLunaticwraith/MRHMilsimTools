@@ -13,5 +13,5 @@ call MRH_fnc_MilsimTools_Core_getPlayersWithZeusPowers;
 private _all = [];
 {
 	_all pushBackUnique (getAssignedCuratorUnit _x);
-}forEach allCurators;
+} foreach allCurators;
 _all

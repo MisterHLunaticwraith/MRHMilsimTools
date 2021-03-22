@@ -15,7 +15,7 @@ params ["_receiver","_DataToAdd",["_sender",objNull]];
 _playerData = _receiver getVariable ["MRH_SoldierTab_ownedData",[]];
 {
 _playerData pushBackUnique _x;
-}forEach _DataToAdd;
+} foreach _DataToAdd;
 _receiver SVAR(ownedData,_playerData,true);
 
 if (isPlayer _receiver) then 

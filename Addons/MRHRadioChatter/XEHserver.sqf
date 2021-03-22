@@ -8,6 +8,6 @@
 			if (_loopParams isEqualTo []) exitWith {};
 			_x setVariable ["MRH_RadioChatter_RadioOn",true,true];
 			_loopParams FUNC(RadioLoop);
-		}forEach _allMissionRadios;
+		} foreach _allMissionRadios;
 	}
 ] call CBA_fnc_addEventHandler;

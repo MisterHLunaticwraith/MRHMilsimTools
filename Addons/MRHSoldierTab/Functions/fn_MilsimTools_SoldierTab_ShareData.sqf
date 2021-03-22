@@ -55,5 +55,5 @@ exitWith
 {
 	_index = _cbList lbAdd (_x select 0);
 	_cbList lbSetData [_index,(_x select 1)];
-}forEach _toList;
+} foreach _toList;
 _cbList lbSetCurSel 0;

@@ -54,7 +54,7 @@ if (_waypoints isEqualTo []) ExitWith
 /*process all other waypoints*/
 {
 	group _heli addWaypoint [_x, 20];
-}forEach _waypoints;
+} foreach _waypoints;
 /* Create last waypoint*/
 private _lastWaypoint =group _heli addWaypoint [_destination, 20,(count (waypoints group _heli))+1];
 call compile  _wpStatement;

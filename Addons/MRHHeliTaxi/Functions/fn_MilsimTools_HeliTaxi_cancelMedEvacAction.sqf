@@ -33,14 +33,14 @@ if (isNull _medevac) exitWith {};
 			_x  commandMove (_medEvac modelToWorld [([-100,100] select _forEachIndex),-2000,0]);
 			};
 		};
-	}forEach _escortGuys;
+	} foreach _escortGuys;
 	_medEvac commandMove (_medEvac modelToWorld [0,-2000,0]);
 
 [[_caller],{params ["_caller"]; if !(hasInterface) exitWith {}; if ((group MRH_player) isEqualTo (group _caller)) then {deleteMarkerLocal "MRH_LZ_Evac_Marker";};}] RemoteExec ["Call",0];
 	[
 		{
 			params ["_allUnits","_medEvac","_caller"];
-			{[_x] CFUNC(deleteVehicleAndCrew);}forEach _allunits;
+			{[_x] CFUNC(deleteVehicleAndCrew);} foreach _allunits;
 			[side _medEvac] FUNC(resetMedevacVars);
 			[_medEvac] CFUNC(deleteVehicleAndCrew);
 			

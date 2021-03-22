@@ -13,7 +13,7 @@ FUNC(AllCtrlsHide);
 _pageSpecificCtrls = [7701,7702,7703,7704,7705,7706,7707,7708,7709,7710,7711,7712,7713,7714,7715,7716,7717,7718,7719,7720,7721,7722,7723];
 {
 ctrlShow [_x,true];
-}ForEach _pageSpecificCtrls;
+} foreach _pageSpecificCtrls;
 
 //refreshes the stopwatch
 _chronoText = "<img size = '2' image ='" + PAAPATH(stopwatch.paa) +"'/>" + (localize "STR_MRH_ST_FC_StopWatchApp");

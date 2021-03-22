@@ -20,7 +20,7 @@ _allCANNOT = [];
 		private _name = getText (configFile >> "cfgVehicles">>_x>>"DisplayName");
 		if ([_x]FUNC(canReceiveFries)) then {_allCan pushBackUnique [_name,_x]} else {_allCANNOT pushBackUnique [_name,_x]};
 	};
-}forEach _allHeliNames;
+} foreach _allHeliNames;
 _textCan = "//---Helicopters that accept fries";
 {
 	_textCan = _textCan + ([endl,(_x select 0)," : ",(_x select 1)] joinString "");

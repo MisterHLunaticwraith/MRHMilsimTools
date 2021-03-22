@@ -22,5 +22,5 @@ _allPlayersToGo = MRH_player getVariable ["MRH_InsertionHandler_playersToGo",[]]
 	_data = _listBox lbSetData [_index,str _x];
 	if !(_spaceLeft) then {_listBox lbSetColor [_index,[1,0,0,1]]} else {_listBox lbSetColor [_index,[0,1,0,1]]};
 	};
-}forEach _allPlayersToGo;
+} foreach _allPlayersToGo;
 FUNC(checkListUpdate);

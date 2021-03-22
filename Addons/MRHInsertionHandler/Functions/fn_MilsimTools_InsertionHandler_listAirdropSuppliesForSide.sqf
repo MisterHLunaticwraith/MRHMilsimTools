@@ -17,5 +17,5 @@ _allAvailableSupplies = [];
 {
 	_condition = _x getVariable [("MRH_InsertionHandler_isAirDropSupply_" + str _side),false];
 	if (_condition) then {_allAvailableSupplies pushBackUnique _x};
-}forEach _allNearObjects;
+} foreach _allNearObjects;
 _allAvailableSupplies

@@ -35,7 +35,7 @@ _MODULEALTTEXT ctrlSetText format [localize "STR_MRH_MRHMRHZeusModules_LZABOVESE
 {
 	private _index = _PLAYERLIST lbAdd name _x;
 	_PLAYERLIST lbSetData [_index,str _x];
-}forEach allPlayers;
+} foreach allPlayers;
 
 _INCLUDEGRP cbSetChecked true;
 
@@ -50,7 +50,7 @@ _PLAYERAADALTITUDE ctrlSetText (['MRH_MilsimTools_HaloGear_AADDefaultOpeningAlti
 _avail = [];
 {
 	if (_x getVariable ["MRH_ZeusModules_qualifiesForHalo",false]) then {_avail pushBackUnique _x};
-}forEach allMissionObjects "All";
+} foreach allMissionObjects "All";
 
 {
 	private _index = _AVAILABLEITEMS lbAdd (getText (configFile>>"cfgVehicles">>typeOf _x>>"displayName"));

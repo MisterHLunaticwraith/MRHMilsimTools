@@ -18,6 +18,6 @@ _arrayToPush = [];
 	_caption = gettext (configFile >> "MRH_SoldierTabIntelPictures" >> _x >> "captionText");
 	_picturePath = gettext (configFile >> "MRH_SoldierTabIntelPictures" >> _x >> "picture");
 	_arrayToPush pushBackUnique [_x,_caption,_picturePath];
-}forEach _configSetPics;
+} foreach _configSetPics;
 _missionPics append _arrayToPush;
 MNSVAR(missionPics,_missionPics,true);

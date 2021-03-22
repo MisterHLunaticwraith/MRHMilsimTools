@@ -14,5 +14,5 @@ params ["_units","_inputSide"];
 _unitsForSide = [];
 {
 if (side _x == _inputSide) then {_unitsForSide pushBackUnique _x};
-}forEach _units;
+} foreach _units;
 _unitsForSide

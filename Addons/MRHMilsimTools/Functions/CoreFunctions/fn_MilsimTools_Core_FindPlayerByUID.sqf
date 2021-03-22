@@ -19,6 +19,6 @@ if (typeName _uid != "STRING") ExitWith {Diag_Log format ["MRH_MilsimTools_Core 
 	_tocheck = getPlayerUID _x;
 	if ( _tocheck == _uid) then {_player = _x};
 
-}forEach allPlayers;
+} foreach allPlayers;
 if (isNull _player) then {Diag_Log format ["MRH_MilsimTools_Core - No player found for UID: %1"], str _uid};
 _player

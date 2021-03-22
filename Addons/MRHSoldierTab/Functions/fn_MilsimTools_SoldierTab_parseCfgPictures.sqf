@@ -18,6 +18,6 @@ _arrayToPush = [];
 	_caption = gettext (missionConfigFile >> "MRH_SoldierTabIntelPictures" >> _x >> "captionText");
 	_picturePath = gettext (missionConfigFile >> "MRH_SoldierTabIntelPictures" >> _x >> "picture");
 	_arrayToPush pushBackUnique [_x,_caption,_picturePath];
-}forEach _configSetPics;
+} foreach _configSetPics;
 MNSVAR(missionPics,_arrayToPush,true);
 call compile preProcessFileLineNumbers '\MRHSoldierTab\Functions\fn_MilsimTools_SoldierTab_parseCfgPicturesFromAddon.sqf';

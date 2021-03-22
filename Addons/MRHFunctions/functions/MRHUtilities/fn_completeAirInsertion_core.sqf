@@ -28,7 +28,7 @@ if !(_extraGear isEqualTo[]) then
                 //[[_x, _myvec],{params ["_veh1","_veh2"];_veh1 disableCollisionWith _veh2}] remoteExec ["Call",0];
                 [[_x],{params ["_toHide"];_toHide hideObjectGlobal true}] RemoteExec ["Call",2];
             };
-        }forEach _extraGear;
+        } foreach _extraGear;
     };
 
 _myvec flyInHeight _height;
@@ -61,7 +61,7 @@ if !(_extraGear isEqualTo[]) then
             {
                 [[_x],{params ["_toHide"];_toHide hideObjectGlobal false}] RemoteExec ["Call",2];
             };
-        }forEach _extraGear;
+        } foreach _extraGear;
     };
 //step 6 send the plane away and despawn
 
@@ -69,5 +69,5 @@ group _myvec addWaypoint [_myvec modelToWorld [0,2000,0], 0];
 sleep 10;
 _myvec allowDamage false;
 sleep 25;
-{deleteVehicle _x;}forEach crew _myvec;
+{deleteVehicle _x;} foreach crew _myvec;
 deleteVehicle _myvec;

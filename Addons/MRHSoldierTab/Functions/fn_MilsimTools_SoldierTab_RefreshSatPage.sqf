@@ -13,7 +13,7 @@ FUNC(AllCtrlsHide);
 _pageSpecificCtrls = [1211,1212];
 {
 ctrlShow [_x,true];
-}ForEach _pageSpecificCtrls;
+} foreach _pageSpecificCtrls;
 
 private _ctrlSatFeed= FDIS(1211);
 private _ctrlMarkings = FDIS(1212);

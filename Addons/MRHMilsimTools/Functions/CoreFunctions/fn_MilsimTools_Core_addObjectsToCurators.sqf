@@ -16,4 +16,4 @@ params [
 	];
 {
 	_x addCuratorEditableObjects [_objects,true ];
-}forEach allCurators;
+} foreach allCurators;

@@ -97,7 +97,7 @@ _rosterTextARRAY = [];
 	_fullGrpText = "<t color= '"+ _color + "'>" + _fullGrpText + "</t>";
 	_rosterTextARRAY pushBackUnique _fullGrpText;
 
-	}forEach _allGroups;	
+	} foreach _allGroups;	
 		
 _rosterText = _rosterTextARRAY joinstring " ";		
 

@@ -42,7 +42,7 @@ else
 		//if (_uid == _x select 0) then {_allDeadPlayersInclude deleteAt (_allDeadPlayersInclude find  _x);};
 		} forEach _deadPlayers; 
 	};
-}forEach allPlayers;
+} foreach allPlayers;
 missionNamespace setVariable ["MRH_MilsimTools_Core_allCurrentlyDeadPlayers",_deadPlayersNew,true];
 
 // update list of all Alive players

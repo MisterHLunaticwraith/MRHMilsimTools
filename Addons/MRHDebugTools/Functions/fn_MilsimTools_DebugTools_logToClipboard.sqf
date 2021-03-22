@@ -17,6 +17,6 @@ _logText = "";
 	_logText = _logText + _string;
 	
 
-}forEach _log;
+} foreach _log;
 
 copyToClipBoard _logText;

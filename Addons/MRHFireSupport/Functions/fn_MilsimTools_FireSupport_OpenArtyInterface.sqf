@@ -35,5 +35,5 @@ _name = getText (configFile>>"cfgMagazines">>_x>>"displayName");
 _index = _ctrlAmmotypeCombo lbAdd _name;
 _ammo = getText( configFile >> "CfgMagazines" >>_x>> "ammo" );
 _ctrlAmmotypeCombo lbsetData [_index,_ammo]; 
-}forEach _allShellMagazines;
+} foreach _allShellMagazines;
 _ctrlAmmotypeCombo lbSetCurSel 0;

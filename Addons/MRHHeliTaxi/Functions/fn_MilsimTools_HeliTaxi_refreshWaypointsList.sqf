@@ -20,7 +20,7 @@ _setWaypoints = MRH_player GVARDef(setWaypoints,[]);
 	_list lbSetPicture [_index,PAAPATH(waypoint.paa)];
 	_list lbSetPictureColor [_index,[0.85,0.85,0,1]];
 	_list lbSetColor [_index,[0.85,0.85,0,1]];
-}forEach _setWaypoints;
+} foreach _setWaypoints;
 _color = getMarkerColor "MRH_LZ_Marker";
 if (_color == "") ExitWith {};
 	_pic = getText (configFile>>"cfgMarkers">> (getMarkerType "MRH_LZ_Marker")>>"icon");

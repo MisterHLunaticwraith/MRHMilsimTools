@@ -18,7 +18,7 @@ if (_allData isEqualTo []) exitWith {Diag_Log "MRH_MilsimTools_SoldierTab: No da
 _selectedData = [];
 {
 	if ((_x select 0) == _dataEntry) then {_selectedData = _x};
-}forEach _allData;
+} foreach _allData;
 
 if (_selectedData isEqualTo []) exitWith {Diag_Log "MRH_MilsimTools_SoldierTab: Data not found"};
 

@@ -42,7 +42,7 @@ MRH_allAlivePlayers = _MRH_allAlivePlayers;
 private _MRH_allAliveAndConsciousPlayers =[];
 {
 	if ([_x] call ace_common_fnc_isAwake) then {_MRH_allAliveAndConsciousPlayers pushBackUnique _x};
-}forEach _MRH_allAlivePlayers;
+} foreach _MRH_allAlivePlayers;
 
 MRH_allAliveAndConsciousPlayers = _MRH_allAliveAndConsciousPlayers;
 ([MRH_allPlayers,MRH_allAlivePlayers,MRH_allAliveAndConsciousPlayers] select _return)

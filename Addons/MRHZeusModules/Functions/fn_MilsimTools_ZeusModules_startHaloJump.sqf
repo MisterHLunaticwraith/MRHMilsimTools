@@ -62,4 +62,4 @@ diag_log format ["MRH_MilsimTools_HaloJumpStart, units to parachute %1",_UnitsTo
 
 	_x setPosASL ([_dropPos,[30,50,70]]CFUNC(scatterPosition));
 	
-}forEach _gearToParachute;
+} foreach _gearToParachute;

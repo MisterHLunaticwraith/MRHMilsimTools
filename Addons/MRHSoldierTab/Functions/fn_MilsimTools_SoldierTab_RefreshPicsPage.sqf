@@ -13,14 +13,14 @@ FUNC(AllCtrlsHide);
 _pageSpecificCtrls = [1206,1207,12071,8200,8201];
 {
 ctrlShow [_x,true];
-}ForEach _pageSpecificCtrls;
+} foreach _pageSpecificCtrls;
 _playerPics = MRH_player getVariable ["MRH_SoldierTab_ownedPics",[]];
 _missionPics = missionNamespace getVariable ["MRH_SoldierTab_missionPics",[]];
 _picsListBox = FDIS(1206);
 _picsToDisplay = [];
 {
 if (_x select 0 in _playerPics) then {_picsToDisplay pushBackUnique _x};
-}forEach _missionPics;
+} foreach _missionPics;
 
 lbClear 1206;
 
@@ -41,5 +41,5 @@ _index = _picsListBox lbAdd _caption;
 _picsListBox lbSetPicture [_index,_picture];
 _picsListBox lbSetData [_index,_data];
 _picsListBox lbsetTooltip [_index,_caption];
-}forEach _picsToDisplay;
+} foreach _picsToDisplay;
 _picsListBox lbSetSelected [0, true];

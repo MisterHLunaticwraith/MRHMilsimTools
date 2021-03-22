@@ -13,7 +13,7 @@ FUNC(AllCtrlsHide);
 _pageSpecificCtrls = [1202,1203,1204,9903,9904];
 {
 ctrlShow [_x,true];
-}ForEach _pageSpecificCtrls;
+} foreach _pageSpecificCtrls;
 
 // webcam
 _sstime = date call BIS_fnc_sunriseSunsetTime;
