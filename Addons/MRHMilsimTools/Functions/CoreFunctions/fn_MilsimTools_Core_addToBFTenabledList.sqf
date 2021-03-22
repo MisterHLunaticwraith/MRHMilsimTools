@@ -14,7 +14,7 @@ Example(s):
 #include "MRH_C_Path.hpp"
 params ["_add"];
 private _allowedClasses = missionNamespace getVariable ["MRH_soldierTab_BFT_enabling_items_andVehs",[]];
-if ((typeName _add)isEqualTo "ARRAY")then {_allowedClasses append _add};
-if ((typeName _add)isEqualTo "STRING")then {_allowedClasses pushBackUnique _add};
+if ((typeName _add)isEqualTo "ARRAY") then {_allowedClasses append _add};
+if ((typeName _add)isEqualTo "STRING") then {_allowedClasses pushBackUnique _add};
 missionNamespace setVariable ["MRH_soldierTab_BFT_enabling_items_andVehs",_allowedClasses,true];
 _allowedClasses

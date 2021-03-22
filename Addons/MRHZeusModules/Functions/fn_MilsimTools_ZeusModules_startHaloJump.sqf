@@ -21,7 +21,7 @@ diag_log format ["MRH_MilsimTools_HaloJumpStart, units to parachute %1",_UnitsTo
 			params ["_unit","_dropPos","_autoEquipUnits","_forceUnitsAAD","_unitsAADSetting"];
 			if (isPlayer _unit) then {[_unit,"Halo drop starting","MRH_Zeus_Notif"]call MRH_fnc_MilsimTools_Core_notifyPlayer;};
 			if !(isNull curatorCamera) then {findDisplay 312 closeDisplay 2;};
-			if (_autoEquipUnits)then {[_unit]FUNC(prepUnitForHalo);};
+			if (_autoEquipUnits) then {[_unit]FUNC(prepUnitForHalo);};
 			
 			[
 				{

@@ -14,7 +14,7 @@ _heli = missionNamespace getVariable [("MRH_HeliTaxi_CurrentMedEvacHeli_"+ (str 
 if (isNull _heli) exitWith {};
 [_heli,"MedEvacGoAndHeal"] FUNC(handleMessages);
 _surgeon = _heli GVARDef(assignedSurgeon,objNull);
-if !(isNull _surgeon)then 
+if !(isNull _surgeon) then 
 {
 	if (alive _surgeon) then {
 	_surgeon doMove (position _heli);

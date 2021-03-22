@@ -39,7 +39,7 @@ FDIS(1202) ctrlSetText "#(argb,512,512,1)r2t(rttmrhtest,1.0)";
 
 //fillplayerintel
 _playerIntel = player getVariable "MRH_MilsimTools_Core_PlayerIntel";
-if !(isPlayer MRH_player)then {_playerIntel = [groupId (group MRH_player),(getText (configFile>>"cfgVehicles">>(typeOf MRH_player)>>"displayName")),"N/A"]};//if remote ctrld unit
+if !(isPlayer MRH_player) then {_playerIntel = [groupId (group MRH_player),(getText (configFile>>"cfgVehicles">>(typeOf MRH_player)>>"displayName")),"N/A"]};//if remote ctrld unit
 _rankIntel = [MRH_player] call MRH_fnc_MilsimTools_Core_LocRankIntel;
 
 _playerGRP = _playerIntel select 0;

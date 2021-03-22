@@ -27,7 +27,7 @@ _soundCfg params
 private _soundPathFormated= _soundPath splitString "";
 if ((_soundPathFormated select 0)isEqualTo "\") then {_soundPathFormated deleteAt 0};
 private _soundPathFinal = _soundPathFormated joinString "";
-if (_volume >5)then {_volume = 5};
+if (_volume >5) then {_volume = 5};
 if (_config isEqualTo missionConfigFile) then {_soundPathFinal = MRH_MISSION_ROOT + _soundPathFinal};
 private _return = [_soundPathFinal,_volume,_pitch,_distance];
 _return

@@ -17,6 +17,6 @@ params ["_stringObject",["_type","All"]];
 
 _return = objNull;
 {
-	if (str _x == _stringObject)then{_return = _x};
+	if (str _x == _stringObject) then{_return = _x};
 } forEach allMissionObjects _type;
 _return

@@ -67,7 +67,7 @@ _statement = {
 		{
 			[[_unit,0,["MRH_Conversation_MainConvAction","MRH_Simple_AceConversation"]],ace_interact_menu_fnc_removeActionFromObject] RemoteExec ["Call",0,true];
 		};
-		if (_executionSpace == "GLOBAL")then {[[_unit,_codeParams],_code] RemoteExec ["Spawn",0,true];} else {[_unit,_codeParams] spawn _code};
+		if (_executionSpace == "GLOBAL") then {[[_unit,_codeParams],_code] RemoteExec ["Spawn",0,true];} else {[_unit,_codeParams] spawn _code};
 };
 _action =["MRH_Simple_AceConversation", 
 (localize "STR_MRH_FUNCS_ACTIONSPEAK"),
@@ -113,7 +113,7 @@ _statement = {
 		{
 			[[_unit,0,["ACE_MainActions","Conversation"]],ace_interact_menu_fnc_removeActionFromObject] RemoteExec ["Call",0,true];
 		};
-		if (_executionSpace == "GLOBAL")then {[[_unit],_code] RemoteExec ["Spawn",0,true];} else {[_unit] spawn _code};
+		if (_executionSpace == "GLOBAL") then {[[_unit],_code] RemoteExec ["Spawn",0,true];} else {[_unit] spawn _code};
 };
 _action =["Conversation", 
 (localize "STR_MRH_FUNCS_ACTIONSPEAK"),

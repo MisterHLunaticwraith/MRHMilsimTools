@@ -80,7 +80,7 @@ _allCfgModsConfigNames = _allCfgMods apply {configName _x};
 _toExcludeMods = ["A3","Mod_Base","DLCBundle","UnknownMod","Curator","Kart","Heli","Mark","OfficialMod","Expansion","DLCBundle2","Jets","Argo","Orange","Tacops","Tank","Warlords","Enoch"];
 _allNonVanillaMods = [];
 {
-	if !(_x in _toExcludeMods)then {_allNonVanillaMods pushBackUnique _x};
+	if !(_x in _toExcludeMods) then {_allNonVanillaMods pushBackUnique _x};
 } forEach _allCfgModsConfigNames;
 _fnc_findParentMod = {
 	params ["_mod","_allPatches"];

@@ -42,7 +42,7 @@ else
 				_toList pushBackUnique [name _x,getPlayerUID _x];
 			};
 	} forEach _unitsForPlayerside;
-	if (_hq select 0 != "nohqWildCard")then {_toList pushBackUnique _hq};
+	if (_hq select 0 != "nohqWildCard") then {_toList pushBackUnique _hq};
 };
 if (_toList isEqualTo []) 
 exitWith 

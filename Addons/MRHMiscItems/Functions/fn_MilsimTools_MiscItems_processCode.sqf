@@ -54,7 +54,7 @@ _this spawn
 			if (_condition) then 
 			{
 				
-				if !([_building,_doorNumber]CFUNC(isLockedDoor))then 
+				if !([_building,_doorNumber]CFUNC(isLockedDoor)) then 
 				{
 					[_scanner] spawn {params ["_scanner"]; playSound3D ["MRHMiscItems\Sounds\MRH_DOOR_DoorLocked.ogg",_scanner];};
 				}
@@ -90,7 +90,7 @@ _this spawn
 		case (_part == "hand") : {[_scanner,_player] spawn compile _code;};
 		case (_part =="eye") : {[_scanner,_player] spawn compile _code;};
 	};
-if (!_condition && !([_building,_doorNumber]CFUNC(isLockedDoor)))then 
+if (!_condition && !([_building,_doorNumber]CFUNC(isLockedDoor))) then 
 				{
 					[_scanner] spawn {params ["_scanner"]; playSound3D ["MRHMiscItems\Sounds\MRH_DOOR_DoorLocked.ogg",_scanner];};
 					[_building,_doorNumber] CFUNC(toggleDoorState);
