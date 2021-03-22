@@ -172,7 +172,7 @@ class MRHAddonBoardButton: RscButtonMRHZeusModules
 	y = 0.588 * safezoneH + safezoneY;
 	w = 0.0257812 * safezoneW;
 	h = 0.033 * safezoneH;
-    action = "if((lbtext[1502,(lbCursel 1502)])isEqualTo '')exitWith {};_index= lbAdd [1501,lbtext[1502,(lbCursel 1502)]];lbSetData[1501,_index,lbData[1502,(lbCursel 1502)]];lbDelete [1502,(lbCursel 1502)]";
+    action = "if((lbtext[1502,(lbCursel 1502)])isEqualTo '') exitWith {};_index= lbAdd [1501,lbtext[1502,(lbCursel 1502)]];lbSetData[1501,_index,lbData[1502,(lbCursel 1502)]];lbDelete [1502,(lbCursel 1502)]";
 };
 class MRHRemoveonBoardButton: RscButtonMRHZeusModules
 {
@@ -182,7 +182,7 @@ class MRHRemoveonBoardButton: RscButtonMRHZeusModules
 	y = 0.632 * safezoneH + safezoneY;
 	w = 0.0257812 * safezoneW;
 	h = 0.033 * safezoneH;
-    action = "if((lbtext[1501,(lbCursel 1501)])isEqualTo '')exitWith {};_index= lbAdd [1502,lbtext[1501,(lbCursel 1501)]];lbSetData[1502,_index,lbData[1501,(lbCursel 1501)]];lbDelete [1501,(lbCursel 1501)]";
+    action = "if((lbtext[1501,(lbCursel 1501)])isEqualTo '') exitWith {};_index= lbAdd [1502,lbtext[1501,(lbCursel 1501)]];lbSetData[1502,_index,lbData[1501,(lbCursel 1501)]];lbDelete [1501,(lbCursel 1501)]";
 };
 class MRHAvailableList: RscListboxMRHZeusModules
 {

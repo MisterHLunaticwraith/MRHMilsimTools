@@ -63,7 +63,7 @@ if(MRH_MISSION_ROOT_FOUND) then {
 
 	private _toTrace = format ["MRH_sideHQ_globalEventData %1 (%2)has received data %3 sent by %4",_hq,_hqCallSign,_data,_sender];
 	TRACE(_toTrace);
-	if !(hasInterface)exitWith {};
+	if !(hasInterface) exitWith {};
 	
 	private _canReceive = IS_DEBUG;
 	private _havePowers = FUNC(getPlayersWithZeusPowers);
@@ -104,7 +104,7 @@ if(MRH_MISSION_ROOT_FOUND) then {
 
 	private _toTrace = format ["MRH_sideHQ_globalEventPics <HQ %1 (%2)has received pictures %3 sent by %4",_hq,_hqCallSign,_pics,_sender];
 	TRACE(_toTrace);
-	if !(hasInterface)exitWith {};
+	if !(hasInterface) exitWith {};
 	
 	private _canReceive = IS_DEBUG;
 	private _havePowers = FUNC(getPlayersWithZeusPowers);

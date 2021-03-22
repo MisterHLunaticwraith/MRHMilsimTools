@@ -11,7 +11,7 @@ call MRH_fnc_MilsimTools_SoldierTab_playVideoOnScreens;
 #include "MRH_C_Path.hpp"
 params ["_video","_screens"];
 
-if (_screens isEqualTo [])exitWith {};
+if (_screens isEqualTo []) exitWith {};
 ["MRH_ST_set_screen_video",_this] call CBA_fnc_globalEvent;
 /*
 if !(isServer) exitWith {[_this,MRH_fnc_MilsimTools_SoldierTab_playVideoOnScreens]remoteExec ["Call,2"]};

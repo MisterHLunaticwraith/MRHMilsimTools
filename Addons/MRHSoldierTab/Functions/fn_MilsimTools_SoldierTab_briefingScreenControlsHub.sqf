@@ -71,7 +71,7 @@ private _insertChildren ={
 		{
 			CHILDREN_PARAMS;
 			call {
-				if !(isClass (configFile>>'cfgPatches'>>'MRHSatellite'))exitWith {false};
+				if !(isClass (configFile>>'cfgPatches'>>'MRHSatellite')) exitWith {false};
 				(missionNamespace getVariable ["MRHSatFirstInitCheck",false])
 			}
 		},

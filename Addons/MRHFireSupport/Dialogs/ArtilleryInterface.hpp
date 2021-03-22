@@ -46,7 +46,7 @@ class MRHFridInpuitZone: RscEditMRHFireSupport
 	tooltip = $STR_MRH_FireSupport_CoordToolTip;
 	text = "00000-00000"; //--- ToDo: Localize;
 	onChar = "call MRH_fnc_MilsimTools_FireSupport_onCharCheck;";
-	onKeyDown = "if ((_this select 1)==14)ExitWith {call MRH_fnc_MilsimTools_FireSupport_onCharCheck;};";
+	onKeyDown = "if ((_this select 1)==14) exitWith {call MRH_fnc_MilsimTools_FireSupport_onCharCheck;};";
 	x = 0.556719 * safezoneW + safezoneX;
 	y = 0.434 * safezoneH + safezoneY;
 	w = 0.0515625 * safezoneW;

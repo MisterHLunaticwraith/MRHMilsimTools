@@ -17,7 +17,7 @@ if (time <1) exitWith
 		_this
 	] call CBA_fnc_waitUntilAndExecute;
 };
-if (missionNamespace getVariable ["MRH_MilsimTools_RadioChatter_radiosAreKilled",false])exitWith{};
+if (missionNamespace getVariable ["MRH_MilsimTools_RadioChatter_radiosAreKilled",false]) exitWith{};
 params ["_sourceObject","_allsounds","_configSource"];
 if (_sourceObject getVariable ["MRH_RC_isPlayingSound",false]) exitWith {}; //prevents double executionand spamming
 _sourceObject setVariable ["MRH_RC_isPlayingSound",true];

@@ -45,7 +45,7 @@ class MRHLocationEdit: RscEditMRHMedevac
 {
 	idc = 1400;
 	onChar = "[((findDisplay 290819)displayCtrl 1400)]call MRH_fnc_MilsimTools_Core_gridInputCheck;";
-	onKeyDown = "if ((_this select 1)==14)ExitWith {[((findDisplay 290819)displayCtrl 1400)] call MRH_fnc_MilsimTools_Core_gridInputCheck;};";
+	onKeyDown = "if ((_this select 1)==14) exitWith {[((findDisplay 290819)displayCtrl 1400)] call MRH_fnc_MilsimTools_Core_gridInputCheck;};";
 	x = 0.711406 * safezoneW + safezoneX;
 	y = 0.335 * safezoneH + safezoneY;
 	w = 0.139219 * safezoneW;
@@ -65,7 +65,7 @@ class MRHNumberOfPatientsEdit: RscEditMRHMedevac
 	idc = 1401;
 	text = "1";
 	onChar = "[]spawn {sleep 0.5;call MRH_fnc_MilsimTools_HeliTaxi_medEvacRefreshPenaltyText;};";
-	onKeyDown = "if ((_this select 1)==14)ExitWith {[]spawn {sleep 0.5;call MRH_fnc_MilsimTools_HeliTaxi_medEvacRefreshPenaltyText;};};";
+	onKeyDown = "if ((_this select 1)==14) exitWith {[]spawn {sleep 0.5;call MRH_fnc_MilsimTools_HeliTaxi_medEvacRefreshPenaltyText;};};";
 	x = 0.757813 * safezoneW + safezoneX;
 	y = 0.412 * safezoneH + safezoneY;
 	w = 0.0928125 * safezoneW;
