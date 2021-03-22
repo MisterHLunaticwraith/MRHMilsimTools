@@ -18,7 +18,7 @@ Example(s):
 params ["_sideObject","_forBluFor",["_forOpFor",""],["_forInde",""],["_forCivs",""]];
 _result = "";
 _side = side _sideObject;
-	switch (true)do 
+	switch (true) do 
 	{
 	case (_side == west):{_result = _forBluFor};
 	case (_side == east):{_result = _forOpFor};

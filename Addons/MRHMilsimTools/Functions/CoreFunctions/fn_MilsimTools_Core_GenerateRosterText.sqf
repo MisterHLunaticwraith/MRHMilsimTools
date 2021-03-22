@@ -86,7 +86,7 @@ _rosterTextARRAY = [];
 	_grpStr = _grpARRAY joinstring " ";
 
 	_fullGrpText =[_grpStr,_playerStrings, "<br/><br/>"] joinstring " ";
-	switch (true)do 
+	switch (true) do 
 	{
 	case (side _x == west):{_color = _colorBlufor};
 	case (side _x == east):{_color = _colorOpfor};
