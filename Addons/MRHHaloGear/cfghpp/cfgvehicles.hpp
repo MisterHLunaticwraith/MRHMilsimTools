@@ -67,7 +67,7 @@ class Man;
 					class MRH_DetachAAD { \
 						displayName = $STR_MRH_MRHHaloGear_REMOVEHAAD; \
 						condition = "_target getVariable ['MRH_HaloGear_itemAsAAD',false]"; \
-						statement = "[_target] call MRH_fnc_MilsimTools_HaloGear_removeObjectAAD;_player addItem 'MRH_AAD_Item';hint localize 'STR_MRH_MRHHaloGear_HintAADRemoved'" \
+						statement = "[_target] call MRH_fnc_MilsimTools_HaloGear_removeObjectAAD;_player addItem 'MRH_AAD_Item';hint localize 'STR_MRH_MRHHaloGear_HintAADRemoved'"; \
 						exceptions[] = {"isNotSwimming"}; \
 						showDisabled = 0; \
 						icon = ""; \

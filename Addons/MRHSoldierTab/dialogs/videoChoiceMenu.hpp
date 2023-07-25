@@ -55,7 +55,7 @@ class MRH_playVidButton: RscButtonMRHVideoChoice
 {
 	idc = 1601;
 	moving = true;
-	text = $STR_MRH_ST_playVid; //--- ToDo: Localize;
+	text = $STR_MRH_ST_playVid; // --- ToDo: Localize; //
 	action = "private _list = (findDisplay 241019)displayCtrl 2100;private _video = _list lbData (lbCurSel _list);private _screens = (findDisplay 241019) getVariable ['MRH_Brief_screens',[]];[_video,_screens] call MRH_fnc_MilsimTools_SoldierTab_playVideoOnScreens;closeDialog 0;"
 	x = 0.396875 * safezoneW + safezoneX;
 	y = 0.489 * safezoneH + safezoneY;
