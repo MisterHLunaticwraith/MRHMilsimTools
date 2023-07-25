@@ -14,7 +14,7 @@
 				<French>Fusil M4</French>
 			</Key>
 			
-			<Key ID="STR_MRH_MRHTabletData_">
+			/*<Key ID="STR_MRH_MRHTabletData_">
 				<Original></Original>
 				<English></English>
 				<French></French>
@@ -30,7 +30,7 @@
 				<Original></Original>
 				<English></English>
 				<French></French>
-			</Key>
+			</Key>/*
 			
 			
 		</Container>

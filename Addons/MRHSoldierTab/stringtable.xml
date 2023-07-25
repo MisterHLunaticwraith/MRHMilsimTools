@@ -237,11 +237,11 @@
 				<English>Briefing controls</English>
 				<French>Controles de briefing</French>
 			</Key>
-			<Key ID="STR_MRH_ST_">
+			/*<Key ID="STR_MRH_ST_">
 				<Original></Original>
 				<English></English>
 				<French></French>
-			</Key>
+			</Key>*/
 			
 			
 			
